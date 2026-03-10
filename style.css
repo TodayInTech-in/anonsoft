@@ -1681,6 +1681,19 @@ button {
         font-size: clamp(2rem, 6vw, 3rem);
     }
 
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 14px 24px;
+        font-size: 0.9rem;
+        width: 100%;
+        justify-content: center;
+    }
+
     .services-grid {
         grid-template-columns: 1fr;
     }
@@ -1711,6 +1724,7 @@ button {
 
     .cta-buttons {
         flex-direction: column;
+        width: 100%;
     }
 
     .footer-grid {
