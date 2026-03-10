@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>HIPAA Compliance Checklist for Mobile Health App Development | TodayInTech</title>
+  <meta name="description" content="Complete HIPAA compliance checklist for mobile health app developers in 2026. Covers technical safeguards, PHI handling, BAAs, audit controls, encryption requirements, and common violations to avoid.">
+  <meta name="keywords" content="HIPAA compliance mobile app, HIPAA checklist developers, PHI mobile app, HIPAA technical safeguards, health app security, HIPAA BAA, mHealth HIPAA compliance, healthcare app compliance 2026">
+  <meta name="author" content="TodayInTech">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://todayintech.com/blog/hipaa-compliant-app-development.html">
+
+  <meta property="og:title" content="HIPAA Compliance Checklist for Mobile Health App Development">
+  <meta property="og:description" content="The complete developer checklist for HIPAA-compliant mobile health app development — technical safeguards, BAAs, PHI handling, and encryption requirements.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://todayintech.com/blog/hipaa-compliant-app-development.html">
+  <meta property="og:image" content="https://todayintech.com/assets/og-image.png">
+  <meta property="og:site_name" content="TodayInTech">
+  <meta property="article:published_time" content="2026-03-07">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="HIPAA Compliance Checklist for Mobile Health App Development">
+  <meta name="twitter:description" content="Complete developer checklist: technical safeguards, BAAs, PHI handling, encryption for HIPAA-compliant health apps.">
+  <meta name="twitter:image" content="https://todayintech.com/assets/og-image.png">
+  <meta name="twitter:site" content="@todayintech">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "HIPAA Compliance Checklist for Mobile Health App Development",
+    "description": "Complete HIPAA compliance checklist for mobile health app developers covering technical safeguards, PHI handling, BAAs, and encryption.",
+    "author": { "@type": "Organization", "name": "TodayInTech", "url": "https://todayintech.com" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "TodayInTech",
+      "logo": { "@type": "ImageObject", "url": "https://todayintech.com/assets/logo.png" }
+    },
+    "datePublished": "2026-03-07",
+    "dateModified": "2026-03-07",
+    "url": "https://todayintech.com/blog/hipaa-compliant-app-development.html",
+    "articleSection": "HIPAA Compliance",
+    "keywords": "HIPAA compliance, mobile health app, PHI, BAA, healthcare security"
+  }
+  </script>
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="blog-post.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <a href="/" class="nav-logo">
+          <img src="../assets/logo.png" alt="TodayInTech Logo">
+          <span class="nav-logo-text">TodayInTech</span>
+        </a>
+        <div class="nav-links" id="navLinks">
+          <a href="/#services">Services</a>
+          <a href="/#about">About</a>
+          <a href="/#portfolio">Portfolio</a>
+          <a href="/#process">Process</a>
+          <a href="/#testimonials">Reviews</a>
+          <a href="/#faq">FAQ</a>
+          <a href="/blog/" class="active">Blog</a>
+          <a href="/#contact" class="nav-cta">Book a Call</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="blog-post-main">
+    <article class="blog-post-container">
+
+      <div class="post-header">
+        <div class="post-meta">
+          <span class="post-category">HIPAA</span>
+          <span class="post-date">March 7, 2026</span>
+          <span class="post-read-time">11 min read</span>
+        </div>
+        <h1>HIPAA Compliance Checklist for Mobile Health App Development</h1>
+        <p class="post-intro">HIPAA violations cost US healthcare organizations over $10 billion in 2025. For mobile health app developers, compliance isn't optional — it's a fundamental technical requirement that must be designed in from day one, not bolted on at the end.</p>
+      </div>
+
+      <div class="post-body">
+
+        <h2>Does Your App Need HIPAA Compliance?</h2>
+        <p>HIPAA applies to your app if it meets these conditions:</p>
+        <ul>
+          <li>You are a <strong>Covered Entity</strong> (healthcare provider, health plan, or clearinghouse) or a <strong>Business Associate</strong> working with one</li>
+          <li>Your app <strong>creates, receives, maintains, or transmits Protected Health Information (PHI)</strong></li>
+        </ul>
+        <p>PHI includes: names, addresses, dates (except year), phone numbers, email addresses, SSNs, medical record numbers, health plan beneficiary numbers, account numbers, biometric identifiers, full-face photographs, and any health/treatment data linked to an individual.</p>
+
+        <div class="post-callout post-callout-warning">
+          <strong>Common Mistake:</strong> Many developers assume their wellness app doesn't need HIPAA compliance because it's "just fitness data." If your app shares data with a healthcare provider, insurer, or clinical system, you likely qualify as a Business Associate and must comply.
+        </div>
+
+        <h2>The Complete HIPAA Technical Safeguards Checklist</h2>
+
+        <h3>✅ Encryption</h3>
+        <ul>
+          <li>All PHI encrypted at rest using AES-256</li>
+          <li>All PHI encrypted in transit using TLS 1.2 minimum (TLS 1.3 recommended)</li>
+          <li>Mobile device storage encrypted (iOS Data Protection, Android Keystore)</li>
+          <li>Database-level encryption enabled</li>
+          <li>Encryption keys stored separately from encrypted data (AWS KMS, Azure Key Vault)</li>
+          <li>End-to-end encryption for messaging features containing PHI</li>
+        </ul>
+
+        <h3>✅ Access Controls</h3>
+        <ul>
+          <li>Role-Based Access Control (RBAC) implemented — users see only what they need</li>
+          <li>Multi-factor authentication (MFA) required for all privileged users</li>
+          <li>Automatic session timeout after 15 minutes of inactivity (configurable)</li>
+          <li>Strong password policies enforced (12+ chars, complexity requirements)</li>
+          <li>Unique user IDs — no shared logins</li>
+          <li>Emergency access procedure documented and tested</li>
+          <li>API authentication using OAuth 2.0 or equivalent</li>
+        </ul>
+
+        <h3>✅ Audit Controls</h3>
+        <ul>
+          <li>All PHI access events logged (user ID, timestamp, record accessed, action taken)</li>
+          <li>Logs stored securely and tamper-proof (separate log storage, WORM storage preferred)</li>
+          <li>Log retention minimum 6 years (HIPAA requirement)</li>
+          <li>Automated anomaly detection and alerting for unusual access patterns</li>
+          <li>Regular log review process defined and executed</li>
+          <li>Failed login attempt logging and automated lockout</li>
+        </ul>
+
+        <h3>✅ Integrity Controls</h3>
+        <ul>
+          <li>Data integrity verification for PHI at rest (checksums, digital signatures)</li>
+          <li>PHI modification requires authorization and is logged</li>
+          <li>Data validation on all API inputs to prevent injection and corruption</li>
+          <li>Database backups encrypted and integrity-checked</li>
+        </ul>
+
+        <h3>✅ Transmission Security</h3>
+        <ul>
+          <li>Certificate pinning implemented in mobile apps</li>
+          <li>No PHI in URL query parameters (use POST body or headers)</li>
+          <li>No PHI in application logs or crash reports</li>
+          <li>Secure push notifications — don't include PHI in notification payload</li>
+          <li>VPN required for admin/internal access to PHI systems</li>
+        </ul>
+
+        <h2>Business Associate Agreements (BAAs)</h2>
+        <p>A BAA is a legally binding contract required between a Covered Entity and any vendor that handles PHI on their behalf. You need BAAs with every third-party service that may process, store, or transmit PHI:</p>
+        <ul>
+          <li>Cloud providers (AWS HIPAA BAA, Google Cloud BAA, Azure BAA)</li>
+          <li>Video conferencing (Twilio HIPAA, Daily.co, Zoom Healthcare)</li>
+          <li>Email providers (Amazon SES Healthcare, SendGrid BAA)</li>
+          <li>Analytics platforms (only HIPAA-compliant options; many standard analytics tools are NOT HIPAA eligible)</li>
+          <li>Customer support tools (Zendesk, Intercom — verify BAA availability)</li>
+          <li>Push notification services (Firebase Cloud Messaging may require special configuration)</li>
+        </ul>
+
+        <div class="post-callout post-callout-warning">
+          <strong>Critical:</strong> Using Google Analytics, Mixpanel, Amplitude, or similar analytics tools with PHI-linked events likely violates HIPAA. Use HIPAA-eligible analytics alternatives or anonymize all data before sending to these platforms.
+        </div>
+
+        <h2>Mobile-Specific HIPAA Requirements</h2>
+
+        <h3>iOS</h3>
+        <ul>
+          <li>Enable Data Protection API (complete protection class for sensitive files)</li>
+          <li>Disable app screenshots in the app switcher when PHI is visible</li>
+          <li>Clear clipboard after app background/terminate</li>
+          <li>No PHI in app debug logs (NSLog, os_log)</li>
+          <li>Keychain for sensitive credential storage</li>
+          <li>Face ID / Touch ID optional but must not be sole authentication factor</li>
+        </ul>
+
+        <h3>Android</h3>
+        <ul>
+          <li>Android Keystore for credential and key storage</li>
+          <li>FLAG_SECURE to prevent screenshots in task switcher</li>
+          <li>Clear clipboard on app lifecycle events</li>
+          <li>ProGuard/R8 obfuscation to prevent reverse engineering</li>
+          <li>Certificate pinning to prevent MITM attacks</li>
+          <li>No PHI in Android logs (Log.d, Log.e)</li>
+        </ul>
+
+        <h2>Breach Notification Requirements</h2>
+        <p>Despite best efforts, breaches happen. HIPAA requires:</p>
+        <ol>
+          <li><strong>Individual notification:</strong> Notify affected patients within 60 days of discovering a breach</li>
+          <li><strong>HHS notification:</strong> Report to HHS Office for Civil Rights within 60 days (or annually for smaller breaches)</li>
+          <li><strong>Media notification:</strong> If 500+ individuals in a state are affected, notify prominent media outlets</li>
+          <li><strong>Breach documentation:</strong> Document every breach regardless of size, including those determined to be low-risk</li>
+        </ol>
+
+        <h2>HIPAA Compliance Documentation</h2>
+        <p>HIPAA requires you to document all compliance activities. Essential documents:</p>
+        <ul>
+          <li>Security Risk Assessment (SRA) — required annually</li>
+          <li>Security policies and procedures</li>
+          <li>BAA register</li>
+          <li>Employee training records</li>
+          <li>Incident response plan and breach notification procedures</li>
+          <li>Disaster recovery and business continuity plan</li>
+          <li>Penetration testing reports</li>
+        </ul>
+
+        <div class="post-cta">
+          <h3>Need a HIPAA-Compliant App Built?</h3>
+          <p>TodayInTech builds HIPAA-compliant health applications with end-to-end security architecture, documentation, and BAA support. We've helped 50+ healthcare organizations achieve and maintain compliance.</p>
+          <a href="/#contact" class="btn btn-primary">Get a Free Security Review</a>
+        </div>
+
+        <h2>Conclusion</h2>
+        <p>HIPAA compliance for mobile health apps is a multi-layered challenge touching encryption, access control, audit logging, vendor management, and organizational policy. The good news: most of these requirements are achievable with modern cloud infrastructure and a security-first development mindset. The key is starting with compliance in mind — not retrofitting it after launch. Use this checklist as your baseline, invest in regular security assessments, and partner with experienced healthcare developers who understand the regulatory landscape.</p>
+
+      </div>
+
+      <div class="post-footer">
+        <div class="post-tags">
+          <span>HIPAA</span><span>Mobile Health</span><span>Security</span><span>PHI</span><span>Healthcare Compliance</span>
+        </div>
+        <a href="/blog/" class="back-to-blog">← Back to Blog</a>
+      </div>
+
+    </article>
+
+    <aside class="blog-sidebar">
+      <div class="sidebar-widget">
+        <h3>Recent Posts</h3>
+        <ul class="sidebar-posts">
+          <li><a href="/blog/telemedicine-app-development-guide-2026.html">How to Build a Telemedicine App in 2026</a></li>
+          <li><a href="/blog/ehr-emr-integration-best-practices.html">EHR vs EMR Integration Best Practices</a></li>
+          <li><a href="/blog/health-white-label-software-benefits.html">Health White-Label Software Benefits</a></li>
+          <li><a href="/blog/pharmacy-management-system-features.html">Pharmacy Management System Features</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-widget sidebar-cta">
+        <h3>HIPAA-Compliant Development</h3>
+        <p>Get a free security architecture review for your health app.</p>
+        <a href="/#contact" class="btn btn-primary btn-sm">Book Security Review</a>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="footer-logo">
+            <img src="../assets/logo.png" alt="TodayInTech Logo">
+            <span>TodayInTech</span>
+          </a>
+          <p>Building the future of digital health — one product at a time.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/#services">Services</a></li>
+            <li><a href="/#portfolio">Portfolio</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 TodayInTech. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) { navbar.style.background = 'rgba(6, 9, 17, 0.98)'; navbar.style.boxShadow = '0 2px 30px rgba(0,0,0,0.4)'; }
+      else { navbar.style.background = ''; navbar.style.boxShadow = ''; }
+    });
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    if (navToggle) { navToggle.addEventListener('click', () => { navLinks.classList.toggle('active'); navToggle.classList.toggle('active'); }); }
+  </script>
+</body>
+</html>
