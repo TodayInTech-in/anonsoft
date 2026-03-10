@@ -208,8 +208,8 @@ Ready to build your next health tech product? Let's talk!
 
 | Channel | Details |
 |---------|---------|
-| 📧 **Email** | [hello@todayintech.com](mailto:hello@todayintech.com) |
-| 📞 **Phone** | +1 (234) 567-890 |
+| 📧 **Email** | [contact@todayintech.in](mailto:contact@todayintech.in) |
+| 📞 **Phone** | +91 7679349780 |
 | 🌐 **Website** | [todayintech.com](https://todayintech.com) |
 | 📍 **Location** | Bengaluru, India |
 
@@ -227,6 +227,6 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 <p align="center">
   <a href="https://todayintech.com">Website</a> •
-  <a href="mailto:hello@todayintech.com">Email</a> •
+  <a href="mailto:contact@todayintech.in">Email</a> •
   <a href="https://linkedin.com/company/todayintech">LinkedIn</a>
 </p>
