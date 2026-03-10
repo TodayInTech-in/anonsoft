@@ -1,558 +1,985 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TodayInTech — Health White-Label Software & Custom Solutions</title>
-  <meta name="description" content="TodayInTech specializes in health white-label software, custom app development, and scalable tech solutions. Trusted by 50+ clients worldwide. Book a free consultation today.">
-  <meta name="keywords" content="health software, white label, telemedicine, pharmacy app, fitness app, custom software development, TodayInTech">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- ===== PRIMARY SEO META TAGS ===== -->
+  <title>TodayInTech — #1 Health White-Label Software Company | Telemedicine, EHR, Pharmacy & Wellness App Development
+  </title>
+  <meta name="description"
+    content="TodayInTech is a leading health white-label software development company. We build custom telemedicine platforms, EHR/EMR systems, pharmacy apps, fitness trackers, and HIPAA-compliant healthcare solutions. 50+ clients, 120+ projects delivered. Book a free consultation today.">
+  <meta name="keywords"
+    content="health white label software, white label healthcare app, telemedicine app development, EHR software company, EMR development, pharmacy management system, fitness app development, HIPAA compliant software, custom healthcare software, medical app development, patient management system, health tech company, white label medical software, hospital management software, clinic management app, wellness app development, health SaaS platform, digital health solutions, healthcare IT company, mHealth app development, remote patient monitoring, e-prescription software, health API integration, HL7 FHIR integration, React Native health app, Flutter medical app, custom software development company, mobile app development company, web application development, cloud healthcare solutions, TodayInTech, today in tech, todayintech software">
   <meta name="author" content="TodayInTech">
-  <meta property="og:title" content="TodayInTech — Health White-Label Software & Custom Solutions">
-  <meta property="og:description" content="Empowering healthcare businesses with white-label software solutions. Custom apps, scalable platforms, and expert engineering.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+  <link rel="canonical" href="https://todayintech.com/">
+
+  <!-- ===== GEO & LANGUAGE TAGS ===== -->
+  <meta name="geo.region" content="IN-KA">
+  <meta name="geo.placename" content="Bengaluru">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="3 days">
+  <meta name="rating" content="general">
+  <meta name="distribution" content="global">
+
+  <!-- ===== OPEN GRAPH (Facebook, LinkedIn) ===== -->
+  <meta property="og:title" content="TodayInTech — #1 Health White-Label Software & Custom App Development Company">
+  <meta property="og:description"
+    content="Build your branded health platform in weeks. We specialize in white-label telemedicine, EHR, pharmacy apps, and HIPAA-compliant healthcare software. 50+ clients worldwide. Book a free call today.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://todayintech.com/">
+  <meta property="og:image" content="https://todayintech.com/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="TodayInTech - Health White-Label Software Development Company">
+  <meta property="og:site_name" content="TodayInTech">
+  <meta property="og:locale" content="en_US">
+
+  <!-- ===== TWITTER CARD ===== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TodayInTech — Health White-Label Software & Custom Solutions">
+  <meta name="twitter:description"
+    content="Leading health tech company building white-label telemedicine, EHR, pharmacy & wellness apps. 120+ projects delivered. Book a free consultation.">
+  <meta name="twitter:image" content="https://todayintech.com/assets/og-image.png">
+  <meta name="twitter:image:alt" content="TodayInTech Health Software Solutions">
+  <meta name="twitter:site" content="@todayintech">
+  <meta name="twitter:creator" content="@todayintech">
+
+  <!-- ===== FAVICON & ICONS ===== -->
   <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+
+  <!-- ===== PRECONNECT & STYLESHEET ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="sitemap" type="application/xml" href="sitemap.xml">
   <link rel="stylesheet" href="style.css">
+
+  <!-- ===== JSON-LD STRUCTURED DATA ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "TodayInTech",
+    "alternateName": ["Today In Tech", "TodayInTech Software", "TodayInTech Health Tech"],
+    "url": "https://todayintech.com",
+    "logo": "https://todayintech.com/assets/logo.png",
+    "image": "https://todayintech.com/assets/og-image.png",
+    "description": "TodayInTech is a leading health white-label software development company specializing in telemedicine, EHR/EMR, pharmacy management, fitness apps, and HIPAA-compliant healthcare solutions.",
+    "foundingDate": "2021",
+    "numberOfEmployees": {
+      "@type": "QuantitativeValue",
+      "minValue": 30,
+      "maxValue": 50
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bengaluru",
+      "addressRegion": "Karnataka",
+      "addressCountry": "IN"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-234-567-890",
+      "contactType": "sales",
+      "email": "hello@todayintech.com",
+      "availableLanguage": ["English", "Hindi"]
+    },
+    "sameAs": [
+      "https://twitter.com/todayintech",
+      "https://linkedin.com/company/todayintech",
+      "https://github.com/todayintech",
+      "https://instagram.com/todayintech"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "50",
+      "bestRating": "5"
+    },
+    "knowsAbout": ["Health Software", "White Label Solutions", "Telemedicine", "EHR", "EMR", "HIPAA Compliance", "Mobile App Development", "React Native", "Flutter", "Healthcare IT"]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "TodayInTech",
+    "url": "https://todayintech.com",
+    "description": "Health White-Label Software Development Company",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://todayintech.com/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "TodayInTech",
+    "image": "https://todayintech.com/assets/logo.png",
+    "url": "https://todayintech.com",
+    "telephone": "+1-234-567-890",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bengaluru",
+      "addressRegion": "Karnataka",
+      "addressCountry": "IN"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Software Development Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Health White-Label Software Development",
+            "description": "Custom white-label healthcare platforms including telemedicine, EHR/EMR, patient portals, and e-prescription systems."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Mobile App Development",
+            "description": "Cross-platform mobile apps using React Native and Flutter for healthcare, e-commerce, and enterprise solutions."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Web Application Development",
+            "description": "Modern SaaS platforms, admin dashboards, and customer portals built with React, Next.js, and Node.js."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Cloud & DevOps Services",
+            "description": "Scalable AWS cloud infrastructure, Docker containerization, Kubernetes orchestration, and CI/CD automation."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "UI/UX Design",
+            "description": "Human-centered design, Figma prototyping, usability testing, and conversion-optimized interfaces."
+          }
+        }
+      ]
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is health white-label software?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Health white-label software is a pre-built healthcare platform that can be rebranded and customized with your company's logo, colors, and features. TodayInTech builds white-label solutions for telemedicine, EHR/EMR, pharmacy management, and patient portals, allowing you to launch your branded health platform in weeks instead of months."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does it cost to build a healthcare app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The cost varies based on complexity, features, and platform. A basic health app MVP starts from $15,000-$30,000, while a comprehensive white-label platform with telemedicine, EHR, and payment integration can range from $50,000-$150,000. Contact TodayInTech for a free consultation and custom quote."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is TodayInTech HIPAA compliant?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, all healthcare products built by TodayInTech are HIPAA compliant with enterprise-grade security including end-to-end encryption, secure data storage, access controls, and audit logging. We follow healthcare industry best practices to ensure patient data protection."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to develop a telemedicine app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "With our white-label approach, a telemedicine app can be launched in 4-8 weeks. Custom telemedicine platforms with advanced features like AI diagnostics, multi-provider scheduling, and EHR integration typically take 3-6 months. Our agile process ensures rapid delivery without compromising quality."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What technologies does TodayInTech use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We use industry-leading technologies including React, React Native, Flutter, Next.js, Node.js, Python, MongoDB, PostgreSQL, AWS, Docker, Kubernetes, Firebase, and GraphQL. Our tech stack is chosen to ensure scalability, performance, and long-term maintainability."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does TodayInTech provide post-launch support?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we provide 24/7 post-launch support and maintenance. This includes bug fixes, performance monitoring, security updates, feature enhancements, and dedicated account management. We believe in long-term partnerships, not one-off projects."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://todayintech.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://todayintech.com/#services" },
+      { "@type": "ListItem", "position": 3, "name": "Portfolio", "item": "https://todayintech.com/#portfolio" },
+      { "@type": "ListItem", "position": 4, "name": "Contact", "item": "https://todayintech.com/#contact" }
+    ]
+  }
+  </script>
 </head>
+
 <body>
 
-  <!-- ===== NAVIGATION ===== -->
-  <nav class="navbar" id="navbar">
-    <div class="container">
-      <a href="#" class="nav-logo">
-        <img src="assets/logo.png" alt="TodayInTech Logo">
-        <span class="nav-logo-text">TodayInTech</span>
-      </a>
-      <div class="nav-links" id="navLinks">
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#process">Process</a>
-        <a href="#testimonials">Reviews</a>
-        <a href="#contact" class="nav-cta" id="navCta">Book a Call</a>
+  <!-- ===== HEADER / NAVIGATION ===== -->
+  <header>
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <a href="#" class="nav-logo">
+          <img src="assets/logo.png" alt="TodayInTech Logo">
+          <span class="nav-logo-text">TodayInTech</span>
+        </a>
+        <div class="nav-links" id="navLinks">
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#process">Process</a>
+          <a href="#testimonials">Reviews</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact" class="nav-cta" id="navCta">Book a Call</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
-  <!-- ===== HERO SECTION ===== -->
-  <section class="hero" id="hero">
-    <div class="hero-bg">
-      <img src="assets/hero-bg.png" alt="Hero background">
-    </div>
-    <div class="bg-glow glow-1"></div>
-    <div class="bg-glow glow-2"></div>
-    <div class="bg-grid"></div>
+  <main>
 
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-badge">
-          <span class="pulse"></span>
-          Trusted by 50+ Healthcare Brands
-        </div>
-        <h1 class="hero-title">
-          Building the Future of <span class="gradient-text">Health Tech</span> Software
-        </h1>
-        <p class="hero-description">
-          We design, develop, and deploy white-label health software that empowers clinics, pharmacies, and wellness brands to scale faster — without building from scratch.
-        </p>
-        <div class="hero-buttons">
-          <a href="#contact" class="btn-primary" id="heroCta">
-            <span>📞</span> Book a Free Call
-          </a>
-          <a href="#portfolio" class="btn-secondary">
-            <span>🚀</span> View Our Work
-          </a>
-        </div>
-        <div class="hero-stats">
-          <div class="hero-stat">
-            <div class="hero-stat-number counter" data-target="50">0</div>
-            <div class="hero-stat-label">Happy Clients</div>
-          </div>
-          <div class="hero-stat">
-            <div class="hero-stat-number counter" data-target="120">0</div>
-            <div class="hero-stat-label">Projects Delivered</div>
-          </div>
-          <div class="hero-stat">
-            <div class="hero-stat-number counter" data-target="99">0</div>
-            <div class="hero-stat-label">% Satisfaction</div>
-          </div>
-        </div>
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <img src="assets/hero-bg.png" alt="Hero background">
       </div>
+      <div class="bg-glow glow-1"></div>
+      <div class="bg-glow glow-2"></div>
+      <div class="bg-grid"></div>
 
-      <div class="hero-visual">
-        <div class="hero-visual-wrapper">
-          <div class="hero-card">
-            <div class="hero-card-header">
-              <div class="hero-card-dot"></div>
-              <div class="hero-card-dot"></div>
-              <div class="hero-card-dot"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse"></span>
+            Trusted by 50+ Healthcare Brands
+          </div>
+          <h1 class="hero-title">
+            Building the Future of <span class="gradient-text">Health Tech</span> Software
+          </h1>
+          <p class="hero-description">
+            We design, develop, and deploy white-label health software that empowers clinics, pharmacies, and wellness
+            brands to scale faster — without building from scratch.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn-primary" id="heroCta">
+              <span>📞</span> Book a Free Call
+            </a>
+            <a href="#portfolio" class="btn-secondary">
+              <span>🚀</span> View Our Work
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <div class="hero-stat-number counter" data-target="50">0</div>
+              <div class="hero-stat-label">Happy Clients</div>
             </div>
-            <div class="hero-card-content">
-              <img src="assets/project-health-app.png" alt="Health App Dashboard Preview">
+            <div class="hero-stat">
+              <div class="hero-stat-number counter" data-target="120">0</div>
+              <div class="hero-stat-label">Projects Delivered</div>
             </div>
-          </div>
-
-          <div class="floating-badge badge-1">
-            <div class="floating-badge-icon green">✓</div>
-            <div>
-              <div class="floating-badge-text">Uptime</div>
-              <div class="floating-badge-value">99.9%</div>
-            </div>
-          </div>
-
-          <div class="floating-badge badge-2">
-            <div class="floating-badge-icon blue">⚡</div>
-            <div>
-              <div class="floating-badge-text">Deployment</div>
-              <div class="floating-badge-value">2x Faster</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== TRUSTED BY ===== -->
-  <section class="trusted-by">
-    <div class="container">
-      <p class="trusted-label">Trusted by Industry Leaders</p>
-      <div class="trusted-logos">
-        <div class="trusted-logo">🏥 MediCare+</div>
-        <div class="trusted-logo">💊 PharmaLink</div>
-        <div class="trusted-logo">🏋️ FitPulse</div>
-        <div class="trusted-logo">🧬 HealthBridge</div>
-        <div class="trusted-logo">🩺 DocConnect</div>
-        <div class="trusted-logo">🧘 WellnessHub</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== SERVICES SECTION ===== -->
-  <section class="services" id="services">
-    <div class="bg-glow"></div>
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">What We Do</span>
-        <h2 class="section-title">Solutions That Drive Healthcare Innovation</h2>
-        <p class="section-subtitle">From white-label health platforms to custom software — we build products that matter.</p>
-      </div>
-
-      <div class="services-grid">
-        <div class="service-card reveal">
-          <div class="service-icon icon-blue">🏥</div>
-          <h3>Health White-Label Software</h3>
-          <p>Launch your branded health platform in weeks, not months. Our white-label solutions cover telemedicine, patient management, e-prescriptions, and more.</p>
-          <div class="service-tags">
-            <span class="service-tag">Telemedicine</span>
-            <span class="service-tag">EHR/EMR</span>
-            <span class="service-tag">Patient Portal</span>
-          </div>
-        </div>
-
-        <div class="service-card reveal">
-          <div class="service-icon icon-purple">📱</div>
-          <h3>Mobile App Development</h3>
-          <p>Cross-platform mobile apps built with React Native and Flutter. From healthcare apps to e-commerce — performant, beautiful, and scalable.</p>
-          <div class="service-tags">
-            <span class="service-tag">React Native</span>
-            <span class="service-tag">Flutter</span>
-            <span class="service-tag">iOS & Android</span>
-          </div>
-        </div>
-
-        <div class="service-card reveal">
-          <div class="service-icon icon-green">🌐</div>
-          <h3>Web Application Development</h3>
-          <p>Modern, responsive web applications built with cutting-edge technologies. From SaaS platforms to admin dashboards and customer portals.</p>
-          <div class="service-tags">
-            <span class="service-tag">React</span>
-            <span class="service-tag">Next.js</span>
-            <span class="service-tag">Node.js</span>
-          </div>
-        </div>
-
-        <div class="service-card reveal">
-          <div class="service-icon icon-red">☁️</div>
-          <h3>Cloud & DevOps</h3>
-          <p>Scalable cloud infrastructure, CI/CD pipelines, and deployment automation. We ensure your applications run smoothly at any scale.</p>
-          <div class="service-tags">
-            <span class="service-tag">AWS</span>
-            <span class="service-tag">Docker</span>
-            <span class="service-tag">Kubernetes</span>
-          </div>
-        </div>
-
-        <div class="service-card reveal">
-          <div class="service-icon icon-teal">🔗</div>
-          <h3>API & Integration Services</h3>
-          <p>Seamless third-party integrations, payment gateways, HL7/FHIR compliance, and custom API development for healthcare ecosystems.</p>
-          <div class="service-tags">
-            <span class="service-tag">HL7/FHIR</span>
-            <span class="service-tag">REST APIs</span>
-            <span class="service-tag">Webhooks</span>
-          </div>
-        </div>
-
-        <div class="service-card reveal">
-          <div class="service-icon icon-orange">🎨</div>
-          <h3>UI/UX Design</h3>
-          <p>Human-centered design that converts. We craft intuitive interfaces and delightful user experiences backed by research and usability testing.</p>
-          <div class="service-tags">
-            <span class="service-tag">Figma</span>
-            <span class="service-tag">Prototyping</span>
-            <span class="service-tag">User Research</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== ABOUT / WHY US SECTION ===== -->
-  <section class="about" id="about">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-content reveal">
-          <span class="section-label">Why TodayInTech</span>
-          <h2 class="section-title">We Don't Just Build Software. We Build Partnerships.</h2>
-          <p class="section-subtitle">With deep expertise in health tech and a passionate team of engineers, designers, and strategists — we're committed to turning your vision into reality.</p>
-
-          <div class="about-features">
-            <div class="about-feature">
-              <div class="about-feature-icon">⚡</div>
-              <h4>Fast Delivery</h4>
-              <p>Launch MVPs in weeks with our agile development approach.</p>
-            </div>
-            <div class="about-feature">
-              <div class="about-feature-icon">🔒</div>
-              <h4>HIPAA Compliant</h4>
-              <p>All health products built with enterprise-grade security.</p>
-            </div>
-            <div class="about-feature">
-              <div class="about-feature-icon">🤝</div>
-              <h4>Dedicated Teams</h4>
-              <p>Your project gets a dedicated team of senior engineers.</p>
-            </div>
-            <div class="about-feature">
-              <div class="about-feature-icon">🔄</div>
-              <h4>24/7 Support</h4>
-              <p>Round-the-clock support and maintenance post-launch.</p>
+            <div class="hero-stat">
+              <div class="hero-stat-number counter" data-target="99">0</div>
+              <div class="hero-stat-label">% Satisfaction</div>
             </div>
           </div>
         </div>
 
-        <div class="about-stats-visual reveal">
-          <div class="stats-card-grid">
-            <div class="stat-card">
-              <div class="stat-number counter" data-target="50">0</div>
-              <div class="stat-label">Clients Served</div>
-              <div class="stat-sublabel">across 12 countries</div>
+        <div class="hero-visual">
+          <div class="hero-visual-wrapper">
+            <div class="hero-card">
+              <div class="hero-card-header">
+                <div class="hero-card-dot"></div>
+                <div class="hero-card-dot"></div>
+                <div class="hero-card-dot"></div>
+              </div>
+              <div class="hero-card-content">
+                <img src="assets/project-health-app.png" alt="Health App Dashboard Preview">
+              </div>
             </div>
-            <div class="stat-card">
-              <div class="stat-number counter" data-target="120">0</div>
-              <div class="stat-label">Projects Delivered</div>
-              <div class="stat-sublabel">on time, every time</div>
+
+            <div class="floating-badge badge-1">
+              <div class="floating-badge-icon green">✓</div>
+              <div>
+                <div class="floating-badge-text">Uptime</div>
+                <div class="floating-badge-value">99.9%</div>
+              </div>
             </div>
-            <div class="stat-card">
-              <div class="stat-number counter" data-target="5">0</div>
-              <div class="stat-label">Years Experience</div>
-              <div class="stat-sublabel">in health technology</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-number counter" data-target="35">0</div>
-              <div class="stat-label">Team Members</div>
-              <div class="stat-sublabel">engineers & designers</div>
+
+            <div class="floating-badge badge-2">
+              <div class="floating-badge-icon blue">⚡</div>
+              <div>
+                <div class="floating-badge-text">Deployment</div>
+                <div class="floating-badge-value">2x Faster</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== PORTFOLIO SECTION ===== -->
-  <section class="portfolio" id="portfolio">
-    <div class="bg-glow"></div>
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Our Work</span>
-        <h2 class="section-title">Projects We're Proud Of</h2>
-        <p class="section-subtitle">From concept to launch — see how we've helped healthcare and technology businesses thrive.</p>
-      </div>
-
-      <div class="portfolio-grid">
-        <div class="portfolio-card reveal">
-          <div class="portfolio-image">
-            <img src="assets/project-health-app.png" alt="MediCare Pro - Patient Management System">
-            <div class="portfolio-image-overlay"></div>
-          </div>
-          <div class="portfolio-info">
-            <span class="portfolio-category">Health White-Label</span>
-            <h3>MediCare Pro — Patient Management System</h3>
-            <p>A comprehensive white-label platform for clinics to manage patient records, appointments, billing, and telemedicine — all under their own brand.</p>
-            <div class="portfolio-tech">
-              <span>React Native</span>
-              <span>Node.js</span>
-              <span>MongoDB</span>
-              <span>AWS</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio-card reveal">
-          <div class="portfolio-image">
-            <img src="assets/project-telemedicine.png" alt="DocConnect - Telemedicine Platform">
-            <div class="portfolio-image-overlay"></div>
-          </div>
-          <div class="portfolio-info">
-            <span class="portfolio-category">Telemedicine</span>
-            <h3>DocConnect — Virtual Care Platform</h3>
-            <p>End-to-end telemedicine solution with HD video consultations, e-prescriptions, health records, and integrated payment processing.</p>
-            <div class="portfolio-tech">
-              <span>React</span>
-              <span>WebRTC</span>
-              <span>Python</span>
-              <span>PostgreSQL</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio-card reveal">
-          <div class="portfolio-image">
-            <img src="assets/project-pharmacy.png" alt="PharmaLink - Pharmacy Management">
-            <div class="portfolio-image-overlay"></div>
-          </div>
-          <div class="portfolio-info">
-            <span class="portfolio-category">Pharmacy Tech</span>
-            <h3>PharmaLink — Smart Pharmacy System</h3>
-            <p>Inventory management, prescription tracking, automated reordering, and customer-facing mobile app for online pharmacy operations.</p>
-            <div class="portfolio-tech">
-              <span>Flutter</span>
-              <span>Firebase</span>
-              <span>Express.js</span>
-              <span>Redis</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio-card reveal">
-          <div class="portfolio-image">
-            <img src="assets/project-fitness.png" alt="FitPulse - Fitness & Wellness App">
-            <div class="portfolio-image-overlay"></div>
-          </div>
-          <div class="portfolio-info">
-            <span class="portfolio-category">Wellness & Fitness</span>
-            <h3>FitPulse — Health & Fitness Tracker</h3>
-            <p>AI-powered fitness app with personalized workout plans, nutrition tracking, wearable integration, and community features.</p>
-            <div class="portfolio-tech">
-              <span>React Native</span>
-              <span>TensorFlow</span>
-              <span>GraphQL</span>
-              <span>GCP</span>
-            </div>
-          </div>
+    <!-- ===== TRUSTED BY ===== -->
+    <section class="trusted-by">
+      <div class="container">
+        <p class="trusted-label">Trusted by Industry Leaders</p>
+        <div class="trusted-logos">
+          <div class="trusted-logo">🏥 MediCare+</div>
+          <div class="trusted-logo">💊 PharmaLink</div>
+          <div class="trusted-logo">🏋️ FitPulse</div>
+          <div class="trusted-logo">🧬 HealthBridge</div>
+          <div class="trusted-logo">🩺 DocConnect</div>
+          <div class="trusted-logo">🧘 WellnessHub</div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== PROCESS SECTION ===== -->
-  <section class="process" id="process">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">How We Work</span>
-        <h2 class="section-title">From Idea to Impact in 4 Steps</h2>
-        <p class="section-subtitle">Our proven process ensures every project is delivered on time, on budget, and beyond expectations.</p>
-      </div>
+    <!-- ===== SERVICES SECTION ===== -->
+    <section class="services" id="services">
+      <div class="bg-glow"></div>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">What We Do</span>
+          <h2 class="section-title">Solutions That Drive Healthcare Innovation</h2>
+          <p class="section-subtitle">From white-label health platforms to custom software — we build products that
+            matter.</p>
+        </div>
 
-      <div class="process-steps">
-        <div class="process-step reveal">
-          <div class="process-step-number">01</div>
-          <h3>Discovery & Strategy</h3>
-          <p>We dive deep into your requirements, market, and goals to craft the perfect roadmap for your product.</p>
-        </div>
-        <div class="process-step reveal">
-          <div class="process-step-number">02</div>
-          <h3>Design & Prototype</h3>
-          <p>Our designers create stunning UI/UX prototypes that you can test and iterate before development begins.</p>
-        </div>
-        <div class="process-step reveal">
-          <div class="process-step-number">03</div>
-          <h3>Development & Testing</h3>
-          <p>Agile sprints, continuous integration, and rigorous QA — we build robust software that just works.</p>
-        </div>
-        <div class="process-step reveal">
-          <div class="process-step-number">04</div>
-          <h3>Launch & Support</h3>
-          <p>From deployment to ongoing maintenance — we're with you every step of the way post-launch.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== TESTIMONIALS SECTION ===== -->
-  <section class="testimonials" id="testimonials">
-    <div class="bg-glow"></div>
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Client Reviews</span>
-        <h2 class="section-title">What Our Clients Say About Us</h2>
-        <p class="section-subtitle">Don't just take our word for it — hear from the businesses we've helped transform.</p>
-      </div>
-
-      <div class="testimonials-grid">
-        <div class="testimonial-card reveal">
-          <div class="testimonial-stars">
-            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-          </div>
-          <p class="testimonial-text">TodayInTech transformed our clinic's operations. Their white-label platform saved us 6 months of development and launched perfectly under our brand. The team's healthcare domain expertise is unmatched.</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar av-1">DR</div>
-            <div>
-              <div class="testimonial-name">Dr. Rahul Mehta</div>
-              <div class="testimonial-role">CEO, MediCare Plus • India</div>
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <div class="service-icon icon-blue">🏥</div>
+            <h3>Health White-Label Software</h3>
+            <p>Launch your branded health platform in weeks, not months. Our white-label solutions cover telemedicine,
+              patient management, e-prescriptions, and more.</p>
+            <div class="service-tags">
+              <span class="service-tag">Telemedicine</span>
+              <span class="service-tag">EHR/EMR</span>
+              <span class="service-tag">Patient Portal</span>
             </div>
           </div>
-        </div>
 
-        <div class="testimonial-card reveal">
-          <div class="testimonial-stars">
-            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-          </div>
-          <p class="testimonial-text">Working with TodayInTech was seamless. They delivered our telemedicine app ahead of schedule with exceptional quality. The post-launch support has been incredible — truly a partner, not just a vendor.</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar av-2">SA</div>
-            <div>
-              <div class="testimonial-name">Sarah Anderson</div>
-              <div class="testimonial-role">CTO, DocConnect • USA</div>
+          <div class="service-card reveal">
+            <div class="service-icon icon-purple">📱</div>
+            <h3>Mobile App Development</h3>
+            <p>Cross-platform mobile apps built with React Native and Flutter. From healthcare apps to e-commerce —
+              performant, beautiful, and scalable.</p>
+            <div class="service-tags">
+              <span class="service-tag">React Native</span>
+              <span class="service-tag">Flutter</span>
+              <span class="service-tag">iOS & Android</span>
             </div>
           </div>
-        </div>
 
-        <div class="testimonial-card reveal">
-          <div class="testimonial-stars">
-            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-          </div>
-          <p class="testimonial-text">The pharmacy management system they built for us handles 10,000+ daily transactions flawlessly. Their attention to detail and understanding of pharma workflows is outstanding.</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar av-3">AK</div>
-            <div>
-              <div class="testimonial-name">Ahmed Khalil</div>
-              <div class="testimonial-role">Founder, PharmaLink • UAE</div>
+          <div class="service-card reveal">
+            <div class="service-icon icon-green">🌐</div>
+            <h3>Web Application Development</h3>
+            <p>Modern, responsive web applications built with cutting-edge technologies. From SaaS platforms to admin
+              dashboards and customer portals.</p>
+            <div class="service-tags">
+              <span class="service-tag">React</span>
+              <span class="service-tag">Next.js</span>
+              <span class="service-tag">Node.js</span>
             </div>
           </div>
-        </div>
 
-        <div class="testimonial-card reveal">
-          <div class="testimonial-stars">
-            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-          </div>
-          <p class="testimonial-text">We've worked with many dev shops, but TodayInTech is different. They truly care about the product and our users. Our fitness app hit 50K downloads in the first month thanks to their outstanding work.</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar av-4">JW</div>
-            <div>
-              <div class="testimonial-name">James Wilson</div>
-              <div class="testimonial-role">Co-Founder, FitPulse • UK</div>
+          <div class="service-card reveal">
+            <div class="service-icon icon-red">☁️</div>
+            <h3>Cloud & DevOps</h3>
+            <p>Scalable cloud infrastructure, CI/CD pipelines, and deployment automation. We ensure your applications
+              run
+              smoothly at any scale.</p>
+            <div class="service-tags">
+              <span class="service-tag">AWS</span>
+              <span class="service-tag">Docker</span>
+              <span class="service-tag">Kubernetes</span>
             </div>
           </div>
-        </div>
 
-        <div class="testimonial-card reveal">
-          <div class="testimonial-stars">
-            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-          </div>
-          <p class="testimonial-text">Their HIPAA-compliant solutions gave us the confidence to digitize our entire patient workflow. From EHR integration to the patient portal — everything works beautifully together.</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar av-5">MP</div>
-            <div>
-              <div class="testimonial-name">Dr. Maria Perez</div>
-              <div class="testimonial-role">Director, HealthBridge • Spain</div>
+          <div class="service-card reveal">
+            <div class="service-icon icon-teal">🔗</div>
+            <h3>API & Integration Services</h3>
+            <p>Seamless third-party integrations, payment gateways, HL7/FHIR compliance, and custom API development for
+              healthcare ecosystems.</p>
+            <div class="service-tags">
+              <span class="service-tag">HL7/FHIR</span>
+              <span class="service-tag">REST APIs</span>
+              <span class="service-tag">Webhooks</span>
             </div>
           </div>
-        </div>
 
-        <div class="testimonial-card reveal">
-          <div class="testimonial-stars">
-            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-          </div>
-          <p class="testimonial-text">TodayInTech delivered a wellness platform that exceeded all expectations. The UI is gorgeous, the performance is blazing fast, and our users love it. Highly recommend for any health-tech project.</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar av-6">LN</div>
-            <div>
-              <div class="testimonial-name">Lisa Nguyen</div>
-              <div class="testimonial-role">CEO, WellnessHub • Australia</div>
+          <div class="service-card reveal">
+            <div class="service-icon icon-orange">🎨</div>
+            <h3>UI/UX Design</h3>
+            <p>Human-centered design that converts. We craft intuitive interfaces and delightful user experiences backed
+              by research and usability testing.</p>
+            <div class="service-tags">
+              <span class="service-tag">Figma</span>
+              <span class="service-tag">Prototyping</span>
+              <span class="service-tag">User Research</span>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== TECH STACK ===== -->
-  <section class="tech-stack" id="tech">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Our Tech Stack</span>
-        <h2 class="section-title">Built With the Best Technologies</h2>
-        <p class="section-subtitle">We use industry-leading tools and frameworks to build scalable, secure, and high-performance solutions.</p>
+    <!-- ===== ABOUT / WHY US SECTION ===== -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content reveal">
+            <span class="section-label">Why TodayInTech</span>
+            <h2 class="section-title">We Don't Just Build Software. We Build Partnerships.</h2>
+            <p class="section-subtitle">With deep expertise in health tech and a passionate team of engineers,
+              designers,
+              and strategists — we're committed to turning your vision into reality.</p>
+
+            <div class="about-features">
+              <div class="about-feature">
+                <div class="about-feature-icon">⚡</div>
+                <h4>Fast Delivery</h4>
+                <p>Launch MVPs in weeks with our agile development approach.</p>
+              </div>
+              <div class="about-feature">
+                <div class="about-feature-icon">🔒</div>
+                <h4>HIPAA Compliant</h4>
+                <p>All health products built with enterprise-grade security.</p>
+              </div>
+              <div class="about-feature">
+                <div class="about-feature-icon">🤝</div>
+                <h4>Dedicated Teams</h4>
+                <p>Your project gets a dedicated team of senior engineers.</p>
+              </div>
+              <div class="about-feature">
+                <div class="about-feature-icon">🔄</div>
+                <h4>24/7 Support</h4>
+                <p>Round-the-clock support and maintenance post-launch.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-stats-visual reveal">
+            <div class="stats-card-grid">
+              <div class="stat-card">
+                <div class="stat-number counter" data-target="50">0</div>
+                <div class="stat-label">Clients Served</div>
+                <div class="stat-sublabel">across 12 countries</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number counter" data-target="120">0</div>
+                <div class="stat-label">Projects Delivered</div>
+                <div class="stat-sublabel">on time, every time</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number counter" data-target="5">0</div>
+                <div class="stat-label">Years Experience</div>
+                <div class="stat-sublabel">in health technology</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number counter" data-target="35">0</div>
+                <div class="stat-label">Team Members</div>
+                <div class="stat-sublabel">engineers & designers</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="tech-grid reveal">
-        <div class="tech-item"><span class="tech-item-icon">⚛️</span><span class="tech-item-name">React</span></div>
-        <div class="tech-item"><span class="tech-item-icon">📱</span><span class="tech-item-name">React Native</span></div>
-        <div class="tech-item"><span class="tech-item-icon">▲</span><span class="tech-item-name">Next.js</span></div>
-        <div class="tech-item"><span class="tech-item-icon">🟢</span><span class="tech-item-name">Node.js</span></div>
-        <div class="tech-item"><span class="tech-item-icon">🐍</span><span class="tech-item-name">Python</span></div>
-        <div class="tech-item"><span class="tech-item-icon">🍃</span><span class="tech-item-name">MongoDB</span></div>
-        <div class="tech-item"><span class="tech-item-icon">🐘</span><span class="tech-item-name">PostgreSQL</span></div>
-        <div class="tech-item"><span class="tech-item-icon">☁️</span><span class="tech-item-name">AWS</span></div>
-        <div class="tech-item"><span class="tech-item-icon">🐳</span><span class="tech-item-name">Docker</span></div>
-        <div class="tech-item"><span class="tech-item-icon">🔥</span><span class="tech-item-name">Firebase</span></div>
-        <div class="tech-item"><span class="tech-item-icon">🦋</span><span class="tech-item-name">Flutter</span></div>
-        <div class="tech-item"><span class="tech-item-icon">📊</span><span class="tech-item-name">GraphQL</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CTA SECTION ===== -->
-  <section class="cta" id="contact">
-    <div class="container">
-      <div class="cta-wrapper reveal">
-        <div class="bg-glow glow-1"></div>
-        <div class="bg-glow glow-2"></div>
-
-        <span class="section-label">Ready to Build?</span>
-        <h2 class="cta-title">Let's Turn Your <span class="gradient-text">Health Tech Vision</span> Into Reality</h2>
-        <p class="cta-subtitle">Book a free 30-minute consultation with our team. We'll discuss your project, offer insights, and show you how we can help — no strings attached.</p>
-
-        <div class="cta-buttons">
-          <button class="btn-primary" id="openModal" onclick="openBookingModal()">
-            <span>📞</span> Book a Free Consultation
-          </button>
-          <a href="mailto:hello@todayintech.com" class="btn-secondary">
-            <span>✉️</span> Email Us
-          </a>
+    <!-- ===== PORTFOLIO SECTION ===== -->
+    <section class="portfolio" id="portfolio">
+      <div class="bg-glow"></div>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Our Work</span>
+          <h2 class="section-title">Projects We're Proud Of</h2>
+          <p class="section-subtitle">From concept to launch — see how we've helped healthcare and technology businesses
+            thrive.</p>
         </div>
 
-        <div class="cta-trust">
-          <div class="cta-trust-item">
-            <span>✓</span> Free Consultation
+        <div class="portfolio-grid">
+          <div class="portfolio-card reveal">
+            <div class="portfolio-image">
+              <img src="assets/project-health-app.png" alt="MediCare Pro - Patient Management System">
+              <div class="portfolio-image-overlay"></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category">Health White-Label</span>
+              <h3>MediCare Pro — Patient Management System</h3>
+              <p>A comprehensive white-label platform for clinics to manage patient records, appointments, billing, and
+                telemedicine — all under their own brand.</p>
+              <div class="portfolio-tech">
+                <span>React Native</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+                <span>AWS</span>
+              </div>
+            </div>
           </div>
-          <div class="cta-trust-item">
-            <span>✓</span> No Obligation
+
+          <div class="portfolio-card reveal">
+            <div class="portfolio-image">
+              <img src="assets/project-telemedicine.png" alt="DocConnect - Telemedicine Platform">
+              <div class="portfolio-image-overlay"></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category">Telemedicine</span>
+              <h3>DocConnect — Virtual Care Platform</h3>
+              <p>End-to-end telemedicine solution with HD video consultations, e-prescriptions, health records, and
+                integrated payment processing.</p>
+              <div class="portfolio-tech">
+                <span>React</span>
+                <span>WebRTC</span>
+                <span>Python</span>
+                <span>PostgreSQL</span>
+              </div>
+            </div>
           </div>
-          <div class="cta-trust-item">
-            <span>✓</span> NDA Protected
+
+          <div class="portfolio-card reveal">
+            <div class="portfolio-image">
+              <img src="assets/project-pharmacy.png" alt="PharmaLink - Pharmacy Management">
+              <div class="portfolio-image-overlay"></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category">Pharmacy Tech</span>
+              <h3>PharmaLink — Smart Pharmacy System</h3>
+              <p>Inventory management, prescription tracking, automated reordering, and customer-facing mobile app for
+                online pharmacy operations.</p>
+              <div class="portfolio-tech">
+                <span>Flutter</span>
+                <span>Firebase</span>
+                <span>Express.js</span>
+                <span>Redis</span>
+              </div>
+            </div>
           </div>
-          <div class="cta-trust-item">
-            <span>✓</span> Response in 24hrs
+
+          <div class="portfolio-card reveal">
+            <div class="portfolio-image">
+              <img src="assets/project-fitness.png" alt="FitPulse - Fitness & Wellness App">
+              <div class="portfolio-image-overlay"></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category">Wellness & Fitness</span>
+              <h3>FitPulse — Health & Fitness Tracker</h3>
+              <p>AI-powered fitness app with personalized workout plans, nutrition tracking, wearable integration, and
+                community features.</p>
+              <div class="portfolio-tech">
+                <span>React Native</span>
+                <span>TensorFlow</span>
+                <span>GraphQL</span>
+                <span>GCP</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- ===== PROCESS SECTION ===== -->
+    <section class="process" id="process">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">How We Work</span>
+          <h2 class="section-title">From Idea to Impact in 4 Steps</h2>
+          <p class="section-subtitle">Our proven process ensures every project is delivered on time, on budget, and
+            beyond
+            expectations.</p>
+        </div>
+
+        <div class="process-steps">
+          <div class="process-step reveal">
+            <div class="process-step-number">01</div>
+            <h3>Discovery & Strategy</h3>
+            <p>We dive deep into your requirements, market, and goals to craft the perfect roadmap for your product.</p>
+          </div>
+          <div class="process-step reveal">
+            <div class="process-step-number">02</div>
+            <h3>Design & Prototype</h3>
+            <p>Our designers create stunning UI/UX prototypes that you can test and iterate before development begins.
+            </p>
+          </div>
+          <div class="process-step reveal">
+            <div class="process-step-number">03</div>
+            <h3>Development & Testing</h3>
+            <p>Agile sprints, continuous integration, and rigorous QA — we build robust software that just works.</p>
+          </div>
+          <div class="process-step reveal">
+            <div class="process-step-number">04</div>
+            <h3>Launch & Support</h3>
+            <p>From deployment to ongoing maintenance — we're with you every step of the way post-launch.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS SECTION ===== -->
+    <section class="testimonials" id="testimonials">
+      <div class="bg-glow"></div>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Client Reviews</span>
+          <h2 class="section-title">What Our Clients Say About Us</h2>
+          <p class="section-subtitle">Don't just take our word for it — hear from the businesses we've helped transform.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="testimonial-text">TodayInTech transformed our clinic's operations. Their white-label platform
+              saved
+              us 6 months of development and launched perfectly under our brand. The team's healthcare domain expertise
+              is
+              unmatched.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar av-1">DR</div>
+              <div>
+                <div class="testimonial-name">Dr. Rahul Mehta</div>
+                <div class="testimonial-role">CEO, MediCare Plus • India</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="testimonial-text">Working with TodayInTech was seamless. They delivered our telemedicine app ahead
+              of schedule with exceptional quality. The post-launch support has been incredible — truly a partner, not
+              just a vendor.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar av-2">SA</div>
+              <div>
+                <div class="testimonial-name">Sarah Anderson</div>
+                <div class="testimonial-role">CTO, DocConnect • USA</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="testimonial-text">The pharmacy management system they built for us handles 10,000+ daily
+              transactions flawlessly. Their attention to detail and understanding of pharma workflows is outstanding.
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar av-3">AK</div>
+              <div>
+                <div class="testimonial-name">Ahmed Khalil</div>
+                <div class="testimonial-role">Founder, PharmaLink • UAE</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="testimonial-text">We've worked with many dev shops, but TodayInTech is different. They truly care
+              about the product and our users. Our fitness app hit 50K downloads in the first month thanks to their
+              outstanding work.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar av-4">JW</div>
+              <div>
+                <div class="testimonial-name">James Wilson</div>
+                <div class="testimonial-role">Co-Founder, FitPulse • UK</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="testimonial-text">Their HIPAA-compliant solutions gave us the confidence to digitize our entire
+              patient workflow. From EHR integration to the patient portal — everything works beautifully together.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar av-5">MP</div>
+              <div>
+                <div class="testimonial-name">Dr. Maria Perez</div>
+                <div class="testimonial-role">Director, HealthBridge • Spain</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="testimonial-text">TodayInTech delivered a wellness platform that exceeded all expectations. The UI
+              is gorgeous, the performance is blazing fast, and our users love it. Highly recommend for any health-tech
+              project.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar av-6">LN</div>
+              <div>
+                <div class="testimonial-name">Lisa Nguyen</div>
+                <div class="testimonial-role">CEO, WellnessHub • Australia</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TECH STACK ===== -->
+    <section class="tech-stack" id="tech">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Our Tech Stack</span>
+          <h2 class="section-title">Built With the Best Technologies</h2>
+          <p class="section-subtitle">We use industry-leading tools and frameworks to build scalable, secure, and
+            high-performance solutions.</p>
+        </div>
+
+        <div class="tech-grid reveal">
+          <div class="tech-item"><span class="tech-item-icon">⚛️</span><span class="tech-item-name">React</span></div>
+          <div class="tech-item"><span class="tech-item-icon">📱</span><span class="tech-item-name">React Native</span>
+          </div>
+          <div class="tech-item"><span class="tech-item-icon">▲</span><span class="tech-item-name">Next.js</span></div>
+          <div class="tech-item"><span class="tech-item-icon">🟢</span><span class="tech-item-name">Node.js</span></div>
+          <div class="tech-item"><span class="tech-item-icon">🐍</span><span class="tech-item-name">Python</span></div>
+          <div class="tech-item"><span class="tech-item-icon">🍃</span><span class="tech-item-name">MongoDB</span></div>
+          <div class="tech-item"><span class="tech-item-icon">🐘</span><span class="tech-item-name">PostgreSQL</span>
+          </div>
+          <div class="tech-item"><span class="tech-item-icon">☁️</span><span class="tech-item-name">AWS</span></div>
+          <div class="tech-item"><span class="tech-item-icon">🐳</span><span class="tech-item-name">Docker</span></div>
+          <div class="tech-item"><span class="tech-item-icon">🔥</span><span class="tech-item-name">Firebase</span>
+          </div>
+          <div class="tech-item"><span class="tech-item-icon">🦋</span><span class="tech-item-name">Flutter</span></div>
+          <div class="tech-item"><span class="tech-item-icon">📊</span><span class="tech-item-name">GraphQL</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ SECTION ===== -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Frequently Asked Questions</span>
+          <h2 class="section-title">Everything You Need to Know About Our Health Software Solutions</h2>
+          <p class="section-subtitle">Got questions about white-label healthcare software, telemedicine development, or
+            working with TodayInTech? We've got answers.</p>
+        </div>
+
+        <div class="faq-grid reveal">
+          <details class="faq-item" open>
+            <summary class="faq-question">
+              <span>What is health white-label software and how does it work?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Health white-label software is a pre-built, fully functional healthcare platform that can be rebranded
+                with your company's logo, colors, domain, and custom features. At TodayInTech, we offer white-label
+                solutions for <strong>telemedicine</strong>, <strong>EHR/EMR systems</strong>, <strong>pharmacy
+                  management</strong>, <strong>patient portals</strong>, and <strong>wellness apps</strong>. This
+                approach
+                allows you to launch your branded health platform in 4-8 weeks instead of 6-12 months of custom
+                development, saving up to 70% on costs while maintaining full ownership and customization control.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>How much does it cost to build a custom healthcare app?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>The cost depends on complexity, features, and platforms. A <strong>basic health app MVP</strong> starts
+                from $15,000-$30,000. A comprehensive <strong>white-label telemedicine platform</strong> with video
+                calls,
+                e-prescriptions, EHR integration, and payment processing ranges from $50,000-$150,000. Our white-label
+                approach significantly reduces costs compared to building from scratch. <a href="#contact">Book a free
+                  consultation</a> for a custom quote tailored to your specific requirements.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Are your healthcare solutions HIPAA and GDPR compliant?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Absolutely. All healthcare products built by TodayInTech are fully <strong>HIPAA compliant</strong> and
+                can be configured for <strong>GDPR compliance</strong>. Our security measures include end-to-end
+                encryption (AES-256), secure cloud storage on AWS with BAA agreements, role-based access controls,
+                comprehensive audit logging, regular penetration testing, and SOC 2 compliance readiness. We follow
+                healthcare industry best practices to ensure complete patient data protection.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>How long does it take to develop a telemedicine or healthcare app?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>With our <strong>white-label approach</strong>, a fully branded telemedicine app can be launched in
+                <strong>4-8 weeks</strong>. Custom telemedicine platforms with advanced features like AI-powered
+                diagnostics, multi-provider scheduling, EHR integration, and insurance claim processing typically take
+                <strong>3-6 months</strong>. Our agile development process with 2-week sprints ensures transparency,
+                rapid
+                iteration, and delivery without compromising quality or security.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>What technologies does TodayInTech use for app development?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>We use industry-leading technologies chosen for scalability and performance: <strong>React &
+                  Next.js</strong> for web apps, <strong>React Native & Flutter</strong> for cross-platform mobile apps,
+                <strong>Node.js & Python</strong> for backend APIs, <strong>MongoDB & PostgreSQL</strong> for databases,
+                <strong>AWS & GCP</strong> for cloud infrastructure, <strong>Docker & Kubernetes</strong> for
+                containerization, and <strong>HL7 FHIR</strong> for healthcare data interoperability. Every tech
+                decision
+                is made to ensure long-term maintainability and scalability.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Do you provide post-launch support and maintenance?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Yes, we provide comprehensive <strong>24/7 post-launch support</strong> including bug fixes,
+                performance
+                monitoring, security patches, feature enhancements, server management, and dedicated account management.
+                We offer flexible support plans — from basic maintenance to full managed services. We believe in
+                building
+                long-term partnerships with our clients, which is why <strong>95% of our clients continue working with
+                  us</strong> after their initial project launch.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Can you integrate with existing hospital systems like Epic, Cerner, or Allscripts?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Yes, we specialize in <strong>healthcare system integrations</strong>. Our team has extensive
+                experience
+                integrating with major EHR systems including Epic, Cerner, Allscripts, and athenahealth via <strong>HL7
+                  FHIR APIs</strong>. We also handle integrations with pharmacy networks (Surescripts), insurance
+                providers, payment gateways (Stripe, Square), lab systems, medical device APIs, and wearable platforms
+                (Apple Health, Google Fit, Fitbit).</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>What industries does TodayInTech serve beyond healthcare?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>While healthcare is our core specialization, we also build exceptional software for
+                <strong>fintech</strong>, <strong>e-commerce</strong>, <strong>education (EdTech)</strong>,
+                <strong>fitness & wellness</strong>, <strong>logistics</strong>, and <strong>enterprise SaaS</strong>.
+                Our
+                expertise in building secure, scalable, and compliant systems translates perfectly across regulated
+                industries. With 120+ projects delivered across 12+ countries, we bring cross-industry insights to every
+                project.
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section class="cta" id="contact">
+      <div class="container">
+        <div class="cta-wrapper reveal">
+          <div class="bg-glow glow-1"></div>
+          <div class="bg-glow glow-2"></div>
+
+          <span class="section-label">Ready to Build?</span>
+          <h2 class="cta-title">Let's Turn Your <span class="gradient-text">Health Tech Vision</span> Into Reality</h2>
+          <p class="cta-subtitle">Book a free 30-minute consultation with our team. We'll discuss your project, offer
+            insights, and show you how we can help — no strings attached.</p>
+
+          <div class="cta-buttons">
+            <button class="btn-primary" id="openModal" onclick="openBookingModal()">
+              <span>📞</span> Book a Free Consultation
+            </button>
+            <a href="mailto:hello@todayintech.com" class="btn-secondary">
+              <span>✉️</span> Email Us
+            </a>
+          </div>
+
+          <div class="cta-trust">
+            <div class="cta-trust-item">
+              <span>✓</span> Free Consultation
+            </div>
+            <div class="cta-trust-item">
+              <span>✓</span> No Obligation
+            </div>
+            <div class="cta-trust-item">
+              <span>✓</span> NDA Protected
+            </div>
+            <div class="cta-trust-item">
+              <span>✓</span> Response in 24hrs
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer" id="footer">
@@ -563,7 +990,8 @@
             <img src="assets/logo.png" alt="TodayInTech Logo">
             <span class="nav-logo-text">TodayInTech</span>
           </a>
-          <p>Empowering healthcare and technology businesses with world-class software solutions. Your vision, our expertise.</p>
+          <p>Empowering healthcare and technology businesses with world-class software solutions. Your vision, our
+            expertise.</p>
           <div class="footer-socials">
             <a href="#" class="footer-social" aria-label="Twitter">𝕏</a>
             <a href="#" class="footer-social" aria-label="LinkedIn">in</a>
@@ -662,7 +1090,8 @@
 
           <div class="form-group">
             <label for="message">Tell us about your project</label>
-            <textarea id="message" placeholder="Briefly describe your project requirements, timeline, and budget..."></textarea>
+            <textarea id="message"
+              placeholder="Briefly describe your project requirements, timeline, and budget..."></textarea>
           </div>
 
           <button type="submit" class="btn-submit">
@@ -674,7 +1103,9 @@
       <div class="form-success" id="formSuccess">
         <div class="check-icon">✅</div>
         <h3>Thank You!</h3>
-        <p>Your booking request has been received. Our team will reach out to you within 24 hours to schedule your free consultation call.</p>
+        <p>Your booking request has been received. Our team will reach out to you within 24 hours to schedule your
+          free
+          consultation call.</p>
       </div>
     </div>
   </div>
@@ -682,4 +1113,5 @@
   <!-- ===== JAVASCRIPT ===== -->
   <script src="script.js"></script>
 </body>
+
 </html>
