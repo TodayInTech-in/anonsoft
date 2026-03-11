@@ -228,6 +228,9 @@
       }
     }
   </style>
+  <!-- Calendly -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </head>
 
 <body>
@@ -246,7 +249,7 @@
           <a href="/#testimonials">Reviews</a>
           <a href="/#faq">FAQ</a>
           <a href="/blog/" class="active">Blog</a>
-          <a href="/#contact" class="nav-cta" id="navCta">Book a Call</a>
+          <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/LaunchHealthApp/30min/'});return false;" class="nav-cta" id="navCta">Book a Call</a>
         </div>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
           <span></span>
@@ -412,7 +415,7 @@
             <li><a href="/#portfolio">Portfolio</a></li>
             <li><a href="/#about">About</a></li>
             <li><a href="/blog/">Blog</a></li>
-            <li><a href="/#contact">Contact</a></li>
+            <li><a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/LaunchHealthApp/30min/'});return false;">Contact</a></li>
           </ul>
         </div>
         <div class="footer-col">
