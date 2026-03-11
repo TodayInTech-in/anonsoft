@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Blog — TodayInTech | Health Tech Insights, App Development Guides & Digital Health Trends</title>
+  <meta name="description" content="Explore TodayInTech's blog for expert insights on telemedicine app development, EHR/EMR integration, HIPAA compliance, white-label healthcare software, and digital health trends in 2026.">
+  <meta name="keywords" content="health tech blog, telemedicine app development, EHR integration, HIPAA compliance, healthcare software development, digital health trends 2026, white label health app, pharmacy app development, fitness app development">
+  <meta name="author" content="TodayInTech">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://todayintech.com/blog/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="TodayInTech Blog — Health Tech Insights & Development Guides">
+  <meta property="og:description" content="Expert guides on telemedicine, EHR, HIPAA compliance, white-label healthcare software, and digital health trends.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://todayintech.com/blog/">
+  <meta property="og:image" content="https://todayintech.com/assets/og-image.png">
+  <meta property="og:site_name" content="TodayInTech">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TodayInTech Blog — Health Tech Insights">
+  <meta name="twitter:description" content="Expert guides on telemedicine, EHR, HIPAA compliance, and digital health trends.">
+  <meta name="twitter:image" content="https://todayintech.com/assets/og-image.png">
+  <meta name="twitter:site" content="@todayintech">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "TodayInTech Blog",
+    "url": "https://todayintech.com/blog/",
+    "description": "Expert insights on health tech, telemedicine, EHR, HIPAA compliance, and digital health software development.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "TodayInTech",
+      "url": "https://todayintech.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://todayintech.com/assets/logo.png"
+      }
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .blog-hero {
+      padding: 160px 0 80px;
+      text-align: center;
+      background: radial-gradient(ellipse at 50% 0%, rgba(0, 212, 255, 0.12) 0%, transparent 60%);
+    }
+    .blog-hero .badge {
+      display: inline-block;
+      background: rgba(0, 212, 255, 0.1);
+      border: 1px solid rgba(0, 212, 255, 0.3);
+      color: var(--primary);
+      padding: 6px 18px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .blog-hero h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 16px;
+    }
+    .blog-hero h1 span { color: var(--primary); }
+    .blog-hero p {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .blog-grid-section {
+      padding: 60px 0 100px;
+    }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 28px;
+    }
+    .blog-card {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+    }
+    .blog-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 50px rgba(0, 212, 255, 0.15);
+      border-color: rgba(0, 212, 255, 0.4);
+    }
+    .blog-card-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      background: linear-gradient(135deg, rgba(0,212,255,0.15), rgba(123,47,255,0.15));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+    }
+    .blog-card-body {
+      padding: 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .blog-card-meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .blog-card-category {
+      background: rgba(0, 212, 255, 0.1);
+      border: 1px solid rgba(0, 212, 255, 0.25);
+      color: var(--primary);
+      padding: 3px 12px;
+      border-radius: 50px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .blog-card-date {
+      color: var(--text-muted);
+      font-size: 0.8rem;
+    }
+    .blog-card-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+    .blog-card-excerpt {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      line-height: 1.6;
+      flex: 1;
+      margin-bottom: 18px;
+    }
+    .blog-card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 16px;
+      border-top: 1px solid var(--glass-border);
+    }
+    .blog-card-read {
+      color: var(--primary);
+      font-size: 0.85rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .blog-card-read::after { content: '→'; }
+    .blog-card-time {
+      color: var(--text-muted);
+      font-size: 0.8rem;
+    }
+    .featured-post {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-radius: 20px;
+    }
+    .featured-post .blog-card-img {
+      height: 100%;
+      min-height: 280px;
+      border-radius: 0;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+    .featured-post .blog-card-body {
+      padding: 36px;
+    }
+    .featured-post .blog-card-title {
+      font-size: 1.6rem;
+    }
+    .featured-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #fff;
+      padding: 3px 12px;
+      border-radius: 50px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 12px;
+    }
+    @media (max-width: 768px) {
+      .featured-post {
+        grid-template-columns: 1fr;
+      }
+      .featured-post .blog-card-img {
+        height: 200px;
+        border-radius: 0;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+      }
+      .blog-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <a href="/" class="nav-logo">
+          <img src="../assets/logo.png" alt="TodayInTech Logo">
+          <span class="nav-logo-text">TodayInTech</span>
+        </a>
+        <div class="nav-links" id="navLinks">
+          <a href="/#services">Services</a>
+          <a href="/#about">About</a>
+          <a href="/#portfolio">Portfolio</a>
+          <a href="/#process">Process</a>
+          <a href="/#testimonials">Reviews</a>
+          <a href="/#faq">FAQ</a>
+          <a href="/blog/" class="active">Blog</a>
+          <a href="/#contact" class="nav-cta" id="navCta">Book a Call</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="blog-hero">
+      <div class="container">
+        <div class="badge">Health Tech Blog</div>
+        <h1>Insights for <span>Digital Health</span> Leaders</h1>
+        <p>Expert guides on telemedicine, EHR integration, HIPAA compliance, white-label software, and the future of healthcare technology.</p>
+      </div>
+    </section>
+
+    <section class="blog-grid-section">
+      <div class="container">
+        <div class="blog-grid">
+
+          <!-- Featured Post -->
+          <a href="/blog/telemedicine-app-development-guide-2026.html" class="blog-card featured-post">
+            <div class="blog-card-img" style="background: linear-gradient(135deg, rgba(0,212,255,0.2), rgba(123,47,255,0.2)); font-size: 4rem;">🏥</div>
+            <div class="blog-card-body">
+              <div class="featured-badge">Featured</div>
+              <div class="blog-card-meta">
+                <span class="blog-card-category">Telemedicine</span>
+                <span class="blog-card-date">March 10, 2026</span>
+              </div>
+              <div class="blog-card-title">How to Build a Telemedicine App in 2026: Complete Development Guide</div>
+              <div class="blog-card-excerpt">Everything you need to know to build a scalable, HIPAA-compliant telemedicine platform in 2026 — from architecture decisions to key features, cost estimates, and technology stack recommendations.</div>
+              <div class="blog-card-footer">
+                <span class="blog-card-read">Read Article</span>
+                <span class="blog-card-time">12 min read</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Post 2 -->
+          <a href="/blog/health-white-label-software-benefits.html" class="blog-card">
+            <div class="blog-card-img" style="background: linear-gradient(135deg, rgba(123,47,255,0.2), rgba(0,230,118,0.15));">🏷️</div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <span class="blog-card-category">White-Label</span>
+                <span class="blog-card-date">March 9, 2026</span>
+              </div>
+              <div class="blog-card-title">Health White-Label Software: Why Your Business Needs It in 2026</div>
+              <div class="blog-card-excerpt">White-label health software lets you launch your branded platform in weeks, not months. Discover the top benefits, use cases, and what to look for in a white-label healthcare partner.</div>
+              <div class="blog-card-footer">
+                <span class="blog-card-read">Read Article</span>
+                <span class="blog-card-time">8 min read</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Post 3 -->
+          <a href="/blog/ehr-emr-integration-best-practices.html" class="blog-card">
+            <div class="blog-card-img" style="background: linear-gradient(135deg, rgba(0,230,118,0.15), rgba(0,212,255,0.15));">📋</div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <span class="blog-card-category">EHR / EMR</span>
+                <span class="blog-card-date">March 8, 2026</span>
+              </div>
+              <div class="blog-card-title">EHR vs EMR: Key Differences and Integration Best Practices</div>
+              <div class="blog-card-excerpt">Confused by EHR and EMR terminology? We break down the differences, explain HL7 FHIR integration, and share best practices for connecting your app with major health record systems.</div>
+              <div class="blog-card-footer">
+                <span class="blog-card-read">Read Article</span>
+                <span class="blog-card-time">10 min read</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Post 4 -->
+          <a href="/blog/hipaa-compliant-app-development.html" class="blog-card">
+            <div class="blog-card-img" style="background: linear-gradient(135deg, rgba(255,107,107,0.15), rgba(123,47,255,0.15));">🔒</div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <span class="blog-card-category">HIPAA</span>
+                <span class="blog-card-date">March 7, 2026</span>
+              </div>
+              <div class="blog-card-title">HIPAA Compliance Checklist for Mobile Health App Development</div>
+              <div class="blog-card-excerpt">Building a health app? HIPAA compliance isn't optional. This complete checklist covers technical safeguards, BAAs, PHI handling, audit controls, and everything developers need to stay compliant.</div>
+              <div class="blog-card-footer">
+                <span class="blog-card-read">Read Article</span>
+                <span class="blog-card-time">11 min read</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Post 5 -->
+          <a href="/blog/pharmacy-management-system-features.html" class="blog-card">
+            <div class="blog-card-img" style="background: linear-gradient(135deg, rgba(0,212,255,0.15), rgba(0,230,118,0.15));">💊</div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <span class="blog-card-category">Pharmacy</span>
+                <span class="blog-card-date">March 6, 2026</span>
+              </div>
+              <div class="blog-card-title">Pharmacy Management System: Must-Have Features for 2026</div>
+              <div class="blog-card-excerpt">A modern pharmacy management system does far more than track inventory. Explore the essential features — from e-prescriptions to automated refills and insurance verification — that drive efficiency and patient outcomes.</div>
+              <div class="blog-card-footer">
+                <span class="blog-card-read">Read Article</span>
+                <span class="blog-card-time">9 min read</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Post 6 -->
+          <a href="/blog/fitness-app-development-cost.html" class="blog-card">
+            <div class="blog-card-img" style="background: linear-gradient(135deg, rgba(0,230,118,0.15), rgba(255,107,107,0.15));">💪</div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <span class="blog-card-category">Fitness Apps</span>
+                <span class="blog-card-date">March 5, 2026</span>
+              </div>
+              <div class="blog-card-title">How Much Does It Cost to Develop a Fitness App in 2026?</div>
+              <div class="blog-card-excerpt">From simple workout trackers to AI-powered personal trainers, fitness app costs vary widely. We break down development costs by feature set, platform, and complexity with real 2026 pricing data.</div>
+              <div class="blog-card-footer">
+                <span class="blog-card-read">Read Article</span>
+                <span class="blog-card-time">9 min read</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Post 7 -->
+          <a href="/blog/ai-healthcare-trends-2026.html" class="blog-card">
+            <div class="blog-card-img" style="background: linear-gradient(135deg, rgba(123,47,255,0.2), rgba(0,212,255,0.15));">🤖</div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <span class="blog-card-category">AI in Health</span>
+                <span class="blog-card-date">March 4, 2026</span>
+              </div>
+              <div class="blog-card-title">Top AI Healthcare Technology Trends Reshaping Medicine in 2026</div>
+              <div class="blog-card-excerpt">AI is transforming every corner of healthcare — from diagnostic imaging to drug discovery and personalized treatment. Explore the top trends and what they mean for digital health product builders.</div>
+              <div class="blog-card-footer">
+                <span class="blog-card-read">Read Article</span>
+                <span class="blog-card-time">10 min read</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="footer-logo">
+            <img src="../assets/logo.png" alt="TodayInTech Logo">
+            <span>TodayInTech</span>
+          </a>
+          <p>Building the future of digital health — one product at a time.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/#services">Services</a></li>
+            <li><a href="/#portfolio">Portfolio</a></li>
+            <li><a href="/#about">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Blog Topics</h4>
+          <ul>
+            <li><a href="/blog/telemedicine-app-development-guide-2026.html">Telemedicine</a></li>
+            <li><a href="/blog/health-white-label-software-benefits.html">White-Label Health</a></li>
+            <li><a href="/blog/ehr-emr-integration-best-practices.html">EHR / EMR</a></li>
+            <li><a href="/blog/hipaa-compliant-app-development.html">HIPAA Compliance</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 TodayInTech. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar.style.background = 'rgba(6, 9, 17, 0.98)';
+        navbar.style.boxShadow = '0 2px 30px rgba(0,0,0,0.4)';
+      } else {
+        navbar.style.background = '';
+        navbar.style.boxShadow = '';
+      }
+    });
+
+    // Mobile menu
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    if (navToggle) {
+      navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        navToggle.classList.toggle('active');
+      });
+    }
+  </script>
+</body>
+</html>
