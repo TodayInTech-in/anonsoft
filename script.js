@@ -82,7 +82,8 @@ function initCounters() {
     const counters = document.querySelectorAll('.counter');
 
     const observerOptions = {
-        threshold: 0.5
+        threshold: 0.1,
+        rootMargin: '0px 0px 0px 0px'
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -94,14 +95,23 @@ function initCounters() {
         });
     }, observerOptions);
 
-    counters.forEach(counter => observer.observe(counter));
+    counters.forEach(counter => {
+        // Check if element is already in viewport on page load
+        const rect = counter.getBoundingClientRect();
+        const inViewport = rect.top < window.innerHeight && rect.bottom >= 0;
+        if (inViewport) {
+            animateCounter(counter);
+        } else {
+            observer.observe(counter);
+        }
+    });
 }
 
 function animateCounter(element) {
     const target = parseInt(element.getAttribute('data-target'));
+    const suffix = element.getAttribute('data-suffix') || '+';
     const duration = 2000;
     const startTime = performance.now();
-    const startValue = 0;
 
     function update(currentTime) {
         const elapsed = currentTime - startTime;
@@ -109,24 +119,12 @@ function animateCounter(element) {
 
         // Easing function (ease-out cubic)
         const eased = 1 - Math.pow(1 - progress, 3);
+        const currentValue = Math.round(target * eased);
 
-        const currentValue = Math.round(startValue + (target - startValue) * eased);
-        element.textContent = currentValue + (target >= 99 && element.closest('.hero-stat-number') ? '' : '+');
+        element.textContent = currentValue + (progress < 1 ? '' : suffix);
 
         if (progress < 1) {
             requestAnimationFrame(update);
-        } else {
-            // Final value with suffix
-            if (element.closest('.hero-stat')) {
-                const label = element.nextElementSibling?.textContent || '';
-                if (label.includes('%')) {
-                    element.textContent = target + '%';
-                } else {
-                    element.textContent = target + '+';
-                }
-            } else {
-                element.textContent = target + '+';
-            }
         }
     }
 
