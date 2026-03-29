@@ -321,15 +321,15 @@
           </div>
           <div class="hero-stats">
             <div class="hero-stat">
-              <div class="hero-stat-number counter" data-target="50" data-suffix="+">0</div>
+              <div class="hero-stat-number counter" data-target="50" data-suffix="+">50+</div>
               <div class="hero-stat-label">Happy Clients</div>
             </div>
             <div class="hero-stat">
-              <div class="hero-stat-number counter" data-target="120" data-suffix="+">0</div>
+              <div class="hero-stat-number counter" data-target="120" data-suffix="+">120+</div>
               <div class="hero-stat-label">Projects Delivered</div>
             </div>
             <div class="hero-stat">
-              <div class="hero-stat-number counter" data-target="99" data-suffix="%">0</div>
+              <div class="hero-stat-number counter" data-target="99" data-suffix="%">99%</div>
               <div class="hero-stat-label">Satisfaction Rate</div>
             </div>
           </div>
@@ -373,12 +373,12 @@
       <div class="container">
         <p class="trusted-label">Trusted by Healthcare & Wellness Brands in 12 Countries</p>
         <div class="trusted-logos">
-          <div class="trusted-logo"><span class="trusted-logo-icon">🏥</span><span class="trusted-logo-name">MediCare+</span></div>
-          <div class="trusted-logo"><span class="trusted-logo-icon">💊</span><span class="trusted-logo-name">PharmaLink</span></div>
-          <div class="trusted-logo"><span class="trusted-logo-icon">🏋️</span><span class="trusted-logo-name">FitPulse</span></div>
-          <div class="trusted-logo"><span class="trusted-logo-icon">🧬</span><span class="trusted-logo-name">HealthBridge</span></div>
-          <div class="trusted-logo"><span class="trusted-logo-icon">🩺</span><span class="trusted-logo-name">DocConnect</span></div>
-          <div class="trusted-logo"><span class="trusted-logo-icon">🧘</span><span class="trusted-logo-name">WellnessHub</span></div>
+          <div class="trusted-logo"><div class="trusted-logo-badge blue">M+</div><span class="trusted-logo-name">MediCare+</span></div>
+          <div class="trusted-logo"><div class="trusted-logo-badge purple">PL</div><span class="trusted-logo-name">PharmaLink</span></div>
+          <div class="trusted-logo"><div class="trusted-logo-badge green">FP</div><span class="trusted-logo-name">FitPulse</span></div>
+          <div class="trusted-logo"><div class="trusted-logo-badge teal">HB</div><span class="trusted-logo-name">HealthBridge</span></div>
+          <div class="trusted-logo"><div class="trusted-logo-badge orange">DC</div><span class="trusted-logo-name">DocConnect</span></div>
+          <div class="trusted-logo"><div class="trusted-logo-badge pink">WH</div><span class="trusted-logo-name">WellnessHub</span></div>
         </div>
         <div class="trust-proof-bar">
           <div class="trust-proof-item">
@@ -399,6 +399,30 @@
           <div class="trust-proof-item">
             <span>🤝</span>
             <span class="trust-proof-text">95% client retention rate</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRESS / AS SEEN IN ===== -->
+    <section class="press-section">
+      <div class="container">
+        <p class="press-label">Featured In & Recognized By</p>
+        <div class="press-logos">
+          <div class="press-logo-item">
+            <span class="press-logo-text">Product Hunt</span>
+          </div>
+          <div class="press-logo-item">
+            <span class="press-logo-text">Clutch.co</span>
+          </div>
+          <div class="press-logo-item">
+            <span class="press-logo-text">DesignRush</span>
+          </div>
+          <div class="press-logo-item">
+            <span class="press-logo-text">GoodFirms</span>
+          </div>
+          <div class="press-logo-item">
+            <span class="press-logo-text">TechBehemoths</span>
           </div>
         </div>
       </div>
@@ -530,22 +554,22 @@
           <div class="about-stats-visual reveal">
             <div class="stats-card-grid">
               <div class="stat-card">
-                <div class="stat-number counter" data-target="50" data-suffix="+">0</div>
+                <div class="stat-number counter" data-target="50" data-suffix="+">50+</div>
                 <div class="stat-label">Clients Served</div>
                 <div class="stat-sublabel">across 12 countries</div>
               </div>
               <div class="stat-card">
-                <div class="stat-number counter" data-target="120" data-suffix="+">0</div>
+                <div class="stat-number counter" data-target="120" data-suffix="+">120+</div>
                 <div class="stat-label">Projects Delivered</div>
                 <div class="stat-sublabel">on time, every time</div>
               </div>
               <div class="stat-card">
-                <div class="stat-number counter" data-target="5" data-suffix="+">0</div>
+                <div class="stat-number counter" data-target="5" data-suffix="+">5+</div>
                 <div class="stat-label">Years Experience</div>
                 <div class="stat-sublabel">in health technology</div>
               </div>
               <div class="stat-card">
-                <div class="stat-number counter" data-target="35" data-suffix="+">0</div>
+                <div class="stat-number counter" data-target="35" data-suffix="+">35+</div>
                 <div class="stat-label">Team Members</div>
                 <div class="stat-sublabel">engineers & designers</div>
               </div>
@@ -1088,6 +1112,71 @@
       </div>
     </section>
 
+    <!-- ===== ROI CALCULATOR SECTION ===== -->
+    <section class="roi-calculator" id="roi-calculator">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">ROI Calculator</span>
+          <h2 class="section-title">How Much Could You Save?</h2>
+          <p class="section-subtitle">See the real cost difference between building from scratch and launching with TodayInTech's white-label platform.</p>
+        </div>
+
+        <div class="roi-wrapper reveal">
+          <div class="roi-inputs">
+            <div class="roi-input-group">
+              <label for="roi-team-size">Estimated In-House Dev Team Size</label>
+              <div class="roi-slider-wrapper">
+                <input type="range" id="roi-team-size" min="2" max="15" value="5" class="roi-slider">
+                <span class="roi-slider-value" id="roi-team-display">5 engineers</span>
+              </div>
+            </div>
+            <div class="roi-input-group">
+              <label for="roi-months">Custom Build Timeline (months)</label>
+              <div class="roi-slider-wrapper">
+                <input type="range" id="roi-months" min="3" max="18" value="9" class="roi-slider">
+                <span class="roi-slider-value" id="roi-months-display">9 months</span>
+              </div>
+            </div>
+            <div class="roi-input-group">
+              <label for="roi-rate">Average Dev Hourly Rate (USD)</label>
+              <div class="roi-slider-wrapper">
+                <input type="range" id="roi-rate" min="50" max="200" value="100" step="10" class="roi-slider">
+                <span class="roi-slider-value" id="roi-rate-display">$100/hr</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="roi-results">
+            <div class="roi-result-card roi-scratch">
+              <div class="roi-result-label">Building From Scratch</div>
+              <div class="roi-result-cost" id="roi-scratch-cost">$1,440,000</div>
+              <div class="roi-result-time" id="roi-scratch-time">9 months to launch</div>
+              <ul class="roi-result-risks">
+                <li>❌ HIPAA compliance work: +$50K</li>
+                <li>❌ HL7/FHIR integrations: +3 months</li>
+                <li>❌ QA & security testing: +$30K</li>
+                <li>❌ High risk of delays & overruns</li>
+              </ul>
+            </div>
+            <div class="roi-result-card roi-us">
+              <div class="roi-popular-label">Save Up To</div>
+              <div class="roi-savings" id="roi-savings">$1,390,000</div>
+              <div class="roi-result-label">With TodayInTech</div>
+              <div class="roi-result-cost roi-our-cost">From <strong>$50,000</strong></div>
+              <div class="roi-result-time">Launch in 4–8 weeks</div>
+              <ul class="roi-result-risks">
+                <li>✅ HIPAA-compliant by default</li>
+                <li>✅ HL7/FHIR pre-integrated</li>
+                <li>✅ Fixed-scope, no surprises</li>
+                <li>✅ 24/7 post-launch support</li>
+              </ul>
+              <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/LaunchHealthApp/30min/'});return false;" class="btn-primary roi-cta">Get My Free Estimate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== CTA SECTION ===== -->
     <section class="cta" id="contact">
       <div class="container">
@@ -1255,6 +1344,24 @@
           consultation call.</p>
       </div>
     </div>
+  </div>
+
+  <!-- ===== FLOATING CTA BUTTON ===== -->
+  <div class="floating-cta" id="floatingCta">
+    <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/LaunchHealthApp/30min/'});return false;" class="floating-cta-btn">
+      <span class="floating-cta-pulse"></span>
+      Book Free Call
+    </a>
+  </div>
+
+  <!-- ===== SOCIAL PROOF NOTIFICATION ===== -->
+  <div class="social-proof-toast" id="socialProofToast">
+    <div class="toast-icon">📞</div>
+    <div class="toast-content">
+      <div class="toast-name" id="toastName">Dr. Sarah M.</div>
+      <div class="toast-detail" id="toastDetail">from New York just booked a free strategy session</div>
+    </div>
+    <button class="toast-close" onclick="document.getElementById('socialProofToast').classList.remove('show')">✕</button>
   </div>
 
   <!-- ===== JAVASCRIPT ===== -->

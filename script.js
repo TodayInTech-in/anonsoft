@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
     initCounters();
     initSmoothScroll();
     initParallaxGlow();
+    initFloatingCta();
+    initSocialProofToast();
+    initRoiCalculator();
 });
 
 // ===== NAVBAR SCROLL EFFECT =====
@@ -327,3 +330,74 @@ function updateActiveNavLink() {
 }
 
 updateActiveNavLink();
+
+// ===== FLOATING CTA BUTTON =====
+function initFloatingCta() {
+    const floatingCta = document.getElementById('floatingCta');
+    if (!floatingCta) return;
+
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 400) {
+            floatingCta.classList.add('visible');
+        } else {
+            floatingCta.classList.remove('visible');
+        }
+    });
+}
+
+// ===== SOCIAL PROOF TOAST =====
+function initSocialProofToast() {
+    const toast = document.getElementById('socialProofToast');
+    if (!toast) return;
+
+    const proofs = [
+        { name: 'Dr. Sarah M.', detail: 'from New York just booked a free strategy session', delay: 6000 },
+        { name: 'James R.', detail: 'from San Francisco is viewing Pricing', delay: 18000 },
+        { name: 'Dr. Priya K.', detail: 'from Houston just booked a free strategy session', delay: 32000 },
+        { name: 'Mark T.', detail: 'from Chicago just requested a demo', delay: 50000 },
+        { name: 'Dr. Lisa N.', detail: 'from Boston just booked a free strategy session', delay: 70000 },
+    ];
+
+    proofs.forEach(({ name, detail, delay }) => {
+        setTimeout(() => {
+            document.getElementById('toastName').textContent = name;
+            document.getElementById('toastDetail').textContent = detail;
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 5000);
+        }, delay);
+    });
+}
+
+// ===== ROI CALCULATOR =====
+function initRoiCalculator() {
+    const teamSlider = document.getElementById('roi-team-size');
+    const monthsSlider = document.getElementById('roi-months');
+    const rateSlider = document.getElementById('roi-rate');
+    if (!teamSlider) return;
+
+    function updateROI() {
+        const team = parseInt(teamSlider.value);
+        const months = parseInt(monthsSlider.value);
+        const rate = parseInt(rateSlider.value);
+
+        document.getElementById('roi-team-display').textContent = team + ' engineers';
+        document.getElementById('roi-months-display').textContent = months + ' months';
+        document.getElementById('roi-rate-display').textContent = '$' + rate + '/hr';
+
+        // Calculation: team * rate * 160hrs/month * months + fixed overheads
+        const customCost = team * rate * 160 * months + 80000; // 80K overhead (HIPAA, infra, QA)
+        const ourCost = 50000; // starting price
+        const savings = customCost - ourCost;
+
+        const formatMoney = (n) => '$' + n.toLocaleString('en-US');
+
+        document.getElementById('roi-scratch-cost').textContent = formatMoney(customCost);
+        document.getElementById('roi-scratch-time').textContent = months + ' months to launch';
+        document.getElementById('roi-savings').textContent = formatMoney(savings);
+    }
+
+    teamSlider.addEventListener('input', updateROI);
+    monthsSlider.addEventListener('input', updateROI);
+    rateSlider.addEventListener('input', updateROI);
+    updateROI();
+}
