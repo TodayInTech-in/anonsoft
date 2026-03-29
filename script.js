@@ -416,7 +416,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const disableLightMode = () => {
             document.documentElement.classList.remove('light-mode');
-            localStorage.setItem('lightMode', null);
+            localStorage.setItem('lightMode', 'disabled');
             themeToggleBtn.innerText = '☀️';
         };
 
@@ -428,11 +428,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         themeToggleBtn.addEventListener('click', () => {
-            lightMode = localStorage.getItem('lightMode'); 
-            if (lightMode !== 'enabled') {
-                enableLightMode();
-            } else {
+            if (document.documentElement.classList.contains('light-mode')) {
                 disableLightMode();
+            } else {
+                enableLightMode();
             }
         });
     }

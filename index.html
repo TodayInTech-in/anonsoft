@@ -259,7 +259,7 @@
 
   <!-- Theme Check for FOUC -->
   <script>
-    if (localStorage.getItem('lightMode') === 'enabled' || (!localStorage.getItem('lightMode') && window.matchMedia('(prefers-color-scheme: light)').matches)) {
+    if (localStorage.getItem('lightMode') !== 'disabled') {
         document.documentElement.classList.add('light-mode');
     }
   </script>
