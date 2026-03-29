@@ -384,6 +384,11 @@ button {
     margin-bottom: 24px;
 }
 
+.hero-title .gradient-text-wrapper {
+    display: inline-block;
+    min-width: 400px;
+}
+
 .hero-title .gradient-text {
     background: var(--gradient-primary);
     -webkit-background-clip: text;
