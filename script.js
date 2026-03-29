@@ -241,7 +241,7 @@ function handleFormSubmit(e) {
 
 // ===== TYPED EFFECT FOR HERO =====
 function initTypedEffect() {
-    const words = ['Health Tech', 'Digital Health', 'MedTech', 'HealthCare'];
+    const words = ['Custom Software', 'HealthTech', 'EdTech Platforms', 'SaaS Solutions'];
     const element = document.querySelector('.gradient-text');
     if (!element) return;
 
@@ -352,10 +352,10 @@ function initSocialProofToast() {
 
     const proofs = [
         { name: 'Dr. Sarah M.', detail: 'from New York just booked a free strategy session', delay: 6000 },
-        { name: 'James R.', detail: 'from San Francisco is viewing Pricing', delay: 18000 },
-        { name: 'Dr. Priya K.', detail: 'from Houston just booked a free strategy session', delay: 32000 },
-        { name: 'Mark T.', detail: 'from Chicago just requested a demo', delay: 50000 },
-        { name: 'Dr. Lisa N.', detail: 'from Boston just booked a free strategy session', delay: 70000 },
+        { name: 'James R.', detail: 'from an EdTech startup is viewing Pricing', delay: 18000 },
+        { name: 'Priya K.', detail: 'from Houston just booked a free strategy session', delay: 32000 },
+        { name: 'Mark T.', detail: 'from a Logistics company just requested a demo', delay: 50000 },
+        { name: 'Lisa N.', detail: 'from Boston just booked a free strategy session', delay: 70000 },
     ];
 
     proofs.forEach(({ name, detail, delay }) => {

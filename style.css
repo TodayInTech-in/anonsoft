@@ -1179,6 +1179,14 @@ button {
     background: linear-gradient(135deg, #E040FB, #AA00FF);
 }
 
+.testimonial-avatar-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--border-glass);
+}
+
 .testimonial-name {
     font-weight: 600;
     font-size: 0.92rem;
