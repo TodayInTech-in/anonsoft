@@ -1,0 +1,33 @@
+# TodayInTech Robots.txt
+# Health White-Label Software Development Company
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://todayintech.com/sitemap.xml
+
+# Crawl delay for polite crawling
+Crawl-delay: 1
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: linkedinbot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
