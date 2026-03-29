@@ -256,6 +256,13 @@
   <!-- Calendly -->
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+  <!-- Theme Check for FOUC -->
+  <script>
+    if (localStorage.getItem('lightMode') === 'enabled' || (!localStorage.getItem('lightMode') && window.matchMedia('(prefers-color-scheme: light)').matches)) {
+        document.documentElement.classList.add('light-mode');
+    }
+  </script>
 </head>
 
 <body>
@@ -276,6 +283,7 @@
           <a href="#testimonials">Reviews</a>
           <a href="#faq">FAQ</a>
           <a href="/blog/">Blog</a>
+          <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme">☀️</button>
           <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/LaunchHealthApp/30min/'});return false;" class="nav-cta" id="navCta">Get a Free Session</a>
         </div>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">

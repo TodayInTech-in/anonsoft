@@ -401,3 +401,39 @@ function initRoiCalculator() {
     rateSlider.addEventListener('input', updateROI);
     updateROI();
 }
+
+// Theme Toggle Logic
+document.addEventListener('DOMContentLoaded', () => {
+    const themeToggleBtn = document.getElementById('themeToggle');
+    if (themeToggleBtn) {
+        let lightMode = localStorage.getItem('lightMode'); 
+        
+        const enableLightMode = () => {
+            document.documentElement.classList.add('light-mode');
+            localStorage.setItem('lightMode', 'enabled');
+            themeToggleBtn.innerText = '🌙';
+        };
+
+        const disableLightMode = () => {
+            document.documentElement.classList.remove('light-mode');
+            localStorage.setItem('lightMode', null);
+            themeToggleBtn.innerText = '☀️';
+        };
+
+        // Initialize button iconography based on early head script
+        if (document.documentElement.classList.contains('light-mode')) {
+            themeToggleBtn.innerText = '🌙';
+        } else {
+            themeToggleBtn.innerText = '☀️';
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            lightMode = localStorage.getItem('lightMode'); 
+            if (lightMode !== 'enabled') {
+                enableLightMode();
+            } else {
+                disableLightMode();
+            }
+        });
+    }
+});
