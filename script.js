@@ -242,7 +242,7 @@ function handleFormSubmit(e) {
 // ===== TYPED EFFECT FOR HERO =====
 function initTypedEffect() {
     const words = ['Custom Software', 'HealthTech', 'EdTech Platforms', 'SaaS Solutions'];
-    const element = document.querySelector('.gradient-text');
+    const element = document.querySelector('.typewriter-text');
     if (!element) return;
 
     let wordIndex = 0;
