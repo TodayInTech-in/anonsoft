@@ -80,6 +80,8 @@ html.light-mode {
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 body {
@@ -88,6 +90,8 @@ body {
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
+    width: 100%;
+    position: relative;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -1716,6 +1720,10 @@ html.light-mode .floating-badge {
         --section-padding: 72px 0;
     }
 
+    .container {
+        padding: 0 20px;
+    }
+
     .nav-links {
         position: fixed;
         top: 0;
@@ -1733,6 +1741,10 @@ html.light-mode .floating-badge {
         z-index: 1000;
     }
 
+    html.light-mode .nav-links {
+        background: rgba(248, 250, 252, 0.98);
+    }
+
     .nav-links.active {
         opacity: 1;
         pointer-events: all;
@@ -1747,7 +1759,12 @@ html.light-mode .floating-badge {
     }
 
     .hero-title {
-        font-size: clamp(2rem, 6vw, 3rem);
+        font-size: clamp(2rem, 5vw, 2.5rem);
+    }
+    
+    .hero-title .gradient-text-wrapper, .typing-wrapper {
+        min-width: auto !important;
+        width: 100%;
     }
 
     .hero-buttons {
@@ -2647,11 +2664,17 @@ html.light-mode .floating-badge {
 }
 
 @media (max-width: 480px) {
-    .floating-cta {
-        bottom: 16px;
-        right: 16px;
+    .floating-cta, .social-proof-toast {
+        display: none !important;
     }
-    .social-proof-toast {
-        display: none;
+    
+    .hero-title {
+        font-size: 26px !important;
+    }
+    
+    .hero-badge {
+        font-size: 0.7rem;
+        padding: 6px 12px;
+        white-space: normal;
     }
 }
