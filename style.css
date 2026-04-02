@@ -3,16 +3,16 @@
 
 /* ===== CSS VARIABLES ===== */
 :root {
-    /* Colors */
-    --primary: #3b82f6;
-    --primary-dark: #2563eb;
-    --secondary: #6366f1;
-    --secondary-dark: #4f46e5;
+    /* Colors - Kirkoinsweb Dark Mode (Premium Indigo) */
+    --primary: #8b5cf6;
+    --primary-dark: #7c3aed;
+    --secondary: #c084fc;
+    --secondary-dark: #a855f7;
     --accent: #ec4899;
     --accent-green: #10b981;
-    --bg-dark: #0f172a;
-    --bg-darker: #020617;
-    --bg-card: rgba(30, 41, 59, 0.7);
+    --bg-dark: #0f0d17;
+    --bg-darker: #07060b;
+    --bg-card: rgba(28, 25, 41, 0.7);
     --bg-glass: rgba(255, 255, 255, 0.04);
     --bg-glass-hover: rgba(255, 255, 255, 0.08);
     --border-glass: rgba(255, 255, 255, 0.08);
@@ -21,14 +21,15 @@
     --text-secondary: rgba(255, 255, 255, 0.7);
     --text-muted: rgba(255, 255, 255, 0.45);
     --gradient-primary: linear-gradient(135deg, var(--primary), var(--secondary));
-    --gradient-hero: linear-gradient(135deg, var(--bg-dark) 0%, #1e1b4b 50%, var(--bg-dark) 100%);
+    --gradient-hero: linear-gradient(135deg, var(--bg-dark) 0%, #171131 50%, var(--bg-dark) 100%);
     --gradient-card: linear-gradient(145deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
-    --shadow-glow: 0 0 40px rgba(59, 130, 246, 0.15);
+    --shadow-glow: 0 0 40px rgba(139, 92, 246, 0.15);
     --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.3);
 
     /* Spacing */
     --section-padding: 100px 0;
     --container-max: 1200px;
+    --nav-height: 80px;
 
     /* Typography */
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -44,15 +45,16 @@
     --radius-md: 12px;
     --radius-lg: 20px;
     --radius-xl: 28px;
-    --radius-full: 50px;
+    --radius-full: 9999px;
 }
 
 html.light-mode {
-    --primary: #2563eb;
-    --primary-dark: #1d4ed8;
-    --secondary: #4f46e5;
-    --secondary-dark: #4338ca;
-    --bg-dark: #f8fafc;
+    /* Colors - Kirkoinsweb Light Mode */
+    --primary: #7c3aed;
+    --primary-dark: #6d28d9;
+    --secondary: #9333ea;
+    --secondary-dark: #7e22ce;
+    --bg-dark: #fcfcfd;
     --bg-darker: #ffffff;
     --bg-card: rgba(255, 255, 255, 0.8);
     --bg-glass: rgba(0, 0, 0, 0.04);
@@ -62,9 +64,9 @@ html.light-mode {
     --text-primary: #0f172a;
     --text-secondary: rgba(15, 23, 42, 0.75);
     --text-muted: rgba(15, 23, 42, 0.5);
-    --gradient-hero: linear-gradient(135deg, #f0fdf4 0%, #eff6ff 50%, #f8fafc 100%);
+    --gradient-hero: linear-gradient(135deg, #f3f0ff 0%, #faf5ff 50%, #fcfcfd 100%);
     --gradient-card: linear-gradient(145deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.95) 100%);
-    --shadow-glow: 0 0 40px rgba(59, 130, 246, 0.08);
+    --shadow-glow: 0 0 40px rgba(124, 58, 237, 0.08);
     --shadow-card: 0 8px 24px rgba(15, 23, 42, 0.08);
 }
 
@@ -476,12 +478,12 @@ html.light-mode .hero-bg::after {
     font-size: 0.95rem;
     border-radius: var(--radius-full);
     transition: var(--transition-normal);
-    box-shadow: 0 4px 20px rgba(0, 212, 255, 0.3);
+    box-shadow: 0 4px 20px rgba(139, 92, 246, 0.3);
 }
 
 .btn-primary:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 30px rgba(0, 212, 255, 0.5);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 30px rgba(139, 92, 246, 0.5);
 }
 
 .btn-secondary {
