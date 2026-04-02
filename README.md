@@ -11,6 +11,8 @@
   We design, develop, and deploy white-label health software that empowers clinics, pharmacies, and wellness brands to scale faster — without building from scratch.
 </p>
 
+
+
 <p align="center">
   <a href="#features">Features</a> •
   <a href="#tech-stack">Tech Stack</a> •
