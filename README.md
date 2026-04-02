@@ -19,7 +19,6 @@
   <a href="#screenshots">Screenshots</a> •
   <a href="#contact">Contact</a>
 </p>
-
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Live-brightgreen?style=for-the-badge" alt="Status">
   <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License">
