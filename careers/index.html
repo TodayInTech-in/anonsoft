@@ -217,7 +217,7 @@
         "name": "How long does it take to develop a telemedicine app?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "With our white-label approach, a telemedicine app can be launched in 4-8 weeks. Custom telemedicine platforms with advanced features like AI diagnostics, multi-provider scheduling, and EHR integration typically take 3-6 months. Our agile process ensures rapid delivery without compromising quality."
+          "text": "With our white-label approach, a telemedicine app can be launched in 1-2 Weeks. Custom telemedicine platforms with advanced features like AI diagnostics, multi-provider scheduling, and EHR integration typically take 3-6 months. Our agile process ensures rapid delivery without compromising quality."
         }
       },
       {
@@ -260,7 +260,7 @@
   <!-- Theme Check for FOUC -->
   <script>
     if (localStorage.getItem('lightMode') !== 'disabled') {
-        document.documentElement.classList.add('light-mode');
+      document.documentElement.classList.add('light-mode');
     }
   </script>
 </head>
@@ -275,7 +275,7 @@
           <img src="../assets/logo.png" alt="TodayInTech Logo">
           <span class="nav-logo-text">TodayInTech</span>
         </a>
-                <div class="nav-links" id="navLinks">
+        <div class="nav-links" id="navLinks">
           <a href="../services/index.html">Services</a>
           <a href="../features/index.html">Features</a>
           <a href="../about/index.html">About</a>
@@ -284,7 +284,9 @@
           <a href="../careers/index.html">Careers</a>
           <a href="../contact/index.html">FAQ & Contact</a>
           <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme">☀️</button>
-          <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/LaunchHealthApp/30min/'});return false;" class="nav-cta" id="navCta">Get a Free Session</a>
+          <a href=""
+            onclick="Calendly.initPopupWidget({url:'https://calendly.com/LaunchHealthApp/30min/'});return false;"
+            class="nav-cta" id="navCta">Get a Free Session</a>
         </div>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
           <span></span>
@@ -297,41 +299,53 @@
 
   <main>
 
-        <section class="hero" style="padding: calc(var(--nav-height) + 60px) 0 40px; text-align: center;">
-            <div class="container">
-        <div class="hero-content" style="grid-column: 1 / -1; margin: 0 auto; width: 100%; max-width: 800px; padding: 0;">
-            <span class="section-label">Join The Team</span>
-                <h1 class="hero-title" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 24px;">Build Products <span style="background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: transparent;">That Matter</span></h1>
-                <p style="max-width: 600px; margin: 0 auto; color: var(--text-secondary);">We are always looking for driven talent across development, design, and operations.</p>
-                </div>
+    <section class="hero" style="padding: calc(var(--nav-height) + 60px) 0 40px; text-align: center;">
+      <div class="container">
+        <div class="hero-content"
+          style="grid-column: 1 / -1; margin: 0 auto; width: 100%; max-width: 800px; padding: 0;">
+          <span class="section-label">Join The Team</span>
+          <h1 class="hero-title" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 24px;">Build Products <span
+              style="background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: transparent;">That
+              Matter</span></h1>
+          <p style="max-width: 600px; margin: 0 auto; color: var(--text-secondary);">We are always looking for driven
+            talent across development, design, and operations.</p>
+        </div>
       </div>
     </section>
-        <section class="services" style="padding-bottom: 80px;">
-            <div class="container">
-                <div class="services-grid">
-                    <div class="service-card" style="text-align: left;">
-                        <h3 style="margin-top: 0;">Senior Full-Stack Engineer</h3>
-                        <p style="margin-bottom: 20px; font-weight: 600; font-size: 0.95rem; color: var(--primary);">Remote (India/US) • Full Time</p>
-                        <ul style="color: var(--text-secondary); margin-bottom: 30px; padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
-                          <li>5+ Years React/Node</li>
-                          <li>Experience with AWS and CI/CD workflows</li>
-                        </ul>
-                        <a href="mailto:careers@todayintech.in" class="btn-secondary" style="display:inline-block; border: 1px solid var(--primary); color:var(--primary); padding: 8px 24px; border-radius: 8px; font-weight: bold; text-decoration: none;">Apply Now</a>
-                    </div>
-                    <div class="service-card" style="text-align: left;">
-                        <h3 style="margin-top: 0;">Lead UX/UI Designer</h3>
-                        <p style="margin-bottom: 20px; font-weight: 600; font-size: 0.95rem; color: var(--primary);">Remote • Full Time</p>
-                        <ul style="color: var(--text-secondary); margin-bottom: 30px; padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
-                          <li>Strong Figma & Prototyping portfolio</li>
-                          <li>Experience with healthcare design a plus</li>
-                        </ul>
-                        <a href="mailto:careers@todayintech.in" class="btn-secondary" style="display:inline-block; border: 1px solid var(--primary); color:var(--primary); padding: 8px 24px; border-radius: 8px; font-weight: bold; text-decoration: none;">Apply Now</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-</main>
+    <section class="services" style="padding-bottom: 80px;">
+      <div class="container">
+        <div class="services-grid">
+          <div class="service-card" style="text-align: left;">
+            <h3 style="margin-top: 0;">Senior Full-Stack Engineer</h3>
+            <p style="margin-bottom: 20px; font-weight: 600; font-size: 0.95rem; color: var(--primary);">Remote
+              (India/US) • Full Time</p>
+            <ul
+              style="color: var(--text-secondary); margin-bottom: 30px; padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
+              <li>5+ Years React/Node</li>
+              <li>Experience with AWS and CI/CD workflows</li>
+            </ul>
+            <a href="mailto:careers@todayintech.in" class="btn-secondary"
+              style="display:inline-block; border: 1px solid var(--primary); color:var(--primary); padding: 8px 24px; border-radius: 8px; font-weight: bold; text-decoration: none;">Apply
+              Now</a>
+          </div>
+          <div class="service-card" style="text-align: left;">
+            <h3 style="margin-top: 0;">Lead UX/UI Designer</h3>
+            <p style="margin-bottom: 20px; font-weight: 600; font-size: 0.95rem; color: var(--primary);">Remote • Full
+              Time</p>
+            <ul
+              style="color: var(--text-secondary); margin-bottom: 30px; padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
+              <li>Strong Figma & Prototyping portfolio</li>
+              <li>Experience with healthcare design a plus</li>
+            </ul>
+            <a href="mailto:careers@todayintech.in" class="btn-secondary"
+              style="display:inline-block; border: 1px solid var(--primary); color:var(--primary); padding: 8px 24px; border-radius: 8px; font-weight: bold; text-decoration: none;">Apply
+              Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer" id="footer">
@@ -345,9 +359,12 @@
           <p>Empowering healthcare and technology businesses with world-class software solutions. Your vision, our
             expertise.</p>
           <div class="footer-socials">
-            <a href="https://www.facebook.com/people/Today-In-Tech/61583127425585/" target="_blank" class="footer-social" aria-label="Facebook">f</a>
-            <a href="https://www.instagram.com/todayintech/" target="_blank" class="footer-social" aria-label="Instagram">📷</a>
-            <a href="https://www.linkedin.com/company/109768769" target="_blank" class="footer-social" aria-label="LinkedIn">in</a>
+            <a href="https://www.facebook.com/people/Today-In-Tech/61583127425585/" target="_blank"
+              class="footer-social" aria-label="Facebook">f</a>
+            <a href="https://www.instagram.com/todayintech/" target="_blank" class="footer-social"
+              aria-label="Instagram">📷</a>
+            <a href="https://www.linkedin.com/company/109768769" target="_blank" class="footer-social"
+              aria-label="LinkedIn">in</a>
           </div>
         </div>
 
@@ -379,7 +396,9 @@
             <li><a href="mailto:contact@todayintech.in">contact@todayintech.in</a></li>
             <li><a href="tel:+917679349780">+91 7679349780</a></li>
             <li><a href="../index.html">Bengaluru, India</a></li>
-            <li><a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/LaunchHealthApp/30min/'});return false;">Book a Call →</a></li>
+            <li><a href=""
+                onclick="Calendly.initPopupWidget({url:'https://calendly.com/LaunchHealthApp/30min/'});return false;">Book
+                a Call →</a></li>
           </ul>
         </div>
       </div>
@@ -463,7 +482,8 @@
 
   <!-- ===== FLOATING CTA BUTTON ===== -->
   <div class="floating-cta" id="floatingCta">
-    <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/LaunchHealthApp/30min/'});return false;" class="floating-cta-btn">
+    <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/LaunchHealthApp/30min/'});return false;"
+      class="floating-cta-btn">
       <span class="floating-cta-pulse"></span>
       Book Free Call
     </a>
@@ -476,7 +496,8 @@
       <div class="toast-name" id="toastName">Dr. Sarah M.</div>
       <div class="toast-detail" id="toastDetail">from New York just booked a free strategy session</div>
     </div>
-    <button class="toast-close" onclick="document.getElementById('socialProofToast').classList.remove('show')">✕</button>
+    <button class="toast-close"
+      onclick="document.getElementById('socialProofToast').classList.remove('show')">✕</button>
   </div>
 
   <!-- ===== JAVASCRIPT ===== -->

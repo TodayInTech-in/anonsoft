@@ -217,7 +217,7 @@
         "name": "How long does it take to develop a telemedicine app?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "With our white-label approach, a telemedicine app can be launched in 4-8 weeks. Custom telemedicine platforms with advanced features like AI diagnostics, multi-provider scheduling, and EHR integration typically take 3-6 months. Our agile process ensures rapid delivery without compromising quality."
+          "text": "With our white-label approach, a telemedicine app can be launched in 1-2 Weeks. Custom telemedicine platforms with advanced features like AI diagnostics, multi-provider scheduling, and EHR integration typically take 3-6 months. Our agile process ensures rapid delivery without compromising quality."
         }
       },
       {
@@ -260,7 +260,7 @@
   <!-- Theme Check for FOUC -->
   <script>
     if (localStorage.getItem('lightMode') !== 'disabled') {
-        document.documentElement.classList.add('light-mode');
+      document.documentElement.classList.add('light-mode');
     }
   </script>
 </head>
@@ -275,7 +275,7 @@
           <img src="../assets/logo.png" alt="TodayInTech Logo">
           <span class="nav-logo-text">TodayInTech</span>
         </a>
-                <div class="nav-links" id="navLinks">
+        <div class="nav-links" id="navLinks">
           <a href="../services/index.html">Services</a>
           <a href="../features/index.html">Features</a>
           <a href="../about/index.html">About</a>
@@ -285,7 +285,9 @@
           <a href="../careers/index.html">Careers</a>
           <a href="../contact/index.html">FAQ & Contact</a>
           <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme">☀️</button>
-          <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/LaunchHealthApp/30min/'});return false;" class="nav-cta" id="navCta">Get a Free Session</a>
+          <a href=""
+            onclick="Calendly.initPopupWidget({url:'https://calendly.com/LaunchHealthApp/30min/'});return false;"
+            class="nav-cta" id="navCta">Get a Free Session</a>
         </div>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
           <span></span>
@@ -298,77 +300,91 @@
 
   <main>
 
-        <section class="hero" style="min-height: auto; padding: calc(var(--nav-height) + 20px) 0 40px; text-align: center;">
-            <div class="container">
-        <div class="hero-content" style="grid-column: 1 / -1; margin: 0 auto; width: 100%; max-width: 800px; padding: 0;">
-            <span class="section-label">Artificial Intelligence</span>
-                <h1 class="hero-title" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 24px;">Generative <span style="background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: transparent;">AI Integrations</span></h1>
-                <p style="max-width: 600px; margin: 0 auto; color: var(--text-secondary);">From custom LLM wrappers to predictive analytics, automate your workflow.</p>
-                </div>
-      </div>
-    </section>
-        <section class="services" style="padding-bottom: 80px;">
-          <div class="container">
-            <div class="services-grid">
-               <div class="service-card reveal">
-                  <div class="service-icon icon-purple">🤖</div>
-                  <h3>Custom LLM Agents</h3><p>Integrate ChatGPT, Claude, or local open-source models directly into your product to automate customer support.</p>
-               </div>
-               <div class="service-card reveal">
-                  <div class="service-icon icon-blue">📊</div>
-                  <h3>Predictive Analytics</h3><p>Train machine learning models on your proprietary data to unlock predictive forecasting and operational dominance.</p>
-               </div>
-               <div class="service-card reveal">
-                  <div class="service-icon icon-red">🧠</div>
-                  <h3>Computer Vision</h3><p>Automate quality control, image classification, and processing workflows via API.</p>
-               </div>
-            </div>
-              </div>
-      </div>
-    </section>
-        
-<div style="padding: 2rem 0;">
-<section class="cta" id="contact">
+    <section class="hero" style="min-height: auto; padding: calc(var(--nav-height) + 20px) 0 40px; text-align: center;">
       <div class="container">
-        <div class="cta-wrapper reveal">
-          <div class="bg-glow glow-1"></div>
-          <div class="bg-glow glow-2"></div>
-
-          <span class="section-label">Ready to Launch?</span>
-          <h2 class="cta-title">Your Branded Health Platform,<br><span style="background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: transparent;">Live in 4–8 Weeks.</span></h2>
-          <p class="cta-subtitle">Book a free 30-minute strategy session. We'll map your product, give you a clear timeline and cost estimate, and show you exactly how fast we can get you to launch — zero obligation.</p>
-
-          <div class="cta-buttons">
-            <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/LaunchHealthApp/30min/'});return false;" class="btn-primary" id="openModal">
-              Book My Free Strategy Session
-            </a>
-            <a href="mailto:contact@todayintech.in" class="btn-secondary">
-              Email Us Directly
-            </a>
+        <div class="hero-content"
+          style="grid-column: 1 / -1; margin: 0 auto; width: 100%; max-width: 800px; padding: 0;">
+          <span class="section-label">Artificial Intelligence</span>
+          <h1 class="hero-title" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 24px;">Generative <span
+              style="background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: transparent;">AI
+              Integrations</span></h1>
+          <p style="max-width: 600px; margin: 0 auto; color: var(--text-secondary);">From custom LLM wrappers to
+            predictive analytics, automate your workflow.</p>
+        </div>
+      </div>
+    </section>
+    <section class="services" style="padding-bottom: 80px;">
+      <div class="container">
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <div class="service-icon icon-purple">🤖</div>
+            <h3>Custom LLM Agents</h3>
+            <p>Integrate ChatGPT, Claude, or local open-source models directly into your product to automate customer
+              support.</p>
           </div>
+          <div class="service-card reveal">
+            <div class="service-icon icon-blue">📊</div>
+            <h3>Predictive Analytics</h3>
+            <p>Train machine learning models on your proprietary data to unlock predictive forecasting and operational
+              dominance.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon icon-red">🧠</div>
+            <h3>Computer Vision</h3>
+            <p>Automate quality control, image classification, and processing workflows via API.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
 
-          <div class="cta-trust">
-            <div class="cta-trust-item">
-              <span>✓</span> Free Consultation
+    <div style="padding: 2rem 0;">
+      <section class="cta" id="contact">
+        <div class="container">
+          <div class="cta-wrapper reveal">
+            <div class="bg-glow glow-1"></div>
+            <div class="bg-glow glow-2"></div>
+
+            <span class="section-label">Ready to Launch?</span>
+            <h2 class="cta-title">Your Branded Health Platform,<br><span
+                style="background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: transparent;">Live
+                in 4–8 Weeks.</span></h2>
+            <p class="cta-subtitle">Book a free 30-minute strategy session. We'll map your product, give you a clear
+              timeline and cost estimate, and show you exactly how fast we can get you to launch — zero obligation.</p>
+
+            <div class="cta-buttons">
+              <a href=""
+                onclick="Calendly.initPopupWidget({url:'https://calendly.com/LaunchHealthApp/30min/'});return false;"
+                class="btn-primary" id="openModal">
+                Book My Free Strategy Session
+              </a>
+              <a href="mailto:contact@todayintech.in" class="btn-secondary">
+                Email Us Directly
+              </a>
             </div>
-            <div class="cta-trust-item">
-              <span>✓</span> No Sales Pressure
-            </div>
-            <div class="cta-trust-item">
-              <span>✓</span> NDA Available
-            </div>
-            <div class="cta-trust-item">
-              <span>✓</span> Response in 24hrs
+
+            <div class="cta-trust">
+              <div class="cta-trust-item">
+                <span>✓</span> Free Consultation
+              </div>
+              <div class="cta-trust-item">
+                <span>✓</span> No Sales Pressure
+              </div>
+              <div class="cta-trust-item">
+                <span>✓</span> NDA Available
+              </div>
+              <div class="cta-trust-item">
+                <span>✓</span> Response in 24hrs
+              </div>
             </div>
           </div>
         </div>
-          </div>
-      </div>
+    </div>
     </section>
-</div>
+    </div>
 
-    
-</main>
+
+  </main>
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer" id="footer">
@@ -382,9 +398,12 @@
           <p>Empowering healthcare and technology businesses with world-class software solutions. Your vision, our
             expertise.</p>
           <div class="footer-socials">
-            <a href="https://www.facebook.com/people/Today-In-Tech/61583127425585/" target="_blank" class="footer-social" aria-label="Facebook">f</a>
-            <a href="https://www.instagram.com/todayintech/" target="_blank" class="footer-social" aria-label="Instagram">📷</a>
-            <a href="https://www.linkedin.com/company/109768769" target="_blank" class="footer-social" aria-label="LinkedIn">in</a>
+            <a href="https://www.facebook.com/people/Today-In-Tech/61583127425585/" target="_blank"
+              class="footer-social" aria-label="Facebook">f</a>
+            <a href="https://www.instagram.com/todayintech/" target="_blank" class="footer-social"
+              aria-label="Instagram">📷</a>
+            <a href="https://www.linkedin.com/company/109768769" target="_blank" class="footer-social"
+              aria-label="LinkedIn">in</a>
           </div>
         </div>
 
@@ -416,7 +435,9 @@
             <li><a href="mailto:contact@todayintech.in">contact@todayintech.in</a></li>
             <li><a href="tel:+917679349780">+91 7679349780</a></li>
             <li><a href="../index.html">Bengaluru, India</a></li>
-            <li><a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/LaunchHealthApp/30min/'});return false;">Book a Call →</a></li>
+            <li><a href=""
+                onclick="Calendly.initPopupWidget({url:'https://calendly.com/LaunchHealthApp/30min/'});return false;">Book
+                a Call →</a></li>
           </ul>
         </div>
       </div>
@@ -500,7 +521,8 @@
 
   <!-- ===== FLOATING CTA BUTTON ===== -->
   <div class="floating-cta" id="floatingCta">
-    <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/LaunchHealthApp/30min/'});return false;" class="floating-cta-btn">
+    <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/LaunchHealthApp/30min/'});return false;"
+      class="floating-cta-btn">
       <span class="floating-cta-pulse"></span>
       Book Free Call
     </a>
@@ -513,7 +535,8 @@
       <div class="toast-name" id="toastName">Dr. Sarah M.</div>
       <div class="toast-detail" id="toastDetail">from New York just booked a free strategy session</div>
     </div>
-    <button class="toast-close" onclick="document.getElementById('socialProofToast').classList.remove('show')">✕</button>
+    <button class="toast-close"
+      onclick="document.getElementById('socialProofToast').classList.remove('show')">✕</button>
   </div>
 
   <!-- ===== JAVASCRIPT ===== -->
