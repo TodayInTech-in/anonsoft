@@ -52,9 +52,17 @@
   <link rel="icon" type="image/png" href="assets/logo.png">
   <link rel="apple-touch-icon" href="assets/logo.png">
 
-  <!-- ===== PRECONNECT & STYLESHEET ===== -->
+  <!-- ===== THEME COLOR ===== -->
+  <meta name="theme-color" content="#0f0d17">
+  <meta name="msapplication-TileColor" content="#0f0d17">
+
+  <!-- ===== PRECONNECT & STYLESHEETS ===== -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preload" as="image" href="assets/hero-bg.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="sitemap" type="application/xml" href="sitemap.xml">
   <link rel="stylesheet" href="style.css">
 
@@ -284,7 +292,7 @@
           <a href="agents/index.html">Agents</a>
           <a href="careers/index.html">Careers</a>
           <a href="contact/index.html">FAQ & Contact</a>
-          <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme">☀️</button>
+          <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme"><i class="fas fa-sun"></i></button>
           <a href=""
             onclick="Calendly.initPopupWidget({url:'https://calendly.com/LaunchHealthApp/30min/'});return false;"
             class="nav-cta" id="navCta">Get a Free Session</a>
@@ -313,7 +321,7 @@
         <div class="hero-content">
           <div class="hero-badge">
             <span class="pulse"></span>
-            Trusted by 50+ Brands Worldwide Across 12 Countries
+            <i class="fas fa-check-circle" style="margin-right:4px;"></i> Trusted by 50+ Brands Worldwide Across 12 Countries
           </div>
           <h1 class="hero-title">
             Launch Your Branded <br />
@@ -352,35 +360,14 @@
           </div>
         </div>
 
-        <div class="hero-visual">
-          <div class="hero-visual-wrapper">
-            <div class="hero-card">
-              <div class="hero-card-header">
-                <div class="hero-card-dot"></div>
-                <div class="hero-card-dot"></div>
-                <div class="hero-card-dot"></div>
-              </div>
-              <div class="hero-card-content">
-                <img src="assets/project-health-app.png" alt="Health App Dashboard Preview">
-              </div>
-            </div>
-
-            <div class="floating-badge badge-1">
-              <div class="floating-badge-icon green">✓</div>
-              <div>
-                <div class="floating-badge-text">Uptime</div>
-                <div class="floating-badge-value">99.9%</div>
-              </div>
-            </div>
-
-            <div class="floating-badge badge-2">
-              <div class="floating-badge-icon blue">⚡</div>
-              <div>
-                <div class="floating-badge-text">Deployment</div>
-                <div class="floating-badge-value">2x Faster</div>
-              </div>
-            </div>
-          </div>
+        <!-- Animated floating tech badges -->
+        <div class="hero-floating-icons">
+          <div class="hero-float-icon float-1"><i class="fab fa-react"></i></div>
+          <div class="hero-float-icon float-2"><i class="fab fa-node-js"></i></div>
+          <div class="hero-float-icon float-3"><i class="fab fa-aws"></i></div>
+          <div class="hero-float-icon float-4"><i class="fab fa-docker"></i></div>
+          <div class="hero-float-icon float-5"><i class="fab fa-python"></i></div>
+          <div class="hero-float-icon float-6"><i class="fas fa-shield-halved"></i></div>
         </div>
       </div>
     </section>
@@ -388,45 +375,45 @@
     <!-- ===== TRUSTED BY ===== -->
     <section class="trusted-by">
       <div class="container">
-        <p class="trusted-label">Trusted by Healthcare & Wellness Brands in 12 Countries</p>
+        <p class="trusted-label">Trusted by Healthcare & Wellness Brands Across 12+ Countries</p>
         <div class="trusted-logos">
           <div class="trusted-logo">
-            <div class="trusted-logo-badge blue">M+</div><span class="trusted-logo-name">MediCare+</span>
+            <div class="trusted-logo-badge blue"><i class="fas fa-heart-pulse"></i></div><span class="trusted-logo-name">MediCare+</span>
           </div>
           <div class="trusted-logo">
-            <div class="trusted-logo-badge purple">PL</div><span class="trusted-logo-name">PharmaLink</span>
+            <div class="trusted-logo-badge purple"><i class="fas fa-capsules"></i></div><span class="trusted-logo-name">PharmaLink</span>
           </div>
           <div class="trusted-logo">
-            <div class="trusted-logo-badge green">FP</div><span class="trusted-logo-name">FitPulse</span>
+            <div class="trusted-logo-badge green"><i class="fas fa-dumbbell"></i></div><span class="trusted-logo-name">FitPulse</span>
           </div>
           <div class="trusted-logo">
-            <div class="trusted-logo-badge teal">HB</div><span class="trusted-logo-name">HealthBridge</span>
+            <div class="trusted-logo-badge teal"><i class="fas fa-hospital"></i></div><span class="trusted-logo-name">HealthBridge</span>
           </div>
           <div class="trusted-logo">
-            <div class="trusted-logo-badge orange">DC</div><span class="trusted-logo-name">DocConnect</span>
+            <div class="trusted-logo-badge orange"><i class="fas fa-stethoscope"></i></div><span class="trusted-logo-name">DocConnect</span>
           </div>
           <div class="trusted-logo">
-            <div class="trusted-logo-badge pink">WH</div><span class="trusted-logo-name">WellnessHub</span>
+            <div class="trusted-logo-badge pink"><i class="fas fa-spa"></i></div><span class="trusted-logo-name">WellnessHub</span>
           </div>
         </div>
         <div class="trust-proof-bar">
           <div class="trust-proof-item">
-            <span class="trust-proof-stars">★★★★★</span>
+            <span class="trust-proof-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
             <span class="trust-proof-text">4.9 / 5 avg. client rating</span>
           </div>
           <div class="trust-proof-divider">|</div>
           <div class="trust-proof-item">
-            <span>🔒</span>
+            <span><i class="fas fa-shield-halved"></i></span>
             <span class="trust-proof-text">HIPAA &amp; GDPR Compliant</span>
           </div>
           <div class="trust-proof-divider">|</div>
           <div class="trust-proof-item">
-            <span>⚡</span>
+            <span><i class="fas fa-clock"></i></span>
             <span class="trust-proof-text">95% on-time delivery</span>
           </div>
           <div class="trust-proof-divider">|</div>
           <div class="trust-proof-item">
-            <span>🤝</span>
+            <span><i class="fas fa-handshake"></i></span>
             <span class="trust-proof-text">95% client retention rate</span>
           </div>
         </div>
@@ -436,21 +423,26 @@
     <!-- ===== PRESS / AS SEEN IN ===== -->
     <section class="press-section">
       <div class="container">
-        <p class="press-label">Featured In & Recognized By</p>
+        <p class="press-label">Recognized By Industry Leaders</p>
         <div class="press-logos">
           <div class="press-logo-item">
+            <i class="fab fa-product-hunt"></i>
             <span class="press-logo-text">Product Hunt</span>
           </div>
           <div class="press-logo-item">
+            <i class="fas fa-award"></i>
             <span class="press-logo-text">Clutch.co</span>
           </div>
           <div class="press-logo-item">
+            <i class="fas fa-trophy"></i>
             <span class="press-logo-text">DesignRush</span>
           </div>
           <div class="press-logo-item">
+            <i class="fas fa-certificate"></i>
             <span class="press-logo-text">GoodFirms</span>
           </div>
           <div class="press-logo-item">
+            <i class="fas fa-medal"></i>
             <span class="press-logo-text">TechBehemoths</span>
           </div>
         </div>
@@ -470,7 +462,7 @@
 
         <div class="services-grid">
           <div class="service-card reveal">
-            <div class="service-icon icon-blue">💻</div>
+            <div class="service-icon icon-blue"><i class="fas fa-laptop-code"></i></div>
             <h3>Custom Software Solutions</h3>
             <p>Launch your custom platform in weeks, not months. We build scalable HealthTech, EdTech, and enterprise
               SaaS solutions designed for growth.</p>
@@ -482,7 +474,7 @@
           </div>
 
           <div class="service-card reveal">
-            <div class="service-icon icon-purple">📱</div>
+            <div class="service-icon icon-purple"><i class="fas fa-mobile-screen-button"></i></div>
             <h3>Mobile App Development</h3>
             <p>Cross-platform mobile apps built with React Native and Flutter. From healthcare apps to e-commerce —
               performant, beautiful, and scalable.</p>
@@ -494,7 +486,7 @@
           </div>
 
           <div class="service-card reveal">
-            <div class="service-icon icon-green">🌐</div>
+            <div class="service-icon icon-green"><i class="fas fa-globe"></i></div>
             <h3>Web Application Development</h3>
             <p>Modern, responsive web applications built with cutting-edge technologies. From SaaS platforms to admin
               dashboards and customer portals.</p>
@@ -506,7 +498,7 @@
           </div>
 
           <div class="service-card reveal">
-            <div class="service-icon icon-red">☁️</div>
+            <div class="service-icon icon-red"><i class="fas fa-cloud"></i></div>
             <h3>Cloud & DevOps</h3>
             <p>Scalable cloud infrastructure, CI/CD pipelines, and deployment automation. We ensure your applications
               run
@@ -519,7 +511,7 @@
           </div>
 
           <div class="service-card reveal">
-            <div class="service-icon icon-teal">🔗</div>
+            <div class="service-icon icon-teal"><i class="fas fa-link"></i></div>
             <h3>API & Integration Services</h3>
             <p>Seamless third-party integrations, payment gateways, enterprise CRM integration, and custom API
               development for
@@ -532,7 +524,7 @@
           </div>
 
           <div class="service-card reveal">
-            <div class="service-icon icon-orange">🎨</div>
+            <div class="service-icon icon-orange"><i class="fas fa-palette"></i></div>
             <h3>UI/UX Design</h3>
             <p>Human-centered design that converts. We craft intuitive interfaces and delightful user experiences backed
               by research and usability testing.</p>
@@ -559,22 +551,22 @@
 
             <div class="about-features">
               <div class="about-feature">
-                <div class="about-feature-icon">⚡</div>
+                <div class="about-feature-icon"><i class="fas fa-bolt"></i></div>
                 <h4>Fast Delivery</h4>
                 <p>Launch MVPs in weeks with our agile development approach.</p>
               </div>
               <div class="about-feature">
-                <div class="about-feature-icon">🔒</div>
+                <div class="about-feature-icon"><i class="fas fa-shield-halved"></i></div>
                 <h4>HIPAA Compliant</h4>
                 <p>All health products built with enterprise-grade security.</p>
               </div>
               <div class="about-feature">
-                <div class="about-feature-icon">🤝</div>
+                <div class="about-feature-icon"><i class="fas fa-users"></i></div>
                 <h4>Dedicated Teams</h4>
                 <p>Your project gets a dedicated team of senior engineers.</p>
               </div>
               <div class="about-feature">
-                <div class="about-feature-icon">🔄</div>
+                <div class="about-feature-icon"><i class="fas fa-headset"></i></div>
                 <h4>24/7 Support</h4>
                 <p>Round-the-clock support and maintenance post-launch.</p>
               </div>
@@ -606,19 +598,19 @@
             </div>
             <div class="compliance-badges">
               <div class="compliance-badge">
-                <span class="compliance-icon">🔒</span>
+                <span class="compliance-icon"><i class="fas fa-shield-halved"></i></span>
                 <span>HIPAA Compliant</span>
               </div>
               <div class="compliance-badge">
-                <span class="compliance-icon">🛡️</span>
+                <span class="compliance-icon"><i class="fas fa-user-shield"></i></span>
                 <span>GDPR Ready</span>
               </div>
               <div class="compliance-badge">
-                <span class="compliance-icon">☁️</span>
+                <span class="compliance-icon"><i class="fas fa-cloud"></i></span>
                 <span>AWS + BAA</span>
               </div>
               <div class="compliance-badge">
-                <span class="compliance-icon">🔐</span>
+                <span class="compliance-icon"><i class="fas fa-lock"></i></span>
                 <span>AES-256 Encrypted</span>
               </div>
             </div>
@@ -641,7 +633,7 @@
         <div class="portfolio-grid">
           <div class="portfolio-card reveal">
             <div class="portfolio-image">
-              <img src="assets/project-edusphere.png" alt="EduSphere LMS">
+              <img src="assets/project-edusphere.png" alt="EduSphere LMS" loading="lazy">
               <div class="portfolio-image-overlay"></div>
             </div>
             <div class="portfolio-info">
@@ -660,7 +652,7 @@
 
           <div class="portfolio-card reveal">
             <div class="portfolio-image">
-              <img src="assets/project-telemedicine.png" alt="Mednowna - Telehealth Platform">
+              <img src="assets/project-telemedicine.png" alt="Mednowna - Telehealth Platform" loading="lazy">
               <div class="portfolio-image-overlay"></div>
             </div>
             <div class="portfolio-info">
@@ -680,7 +672,7 @@
 
           <div class="portfolio-card reveal">
             <div class="portfolio-image">
-              <img src="assets/project-logistics.png" alt="GlobalLogistics Fleet">
+              <img src="assets/project-logistics.png" alt="GlobalLogistics Fleet" loading="lazy">
               <div class="portfolio-image-overlay"></div>
             </div>
             <div class="portfolio-info">
@@ -699,7 +691,7 @@
 
           <div class="portfolio-card reveal">
             <div class="portfolio-image">
-              <img src="assets/project-finflow.png" alt="FinFlow Dashboard">
+              <img src="assets/project-finflow.png" alt="FinFlow Dashboard" loading="lazy">
               <div class="portfolio-image-overlay"></div>
             </div>
             <div class="portfolio-info">
@@ -718,7 +710,7 @@
 
           <div class="portfolio-card reveal">
             <div class="portfolio-image">
-              <img src="assets/project-crm.png" alt="CloudSync CRM">
+              <img src="assets/project-crm.png" alt="CloudSync CRM" loading="lazy">
               <div class="portfolio-image-overlay"></div>
             </div>
             <div class="portfolio-info">
@@ -737,7 +729,7 @@
 
           <div class="portfolio-card reveal">
             <div class="portfolio-image">
-              <img src="assets/project-ecommerce.png" alt="ShopSphere B2B">
+              <img src="assets/project-ecommerce.png" alt="ShopSphere B2B" loading="lazy">
               <div class="portfolio-image-overlay"></div>
             </div>
             <div class="portfolio-info">
@@ -814,7 +806,7 @@
               months of development under our own brand. The team's deep understanding of scalable systems is unmatched.
             </p>
             <div class="testimonial-author">
-              <img src="assets/reviewer-1.png" alt="Arjun Mehta" class="testimonial-avatar-img">
+              <img src="assets/reviewer-1.png" alt="Arjun Mehta" class="testimonial-avatar-img" loading="lazy">
               <div>
                 <div class="testimonial-name">Arjun Mehta</div>
                 <div class="testimonial-role">CEO, EduSphere • India</div>
@@ -830,7 +822,7 @@
               ahead of schedule with exceptional quality. The ongoing support has been incredible — truly a partner, not
               just a vendor.</p>
             <div class="testimonial-author">
-              <img src="assets/reviewer-2.png" alt="Sarah Anderson" class="testimonial-avatar-img">
+              <img src="assets/reviewer-2.png" alt="Sarah Anderson" class="testimonial-avatar-img" loading="lazy">
               <div>
                 <div class="testimonial-name">Sarah Anderson</div>
                 <div class="testimonial-role">CTO, FinFlow Solutions • USA</div>
@@ -846,7 +838,7 @@
               tracking events flawlessly. Their attention to detail and understanding of logistics operations is
               outstanding.</p>
             <div class="testimonial-author">
-              <img src="assets/reviewer-3.png" alt="Ahmed Khalil" class="testimonial-avatar-img">
+              <img src="assets/reviewer-3.png" alt="Ahmed Khalil" class="testimonial-avatar-img" loading="lazy">
               <div>
                 <div class="testimonial-name">Ahmed Khalil</div>
                 <div class="testimonial-role">Director, GlobalFreight • UAE</div>
@@ -862,7 +854,7 @@
               about the product. Our mobile application hit 50K downloads in the first month thanks to their outstanding
               UI/UX work.</p>
             <div class="testimonial-author">
-              <img src="assets/reviewer-4.png" alt="Maya Johnson" class="testimonial-avatar-img">
+              <img src="assets/reviewer-4.png" alt="Maya Johnson" class="testimonial-avatar-img" loading="lazy">
               <div>
                 <div class="testimonial-name">Maya Johnson</div>
                 <div class="testimonial-role">Founder, PulseApp • UK</div>
@@ -878,7 +870,7 @@
               our entire retail workflow. From inventory integration to the customer portal — everything works
               beautifully.</p>
             <div class="testimonial-author">
-              <img src="assets/reviewer-5.png" alt="Kenji Tanaka" class="testimonial-avatar-img">
+              <img src="assets/reviewer-5.png" alt="Kenji Tanaka" class="testimonial-avatar-img" loading="lazy">
               <div>
                 <div class="testimonial-name">Kenji Tanaka</div>
                 <div class="testimonial-role">Director, RetailPro • Japan</div>
@@ -894,7 +886,7 @@
               exceeded our expectations. Their team's expertise in creating secure, scalable software is truly
               unmatched.</p>
             <div class="testimonial-author">
-              <img src="assets/reviewer-mednowna.jpg" alt="Constante De Guzman Balili" class="testimonial-avatar-img">
+              <img src="assets/reviewer-mednowna.jpg" alt="Constante De Guzman Balili" class="testimonial-avatar-img" loading="lazy">
               <div>
                 <div class="testimonial-name">Constante De Guzman Balili</div>
                 <div class="testimonial-role">Chairman and Founder, Mednowna</div>
@@ -916,21 +908,18 @@
         </div>
 
         <div class="tech-grid reveal">
-          <div class="tech-item"><span class="tech-item-icon">⚛️</span><span class="tech-item-name">React</span></div>
-          <div class="tech-item"><span class="tech-item-icon">📱</span><span class="tech-item-name">React Native</span>
-          </div>
-          <div class="tech-item"><span class="tech-item-icon">▲</span><span class="tech-item-name">Next.js</span></div>
-          <div class="tech-item"><span class="tech-item-icon">🟢</span><span class="tech-item-name">Node.js</span></div>
-          <div class="tech-item"><span class="tech-item-icon">🐍</span><span class="tech-item-name">Python</span></div>
-          <div class="tech-item"><span class="tech-item-icon">🍃</span><span class="tech-item-name">MongoDB</span></div>
-          <div class="tech-item"><span class="tech-item-icon">🐘</span><span class="tech-item-name">PostgreSQL</span>
-          </div>
-          <div class="tech-item"><span class="tech-item-icon">☁️</span><span class="tech-item-name">AWS</span></div>
-          <div class="tech-item"><span class="tech-item-icon">🐳</span><span class="tech-item-name">Docker</span></div>
-          <div class="tech-item"><span class="tech-item-icon">🔥</span><span class="tech-item-name">Firebase</span>
-          </div>
-          <div class="tech-item"><span class="tech-item-icon">🦋</span><span class="tech-item-name">Flutter</span></div>
-          <div class="tech-item"><span class="tech-item-icon">📊</span><span class="tech-item-name">GraphQL</span></div>
+          <div class="tech-item"><span class="tech-item-icon"><i class="fab fa-react"></i></span><span class="tech-item-name">React</span></div>
+          <div class="tech-item"><span class="tech-item-icon"><i class="fab fa-react"></i></span><span class="tech-item-name">React Native</span></div>
+          <div class="tech-item"><span class="tech-item-icon"><i class="fas fa-n"></i></span><span class="tech-item-name">Next.js</span></div>
+          <div class="tech-item"><span class="tech-item-icon"><i class="fab fa-node-js"></i></span><span class="tech-item-name">Node.js</span></div>
+          <div class="tech-item"><span class="tech-item-icon"><i class="fab fa-python"></i></span><span class="tech-item-name">Python</span></div>
+          <div class="tech-item"><span class="tech-item-icon"><i class="fas fa-leaf"></i></span><span class="tech-item-name">MongoDB</span></div>
+          <div class="tech-item"><span class="tech-item-icon"><i class="fas fa-database"></i></span><span class="tech-item-name">PostgreSQL</span></div>
+          <div class="tech-item"><span class="tech-item-icon"><i class="fab fa-aws"></i></span><span class="tech-item-name">AWS</span></div>
+          <div class="tech-item"><span class="tech-item-icon"><i class="fab fa-docker"></i></span><span class="tech-item-name">Docker</span></div>
+          <div class="tech-item"><span class="tech-item-icon"><i class="fas fa-fire"></i></span><span class="tech-item-name">Firebase</span></div>
+          <div class="tech-item"><span class="tech-item-icon"><i class="fab fa-flutter"></i></span><span class="tech-item-name">Flutter</span></div>
+          <div class="tech-item"><span class="tech-item-icon"><i class="fas fa-diagram-project"></i></span><span class="tech-item-name">GraphQL</span></div>
         </div>
       </div>
     </section>
@@ -957,23 +946,23 @@
           </div>
           <div class="comparison-col comparison-col-us">
             <div class="comparison-header-cell winner">TodayInTech White-Label</div>
-            <div class="comparison-cell winner-cell">✅ 4–8 Weeks</div>
-            <div class="comparison-cell winner-cell">✅ $99+</div>
-            <div class="comparison-cell winner-cell">✅ Built-in</div>
-            <div class="comparison-cell winner-cell">✅ Pre-integrated</div>
-            <div class="comparison-cell winner-cell">✅ 24/7 Support Included</div>
-            <div class="comparison-cell winner-cell">✅ Full Branding Control</div>
-            <div class="comparison-cell winner-cell">✅ Low — proven platform</div>
+            <div class="comparison-cell winner-cell"><i class="fas fa-circle-check" style="color:var(--accent-green)"></i> 4–8 Weeks</div>
+            <div class="comparison-cell winner-cell"><i class="fas fa-circle-check" style="color:var(--accent-green)"></i> $99+</div>
+            <div class="comparison-cell winner-cell"><i class="fas fa-circle-check" style="color:var(--accent-green)"></i> Built-in</div>
+            <div class="comparison-cell winner-cell"><i class="fas fa-circle-check" style="color:var(--accent-green)"></i> Pre-integrated</div>
+            <div class="comparison-cell winner-cell"><i class="fas fa-circle-check" style="color:var(--accent-green)"></i> 24/7 Support Included</div>
+            <div class="comparison-cell winner-cell"><i class="fas fa-circle-check" style="color:var(--accent-green)"></i> Full Branding Control</div>
+            <div class="comparison-cell winner-cell"><i class="fas fa-circle-check" style="color:var(--accent-green)"></i> Low — proven platform</div>
           </div>
           <div class="comparison-col comparison-col-scratch">
             <div class="comparison-header-cell">Custom Build / Hiring In-house</div>
-            <div class="comparison-cell">❌ 6–18 Months</div>
-            <div class="comparison-cell">❌ $200K–$1M+</div>
-            <div class="comparison-cell">❌ Your responsibility</div>
-            <div class="comparison-cell">❌ Months of custom work</div>
-            <div class="comparison-cell">❌ Separate ops team needed</div>
-            <div class="comparison-cell">⚠️ Possible but costly</div>
-            <div class="comparison-cell">❌ High — unproven code</div>
+            <div class="comparison-cell"><i class="fas fa-circle-xmark" style="color:var(--accent)"></i> 6–18 Months</div>
+            <div class="comparison-cell"><i class="fas fa-circle-xmark" style="color:var(--accent)"></i> $200K–$1M+</div>
+            <div class="comparison-cell"><i class="fas fa-circle-xmark" style="color:var(--accent)"></i> Your responsibility</div>
+            <div class="comparison-cell"><i class="fas fa-circle-xmark" style="color:var(--accent)"></i> Months of custom work</div>
+            <div class="comparison-cell"><i class="fas fa-circle-xmark" style="color:var(--accent)"></i> Separate ops team needed</div>
+            <div class="comparison-cell"><i class="fas fa-triangle-exclamation" style="color:#FFA000"></i> Possible but costly</div>
+            <div class="comparison-cell"><i class="fas fa-circle-xmark" style="color:var(--accent)"></i> High — unproven code</div>
           </div>
         </div>
       </div>
@@ -994,14 +983,14 @@
           <div class="pricing-card">
             <div class="pricing-tier">Starter</div>
             <div class="pricing-price">From <strong>$99</strong></div>
-            <div class="pricing-timeline">⚡ Launch in 4–8 weeks</div>
+            <div class="pricing-timeline"><i class="fas fa-bolt" style="color:var(--primary);margin-right:4px;"></i> Launch in 4–8 weeks</div>
             <ul class="pricing-features">
-              <li>✓ White-label MVP (telemedicine, EHR, or pharmacy)</li>
-              <li>✓ Branded with your logo, colors & domain</li>
-              <li>✓ HIPAA-compliant architecture</li>
-              <li>✓ Mobile + web (React Native / React)</li>
-              <li>✓ Basic HL7/FHIR integration</li>
-              <li>✓ 3 months post-launch support</li>
+              <li><i class="fas fa-check" style="color:var(--accent-green);margin-right:6px;font-size:0.8em;"></i>White-label MVP (telemedicine, EHR, or pharmacy)</li>
+              <li><i class="fas fa-check" style="color:var(--accent-green);margin-right:6px;font-size:0.8em;"></i>Branded with your logo, colors & domain</li>
+              <li><i class="fas fa-check" style="color:var(--accent-green);margin-right:6px;font-size:0.8em;"></i>HIPAA-compliant architecture</li>
+              <li><i class="fas fa-check" style="color:var(--accent-green);margin-right:6px;font-size:0.8em;"></i>Mobile + web (React Native / React)</li>
+              <li><i class="fas fa-check" style="color:var(--accent-green);margin-right:6px;font-size:0.8em;"></i>Basic HL7/FHIR integration</li>
+              <li><i class="fas fa-check" style="color:var(--accent-green);margin-right:6px;font-size:0.8em;"></i>3 months post-launch support</li>
             </ul>
             <a href=""
               onclick="Calendly.initPopupWidget({url:'https://calendly.com/LaunchHealthApp/30min/'});return false;"
@@ -1012,14 +1001,14 @@
             <div class="pricing-popular-badge">Most Popular</div>
             <div class="pricing-tier">Growth</div>
             <div class="pricing-price">From <strong>$499</strong></div>
-            <div class="pricing-timeline">⚡ Launch in 8–16 weeks</div>
+            <div class="pricing-timeline"><i class="fas fa-bolt" style="color:var(--primary);margin-right:4px;"></i> Launch in 8–16 weeks</div>
             <ul class="pricing-features">
-              <li>✓ Full white-label platform (all modules)</li>
-              <li>✓ Epic / Cerner / Allscripts integration</li>
-              <li>✓ Payment gateway (Stripe / Square)</li>
-              <li>✓ Admin dashboard + analytics</li>
-              <li>✓ Custom AI or automation features</li>
-              <li>✓ 6 months dedicated support</li>
+              <li><i class="fas fa-check" style="color:var(--accent-green);margin-right:6px;font-size:0.8em;"></i>Full white-label platform (all modules)</li>
+              <li><i class="fas fa-check" style="color:var(--accent-green);margin-right:6px;font-size:0.8em;"></i>Epic / Cerner / Allscripts integration</li>
+              <li><i class="fas fa-check" style="color:var(--accent-green);margin-right:6px;font-size:0.8em;"></i>Payment gateway (Stripe / Square)</li>
+              <li><i class="fas fa-check" style="color:var(--accent-green);margin-right:6px;font-size:0.8em;"></i>Admin dashboard + analytics</li>
+              <li><i class="fas fa-check" style="color:var(--accent-green);margin-right:6px;font-size:0.8em;"></i>Custom AI or automation features</li>
+              <li><i class="fas fa-check" style="color:var(--accent-green);margin-right:6px;font-size:0.8em;"></i>6 months dedicated support</li>
             </ul>
             <a href=""
               onclick="Calendly.initPopupWidget({url:'https://calendly.com/LaunchHealthApp/30min/'});return false;"
@@ -1029,14 +1018,14 @@
           <div class="pricing-card">
             <div class="pricing-tier">Enterprise</div>
             <div class="pricing-price"><strong>Custom</strong> Quote</div>
-            <div class="pricing-timeline">⚡ Dedicated team + roadmap</div>
+            <div class="pricing-timeline"><i class="fas fa-bolt" style="color:var(--primary);margin-right:4px;"></i> Dedicated team + roadmap</div>
             <ul class="pricing-features">
-              <li>✓ Full custom platform architecture</li>
-              <li>✓ Dedicated senior engineering team</li>
-              <li>✓ Multi-tenant SaaS infrastructure</li>
-              <li>✓ Regulatory & compliance consulting</li>
-              <li>✓ SOC 2 readiness support</li>
-              <li>✓ 24/7 managed hosting & SLA</li>
+              <li><i class="fas fa-check" style="color:var(--accent-green);margin-right:6px;font-size:0.8em;"></i>Full custom platform architecture</li>
+              <li><i class="fas fa-check" style="color:var(--accent-green);margin-right:6px;font-size:0.8em;"></i>Dedicated senior engineering team</li>
+              <li><i class="fas fa-check" style="color:var(--accent-green);margin-right:6px;font-size:0.8em;"></i>Multi-tenant SaaS infrastructure</li>
+              <li><i class="fas fa-check" style="color:var(--accent-green);margin-right:6px;font-size:0.8em;"></i>Regulatory & compliance consulting</li>
+              <li><i class="fas fa-check" style="color:var(--accent-green);margin-right:6px;font-size:0.8em;"></i>SOC 2 readiness support</li>
+              <li><i class="fas fa-check" style="color:var(--accent-green);margin-right:6px;font-size:0.8em;"></i>24/7 managed hosting & SLA</li>
             </ul>
             <a href=""
               onclick="Calendly.initPopupWidget({url:'https://calendly.com/LaunchHealthApp/30min/'});return false;"
@@ -1065,7 +1054,7 @@
           <details class="faq-item" open>
             <summary class="faq-question">
               <span>What kind of custom software do you build?</span>
-              <span class="faq-icon">+</span>
+              <span class="faq-icon"><i class="fas fa-plus"></i></span>
             </summary>
             <div class="faq-answer">
               <p>We build all types of custom software, including <strong>HealthTech platforms</strong>, <strong>EdTech
@@ -1079,7 +1068,7 @@
           <details class="faq-item">
             <summary class="faq-question">
               <span>How much does it cost to build a custom software application?</span>
-              <span class="faq-icon">+</span>
+              <span class="faq-icon"><i class="fas fa-plus"></i></span>
             </summary>
             <div class="faq-answer">
               <p>The cost depends on complexity and features. We focus on lean, high-value <strong>MVPs starting from
@@ -1095,7 +1084,7 @@
           <details class="faq-item">
             <summary class="faq-question">
               <span>Are your healthcare solutions HIPAA and GDPR compliant?</span>
-              <span class="faq-icon">+</span>
+              <span class="faq-icon"><i class="fas fa-plus"></i></span>
             </summary>
             <div class="faq-answer">
               <p>Absolutely. All healthcare products built by TodayInTech are fully <strong>HIPAA compliant</strong> and
@@ -1109,7 +1098,7 @@
           <details class="faq-item">
             <summary class="faq-question">
               <span>How long does it take to develop a telemedicine or healthcare app?</span>
-              <span class="faq-icon">+</span>
+              <span class="faq-icon"><i class="fas fa-plus"></i></span>
             </summary>
             <div class="faq-answer">
               <p>With our <strong>white-label approach</strong>, a fully branded telemedicine app can be launched in
@@ -1125,7 +1114,7 @@
           <details class="faq-item">
             <summary class="faq-question">
               <span>What technologies does TodayInTech use for app development?</span>
-              <span class="faq-icon">+</span>
+              <span class="faq-icon"><i class="fas fa-plus"></i></span>
             </summary>
             <div class="faq-answer">
               <p>We use industry-leading technologies chosen for scalability and performance: <strong>React &
@@ -1142,7 +1131,7 @@
           <details class="faq-item">
             <summary class="faq-question">
               <span>Do you provide post-launch support and maintenance?</span>
-              <span class="faq-icon">+</span>
+              <span class="faq-icon"><i class="fas fa-plus"></i></span>
             </summary>
             <div class="faq-answer">
               <p>Yes, we provide comprehensive <strong>24/7 post-launch support</strong> including bug fixes,
@@ -1158,7 +1147,7 @@
           <details class="faq-item">
             <summary class="faq-question">
               <span>Can you integrate with existing hospital systems like Epic, Cerner, or Allscripts?</span>
-              <span class="faq-icon">+</span>
+              <span class="faq-icon"><i class="fas fa-plus"></i></span>
             </summary>
             <div class="faq-answer">
               <p>Yes, we specialize in <strong>healthcare system integrations</strong>. Our team has extensive
@@ -1173,7 +1162,7 @@
           <details class="faq-item">
             <summary class="faq-question">
               <span>What industries does TodayInTech serve beyond healthcare?</span>
-              <span class="faq-icon">+</span>
+              <span class="faq-icon"><i class="fas fa-plus"></i></span>
             </summary>
             <div class="faq-answer">
               <p>While healthcare is our core specialization, we also build exceptional software for
@@ -1231,10 +1220,10 @@
               <div class="roi-result-cost" id="roi-scratch-cost">$1,440,000</div>
               <div class="roi-result-time" id="roi-scratch-time">9 months to launch</div>
               <ul class="roi-result-risks">
-                <li>❌ HIPAA compliance work: +$50K</li>
-                <li>❌ HL7/FHIR integrations: +3 months</li>
-                <li>❌ QA & security testing: +$30K</li>
-                <li>❌ High risk of delays & overruns</li>
+                <li><i class="fas fa-circle-xmark" style="color:var(--accent)"></i> HIPAA compliance work: +$50K</li>
+                <li><i class="fas fa-circle-xmark" style="color:var(--accent)"></i> HL7/FHIR integrations: +3 months</li>
+                <li><i class="fas fa-circle-xmark" style="color:var(--accent)"></i> QA & security testing: +$30K</li>
+                <li><i class="fas fa-circle-xmark" style="color:var(--accent)"></i> High risk of delays & overruns</li>
               </ul>
             </div>
             <div class="roi-result-card roi-us">
@@ -1244,10 +1233,10 @@
               <div class="roi-result-cost roi-our-cost">From <strong>$99</strong></div>
               <div class="roi-result-time">Launch in 4–8 weeks</div>
               <ul class="roi-result-risks">
-                <li>✅ HIPAA-compliant by default</li>
-                <li>✅ HL7/FHIR pre-integrated</li>
-                <li>✅ Fixed-scope, no surprises</li>
-                <li>✅ 24/7 post-launch support</li>
+                <li><i class="fas fa-circle-check" style="color:var(--accent-green)"></i> HIPAA-compliant by default</li>
+                <li><i class="fas fa-circle-check" style="color:var(--accent-green)"></i> HL7/FHIR pre-integrated</li>
+                <li><i class="fas fa-circle-check" style="color:var(--accent-green)"></i> Fixed-scope, no surprises</li>
+                <li><i class="fas fa-circle-check" style="color:var(--accent-green)"></i> 24/7 post-launch support</li>
               </ul>
               <a href=""
                 onclick="Calendly.initPopupWidget({url:'https://calendly.com/LaunchHealthApp/30min/'});return false;"
@@ -1284,16 +1273,16 @@
 
           <div class="cta-trust">
             <div class="cta-trust-item">
-              <span>✓</span> Free Consultation
+              <span><i class="fas fa-check-circle"></i></span> Free Consultation
             </div>
             <div class="cta-trust-item">
-              <span>✓</span> No Sales Pressure
+              <span><i class="fas fa-check-circle"></i></span> No Sales Pressure
             </div>
             <div class="cta-trust-item">
-              <span>✓</span> NDA Available
+              <span><i class="fas fa-check-circle"></i></span> NDA Available
             </div>
             <div class="cta-trust-item">
-              <span>✓</span> Response in 24hrs
+              <span><i class="fas fa-check-circle"></i></span> Response in 24hrs
             </div>
           </div>
         </div>
@@ -1314,12 +1303,12 @@
           <p>Empowering healthcare and technology businesses with world-class software solutions. Your vision, our
             expertise.</p>
           <div class="footer-socials">
-            <a href="https://www.facebook.com/people/Today-In-Tech/61583127425585/" target="_blank"
-              class="footer-social" aria-label="Facebook">f</a>
-            <a href="https://www.instagram.com/todayintech/" target="_blank" class="footer-social"
-              aria-label="Instagram">📷</a>
-            <a href="https://www.linkedin.com/company/109768769" target="_blank" class="footer-social"
-              aria-label="LinkedIn">in</a>
+            <a href="https://www.facebook.com/people/Today-In-Tech/61583127425585/" target="_blank" rel="noopener"
+              class="footer-social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/todayintech/" target="_blank" rel="noopener" class="footer-social"
+              aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/109768769" target="_blank" rel="noopener" class="footer-social"
+              aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
 
@@ -1359,11 +1348,11 @@
       </div>
 
       <div class="footer-bottom">
-        <p class="footer-copyright">© 2026 TodayInTech. All rights reserved.</p>
+        <p class="footer-copyright">&copy; 2024–2026 TodayInTech. All rights reserved.</p>
         <div class="footer-legal">
-          <a href="index.html">Privacy Policy</a>
-          <a href="index.html">Terms of Service</a>
-          <a href="index.html">Cookie Policy</a>
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms of Service</a>
+          <a href="#cookies">Cookie Policy</a>
         </div>
       </div>
     </div>
@@ -1420,13 +1409,13 @@
           </div>
 
           <button type="submit" class="btn-submit">
-            🚀 Send Request & Book a Call
+            <i class="fas fa-paper-plane"></i> Send Request & Book a Call
           </button>
         </form>
       </div>
 
       <div class="form-success" id="formSuccess">
-        <div class="check-icon">✅</div>
+        <div class="check-icon"><i class="fas fa-circle-check" style="font-size:3rem;color:var(--accent-green);"></i></div>
         <h3>Thank You!</h3>
         <p>Your booking request has been received. Our team will reach out to you within 24 hours to schedule your
           free
@@ -1440,20 +1429,11 @@
     <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/LaunchHealthApp/30min/'});return false;"
       class="floating-cta-btn">
       <span class="floating-cta-pulse"></span>
-      Book Free Call
+      <i class="fas fa-phone"></i> Book Free Call
     </a>
   </div>
 
-  <!-- ===== SOCIAL PROOF NOTIFICATION ===== -->
-  <div class="social-proof-toast" id="socialProofToast">
-    <div class="toast-icon">📞</div>
-    <div class="toast-content">
-      <div class="toast-name" id="toastName">Dr. Sarah M.</div>
-      <div class="toast-detail" id="toastDetail">from New York just booked a free strategy session</div>
-    </div>
-    <button class="toast-close"
-      onclick="document.getElementById('socialProofToast').classList.remove('show')">✕</button>
-  </div>
+  <!-- Social proof toast removed for cleaner UX -->
 
   <!-- ===== JAVASCRIPT ===== -->
   <script src="script.js"></script>

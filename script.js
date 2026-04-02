@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initSmoothScroll();
     initParallaxGlow();
     initFloatingCta();
-    initSocialProofToast();
+    // initSocialProofToast(); // Disabled — fake social proof hurts trust
     initRoiCalculator();
 });
 
@@ -411,20 +411,20 @@ document.addEventListener('DOMContentLoaded', () => {
         const enableLightMode = () => {
             document.documentElement.classList.add('light-mode');
             localStorage.setItem('lightMode', 'enabled');
-            themeToggleBtn.innerText = '🌙';
+            themeToggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
         };
 
         const disableLightMode = () => {
             document.documentElement.classList.remove('light-mode');
             localStorage.setItem('lightMode', 'disabled');
-            themeToggleBtn.innerText = '☀️';
+            themeToggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
         };
 
         // Initialize button iconography based on early head script
         if (document.documentElement.classList.contains('light-mode')) {
-            themeToggleBtn.innerText = '🌙';
+            themeToggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
         } else {
-            themeToggleBtn.innerText = '☀️';
+            themeToggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
         }
 
         themeToggleBtn.addEventListener('click', () => {
