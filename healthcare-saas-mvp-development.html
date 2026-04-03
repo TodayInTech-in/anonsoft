@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Healthcare SaaS MVP Development | TodayInTech — From Idea to Launch in 8 Weeks</title>
-  <meta name="description" content="Build a funded-ready healthcare SaaS MVP in 8 weeks. Scalable architecture, HIPAA compliance, and prior FDA/healthcare experience. Ideal for health-tech founders and pre-seed startups.">
-  <meta name="keywords" content="healthcare SaaS MVP development, health tech startup development, HIPAA MVP, telemedicine MVP, healthcare app development startup, health tech founder development partner">
+  <meta name="description"
+    content="Build a funded-ready healthcare SaaS MVP in 8 weeks. Scalable architecture, HIPAA compliance, and prior FDA/healthcare experience. Ideal for health-tech founders and pre-seed startups.">
+  <meta name="keywords"
+    content="healthcare SaaS MVP development, health tech startup development, HIPAA MVP, telemedicine MVP, healthcare app development startup, health tech founder development partner">
   <link rel="canonical" href="https://todayintech.com/healthcare-saas-mvp-development">
   <link rel="icon" type="image/png" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,41 +17,253 @@
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
   <style>
-    .lp-hero { padding: 120px 0 80px; background: var(--gradient-hero); position: relative; overflow: hidden; }
-    .lp-hero .bg-glow { position: absolute; width: 600px; height: 600px; border-radius: 50%; opacity: 0.12; pointer-events: none; }
-    .lp-hero .glow-1 { background: radial-gradient(circle, var(--secondary) 0%, transparent 70%); top: -200px; right: -100px; }
-    .lp-hero .glow-2 { background: radial-gradient(circle, var(--primary) 0%, transparent 70%); bottom: -200px; left: -100px; }
-    .lp-badge { display: inline-flex; align-items: center; gap: 8px; padding: 6px 16px; border: 1px solid rgba(123,47,255,0.3); border-radius: 50px; background: rgba(123,47,255,0.08); font-size: 0.8rem; color: #a78bfa; margin-bottom: 24px; }
-    .lp-hero h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 800; font-family: var(--font-display); line-height: 1.15; margin-bottom: 24px; }
-    .lp-hero p { font-size: 1.15rem; color: var(--text-secondary); max-width: 640px; margin-bottom: 36px; line-height: 1.7; }
-    .lp-cta-row { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 48px; }
-    .lp-trust-row { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; }
-    .lp-trust-item { font-size: 0.82rem; color: var(--text-muted); display: flex; align-items: center; gap: 6px; }
-    .lp-process { padding: 80px 0; }
-    .lp-process-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; margin-top: 48px; }
-    .lp-process-step { padding: 28px; background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: var(--radius-lg); position: relative; }
-    .lp-step-num { font-size: 2.5rem; font-weight: 900; font-family: var(--font-display); color: var(--secondary); opacity: 0.4; line-height: 1; margin-bottom: 12px; }
-    .lp-process-step h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; }
-    .lp-process-step p { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; }
-    .lp-founder-quote { padding: 60px 0; background: rgba(123,47,255,0.04); border-top: 1px solid var(--border-glass); border-bottom: 1px solid var(--border-glass); text-align: center; }
-    .lp-founder-quote blockquote { font-size: 1.3rem; font-style: italic; color: var(--text-primary); max-width: 720px; margin: 0 auto 20px; line-height: 1.6; }
-    .lp-founder-quote cite { font-size: 0.85rem; color: var(--text-muted); }
-    .lp-bottom-cta { padding: 80px 0; text-align: center; }
-    .lp-bottom-cta h2 { font-size: 2.2rem; font-weight: 800; font-family: var(--font-display); margin-bottom: 16px; }
-    .lp-bottom-cta p { color: var(--text-secondary); max-width: 520px; margin: 0 auto 32px; }
-    .lp-check-list { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 28px; margin: 24px 0; }
-    .lp-check-list li { font-size: 0.85rem; color: var(--text-secondary); display: flex; align-items: center; gap: 6px; }
-    .lp-check-list li span.ck { color: var(--accent-green); font-weight: 700; }
-    .lp-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 16px 0; background: rgba(10,14,26,0.9); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border-glass); }
-    .lp-nav .container { display: flex; justify-content: space-between; align-items: center; }
-    .lp-social-proof { padding: 60px 0; background: rgba(0,212,255,0.03); border-top: 1px solid var(--border-glass); border-bottom: 1px solid var(--border-glass); text-align: center; }
-    .big-stat { font-size: 3.5rem; font-weight: 800; font-family: var(--font-display); background: linear-gradient(135deg, var(--secondary), var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-    .stat-label { font-size: 1rem; color: var(--text-secondary); margin-top: 4px; }
-    .lp-stats-row { display: flex; justify-content: center; gap: 60px; flex-wrap: wrap; }
-    .lp-stat-item { text-align: center; }
-    @media(max-width:600px){ .lp-cta-row { flex-direction: column; } .lp-stats-row { gap: 32px; } }
+    .lp-hero {
+      padding: 120px 0 80px;
+      background: var(--gradient-hero);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .lp-hero .bg-glow {
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      opacity: 0.12;
+      pointer-events: none;
+    }
+
+    .lp-hero .glow-1 {
+      background: radial-gradient(circle, var(--secondary) 0%, transparent 70%);
+      top: -200px;
+      right: -100px;
+    }
+
+    .lp-hero .glow-2 {
+      background: radial-gradient(circle, var(--primary) 0%, transparent 70%);
+      bottom: -200px;
+      left: -100px;
+    }
+
+    .lp-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      border: 1px solid rgba(123, 47, 255, 0.3);
+      border-radius: 50px;
+      background: rgba(123, 47, 255, 0.08);
+      font-size: 0.8rem;
+      color: #a78bfa;
+      margin-bottom: 24px;
+    }
+
+    .lp-hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      font-weight: 800;
+      font-family: var(--font-display);
+      line-height: 1.15;
+      margin-bottom: 24px;
+    }
+
+    .lp-hero p {
+      font-size: 1.15rem;
+      color: var(--text-secondary);
+      max-width: 640px;
+      margin-bottom: 36px;
+      line-height: 1.7;
+    }
+
+    .lp-cta-row {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 48px;
+    }
+
+    .lp-trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .lp-trust-item {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .lp-process {
+      padding: 80px 0;
+    }
+
+    .lp-process-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      margin-top: 48px;
+    }
+
+    .lp-process-step {
+      padding: 28px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-lg);
+      position: relative;
+    }
+
+    .lp-step-num {
+      font-size: 2.5rem;
+      font-weight: 900;
+      font-family: var(--font-display);
+      color: var(--secondary);
+      opacity: 0.4;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .lp-process-step h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .lp-process-step p {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    .lp-founder-quote {
+      padding: 60px 0;
+      background: rgba(123, 47, 255, 0.04);
+      border-top: 1px solid var(--border-glass);
+      border-bottom: 1px solid var(--border-glass);
+      text-align: center;
+    }
+
+    .lp-founder-quote blockquote {
+      font-size: 1.3rem;
+      font-style: italic;
+      color: var(--text-primary);
+      max-width: 720px;
+      margin: 0 auto 20px;
+      line-height: 1.6;
+    }
+
+    .lp-founder-quote cite {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .lp-bottom-cta {
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .lp-bottom-cta h2 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      font-family: var(--font-display);
+      margin-bottom: 16px;
+    }
+
+    .lp-bottom-cta p {
+      color: var(--text-secondary);
+      max-width: 520px;
+      margin: 0 auto 32px;
+    }
+
+    .lp-check-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px 28px;
+      margin: 24px 0;
+    }
+
+    .lp-check-list li {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .lp-check-list li span.ck {
+      color: var(--accent-green);
+      font-weight: 700;
+    }
+
+    .lp-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      padding: 16px 0;
+      background: rgba(10, 14, 26, 0.9);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-glass);
+    }
+
+    .lp-nav .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .lp-social-proof {
+      padding: 60px 0;
+      background: rgba(0, 212, 255, 0.03);
+      border-top: 1px solid var(--border-glass);
+      border-bottom: 1px solid var(--border-glass);
+      text-align: center;
+    }
+
+    .big-stat {
+      font-size: 3.5rem;
+      font-weight: 800;
+      font-family: var(--font-display);
+      background: linear-gradient(135deg, var(--secondary), var(--primary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .stat-label {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      margin-top: 4px;
+    }
+
+    .lp-stats-row {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+
+    .lp-stat-item {
+      text-align: center;
+    }
+
+    @media(max-width:600px) {
+      .lp-cta-row {
+        flex-direction: column;
+      }
+
+      .lp-stats-row {
+        gap: 32px;
+      }
+    }
   </style>
 </head>
+
 <body>
 
   <nav class="lp-nav">
@@ -57,7 +272,9 @@
         <img src="assets/logo.png" alt="TodayInTech Logo" style="height:32px;">
         <span class="nav-logo-text">TodayInTech</span>
       </a>
-      <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/LaunchHealthApp/30min/'});return false;" class="btn-primary" style="padding:10px 22px;font-size:0.85rem;">Tell Us About Your MVP</a>
+      <a href=""
+        onclick="Calendly.initPopupWidget({url:'https://calendly.com/launchhealthapp-6biv/30min/30min/'});return false;"
+        class="btn-primary" style="padding:10px 22px;font-size:0.85rem;">Tell Us About Your MVP</a>
     </div>
   </nav>
 
@@ -68,9 +285,12 @@
     <div class="container">
       <div class="lp-badge"><span>🚀</span> For Health-Tech Founders & Pre-Seed Startups</div>
       <h1>From Idea to <span class="gradient-text">Investor-Ready</span><br>Healthcare MVP in 8 Weeks</h1>
-      <p>We build HIPAA-compliant, scalable healthcare MVPs for founders who need to move fast — without hiring a full engineering team. Trusted by health-tech startups from seed to Series A.</p>
+      <p>We build HIPAA-compliant, scalable healthcare MVPs for founders who need to move fast — without hiring a full
+        engineering team. Trusted by health-tech startups from seed to Series A.</p>
       <div class="lp-cta-row">
-        <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/LaunchHealthApp/30min/'});return false;" class="btn-primary">Tell Us About Your MVP</a>
+        <a href=""
+          onclick="Calendly.initPopupWidget({url:'https://calendly.com/launchhealthapp-6biv/30min/30min/'});return false;"
+          class="btn-primary">Tell Us About Your MVP</a>
         <a href="/#pricing" class="btn-secondary">See Pricing</a>
       </div>
       <div class="lp-trust-row">
@@ -112,28 +332,33 @@
       <div class="section-header">
         <span class="section-label">Our MVP Process</span>
         <h2 class="section-title">How We Get You From Idea to Live in 8 Weeks</h2>
-        <p class="section-subtitle">A battle-tested process designed for founders who need speed, compliance, and investor-ready polish.</p>
+        <p class="section-subtitle">A battle-tested process designed for founders who need speed, compliance, and
+          investor-ready polish.</p>
       </div>
       <div class="lp-process-steps">
         <div class="lp-process-step">
           <div class="lp-step-num">01</div>
           <h3>Discovery Workshop (Week 1)</h3>
-          <p>We map your product requirements, compliance needs, target users, and investor narrative. Output: a detailed spec and fixed-price proposal.</p>
+          <p>We map your product requirements, compliance needs, target users, and investor narrative. Output: a
+            detailed spec and fixed-price proposal.</p>
         </div>
         <div class="lp-process-step">
           <div class="lp-step-num">02</div>
           <h3>Design & Architecture (Weeks 2–3)</h3>
-          <p>Figma designs you can test with users before a line of code is written. HIPAA-compliant data model and cloud architecture planned up front.</p>
+          <p>Figma designs you can test with users before a line of code is written. HIPAA-compliant data model and
+            cloud architecture planned up front.</p>
         </div>
         <div class="lp-process-step">
           <div class="lp-step-num">03</div>
           <h3>Agile Build (Weeks 4–7)</h3>
-          <p>2-week sprint cycles with weekly demos. You see progress every week and can provide feedback in real time. No black-box development.</p>
+          <p>2-week sprint cycles with weekly demos. You see progress every week and can provide feedback in real time.
+            No black-box development.</p>
         </div>
         <div class="lp-process-step">
           <div class="lp-step-num">04</div>
           <h3>Launch & Investor Readiness (Week 8)</h3>
-          <p>Production deployment on AWS, QA sign-off, compliance documentation, and a live demo environment ready for investor meetings.</p>
+          <p>Production deployment on AWS, QA sign-off, compliance documentation, and a live demo environment ready for
+            investor meetings.</p>
         </div>
       </div>
     </div>
@@ -142,7 +367,8 @@
   <!-- QUOTE -->
   <section class="lp-founder-quote">
     <div class="container">
-      <blockquote>"TodayInTech delivered our telemedicine MVP in 7 weeks — fully HIPAA-compliant and polished enough to close our seed round. Their healthcare domain expertise saved us months of compliance work."</blockquote>
+      <blockquote>"TodayInTech delivered our telemedicine MVP in 7 weeks — fully HIPAA-compliant and polished enough to
+        close our seed round. Their healthcare domain expertise saved us months of compliance work."</blockquote>
       <cite>— James W., Co-Founder, FitPulse Health &bull; UK</cite>
     </div>
   </section>
@@ -151,8 +377,11 @@
   <section class="lp-bottom-cta">
     <div class="container">
       <h2>Ready to Build Your Healthcare MVP?</h2>
-      <p>Book a free 30-minute strategy session. We'll scope your MVP, identify compliance requirements, and give you a fixed-price estimate within 48 hours.</p>
-      <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/LaunchHealthApp/30min/'});return false;" class="btn-primary" style="font-size:1rem;padding:16px 36px;">Tell Us About Your MVP</a>
+      <p>Book a free 30-minute strategy session. We'll scope your MVP, identify compliance requirements, and give you a
+        fixed-price estimate within 48 hours.</p>
+      <a href=""
+        onclick="Calendly.initPopupWidget({url:'https://calendly.com/launchhealthapp-6biv/30min/30min/'});return false;"
+        class="btn-primary" style="font-size:1rem;padding:16px 36px;">Tell Us About Your MVP</a>
       <ul class="lp-check-list">
         <li><span class="ck">✓</span> Free 30-min strategy call</li>
         <li><span class="ck">✓</span> Fixed-price proposal in 48hrs</li>
@@ -165,9 +394,11 @@
 
   <footer style="padding:32px 0;border-top:1px solid var(--border-glass);text-align:center;">
     <div class="container">
-      <p style="color:var(--text-muted);font-size:0.8rem;">© 2026 TodayInTech. All rights reserved. | <a href="/" style="color:var(--primary);">Back to Home</a></p>
+      <p style="color:var(--text-muted);font-size:0.8rem;">© 2026 TodayInTech. All rights reserved. | <a href="/"
+          style="color:var(--primary);">Back to Home</a></p>
     </div>
   </footer>
 
 </body>
+
 </html>

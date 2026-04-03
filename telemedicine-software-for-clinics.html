@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>White-Label Telemedicine Software for Clinics | TodayInTech</title>
-  <meta name="description" content="Launch a HIPAA-compliant, branded telemedicine experience for your clinic in 30 days. Epic/Cerner integration, no per-provider licensing fees. Book a free consultation.">
-  <meta name="keywords" content="telemedicine software for clinics, white label telemedicine, HIPAA telemedicine app, clinic telemedicine platform, Epic integration telemedicine, branded telemedicine">
+  <meta name="description"
+    content="Launch a HIPAA-compliant, branded telemedicine experience for your clinic in 30 days. Epic/Cerner integration, no per-provider licensing fees. Book a free consultation.">
+  <meta name="keywords"
+    content="telemedicine software for clinics, white label telemedicine, HIPAA telemedicine app, clinic telemedicine platform, Epic integration telemedicine, branded telemedicine">
   <link rel="canonical" href="https://todayintech.com/telemedicine-software-for-clinics">
   <link rel="icon" type="image/png" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,38 +17,225 @@
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
   <style>
-    .lp-hero { padding: 120px 0 80px; background: var(--gradient-hero); position: relative; overflow: hidden; }
-    .lp-hero .bg-glow { position: absolute; width: 600px; height: 600px; border-radius: 50%; opacity: 0.12; pointer-events: none; }
-    .lp-hero .glow-1 { background: radial-gradient(circle, var(--primary) 0%, transparent 70%); top: -200px; right: -100px; }
-    .lp-hero .glow-2 { background: radial-gradient(circle, var(--secondary) 0%, transparent 70%); bottom: -200px; left: -100px; }
-    .lp-badge { display: inline-flex; align-items: center; gap: 8px; padding: 6px 16px; border: 1px solid rgba(0,212,255,0.3); border-radius: 50px; background: rgba(0,212,255,0.08); font-size: 0.8rem; color: var(--primary); margin-bottom: 24px; }
-    .lp-hero h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 800; font-family: var(--font-display); line-height: 1.15; margin-bottom: 24px; }
-    .lp-hero p { font-size: 1.15rem; color: var(--text-secondary); max-width: 620px; margin-bottom: 36px; line-height: 1.7; }
-    .lp-cta-row { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 48px; }
-    .lp-trust-row { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; }
-    .lp-trust-item { font-size: 0.82rem; color: var(--text-muted); display: flex; align-items: center; gap: 6px; }
-    .lp-features { padding: 80px 0; }
-    .lp-features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 48px; }
-    .lp-feature-card { padding: 28px; background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: var(--radius-lg); }
-    .lp-feature-icon { font-size: 2rem; margin-bottom: 12px; }
-    .lp-feature-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; }
-    .lp-feature-card p { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; }
-    .lp-social-proof { padding: 60px 0; background: rgba(0,212,255,0.03); border-top: 1px solid var(--border-glass); border-bottom: 1px solid var(--border-glass); text-align: center; }
-    .lp-social-proof .big-stat { font-size: 3.5rem; font-weight: 800; font-family: var(--font-display); background: linear-gradient(135deg, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-    .lp-social-proof .stat-label { font-size: 1rem; color: var(--text-secondary); margin-top: 4px; }
-    .lp-stats-row { display: flex; justify-content: center; gap: 60px; flex-wrap: wrap; }
-    .lp-stat-item { text-align: center; }
-    .lp-bottom-cta { padding: 80px 0; text-align: center; }
-    .lp-bottom-cta h2 { font-size: 2.2rem; font-weight: 800; font-family: var(--font-display); margin-bottom: 16px; }
-    .lp-bottom-cta p { color: var(--text-secondary); max-width: 520px; margin: 0 auto 32px; }
-    .lp-check-list { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 28px; margin: 24px 0; }
-    .lp-check-list li { font-size: 0.85rem; color: var(--text-secondary); display: flex; align-items: center; gap: 6px; }
-    .lp-check-list li span.ck { color: var(--accent-green); font-weight: 700; }
-    .lp-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 16px 0; background: rgba(10, 14, 26, 0.9); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border-glass); }
-    .lp-nav .container { display: flex; justify-content: space-between; align-items: center; }
-    @media(max-width:600px){ .lp-cta-row { flex-direction: column; } .lp-stats-row { gap: 32px; } }
+    .lp-hero {
+      padding: 120px 0 80px;
+      background: var(--gradient-hero);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .lp-hero .bg-glow {
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      opacity: 0.12;
+      pointer-events: none;
+    }
+
+    .lp-hero .glow-1 {
+      background: radial-gradient(circle, var(--primary) 0%, transparent 70%);
+      top: -200px;
+      right: -100px;
+    }
+
+    .lp-hero .glow-2 {
+      background: radial-gradient(circle, var(--secondary) 0%, transparent 70%);
+      bottom: -200px;
+      left: -100px;
+    }
+
+    .lp-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      border: 1px solid rgba(0, 212, 255, 0.3);
+      border-radius: 50px;
+      background: rgba(0, 212, 255, 0.08);
+      font-size: 0.8rem;
+      color: var(--primary);
+      margin-bottom: 24px;
+    }
+
+    .lp-hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      font-weight: 800;
+      font-family: var(--font-display);
+      line-height: 1.15;
+      margin-bottom: 24px;
+    }
+
+    .lp-hero p {
+      font-size: 1.15rem;
+      color: var(--text-secondary);
+      max-width: 620px;
+      margin-bottom: 36px;
+      line-height: 1.7;
+    }
+
+    .lp-cta-row {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 48px;
+    }
+
+    .lp-trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .lp-trust-item {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .lp-features {
+      padding: 80px 0;
+    }
+
+    .lp-features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 48px;
+    }
+
+    .lp-feature-card {
+      padding: 28px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-lg);
+    }
+
+    .lp-feature-icon {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+
+    .lp-feature-card h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .lp-feature-card p {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    .lp-social-proof {
+      padding: 60px 0;
+      background: rgba(0, 212, 255, 0.03);
+      border-top: 1px solid var(--border-glass);
+      border-bottom: 1px solid var(--border-glass);
+      text-align: center;
+    }
+
+    .lp-social-proof .big-stat {
+      font-size: 3.5rem;
+      font-weight: 800;
+      font-family: var(--font-display);
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .lp-social-proof .stat-label {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      margin-top: 4px;
+    }
+
+    .lp-stats-row {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+
+    .lp-stat-item {
+      text-align: center;
+    }
+
+    .lp-bottom-cta {
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .lp-bottom-cta h2 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      font-family: var(--font-display);
+      margin-bottom: 16px;
+    }
+
+    .lp-bottom-cta p {
+      color: var(--text-secondary);
+      max-width: 520px;
+      margin: 0 auto 32px;
+    }
+
+    .lp-check-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px 28px;
+      margin: 24px 0;
+    }
+
+    .lp-check-list li {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .lp-check-list li span.ck {
+      color: var(--accent-green);
+      font-weight: 700;
+    }
+
+    .lp-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      padding: 16px 0;
+      background: rgba(10, 14, 26, 0.9);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-glass);
+    }
+
+    .lp-nav .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @media(max-width:600px) {
+      .lp-cta-row {
+        flex-direction: column;
+      }
+
+      .lp-stats-row {
+        gap: 32px;
+      }
+    }
   </style>
 </head>
+
 <body>
 
   <nav class="lp-nav">
@@ -54,7 +244,9 @@
         <img src="assets/logo.png" alt="TodayInTech Logo" style="height:32px;">
         <span class="nav-logo-text">TodayInTech</span>
       </a>
-      <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/LaunchHealthApp/30min/'});return false;" class="btn-primary" style="padding:10px 22px;font-size:0.85rem;">Get a Free Consultation</a>
+      <a href=""
+        onclick="Calendly.initPopupWidget({url:'https://calendly.com/launchhealthapp-6biv/30min/30min/'});return false;"
+        class="btn-primary" style="padding:10px 22px;font-size:0.85rem;">Get a Free Consultation</a>
     </div>
   </nav>
 
@@ -64,10 +256,14 @@
     <div class="bg-glow glow-2"></div>
     <div class="container">
       <div class="lp-badge"><span>🏥</span> Built for US Clinics & Medical Practices</div>
-      <h1>Launch a Branded <span class="gradient-text">Telemedicine Experience</span><br>for Your Clinic — In 30 Days</h1>
-      <p>HIPAA-compliant white-label telemedicine software, fully branded with your logo and colors, with Epic/Cerner integration built in — at up to 70% lower cost than custom development.</p>
+      <h1>Launch a Branded <span class="gradient-text">Telemedicine Experience</span><br>for Your Clinic — In 30 Days
+      </h1>
+      <p>HIPAA-compliant white-label telemedicine software, fully branded with your logo and colors, with Epic/Cerner
+        integration built in — at up to 70% lower cost than custom development.</p>
       <div class="lp-cta-row">
-        <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/LaunchHealthApp/30min/'});return false;" class="btn-primary">Get a Free HIPAA Consultation</a>
+        <a href=""
+          onclick="Calendly.initPopupWidget({url:'https://calendly.com/launchhealthapp-6biv/30min/30min/'});return false;"
+          class="btn-primary">Get a Free HIPAA Consultation</a>
         <a href="/#pricing" class="btn-secondary">View Pricing</a>
       </div>
       <div class="lp-trust-row">
@@ -109,38 +305,45 @@
       <div class="section-header">
         <span class="section-label">Platform Features</span>
         <h2 class="section-title">Everything Your Clinic Needs to Go Digital</h2>
-        <p class="section-subtitle">A complete telemedicine stack, pre-built and compliance-ready — so you don't manage 5 different vendors.</p>
+        <p class="section-subtitle">A complete telemedicine stack, pre-built and compliance-ready — so you don't manage
+          5 different vendors.</p>
       </div>
       <div class="lp-features-grid">
         <div class="lp-feature-card">
           <div class="lp-feature-icon">📹</div>
           <h3>HD Video Consultations</h3>
-          <p>Secure, HIPAA-compliant video visits with waiting room, recording consent, and mobile-friendly interface for patients and providers.</p>
+          <p>Secure, HIPAA-compliant video visits with waiting room, recording consent, and mobile-friendly interface
+            for patients and providers.</p>
         </div>
         <div class="lp-feature-card">
           <div class="lp-feature-icon">📋</div>
           <h3>EHR / Patient Record Integration</h3>
-          <p>Connect to Epic, Cerner, Allscripts, or athenahealth via HL7 FHIR API. Providers see patient history before every visit.</p>
+          <p>Connect to Epic, Cerner, Allscripts, or athenahealth via HL7 FHIR API. Providers see patient history before
+            every visit.</p>
         </div>
         <div class="lp-feature-card">
           <div class="lp-feature-icon">💊</div>
           <h3>E-Prescriptions</h3>
-          <p>Integrated with Surescripts for controlled and non-controlled substance prescriptions sent electronically to any pharmacy.</p>
+          <p>Integrated with Surescripts for controlled and non-controlled substance prescriptions sent electronically
+            to any pharmacy.</p>
         </div>
         <div class="lp-feature-card">
           <div class="lp-feature-icon">📅</div>
           <h3>Smart Scheduling</h3>
-          <p>Multi-provider scheduling with automated appointment reminders via SMS/email, self-service booking, and cancellation management.</p>
+          <p>Multi-provider scheduling with automated appointment reminders via SMS/email, self-service booking, and
+            cancellation management.</p>
         </div>
         <div class="lp-feature-card">
           <div class="lp-feature-icon">💳</div>
           <h3>Insurance & Payments</h3>
-          <p>Stripe and Square payment integration for copays, self-pay, and insurance claim data capture. Automated invoicing included.</p>
+          <p>Stripe and Square payment integration for copays, self-pay, and insurance claim data capture. Automated
+            invoicing included.</p>
         </div>
         <div class="lp-feature-card">
           <div class="lp-feature-icon">🔒</div>
           <h3>HIPAA Compliance Built-In</h3>
-          <p>AES-256 encryption, audit logging, role-based access control, BAA agreements with AWS, and SOC 2 readiness — included at no extra cost.</p>
+          <p>AES-256 encryption, audit logging, role-based access control, BAA agreements with AWS, and SOC 2 readiness
+            — included at no extra cost.</p>
         </div>
       </div>
     </div>
@@ -150,8 +353,11 @@
   <section class="lp-bottom-cta">
     <div class="container">
       <h2>Ready to Launch Your Clinic's Telemedicine Platform?</h2>
-      <p>Book a free 30-minute consultation. We'll show you the live platform, give you a clear cost estimate, and outline exactly how fast you can go live — with no obligation and an NDA if needed.</p>
-      <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/LaunchHealthApp/30min/'});return false;" class="btn-primary" style="font-size:1rem;padding:16px 36px;">Get My Free HIPAA Consultation</a>
+      <p>Book a free 30-minute consultation. We'll show you the live platform, give you a clear cost estimate, and
+        outline exactly how fast you can go live — with no obligation and an NDA if needed.</p>
+      <a href=""
+        onclick="Calendly.initPopupWidget({url:'https://calendly.com/launchhealthapp-6biv/30min/30min/'});return false;"
+        class="btn-primary" style="font-size:1rem;padding:16px 36px;">Get My Free HIPAA Consultation</a>
       <ul class="lp-check-list">
         <li><span class="ck">✓</span> Free 30-min consultation</li>
         <li><span class="ck">✓</span> Live platform demo</li>
@@ -164,9 +370,11 @@
 
   <footer style="padding:32px 0;border-top:1px solid var(--border-glass);text-align:center;">
     <div class="container">
-      <p style="color:var(--text-muted);font-size:0.8rem;">© 2026 TodayInTech. All rights reserved. | <a href="/" style="color:var(--primary);">Back to Home</a></p>
+      <p style="color:var(--text-muted);font-size:0.8rem;">© 2026 TodayInTech. All rights reserved. | <a href="/"
+          style="color:var(--primary);">Back to Home</a></p>
     </div>
   </footer>
 
 </body>
+
 </html>
