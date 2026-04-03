@@ -37,10 +37,46 @@
       flex-direction: column;
     }
     
+    .widget-wrapper {
+      position: relative;
+      width: 100%;
+      min-height: 950px;
+    }
+
+    .loader-container {
+      position: absolute;
+      top: 250px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      z-index: 10;
+    }
+
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #007bff; /* Fallback primary color */
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
     .calendly-inline-widget {
       flex: 1;
       width: 100%;
-      height: 100%;
+      height: 950px !important;
+      opacity: 0; /* Hidden initially, shown via JS */
+      transition: opacity 0.5s ease-in-out;
+      position: relative;
+      z-index: 20;
     }
   </style>
 </head>
@@ -76,16 +112,22 @@
 
   <main>
     <section class="calendly-section">
-      <div class="container" style="height: 100%; display: flex; flex-direction: column; align-items: center;">
+      <div style="width: 100%; max-width: 100%; padding: 0 10px; height: 100%; display: flex; flex-direction: column; align-items: center;">
         <div class="section-header" style="text-align: center; margin-bottom: 20px;">
           <h1 class="section-title">Book your <span style="background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: transparent;">Free Demo</span></h1>
           <p class="section-subtitle">Pick a time that works best for you and let's discuss how we can build your platform.</p>
         </div>
         
-        <!-- Calendly inline widget begin -->
-        <div class="calendly-inline-widget" data-url="https://calendly.com/LaunchHealthApp/30min" style="min-width:320px;height:700px;width:100%;"></div>
-        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-        <!-- Calendly inline widget end -->
+        <div class="widget-wrapper">
+          <div class="loader-container" id="calendlyLoader">
+            <div class="spinner"></div>
+            <p style="font-weight: 500; color: #555;">Loading Calendar...</p>
+          </div>
+          <!-- Calendly inline widget begin -->
+          <div class="calendly-inline-widget" id="calendlyWidget" data-url="https://calendly.com/LaunchHealthApp/30min" style="min-width:320px;height:950px;width:100%;"></div>
+          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+          <!-- Calendly inline widget end -->
+        </div>
       </div>
     </section>
   </main>
@@ -155,6 +197,31 @@
 
   <!-- ===== JAVASCRIPT ===== -->
   <script src="../script.js"></script>
+  
+  <script>
+    // Listen for Calendly widget loading events
+    window.addEventListener('message', function(e) {
+      if (e.data.event && e.data.event.indexOf('calendly') === 0) {
+        // Once any calendly event fires (like page loaded), hide the loader
+        const loader = document.getElementById('calendlyLoader');
+        const widget = document.getElementById('calendlyWidget');
+        if (loader && widget) {
+          loader.style.display = 'none';
+          widget.style.opacity = '1';
+        }
+      }
+    });
+
+    // Fallback: If event not received, reveal after 4 seconds anyway
+    setTimeout(() => {
+        const loader = document.getElementById('calendlyLoader');
+        const widget = document.getElementById('calendlyWidget');
+        if (loader && loader.style.display !== 'none') {
+          loader.style.display = 'none';
+          widget.style.opacity = '1';
+        }
+    }, 4000);
+  </script>
 </body>
 
 </html>
