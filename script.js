@@ -20,7 +20,7 @@ function initNavbar() {
     window.addEventListener('scroll', () => {
         const currentScroll = window.pageYOffset;
 
-        if (currentScroll > 50) {
+        if (currentScroll > 20) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');

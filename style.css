@@ -196,22 +196,59 @@ button {
     right: 0;
     z-index: 1000;
     padding: 16px 0;
-    transition: var(--transition-normal);
+    /* spring easing: slight overshoot for the detach bounce */
+    transition: padding 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
     background: transparent;
 }
 
 .navbar.scrolled {
-    background: rgba(10, 14, 26, 0.85);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-bottom: 1px solid var(--border-glass);
-    padding: 10px 0;
+    background: transparent;
+    padding: 10px 20px;
 }
 
 .navbar .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition:
+        background 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),
+        border-color 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),
+        box-shadow 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),
+        border-radius 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),
+        padding 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.navbar.scrolled .container {
+    background: rgba(20, 17, 32, 0.72);
+    backdrop-filter: blur(28px) saturate(180%);
+    -webkit-backdrop-filter: blur(28px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0 2px 24px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.07);
+}
+
+.navbar.scrolled .nav-links a {
+    color: rgba(255, 255, 255, 0.88);
+}
+
+.navbar.scrolled .nav-links a:hover {
+    color: #ffffff;
+}
+
+html.light-mode .navbar.scrolled .container {
+    background: rgba(255, 255, 255, 0.78);
+    border-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 24px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+html.light-mode .navbar.scrolled .nav-links a {
+    color: rgba(15, 23, 42, 0.8);
+}
+
+html.light-mode .navbar.scrolled .nav-links a:hover {
+    color: #0f172a;
 }
 
 .nav-logo {
