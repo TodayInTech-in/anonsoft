@@ -12,7 +12,7 @@ let newNav = `        <div class="nav-links" id="navLinks">
           <a href="/careers/">Careers</a>
           <a href="/contact/">FAQ & Contact</a>
           <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme">☀️</button>
-          <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min/30min/30min/'});return false;" class="nav-cta" id="navCta">Get a Free Session</a>
+          <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;" class="nav-cta" id="navCta">Get a Free Session</a>
         </div>`;
 
 // Strongly match the nav-links div
@@ -63,7 +63,7 @@ pages.forEach(page => {
         <h1 class="hero-title" style="font-size: clamp(3rem, 6vw, 4.5rem); margin-bottom: 24px;"><span class="gradient-text">${page.charAt(0).toUpperCase() + page.slice(1)}</span></h1>
         <p class="hero-description" style="max-width: 600px; margin: 0 auto 30px; font-size: 1.1rem; color: var(--text-secondary);">We are migrating our dedicated ${page} content into this specialized domain. Check back soon for deep case studies, feature breakdowns, and comprehensive service details.</p>
         <div class="hero-buttons" style="justify-content: center;">
-            <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min/30min/30min/'});return false;" class="btn-primary">
+            <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;" class="btn-primary">
               Get a Free Strategy Session
             </a>
             <a href="/" class="btn-secondary" style="border: 1px solid var(--primary); color: var(--primary);">
