@@ -384,9 +384,9 @@ function initRoiCalculator() {
         document.getElementById('roi-months-display').textContent = months + ' months';
         document.getElementById('roi-rate-display').textContent = '$' + rate + '/hr';
 
-        // Calculation: team * rate * 160hrs/month * months + fixed overheads
-        const customCost = team * rate * 160 * months + 80000; // 80K overhead (HIPAA, infra, QA)
-        const ourCost = 50000; // starting price
+        // Calculation: team * rate * 160hrs/month * months
+        const customCost = team * rate * 160 * months;
+        const ourCost = Math.round(customCost * 0.08); // TodayInTech ~8% of scratch cost
         const savings = customCost - ourCost;
 
         const formatMoney = (n) => '$' + n.toLocaleString('en-US');

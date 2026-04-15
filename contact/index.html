@@ -57,6 +57,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="sitemap" type="application/xml" href="sitemap.xml">
   <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../liquid-glass.css">
 
   <!-- ===== JSON-LD STRUCTURED DATA ===== -->
   <script type="application/ld+json">
@@ -324,22 +325,22 @@
             <div class="roi-input-group">
               <label for="roi-team-size">Estimated In-House Dev Team Size</label>
               <div class="roi-slider-wrapper">
-                <input type="range" id="roi-team-size" min="2" max="15" value="5" class="roi-slider">
-                <span class="roi-slider-value" id="roi-team-display">5 engineers</span>
+                <input type="range" id="roi-team-size" min="1" max="10" value="3" class="roi-slider">
+                <span class="roi-slider-value" id="roi-team-display">3 engineers</span>
               </div>
             </div>
             <div class="roi-input-group">
               <label for="roi-months">Custom Build Timeline (months)</label>
               <div class="roi-slider-wrapper">
-                <input type="range" id="roi-months" min="3" max="18" value="9" class="roi-slider">
-                <span class="roi-slider-value" id="roi-months-display">9 months</span>
+                <input type="range" id="roi-months" min="2" max="12" value="5" class="roi-slider">
+                <span class="roi-slider-value" id="roi-months-display">5 months</span>
               </div>
             </div>
             <div class="roi-input-group">
               <label for="roi-rate">Average Dev Hourly Rate (USD)</label>
               <div class="roi-slider-wrapper">
-                <input type="range" id="roi-rate" min="50" max="200" value="100" step="10" class="roi-slider">
-                <span class="roi-slider-value" id="roi-rate-display">$100/hr</span>
+                <input type="range" id="roi-rate" min="40" max="150" value="65" step="5" class="roi-slider">
+                <span class="roi-slider-value" id="roi-rate-display">$65/hr</span>
               </div>
             </div>
           </div>
@@ -674,6 +675,7 @@
 
   <!-- ===== JAVASCRIPT ===== -->
   <script src="../script.js"></script>
+  <script src="../liquid-glass.js"></script>
 </body>
 
 </html>
