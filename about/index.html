@@ -260,7 +260,7 @@
 
   <!-- Theme Check for FOUC -->
   <script>
-    if (localStorage.getItem('lightMode') !== 'disabled') {
+    if (localStorage.getItem('lightMode') === 'enabled') {
       document.documentElement.classList.add('light-mode');
     }
   </script>
