@@ -29,62 +29,509 @@
   </script>
 
   <style>
-    /* Styling to ensure the Calendly widget takes up full screen seamlessly */
-    .calendly-section {
-      padding-top: calc(var(--nav-height) + 20px);
-      padding-bottom: 40px;
+    /* ===== DEMO PAGE LAYOUT ===== */
+    .demo-hero {
+      padding-top: calc(var(--nav-height) + 40px);
+      padding-bottom: 80px;
       min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .widget-wrapper {
+      background: var(--gradient-hero);
       position: relative;
-      width: 100%;
-      min-height: 950px;
+      overflow: hidden;
     }
 
-    .loader-container {
+    .demo-hero::before {
+      content: '';
       position: absolute;
-      top: 250px;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      top: -50%;
+      right: -20%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.12) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .demo-hero::after {
+      content: '';
+      position: absolute;
+      bottom: -30%;
+      left: -10%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(192, 132, 252, 0.08) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .demo-container {
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 60px;
+      align-items: start;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ===== LEFT COLUMN - INFO ===== */
+    .demo-info {
+      padding-top: 40px;
+      position: sticky;
+      top: calc(var(--nav-height) + 40px);
+    }
+
+    .demo-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      background: var(--bg-glass);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      color: var(--secondary);
+      font-weight: 500;
+      margin-bottom: 24px;
+      backdrop-filter: blur(10px);
+    }
+
+    .demo-info h1 {
+      font-family: var(--font-display);
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--text-primary);
+      margin-bottom: 16px;
+    }
+
+    .demo-info h1 span {
+      background: var(--gradient-primary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .demo-info>p {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+
+    /* Trust points */
+    .trust-points {
       display: flex;
       flex-direction: column;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .trust-icon {
+      flex-shrink: 0;
+      width: 42px;
+      height: 42px;
+      border-radius: var(--radius-md);
+      background: var(--bg-glass);
+      border: 1px solid var(--border-glass);
+      display: flex;
       align-items: center;
-      gap: 15px;
-      z-index: 10;
+      justify-content: center;
+      font-size: 1.2rem;
     }
 
-    .spinner {
-      width: 50px;
-      height: 50px;
-      border: 4px solid #f3f3f3;
-      border-top: 4px solid #007bff;
-      /* Fallback primary color */
+    .trust-text h4 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 2px;
+    }
+
+    .trust-text p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Testimonial mini */
+    .demo-testimonial {
+      background: var(--bg-glass);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      backdrop-filter: blur(10px);
+    }
+
+    .demo-testimonial p {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      font-style: italic;
+      margin-bottom: 12px;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .testimonial-avatar {
+      width: 36px;
+      height: 36px;
       border-radius: 50%;
-      animation: spin 1s linear infinite;
+      background: var(--gradient-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #fff;
     }
 
-    @keyframes spin {
-      0% {
-        transform: rotate(0deg);
-      }
-
-      100% {
-        transform: rotate(360deg);
-      }
+    .testimonial-author-info span {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-primary);
     }
 
-    .calendly-inline-widget {
-      flex: 1;
+    .testimonial-author-info small {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    /* ===== RIGHT COLUMN - FORM ===== */
+    .demo-form-wrapper {
+      background: var(--bg-card);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-xl);
+      padding: 40px;
+      backdrop-filter: blur(20px);
+      box-shadow: var(--shadow-card);
+      transition: all var(--transition-normal);
+    }
+
+    .demo-form-wrapper:hover {
+      border-color: var(--border-glass-hover);
+      box-shadow: var(--shadow-card), var(--shadow-glow);
+    }
+
+    .form-header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .form-header h2 {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .form-header p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* Form row for side-by-side fields */
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    .form-group label {
+      margin-bottom: 6px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      letter-spacing: 0.02em;
+    }
+
+    .form-control {
+      padding: 13px 16px;
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-md);
+      font-family: var(--font-primary);
+      font-size: 0.95rem;
+      background: var(--bg-glass);
+      color: var(--text-primary);
+      transition: all var(--transition-fast);
+      backdrop-filter: blur(10px);
+    }
+
+    .form-control::placeholder {
+      color: var(--text-muted);
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.15);
+      background: var(--bg-glass-hover);
+    }
+
+    .form-control.is-invalid {
+      border-color: #ef4444;
+      box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15);
+    }
+
+    .form-control.is-valid {
+      border-color: #10b981;
+      box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.12);
+    }
+
+    .field-error {
+      margin-top: 5px;
+      font-size: 0.78rem;
+      color: #ef4444;
+      min-height: 1em;
+      display: none;
+    }
+
+    .field-error.visible {
+      display: block;
+    }
+
+    select.form-control {
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%238b5cf6' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      padding-right: 36px;
+    }
+
+    textarea.form-control {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    /* ===== PHONE WITH COUNTRY CODE ===== */
+    .phone-wrapper {
+      display: flex;
+      gap: 0;
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background: var(--bg-glass);
+      backdrop-filter: blur(10px);
+      transition: all var(--transition-fast);
+    }
+
+    .phone-wrapper:focus-within {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.15);
+    }
+
+    .phone-wrapper.is-invalid {
+      border-color: #ef4444;
+      box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15);
+    }
+
+    .phone-wrapper.is-valid {
+      border-color: #10b981;
+      box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.12);
+    }
+
+    .country-code-select {
+      flex: 0 0 82px;
+      width: 82px;
+      padding: 13px 20px 13px 12px;
+      border: none;
+      border-right: none;
+      border-radius: 0;
+      background: rgba(139, 92, 246, 0.07);
+      color: var(--primary);
+      font-family: var(--font-primary);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      outline: none;
+      appearance: none;
+      -webkit-appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' fill='%238b5cf6' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 6px center;
+    }
+
+    .phone-number-input {
+      flex: 1 1 auto;
+      width: 0;
+      padding: 13px 14px;
+      border: none;
+      border-radius: 0;
+      background: transparent;
+      color: var(--text-primary);
+      font-family: var(--font-primary);
+      font-size: 0.95rem;
+      outline: none;
+    }
+
+    .phone-number-input::placeholder {
+      color: var(--text-muted);
+    }
+
+    .btn-submit {
       width: 100%;
-      height: 950px !important;
-      opacity: 0;
-      /* Hidden initially, shown via JS */
-      transition: opacity 0.5s ease-in-out;
-      position: relative;
-      z-index: 20;
+      padding: 15px 24px;
+      border: none;
+      border-radius: var(--radius-md);
+      background: var(--gradient-primary);
+      color: #fff;
+      font-family: var(--font-primary);
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all var(--transition-normal);
+      box-shadow: 0 4px 20px rgba(139, 92, 246, 0.3);
+      margin-top: 4px;
+      letter-spacing: 0.02em;
+    }
+
+    .btn-submit:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 30px rgba(139, 92, 246, 0.45);
+    }
+
+    .btn-submit:active {
+      transform: translateY(0);
+    }
+
+    .btn-submit:disabled {
+      opacity: 0.7;
+      cursor: wait;
+      transform: none;
+    }
+
+    .form-footer {
+      text-align: center;
+      margin-top: 16px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .form-footer svg {
+      width: 14px;
+      height: 14px;
+      vertical-align: -2px;
+      margin-right: 4px;
+    }
+
+    /* ===== THANK YOU VIEW ===== */
+    .tq-view {
+      display: none;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .tq-view .success-icon {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 24px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent-green), #34d399);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      color: #fff;
+      box-shadow: 0 8px 30px rgba(16, 185, 129, 0.3);
+    }
+
+    .tq-view h2 {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      font-weight: 700;
+      background: var(--gradient-primary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 12px;
+    }
+
+    .tq-view p {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      max-width: 360px;
+      margin: 0 auto;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .demo-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .demo-info {
+        position: static;
+        padding-top: 0;
+        text-align: center;
+      }
+
+      .demo-info h1 {
+        font-size: 2.2rem;
+      }
+
+      .trust-points {
+        align-items: center;
+      }
+
+      .trust-item {
+        max-width: 360px;
+      }
+
+      .demo-testimonial {
+        max-width: 420px;
+        margin: 0 auto;
+      }
+
+      .demo-form-wrapper {
+        padding: 28px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .demo-hero {
+        padding-top: calc(var(--nav-height) + 20px);
+        padding-bottom: 40px;
+      }
+
+      .demo-info h1 {
+        font-size: 1.8rem;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+
+      .demo-form-wrapper {
+        padding: 24px 18px;
+        border-radius: var(--radius-lg);
+      }
+
+      .demo-testimonial {
+        display: none;
+      }
     }
   </style>
 </head>
@@ -119,29 +566,182 @@
   </header>
 
   <main>
-    <section class="calendly-section">
-      <div
-        style="width: 100%; max-width: 100%; padding: 0 10px; height: 100%; display: flex; flex-direction: column; align-items: center;">
-        <div class="section-header" style="text-align: center; margin-bottom: 20px;">
-          <h1 class="section-title">Book your <span
-              style="background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: transparent;">Free
-              Demo</span></h1>
-          <p class="section-subtitle">Pick a time that works best for you and let's discuss how we can build your
-            platform.</p>
+    <section class="demo-hero">
+      <div class="demo-container">
+
+        <!-- LEFT: Info Column -->
+        <div class="demo-info">
+          <div class="demo-badge">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 6v6l4 2" />
+            </svg>
+            Free 30-min consultation
+          </div>
+          <h1>Let's Build<br>Something <span>Amazing</span></h1>
+          <p>Share your idea and our team will get back to you within 24 hours with a tailored plan to bring it to life.
+          </p>
+
+          <div class="trust-points">
+            <div class="trust-item">
+              <div class="trust-icon">
+                <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="var(--primary)" stroke-width="2">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                </svg>
+              </div>
+              <div class="trust-text">
+                <h4>Rapid Delivery</h4>
+                <p>MVP in weeks, not months. We move fast without cutting corners.</p>
+              </div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-icon">
+                <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="var(--primary)" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <div class="trust-text">
+                <h4>Enterprise-Grade Security</h4>
+                <p>HIPAA-compliant architecture for healthcare and sensitive data.</p>
+              </div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-icon">
+                <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="var(--primary)" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4-4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+                </svg>
+              </div>
+              <div class="trust-text">
+                <h4>Dedicated Team</h4>
+                <p>A full squad of designers, developers & PMs assigned to your project.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="demo-testimonial">
+            <p>"TodayInTech delivered our health platform 3 weeks ahead of schedule. The quality exceeded our
+              expectations."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">R</div>
+              <div class="testimonial-author-info">
+                <span>Rahul M.</span>
+                <small>CTO, HealthFirst</small>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="widget-wrapper">
-          <div class="loader-container" id="calendlyLoader">
-            <div class="spinner"></div>
-            <p style="font-weight: 500; color: #555;">Loading Calendar...</p>
+        <!-- RIGHT: Form Column -->
+        <div class="demo-form-wrapper" id="formWrapper">
+          <div class="form-header">
+            <h2>Book Your Free Demo</h2>
+            <p>No commitment required</p>
           </div>
-          <!-- Calendly inline widget begin -->
-          <div class="calendly-inline-widget" id="calendlyWidget"
-            data-url="https://calendly.com/todayintechdotin/30min/30min/30min"
-            style="min-width:320px;height:950px;width:100%;"></div>
-          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-          <!-- Calendly inline widget end -->
+
+          <form id="demoForm" novalidate>
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" autocomplete="name">
+              <span class="field-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="phoneNumber">Phone Number *</label>
+              <div class="phone-wrapper" id="phoneWrapper">
+                <select class="country-code-select" id="countryCode" aria-label="Country code">
+                  <option value="+1" selected>+1 US</option>
+                  <option value="+91">+91 IN</option>
+                  <option value="+44">+44 GB</option>
+                  <option value="+61">+61 AU</option>
+                  <option value="+1-CA">+1 CA</option>
+                  <option value="+49">+49 DE</option>
+                  <option value="+33">+33 FR</option>
+                  <option value="+81">+81 JP</option>
+                  <option value="+86">+86 CN</option>
+                  <option value="+65">+65 SG</option>
+                  <option value="+971">+971 AE</option>
+                  <option value="+966">+966 SA</option>
+                  <option value="+55">+55 BR</option>
+                  <option value="+27">+27 ZA</option>
+                  <option value="+234">+234 NG</option>
+                  <option value="+60">+60 MY</option>
+                  <option value="+62">+62 ID</option>
+                  <option value="+63">+63 PH</option>
+                  <option value="+66">+66 TH</option>
+                  <option value="+84">+84 VN</option>
+                  <option value="+880">+880 BD</option>
+                  <option value="+92">+92 PK</option>
+                  <option value="+94">+94 LK</option>
+                  <option value="+977">+977 NP</option>
+                  <option value="+973">+973 BH</option>
+                  <option value="+965">+965 KW</option>
+                  <option value="+968">+968 OM</option>
+                  <option value="+974">+974 QA</option>
+                  <option value="+52">+52 MX</option>
+                  <option value="+54">+54 AR</option>
+                  <option value="+34">+34 ES</option>
+                  <option value="+39">+39 IT</option>
+                  <option value="+31">+31 NL</option>
+                  <option value="+46">+46 SE</option>
+                  <option value="+47">+47 NO</option>
+                  <option value="+45">+45 DK</option>
+                  <option value="+41">+41 CH</option>
+                  <option value="+7">+7 RU</option>
+                  <option value="+90">+90 TR</option>
+                  <option value="+20">+20 EG</option>
+                  <option value="+82">+82 KR</option>
+                  <option value="+64">+64 NZ</option>
+                  <option value="+48">+48 PL</option>
+                </select>
+                <input type="tel" id="phoneNumber" class="phone-number-input" placeholder="555 000 0000"
+                  autocomplete="tel-national" inputmode="numeric">
+              </div>
+              <span class="field-error" id="phoneError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="you@company.com"
+                autocomplete="email">
+              <span class="field-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="serviceNeed">Service Needed</label>
+              <select id="serviceNeed" name="serviceNeed" class="form-control">
+                <option value="">Select a service...</option>
+                <option value="Health White-Label">Health White-Label</option>
+                <option value="Mobile Development">Mobile Development</option>
+                <option value="Web Applications">Web Applications</option>
+                <option value="Cloud & DevOps">Cloud & DevOps</option>
+                <option value="UI/UX Design">UI/UX Design</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell us about your project *</label>
+              <textarea id="message" name="message" class="form-control"
+                placeholder="What are you looking to build? Any timeline or budget in mind?"></textarea>
+              <span class="field-error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn-submit" id="submitBtn">Book My Free Demo</button>
+            <div id="formError"
+              style="color: #ef4444; margin-top: 12px; text-align: center; font-size: 0.9rem; display: none;"></div>
+            <div class="form-footer">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+              Your information is secure and never shared.
+            </div>
+          </form>
+
+          <div class="tq-view" id="tqView">
+            <div class="success-icon">&#10003;</div>
+            <h2>Thank You!</h2>
+            <p>Your demo request has been received. Our team will reach out within 24 hours to schedule your session.
+            </p>
+          </div>
         </div>
+
       </div>
     </section>
   </main>
@@ -213,28 +813,315 @@
   <script src="../script.js"></script>
 
   <script>
-    // Listen for Calendly widget loading events
-    window.addEventListener('message', function (e) {
-      if (e.data.event && e.data.event.indexOf('calendly') === 0) {
-        // Once any calendly event fires (like page loaded), hide the loader
-        const loader = document.getElementById('calendlyLoader');
-        const widget = document.getElementById('calendlyWidget');
-        if (loader && widget) {
-          loader.style.display = 'none';
-          widget.style.opacity = '1';
-        }
+    var APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzljHjJUV1PF8Tpy15FFHF6O5ONPAgSLKKQMUWS8GxM924ABd_KhO5bZEgYa1D3Zsqj/exec';
+
+    // ── Duplicate detection: load existing emails & phones on page open ──
+    var existingEmails = new Set();
+    var existingPhones = new Set();
+
+    (async function loadExisting() {
+      try {
+        var res = await fetch(APPS_SCRIPT_URL);
+        var json = await res.json();
+        (json.emails || []).forEach(function (v) { existingEmails.add(v.toLowerCase().trim()); });
+        (json.phones || []).forEach(function (v) { existingPhones.add(v.replace(/\s+/g, '')); });
+      } catch (_) { /* silent — duplicate check simply skipped if offline */ }
+    })();
+
+    // ── Disposable / temporary email domain blocklist ──
+    var DISPOSABLE_DOMAINS = new Set([
+      'mailinator.com', 'guerrillamail.com', 'guerrillamail.info', 'guerrillamail.biz',
+      'guerrillamail.de', 'guerrillamail.net', 'guerrillamail.org', 'guerrillamailblock.com',
+      '10minutemail.com', '10minutemail.net', '10minutemail.org', '10minutemail.co.uk',
+      'tempmail.com', 'temp-mail.org', 'temp-mail.io', 'throwam.com', 'throwam.net',
+      'yopmail.com', 'yopmail.fr', 'cool.fr.nf', 'jetable.fr.nf', 'nospam.ze.tc',
+      'nomail.xl.cx', 'mega.zik.dj', 'speed.1s.fr', 'courriel.fr.nf', 'moncourrier.fr.nf',
+      'monemail.fr.nf', 'monmail.fr.nf', 'dispostable.com', 'mailnull.com', 'spamgourmet.com',
+      'trashmail.com', 'trashmail.me', 'trashmail.net', 'trashmail.org', 'trashmail.at',
+      'trashmail.io', 'trashmail.xyz', 'mailnesia.com', 'maildrop.cc', 'discard.email',
+      'mailnull.com', 'spamfree24.org', 'fakeinbox.com', 'crazymailing.com', 'getnada.com',
+      'sharklasers.com', 'guerrillamail.info', 'grr.la', 'guerrillamail.biz', 'spam4.me',
+      'spoofmail.de', 'mytemp.email', 'tempinbox.com', 'tempr.email', 'dispostable.com',
+      'mailexpire.com', 'spamherelots.com', 'throwam.com', 'getonemail.com', 'mailnew.com',
+      'spamspot.com', 'spamthisplease.com', 'mailscrap.com', 'sneakemail.com',
+      'mailincubator.com', 'mailfreeonline.com', 'filzmail.com', 'throwam.com',
+      'mailseal.de', 'emailthe.net', 'jetable.net', 'mailboxy.fun', 'inboxed.pw',
+      'spamgourmet.net', 'spamgourmet.org', 'spamhere.net', 'anonbox.net', 'ano-mail.net',
+      'binkmail.com', 'bobmail.info', 'chammy.info', 'devnullmail.com', 'discard.email',
+      'discardmail.com', 'discardmail.de', 'eintagsmail.de', 'e4ward.com', 'emailias.com',
+      'emailinfive.com', 'EmailIsValid.com', 'emailnax.com', 'emails.ga', 'emailsensei.com',
+      'emailto.de', 'emailwarden.com', 'fastacura.com', 'fastchevy.com', 'fastchrysler.com',
+      'fastkawasaki.com', 'fastmazda.com', 'fastmitsubishi.com', 'fastnissan.com',
+      'fastsubaru.com', 'fastsuzuki.com', 'fasttoyota.com', 'fastyamaha.com',
+      'filzmail.com', 'fixmail.tk', 'fizmail.com', 'fr33mail.info', 'getonemail.com',
+      'gishpuppy.com', 'gowikibooks.com', 'gowikicampus.com', 'gowikicars.com',
+      'h.mintemail.com', 'hartbot.de', 'hat-gau.com', 'hatespam.org', 'herp.in',
+      'hidemail.de', 'hidzz.com', 'hotpop.com', 'hulapla.de', 'ieatspam.eu',
+      'ieatspam.info', 'imails.info', 'inbax.tk', 'inbox.si', 'inboxclean.com',
+      'inboxclean.org', 'incognitomail.com', 'incognitomail.net', 'incognitomail.org',
+      'instant-mail.de', 'ip6.li', 'ipoo.org', 'irish2me.com', 'iwi.net',
+      'jnxjn.com', 'jourrapide.com', 'jsrsolutions.com', 'junk1.tk', 'kasmail.com',
+      'kaspop.com', 'keepmymail.com', 'killmail.com', 'killmail.net', 'klzlk.com',
+      'koszmail.pl', 'kurzepost.de', 'letthemeatspam.com', 'lhsdv.com',
+      'lifebyfood.com', 'link2mail.net', 'litedrop.com', 'lol.ovpn.to', 'lookugly.com',
+      'lopl.co.cc', 'lortemail.dk', 'lr78.com', 'lukop.dk', 'm21.cc', 'mail.mezimages.net',
+      'mail.zp.ua', 'mail1a.de', 'mail21.cc', 'mail2rss.org', 'mail333.com', 'mailbidon.com',
+      'mailbiz.biz', 'mailblocks.com', 'mailbucket.org', 'mailchop.com', 'mailde.org',
+      'maildrop.cc', 'mailf5.com', 'mailfall.com', 'mailfree.de', 'mailfreeonline.com',
+      'mailguard.me', 'mailimate.com', 'mailimails.com', 'mailin8r.com', 'mailink.in',
+      'mailismagic.com', 'mailme.gq', 'mailme24.com', 'mailmetrash.com', 'mailmoat.com',
+      'mailms.com', 'mailnew.com', 'mailnull.com', 'mailpick.biz', 'mailpokemon.com',
+      'mailproxsy.com', 'mailquack.com', 'mailrock.biz', 'mailseal.de', 'mailshell.com',
+      'mailsiphon.com', 'mailslite.com', 'mailsrv.net', 'mailsy.net', 'mailtemp.info',
+      'mailtothis.com', 'mailtrash.net', 'mailtv.net', 'mailzilla.com', 'mailzilla.org',
+      'makemetheking.com', 'malahov.de', 'mbx.cc', 'mega.zik.dj', 'meinspamschutz.de',
+      'messagebeamer.de', 'mfsa.ru', 'mierdamail.com', 'migmail.net', 'migumail.com',
+      'mintemail.com', 'mmmmail.com', 'moburl.com', 'moncourrier.fr.nf', 'monemail.fr.nf',
+      'monmail.fr.nf', 'morriesworld.ml', 'mox.pp.ua', 'mozmail.com', 'mt2009.com',
+      'mt2014.com', 'myalias.pw', 'mycleaninbox.net', 'mydemo.equipment',
+      'myemailboxy.com', 'mynetstore.de', 'myopang.com', 'mypacks.net', 'mypartyclip.de',
+      'myphantomemail.com', 'myspaceinc.net', 'myspacepimpedup.com', 'myspamless.com',
+      'mytemp.email', 'mytempemail.com', 'mytempmail.com', 'mytrashmail.com', 'mywarnmail.com',
+      'netzidiot.de', 'neuromail.at', 'newpapers.com', 'nfast.net', 'nmail.cf',
+      'nobulk.com', 'noclickemail.com', 'nogmailspam.info', 'nomail.pw', 'nomail.xl.cx',
+      'nomail2me.com', 'nomorespamemails.com', 'nonspam.eu', 'nonspammer.de', 'noref.in',
+      'nospam.ze.tc', 'nospamfor.us', 'nospammail.net', 'notmailinator.com',
+      'nwldx.com', 'objectmail.com', 'obobbo.com', 'odaymail.com', 'oneoffemail.com',
+      'oneoffmail.com', 'onewaymail.com', 'onlatedotcom.info', 'online.ms', 'opayq.com',
+      'ordinaryamerican.net', 'oshietechan.link', 'owlpic.com', 'paplease.com',
+      'pepbot.com', 'peterdethier.com', 'petml.com', 'pfui.ru', 'phentermine-mortgages.com',
+      'pimpedupmyspace.com', 'pjjkp.com', 'plexolan.de', 'poczta.onet.pl',
+      'politikerclub.de', 'poofy.org', 'pookmail.com', 'posterize.net', 'powered.name',
+      'privacy.net', 'privatdemail.net', 'proxymail.eu', 'prtnx.com', 'prtz.eu',
+      'pubmail.io', 'puke.it', 'putthisinyourspamdatabase.com', 'putthisinyourspamdatabase.com',
+      'qq.com', 'queueme.net', 'quickinbox.com', 'quickmail.nl', 'r4nd0m.de',
+      'rainmail.biz', 'randomail.net', 'rklips.com', 'rmqkr.net', 'rppkn.com',
+      'rtrtr.com', 's0ny.net', 'safe-mail.net', 'safersignup.de', 'safetymail.info',
+      'safetypost.de', 'saynotospams.com', 'schafmail.de', 'schrott-email.de',
+      'secretemail.de', 'secure-mail.biz', 'secure-mail.cc', 'selfdestructingmail.com',
+      'selfdestructingmail.org', 'senseless-entertainment.com', 'sharklasers.com',
+      'shieldedmail.com', 'shiftmail.com', 'shitmail.de', 'shitmail.me', 'shitmail.org',
+      'shiyakila.cf', 'shiyakila.ga', 'shiyakila.gq', 'shiyakila.ml',
+      'shortmail.net', 'showslow.de', 'sibmail.com', 'skeefmail.com', 'slapsfromlastnight.com',
+      'slaskpost.se', 'slave-auctions.net', 'slopsbox.com', 'slow-from-here.com',
+      'slowslow.de', 'smellfear.com', 'snakemail.com', 'sneakemail.com', 'sneakmail.de',
+      'snkmail.com', 'sofimail.com', 'sofort-mail.de', 'sogetthis.com', 'sohu.com',
+      'soisz.com', 'solar-impact.pro', 'solopilotas.com', 'soodonims.com', 'spam.la',
+      'spam.mn', 'spam.org.tr', 'spam.su', 'spam4.me', 'spamavert.com', 'spambob.com',
+      'spambob.net', 'spambob.org', 'spamcon.org', 'spamcorptastic.com', 'spamcowboy.com',
+      'spamcowboy.net', 'spamcowboy.org', 'spamday.com', 'spamex.com', 'spamfree.eu',
+      'spamfree24.de', 'spamfree24.eu', 'spamfree24.info', 'spamfree24.net', 'spamfree24.org',
+      'spamgoes.in', 'spamgourmet.com', 'spamgourmet.net', 'spamgourmet.org',
+      'spamherelots.com', 'spamhereplease.com', 'spamhole.com', 'spamify.com',
+      'spaminator.de', 'spamkill.info', 'spaml.com', 'spaml.de', 'spammotel.com',
+      'spammy.host', 'spamoff.de', 'spamslicer.com', 'spamspot.com', 'spamstack.net',
+      'spamtrap.ro', 'spamtreed.com', 'spamymail.com', 'sparropt.com', 'spikio.com',
+      'spoofmail.de', 'spybox.de', 'squizzy.de', 'squizzy.eu', 'squizzy.net',
+      'sry.li', 'ssl-mail.com', 'stinkefinger.net', 'stop-my-spam.com',
+      'stuffmail.de', 'super-auswahl.de', 'supergreatmail.com', 'supermailer.jp',
+      'superstachel.de', 'suremail.info', 'susi.ml', 'svk.jp', 'sweetxxx.de',
+      'tafmail.com', 'tagyourself.com', 'tefl.ro', 'tempalias.com', 'tempemail.biz',
+      'tempemail.com', 'tempemail.net', 'tempemail.org', 'tempemails.net', 'tempinbox.co.uk',
+      'tempinbox.com', 'tempmaildemo.com', 'tempmailer.com', 'tempmailer.de',
+      'tempomail.fr', 'temporamail.com', 'temporaryemail.com', 'temporaryemail.net',
+      'temporaryforwarding.com', 'temporaryinbox.com', 'temporarymail.org',
+      'temporarymailaddress.com', 'tempsky.com', 'tempthe.net', 'tempymail.com',
+      'thanksnospam.info', 'thankyou2010.com', 'thecloudindex.com',
+      'theteastory.info', 'thichanthang.net', 'thismail.net', 'throwam.com',
+      'throwawayemailaddress.com', 'throwam.net', 'tilien.com', 'timkassouf.com',
+      'tittbit.in', 'tmail.com', 'tmail.io', 'tmailinator.com', 'toiea.com',
+      'topranklist.de', 'tormail.net', 'tradermail.info', 'trash-mail.at',
+      'trash-mail.cf', 'trash-mail.com', 'trash-mail.de', 'trash-mail.ga',
+      'trash-mail.gq', 'trash-mail.io', 'trash-mail.me', 'trash-mail.ml',
+      'trash-mail.net', 'trash-mail.tk', 'trash2009.com', 'trash2010.com',
+      'trash2011.com', 'trashdevil.com', 'trashdevil.de', 'trashemail.de',
+      'trashimail.com', 'trashinbox.com', 'trashmail.app', 'trashmail.at',
+      'trashmail.com', 'trashmail.de', 'trashmail.fr', 'trashmail.gq',
+      'trashmail.io', 'trashmail.me', 'trashmail.net', 'trashmail.org',
+      'trashmail.se', 'trashmail.xyz', 'trashmailer.com', 'trashmails.com',
+      'trashtimail.com', 'trux.de', 'tttttt.win', 'tualias.com', 'turbopixel.net',
+      'uggsrock.com', 'umail.net', 'unlimit.com', 'unmail.ru', 'uroid.com',
+      'us.af', 'valemail.net', 'veryrealemail.com', 'viditag.com', 'viralplays.net',
+      'vlmail.com', 'vomoto.com', 'vpn.st', 'vsimcard.com', 'vubby.com',
+      'wasteland.rfc822.org', 'webemail.me', 'weg-werf-email.de', 'wegwerf-emails.de',
+      'wegwerfadresse.de', 'wegwerfemail.com', 'wegwerfemail.de', 'wegwerfemail.net',
+      'wegwerfemail.org', 'wegwerfmail.de', 'wegwerfmail.info', 'wegwerfmail.net',
+      'wegwerfmail.org', 'wh4f.org', 'whyspam.me', 'wickmail.net', 'wilemail.com',
+      'willselfdestruct.com', 'wmail.cf', 'wolfsmail.tk', 'wuzupmail.net', 'www.e4ward.com',
+      'www.mailinator.com', 'xagloo.co', 'xagloo.com', 'xemaps.com', 'xents.com',
+      'xmaily.com', 'xoxy.net', 'xyzfree.net', 'yep.it', 'yogamaven.com',
+      'yomail.info', 'yopmail.com', 'yopmail.fr', 'yopmail.pp.ua', 'ypmail.webarnak.fr.eu.org',
+      'yuurok.com', 'z1p.biz', 'za.com', 'zehnminuten.de', 'zehnminutenmail.de',
+      'zippymail.info', 'zoemail.com', 'zoemail.net', 'zoemail.org', 'zomg.info',
+      'spamgmail.com', 'fakeemail.com', 'mailnull.com', 'throwable.email',
+      'burnermail.io', 'mailnot.io', 'tempm.com', 'dropmail.me', 'guerrillamail.com'
+    ]);
+
+    function getDialCode(val) {
+      // Strip the -CA suffix used to distinguish Canada from US
+      return val.replace(/-[A-Z]+$/, '');
+    }
+
+    function showError(fieldId, errId, msg) {
+      var el = document.getElementById(fieldId);
+      var errEl = document.getElementById(errId);
+      if (el) { el.classList.remove('is-valid'); el.classList.add('is-invalid'); }
+      if (errEl) { errEl.textContent = msg; errEl.classList.add('visible'); }
+    }
+
+    function showPhoneError(msg) {
+      var wrapper = document.getElementById('phoneWrapper');
+      var errEl = document.getElementById('phoneError');
+      wrapper.classList.remove('is-valid'); wrapper.classList.add('is-invalid');
+      errEl.textContent = msg; errEl.classList.add('visible');
+    }
+
+    function clearError(fieldId, errId) {
+      var el = document.getElementById(fieldId);
+      var errEl = document.getElementById(errId);
+      if (el) { el.classList.remove('is-invalid'); el.classList.add('is-valid'); }
+      if (errEl) { errEl.textContent = ''; errEl.classList.remove('visible'); }
+    }
+
+    function clearPhoneError() {
+      var wrapper = document.getElementById('phoneWrapper');
+      var errEl = document.getElementById('phoneError');
+      wrapper.classList.remove('is-invalid'); wrapper.classList.add('is-valid');
+      errEl.textContent = ''; errEl.classList.remove('visible');
+    }
+
+    function validateName() {
+      var val = document.getElementById('name').value.trim();
+      if (!val) { showError('name', 'nameError', 'Full name is required.'); return false; }
+      if (val.length < 2) { showError('name', 'nameError', 'Name must be at least 2 characters.'); return false; }
+      if (/\d/.test(val)) { showError('name', 'nameError', 'Name should not contain numbers.'); return false; }
+      clearError('name', 'nameError'); return true;
+    }
+
+    function validatePhone() {
+      var raw = document.getElementById('phoneNumber').value.trim().replace(/[\s\-().]/g, '');
+      if (!raw) { showPhoneError('Phone number is required.'); return false; }
+      if (!/^\d{5,15}$/.test(raw)) { showPhoneError('Enter a valid phone number (digits only).'); return false; }
+      clearPhoneError(); return true;
+    }
+
+    function validateEmail() {
+      var val = document.getElementById('email').value.trim().toLowerCase();
+      if (!val) { showError('email', 'emailError', 'Email address is required.'); return false; }
+      var emailRegex = /^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/;
+      if (!emailRegex.test(val)) { showError('email', 'emailError', 'Enter a valid email address.'); return false; }
+      var domain = val.split('@')[1];
+      if (DISPOSABLE_DOMAINS.has(domain)) {
+        showError('email', 'emailError', 'Disposable or temporary email addresses are not allowed. Please use your work or personal email.');
+        return false;
       }
+      clearError('email', 'emailError'); return true;
+    }
+
+    function validateMessage() {
+      var val = document.getElementById('message').value.trim();
+      if (!val) { showError('message', 'messageError', 'Please tell us about your project.'); return false; }
+      if (val.length < 20) { showError('message', 'messageError', 'Please provide a bit more detail (at least 20 characters).'); return false; }
+      clearError('message', 'messageError'); return true;
+    }
+
+    // Live validation on blur
+    document.getElementById('name').addEventListener('blur', validateName);
+    document.getElementById('phoneNumber').addEventListener('blur', validatePhone);
+    document.getElementById('email').addEventListener('blur', validateEmail);
+    document.getElementById('message').addEventListener('blur', validateMessage);
+
+    // Clear validation state on input
+    document.getElementById('name').addEventListener('input', function () {
+      this.classList.remove('is-invalid', 'is-valid');
+      document.getElementById('nameError').classList.remove('visible');
+    });
+    document.getElementById('phoneNumber').addEventListener('input', function () {
+      var wrapper = document.getElementById('phoneWrapper');
+      wrapper.classList.remove('is-invalid', 'is-valid');
+      document.getElementById('phoneError').classList.remove('visible');
+    });
+    document.getElementById('email').addEventListener('input', function () {
+      this.classList.remove('is-invalid', 'is-valid');
+      document.getElementById('emailError').classList.remove('visible');
+    });
+    document.getElementById('message').addEventListener('input', function () {
+      this.classList.remove('is-invalid', 'is-valid');
+      document.getElementById('messageError').classList.remove('visible');
     });
 
-    // Fallback: If event not received, reveal after 4 seconds anyway
-    setTimeout(() => {
-      const loader = document.getElementById('calendlyLoader');
-      const widget = document.getElementById('calendlyWidget');
-      if (loader && loader.style.display !== 'none') {
-        loader.style.display = 'none';
-        widget.style.opacity = '1';
+    document.getElementById('demoForm').addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      var nameOk = validateName();
+      var phoneOk = validatePhone();
+      var emailOk = validateEmail();
+      var messageOk = validateMessage();
+
+      if (!nameOk || !phoneOk || !emailOk || !messageOk) return;
+
+      var form = this;
+      var submitBtn = document.getElementById('submitBtn');
+      var formError = document.getElementById('formError');
+      var tqView = document.getElementById('tqView');
+
+      formError.style.display = 'none';
+      formError.textContent = '';
+
+      // Merge country code + phone number into a single value
+      var dialCode = getDialCode(document.getElementById('countryCode').value);
+      var phoneRaw = document.getElementById('phoneNumber').value.trim().replace(/[\s\-().]/g, '');
+      var fullPhone = dialCode + phoneRaw;
+      var emailVal = document.getElementById('email').value.trim().toLowerCase();
+
+      // ── Duplicate checks against existing sheet data ──
+      if (existingEmails.has(emailVal)) {
+        showError('email', 'emailError', 'This email is already registered. Please use a different email address.');
+        document.getElementById('email').focus();
+        return;
       }
-    }, 4000);
+      if (existingPhones.has(fullPhone)) {
+        showPhoneError('This phone number is already registered. Please use a different number.');
+        document.getElementById('phoneNumber').focus();
+        return;
+      }
+
+      var data = {
+        name: document.getElementById('name').value.trim(),
+        email: emailVal,
+        phone: fullPhone,
+        serviceNeed: document.getElementById('serviceNeed').value,
+        message: document.getElementById('message').value.trim(),
+        submittedAt: new Date().toISOString()
+      };
+
+      var originalText = submitBtn.textContent;
+      submitBtn.textContent = 'Sending…';
+      submitBtn.disabled = true;
+
+      try {
+        await fetch(APPS_SCRIPT_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+
+        // Cache locally so re-submission is blocked without another fetch
+        existingEmails.add(emailVal);
+        existingPhones.add(fullPhone);
+
+        form.style.display = 'none';
+        tqView.style.display = 'block';
+
+      } catch (err) {
+        console.error(err);
+        formError.textContent = 'Could not send your request. Please try again or email us directly.';
+        formError.style.display = 'block';
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+      }
+    });
   </script>
   <script src="../liquid-glass.js"></script>
 </body>
