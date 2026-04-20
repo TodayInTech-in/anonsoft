@@ -822,7 +822,7 @@ html.light-mode .floating-badge {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 60px;
+    gap: 36px;
     flex-wrap: wrap;
 }
 
@@ -2176,39 +2176,52 @@ html.light-mode .floating-badge {
 /* ===== TRUST PROOF BAR (below trusted-by logos) ===== */
 .trust-proof-bar {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 16px;
+    flex-wrap: nowrap;
+    gap: 0;
     margin-top: 28px;
-    padding: 16px 24px;
     background: rgba(255, 255, 255, 0.04);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: var(--radius-full);
+    overflow: hidden;
 }
 
 .trust-proof-item {
     display: flex;
     align-items: center;
-    gap: 6px;
+    justify-content: center;
+    gap: 7px;
     font-size: 0.82rem;
     color: var(--text-secondary);
+    padding: 13px 22px;
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    white-space: nowrap;
+    flex: 1;
+}
+
+.trust-proof-item:last-child {
+    border-right: none;
 }
 
 .trust-proof-stars {
+    display: flex;
+    align-items: center;
+    gap: 2px;
     color: #FFD700;
-    letter-spacing: 2px;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
+    line-height: 1;
 }
 
 .trust-proof-item i {
     color: var(--primary);
     font-size: 0.85rem;
+    line-height: 1;
 }
 
+/* HTML | dividers replaced by CSS borders — hide the text dividers */
 .trust-proof-divider {
-    color: rgba(255, 255, 255, 0.2);
-    font-size: 0.85rem;
+    display: none;
 }
 
 .trusted-logo-icon {
@@ -2562,28 +2575,31 @@ html.light-mode .floating-badge {
 }
 
 .press-logos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 12px 32px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    max-width: 860px;
+    margin: 0 auto;
 }
 
 .press-logo-item {
-    padding: 12px 24px;
+    padding: 12px 16px;
     border: 1px solid var(--border-glass);
     border-radius: var(--radius-sm);
     background: var(--bg-glass);
     transition: var(--transition-normal);
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
 }
 
 .press-logo-item i {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: var(--primary);
     opacity: 0.7;
+    flex-shrink: 0;
 }
 
 .press-logo-item:hover {
@@ -2596,11 +2612,80 @@ html.light-mode .floating-badge {
 }
 
 .press-logo-text {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 600;
     color: var(--text-muted);
     font-family: var(--font-display);
     letter-spacing: 0.02em;
+    white-space: nowrap;
+}
+
+/* ===== MOBILE APP EXPERIENCE SECTION ===== */
+.mobile-app-experience {
+    padding: var(--section-padding);
+    background: linear-gradient(135deg, rgba(123, 47, 255, 0.1) 0%, rgba(0, 212, 255, 0.05) 100%);
+    border-top: 1px solid var(--border-glass);
+    border-bottom: 1px solid var(--border-glass);
+    text-align: center;
+}
+
+.mobile-exp-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mobile-exp-content .section-subtitle {
+    margin: 0 auto 0;
+}
+
+.mobile-exp-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin: 36px 0;
+    text-align: left;
+}
+
+.mobile-exp-feature {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 20px;
+    background: var(--bg-glass);
+    border: 1px solid var(--border-glass);
+    border-radius: var(--radius-md);
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    transition: var(--transition-fast);
+}
+
+.mobile-exp-feature:hover {
+    border-color: rgba(123, 47, 255, 0.4);
+    color: var(--text-primary);
+}
+
+.mobile-exp-icon {
+    width: 42px;
+    height: 42px;
+    background: rgba(123, 47, 255, 0.15);
+    border: 1px solid rgba(123, 47, 255, 0.3);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #a78bfa;
+    font-size: 1rem;
+}
+
+.mobile-exp-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 220px;
 }
 
 /* ===== ROI CALCULATOR SECTION ===== */
@@ -2915,6 +3000,65 @@ html.light-mode .floating-badge {
         font-size: 0.7rem;
         padding: 6px 12px;
         white-space: normal;
+    }
+}
+
+/* ===== MOBILE: TRUST PROOF BAR + PRESS LOGOS + MOBILE APP SECTION ===== */
+@media (max-width: 768px) {
+    /* Trust proof bar: stack vertically, change pill to rounded rect */
+    .trust-proof-bar {
+        flex-direction: column;
+        align-items: stretch;
+        border-radius: 16px;
+        overflow: hidden;
+    }
+
+    .trust-proof-item {
+        flex: none;
+        width: 100%;
+        justify-content: flex-start;
+        padding: 12px 18px;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        white-space: normal;
+        font-size: 0.85rem;
+    }
+
+    .trust-proof-item:last-child {
+        border-bottom: none;
+    }
+
+    /* Trusted logos: reduce gap, center properly */
+    .trusted-logos {
+        gap: 20px 28px;
+        justify-content: center;
+    }
+
+    /* Press logos: 2-column grid on mobile */
+    .press-logos {
+        grid-template-columns: 1fr 1fr;
+        max-width: 100%;
+    }
+
+    /* Last item (5th) spans both columns and centers */
+    .press-logo-item:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+        max-width: 50%;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .press-logo-item {
+        padding: 10px 12px;
+    }
+
+    /* Mobile app experience */
+    .mobile-exp-content {
+        max-width: 100%;
+    }
+
+    .mobile-exp-cta {
+        width: 100%;
     }
 }
 
