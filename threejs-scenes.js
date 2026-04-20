@@ -1,6 +1,13 @@
 // ===== TODAYINTECH THREE.JS 3D SCENES =====
 // Uses Three.js (loaded via CDN importmap) for immersive scroll-driven 3D experiences
 
+// ===== DEVICE CAPABILITY DETECTION =====
+const isMobile = window.innerWidth < 768;
+const isLowEnd = navigator.hardwareConcurrency <= 4 || isMobile;
+// Cap pixel ratio: 1 on low-end, 1.5 on mobile, 2 on desktop
+const MAX_PIXEL_RATIO = isLowEnd ? 1 : isMobile ? 1.5 : 1.5;
+const USE_ANTIALIAS = !isMobile;
+
 // ===== UTILITY: Scroll progress helper =====
 function getScrollProgress(element, offset = 0) {
     const rect = element.getBoundingClientRect();
@@ -24,10 +31,10 @@ function clamp(val, min, max) {
 // ===== UTILITY: Mouse tracker factory =====
 function createMouseTracker(container) {
     const state = {
-        x: 0, y: 0,           // normalized -1 to 1
+        x: 0, y: 0,
         targetX: 0, targetY: 0,
         isHovering: false,
-        hoverIntensity: 0      // 0 to 1, smoothed
+        hoverIntensity: 0
     };
 
     container.addEventListener('mousemove', (e) => {
@@ -48,7 +55,6 @@ function createMouseTracker(container) {
         container.style.cursor = '';
     });
 
-    // Call this each frame to smooth the values
     state.update = function () {
         state.x = lerp(state.x, state.targetX, 0.08);
         state.y = lerp(state.y, state.targetY, 0.08);
@@ -56,6 +62,26 @@ function createMouseTracker(container) {
     };
 
     return state;
+}
+
+// ===== UTILITY: Show/hide loading spinner on a container =====
+function showLoadingSpinner(container) {
+    const spinner = document.createElement('div');
+    spinner.className = 'three-loading-spinner';
+    spinner.innerHTML = '<div class="three-spinner-ring"></div>';
+    container.appendChild(spinner);
+    return spinner;
+}
+
+// ===== UTILITY: Lazy loader — calls fn() once when container is near viewport =====
+function lazyInitScene(container, fn, rootMargin = '200px') {
+    const observer = new IntersectionObserver((entries, obs) => {
+        if (entries[0].isIntersecting) {
+            obs.disconnect();
+            fn();
+        }
+    }, { rootMargin });
+    observer.observe(container);
 }
 
 // ===== SCENE 1: HERO PORTAL — Scroll-Driven Fly-Through =====
@@ -70,9 +96,9 @@ function initHeroPortalScene() {
     camera.position.set(0, 1.5, 8);
     camera.lookAt(0, 1.5, 0);
 
-    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    const renderer = new THREE.WebGLRenderer({ antialias: USE_ANTIALIAS, alpha: true });
     renderer.setSize(container.clientWidth, container.clientHeight);
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, MAX_PIXEL_RATIO));
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = 1.2;
     renderer.outputColorSpace = THREE.SRGBColorSpace;
@@ -98,9 +124,9 @@ function initHeroPortalScene() {
     backLight.position.set(0, 2, -5);
     scene.add(backLight);
 
-    // Particles for ambient atmosphere
+    // Particles (fewer on low-end devices)
+    const particleCount = isLowEnd ? 200 : 500;
     const particlesGeometry = new THREE.BufferGeometry();
-    const particleCount = 500;
     const positions = new Float32Array(particleCount * 3);
     for (let i = 0; i < particleCount * 3; i += 3) {
         positions[i] = (Math.random() - 0.5) * 30;
@@ -118,16 +144,21 @@ function initHeroPortalScene() {
     const particles = new THREE.Points(particlesGeometry, particlesMaterial);
     scene.add(particles);
 
-    // Load model
+    // Show spinner and load model
     let portalModel = null;
+    const spinner = showLoadingSpinner(container);
+    const dracoLoader = new THREE.DRACOLoader();
+    dracoLoader.setDecoderPath('https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/libs/draco/');
     const loader = new THREE.GLTFLoader();
-    loader.load('assets/3dmodels/portal_gate_sci-fi.glb',
+    loader.setDRACOLoader(dracoLoader);
+    loader.load(
+        'assets/3dmodels/portal_gate_sci-fi.glb',
         (gltf) => {
+            spinner.remove();
             portalModel = gltf.scene;
             portalModel.position.set(0, 0, 0);
             portalModel.scale.set(1.5, 1.5, 1.5);
 
-            // Make model materials emissive
             portalModel.traverse((child) => {
                 if (child.isMesh) {
                     child.material.envMapIntensity = 1.5;
@@ -139,14 +170,15 @@ function initHeroPortalScene() {
             scene.add(portalModel);
         },
         undefined,
-        (error) => console.warn('Portal model load error:', error)
+        (error) => {
+            spinner.remove();
+            console.warn('Portal model load error:', error);
+        }
     );
 
-    // Mouse hover tracking
     const mouse = createMouseTracker(container);
     container.style.pointerEvents = 'auto';
 
-    // Scroll-driven camera animation state
     let currentCameraZ = 8;
     let currentCameraY = 1.5;
     let targetCameraZ = 8;
@@ -154,31 +186,24 @@ function initHeroPortalScene() {
     let isVisible = true;
     let scrollProgress = 0;
 
-    // Respond to scroll
     const heroSection = document.getElementById('hero');
 
     function updateScroll() {
         if (!heroSection) return;
         const rect = heroSection.getBoundingClientRect();
         const sectionHeight = heroSection.offsetHeight;
-        // scrollProgress: 0 = top of hero visible, 1 = hero fully scrolled past
         scrollProgress = clamp(-rect.top / sectionHeight, 0, 1);
-
-        // Camera moves from z=8 to z=-3 (through the portal)
         targetCameraZ = lerp(8, -4, scrollProgress);
-        // Camera slightly rises as it enters
         targetCameraY = lerp(1.5, 2.5, scrollProgress);
     }
 
     window.addEventListener('scroll', updateScroll, { passive: true });
 
-    // IntersectionObserver for performance
     const observer = new IntersectionObserver((entries) => {
         isVisible = entries[0].isIntersecting;
     }, { threshold: 0 });
     observer.observe(container);
 
-    // Resize
     function onResize() {
         camera.aspect = container.clientWidth / container.clientHeight;
         camera.updateProjectionMatrix();
@@ -186,7 +211,6 @@ function initHeroPortalScene() {
     }
     window.addEventListener('resize', onResize);
 
-    // Animation loop
     let time = 0;
     function animate() {
         requestAnimationFrame(animate);
@@ -195,32 +219,26 @@ function initHeroPortalScene() {
         time += 0.01;
         mouse.update();
 
-        // Smooth camera movement with mouse offset
         currentCameraZ = lerp(currentCameraZ, targetCameraZ, 0.05);
         currentCameraY = lerp(currentCameraY, targetCameraY, 0.05);
         camera.position.z = currentCameraZ;
         camera.position.y = currentCameraY;
-        // Mouse shifts the camera look-at for a parallax feel
         camera.position.x = mouse.x * 0.8 * mouse.hoverIntensity;
         camera.lookAt(0, 1.5, 0);
 
-        // Animate portal model — mouse tilt on hover
         if (portalModel) {
             portalModel.rotation.y = Math.sin(time * 0.3) * 0.05 + mouse.x * 0.15 * mouse.hoverIntensity;
             portalModel.rotation.x = mouse.y * 0.08 * mouse.hoverIntensity;
         }
 
-        // Animate particles
         particles.rotation.y = time * 0.05;
         particles.rotation.x = Math.sin(time * 0.2) * 0.02;
 
-        // Animate lights — boost intensity on hover
         const hoverGlow = mouse.hoverIntensity * 1.5;
         portalLight1.intensity = 3 + Math.sin(time * 2) * 0.5 + hoverGlow;
         portalLight2.intensity = 2.5 + Math.cos(time * 1.5) * 0.3 + hoverGlow;
         backLight.intensity = 2 + Math.sin(time * 2.5) * 0.5 + hoverGlow * 0.8;
 
-        // FOV zoom effect as we approach
         camera.fov = lerp(60, 45, scrollProgress);
         camera.updateProjectionMatrix();
 
@@ -241,15 +259,14 @@ function initSmartphoneScene() {
     const camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, 0.1, 100);
     camera.position.set(0, 0, 5);
 
-    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    const renderer = new THREE.WebGLRenderer({ antialias: USE_ANTIALIAS, alpha: true });
     renderer.setSize(container.clientWidth, container.clientHeight);
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, MAX_PIXEL_RATIO));
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = 1.0;
     renderer.outputColorSpace = THREE.SRGBColorSpace;
     container.appendChild(renderer.domElement);
 
-    // Lighting
     const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
     scene.add(ambientLight);
 
@@ -265,22 +282,23 @@ function initSmartphoneScene() {
     backLight.position.set(0, -2, -5);
     scene.add(backLight);
 
-    // Load smartphone model
+    // Load model lazily when near viewport
     let phoneModel = null;
+    const spinner = showLoadingSpinner(container);
     const loader = new THREE.GLTFLoader();
-    loader.load('assets/3dmodels/smartphone.glb',
+    loader.load(
+        'assets/3dmodels/smartphone.glb',
         (gltf) => {
+            spinner.remove();
             phoneModel = gltf.scene;
             phoneModel.position.set(0, -1, 0);
 
-            // Calculate bounding box and normalize size
             const box = new THREE.Box3().setFromObject(phoneModel);
             const size = box.getSize(new THREE.Vector3());
             const maxDim = Math.max(size.x, size.y, size.z);
             const scale = 3 / maxDim;
             phoneModel.scale.set(scale, scale, scale);
 
-            // Center the model
             const center = box.getCenter(new THREE.Vector3());
             phoneModel.position.sub(center.multiplyScalar(scale));
             phoneModel.position.y -= 0.5;
@@ -288,10 +306,12 @@ function initSmartphoneScene() {
             scene.add(phoneModel);
         },
         undefined,
-        (error) => console.warn('Smartphone model load error:', error)
+        (error) => {
+            spinner.remove();
+            console.warn('Smartphone model load error:', error);
+        }
     );
 
-    // Mouse hover tracking
     const mouse = createMouseTracker(container);
 
     let isVisible = false;
@@ -326,10 +346,7 @@ function initSmartphoneScene() {
         mouse.update();
 
         if (phoneModel) {
-            // Scroll-driven: grow from small + rise up
             const entryProgress = clamp(scrollProgress * 2, 0, 1);
-
-            // Float and rotate + mouse hover tilt
             phoneModel.position.y = lerp(-2, 0, entryProgress) + Math.sin(time * 1.5) * 0.1;
             phoneModel.position.x = mouse.x * 0.3 * mouse.hoverIntensity;
             phoneModel.rotation.y = lerp(-0.5, 0, entryProgress) + time * 0.3 + mouse.x * 0.4 * mouse.hoverIntensity;
@@ -337,7 +354,6 @@ function initSmartphoneScene() {
             phoneModel.rotation.z = Math.sin(time * 0.6) * 0.03 - mouse.x * 0.1 * mouse.hoverIntensity;
         }
 
-        // Animate lights — boost on hover
         const hoverGlow = mouse.hoverIntensity * 1.0;
         keyLight.intensity = 2 + Math.sin(time * 1.2) * 0.3 + hoverGlow;
         fillLight.intensity = 1.2 + Math.cos(time * 0.9) * 0.2 + hoverGlow * 0.5;
@@ -358,15 +374,14 @@ function initAIRobotScene() {
     const camera = new THREE.PerspectiveCamera(50, container.clientWidth / container.clientHeight, 0.1, 100);
     camera.position.set(0, 1, 5);
 
-    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    const renderer = new THREE.WebGLRenderer({ antialias: USE_ANTIALIAS, alpha: true });
     renderer.setSize(container.clientWidth, container.clientHeight);
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, MAX_PIXEL_RATIO));
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = 1.1;
     renderer.outputColorSpace = THREE.SRGBColorSpace;
     container.appendChild(renderer.domElement);
 
-    // Futuristic lighting
     const ambientLight = new THREE.AmbientLight(0x1a1a2e, 0.5);
     scene.add(ambientLight);
 
@@ -386,9 +401,9 @@ function initAIRobotScene() {
     groundLight.position.set(0, -2, 0);
     scene.add(groundLight);
 
-    // Floating holographic particles
+    // Fewer particles on low-end
+    const holoCount = isLowEnd ? 80 : 200;
     const holoGeometry = new THREE.BufferGeometry();
-    const holoCount = 200;
     const holoPositions = new Float32Array(holoCount * 3);
     for (let i = 0; i < holoCount * 3; i += 3) {
         holoPositions[i] = (Math.random() - 0.5) * 10;
@@ -406,26 +421,25 @@ function initAIRobotScene() {
     const holoParticles = new THREE.Points(holoGeometry, holoMaterial);
     scene.add(holoParticles);
 
-    // Load AI robot model
     let robotModel = null;
+    const spinner = showLoadingSpinner(container);
     const loader = new THREE.GLTFLoader();
-    loader.load('assets/3dmodels/ai_robot.glb',
+    loader.load(
+        'assets/3dmodels/ai_robot.glb',
         (gltf) => {
+            spinner.remove();
             robotModel = gltf.scene;
 
-            // Normalize size
             const box = new THREE.Box3().setFromObject(robotModel);
             const size = box.getSize(new THREE.Vector3());
             const maxDim = Math.max(size.x, size.y, size.z);
             const scale = 3.5 / maxDim;
             robotModel.scale.set(scale, scale, scale);
 
-            // Center
             const center = box.getCenter(new THREE.Vector3());
             robotModel.position.sub(center.multiplyScalar(scale));
-            robotModel.position.y -= 2; // Start below
+            robotModel.position.y -= 2;
 
-            // Enhance materials
             robotModel.traverse((child) => {
                 if (child.isMesh) {
                     child.material.envMapIntensity = 1.5;
@@ -439,10 +453,12 @@ function initAIRobotScene() {
             scene.add(robotModel);
         },
         undefined,
-        (error) => console.warn('AI Robot model load error:', error)
+        (error) => {
+            spinner.remove();
+            console.warn('AI Robot model load error:', error);
+        }
     );
 
-    // Mouse hover tracking
     const mouse = createMouseTracker(container);
 
     let isVisible = false;
@@ -478,22 +494,16 @@ function initAIRobotScene() {
 
         if (robotModel) {
             const entryProgress = clamp(scrollProgress * 2.5, 0, 1);
-
-            // Rise from below
             robotModel.position.y = lerp(-3, 0, entryProgress) + Math.sin(time * 1.2) * 0.08;
             robotModel.position.x = mouse.x * 0.3 * mouse.hoverIntensity;
-
-            // Rotate with scroll + mouse-follow on hover (robot "looks at" cursor)
             robotModel.rotation.y = lerp(-Math.PI * 0.3, Math.PI * 0.15, entryProgress) + time * 0.2 + mouse.x * 0.5 * mouse.hoverIntensity;
             robotModel.rotation.x = Math.sin(time * 0.5) * 0.03 + mouse.y * 0.2 * mouse.hoverIntensity;
             robotModel.rotation.z = -mouse.x * 0.08 * mouse.hoverIntensity;
         }
 
-        // Animate particles — follow mouse slightly on hover
         holoParticles.rotation.y = time * 0.08 + mouse.x * 0.05 * mouse.hoverIntensity;
         holoParticles.rotation.x = Math.sin(time * 0.15) * 0.03 + mouse.y * 0.03 * mouse.hoverIntensity;
 
-        // Animate lights — boost on hover
         const hoverGlow = mouse.hoverIntensity * 1.5;
         accentLight.intensity = 3 + Math.sin(time * 1.8) * 0.5 + hoverGlow;
         rimLight.intensity = 2 + Math.cos(time * 1.3) * 0.4 + hoverGlow;
@@ -505,14 +515,22 @@ function initAIRobotScene() {
     animate();
 }
 
-// ===== INITIALIZE ALL SCENES =====
+// ===== INITIALIZE SCENES =====
 document.addEventListener('DOMContentLoaded', () => {
-    // Only initialize on devices with sufficient power (skip very small mobiles)
     const isMobileSmall = window.innerWidth < 480;
+    if (isMobileSmall) return;
 
-    if (!isMobileSmall) {
-        initHeroPortalScene();
-        initSmartphoneScene();
-        initAIRobotScene();
+    // Hero loads immediately (above the fold)
+    initHeroPortalScene();
+
+    // Smartphone and robot load lazily when their containers approach the viewport
+    const phoneContainer = document.getElementById('mobile-3d-container');
+    const robotContainer = document.getElementById('ai-3d-container');
+
+    if (phoneContainer) {
+        lazyInitScene(phoneContainer, initSmartphoneScene, '300px');
+    }
+    if (robotContainer) {
+        lazyInitScene(robotContainer, initAIRobotScene, '300px');
     }
 });
