@@ -214,7 +214,7 @@ Ready to build your next health tech product? Let's talk!
 | 📧 **Email** | [contact@todayintech.in](mailto:contact@todayintech.in) |
 | 📞 **Phone** | +91 7679349780 |
 | 🌐 **Website** | [todayintech.com](https://todayintech.com) |
-| 📍 **Location** | Bengaluru, India |
+| 📍 **Location** | Kolkata, India |
 
 ---
 
