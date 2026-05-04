@@ -61,6 +61,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
   <link rel="preload" as="image" href="assets/hero-bg.png">
+  <link rel="preload" as="fetch" href="assets/3dmodels/portal_gate_sci-fi.glb" crossorigin="anonymous">
+  <link rel="preload" as="fetch" href="assets/3dmodels/smartphone.glb" crossorigin="anonymous">
+  <link rel="preload" as="fetch" href="assets/3dmodels/ai_robot.glb" crossorigin="anonymous">
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
     rel="stylesheet">
@@ -336,17 +339,14 @@
 
       <div class="container">
         <div class="hero-content">
-          <div class="hero-badge">
-            <span class="pulse"></span>
-            <i class="fas fa-shield-halved" style="margin-right:4px;"></i> HIPAA-Ready • 50+ Brands • 12 Countries • 4.9★ on Clutch
-          </div>
           <h1 class="hero-title">
             Ship Your Branded <br />
             <span class="gradient-text-wrapper"><span class="gradient-text">HealthTech Platform</span></span> <br />
             in Weeks — Not Quarters
           </h1>
           <p class="hero-description">
-            HIPAA-compliant telemedicine, EHR, and patient-engagement platforms — pre-built, fully branded to your business, and production-ready. Skip 6–12 months of custom development and launch in 2–4 weeks.
+            HIPAA-compliant telemedicine, EHR, and patient-engagement platforms — pre-built, fully branded to your
+            business, and production-ready. Skip 6–12 months of custom development and launch in 2–4 weeks.
           </p>
           <div class="hero-buttons">
             <a href=""
@@ -359,10 +359,14 @@
               See Live Demo →
             </a>
           </div>
-          <div style="margin-top:14px;font-size:0.85rem;opacity:0.75;display:flex;gap:14px;flex-wrap:wrap;align-items:center;">
-            <span><i class="fas fa-check-circle" style="color:var(--accent-green);margin-right:4px;"></i>No obligation</span>
-            <span><i class="fas fa-check-circle" style="color:var(--accent-green);margin-right:4px;"></i>NDA on request</span>
-            <span><i class="fas fa-check-circle" style="color:var(--accent-green);margin-right:4px;"></i>Fixed-scope quote in 24h</span>
+          <div
+            style="margin-top:14px;font-size:0.85rem;opacity:0.75;display:flex;gap:14px;flex-wrap:wrap;align-items:center;">
+            <span><i class="fas fa-check-circle" style="color:var(--accent-green);margin-right:4px;"></i>No
+              obligation</span>
+            <span><i class="fas fa-check-circle" style="color:var(--accent-green);margin-right:4px;"></i>NDA on
+              request</span>
+            <span><i class="fas fa-check-circle" style="color:var(--accent-green);margin-right:4px;"></i>Fixed-scope
+              quote in 24h</span>
           </div>
           <div class="hero-stats">
             <div class="hero-stat">
@@ -377,6 +381,94 @@
               <div class="hero-stat-number counter" data-target="99" data-suffix="%">99%</div>
               <div class="hero-stat-label">Satisfaction Rate</div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TRUST & CERTIFICATIONS SECTION ===== -->
+    <section class="trust-certifications">
+      <div class="container">
+        <div class="trust-cert-grid">
+          <!-- Google Reviews -->
+          <a href="https://share.google/DXFATJs1FzVq4KXM7" target="_blank" rel="noopener" class="trust-cert-card">
+            <div class="trust-cert-icon google-icon">
+              <i class="fab fa-google"></i>
+            </div>
+            <div class="trust-cert-content">
+              <div class="trust-cert-rating">
+                <span class="trust-cert-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                <span class="trust-cert-score">4.9/5</span>
+              </div>
+              <div class="trust-cert-label">Google Reviews</div>
+              <div class="trust-cert-cta">View Reviews <i class="fas fa-arrow-right"></i></div>
+            </div>
+          </a>
+
+          <!-- Trustpilot -->
+          <a href="https://www.trustpilot.com/review/todayintech.in" target="_blank" rel="noopener" class="trust-cert-card">
+            <div class="trust-cert-icon trustpilot-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="trust-cert-content">
+              <div class="trust-cert-rating">
+                <span class="trust-cert-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                <span class="trust-cert-score">4.9/5</span>
+              </div>
+              <div class="trust-cert-label">Trustpilot</div>
+              <div class="trust-cert-cta">View Reviews <i class="fas fa-arrow-right"></i></div>
+            </div>
+          </a>
+
+          <!-- HIPAA Compliance -->
+          <div class="trust-cert-card">
+            <div class="trust-cert-icon hipaa-icon">
+              <i class="fas fa-shield-halved"></i>
+            </div>
+            <div class="trust-cert-content">
+              <div class="trust-cert-rating">
+                <span class="trust-cert-badge">Verified</span>
+              </div>
+              <div class="trust-cert-label">HIPAA & GDPR Compliant</div>
+              <div class="trust-cert-desc">Enterprise-grade security</div>
+            </div>
+          </div>
+
+          <!-- MSME Registration -->
+          <div class="trust-cert-card msme-cert-card">
+            <div class="trust-cert-icon msme-icon">
+              <img src="assets/certificate/msme-loo.png" alt="MSME">
+            </div>
+            <div class="trust-cert-content">
+              <div class="trust-cert-rating">
+                <span class="trust-cert-badge">Registered</span>
+              </div>
+              <div class="trust-cert-label">MSME Certified</div>
+              <div class="trust-cert-desc">UDYAM-WB-03-0108090</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Trust Indicators -->
+        <div class="trust-indicators">
+          <div class="trust-indicator">
+            <span class="trust-indicator-icon"><i class="fas fa-users"></i></span>
+            <span class="trust-indicator-text">50+ Brands</span>
+          </div>
+          <div class="trust-indicator-divider">•</div>
+          <div class="trust-indicator">
+            <span class="trust-indicator-icon"><i class="fas fa-globe"></i></span>
+            <span class="trust-indicator-text">12 Countries</span>
+          </div>
+          <div class="trust-indicator-divider">•</div>
+          <div class="trust-indicator">
+            <span class="trust-indicator-icon"><i class="fas fa-rocket"></i></span>
+            <span class="trust-indicator-text">120+ Projects</span>
+          </div>
+          <div class="trust-indicator-divider">•</div>
+          <div class="trust-indicator">
+            <span class="trust-indicator-icon"><i class="fas fa-clock"></i></span>
+            <span class="trust-indicator-text">95% On-time Delivery</span>
           </div>
         </div>
       </div>
@@ -413,25 +505,28 @@
           </div>
         </div>
         <div class="trust-proof-bar">
-          <div class="trust-proof-item">
+          <a href="https://share.google/DXFATJs1FzVq4KXM7" target="_blank" rel="noopener" class="trust-proof-item trust-proof-link">
             <span class="trust-proof-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                 class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
-            <span class="trust-proof-text">4.9 / 5 avg. client rating</span>
-          </div>
+            <span class="trust-proof-text">4.9 Google Reviews</span>
+            <i class="fas fa-external-link-alt trust-proof-arrow"></i>
+          </a>
+          <div class="trust-proof-divider">|</div>
+          <a href="https://www.trustpilot.com/review/todayintech.in" target="_blank" rel="noopener" class="trust-proof-item trust-proof-link">
+            <span class="trust-proof-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+            <span class="trust-proof-text">4.9 Trustpilot</span>
+            <i class="fas fa-external-link-alt trust-proof-arrow"></i>
+          </a>
           <div class="trust-proof-divider">|</div>
           <div class="trust-proof-item">
             <span><i class="fas fa-shield-halved"></i></span>
             <span class="trust-proof-text">HIPAA &amp; GDPR Compliant</span>
           </div>
           <div class="trust-proof-divider">|</div>
-          <div class="trust-proof-item">
-            <span><i class="fas fa-clock"></i></span>
-            <span class="trust-proof-text">95% on-time delivery</span>
-          </div>
-          <div class="trust-proof-divider">|</div>
-          <div class="trust-proof-item">
-            <span><i class="fas fa-handshake"></i></span>
-            <span class="trust-proof-text">95% client retention rate</span>
+          <div class="trust-proof-item msme-trust-item">
+            <img src="assets/certificate/msme-loo.png" alt="MSME" style="width:18px;height:auto;">
+            <span class="trust-proof-text">MSME: UDYAM-WB-03-0108090</span>
           </div>
         </div>
       </div>
@@ -468,33 +563,43 @@
 
     <!-- ===== MOBILE APP EXPERIENCE SECTION ===== -->
     <section class="mobile-app-experience" id="mobile-app">
+      <div class="bg-glow" style="top: 20%; left: -10%; width: 500px; height: 500px; background: var(--primary);"></div>
+      <div class="bg-glow" style="bottom: -10%; right: -10%; width: 400px; height: 400px; background: var(--secondary);"></div>
       <div class="container">
-        <div class="mobile-exp-content">
-          <span class="section-label">Mobile App Experience</span>
-          <h2 class="section-title">Stunning Apps,<br>Pixel-Perfect Delivery</h2>
-          <p class="section-subtitle">We craft beautiful, high-performance mobile applications using React Native and
-            Flutter — delivering native-quality experiences across iOS and Android.</p>
-          <ul class="mobile-exp-features">
-            <li class="mobile-exp-feature">
-              <div class="mobile-exp-icon"><i class="fas fa-rocket"></i></div>
-              <span>60fps Smooth Performance</span>
-            </li>
-            <li class="mobile-exp-feature">
-              <div class="mobile-exp-icon"><i class="fas fa-mobile-screen"></i></div>
-              <span>iOS &amp; Android from One Codebase</span>
-            </li>
-            <li class="mobile-exp-feature">
-              <div class="mobile-exp-icon"><i class="fas fa-shield-halved"></i></div>
-              <span>Enterprise-Grade Security</span>
-            </li>
-            <li class="mobile-exp-feature">
-              <div class="mobile-exp-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
-              <span>Delightful Micro-Animations</span>
-            </li>
-          </ul>
-          <a href=""
-            onclick="Calendly.initPopupWidget({url:'https://calendly.com/launchhealthapp-6biv/30min/30min/'});return false;"
-            class="btn-primary mobile-exp-cta">Build Your App &rarr;</a>
+        <div class="mobile-exp-grid">
+          <div class="mobile-exp-text reveal">
+            <span class="section-label">Mobile App Experience</span>
+            <h2 class="section-title">Stunning Apps,<br><span class="gradient-text-wrapper"><span class="gradient-text">Pixel-Perfect Delivery</span></span></h2>
+            <p class="section-subtitle">We craft beautiful, high-performance mobile applications using React Native and
+              Flutter — delivering native-quality experiences across iOS and Android.</p>
+            <a href=""
+              onclick="Calendly.initPopupWidget({url:'https://calendly.com/launchhealthapp-6biv/30min/30min/'});return false;"
+              class="btn-primary mobile-exp-cta mt-4" style="margin-top: 20px;">
+              Build Your App &rarr;
+            </a>
+          </div>
+          <div class="mobile-exp-bento reveal">
+            <div class="bento-card card-1">
+              <div class="bento-icon"><i class="fas fa-rocket"></i></div>
+              <h3>60fps Smooth</h3>
+              <p>Unmatched fluid performance leveraging native device capabilities.</p>
+            </div>
+            <div class="bento-card card-2">
+              <div class="bento-icon"><i class="fas fa-mobile-screen"></i></div>
+              <h3>One Codebase</h3>
+              <p>Deploy to both iOS & Android simultaneously with perfect fidelity.</p>
+            </div>
+            <div class="bento-card card-3">
+              <div class="bento-icon"><i class="fas fa-shield-halved"></i></div>
+              <h3>Enterprise Security</h3>
+              <p>Bank-grade encryption, biometric auth, and HIPAA compliance ready.</p>
+            </div>
+            <div class="bento-card card-4">
+              <div class="bento-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+              <h3>Micro-Animations</h3>
+              <p>Delightful interactions and fluid transitions that users love.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -506,7 +611,8 @@
         <div class="section-header reveal">
           <span class="section-label">What We Build</span>
           <h2 class="section-title">Production-Ready Healthcare Software, Delivered in Weeks</h2>
-          <p class="section-subtitle">HIPAA-compliant, HL7/FHIR-integrated, and built to scale — so you can focus on patients, providers, and growth instead of six-figure engineering bills.</p>
+          <p class="section-subtitle">HIPAA-compliant, HL7/FHIR-integrated, and built to scale — so you can focus on
+            patients, providers, and growth instead of six-figure engineering bills.</p>
         </div>
 
         <div class="services-grid">
@@ -595,7 +701,8 @@
           <div class="showcase-content reveal">
             <span class="section-label">Mobile App Experience</span>
             <h2 class="section-title">Stunning Apps,<br><span class="gradient-text">Pixel-Perfect Delivery</span></h2>
-            <p class="section-subtitle">We craft beautiful, high-performance mobile applications using React Native and Flutter — delivering native-quality experiences across iOS and Android.</p>
+            <p class="section-subtitle">We craft beautiful, high-performance mobile applications using React Native and
+              Flutter — delivering native-quality experiences across iOS and Android.</p>
             <div class="showcase-features">
               <div class="showcase-feature">
                 <i class="fas fa-rocket"></i>
@@ -614,7 +721,9 @@
                 <span>Delightful Micro-Animations</span>
               </div>
             </div>
-            <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;" class="btn-primary">Build Your App →</a>
+            <a href=""
+              onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;"
+              class="btn-primary">Build Your App →</a>
           </div>
           <div class="showcase-3d-wrapper reveal">
             <div id="mobile-3d-container" class="three-canvas-container"></div>
@@ -634,7 +743,8 @@
           <div class="showcase-content reveal">
             <span class="section-label">AI & Automation</span>
             <h2 class="section-title">Intelligent Systems,<br><span class="gradient-text">Powered by AI</span></h2>
-            <p class="section-subtitle">We integrate cutting-edge AI and machine learning into your products — from smart automation pipelines to predictive analytics and conversational agents.</p>
+            <p class="section-subtitle">We integrate cutting-edge AI and machine learning into your products — from
+              smart automation pipelines to predictive analytics and conversational agents.</p>
             <div class="showcase-features">
               <div class="showcase-feature">
                 <i class="fas fa-brain"></i>
@@ -734,6 +844,14 @@
                 <span class="compliance-icon"><i class="fas fa-lock"></i></span>
                 <span>AES-256 Encrypted</span>
               </div>
+              <div class="compliance-badge msme-compliance-badge">
+                <img src="assets/certificate/msme-loo.png" alt="MSME" style="width:18px;height:auto;">
+                <span>MSME Registered</span>
+              </div>
+              <div class="compliance-badge msme-id-badge">
+                <span class="compliance-icon"><i class="fas fa-certificate"></i></span>
+                <span>UDYAM-WB-03-0108090</span>
+              </div>
             </div>
           </div>
         </div>
@@ -752,34 +870,14 @@
         </div>
 
         <div class="portfolio-grid">
-          <div class="portfolio-card reveal">
-            <div class="portfolio-image">
-              <img src="assets/project-edusphere.png" alt="EduSphere LMS" loading="lazy">
-              <div class="portfolio-image-overlay"></div>
-            </div>
-            <div class="portfolio-info">
-              <span class="portfolio-category">EdTech Platform</span>
-              <h3>EduSphere — Learning Management System</h3>
-              <p>A comprehensive virtual learning platform for universities with live classes, assignments, grading, and
-                student portals — all under their own brand.</p>
-              <div class="portfolio-tech">
-                <span>React</span>
-                <span>Node.js</span>
-                <span>WebRTC</span>
-                <span>AWS</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="portfolio-card reveal">
+          <a href="projects/mednowna.html" class="portfolio-card reveal">
             <div class="portfolio-image">
               <img src="assets/project-telemedicine.png" alt="Mednowna - Telehealth Platform" loading="lazy">
               <div class="portfolio-image-overlay"></div>
             </div>
             <div class="portfolio-info">
               <span class="portfolio-category">HealthTech</span>
-              <h3><a href="https://www.mednowna.com/" target="_blank" rel="noopener" style="color: inherit;">Mednowna —
-                  Telehealth Platform</a></h3>
+              <h3>Mednowna — Telehealth Platform</h3>
               <p>A comprehensive virtual care and telemedicine platform offering end-to-end healthcare solutions, secure
                 video consultations, and patient management.</p>
               <div class="portfolio-tech">
@@ -789,83 +887,45 @@
                 <span>Docker</span>
               </div>
             </div>
-          </div>
+          </a>
 
-          <div class="portfolio-card reveal">
+          <a href="projects/nexbotix.html" class="portfolio-card reveal">
             <div class="portfolio-image">
-              <img src="assets/project-logistics.png" alt="GlobalLogistics Fleet" loading="lazy">
+              <img src="assets/project/marketing-tools.png" alt="NexBotix Marketing Automation" loading="lazy">
               <div class="portfolio-image-overlay"></div>
             </div>
             <div class="portfolio-info">
-              <span class="portfolio-category">Logistics & Supply Chain</span>
-              <h3>GlobalLogistics — Fleet Management</h3>
-              <p>Real-time vehicle tracking, route optimization, automated dispatching, and driver-facing mobile app for
-                global logistics operations.</p>
+              <span class="portfolio-category">Marketing Automation</span>
+              <h3>NexBotix — Multi-Channel Marketing AI</h3>
+              <p>Turn every channel into a sales machine. WhatsApp marketing, professional email campaigns, and AI
+                website chatbots — all in one unified platform. Capture leads, automate replies, and close sales seamlessly.
+              </p>
               <div class="portfolio-tech">
-                <span>Flutter</span>
-                <span>Firebase</span>
-                <span>Google Maps APIs</span>
-                <span>Redis</span>
+                <span>WhatsApp API</span>
+                <span>AI Chatbot</span>
+                <span>Email SMTP</span>
+                <span>REST API</span>
               </div>
             </div>
-          </div>
+          </a>
 
-          <div class="portfolio-card reveal">
+          <a href="projects/ai-community.html" class="portfolio-card reveal">
             <div class="portfolio-image">
-              <img src="assets/project-finflow.png" alt="FinFlow Dashboard" loading="lazy">
+              <img src="assets/project/ai-community.png" alt="AI Community College" loading="lazy">
               <div class="portfolio-image-overlay"></div>
             </div>
             <div class="portfolio-info">
-              <span class="portfolio-category">Fintech & Finance</span>
-              <h3>FinFlow — Wealth Management App</h3>
-              <p>AI-powered financial app with personalized insights, wealth tracking, banking API integration, and
-                custom reporting features.</p>
-              <div class="portfolio-tech">
-                <span>Next.js</span>
-                <span>GraphQL</span>
-                <span>Plaid API</span>
-                <span>GCP</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="portfolio-card reveal">
-            <div class="portfolio-image">
-              <img src="assets/project-crm.png" alt="CloudSync CRM" loading="lazy">
-              <div class="portfolio-image-overlay"></div>
-            </div>
-            <div class="portfolio-info">
-              <span class="portfolio-category">Enterprise SaaS</span>
-              <h3>CloudSync — CRM & Analytics</h3>
-              <p>A powerful customer relationship management platform with AI-driven analytics, sales pipelines, and
-                automated reporting.</p>
-              <div class="portfolio-tech">
-                <span>Vue.js</span>
-                <span>Python</span>
-                <span>PostgreSQL</span>
-                <span>AWS</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="portfolio-card reveal">
-            <div class="portfolio-image">
-              <img src="assets/project-ecommerce.png" alt="ShopSphere B2B" loading="lazy">
-              <div class="portfolio-image-overlay"></div>
-            </div>
-            <div class="portfolio-info">
-              <span class="portfolio-category">E-Commerce</span>
-              <h3>ShopSphere — B2B Retail Platform</h3>
-              <p>A highly scalable multi-vendor B2B e-commerce platform with inventory sync, automated billing, and a
-                vendor portal.</p>
+              <span class="portfolio-category">EdTech</span>
+              <h3>AI Community College — Learn AI Step by Step</h3>
+              <p>A structured, step-by-step AI learning platform with 52 chapters. Master artificial intelligence from beginner to expert with real tools, real projects, and real results.</p>
               <div class="portfolio-tech">
                 <span>React</span>
                 <span>Node.js</span>
-                <span>Stripe API</span>
-                <span>MongoDB</span>
+                <span>AI Integration</span>
+                <span>Multi-Language</span>
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>
@@ -1248,7 +1308,10 @@
               <span class="faq-icon"><i class="fas fa-plus"></i></span>
             </summary>
             <div class="faq-answer">
-              <p>The cost depends on complexity and features. Our white-label <strong>MVPs start at $4,999</strong> and our Growth tier platforms start at <strong>$24,999</strong> — a fraction of the $200K+ typical custom build. Enterprise engagements with complex API integrations, custom dashboards, and dedicated teams are scoped based on your specific requirements. <a href=""
+              <p>The cost depends on complexity and features. Our white-label <strong>MVPs start at $4,999</strong> and
+                our Growth tier platforms start at <strong>$24,999</strong> — a fraction of the $200K+ typical custom
+                build. Enterprise engagements with complex API integrations, custom dashboards, and dedicated teams are
+                scoped based on your specific requirements. <a href=""
                   onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;">Book
                   a free
                   consultation</a> for a custom quote tailored to your specific requirements.</p>
@@ -1431,9 +1494,12 @@
           <div class="bg-glow glow-2"></div>
 
           <span class="section-label">Ready to Launch?</span>
-          <h2 class="cta-title">Your HIPAA-Compliant Health Platform,<br><span class="gradient-text">Live in 2–4 Weeks.</span>
+          <h2 class="cta-title">Your Custom Software Platform,<br><span class="gradient-text">Live in 2–4
+              Weeks.</span>
           </h2>
-          <p class="cta-subtitle">Book a free 30-minute strategy call. We'll scope your MVP, give you a fixed-price quote, and a concrete launch timeline — no obligation, no sales pressure. Most clients walk away with a clearer roadmap than they started with.</p>
+          <p class="cta-subtitle">Book a free 30-minute strategy call. We'll scope your MVP, give you a fixed-price
+            quote, and a concrete launch timeline — no obligation, no sales pressure. Most clients walk away with a
+            clearer roadmap than they started with.</p>
 
           <div class="cta-buttons">
             <a href=""
@@ -1477,6 +1543,16 @@
           </a>
           <p>Empowering healthcare and technology businesses with world-class software solutions. Your vision, our
             expertise.</p>
+          
+          <!-- Trust Badge -->
+          <div class="msme-badge" style="display: flex; align-items: center; gap: 12px; margin: 24px 0; padding: 12px 16px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; width: fit-content; transition: 0.3s;">
+            <img src="assets/certificate/msme-loo.png" alt="MSME UDYAM Registered Logo" style="height: 38px; width: auto; object-fit: contain;">
+            <div style="display: flex; flex-direction: column;">
+              <span style="font-size: 0.7rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Govt. of India Registered MSME</span>
+              <span style="font-size: 0.85rem; color: var(--text-primary); font-weight: 700; font-family: monospace; letter-spacing: 0.5px; margin-top: 2px;">UDYAM-WB-03-0108090</span>
+            </div>
+          </div>
+
           <div class="footer-socials">
             <a href="https://www.facebook.com/people/Today-In-Tech/61583127425585/" target="_blank" rel="noopener"
               class="footer-social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>

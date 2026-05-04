@@ -96,13 +96,28 @@ function initHeroPortalScene() {
     camera.position.set(0, 1.5, 8);
     camera.lookAt(0, 1.5, 0);
 
-    const renderer = new THREE.WebGLRenderer({ antialias: USE_ANTIALIAS, alpha: true });
+    // const renderer = new THREE.WebGLRenderer({ antialias: USE_ANTIALIAS, alpha: true });
+    const renderer = new THREE.WebGLRenderer({ antialias: USE_ANTIALIAS, alpha: true, powerPreference: 'high-performance' });
     renderer.setSize(container.clientWidth, container.clientHeight);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, MAX_PIXEL_RATIO));
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = 1.2;
     renderer.outputColorSpace = THREE.SRGBColorSpace;
     container.appendChild(renderer.domElement);
+    // Instant placeholder - glowing torus that shows immediately                                                   
+    const torusGeometry = new THREE.TorusGeometry(1.8, 0.4, 32, 64);
+    const torusMaterial = new THREE.MeshStandardMaterial({
+        color: 0x7c3aed,
+        emissive: 0x7c3aed,
+        emissiveIntensity: 0.5,
+        metalness: 0.8,
+        roughness: 0.2,
+        transparent: true,
+        opacity: 0.9
+    });
+    const placeholderTorus = new THREE.Mesh(torusGeometry, torusMaterial);
+    placeholderTorus.position.set(0, 1.5, 0);
+    scene.add(placeholderTorus);
 
     // Lighting
     const ambientLight = new THREE.AmbientLight(0x4444ff, 0.4);
@@ -144,7 +159,7 @@ function initHeroPortalScene() {
     const particles = new THREE.Points(particlesGeometry, particlesMaterial);
     scene.add(particles);
 
-    // Show spinner and load model
+    // Show spinner and load model - preloads make this faster  
     let portalModel = null;
     const spinner = showLoadingSpinner(container);
     const dracoLoader = new THREE.DRACOLoader();
@@ -167,6 +182,7 @@ function initHeroPortalScene() {
                     }
                 }
             });
+            scene.remove(placeholderTorus);
             scene.add(portalModel);
         },
         undefined,
@@ -229,6 +245,9 @@ function initHeroPortalScene() {
         if (portalModel) {
             portalModel.rotation.y = Math.sin(time * 0.3) * 0.05 + mouse.x * 0.15 * mouse.hoverIntensity;
             portalModel.rotation.x = mouse.y * 0.08 * mouse.hoverIntensity;
+        } else {
+            placeholderTorus.rotation.y = time * 0.5;
+            placeholderTorus.rotation.x = mouse.y * 0.1 * mouse.hoverIntensity;
         }
 
         particles.rotation.y = time * 0.05;
@@ -266,7 +285,17 @@ function initSmartphoneScene() {
     renderer.toneMappingExposure = 1.0;
     renderer.outputColorSpace = THREE.SRGBColorSpace;
     container.appendChild(renderer.domElement);
-
+    const boxGeometry = new THREE.BoxGeometry(1, 2, 0.2, 8, 16, 4);
+    const roundedMaterial = new THREE.MeshStandardMaterial({
+        color: 0x7c3aed,
+        emissive: 0x7c3aed,
+        emissiveIntensity: 0.3,
+        metalness: 0.9,
+        roughness: 0.1
+    });
+    const placeholderBox = new THREE.Mesh(boxGeometry, roundedMaterial);
+    placeholderBox.position.set(0, -0.5, 0);
+    scene.add(placeholderBox);
     const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
     scene.add(ambientLight);
 
@@ -302,7 +331,7 @@ function initSmartphoneScene() {
             const center = box.getCenter(new THREE.Vector3());
             phoneModel.position.sub(center.multiplyScalar(scale));
             phoneModel.position.y -= 0.5;
-
+            scene.remove(placeholderBox);
             scene.add(phoneModel);
         },
         undefined,
@@ -353,7 +382,12 @@ function initSmartphoneScene() {
             phoneModel.rotation.x = Math.sin(time * 0.8) * 0.05 + mouse.y * 0.25 * mouse.hoverIntensity;
             phoneModel.rotation.z = Math.sin(time * 0.6) * 0.03 - mouse.x * 0.1 * mouse.hoverIntensity;
         }
-
+        else if (placeholderBox) {
+            // Animate placeholder while model loads
+            placeholderBox.rotation.y = time * 0.4 + mouse.x * 0.3 * mouse.hoverIntensity;
+            placeholderBox.rotation.x = mouse.y * 0.2 * mouse.hoverIntensity;
+            placeholderBox.position.y = Math.sin(time * 1.2) * 0.08 - 0.5;
+        }
         const hoverGlow = mouse.hoverIntensity * 1.0;
         keyLight.intensity = 2 + Math.sin(time * 1.2) * 0.3 + hoverGlow;
         fillLight.intensity = 1.2 + Math.cos(time * 0.9) * 0.2 + hoverGlow * 0.5;
@@ -374,14 +408,26 @@ function initAIRobotScene() {
     const camera = new THREE.PerspectiveCamera(50, container.clientWidth / container.clientHeight, 0.1, 100);
     camera.position.set(0, 1, 5);
 
-    const renderer = new THREE.WebGLRenderer({ antialias: USE_ANTIALIAS, alpha: true });
+    const renderer = new THREE.WebGLRenderer({ antialias: USE_ANTIALIAS, alpha: true, powerPreference: 'high-performance' });
     renderer.setSize(container.clientWidth, container.clientHeight);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, MAX_PIXEL_RATIO));
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = 1.1;
     renderer.outputColorSpace = THREE.SRGBColorSpace;
     container.appendChild(renderer.domElement);
-
+    // Instant placeholder - glowing icosahedron robot head
+    const icoGeometry = new THREE.IcosahedronGeometry(1.2, 0);
+    const icoMaterial = new THREE.MeshStandardMaterial({
+        color: 0x06b6d4,
+        emissive: 0x06b6d4,
+        emissiveIntensity: 0.4,
+        metalness: 0.9,
+        roughness: 0.1,
+        wireframe: true
+    });
+    const placeholderRobot = new THREE.Mesh(icoGeometry, icoMaterial);
+    placeholderRobot.position.set(0, 0, 0);
+    scene.add(placeholderRobot);
     const ambientLight = new THREE.AmbientLight(0x1a1a2e, 0.5);
     scene.add(ambientLight);
 
@@ -449,7 +495,7 @@ function initAIRobotScene() {
                     }
                 }
             });
-
+            scene.remove(placeholderRobot);
             scene.add(robotModel);
         },
         undefined,
@@ -499,6 +545,12 @@ function initAIRobotScene() {
             robotModel.rotation.y = lerp(-Math.PI * 0.3, Math.PI * 0.15, entryProgress) + time * 0.2 + mouse.x * 0.5 * mouse.hoverIntensity;
             robotModel.rotation.x = Math.sin(time * 0.5) * 0.03 + mouse.y * 0.2 * mouse.hoverIntensity;
             robotModel.rotation.z = -mouse.x * 0.08 * mouse.hoverIntensity;
+        }
+        else if (placeholderRobot) {
+            // Animate placeholder while model loads
+            placeholderRobot.rotation.y = time * 0.5 + mouse.x * 0.3 * mouse.hoverIntensity;
+            placeholderRobot.rotation.x = mouse.y * 0.2 * mouse.hoverIntensity;
+            placeholderRobot.position.y = Math.sin(time * 0.8) * 0.1;
         }
 
         holoParticles.rotation.y = time * 0.08 + mouse.x * 0.05 * mouse.hoverIntensity;

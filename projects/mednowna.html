@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mednowna — Telehealth Platform | TodayInTech</title>
+  <meta name="description" content="A comprehensive virtual care and telemedicine platform offering end-to-end healthcare solutions, secure video consultations, and patient management.">
+  <link rel="icon" type="image/png" href="../assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../liquid-glass.css">
+  <script>
+    if (localStorage.getItem('lightMode') === 'enabled') {
+      document.documentElement.classList.add('light-mode');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <a href="../index.html" class="nav-logo">
+          <img src="../assets/logo.png" alt="TodayInTech Logo">
+          <span class="nav-logo-text">TodayInTech</span>
+        </a>
+        <div class="nav-links" id="navLinks">
+          <a href="../index.html#services">Services</a>
+          <a href="../index.html#portfolio">Portfolio</a>
+          <a href="../index.html#about">About</a>
+          <a href="../index.html#contact">Contact</a>
+          <button id="themeToggle" class="theme-toggle"><i class="fas fa-sun"></i></button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-detail">
+      <div class="container">
+        <a href="../index.html#portfolio" class="back-link"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+
+        <div class="project-header">
+          <span class="project-category">HealthTech</span>
+          <h1>Mednowna — Telehealth Platform</h1>
+          <p class="project-tagline">A comprehensive virtual care and telemedicine platform offering end-to-end healthcare solutions, secure video consultations, and patient management.</p>
+          <div class="project-actions">
+            <a href="https://mednowna.com/" target="_blank" class="btn-primary">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+          </div>
+        </div>
+
+        <div class="project-hero-image">
+          <img src="../assets/project-telemedicine.png" alt="Mednowna Telehealth Platform">
+        </div>
+
+        <div class="project-content">
+          <div class="project-section">
+            <h2>About the Project</h2>
+            <p>Mednowna is a comprehensive virtual care and telemedicine platform designed to bridge the gap between healthcare providers and patients. The platform enables secure video consultations, real-time health monitoring, prescription management, and seamless integration with existing healthcare systems.</p>
+            <p>Built with a patient-centric approach, Mednowna ensures that healthcare is accessible anytime, anywhere while maintaining the highest standards of data security and HIPAA compliance.</p>
+          </div>
+
+          <div class="project-section">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+              <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-video"></i></div>
+                <h3>Secure Video Consultations</h3>
+                <p>HD video calls with end-to-end encryption for private patient-doctor consultations.</p>
+              </div>
+              <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-calendar-check"></i></div>
+                <h3>Appointment Scheduling</h3>
+                <p>Easy booking system with automated reminders and calendar integration.</p>
+              </div>
+              <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-file-medical"></i></div>
+                <h3>Electronic Health Records</h3>
+                <p>Complete patient history, lab results, and medical documents in one place.</p>
+              </div>
+              <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-pills"></i></div>
+                <h3>E-Prescriptions</h3>
+                <p>Digital prescription management with pharmacy integration.</p>
+              </div>
+              <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-shield-halved"></i></div>
+                <h3>HIPAA Compliant</h3>
+                <p>Enterprise-grade security ensuring complete patient data protection.</p>
+              </div>
+              <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-mobile-screen"></i></div>
+                <h3>Cross-Platform Access</h3>
+                <p>Available on web, iOS, and Android devices.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-section">
+            <h2>Technology Stack</h2>
+            <div class="tech-stack-tags">
+              <span class="tech-tag">React Native</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">WebRTC</span>
+              <span class="tech-tag">AWS</span>
+              <span class="tech-tag">HL7/FHIR</span>
+            </div>
+          </div>
+
+          <div class="project-section">
+            <h2>Challenges & Solutions</h2>
+            <div class="challenge-solution">
+              <div class="challenge">
+                <h4>Challenge</h4>
+                <p>Ensuring secure, low-latency video consultations across different network conditions while maintaining HIPAA compliance.</p>
+              </div>
+              <div class="solution">
+                <h4>Solution</h4>
+                <p>Implemented WebRTC with adaptive bitrate streaming and end-to-end encryption, ensuring seamless video quality even on low-bandwidth connections.</p>
+              </div>
+            </div>
+            <div class="challenge-solution">
+              <div class="challenge">
+                <h4>Challenge</h4>
+                <p>Integrating with diverse healthcare systems and EHR platforms for seamless data exchange.</p>
+              </div>
+              <div class="solution">
+                <h4>Solution</h4>
+                <p>Built HL7/FHIR integration modules that enable interoperability with major EHR systems like Epic, Cerner, and Allscripts.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-cta">
+            <h2>Experience Mednowna</h2>
+            <p>See how Mednowna is transforming healthcare delivery through innovative telemedicine solutions.</p>
+            <div class="cta-buttons">
+              <a href="https://mednowna.com/" target="_blank" class="btn-primary">
+                <i class="fas fa-external-link-alt"></i> Launch Live Demo
+              </a>
+              <a href="../index.html#contact" class="btn-secondary">
+                Build Similar Platform
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2024–2026 TodayInTech. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
