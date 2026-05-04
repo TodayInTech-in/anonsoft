@@ -272,7 +272,7 @@
 
   <!-- Theme Check for FOUC -->
   <script>
-    if (localStorage.getItem('lightMode') !== 'disabled') {
+    if (localStorage.getItem('lightMode') === 'enabled') {
       document.documentElement.classList.add('light-mode');
     }
   </script>
@@ -315,6 +315,8 @@
 
     <!-- ===== HERO SECTION ===== -->
     <section class="hero" id="hero">
+      <!-- 3D Portal Canvas (behind content) -->
+      <div id="hero-3d-container" class="hero-3d-container"></div>
       <div class="hero-bg">
         <img src="assets/hero-bg.png" alt="Hero background">
       </div>
@@ -464,6 +466,39 @@
       </div>
     </section>
 
+    <!-- ===== MOBILE APP EXPERIENCE SECTION ===== -->
+    <section class="mobile-app-experience" id="mobile-app">
+      <div class="container">
+        <div class="mobile-exp-content">
+          <span class="section-label">Mobile App Experience</span>
+          <h2 class="section-title">Stunning Apps,<br>Pixel-Perfect Delivery</h2>
+          <p class="section-subtitle">We craft beautiful, high-performance mobile applications using React Native and
+            Flutter — delivering native-quality experiences across iOS and Android.</p>
+          <ul class="mobile-exp-features">
+            <li class="mobile-exp-feature">
+              <div class="mobile-exp-icon"><i class="fas fa-rocket"></i></div>
+              <span>60fps Smooth Performance</span>
+            </li>
+            <li class="mobile-exp-feature">
+              <div class="mobile-exp-icon"><i class="fas fa-mobile-screen"></i></div>
+              <span>iOS &amp; Android from One Codebase</span>
+            </li>
+            <li class="mobile-exp-feature">
+              <div class="mobile-exp-icon"><i class="fas fa-shield-halved"></i></div>
+              <span>Enterprise-Grade Security</span>
+            </li>
+            <li class="mobile-exp-feature">
+              <div class="mobile-exp-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+              <span>Delightful Micro-Animations</span>
+            </li>
+          </ul>
+          <a href=""
+            onclick="Calendly.initPopupWidget({url:'https://calendly.com/launchhealthapp-6biv/30min/30min/'});return false;"
+            class="btn-primary mobile-exp-cta">Build Your App &rarr;</a>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== SERVICES SECTION ===== -->
     <section class="services" id="services">
       <div class="bg-glow"></div>
@@ -547,6 +582,78 @@
               <span class="service-tag">Prototyping</span>
               <span class="service-tag">User Research</span>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MOBILE APP 3D SHOWCASE ===== -->
+    <section class="mobile-3d-showcase" id="mobile-showcase">
+      <div class="bg-glow"></div>
+      <div class="container">
+        <div class="showcase-grid">
+          <div class="showcase-content reveal">
+            <span class="section-label">Mobile App Experience</span>
+            <h2 class="section-title">Stunning Apps,<br><span class="gradient-text">Pixel-Perfect Delivery</span></h2>
+            <p class="section-subtitle">We craft beautiful, high-performance mobile applications using React Native and Flutter — delivering native-quality experiences across iOS and Android.</p>
+            <div class="showcase-features">
+              <div class="showcase-feature">
+                <i class="fas fa-rocket"></i>
+                <span>60fps Smooth Performance</span>
+              </div>
+              <div class="showcase-feature">
+                <i class="fas fa-mobile-screen"></i>
+                <span>iOS & Android from One Codebase</span>
+              </div>
+              <div class="showcase-feature">
+                <i class="fas fa-shield-halved"></i>
+                <span>Enterprise-Grade Security</span>
+              </div>
+              <div class="showcase-feature">
+                <i class="fas fa-wand-magic-sparkles"></i>
+                <span>Delightful Micro-Animations</span>
+              </div>
+            </div>
+            <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;" class="btn-primary">Build Your App →</a>
+          </div>
+          <div class="showcase-3d-wrapper reveal">
+            <div id="mobile-3d-container" class="three-canvas-container"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== AI & AUTOMATION 3D SHOWCASE ===== -->
+    <section class="ai-3d-showcase" id="ai-showcase">
+      <div class="bg-glow"></div>
+      <div class="container">
+        <div class="showcase-grid showcase-grid-reverse">
+          <div class="showcase-3d-wrapper reveal">
+            <div id="ai-3d-container" class="three-canvas-container"></div>
+          </div>
+          <div class="showcase-content reveal">
+            <span class="section-label">AI & Automation</span>
+            <h2 class="section-title">Intelligent Systems,<br><span class="gradient-text">Powered by AI</span></h2>
+            <p class="section-subtitle">We integrate cutting-edge AI and machine learning into your products — from smart automation pipelines to predictive analytics and conversational agents.</p>
+            <div class="showcase-features">
+              <div class="showcase-feature">
+                <i class="fas fa-brain"></i>
+                <span>Machine Learning Pipelines</span>
+              </div>
+              <div class="showcase-feature">
+                <i class="fas fa-robot"></i>
+                <span>Conversational AI Agents</span>
+              </div>
+              <div class="showcase-feature">
+                <i class="fas fa-chart-line"></i>
+                <span>Predictive Analytics</span>
+              </div>
+              <div class="showcase-feature">
+                <i class="fas fa-bolt"></i>
+                <span>Smart Workflow Automation</span>
+              </div>
+            </div>
+            <a href="ai/index.html" class="btn-primary">Explore AI Solutions →</a>
           </div>
         </div>
       </div>
@@ -1407,7 +1514,7 @@
           <ul>
             <li><a href="mailto:contact@todayintech.in">contact@todayintech.in</a></li>
             <li><a href="tel:+917679349780">+91 7679349780</a></li>
-            <li><a href="index.html">Bengaluru, India</a></li>
+            <li><a href="index.html">Kolkata, India</a></li>
             <li><a href=""
                 onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;">Book
                 a Call →</a></li>
@@ -1504,9 +1611,16 @@
 
   <!-- Social proof toast removed for cleaner UX -->
 
+  <!-- ===== THREE.JS CDN ===== -->
+  <script async src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/DRACOLoader.js"></script>
+
   <!-- ===== JAVASCRIPT ===== -->
   <script src="script.js"></script>
   <script src="liquid-glass.js"></script>
+  <script src="threejs-scenes.js"></script>
 </body>
 
 </html>

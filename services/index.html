@@ -260,7 +260,7 @@
 
   <!-- Theme Check for FOUC -->
   <script>
-    if (localStorage.getItem('lightMode') !== 'disabled') {
+    if (localStorage.getItem('lightMode') === 'enabled') {
       document.documentElement.classList.add('light-mode');
     }
   </script>
@@ -534,7 +534,7 @@
           <ul>
             <li><a href="mailto:contact@todayintech.in">contact@todayintech.in</a></li>
             <li><a href="tel:+917679349780">+91 7679349780</a></li>
-            <li><a href="../index.html">Bengaluru, India</a></li>
+            <li><a href="../index.html">Kolkata, India</a></li>
             <li><a href=""
                 onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;">Book
                 a Call →</a></li>
