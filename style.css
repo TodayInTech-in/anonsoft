@@ -871,8 +871,9 @@ html.light-mode .trust-certifications {
 }
 
 .trust-cert-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
     margin-bottom: 40px;
 }
@@ -885,10 +886,14 @@ html.light-mode .trust-certifications {
     text-align: center;
     transition: var(--transition-normal);
     text-decoration: none;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: relative;
     overflow: hidden;
     min-height: 180px;
+    width: 220px;
 }
 
 .trust-cert-card::before {
@@ -2024,13 +2029,13 @@ html.light-mode .trust-certifications {
     }
 
     .trust-cert-grid {
-        grid-template-columns: repeat(2, 1fr);
         gap: 16px;
     }
 
     .trust-cert-card {
         padding: 22px 18px;
         min-height: 170px;
+        width: 200px;
     }
 
     .trust-cert-icon {
@@ -2090,7 +2095,6 @@ html.light-mode .trust-certifications {
     }
 
     .trust-cert-grid {
-        grid-template-columns: repeat(2, 1fr);
         gap: 14px;
         margin-bottom: 28px;
     }
@@ -2098,6 +2102,7 @@ html.light-mode .trust-certifications {
     .trust-cert-card {
         padding: 20px 16px;
         min-height: 160px;
+        width: 180px;
     }
 
     .trust-cert-icon {
@@ -3439,13 +3444,14 @@ html.light-mode .trust-certifications {
     }
 
     .trust-cert-grid {
-        grid-template-columns: 1fr;
         gap: 12px;
     }
 
     .trust-cert-card {
         min-height: auto;
         padding: 18px 16px;
+        width: 100%;
+        max-width: 320px;
     }
 
     .trust-cert-icon {
