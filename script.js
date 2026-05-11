@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initFloatingCta();
     // initSocialProofToast(); // Disabled — fake social proof hurts trust
     initRoiCalculator();
+    initGoogleReviewsCarousel();
 });
 
 // ===== NAVBAR SCROLL EFFECT =====
@@ -241,7 +242,7 @@ function handleFormSubmit(e) {
 
 // ===== TYPED EFFECT FOR HERO =====
 function initTypedEffect() {
-    const words = ['Custom Software', 'HealthTech', 'EdTech Platforms', 'SaaS Solutions'];
+    const words = ['SaaS Platforms', 'AI Tools', 'Mobile Apps', 'Web Dashboards'];
     const element = document.querySelector('.typewriter-text');
     if (!element) return;
 
@@ -285,7 +286,7 @@ window.addEventListener('load', () => {
 });
 
 // ===== SERVICE CARD TILT EFFECT =====
-document.querySelectorAll('.service-card, .portfolio-card, .testimonial-card').forEach(card => {
+document.querySelectorAll('.service-card, .portfolio-card').forEach(card => {
     card.addEventListener('mousemove', (e) => {
         const rect = card.getBoundingClientRect();
         const x = e.clientX - rect.left;
@@ -436,3 +437,47 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// ===== GOOGLE REVIEWS CAROUSEL =====
+function initGoogleReviewsCarousel() {
+    const carousel = document.getElementById('grCarousel');
+    if (!carousel) return;
+
+    const leftBtn = document.querySelector('.gr-arrow-left');
+    const rightBtn = document.querySelector('.gr-arrow-right');
+    const scrollAmount = 370;
+
+    if (leftBtn) leftBtn.addEventListener('click', () => carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' }));
+    if (rightBtn) rightBtn.addEventListener('click', () => carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' }));
+
+    // Auto-scroll
+    let autoScroll = setInterval(() => {
+        if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 10) {
+            carousel.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+            carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        }
+    }, 4000);
+
+    carousel.addEventListener('mouseenter', () => clearInterval(autoScroll));
+    carousel.addEventListener('mouseleave', () => {
+        autoScroll = setInterval(() => {
+            if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 10) {
+                carousel.scrollTo({ left: 0, behavior: 'smooth' });
+            } else {
+                carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        }, 4000);
+    });
+
+    // Add tilt effect to review cards
+    document.querySelectorAll('.gr-card').forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = (e.clientX - rect.left) / rect.width - 0.5;
+            const y = (e.clientY - rect.top) / rect.height - 0.5;
+            card.style.transform = `perspective(800px) rotateX(${y * -4}deg) rotateY(${x * 4}deg) translateY(-4px)`;
+        });
+        card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+    });
+}

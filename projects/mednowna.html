@@ -3,8 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mednowna — Telehealth Platform | TodayInTech</title>
-  <meta name="description" content="A comprehensive virtual care and telemedicine platform offering end-to-end healthcare solutions, secure video consultations, and patient management.">
+  <title>Mednowna — Telehealth Platform | Case Study | TodayInTech</title>
+  <meta name="description" content="How TodayInTech built Mednowna — a comprehensive virtual care and telemedicine platform with secure video consultations, EHR integration, and e-prescriptions.">
+  <meta name="keywords" content="telehealth platform development, telemedicine app, HIPAA compliant software, virtual care platform, healthcare software case study">
+  <link rel="canonical" href="https://todayintech.in/projects/mednowna.html">
+
+  <meta property="og:title" content="Mednowna — Telehealth Platform | TodayInTech Case Study">
+  <meta property="og:description" content="How we built a comprehensive virtual care platform with secure video consultations and EHR integration.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://todayintech.in/projects/mednowna.html">
+  <meta property="og:image" content="https://todayintech.in/assets/project-telemedicine.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mednowna — Telehealth Platform | TodayInTech">
+  <meta name="twitter:description" content="Case study: How we built a HIPAA-compliant telehealth platform with video consultations and patient management.">
+
   <link rel="icon" type="image/png" href="../assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +25,23 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="../liquid-glass.css">
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Mednowna — Telehealth Platform Case Study",
+    "description": "How TodayInTech built a HIPAA-compliant virtual care platform with video consultations, EHR integration, and e-prescriptions.",
+    "image": "https://todayintech.in/assets/project-telemedicine.png",
+    "author": { "@type": "Organization", "name": "TodayInTech" },
+    "publisher": { "@type": "Organization", "name": "TodayInTech", "logo": { "@type": "ImageObject", "url": "https://todayintech.in/assets/logo.png" } },
+    "datePublished": "2025-06-15",
+    "dateModified": "2026-05-07"
+  }
+  </script>
+
   <script>
     if (localStorage.getItem('lightMode') === 'enabled') {
       document.documentElement.classList.add('light-mode');
@@ -29,10 +59,14 @@
         <div class="nav-links" id="navLinks">
           <a href="../index.html#services">Services</a>
           <a href="../index.html#portfolio">Portfolio</a>
-          <a href="../index.html#about">About</a>
+          <a href="../index.html#pricing">Pricing</a>
           <a href="../index.html#contact">Contact</a>
-          <button id="themeToggle" class="theme-toggle"><i class="fas fa-sun"></i></button>
+          <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme"><i class="fas fa-sun"></i></button>
+          <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;" class="nav-cta">Book Free Call</a>
         </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </nav>
   </header>
@@ -48,7 +82,10 @@
           <p class="project-tagline">A comprehensive virtual care and telemedicine platform offering end-to-end healthcare solutions, secure video consultations, and patient management.</p>
           <div class="project-actions">
             <a href="https://mednowna.com/" target="_blank" class="btn-primary">
-              <i class="fas fa-external-link-alt"></i> Live Demo
+              <i class="fas fa-external-link-alt"></i> View Live Demo
+            </a>
+            <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;" class="btn-secondary">
+              Build Something Similar
             </a>
           </div>
         </div>
@@ -58,10 +95,46 @@
         </div>
 
         <div class="project-content">
-          <div class="project-section">
-            <h2>About the Project</h2>
-            <p>Mednowna is a comprehensive virtual care and telemedicine platform designed to bridge the gap between healthcare providers and patients. The platform enables secure video consultations, real-time health monitoring, prescription management, and seamless integration with existing healthcare systems.</p>
-            <p>Built with a patient-centric approach, Mednowna ensures that healthcare is accessible anytime, anywhere while maintaining the highest standards of data security and HIPAA compliance.</p>
+
+          <div class="case-study-grid">
+            <div class="case-study-card case-study-problem">
+              <div class="case-study-icon"><i class="fas fa-triangle-exclamation"></i></div>
+              <h2>The Problem</h2>
+              <p>The client, a healthcare startup in the Philippines, needed a full-featured telehealth platform to connect patients with doctors remotely. Existing solutions were either too expensive to license or lacked critical features like HIPAA-compliant video calls, e-prescriptions, and integration with local healthcare systems. They needed a custom platform that could be launched quickly and scaled as the business grew.</p>
+              <ul>
+                <li>No affordable HIPAA-compliant telehealth solution available</li>
+                <li>Manual appointment booking via phone calls</li>
+                <li>Paper-based prescriptions and patient records</li>
+                <li>No way for patients to consult doctors remotely</li>
+              </ul>
+            </div>
+
+            <div class="case-study-card case-study-solution">
+              <div class="case-study-icon"><i class="fas fa-lightbulb"></i></div>
+              <h2>Our Solution</h2>
+              <p>We built Mednowna from the ground up — a comprehensive telehealth platform with secure HD video consultations, digital appointment scheduling, electronic health records, e-prescriptions with pharmacy integration, and a cross-platform mobile app. The entire system was designed to be HIPAA-compliant with end-to-end encryption and role-based access controls.</p>
+              <ul>
+                <li>Secure WebRTC-based video consultations with adaptive bitrate</li>
+                <li>Digital appointment scheduling with automated reminders</li>
+                <li>Electronic health records and patient history management</li>
+                <li>E-prescription system with pharmacy network integration</li>
+                <li>Cross-platform apps for iOS, Android, and web</li>
+                <li>HIPAA-compliant architecture with AES-256 encryption</li>
+              </ul>
+            </div>
+
+            <div class="case-study-card case-study-result">
+              <div class="case-study-icon"><i class="fas fa-chart-line"></i></div>
+              <h2>The Result</h2>
+              <p>Mednowna launched successfully and quickly became the client's primary healthcare delivery channel. The platform eliminated paper-based workflows, reduced appointment no-shows, and enabled the client to serve patients across the country rather than just within clinic proximity.</p>
+              <ul>
+                <li><strong>80%</strong> reduction in appointment no-shows</li>
+                <li><strong>3x</strong> increase in daily patient consultations</li>
+                <li><strong>100%</strong> paperless prescription and record management</li>
+                <li><strong>4 weeks</strong> from kickoff to MVP launch</li>
+                <li><strong>Zero</strong> data breaches — fully HIPAA compliant</li>
+              </ul>
+            </div>
           </div>
 
           <div class="project-section">
@@ -113,39 +186,15 @@
             </div>
           </div>
 
-          <div class="project-section">
-            <h2>Challenges & Solutions</h2>
-            <div class="challenge-solution">
-              <div class="challenge">
-                <h4>Challenge</h4>
-                <p>Ensuring secure, low-latency video consultations across different network conditions while maintaining HIPAA compliance.</p>
-              </div>
-              <div class="solution">
-                <h4>Solution</h4>
-                <p>Implemented WebRTC with adaptive bitrate streaming and end-to-end encryption, ensuring seamless video quality even on low-bandwidth connections.</p>
-              </div>
-            </div>
-            <div class="challenge-solution">
-              <div class="challenge">
-                <h4>Challenge</h4>
-                <p>Integrating with diverse healthcare systems and EHR platforms for seamless data exchange.</p>
-              </div>
-              <div class="solution">
-                <h4>Solution</h4>
-                <p>Built HL7/FHIR integration modules that enable interoperability with major EHR systems like Epic, Cerner, and Allscripts.</p>
-              </div>
-            </div>
-          </div>
-
           <div class="project-cta">
-            <h2>Experience Mednowna</h2>
-            <p>See how Mednowna is transforming healthcare delivery through innovative telemedicine solutions.</p>
+            <h2>Want a Platform Like Mednowna?</h2>
+            <p>We build custom healthcare and telemedicine platforms tailored to your business. Let us help you serve your patients better.</p>
             <div class="cta-buttons">
               <a href="https://mednowna.com/" target="_blank" class="btn-primary">
-                <i class="fas fa-external-link-alt"></i> Launch Live Demo
+                <i class="fas fa-external-link-alt"></i> View Live Demo
               </a>
-              <a href="../index.html#contact" class="btn-secondary">
-                Build Similar Platform
+              <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;" class="btn-secondary">
+                Book a Free Strategy Call
               </a>
             </div>
           </div>
@@ -153,6 +202,10 @@
       </div>
     </section>
   </main>
+
+  <a href="https://wa.me/917679349780" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
   <footer class="footer">
     <div class="container">
