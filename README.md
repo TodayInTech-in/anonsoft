@@ -28,6 +28,8 @@
 
 ---
 
+
+
 ## 🏥 About TodayInTech
 
 **TodayInTech** is a professional technology company specializing in **health white-label software solutions**. We work with healthcare brands, clinics, pharmacies, and wellness companies to deliver production-ready software products under their own brand.
