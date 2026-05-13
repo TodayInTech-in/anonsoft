@@ -64,6 +64,7 @@
   <!-- ===== BLOG ===== -->
   <url>
     <loc>https://todayintech.in/blog/</loc>
+    <lastmod>2026-05-13T14:51:29.688446</lastmod>
     <lastmod>2026-05-13T14:50:45.266397</lastmod>
     <lastmod>2026-05-13T14:50:11.758938</lastmod>
     <lastmod>2026-05-05T05:29:41.829988</lastmod>
@@ -220,6 +221,19 @@
   <url>
     <loc>https://todayintech.in/blog/medical-device-software-development-regulations.html</loc>
     <lastmod>2026-05-13T14:50:45.266397</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://todayintech.in/blog/ai-medical-scribe-software-development-in-2026.html</loc>
+    <lastmod>2026-05-13T14:51:29.688446</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://todayintech.in/blog/digital-therapeutics-development-process.html</loc>
+    <lastmod>2026-05-13T14:51:29.688446</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
