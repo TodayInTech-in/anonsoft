@@ -64,6 +64,7 @@
   <!-- ===== BLOG ===== -->
   <url>
     <loc>https://todayintech.in/blog/</loc>
+    <lastmod>2026-05-15T09:01:22.565420</lastmod>
     <lastmod>2026-05-14T09:01:04.877351</lastmod>
     <lastmod>2026-05-13T14:51:29.688446</lastmod>
     <lastmod>2026-05-13T14:50:45.266397</lastmod>
@@ -248,6 +249,19 @@
   <url>
     <loc>https://todayintech.in/blog/blockchain-in-healthcare-applications.html</loc>
     <lastmod>2026-05-14T09:01:04.877351</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://todayintech.in/blog/edge-computing-for-healthcare-systems.html</loc>
+    <lastmod>2026-05-15T09:01:22.565420</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://todayintech.in/blog/automated-medical-coding-systems.html</loc>
+    <lastmod>2026-05-15T09:01:22.565420</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
