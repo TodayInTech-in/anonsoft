@@ -64,6 +64,7 @@
   <!-- ===== BLOG ===== -->
   <url>
     <loc>https://todayintech.in/blog/</loc>
+    <lastmod>2026-05-16T09:00:57.437200</lastmod>
     <lastmod>2026-05-15T09:01:22.565420</lastmod>
     <lastmod>2026-05-14T09:01:04.877351</lastmod>
     <lastmod>2026-05-13T14:51:29.688446</lastmod>
@@ -262,6 +263,19 @@
   <url>
     <loc>https://todayintech.in/blog/automated-medical-coding-systems.html</loc>
     <lastmod>2026-05-15T09:01:22.565420</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://todayintech.in/blog/hospital-information-system-architecture.html</loc>
+    <lastmod>2026-05-16T09:00:57.437200</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://todayintech.in/blog/cybersecurity-trends-for-healthcare-2026.html</loc>
+    <lastmod>2026-05-16T09:00:57.437200</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
