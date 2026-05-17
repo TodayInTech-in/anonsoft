@@ -64,6 +64,7 @@
   <!-- ===== BLOG ===== -->
   <url>
     <loc>https://todayintech.in/blog/</loc>
+    <lastmod>2026-05-17T09:01:39.574216</lastmod>
     <lastmod>2026-05-16T09:00:57.437200</lastmod>
     <lastmod>2026-05-15T09:01:22.565420</lastmod>
     <lastmod>2026-05-14T09:01:04.877351</lastmod>
@@ -276,6 +277,19 @@
   <url>
     <loc>https://todayintech.in/blog/cybersecurity-trends-for-healthcare-2026.html</loc>
     <lastmod>2026-05-16T09:00:57.437200</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://todayintech.in/blog/blockchain-in-healthcare-applications.html</loc>
+    <lastmod>2026-05-17T09:01:39.574216</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://todayintech.in/blog/computer-vision-for-medical-imaging.html</loc>
+    <lastmod>2026-05-17T09:01:39.574216</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
