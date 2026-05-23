@@ -64,6 +64,7 @@
   <!-- ===== BLOG ===== -->
   <url>
     <loc>https://todayintech.in/blog/</loc>
+    <lastmod>2026-05-23T09:00:30.334087</lastmod>
     <lastmod>2026-05-22T09:02:55.090520</lastmod>
     <lastmod>2026-05-21T09:01:11.664749</lastmod>
     <lastmod>2026-05-20T09:01:14.903245</lastmod>
@@ -360,6 +361,19 @@
   <url>
     <loc>https://todayintech.in/blog/agentic-ai-in-healthcare-software-development.html</loc>
     <lastmod>2026-05-22T09:02:55.090520</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://todayintech.in/blog/white-label-healthcare-software-benefits-for-clinics.html</loc>
+    <lastmod>2026-05-23T09:00:30.334087</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://todayintech.in/blog/scalability-planning-for-health-platforms.html</loc>
+    <lastmod>2026-05-23T09:00:30.334087</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
