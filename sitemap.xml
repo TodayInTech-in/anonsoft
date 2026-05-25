@@ -64,6 +64,7 @@
   <!-- ===== BLOG ===== -->
   <url>
     <loc>https://todayintech.in/blog/</loc>
+    <lastmod>2026-05-25T09:00:52.139473</lastmod>
     <lastmod>2026-05-24T09:01:14.699373</lastmod>
     <lastmod>2026-05-23T09:00:30.334087</lastmod>
     <lastmod>2026-05-22T09:02:55.090520</lastmod>
@@ -388,6 +389,19 @@
   <url>
     <loc>https://todayintech.in/blog/5g-applications-in-healthcare.html</loc>
     <lastmod>2026-05-24T09:01:14.699373</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://todayintech.in/blog/natural-language-processing-in-medical-records.html</loc>
+    <lastmod>2026-05-25T09:00:52.139473</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://todayintech.in/blog/devops-for-healthcare-software-delivery.html</loc>
+    <lastmod>2026-05-25T09:00:52.139473</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
