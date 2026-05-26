@@ -64,6 +64,7 @@
   <!-- ===== BLOG ===== -->
   <url>
     <loc>https://todayintech.in/blog/</loc>
+    <lastmod>2026-05-26T09:02:16.100858</lastmod>
     <lastmod>2026-05-25T09:00:52.139473</lastmod>
     <lastmod>2026-05-24T09:01:14.699373</lastmod>
     <lastmod>2026-05-23T09:00:30.334087</lastmod>
@@ -402,6 +403,19 @@
   <url>
     <loc>https://todayintech.in/blog/devops-for-healthcare-software-delivery.html</loc>
     <lastmod>2026-05-25T09:00:52.139473</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://todayintech.in/blog/blockchain-in-healthcare-applications.html</loc>
+    <lastmod>2026-05-26T09:02:16.100858</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://todayintech.in/blog/scalability-planning-for-health-platforms.html</loc>
+    <lastmod>2026-05-26T09:02:16.100858</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
