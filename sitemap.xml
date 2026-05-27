@@ -64,6 +64,7 @@
   <!-- ===== BLOG ===== -->
   <url>
     <loc>https://todayintech.in/blog/</loc>
+    <lastmod>2026-05-27T09:01:07.933482</lastmod>
     <lastmod>2026-05-26T09:02:16.100858</lastmod>
     <lastmod>2026-05-25T09:00:52.139473</lastmod>
     <lastmod>2026-05-24T09:01:14.699373</lastmod>
@@ -416,6 +417,19 @@
   <url>
     <loc>https://todayintech.in/blog/scalability-planning-for-health-platforms.html</loc>
     <lastmod>2026-05-26T09:02:16.100858</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://todayintech.in/blog/hospital-information-system-architecture.html</loc>
+    <lastmod>2026-05-27T09:01:07.933482</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://todayintech.in/blog/internet-of-medical-things-(iomt)-development.html</loc>
+    <lastmod>2026-05-27T09:01:07.933482</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
