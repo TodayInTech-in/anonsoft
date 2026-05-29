@@ -64,6 +64,7 @@
   <!-- ===== BLOG ===== -->
   <url>
     <loc>https://todayintech.in/blog/</loc>
+    <lastmod>2026-05-29T09:00:43.146325</lastmod>
     <lastmod>2026-05-28T09:02:28.437459</lastmod>
     <lastmod>2026-05-27T09:01:07.933482</lastmod>
     <lastmod>2026-05-26T09:02:16.100858</lastmod>
@@ -444,6 +445,19 @@
   <url>
     <loc>https://todayintech.in/blog/edge-computing-for-healthcare-systems.html</loc>
     <lastmod>2026-05-28T09:02:28.437459</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://todayintech.in/blog/scalability-planning-for-health-platforms.html</loc>
+    <lastmod>2026-05-29T09:00:43.146325</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://todayintech.in/blog/edge-computing-for-healthcare-systems.html</loc>
+    <lastmod>2026-05-29T09:00:43.146325</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
