@@ -64,6 +64,7 @@
   <!-- ===== BLOG ===== -->
   <url>
     <loc>https://todayintech.in/blog/</loc>
+    <lastmod>2026-05-31T09:01:24.752720</lastmod>
     <lastmod>2026-05-30T09:01:30.771870</lastmod>
     <lastmod>2026-05-29T09:00:43.146325</lastmod>
     <lastmod>2026-05-28T09:02:28.437459</lastmod>
@@ -472,6 +473,19 @@
   <url>
     <loc>https://todayintech.in/blog/hospital-information-system-architecture.html</loc>
     <lastmod>2026-05-30T09:01:30.771870</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://todayintech.in/blog/devops-for-healthcare-software-delivery.html</loc>
+    <lastmod>2026-05-31T09:01:24.752720</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://todayintech.in/blog/clinical-workflow-automation-with-ai.html</loc>
+    <lastmod>2026-05-31T09:01:24.752720</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
