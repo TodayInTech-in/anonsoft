@@ -64,6 +64,7 @@
   <!-- ===== BLOG ===== -->
   <url>
     <loc>https://todayintech.in/blog/</loc>
+    <lastmod>2026-06-02T09:01:49.196446</lastmod>
     <lastmod>2026-06-01T09:01:35.097877</lastmod>
     <lastmod>2026-05-31T09:01:24.752720</lastmod>
     <lastmod>2026-05-30T09:01:30.771870</lastmod>
@@ -500,6 +501,19 @@
   <url>
     <loc>https://todayintech.in/blog/clinical-decision-support-systems-development.html</loc>
     <lastmod>2026-06-01T09:01:35.097877</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://todayintech.in/blog/clinical-trial-matching-with-ai.html</loc>
+    <lastmod>2026-06-02T09:01:49.196446</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://todayintech.in/blog/real-time-data-processing-in-healthcare.html</loc>
+    <lastmod>2026-06-02T09:01:49.196446</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
