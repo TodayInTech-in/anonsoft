@@ -6,11 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollReveal();
     initCounters();
     initSmoothScroll();
-    initParallaxGlow();
     initFloatingCta();
-    // initSocialProofToast(); // Disabled — fake social proof hurts trust
     initRoiCalculator();
+    initPricingToggle();
     initGoogleReviewsCarousel();
+    initPencilBanner();
+    initHeroTabs();
+    initStickyAnchorBar();
 });
 
 // ===== NAVBAR SCROLL EFFECT =====
@@ -369,6 +371,8 @@ function initSocialProofToast() {
     });
 }
 
+let isYearlyBilling = false;
+
 // ===== ROI CALCULATOR =====
 function initRoiCalculator() {
     const teamSlider = document.getElementById('roi-team-size');
@@ -376,7 +380,7 @@ function initRoiCalculator() {
     const rateSlider = document.getElementById('roi-rate');
     if (!teamSlider) return;
 
-    function updateROI() {
+    window.updateROI = function() {
         const team = parseInt(teamSlider.value);
         const months = parseInt(monthsSlider.value);
         const rate = parseInt(rateSlider.value);
@@ -387,7 +391,15 @@ function initRoiCalculator() {
 
         // Calculation: team * rate * 160hrs/month * months
         const customCost = team * rate * 160 * months;
-        const ourCost = Math.round(customCost * 0.08); // TodayInTech ~8% of scratch cost
+        
+        // TodayInTech starting from $99/mo (Monthly) or $99/year (Yearly)
+        let ourCost = 0;
+        if (isYearlyBilling) {
+            ourCost = 99; // $99/year flat
+        } else {
+            ourCost = 99 * months; // $99/mo subscription
+        }
+        
         const savings = customCost - ourCost;
 
         const formatMoney = (n) => '$' + n.toLocaleString('en-US');
@@ -395,12 +407,55 @@ function initRoiCalculator() {
         document.getElementById('roi-scratch-cost').textContent = formatMoney(customCost);
         document.getElementById('roi-scratch-time').textContent = months + ' months to launch';
         document.getElementById('roi-savings').textContent = formatMoney(savings);
+
+        // Dynamic TodayInTech Cost card update
+        const ourCostEl = document.getElementById('roi-our-cost');
+        if (ourCostEl) {
+            if (isYearlyBilling) {
+                ourCostEl.innerHTML = `From <strong>$99</strong><span style="font-size: 0.82rem; color: var(--text-muted); font-weight: 500;">/year</span>`;
+            } else {
+                ourCostEl.innerHTML = `From <strong>$${ourCost.toLocaleString('en-US')}</strong><span style="font-size: 0.82rem; color: var(--text-muted); font-weight: 500;"> ($99/mo)</span>`;
+            }
+        }
     }
 
-    teamSlider.addEventListener('input', updateROI);
-    monthsSlider.addEventListener('input', updateROI);
-    rateSlider.addEventListener('input', updateROI);
-    updateROI();
+    teamSlider.addEventListener('input', window.updateROI);
+    monthsSlider.addEventListener('input', window.updateROI);
+    rateSlider.addEventListener('input', window.updateROI);
+    window.updateROI();
+}
+
+// ===== PRICING BILLING SWITCHER =====
+function initPricingToggle() {
+    const toggleBtn = document.getElementById('pricingToggleBtn');
+    const starterPrice = document.getElementById('starter-price');
+    const growthPrice = document.getElementById('growth-price');
+    const labelMonthly = document.getElementById('label-monthly');
+    const labelYearly = document.getElementById('label-yearly');
+
+    if (!toggleBtn || !starterPrice || !growthPrice) return;
+
+    toggleBtn.addEventListener('click', () => {
+        isYearlyBilling = toggleBtn.classList.toggle('active');
+        toggleBtn.setAttribute('aria-checked', isYearlyBilling ? 'true' : 'false');
+
+        if (isYearlyBilling) {
+            labelMonthly.classList.remove('active');
+            labelYearly.classList.add('active');
+            starterPrice.innerHTML = 'From <strong>$99</strong><span class="price-period">/year</span>';
+            growthPrice.innerHTML = 'From <strong>$149</strong><span class="price-period">/mo</span> <span style="font-size: 0.8rem; color: var(--text-muted); display: block; margin-top: 4px; font-weight: normal; text-transform: none; letter-spacing: 0;">billed annually ($1,788/yr)</span>';
+        } else {
+            labelMonthly.classList.add('active');
+            labelYearly.classList.remove('active');
+            starterPrice.innerHTML = 'From <strong>$99</strong><span class="price-period">/mo</span>';
+            growthPrice.innerHTML = 'From <strong>$199</strong><span class="price-period">/mo</span>';
+        }
+
+        // Keep ROI Calculator in sync
+        if (typeof window.updateROI === 'function') {
+            window.updateROI();
+        }
+    });
 }
 
 // Theme Toggle Logic
@@ -479,5 +534,114 @@ function initGoogleReviewsCarousel() {
             card.style.transform = `perspective(800px) rotateX(${y * -4}deg) rotateY(${x * 4}deg) translateY(-4px)`;
         });
         card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+    });
+}
+
+// ===== PENCIL NOTICE BANNER =====
+function initPencilBanner() {
+    const banner = document.getElementById('pencilBanner');
+    const closeBtn = document.getElementById('closeBanner');
+    if (!banner || !closeBtn) return;
+
+    // Add class to body to offset navbar
+    document.body.classList.add('has-pencil-banner');
+
+    function updateBannerHeight() {
+        if (banner.style.display !== 'none') {
+            const height = banner.offsetHeight;
+            document.documentElement.style.setProperty('--pencil-banner-height', height + 'px');
+        } else {
+            document.documentElement.style.setProperty('--pencil-banner-height', '0px');
+        }
+    }
+
+    // Update height on load and resize
+    updateBannerHeight();
+    window.addEventListener('resize', updateBannerHeight);
+    window.addEventListener('load', updateBannerHeight);
+
+    closeBtn.addEventListener('click', () => {
+        banner.style.display = 'none';
+        document.body.classList.remove('has-pencil-banner');
+        document.documentElement.style.setProperty('--pencil-banner-height', '0px');
+    });
+}
+
+// ===== HERO AUTO-CYCLING TABS =====
+function initHeroTabs() {
+    const tabLinks = document.querySelectorAll('.hero-tab-link');
+    const tabPanes = document.querySelectorAll('.hero-tab-pane');
+    if (tabLinks.length === 0) return;
+
+    let tabDuration = 5000;
+    let tabTimeout;
+    let activeIndex = 0;
+
+    function cycle() {
+        // Reset all timer widths
+        document.querySelectorAll('.hero-tab-timer').forEach(timer => {
+            timer.style.width = '0%';
+            timer.style.transition = 'none';
+        });
+
+        // Trigger layout reflow
+        const activeLink = tabLinks[activeIndex];
+        const timerEl = activeLink.querySelector('.hero-tab-timer');
+        if (timerEl) {
+            void timerEl.offsetWidth; // force reflow
+            timerEl.style.transition = `width ${tabDuration}ms linear`;
+            timerEl.style.width = '100%';
+        }
+
+        // Set active classes
+        tabLinks.forEach(link => link.classList.remove('active'));
+        tabPanes.forEach(pane => pane.classList.remove('active'));
+
+        tabLinks[activeIndex].classList.add('active');
+        tabPanes[activeIndex].classList.add('active');
+
+        tabTimeout = setTimeout(() => {
+            activeIndex = (activeIndex + 1) % tabLinks.length;
+            cycle();
+        }, tabDuration);
+    }
+
+    tabLinks.forEach((link, idx) => {
+        link.addEventListener('click', () => {
+            clearTimeout(tabTimeout);
+            activeIndex = idx;
+            cycle();
+        });
+    });
+
+    cycle();
+}
+
+// ===== STICKY SUBNAV BAR ACTIVE HIGHLIGHT =====
+function initStickyAnchorBar() {
+    const anchorBar = document.getElementById('stickyAnchorBar');
+    if (!anchorBar) return;
+
+    const links = anchorBar.querySelectorAll('.anchors_link');
+    const sections = Array.from(links).map(link => document.querySelector(link.getAttribute('href'))).filter(Boolean);
+    const navbar = document.getElementById('navbar');
+    
+    window.addEventListener('scroll', () => {
+        let current = '';
+        const navHeight = (navbar ? navbar.offsetHeight : 80) + anchorBar.offsetHeight;
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - navHeight - 30;
+            if (window.pageYOffset >= sectionTop) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        links.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
     });
 }
