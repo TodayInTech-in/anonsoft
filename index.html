@@ -283,6 +283,15 @@
 
 <body>
 
+  <!-- Pencil notice banner -->
+  <div class="pencil-banner" id="pencilBanner">
+    <div class="pencil-banner-content">
+      <span>💡 <strong>Free Strategy Session</strong>: Get a custom fixed-scope SaaS MVP roadmap in 24 hours.</span>
+      <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;" class="pencil-banner-link">Book Now &rarr;</a>
+    </div>
+    <button class="pencil-banner-close" id="closeBanner" aria-label="Dismiss banner">✕</button>
+  </div>
+
   <!-- //CHATBOT -->
   <script
     src="https://nexbotix-api.todayintech.in/api/website-chatbot/script?apikey=bsk_c394f91293303d0f48a41dfa9d832304"></script>
@@ -322,548 +331,339 @@
 
     <!-- ===== HERO SECTION ===== -->
     <section class="hero" id="hero">
-      <!-- 3D Portal Canvas (behind content) -->
-      <div id="hero-3d-container" class="hero-3d-container"></div>
-      <div class="hero-bg">
-        <img src="assets/hero-bg.png" alt="Hero background">
-      </div>
-      <div class="bg-glow glow-1"></div>
-      <div class="bg-glow glow-2"></div>
-      <div class="bg-grid"></div>
-
-      <!-- Animated floating tech badges -->
-      <div class="hero-floating-icons">
-        <div class="hero-float-icon float-1"><i class="fab fa-react"></i></div>
-        <div class="hero-float-icon float-2"><i class="fab fa-node-js"></i></div>
-        <div class="hero-float-icon float-3"><i class="fab fa-aws"></i></div>
-        <div class="hero-float-icon float-4"><i class="fab fa-docker"></i></div>
-        <div class="hero-float-icon float-5"><i class="fab fa-python"></i></div>
-        <div class="hero-float-icon float-6"><i class="fas fa-shield-halved"></i></div>
-      </div>
-
       <div class="container">
-        <div class="hero-content">
-          <h1 class="hero-title">
-            Build Your SaaS, AI Tool,<br />
-            or <span class="gradient-text-wrapper"><span class="gradient-text">Mobile App</span></span> <br />
-            Faster
-          </h1>
-          <p class="hero-description">
-            We help startups and businesses launch scalable software products quickly. From SaaS platforms and
-            AI-powered tools to cross-platform mobile apps — production-ready in weeks, not months.
-          </p>
-          <div class="hero-buttons">
-            <a href=""
-              onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;"
-              class="btn-primary" id="heroCta">
-              Book a Free Strategy Call
-            </a>
-            <a href="https://wa.me/917679349780" target="_blank" class="btn-secondary"
-              style="border: 1px solid #25D366; color: #25D366;">
-              <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-            </a>
-          </div>
-          <div
-            style="margin-top:14px;font-size:0.85rem;opacity:0.75;display:flex;gap:14px;flex-wrap:wrap;align-items:center;justify-content:center;">
-            <span><i class="fas fa-check-circle" style="color:var(--accent-green);margin-right:4px;"></i>No
-              obligation</span>
-            <span><i class="fas fa-check-circle" style="color:var(--accent-green);margin-right:4px;"></i>NDA on
-              request</span>
-            <span><i class="fas fa-check-circle" style="color:var(--accent-green);margin-right:4px;"></i>Fixed-scope
-              quote in 24 hours</span>
-          </div>
-          <div class="hero-stats">
-            <div class="hero-stat">
-              <div class="hero-stat-number counter" data-target="50" data-suffix="+">50+</div>
-              <div class="hero-stat-label">Happy Clients</div>
+        <div class="hero-grid">
+          <div class="hero-content">
+            <h1 class="hero-title">
+              Build Your SaaS, AI Tool,<br />
+              or <span class="gradient-text-wrapper"><span class="gradient-text">Mobile App</span></span> <br />
+              Faster
+            </h1>
+            <p class="hero-description">
+              We help startups and businesses launch scalable software products quickly. From SaaS platforms and
+              AI-powered tools to cross-platform mobile apps — production-ready in weeks, not months.
+            </p>
+            <div class="hero-buttons">
+              <a href=""
+                onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;"
+                class="btn-primary" id="heroCta">
+                Book My Free Call
+              </a>
+              <a href="https://wa.me/917679349780" target="_blank" class="btn-secondary"
+                style="border: 1px solid #25D366; color: #25D366; display: inline-flex; align-items: center; gap: 8px;">
+                <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+              </a>
             </div>
-            <div class="hero-stat">
-              <div class="hero-stat-number counter" data-target="120" data-suffix="+">120+</div>
-              <div class="hero-stat-label">Projects Delivered</div>
+            <div
+              style="margin-top:20px;font-size:0.85rem;opacity:0.85;display:flex;gap:16px;flex-wrap:wrap;align-items:center;">
+              <span><i class="fas fa-check-circle" style="color:var(--accent-green);margin-right:6px;"></i>No obligation</span>
+              <span><i class="fas fa-check-circle" style="color:var(--accent-green);margin-right:6px;"></i>NDA on request</span>
+              <span><i class="fas fa-check-circle" style="color:var(--accent-green);margin-right:6px;"></i>Fixed-scope quote in 24 hours</span>
             </div>
-            <div class="hero-stat">
-              <div class="hero-stat-number counter" data-target="99" data-suffix="%">99%</div>
-              <div class="hero-stat-label">Satisfaction Rate</div>
+          </div>
+          
+          <div class="hero-tabs-column">
+            <div class="hero-tabs-container">
+              <div class="hero-tabs-menu">
+                <button class="hero-tab-link active">
+                  SaaS
+                  <div class="hero-tab-timer"></div>
+                </button>
+                <button class="hero-tab-link">
+                  Mobile
+                  <div class="hero-tab-timer"></div>
+                </button>
+                <button class="hero-tab-link">
+                  AI
+                  <div class="hero-tab-timer"></div>
+                </button>
+                <button class="hero-tab-link">
+                  Healthcare
+                  <div class="hero-tab-timer"></div>
+                </button>
+              </div>
+              <div class="hero-tab-content">
+                <div class="hero-tab-pane active">
+                  <img src="assets/project/biling-and-inventory.png" alt="SaaS Billing & Inventory Mockup">
+                </div>
+                <div class="hero-tab-pane">
+                  <img src="assets/project-fitness.png" alt="Fitness Mobile App Mockup">
+                </div>
+                <div class="hero-tab-pane">
+                  <img src="assets/project/marketing-tools.png" alt="Marketing Automation AI Mockup">
+                </div>
+                <div class="hero-tab-pane">
+                  <img src="assets/project-telemedicine.png" alt="Telemedicine HealthTech Mockup">
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== TRUST & CERTIFICATIONS SECTION ===== -->
-    <section class="trust-certifications">
+    <!-- ===== TRUST BADGES ===== -->
+    <section class="trust-badges-section">
       <div class="container">
-        <div class="trust-cert-grid ">
-          <!-- Google Reviews -->
-          <a href="https://share.google/DXFATJs1FzVq4KXM7" target="_blank" rel="noopener" class="trust-cert-card">
-            <div class="trust-cert-icon google-icon">
+        <div class="trust-badges-grid">
+          <div class="trust-badge-card">
+            <div class="trust-badge-icon aws-badge">
+              <i class="fab fa-aws"></i>
+            </div>
+            <div class="trust-badge-info">
+              <h4>Secure by AWS</h4>
+              <p>Enterprise cloud security</p>
+            </div>
+          </div>
+          <div class="trust-badge-card">
+            <div class="trust-badge-icon global-badge">
+              <i class="fas fa-globe-americas"></i>
+            </div>
+            <div class="trust-badge-info">
+              <h4>50+ Clients Globally</h4>
+              <p>Delivered software globally</p>
+            </div>
+          </div>
+          <div class="trust-badge-card">
+            <div class="trust-badge-icon google-badge">
               <i class="fab fa-google"></i>
-            </div>
-            <div class="trust-cert-content">
-              <div class="trust-cert-rating">
-                <span class="trust-cert-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
-                <span class="trust-cert-score">4.9/5</span>
+              <div class="trust-badge-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
               </div>
-              <div class="trust-cert-label">Google Reviews</div>
-              <div class="trust-cert-cta">View Reviews <i class="fas fa-arrow-right"></i></div>
             </div>
-          </a>
-
-          <!-- Trustpilot -->
-          <a href="https://www.trustpilot.com/review/todayintech.in" target="_blank" rel="noopener"
-            class="trust-cert-card">
-            <div class="trust-cert-icon trustpilot-icon">
-              <i class="fas fa-star"></i>
-            </div>
-            <div class="trust-cert-content">
-              <div class="trust-cert-rating">
-                <span class="trust-cert-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
-                <span class="trust-cert-score">4.9/5</span>
-              </div>
-              <div class="trust-cert-label">Trustpilot</div>
-              <div class="trust-cert-cta">View Reviews <i class="fas fa-arrow-right"></i></div>
-            </div>
-          </a>
-
-          <!-- HIPAA Compliance
-          <div class="trust-cert-card">
-            <div class="trust-cert-icon hipaa-icon">
-              <i class="fas fa-shield-halved"></i>
-            </div>
-            <div class="trust-cert-content">
-              <div class="trust-cert-rating">
-                <span class="trust-cert-badge">Verified</span>
-              </div>
-              <div class="trust-cert-label">HIPAA & GDPR Compliant</div>
-              <div class="trust-cert-desc">Enterprise-grade security</div>
-            </div>
-          </div> -->
-
-          <!-- MSME Registration -->
-          <div class="trust-cert-card msme-cert-card">
-            <div class="trust-cert-icon msme-icon">
-              <img src="assets/certificate/msme-loo.png" alt="MSME">
-            </div>
-            <div class="trust-cert-content">
-              <div class="trust-cert-rating">
-                <span class="trust-cert-badge">Registered</span>
-              </div>
-              <div class="trust-cert-label">MSME Certified</div>
-              <div class="trust-cert-desc">UDYAM-WB-03-0108090</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Additional Trust Indicators -->
-        <div class="trust-indicators">
-          <div class="trust-indicator">
-            <span class="trust-indicator-icon"><i class="fas fa-users"></i></span>
-            <span class="trust-indicator-text">50+ Brands</span>
-          </div>
-          <div class="trust-indicator-divider">•</div>
-          <div class="trust-indicator">
-            <span class="trust-indicator-icon"><i class="fas fa-globe"></i></span>
-            <span class="trust-indicator-text">12 Countries</span>
-          </div>
-          <div class="trust-indicator-divider">•</div>
-          <div class="trust-indicator">
-            <span class="trust-indicator-icon"><i class="fas fa-rocket"></i></span>
-            <span class="trust-indicator-text">120+ Projects</span>
-          </div>
-          <div class="trust-indicator-divider">•</div>
-          <div class="trust-indicator">
-            <span class="trust-indicator-icon"><i class="fas fa-clock"></i></span>
-            <span class="trust-indicator-text">95% On-time Delivery</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== TRUSTED BY ===== -->
-    <section class="trusted-by">
-      <div class="container">
-        <p class="trusted-label">Trusted by Startups and Businesses Across 12+ Countries</p>
-        <div class="trusted-logos">
-          <div class="trusted-logo">
-            <div class="trusted-logo-badge blue"><i class="fas fa-heart-pulse"></i></div><span
-              class="trusted-logo-name">MediCare+</span>
-          </div>
-          <div class="trusted-logo">
-            <div class="trusted-logo-badge purple"><i class="fas fa-capsules"></i></div><span
-              class="trusted-logo-name">PharmaLink</span>
-          </div>
-          <div class="trusted-logo">
-            <div class="trusted-logo-badge green"><i class="fas fa-dumbbell"></i></div><span
-              class="trusted-logo-name">FitPulse</span>
-          </div>
-          <div class="trusted-logo">
-            <div class="trusted-logo-badge teal"><i class="fas fa-hospital"></i></div><span
-              class="trusted-logo-name">HealthBridge</span>
-          </div>
-          <div class="trusted-logo">
-            <div class="trusted-logo-badge orange"><i class="fas fa-stethoscope"></i></div><span
-              class="trusted-logo-name">DocConnect</span>
-          </div>
-          <div class="trusted-logo">
-            <div class="trusted-logo-badge pink"><i class="fas fa-spa"></i></div><span
-              class="trusted-logo-name">WellnessHub</span>
-          </div>
-        </div>
-        <div class="trust-proof-bar">
-          <a href="https://share.google/DXFATJs1FzVq4KXM7" target="_blank" rel="noopener"
-            class="trust-proof-item trust-proof-link">
-            <span class="trust-proof-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
-            <span class="trust-proof-text">4.9 Google Reviews</span>
-            <i class="fas fa-external-link-alt trust-proof-arrow"></i>
-          </a>
-          <div class="trust-proof-divider">|</div>
-          <a href="https://www.trustpilot.com/review/todayintech.in" target="_blank" rel="noopener"
-            class="trust-proof-item trust-proof-link">
-            <span class="trust-proof-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
-            <span class="trust-proof-text">4.9 Trustpilot</span>
-            <i class="fas fa-external-link-alt trust-proof-arrow"></i>
-          </a>
-          <div class="trust-proof-divider">|</div>
-          <div class="trust-proof-item">
-            <span><i class="fas fa-shield-halved"></i></span>
-            <span class="trust-proof-text">HIPAA &amp; GDPR Compliant</span>
-          </div>
-          <div class="trust-proof-divider">|</div>
-          <div class="trust-proof-item msme-trust-item">
-            <img src="assets/certificate/msme-loo.png" alt="MSME" style="width:18px;height:auto;">
-            <span class="trust-proof-text">MSME: UDYAM-WB-03-0108090</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== PRESS / AS SEEN IN ===== -->
-    <section class="press-section">
-      <div class="container">
-        <p class="press-label">Recognized By Industry Leaders</p>
-        <div class="press-logos">
-          <div class="press-logo-item">
-            <i class="fab fa-product-hunt"></i>
-            <span class="press-logo-text">Product Hunt</span>
-          </div>
-          <div class="press-logo-item">
-            <i class="fas fa-award"></i>
-            <span class="press-logo-text">Clutch.co</span>
-          </div>
-          <div class="press-logo-item">
-            <i class="fas fa-trophy"></i>
-            <span class="press-logo-text">DesignRush</span>
-          </div>
-          <div class="press-logo-item">
-            <i class="fas fa-certificate"></i>
-            <span class="press-logo-text">GoodFirms</span>
-          </div>
-          <div class="press-logo-item">
-            <i class="fas fa-medal"></i>
-            <span class="press-logo-text">TechBehemoths</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== MOBILE APP EXPERIENCE SECTION ===== -->
-    <section class="mobile-app-experience" id="mobile-app">
-      <div class="bg-glow" style="top: 20%; left: -10%; width: 500px; height: 500px; background: var(--primary);"></div>
-      <div class="bg-glow"
-        style="bottom: -10%; right: -10%; width: 400px; height: 400px; background: var(--secondary);"></div>
-      <div class="container">
-        <div class="mobile-exp-grid">
-          <div class="mobile-exp-text reveal">
-            <span class="section-label">Mobile App Experience</span>
-            <h2 class="section-title">Stunning Apps,<br><span class="gradient-text-wrapper"><span
-                  class="gradient-text">Pixel-Perfect Delivery</span></span></h2>
-            <p class="section-subtitle">We craft beautiful, high-performance mobile applications using React Native and
-              Flutter — delivering native-quality experiences across iOS and Android.</p>
-            <a href=""
-              onclick="Calendly.initPopupWidget({url:'https://calendly.com/launchhealthapp-6biv/30min/30min/'});return false;"
-              class="btn-primary mobile-exp-cta mt-4" style="margin-top: 20px;">
-              Build Your App &rarr;
-            </a>
-          </div>
-          <div class="mobile-exp-bento reveal">
-            <div class="bento-card card-1">
-              <div class="bento-icon"><i class="fas fa-rocket"></i></div>
-              <h3>60fps Smooth</h3>
-              <p>Unmatched fluid performance leveraging native device capabilities.</p>
-            </div>
-            <div class="bento-card card-2">
-              <div class="bento-icon"><i class="fas fa-mobile-screen"></i></div>
-              <h3>One Codebase</h3>
-              <p>Deploy to both iOS & Android simultaneously with perfect fidelity.</p>
-            </div>
-            <div class="bento-card card-3">
-              <div class="bento-icon"><i class="fas fa-shield-halved"></i></div>
-              <h3>Enterprise Security</h3>
-              <p>Bank-grade encryption, biometric auth, and HIPAA compliance ready.</p>
-            </div>
-            <div class="bento-card card-4">
-              <div class="bento-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
-              <h3>Micro-Animations</h3>
-              <p>Delightful interactions and fluid transitions that users love.</p>
+            <div class="trust-badge-info">
+              <h4>5 Star in Google Business</h4>
+              <p>Highly rated services</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== SERVICES SECTION ===== -->
-    <section class="services" id="services">
-      <div class="bg-glow"></div>
+    <!-- ===== WHO WE ARE (HUMANIZED) ===== -->
+    <section class="people-section" id="about">
       <div class="container">
-        <div class="section-header reveal">
-          <span class="section-label">What We Build</span>
-          <h2 class="section-title">Everything You Need to Launch and Scale</h2>
-          <p class="section-subtitle">From MVPs to enterprise platforms — we build scalable, secure, and
-            high-performance software so you can focus on growing your business.</p>
-        </div>
-
-        <div class="services-grid">
-          <div class="service-card reveal">
-            <div class="service-icon icon-blue"><i class="fas fa-laptop-code"></i></div>
-            <h3>SaaS Platform Development</h3>
-            <p>Launch your SaaS product in weeks, not months. We build multi-tenant platforms, admin dashboards, and
-              subscription-based applications designed for growth.</p>
-            <div class="service-tags">
-              <span class="service-tag">Multi-Tenant</span>
-              <span class="service-tag">Subscription Billing</span>
-              <span class="service-tag">Admin Dashboards</span>
-            </div>
-          </div>
-
-          <div class="service-card reveal">
-            <div class="service-icon icon-purple"><i class="fas fa-mobile-screen-button"></i></div>
-            <h3>Mobile App Development</h3>
-            <p>Cross-platform mobile apps built with React Native and Flutter. From healthcare apps to e-commerce —
-              performant, beautiful, and scalable.</p>
-            <div class="service-tags">
-              <span class="service-tag">React Native</span>
-              <span class="service-tag">Flutter</span>
-              <span class="service-tag">iOS & Android</span>
-            </div>
-          </div>
-
-          <div class="service-card reveal">
-            <div class="service-icon icon-green"><i class="fas fa-globe"></i></div>
-            <h3>Web Application Development</h3>
-            <p>Modern, responsive web applications built with cutting-edge technologies. From SaaS platforms to admin
-              dashboards and customer portals.</p>
-            <div class="service-tags">
-              <span class="service-tag">React</span>
-              <span class="service-tag">Next.js</span>
-              <span class="service-tag">Node.js</span>
-            </div>
-          </div>
-
-          <div class="service-card reveal">
-            <div class="service-icon icon-red"><i class="fas fa-cloud"></i></div>
-            <h3>Cloud & DevOps</h3>
-            <p>Scalable cloud infrastructure, CI/CD pipelines, and deployment automation. We ensure your applications
-              run
-              smoothly at any scale.</p>
-            <div class="service-tags">
-              <span class="service-tag">AWS</span>
-              <span class="service-tag">Docker</span>
-              <span class="service-tag">Kubernetes</span>
-            </div>
-          </div>
-
-          <div class="service-card reveal">
-            <div class="service-icon icon-teal"><i class="fas fa-link"></i></div>
-            <h3>API & Integration Services</h3>
-            <p>Seamless third-party integrations, payment gateways, enterprise CRM integration, and custom API
-              development for
-              any tech ecosystem.</p>
-            <div class="service-tags">
-              <span class="service-tag">GraphQL</span>
-              <span class="service-tag">REST APIs</span>
-              <span class="service-tag">Webhooks</span>
-            </div>
-          </div>
-
-          <div class="service-card reveal">
-            <div class="service-icon icon-orange"><i class="fas fa-palette"></i></div>
-            <h3>UI/UX Design</h3>
-            <p>Human-centered design that converts. We craft intuitive interfaces and delightful user experiences backed
-              by research and usability testing.</p>
-            <div class="service-tags">
-              <span class="service-tag">Figma</span>
-              <span class="service-tag">Prototyping</span>
-              <span class="service-tag">User Research</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== MOBILE APP 3D SHOWCASE ===== -->
-    <section class="mobile-3d-showcase" id="mobile-showcase">
-      <div class="bg-glow"></div>
-      <div class="container">
-        <div class="showcase-grid">
-          <div class="showcase-content reveal">
-            <span class="section-label">Mobile App Experience</span>
-            <h2 class="section-title">Stunning Apps,<br><span class="gradient-text">Pixel-Perfect Delivery</span></h2>
-            <p class="section-subtitle">We craft beautiful, high-performance mobile applications using React Native and
-              Flutter — delivering native-quality experiences across iOS and Android.</p>
-            <div class="showcase-features">
-              <div class="showcase-feature">
-                <i class="fas fa-rocket"></i>
-                <span>60fps Smooth Performance</span>
-              </div>
-              <div class="showcase-feature">
-                <i class="fas fa-mobile-screen"></i>
-                <span>iOS & Android from One Codebase</span>
-              </div>
-              <div class="showcase-feature">
-                <i class="fas fa-shield-halved"></i>
-                <span>Enterprise-Grade Security</span>
-              </div>
-              <div class="showcase-feature">
-                <i class="fas fa-wand-magic-sparkles"></i>
-                <span>Delightful Micro-Animations</span>
-              </div>
-            </div>
+        <div class="people-grid">
+          <div class="people-content-side reveal">
+            <span class="section-label">Who We Are</span>
+            <h2 class="section-title">Inspiring Innovation & Delivering Excellence as Your Trusted Engineering Partner</h2>
+            <p class="people-intro">At TodayInTech, we believe in building relationships, not just writing code.</p>
+            <p class="people-description">
+              For startups and scaleups worldwide, we’ve redefined what a software agency can be. Our dedicated team of developers, designers, and project managers work directly with you — simplifying complexity, ensuring scalability, and accelerating launch timelines. We're here to help you turn ideas into robust, production-ready applications.
+            </p>
             <a href=""
               onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;"
-              class="btn-primary">Build Your App →</a>
+              class="btn-primary">Meet Our Engineers</a>
           </div>
-          <div class="showcase-3d-wrapper reveal">
-            <div id="mobile-3d-container" class="three-canvas-container"></div>
+          
+          <div class="people-image-side reveal">
+            <!-- Founder -->
+            <div class="team-card">
+              <img src="assets/founder.png" alt="Jasimuddin SK" class="team-avatar-img">
+              <div class="team-name">Jasimuddin SK</div>
+              <div class="team-role">Founder &amp; Tech Lead</div>
+            </div>
+            <!-- Senior Developer -->
+            <div class="team-card">
+              <img src="assets/reviewer-2.png" alt="Sarah J." class="team-avatar-img">
+              <div class="team-name">Sarah Jenkins</div>
+              <div class="team-role">Lead Fullstack Dev</div>
+            </div>
+            <!-- PM -->
+            <div class="team-card">
+              <img src="assets/reviewer-1.png" alt="Amit V." class="team-avatar-img">
+              <div class="team-name">Amit Verma</div>
+              <div class="team-role">Senior Architect</div>
+            </div>
+            <!-- QA -->
+            <div class="team-card">
+              <img src="assets/reviewer-5.png" alt="David M." class="team-avatar-img">
+              <div class="team-name">David Miller</div>
+              <div class="team-role">QA &amp; Release Lead</div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== AI & AUTOMATION 3D SHOWCASE ===== -->
-    <section class="ai-3d-showcase" id="ai-showcase">
-      <div class="bg-glow"></div>
+    <!-- ===== STICKY SUBNAV BAR ===== -->
+    <div class="anchors_wrapper-sticky" id="stickyAnchorBar">
+      <div class="anchors_wrapper">
+        <div class="anchors_label">Jump to:</div>
+        <div class="anchors_link-wrapper">
+          <a href="#saas" class="anchors_link active">SaaS</a>
+          <a href="#mobile" class="anchors_link">Mobile</a>
+          <a href="#ai" class="anchors_link">AI</a>
+          <a href="#healthcare" class="anchors_link">Healthcare</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== SOLUTIONS SHOWCASE ===== -->
+    <!-- SaaS Section -->
+    <section id="saas" class="solution-showcase-section">
       <div class="container">
-        <div class="showcase-grid showcase-grid-reverse">
-          <div class="showcase-3d-wrapper reveal">
-            <div id="ai-3d-container" class="three-canvas-container"></div>
+        <div class="solution-grid">
+          <div class="solution-text-col reveal">
+            <h2 class="solution-title-h2">Launch scalable SaaS platforms in weeks, not months</h2>
+            <h3 class="solution-subtitle-h3">Organize operations &amp; billing on one connected architecture</h3>
+            <p class="solution-desc">
+              From multi-tenant user authentication to complex subscription models, we construct cloud-based SaaS backbones tailored for long-term growth. We handle the heavy lifting of security, dashboard administration, and user management so you can focus on building features and acquiring users.
+            </p>
+            <ul class="solution-list">
+              <li><i class="fas fa-check-circle"></i> Multi-tenant tenant segregation &amp; data isolation</li>
+              <li><i class="fas fa-check-circle"></i> Automated subscription cycles &amp; invoicing via Stripe</li>
+              <li><i class="fas fa-check-circle"></i> Highly customizable admin &amp; client management portals</li>
+            </ul>
+            <a href=""
+              onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;"
+              class="btn-primary">Learn More</a>
           </div>
-          <div class="showcase-content reveal">
-            <span class="section-label">AI & Automation</span>
-            <h2 class="section-title">Intelligent Systems,<br><span class="gradient-text">Powered by AI</span></h2>
-            <p class="section-subtitle">We integrate cutting-edge AI and machine learning into your products — from
-              smart automation pipelines to predictive analytics and conversational agents.</p>
-            <div class="showcase-features">
-              <div class="showcase-feature">
-                <i class="fas fa-brain"></i>
-                <span>Machine Learning Pipelines</span>
-              </div>
-              <div class="showcase-feature">
-                <i class="fas fa-robot"></i>
-                <span>Conversational AI Agents</span>
-              </div>
-              <div class="showcase-feature">
-                <i class="fas fa-chart-line"></i>
-                <span>Predictive Analytics</span>
-              </div>
-              <div class="showcase-feature">
-                <i class="fas fa-bolt"></i>
-                <span>Smart Workflow Automation</span>
-              </div>
+          
+          <div class="solution-image-col reveal">
+            <div class="solution-image-wrapper">
+              <img src="assets/project/biling-and-inventory.png" alt="SaaS Billing Mockup" class="solution-main-img">
             </div>
-            <a href="ai/index.html" class="btn-primary">Explore AI Solutions →</a>
+            <div class="solution-popout-card">
+              <div class="popout-card-title">SaaS Launch</div>
+              <div class="popout-card-value">24 Days</div>
+              <div class="popout-card-label">Average MVP build time</div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== ABOUT / WHY US SECTION ===== -->
-    <section class="about" id="about">
+    <!-- Mobile Section -->
+    <section id="mobile" class="solution-showcase-section">
       <div class="container">
-        <div class="about-grid">
-          <div class="about-content reveal">
-            <span class="section-label">Why TodayInTech</span>
-            <h2 class="section-title">We Don't Just Build Software. We Build Partnerships.</h2>
-            <p class="section-subtitle">With deep expertise in software engineering and a passionate team of developers,
-              designers,
-              and strategists — we're committed to turning your vision into reality.</p>
-
-            <div class="about-features">
-              <div class="about-feature">
-                <div class="about-feature-icon"><i class="fas fa-bolt"></i></div>
-                <h4>Fast Delivery</h4>
-                <p>Launch MVPs in weeks with our agile development approach.</p>
-              </div>
-              <div class="about-feature">
-                <div class="about-feature-icon"><i class="fas fa-shield-halved"></i></div>
-                <h4>HIPAA Compliant</h4>
-                <p>All health products built with enterprise-grade security.</p>
-              </div>
-              <div class="about-feature">
-                <div class="about-feature-icon"><i class="fas fa-users"></i></div>
-                <h4>Dedicated Teams</h4>
-                <p>Your project gets a dedicated team of senior engineers.</p>
-              </div>
-              <div class="about-feature">
-                <div class="about-feature-icon"><i class="fas fa-headset"></i></div>
-                <h4>24/7 Support</h4>
-                <p>Round-the-clock support and maintenance post-launch.</p>
-              </div>
+        <div class="solution-grid">
+          <div class="solution-text-col reveal">
+            <h2 class="solution-title-h2">Beautiful, native-quality cross-platform mobile apps</h2>
+            <h3 class="solution-subtitle-h3">One single codebase deploying to both iOS &amp; Android</h3>
+            <p class="solution-desc">
+              Leverage the efficiency of React Native and Flutter to build responsive mobile apps with fluid 60fps animations. Our cross-platform solutions guarantee absolute design consistency across devices, reducing your time-to-market and developer maintenance overhead by up to 50%.
+            </p>
+            <ul class="solution-list">
+              <li><i class="fas fa-check-circle"></i> Seamless integration with camera, GPS, and biometrics</li>
+              <li><i class="fas fa-check-circle"></i> Secure offline data storage &amp; automatic syncing</li>
+              <li><i class="fas fa-check-circle"></i> Micro-animations that elevate user delight</li>
+            </ul>
+            <a href=""
+              onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;"
+              class="btn-primary">Explore Mobile Services</a>
+          </div>
+          
+          <div class="solution-image-col reveal">
+            <div class="solution-image-wrapper">
+              <img src="assets/project-fitness.png" alt="Fitness App Mockup" class="solution-main-img">
+            </div>
+            <div class="solution-popout-card">
+              <div class="popout-card-title">Performance</div>
+              <div class="popout-card-value">60 FPS</div>
+              <div class="popout-card-label">Fluid hardware utilization</div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="about-stats-visual reveal">
-            <div class="stats-card-grid">
-              <div class="stat-card">
-                <div class="stat-number counter" data-target="50" data-suffix="+">50+</div>
-                <div class="stat-label">Clients Served</div>
-                <div class="stat-sublabel">across 12 countries</div>
-              </div>
-              <div class="stat-card">
-                <div class="stat-number counter" data-target="120" data-suffix="+">120+</div>
-                <div class="stat-label">Projects Delivered</div>
-                <div class="stat-sublabel">on time, every time</div>
-              </div>
-              <div class="stat-card">
-                <div class="stat-number counter" data-target="5" data-suffix="+">5+</div>
-                <div class="stat-label">Years Experience</div>
-                <div class="stat-sublabel">in digital technology</div>
-              </div>
-              <div class="stat-card">
-                <div class="stat-number counter" data-target="35" data-suffix="+">35+</div>
-                <div class="stat-label">Team Members</div>
-                <div class="stat-sublabel">engineers & designers</div>
-              </div>
+    <!-- AI Section -->
+    <section id="ai" class="solution-showcase-section">
+      <div class="container">
+        <div class="solution-grid">
+          <div class="solution-text-col reveal">
+            <h2 class="solution-title-h2">Automate tasks with intelligent AI agents</h2>
+            <h3 class="solution-subtitle-h3">Integrate machine learning into daily business pipelines</h3>
+            <p class="solution-desc">
+              Go beyond simple chatbots. We construct advanced AI pipelines capable of workflow automation, predictive analytics, and natural language understanding. Connect modern AI APIs (such as OpenAI, Anthropic, or custom models) safely with your proprietary database.
+            </p>
+            <ul class="solution-list">
+              <li><i class="fas fa-check-circle"></i> Intelligent multi-channel conversational agents</li>
+              <li><i class="fas fa-check-circle"></i> AI-powered document classification &amp; indexing</li>
+              <li><i class="fas fa-check-circle"></i> Predictive analytics for customer churn &amp; sales</li>
+            </ul>
+            <a href="ai/index.html" class="btn-primary">View AI Solutions</a>
+          </div>
+          
+          <div class="solution-image-col reveal">
+            <div class="solution-image-wrapper">
+              <img src="assets/project/marketing-tools.png" alt="AI Agent Mockup" class="solution-main-img">
             </div>
-            <div class="compliance-badges">
-              <div class="compliance-badge">
-                <span class="compliance-icon"><i class="fas fa-shield-halved"></i></span>
-                <span>HIPAA Compliant</span>
-              </div>
-              <div class="compliance-badge">
-                <span class="compliance-icon"><i class="fas fa-user-shield"></i></span>
-                <span>GDPR Ready</span>
-              </div>
-              <div class="compliance-badge">
-                <span class="compliance-icon"><i class="fas fa-cloud"></i></span>
-                <span>AWS + BAA</span>
-              </div>
-              <div class="compliance-badge">
-                <span class="compliance-icon"><i class="fas fa-lock"></i></span>
-                <span>AES-256 Encrypted</span>
-              </div>
-              <div class="compliance-badge msme-compliance-badge">
-                <img src="assets/certificate/msme-loo.png" alt="MSME" style="width:18px;height:auto;">
-                <span>MSME Registered</span>
-              </div>
-              <div class="compliance-badge msme-id-badge">
-                <span class="compliance-icon"><i class="fas fa-certificate"></i></span>
-                <span>UDYAM-WB-03-0108090</span>
-              </div>
+            <div class="solution-popout-card">
+              <div class="popout-card-title">Automation</div>
+              <div class="popout-card-value">15x Faster</div>
+              <div class="popout-card-label">Processing speed enhancement</div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HealthTech Section -->
+    <section id="healthcare" class="solution-showcase-section">
+      <div class="container">
+        <div class="solution-grid">
+          <div class="solution-text-col reveal">
+            <h2 class="solution-title-h2">HIPAA compliant telemedicine and EMR portals</h2>
+            <h3 class="solution-subtitle-h3">Secure healthcare portals designed for trust and safety</h3>
+            <p class="solution-desc">
+              Protect your patients' sensitive data with bank-grade encryption and audited security practices. Our telemedicine and Electronic Medical Record (EMR) portals comply with strict regulatory guidelines (HIPAA/GDPR) out-of-the-box, ensuring peace of mind for providers and clinic networks.
+            </p>
+            <ul class="solution-list">
+              <li><i class="fas fa-check-circle"></i> End-to-end encrypted video &amp; chat consultations</li>
+              <li><i class="fas fa-check-circle"></i> Interoperable HL7/FHIR EHR system integrations</li>
+              <li><i class="fas fa-check-circle"></i> Secure prescription routing &amp; scheduling</li>
+            </ul>
+            <a href="health/index.html" class="btn-primary">Verify HealthTech Solutions</a>
+          </div>
+          
+          <div class="solution-image-col reveal">
+            <div class="solution-image-wrapper">
+              <img src="assets/project-telemedicine.png" alt="Telemedicine HealthTech Mockup" class="solution-main-img">
+            </div>
+            <div class="solution-popout-card">
+              <div class="popout-card-title">Security</div>
+              <div class="popout-card-value">AES-256</div>
+              <div class="popout-card-label">HIPAA compliant encryption</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STATS SECTION ===== -->
+    <section class="stats-large-section">
+      <div class="container stats-container">
+        <div class="stats-header reveal">
+          <span class="section-label">Proven Impact</span>
+          <h2 class="stats-title">Software Built for Trust and Scale</h2>
+          <p class="stats-desc">Over 5 years of engineering experience delivering premium digital products globally.</p>
+        </div>
+        <div class="stats-grid reveal">
+          <div class="stats-card gradient-green">
+            <div class="stats-card-number">50+</div>
+            <div class="stats-card-label">Clients Served</div>
+            <div class="stats-card-sublabel">across 12 countries</div>
+          </div>
+          <div class="stats-card gradient-purple">
+            <div class="stats-card-number">120+</div>
+            <div class="stats-card-label">Projects Delivered</div>
+            <div class="stats-card-sublabel">on time, every time</div>
+          </div>
+          <div class="stats-card gradient-orange">
+            <div class="stats-card-number">5+ Years</div>
+            <div class="stats-card-label">Digital Innovation</div>
+            <div class="stats-card-sublabel">refined engineering</div>
+          </div>
+          <div class="stats-card gradient-blue">
+            <div class="stats-card-number">99%</div>
+            <div class="stats-card-label">Client Satisfaction</div>
+            <div class="stats-card-sublabel">based on post-launch reviews</div>
           </div>
         </div>
       </div>
@@ -881,6 +681,42 @@
         </div>
 
         <div class="portfolio-grid">
+          <a href="projects/church-management-software.html" class="portfolio-card reveal">
+            <div class="portfolio-image">
+              <img src="assets/project-church-management.png" alt="Church Management Software — End-to-End Solution" loading="lazy">
+              <div class="portfolio-image-overlay"></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category">ChMS / SaaS</span>
+              <h3>TodayInTech SITES — Church Management</h3>
+              <p>A comprehensive platform designed to manage member data, online giving, scheduling, accounting, and church communications from one connected interface.</p>
+              <div class="portfolio-tech">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>PostgreSQL</span>
+                <span>AWS</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="projects/school-management-system.html" class="portfolio-card reveal">
+            <div class="portfolio-image">
+              <img src="assets/project-edusphere.png" alt="School Management System — End-to-End Solution" loading="lazy">
+              <div class="portfolio-image-overlay"></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category">EdTech / SaaS</span>
+              <h3>TodayInTech SITES — School Management</h3>
+              <p>A modular, end-to-end administration platform designed to streamline student directories, online fee collections, gradebooks, timetables, and parent-teacher communications.</p>
+              <div class="portfolio-tech">
+                <span>Vue.js</span>
+                <span>Node.js</span>
+                <span>MySQL</span>
+                <span>AWS</span>
+              </div>
+            </div>
+          </a>
+
           <a href="projects/mednowna.html" class="portfolio-card reveal">
             <div class="portfolio-image">
               <img src="assets/project-telemedicine.png" alt="Mednowna - Telehealth Platform" loading="lazy">
@@ -1404,10 +1240,19 @@
             budget.</p>
         </div>
 
+        <!-- Pricing Toggle Switcher -->
+        <div class="pricing-toggle-container reveal">
+          <span class="toggle-label active" id="label-monthly">Billed Monthly</span>
+          <button class="pricing-toggle-btn" id="pricingToggleBtn" role="switch" aria-checked="false" aria-label="Toggle billing frequency">
+            <span class="pricing-toggle-thumb"></span>
+          </button>
+          <span class="toggle-label" id="label-yearly">Billed Annually <span class="discount-badge">Save Big</span></span>
+        </div>
+
         <div class="pricing-grid reveal">
           <div class="pricing-card">
-            <div class="pricing-tier">Starter MVP</div>
-            <div class="pricing-price">From <strong>$4,999</strong></div>
+            <div class="pricing-tier">Starter</div>
+            <div class="pricing-price" id="starter-price">From <strong>$99</strong><span class="price-period">/mo</span></div>
             <div class="pricing-timeline"><i class="fas fa-bolt" style="color:var(--primary);margin-right:4px;"></i>
               Launch in 2–4 weeks</div>
             <ul class="pricing-features">
@@ -1434,7 +1279,7 @@
           <div class="pricing-card pricing-card-featured">
             <div class="pricing-popular-badge">Most Popular</div>
             <div class="pricing-tier">Growth</div>
-            <div class="pricing-price">From <strong>$24,999</strong></div>
+            <div class="pricing-price" id="growth-price">From <strong>$199</strong><span class="price-period">/mo</span></div>
             <div class="pricing-timeline"><i class="fas fa-bolt" style="color:var(--primary);margin-right:4px;"></i>
               Launch in 8–16 weeks</div>
             <ul class="pricing-features">
@@ -1461,7 +1306,7 @@
           </div>
 
           <div class="pricing-card">
-            <div class="pricing-tier">Enterprise</div>
+            <div class="pricing-tier">Custom</div>
             <div class="pricing-price"><strong>Custom</strong> Quote</div>
             <div class="pricing-timeline"><i class="fas fa-bolt" style="color:var(--primary);margin-right:4px;"></i>
               Dedicated team + roadmap</div>
@@ -1664,7 +1509,7 @@
             <div class="roi-input-group">
               <label for="roi-rate">Average Dev Hourly Rate (USD)</label>
               <div class="roi-slider-wrapper">
-                <input type="range" id="roi-rate" min="40" max="150" value="65" step="5" class="roi-slider">
+                <input type="range" id="roi-rate" min="4" max="150" value="65" step="1" class="roi-slider">
                 <span class="roi-slider-value" id="roi-rate-display">$65/hr</span>
               </div>
             </div>
@@ -1687,7 +1532,7 @@
               <div class="roi-popular-label">Save Up To</div>
               <div class="roi-savings" id="roi-savings">$1,390,000</div>
               <div class="roi-result-label">With TodayInTech</div>
-              <div class="roi-result-cost roi-our-cost">From <strong>$4,999</strong></div>
+              <div class="roi-result-cost roi-our-cost" id="roi-our-cost">From <strong>$99</strong></div>
               <div class="roi-result-time">Launch in 2–4 weeks</div>
               <ul class="roi-result-risks">
                 <li><i class="fas fa-circle-check" style="color:var(--accent-green)"></i> HIPAA-compliant by default
@@ -1915,16 +1760,8 @@
 
   <!-- Social proof toast removed for cleaner UX -->
 
-  <!-- ===== THREE.JS CDN ===== -->
-  <script async src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/DRACOLoader.js"></script>
-
   <!-- ===== JAVASCRIPT ===== -->
   <script src="script.js"></script>
-  <script src="liquid-glass.js"></script>
-  <script src="threejs-scenes.js"></script>
 </body>
 
 </html>
