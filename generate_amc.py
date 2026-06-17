@@ -236,7 +236,7 @@ def generate_amc():
     c.line(margin + 4*mm, sig_y - 12*mm, margin + 52*mm, sig_y - 12*mm)
     c.setFillColor(DARK_GRAY)
     c.setFont("Helvetica-Bold", 10)
-    c.drawString(margin + 4*mm, sig_y - 17*mm, "Sk Jasimuddin")
+    c.drawString(margin + 4*mm, sig_y - 17*mm, "Yasmin K")
     c.setFillColor(MID_GRAY)
     c.setFont("Helvetica", 8.5)
     c.drawString(margin + 4*mm, sig_y - 22*mm, "Founder & CEO, TodayInTech")
