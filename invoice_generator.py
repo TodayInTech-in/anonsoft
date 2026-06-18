@@ -2,8 +2,9 @@ from reportlab.lib.pagesizes import A4
 from reportlab.lib import colors
 from reportlab.lib.units import mm
 from reportlab.pdfgen import canvas
-from reportlab.platypus import Table, TableStyle
 from reportlab.lib.utils import ImageReader
+import datetime
+import os
 
 W, H = A4
 
@@ -37,8 +38,11 @@ def draw_rounded_rect(c, x, y, w, h, r, fill=None, stroke=None):
         c.setStrokeColor(stroke)
     c.drawPath(p, fill=bool(fill), stroke=bool(stroke))
 
-def generate_invoice():
-    out = "/mnt/user-data/outputs/ShieldsPro_Invoice_TodayInTech.pdf"
+def generate_invoice(company_name, services):
+    total = sum(s["amount"] for s in services)
+    safe = "".join(ch if ch.isalnum() or ch in "-_" else "_" for ch in company_name)
+    os.makedirs("invoice", exist_ok=True)
+    out = f"invoice/Invoice_{safe}.pdf"
     c = canvas.Canvas(out, pagesize=A4)
     margin = 20*mm
 
@@ -61,7 +65,7 @@ def generate_invoice():
 
     # --- Logo ---
     try:
-        logo = ImageReader("/home/claude/logo.png")
+        logo = ImageReader("assets/logo.png")
         c.drawImage(logo, margin, H - 48*mm, width=38*mm, height=38*mm,
                     preserveAspectRatio=True, mask='auto')
     except:
@@ -82,7 +86,6 @@ def generate_invoice():
     c.setFillColor(WHITE)
     c.setFont("Helvetica-Bold", 28)
     c.drawString(margin, H - 68*mm, "INVOICE")
-    # Cyan underline
     c.setStrokeColor(CYAN)
     c.setLineWidth(2)
     c.line(margin, H - 70*mm, margin + 55*mm, H - 70*mm)
@@ -90,7 +93,8 @@ def generate_invoice():
     # --- Invoice meta (right side) ---
     meta_x = W - margin - 65*mm
     meta_y = H - 60*mm
-    draw_rounded_rect(c, meta_x, meta_y - 28*mm, 65*mm, 30*mm, 4,
+    today = datetime.date.today().strftime("%B %d, %Y")
+    draw_rounded_rect(c, meta_x, meta_y - 20*mm, 65*mm, 22*mm, 4,
                       fill=CARD_BG, stroke=BORDER)
     c.setStrokeColor(BORDER)
     c.setLineWidth(0.5)
@@ -104,9 +108,8 @@ def generate_invoice():
         c.drawRightString(meta_x + 61*mm, meta_y - y_offset, value)
 
     meta_row("Invoice No.", "INV-2025-001", 6*mm)
-    meta_row("Date:", "April 12, 2025", 12*mm)
-    meta_row("Project:", "ShieldsPro MVP", 18*mm)
-    meta_row("Status:", "60% Delivered", 24*mm, AMBER)
+    meta_row("Date:", today, 12*mm)
+    meta_row("Status:", "Pending", 18*mm, AMBER)
 
     # --- Billed To / From ---
     sec_y = H - 100*mm
@@ -119,7 +122,7 @@ def generate_invoice():
     c.drawString(margin + 4*mm, sec_y - 5*mm, "FROM")
     c.setFillColor(WHITE)
     c.setFont("Helvetica-Bold", 11)
-    c.drawString(margin + 4*mm, sec_y - 12*mm, "Yasmin K")
+    c.drawString(margin + 4*mm, sec_y - 12*mm, "Sk Jasimuddin")
     c.setFillColor(LIGHT_GRAY)
     c.setFont("Helvetica", 9)
     c.drawString(margin + 4*mm, sec_y - 18*mm, "Founder & CEO, TodayInTech")
@@ -135,61 +138,46 @@ def generate_invoice():
     c.drawString(to_x + 4*mm, sec_y - 5*mm, "BILLED TO")
     c.setFillColor(WHITE)
     c.setFont("Helvetica-Bold", 11)
-    c.drawString(to_x + 4*mm, sec_y - 12*mm, "ShieldsPro")
+    c.drawString(to_x + 4*mm, sec_y - 12*mm, company_name)
     c.setFillColor(LIGHT_GRAY)
     c.setFont("Helvetica", 9)
     c.drawString(to_x + 4*mm, sec_y - 18*mm, "Client")
-    c.drawString(to_x + 4*mm, sec_y - 24*mm, "Project: ShieldsPro MVP Development")
+    c.drawString(to_x + 4*mm, sec_y - 24*mm, "Services provided by TodayInTech")
 
     # --- Items Table ---
+    N = len(services)
+    ROW_H = 20*mm
     tbl_y = sec_y - 42*mm
 
     # Table header
     draw_rounded_rect(c, margin, tbl_y - 8*mm, W - 2*margin, 10*mm, 3,
                       fill=colors.HexColor("#1C2333"), stroke=None)
-    cols = [margin+4*mm, margin+90*mm, margin+125*mm, W-margin-4*mm]
-    headers = ["Description", "Completion", "Rate", "Amount (USD)"]
-    header_colors = [CYAN, CYAN, CYAN, CYAN]
-    for i, (hx, ht, hc) in enumerate(zip(cols, headers, header_colors)):
-        c.setFillColor(hc)
-        c.setFont("Helvetica-Bold", 9)
-        if i == len(headers)-1:
-            c.drawRightString(W - margin - 4*mm, tbl_y - 5*mm, ht)
-        else:
-            c.drawString(hx, tbl_y - 5*mm, ht)
-
-    # Row
-    row_y = tbl_y - 22*mm
-    draw_rounded_rect(c, margin, row_y - 2*mm, W - 2*margin, 18*mm, 3,
-                      fill=CARD_BG, stroke=BORDER)
-
-    c.setFillColor(WHITE)
-    c.setFont("Helvetica-Bold", 10)
-    c.drawString(margin + 4*mm, row_y + 10*mm, "60% Payment for MVP Completion")
-    c.setFillColor(LIGHT_GRAY)
-    c.setFont("Helvetica", 8)
-    c.drawString(margin + 4*mm, row_y + 4*mm, "MVP delivered — core features complete")
-
-    c.setFillColor(AMBER)
+    c.setFillColor(CYAN)
     c.setFont("Helvetica-Bold", 9)
-    c.drawString(margin + 90*mm, row_y + 7*mm, "60% of $2,000")
+    c.drawString(margin + 4*mm, tbl_y - 5*mm, "Description")
+    c.drawRightString(W - margin - 4*mm, tbl_y - 5*mm, "Amount (USD)")
 
-    c.setFillColor(LIGHT_GRAY)
-    c.setFont("Helvetica", 9)
-    c.drawString(margin + 125*mm, row_y + 7*mm, "$2,000.00")
-
-    c.setFillColor(WHITE)
-    c.setFont("Helvetica-Bold", 11)
-    c.drawRightString(W - margin - 4*mm, row_y + 7*mm, "$1,200.00")
+    # Dynamic rows
+    for i, svc in enumerate(services):
+        row_y = tbl_y - 22*mm - i * ROW_H
+        draw_rounded_rect(c, margin, row_y - 2*mm, W - 2*margin, 18*mm, 3,
+                          fill=CARD_BG, stroke=BORDER)
+        c.setFillColor(WHITE)
+        c.setFont("Helvetica-Bold", 10)
+        c.drawString(margin + 4*mm, row_y + 7*mm, svc["name"])
+        c.setFillColor(WHITE)
+        c.setFont("Helvetica-Bold", 11)
+        c.drawRightString(W - margin - 4*mm, row_y + 7*mm, f"${svc['amount']:,.2f}")
 
     # Divider
-    dv_y = row_y - 8*mm
+    dv_y = tbl_y - 30*mm - (N - 1) * ROW_H
     c.setStrokeColor(BORDER)
     c.setLineWidth(0.5)
     c.line(margin, dv_y, W - margin, dv_y)
 
     # Totals
     totals_y = dv_y - 6*mm
+
     def total_row(label, val, y, lc=LIGHT_GRAY, vc=WHITE, bold=False):
         c.setFillColor(lc)
         c.setFont("Helvetica-Bold" if bold else "Helvetica", 9 if not bold else 10)
@@ -198,11 +186,8 @@ def generate_invoice():
         c.setFont("Helvetica-Bold", 10 if not bold else 13)
         c.drawRightString(W - margin - 4*mm, y, val)
 
-    total_row("Project Total:", "$2,000.00", totals_y)
-    total_row("Amount Due (60%):", "$1,200.00", totals_y - 8*mm, vc=CYAN, bold=True)
-
-    # Cyan box around amount due
-    draw_rounded_rect(c, W - margin - 70*mm, totals_y - 14*mm,
+    total_row("Total Due:", f"${total:,.2f}", totals_y, vc=CYAN, bold=True)
+    draw_rounded_rect(c, W - margin - 70*mm, totals_y - 6*mm,
                       70*mm, 10*mm, 3, stroke=CYAN)
 
     # --- Payment Section ---
@@ -252,7 +237,7 @@ def generate_invoice():
     draw_rounded_rect(c, qr_x - 3*mm, qr_y - 3*mm, qr_size + 6*mm, qr_size + 10*mm, 4,
                       fill=CARD_BG, stroke=CYAN)
     try:
-        qr = ImageReader("/home/claude/qr.png")
+        qr = ImageReader("assets/trc_20_address.png")
         c.drawImage(qr, qr_x, qr_y, width=qr_size, height=qr_size,
                     preserveAspectRatio=True, mask='auto')
     except:
@@ -273,7 +258,7 @@ def generate_invoice():
     c.line(margin + 4*mm, sig_y - 11*mm, margin + 50*mm, sig_y - 11*mm)
     c.setFillColor(WHITE)
     c.setFont("Helvetica-Bold", 9)
-    c.drawString(margin + 4*mm, sig_y - 15*mm, "Yasmin K")
+    c.drawString(margin + 4*mm, sig_y - 15*mm, "Sk Jasimuddin")
     c.setFillColor(LIGHT_GRAY)
     c.setFont("Helvetica", 8)
     c.drawString(margin + 4*mm, sig_y - 20*mm, "Founder & CEO, TodayInTech")
@@ -293,6 +278,29 @@ def generate_invoice():
     c.drawCentredString(W/2, 7*mm, "This invoice is computer generated and valid without physical signature.")
 
     c.save()
-    print("Done:", out)
+    return out
 
-generate_invoice()
+
+if __name__ == "__main__":
+    company_name = input("Enter company name you want to bill: ").strip()
+
+    services = []
+    while True:
+        raw = input("Enter service and amount separated by comma: ").strip()
+        try:
+            parts = raw.rsplit(",", 1)
+            name = parts[0].strip()
+            amount = float(parts[1].strip().replace("$", "").replace(",", ""))
+            if not name:
+                raise ValueError
+            services.append({"name": name, "amount": amount})
+        except (IndexError, ValueError):
+            print("  Invalid format. Try: Web Development, 1500")
+            continue
+
+        more = input("Do you want to add another service? (Y/N): ").strip().upper()
+        if more != "Y":
+            break
+
+    out_path = generate_invoice(company_name, services)
+    print(f"\nInvoice created successfully --> {out_path}")
