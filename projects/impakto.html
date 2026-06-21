@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impakto — 3D Shoe Configurator Case Study | TodayInTech</title>
+  <meta name="description" content="Read how TodayInTech built Impakto — an interactive, high-performance 3D shoe configurator using Three.js and WebGL. Enhance e-commerce engagement and reduce returns.">
+  <meta name="keywords" content="Three.js, WebGL, 3D web configurator, e-commerce 3D, product customizer, interactive website, custom development, TodayInTech">
+  <link rel="canonical" href="https://todayintech.in/projects/impakto.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Impakto — 3D Shoe Configurator | TodayInTech Case Study">
+  <meta property="og:description" content="How we built an interactive, high-performance 3D e-commerce configurator using Three.js and WebGL.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://todayintech.in/projects/impakto.html">
+  <meta property="og:image" content="https://todayintech.in/assets/project/impakto.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Impakto — 3D Shoe Configurator Case Study | TodayInTech">
+  <meta name="twitter:description" content="How we built an interactive, high-performance 3D configurator with Three.js and WebGL.">
+  <meta name="twitter:image" content="https://todayintech.in/assets/project/impakto.png">
+
+  <link rel="icon" type="image/png" href="../assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../liquid-glass.css">
+
+  <!-- Calendly -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Impakto — 3D Shoe Configurator Case Study",
+    "description": "How TodayInTech built a high-fidelity, interactive 3D shoe configurator using Three.js and WebGL for real-time customer personalization.",
+    "image": "https://todayintech.in/assets/project/impakto.png",
+    "author": { "@type": "Organization", "name": "TodayInTech" },
+    "publisher": { "@type": "Organization", "name": "TodayInTech", "logo": { "@type": "ImageObject", "url": "https://todayintech.in/assets/logo.png" } },
+    "datePublished": "2026-05-15",
+    "dateModified": "2026-06-20"
+  }
+  </script>
+
+  <script>
+    if (localStorage.getItem('lightMode') === 'enabled') {
+      document.documentElement.classList.add('light-mode');
+    }
+  </script>
+
+  <!-- Brand Specific Overrides -->
+  <style>
+    :root {
+      --brand-lime: #bffe00;
+      --brand-lime-hover: #a8e000;
+      --brand-lime-bg: rgba(191, 254, 0, 0.1);
+    }
+    .btn-brand-primary {
+      background: var(--brand-lime) !important;
+      color: #000000 !important;
+      font-weight: 700 !important;
+      box-shadow: 0 4px 20px rgba(191, 254, 0, 0.3) !important;
+      transition: all var(--transition-fast) ease !important;
+    }
+    .btn-brand-primary:hover {
+      background: var(--brand-lime-hover) !important;
+      transform: translateY(-2px) !important;
+      box-shadow: 0 6px 25px rgba(191, 254, 0, 0.4) !important;
+    }
+    .project-category.brand-tag {
+      background: var(--brand-lime-bg) !important;
+      color: var(--brand-lime) !important;
+      border: 1px solid rgba(191, 254, 0, 0.2) !important;
+    }
+    html.light-mode .project-category.brand-tag {
+      background: rgba(168, 224, 0, 0.1) !important;
+      color: #4f6b00 !important;
+      border: 1px solid rgba(168, 224, 0, 0.2) !important;
+    }
+    .tech-tag.brand-tech {
+      background: rgba(191, 254, 0, 0.05) !important;
+      border: 1px solid rgba(191, 254, 0, 0.15) !important;
+    }
+    .tech-tag.brand-tech:hover {
+      border-color: var(--brand-lime) !important;
+      color: var(--brand-lime) !important;
+    }
+    html.light-mode .tech-tag.brand-tech:hover {
+      border-color: #4f6b00 !important;
+      color: #4f6b00 !important;
+    }
+    .case-study-icon.brand-icon i {
+      color: var(--brand-lime) !important;
+    }
+    html.light-mode .case-study-icon.brand-icon i {
+      color: #4f6b00 !important;
+    }
+    .case-study-result .case-study-icon i {
+      color: var(--accent-green) !important;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <a href="../index.html" class="nav-logo">
+          <img src="../assets/logo.png" alt="TodayInTech Logo">
+          <span class="nav-logo-text">TodayInTech</span>
+        </a>
+        <div class="nav-links" id="navLinks">
+          <a href="../index.html#services">Services</a>
+          <a href="../index.html#portfolio">Portfolio</a>
+          <a href="../index.html#pricing">Pricing</a>
+          <a href="../index.html#contact">Contact</a>
+          <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme"><i class="fas fa-sun"></i></button>
+          <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;" class="nav-cta">Book Free Call</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-detail">
+      <div class="container">
+        <a href="../index.html#portfolio" class="back-link"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+
+        <div class="project-header">
+          <span class="project-category brand-tag">Three.js / WebGL / E-Commerce</span>
+          <h1>Impakto — 3D Shoe Configurator</h1>
+          <p class="project-tagline">Experience the future of footwear. A high-performance 3D configurator website built for Impakto, letting customers personalize smart shoes in real time with interactive WebGL models.</p>
+          <div class="project-actions">
+            <a href="https://impacto.todayintech.in" target="_blank" class="btn-brand-primary btn-primary">
+              <i class="fas fa-external-link-alt"></i> Visit Live Link
+            </a>
+            <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;" class="btn-secondary">
+              Build a 3D Configurator
+            </a>
+          </div>
+        </div>
+
+        <div class="project-hero-image">
+          <img src="../assets/project/impakto.png" alt="Impakto 3D Sneaker Customization Experience" loading="lazy">
+        </div>
+
+        <!-- ===== CASE STUDY: Problem → Solution → Result ===== -->
+        <div class="project-content">
+
+          <div class="case-study-grid">
+            <div class="case-study-card case-study-problem">
+              <div class="case-study-icon"><i class="fas fa-triangle-exclamation"></i></div>
+              <h2>The Problem</h2>
+              <p>Impakto launched India's first smart shoe, which features active step-tracking and built-in heat regulation. However, flat, static 2D product photos failed to convey the complex internal technology and advanced fabric structures of the shoe. Customers couldn't visualize the shoe from different angles, leading to hesitation, lower sales conversions, and high product return rates due to sizing or design mismatch.</p>
+              <ul>
+                <li>Standard 2D product photos lacked interactivity</li>
+                <li>Inability to highlight smart tech components (heaters, sensors)</li>
+                <li>Flat color selectors failed to show material textures</li>
+                <li>Hesitation leading to high cart abandonment rates</li>
+                <li>High product return rates from sizing/design mismatched expectations</li>
+              </ul>
+            </div>
+
+            <div class="case-study-card case-study-solution brand-card">
+              <div class="case-study-icon brand-icon"><i class="fas fa-lightbulb"></i></div>
+              <h2>Our Solution</h2>
+              <p>We engineered a real-time, interactive 3D web experience utilizing Three.js and WebGL. By designing a highly optimized custom rendering pipeline, we loaded a high-fidelity 3D sneaker model directly in the browser. We added 360-degree OrbitControls, smooth zoom limitations, and a custom color customizer that lets users click different shoe panels (laces, mesh, sole, accent) to change materials instantly with realistic lighting and shadow reflections.</p>
+              <ul>
+                <li>High-fidelity real-time 3D rendering with WebGL</li>
+                <li>Interactive 360° spin, drag, orbit, and zoom controls</li>
+                <li>Material and color configurator for custom shoe panels</li>
+                <li>Highlight annotations detailing inner sensors and smart features</li>
+                <li>Custom-baked ambient occlusion & soft shadow maps</li>
+                <li>GLTF texture compression for rapid loading times under 2 seconds</li>
+              </ul>
+            </div>
+
+            <div class="case-study-card case-study-result">
+              <div class="case-study-icon"><i class="fas fa-chart-line"></i></div>
+              <h2>The Result</h2>
+              <p>Integrating the 3D configurator completely transformed Impakto's e-commerce customer experience. The interactive engagement gave users the confidence to customize their footwear, driving brand excitement and dramatically reducing customer hesitation.</p>
+              <ul>
+                <li><strong>32%</strong> increase in average visitor session duration</li>
+                <li><strong>18%</strong> boost in e-commerce checkout conversion rate</li>
+                <li><strong>24%</strong> reduction in post-sale product returns</li>
+                <li><strong>Sub-2s</strong> initial 3D canvas loading on 4G connections</li>
+                <li><strong>60 FPS</strong> smooth rendering performance on mobile browsers</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-section">
+            <h2>Key Implementation Details</h2>
+            <div class="features-grid">
+              <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-cube"></i></div>
+                <h3>WebGL Rendering Pipeline</h3>
+                <p>Configured Three.js WebGLRenderer with high-precision shadow maps, physical-based rendering (PBR) materials, and realistic environmental lighting.</p>
+              </div>
+              <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-arrows-spin"></i></div>
+                <h3>Interactive 360° Controls</h3>
+                <p>Added custom OrbitControls with damping factors and limits on zoom and rotation to prevent the camera from clipping inside the sneaker model.</p>
+              </div>
+              <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-palette"></i></div>
+                <h3>Mesh Raycasting Configurator</h3>
+                <p>Implemented mouse-click raycasting to detect which specific shoe panel (e.g., sole, mesh, laces) the user clicked, opening targeted material options.</p>
+              </div>
+              <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-compress"></i></div>
+                <h3>GLTF Draco Compression</h3>
+                <p>Optimized the 3D shoe model from 45MB to 2.4MB using Draco compression and WebP textures, ensuring rapid mobile page loading.</p>
+              </div>
+              <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-circle-info"></i></div>
+                <h3>Smart Feature Annotations</h3>
+                <p>Injected HTML-overlay annotation hotspots that lock onto 3D coordinate vectors, letting users click to see smart sensor explanations.</p>
+              </div>
+              <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-gauge-high"></i></div>
+                <h3>FPS Optimization</h3>
+                <p>Engineered dynamic level-of-detail (LOD) rendering and texture downscaling for low-power mobile devices, guaranteeing stable 60 FPS.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-section">
+            <h2>Technology Stack</h2>
+            <div class="tech-stack-tags">
+              <span class="tech-tag brand-tech">Three.js</span>
+              <span class="tech-tag brand-tech">WebGL</span>
+              <span class="tech-tag brand-tech">GLSL Shaders</span>
+              <span class="tech-tag brand-tech">JavaScript (ES6)</span>
+              <span class="tech-tag brand-tech">Draco Loader</span>
+              <span class="tech-tag brand-tech">HTML5 Canvas</span>
+              <span class="tech-tag brand-tech">CSS3 Grid/Flex</span>
+              <span class="tech-tag brand-tech">Vercel</span>
+            </div>
+          </div>
+
+          <div class="project-section">
+            <h2>Project Stats</h2>
+            <div class="stats-card-grid" style="max-width:700px;">
+              <div class="stat-card">
+                <div class="stat-number">60 FPS</div>
+                <div class="stat-label">Smooth Mobile Render</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">2.4 MB</div>
+                <div class="stat-label">Compressed 3D Model</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">+32%</div>
+                <div class="stat-label">Session Duration</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">-24%</div>
+                <div class="stat-label">Product Returns</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-cta">
+            <h2>Want to Build a 3D Experience for Your Product?</h2>
+            <p>Elevate your e-commerce store with high-performance 3D visualization. Let us turn your static CAD models or product sketches into interactive, responsive WebGL customizers.</p>
+            <div class="cta-buttons">
+              <a href="https://impacto.todayintech.in" target="_blank" class="btn-brand-primary btn-primary">
+                <i class="fas fa-external-link-alt"></i> Visit Impakto Live
+              </a>
+              <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;" class="btn-secondary">
+                Book a Free Strategy Call
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/917679349780" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2024–2026 TodayInTech. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

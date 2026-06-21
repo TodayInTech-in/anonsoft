@@ -1639,3 +1639,192 @@
         justify-content: center;
     }
 }
+
+/* ==========================================================================
+   PRICING SECTION
+   ========================================================================== */
+.sms-pricing {
+    padding: var(--section-padding);
+    background-color: var(--sms-bg-light);
+    position: relative;
+    border-top: 1px solid rgba(13, 148, 136, 0.08);
+}
+
+.sms-pricing-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.sms-price-badge {
+    background-color: var(--sms-teal-bg);
+    color: var(--sms-teal);
+    padding: 6px 16px;
+    border-radius: 99px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.sms-pricing-header h2 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 800;
+    color: var(--sms-teal);
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+}
+
+.sms-pricing-header p {
+    color: var(--sms-text-muted);
+    font-size: 1.05rem;
+}
+
+.sms-pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: var(--container-max);
+    margin: 0 auto;
+}
+
+.sms-price-card {
+    background: #ffffff;
+    border: 1px solid rgba(13, 148, 136, 0.1);
+    border-radius: 16px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.sms-price-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-premium);
+    border-color: var(--sms-teal-light);
+}
+
+.sms-price-card-featured {
+    border-color: var(--sms-teal);
+    background: radial-gradient(120% 120% at 50% 0%, #ffffff 60%, var(--sms-teal-bg) 100%);
+    box-shadow: 0 20px 40px rgba(13, 148, 136, 0.08);
+}
+
+.sms-popular-ribbon {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--sms-teal);
+    color: #ffffff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 4px 16px;
+    border-radius: 99px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.sms-price-tier {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--sms-text);
+    margin-bottom: 12px;
+}
+
+.sms-price-cost {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.sms-setup-fee {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--sms-gold);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.sms-monthly-fee {
+    font-size: 1.2rem;
+    color: var(--sms-text-muted);
+    margin-top: 4px;
+}
+
+.sms-monthly-fee strong {
+    font-size: 2.5rem;
+    color: var(--sms-text);
+    font-weight: 800;
+}
+
+.sms-price-desc {
+    font-size: 0.92rem;
+    color: var(--sms-text-muted);
+    line-height: 1.5;
+    margin-bottom: 24px;
+    min-height: 44px;
+}
+
+.sms-price-features {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 35px;
+    flex-grow: 1;
+    list-style: none;
+    padding: 0;
+}
+
+.sms-price-features li {
+    font-size: 0.92rem;
+    color: var(--sms-text);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sms-price-features li i {
+    color: var(--sms-teal-light);
+    font-size: 0.85rem;
+}
+
+.sms-price-cta {
+    display: block;
+    text-align: center;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    background-color: #ffffff;
+    color: var(--sms-teal);
+    border: 1px solid var(--sms-teal);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.sms-price-cta:hover {
+    background-color: var(--sms-teal);
+    color: #ffffff;
+}
+
+.sms-price-cta-featured {
+    background-color: var(--sms-teal);
+    color: #ffffff;
+}
+
+.sms-price-cta-featured:hover {
+    background-color: var(--sms-teal-light);
+    border-color: var(--sms-teal-light);
+}
+
+@media (max-width: 991px) {
+    .sms-pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+    }
+}

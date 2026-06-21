@@ -241,12 +241,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
-  <url>
-    <loc>https://todayintech.in/blog/telemedicine-app-development-cost-breakdown-for-2026.html</loc>
-    <lastmod>2026-05-13T14:50:11.758938</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
 
   <url>
     <loc>https://todayintech.in/blog/machine-learning-for-diagnostic-accuracy.html</loc>
@@ -380,9 +374,9 @@
 
   <url>
     <loc>https://todayintech.in/blog/telemedicine-app-development-cost-breakdown-for-2026.html</loc>
-    <lastmod>2026-05-22T09:02:55.090520</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://todayintech.in/blog/agentic-ai-in-healthcare-software-development.html</loc>

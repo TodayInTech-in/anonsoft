@@ -2098,6 +2098,42 @@ html.light-mode .trust-certifications {
     .nav-toggle {
         display: flex;
     }
+
+    /* Fix mobile menu positioning when navbar is scrolled or has backdrop-filter/border-radius */
+    .navbar:has(.nav-links.active) {
+        left: 0 !important;
+        right: 0 !important;
+        top: 0 !important;
+        border-radius: 0 !important;
+        background: transparent !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    /* Close button color adjustments for contrast */
+    .navbar:has(.nav-links.active) .nav-toggle span {
+        background: #ffffff;
+    }
+    html.light-mode .navbar:has(.nav-links.active) .nav-toggle span {
+        background: #0f172a;
+    }
+
+    /* Mobile menu link contrast styles override */
+    .nav-links a:not(.nav-cta) {
+        color: rgba(255, 255, 255, 0.8) !important;
+    }
+    .nav-links a:not(.nav-cta):hover {
+        color: #ffffff !important;
+    }
+    
+    html.light-mode .nav-links a:not(.nav-cta) {
+        color: var(--text-secondary) !important;
+    }
+    html.light-mode .nav-links a:not(.nav-cta):hover {
+        color: var(--primary) !important;
+    }
 }
 
 @media (max-width: 768px) {
