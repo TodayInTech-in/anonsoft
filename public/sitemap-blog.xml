@@ -1,33 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://localhost/blog/2026-06-27-unlocking-the-future-of-healthcare-with-white-label-teleheal</loc>
+    <loc>https://localhost/blog/unlocking-the-future-of-healthcare-with-white-label-teleheal.html</loc>
     <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://localhost/blog/2026-06-27-ச-ம-ன-தம-ழ-ல-அதன-ம-க-க-யத-த</loc>
+    <loc>https://localhost/blog/unlocking-potential-the-benefits-of-white-label-telehealth-s.html</loc>
     <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://localhost/blog/2026-06-27-exploring-the-legacy-of-k-bhagyaraj-a-cinematic-icon</loc>
+    <loc>https://localhost/blog/unlocking-the-future-of-healthcare-with-white-label-teleheal.html</loc>
     <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://localhost/blog/2026-06-27-k-bhagyaraj-the-icon-of-tamil-cinema-and-his-enduring-legacy</loc>
+    <loc>https://localhost/blog/ச-ம-ன-தம-ழ-ல-அதன-ம-க-க-யத-த.html</loc>
     <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://localhost/blog/2026-06-27-the-legacy-of-bhagyaraj-a-pioneer-in-tamil-cinema</loc>
+    <loc>https://localhost/blog/exploring-the-legacy-of-k-bhagyaraj-a-cinematic-icon.html</loc>
     <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://localhost/blog/k-bhagyaraj-the-icon-of-tamil-cinema-and-his-enduring-legacy.html</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://localhost/blog/the-legacy-of-bhagyaraj-a-pioneer-in-tamil-cinema.html</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://localhost/public/feed.xml</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>
