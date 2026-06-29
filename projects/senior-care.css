@@ -1,0 +1,931 @@
+/* ===== SENIOR CARE AGENCY SYSTEM LANDING PAGE STYLES ===== */
+
+:root {
+    --sc-blue: #0284c7;
+    --sc-blue-dark: #0369a1;
+    --sc-blue-light: #e0f2fe;
+    --sc-blue-hover: #0284c7;
+    --sc-green: #22c55e;
+    --sc-green-dark: #16a34a;
+    --sc-green-light: #dcfce7;
+    --sc-text: #0f172a;
+    --sc-text-muted: #475569;
+    --sc-bg-light: #f8fafc;
+    
+    --shadow-premium: 0 20px 40px -15px rgba(2, 132, 199, 0.12), 0 15px 30px -20px rgba(0, 0, 0, 0.08);
+}
+
+/* ==========================================================================
+   1. PENCIL BANNER
+   ========================================================================== */
+.pencil-banner {
+    background-color: var(--sc-blue-light);
+    color: var(--sc-blue-dark);
+    padding: 10px 20px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1001;
+    text-align: center;
+    border-bottom: 1px solid rgba(2, 132, 199, 0.15);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.pencil-banner.hide {
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+}
+
+.pencil-banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.pencil-banner-btn {
+    background: var(--sc-blue-dark);
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 700;
+    transition: background-color 0.2s ease;
+    margin-left: 8px;
+}
+
+.pencil-banner-btn:hover {
+    background: #0c4a6e;
+}
+
+.pencil-banner-close {
+    background: none;
+    border: none;
+    color: var(--sc-blue-dark);
+    font-size: 1.1rem;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+    padding: 5px;
+}
+
+.pencil-banner-close:hover {
+    opacity: 1;
+}
+
+/* ==========================================================================
+   2. HERO SECTION
+   ========================================================================== */
+.sc-hero {
+    background: radial-gradient(109.41% 109.41% at 50% 50%, #fdfdfd 28.02%, #f0f9ff 100%);
+    padding: 140px 0 80px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.sc-hero::before {
+    content: '';
+    position: absolute;
+    top: -20%;
+    left: -10%;
+    width: 140%;
+    height: 140%;
+    background: radial-gradient(circle, rgba(2, 132, 199, 0.04) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.sc-hero .container {
+    max-width: 1000px;
+    position: relative;
+    z-index: 2;
+}
+
+.sc-hero h1 {
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: 800;
+    color: var(--sc-blue-dark);
+    line-height: 1.15;
+    margin-bottom: 24px;
+    letter-spacing: -0.03em;
+}
+
+.sc-hero p.tagline {
+    font-size: clamp(1.1rem, 2vw, 1.35rem);
+    color: var(--sc-text-muted);
+    max-width: 800px;
+    margin: 0 auto 36px;
+    line-height: 1.6;
+}
+
+.sc-hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.btn-sc-primary {
+    background-color: var(--sc-blue);
+    color: #fff;
+    font-weight: 700;
+    padding: 14px 32px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 14px rgba(2, 132, 199, 0.25);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-sc-primary:hover {
+    background-color: var(--sc-blue-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(2, 132, 199, 0.3);
+}
+
+.btn-sc-secondary {
+    background-color: #fff;
+    color: var(--sc-blue);
+    font-weight: 700;
+    padding: 14px 32px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid rgba(2, 132, 199, 0.15);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-sc-secondary:hover {
+    background-color: var(--sc-blue-light);
+    border-color: var(--sc-blue);
+    transform: translateY(-2px);
+}
+
+/* BROWSER FRAME MOCKUP */
+.browser-frame {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 25px 60px -15px rgba(0,0,0,0.12), 0 0 1px 1px rgba(0,0,0,0.05);
+    border: 1px solid rgba(2, 132, 199, 0.1);
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.browser-header {
+    background: #f1f5f9;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(2, 132, 199, 0.08);
+}
+
+.browser-dots {
+    display: flex;
+    gap: 6px;
+    margin-right: 20px;
+}
+
+.browser-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.browser-dot.red { background-color: #ef4444; }
+.browser-dot.yellow { background-color: #eab308; }
+.browser-dot.green { background-color: #22c55e; }
+
+.browser-address {
+    background: #fff;
+    border-radius: 6px;
+    padding: 4px 16px;
+    font-size: 0.75rem;
+    color: var(--sc-text-muted);
+    flex-grow: 1;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    border: 1px solid rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.browser-address i {
+    color: #10b981;
+}
+
+.browser-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ==========================================================================
+   3. INDUSTRY STRIP
+   ========================================================================== */
+.industry-strip {
+    background-color: #fff;
+    padding: 24px 0;
+    border-bottom: 1px solid rgba(2, 132, 199, 0.06);
+}
+
+.industry-strip-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.industry-item {
+    font-weight: 700;
+    color: var(--sc-text);
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.industry-item i {
+    color: var(--sc-blue);
+    font-size: 1.1rem;
+}
+
+/* ==========================================================================
+   4. FEATURE SHOWCASE
+   ========================================================================== */
+.sc-showcase {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.sc-showcase-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 60px;
+}
+
+.sc-badge {
+    background-color: var(--sc-blue-light);
+    color: var(--sc-blue-dark);
+    padding: 6px 16px;
+    border-radius: 99px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.sc-showcase-header h2 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 800;
+    color: var(--sc-blue-dark);
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+}
+
+.sc-showcase-header p {
+    color: var(--sc-text-muted);
+    font-size: 1.05rem;
+}
+
+.sc-showcase-list {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sc-showcase-item {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.sc-showcase-item.sc-reverse {
+    flex-direction: row-reverse;
+}
+
+.sc-showcase-info {
+    flex: 1;
+}
+
+.sc-showcase-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 12px;
+    background-color: var(--sc-blue-light);
+    color: var(--sc-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.sc-showcase-info h3 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--sc-text);
+    margin-bottom: 16px;
+}
+
+.sc-showcase-info p {
+    color: var(--sc-text-muted);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.sc-showcase-bullets {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0;
+    list-style: none;
+}
+
+.sc-showcase-bullets li {
+    font-weight: 500;
+    color: var(--sc-text);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sc-showcase-bullets li i {
+    color: var(--sc-green);
+}
+
+.sc-showcase-media {
+    flex: 1.2;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-premium);
+    border: 1px solid rgba(2, 132, 199, 0.08);
+}
+
+.sc-showcase-media img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.sc-showcase-media:hover img {
+    transform: scale(1.02);
+}
+
+/* ==========================================================================
+   5. OPERATIONAL EXCELLENCE / BENEFITS
+   ========================================================================== */
+.sc-benefits {
+    padding: 100px 0;
+    background-color: var(--sc-bg-light);
+    border-top: 1px solid rgba(2, 132, 199, 0.06);
+    border-bottom: 1px solid rgba(2, 132, 199, 0.06);
+}
+
+.sc-benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.sc-benefits-info {
+    position: sticky;
+    top: 100px;
+}
+
+.sc-benefits-info h2 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 800;
+    color: var(--sc-blue-dark);
+    margin-top: 16px;
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+}
+
+.sc-benefits-info p {
+    color: var(--sc-text-muted);
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.sc-benefits-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.sc-benefit-card {
+    background: #ffffff;
+    border: 1px solid rgba(2, 132, 199, 0.06);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.01);
+    transition: all 0.3s ease;
+}
+
+.sc-benefit-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(2, 132, 199, 0.05);
+    border-color: rgba(2, 132, 199, 0.2);
+}
+
+.sc-benefit-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    background-color: var(--sc-blue-light);
+    color: var(--sc-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+}
+
+.sc-benefit-text h4 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--sc-text);
+    margin-bottom: 8px;
+}
+
+.sc-benefit-text p {
+    font-size: 0.88rem;
+    color: var(--sc-text-muted);
+    line-height: 1.5;
+}
+
+/* ==========================================================================
+   6. PRICING SECTION
+   ========================================================================== */
+.sc-pricing {
+    padding: 100px 0;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.sc-pricing-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 60px;
+}
+
+.sc-price-badge {
+    background-color: var(--sc-blue-light);
+    color: var(--sc-blue-dark);
+    padding: 6px 16px;
+    border-radius: 99px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.sc-pricing-header h2 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 800;
+    color: var(--sc-blue-dark);
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+}
+
+.sc-pricing-header p {
+    color: var(--sc-text-muted);
+    font-size: 1.05rem;
+}
+
+.sc-pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sc-price-card {
+    background: #ffffff;
+    border: 1px solid rgba(2, 132, 199, 0.1);
+    border-radius: 16px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.sc-price-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-premium);
+    border-color: var(--sc-blue);
+}
+
+.sc-price-card-featured {
+    border-color: var(--sc-blue);
+    background: radial-gradient(120% 120% at 50% 0%, #ffffff 60%, var(--sc-blue-light) 100%);
+    box-shadow: 0 20px 40px rgba(2, 132, 199, 0.08);
+}
+
+.sc-popular-ribbon {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--sc-blue);
+    color: #ffffff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 4px 16px;
+    border-radius: 99px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.sc-price-tier {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--sc-text);
+    margin-bottom: 12px;
+}
+
+.sc-price-cost {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.sc-setup-fee {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--sc-blue-dark);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.sc-monthly-fee {
+    font-size: 1.2rem;
+    color: var(--sc-text-muted);
+    margin-top: 4px;
+}
+
+.sc-monthly-fee strong {
+    font-size: 2.5rem;
+    color: var(--sc-text);
+    font-weight: 800;
+}
+
+.sc-price-desc {
+    font-size: 0.92rem;
+    color: var(--sc-text-muted);
+    line-height: 1.5;
+    margin-bottom: 24px;
+    min-height: 44px;
+}
+
+.sc-price-features {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 35px;
+    flex-grow: 1;
+    list-style: none;
+    padding: 0;
+}
+
+.sc-price-features li {
+    font-size: 0.92rem;
+    color: var(--sc-text);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sc-price-features li i {
+    color: var(--sc-green);
+    font-size: 0.85rem;
+}
+
+.sc-feature-plus {
+    font-weight: 700;
+    color: var(--sc-blue-dark) !important;
+    font-size: 0.85rem !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.sc-price-cta {
+    display: block;
+    text-align: center;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    background-color: #ffffff;
+    color: var(--sc-blue-dark);
+    border: 1px solid var(--sc-blue-dark);
+    transition: all 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.sc-price-cta:hover {
+    background-color: var(--sc-blue-dark);
+    color: #ffffff;
+}
+
+.sc-price-cta-featured {
+    background-color: var(--sc-blue);
+    color: #ffffff;
+    border-color: var(--sc-blue);
+}
+
+.sc-price-cta-featured:hover {
+    background-color: var(--sc-blue-dark);
+    border-color: var(--sc-blue-dark);
+}
+
+/* ==========================================================================
+   7. ADDITIONAL SERVICES
+   ========================================================================== */
+.sc-addons {
+    padding: 80px 0;
+    background-color: var(--sc-bg-light);
+    border-top: 1px solid rgba(2, 132, 199, 0.06);
+    border-bottom: 1px solid rgba(2, 132, 199, 0.06);
+}
+
+.sc-addons-layout {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sc-addons-table-container {
+    background: #ffffff;
+    border: 1px solid rgba(2, 132, 199, 0.08);
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(2, 132, 199, 0.03);
+}
+
+.sc-addons-table-container h3 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--sc-blue-dark);
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.sc-addons-table-container p {
+    color: var(--sc-text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sc-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.sc-table th {
+    font-weight: 700;
+    color: var(--sc-text);
+    padding: 14px 16px;
+    border-bottom: 2px solid rgba(2, 132, 199, 0.1);
+    text-align: left;
+}
+
+.sc-table td {
+    padding: 16px;
+    border-bottom: 1px solid rgba(2, 132, 199, 0.06);
+    color: var(--sc-text);
+}
+
+.sc-table tr:last-child td {
+    border-bottom: none;
+}
+
+.sc-table tr:hover td {
+    background-color: rgba(2, 132, 199, 0.01);
+}
+
+/* ==========================================================================
+   8. PRE-FOOTER CTA SECTION
+   ========================================================================== */
+.sc-prefooter {
+    background: radial-gradient(109.41% 109.41% at 50% 50%, #f0f9ff 28.02%, #fdfdfd 100%);
+    padding: 80px 0;
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid rgba(2, 132, 199, 0.06);
+}
+
+.sc-prefooter-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.sc-prefooter-info h2 {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 800;
+    color: var(--sc-blue-dark);
+    margin-bottom: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.sc-prefooter-info p {
+    color: var(--sc-text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.sc-prefooter-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.btn-sc-gold {
+    background-color: var(--sc-blue);
+    color: #fff;
+    font-weight: 700;
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(2, 132, 199, 0.25);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+}
+
+.btn-sc-gold:hover {
+    background-color: var(--sc-blue-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(2, 132, 199, 0.3);
+}
+
+.btn-sc-gold-secondary {
+    background-color: #ffffff;
+    color: var(--sc-blue-dark);
+    font-weight: 700;
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid rgba(2, 132, 199, 0.15);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    text-decoration: none;
+}
+
+.btn-sc-gold-secondary:hover {
+    background-color: var(--sc-blue-light);
+    border-color: var(--sc-blue);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(2, 132, 199, 0.08);
+}
+
+.sc-prefooter-showcase {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-premium);
+    border: 1px solid rgba(2, 132, 199, 0.08);
+}
+
+.sc-prefooter-showcase img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ==========================================================================
+   9. RESPONSIVE MEDIA QUERIES
+   ========================================================================== */
+@media (max-width: 991px) {
+    .sc-showcase-item, .sc-showcase-item.sc-reverse {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .sc-showcase-media {
+        width: 100%;
+        max-width: 550px;
+    }
+    
+    .sc-benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .sc-benefits-info {
+        position: static;
+    }
+    
+    .sc-pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+    }
+    
+    .sc-prefooter-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .sc-prefooter-actions {
+        justify-content: center;
+    }
+    
+    .sc-prefooter-showcase {
+        max-width: 550px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .sc-hero {
+        padding: 100px 0 60px;
+    }
+    
+    .sc-benefits-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .sc-addons-table-container {
+        padding: 24px;
+    }
+    
+    .sc-table th, .sc-table td {
+        padding: 12px;
+        font-size: 0.88rem;
+    }
+    
+    .industry-strip-content {
+        gap: 16px 24px;
+    }
+    
+    .industry-item {
+        font-size: 0.85rem;
+    }
+    
+    .sc-hero-actions, .sc-prefooter-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .btn-sc-primary, .btn-sc-secondary, .btn-sc-gold, .btn-sc-gold-secondary {
+        justify-content: center;
+    }
+}
