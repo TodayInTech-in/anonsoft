@@ -1,73 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>http://localhost:3003 Blog</title>
-    <link>https://localhost</link>
-    <description>Latest blog posts from http://localhost:3003</description>
+    <title>https://www.todayintech.in Blog</title>
+    <link>https://www.todayintech.in</link>
+    <description>Latest blog posts from https://www.todayintech.in</description>
     <language>en-us</language>
-    <atom:link href="https://localhost/public/feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://www.todayintech.in/public/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Transform Your Congregation: The Ultimate Guide to Church Management Software</title>
+      <link>https://www.todayintech.in/blog/transform-your-congregation-the-ultimate-guide-to-church-man.html</link>
+      <description>Blog post about Church Management Software</description>
+      <pubDate>Mon, 29 Jun 2026 10:51:12 +0000</pubDate>
+      <guid isPermaLink="true">https://www.todayintech.in/blog/transform-your-congregation-the-ultimate-guide-to-church-man.html</guid>
+    </item>
     <item>
       <title>Unlocking Success with White Label Hotel Management Solutions</title>
-      <link>https://localhost/blog/unlocking-success-with-white-label-hotel-management-solution.html</link>
+      <link>https://www.todayintech.in/blog/unlocking-success-with-white-label-hotel-management-solution.html</link>
       <description>Blog post about White label hotel management</description>
       <pubDate>Sat, 27 Jun 2026 12:49:34 +0000</pubDate>
-      <guid isPermaLink="true">https://localhost/blog/unlocking-success-with-white-label-hotel-management-solution.html</guid>
+      <guid isPermaLink="true">https://www.todayintech.in/blog/unlocking-success-with-white-label-hotel-management-solution.html</guid>
     </item>
     <item>
       <title>Unlocking the Future of Healthcare: A Deep Dive into White Label Telehealth</title>
-      <link>https://localhost/blog/unlocking-the-future-of-healthcare-a-deep-dive-into-white-la.html</link>
+      <link>https://www.todayintech.in/blog/unlocking-the-future-of-healthcare-a-deep-dive-into-white-la.html</link>
       <description>Blog post about white label Telehealth</description>
       <pubDate>Sat, 27 Jun 2026 09:45:49 +0000</pubDate>
-      <guid isPermaLink="true">https://localhost/blog/unlocking-the-future-of-healthcare-a-deep-dive-into-white-la.html</guid>
+      <guid isPermaLink="true">https://www.todayintech.in/blog/unlocking-the-future-of-healthcare-a-deep-dive-into-white-la.html</guid>
     </item>
     <item>
       <title>Unlocking the Future of Healthcare with White Label Telehealth Solutions</title>
-      <link>https://localhost/blog/unlocking-the-future-of-healthcare-with-white-label-teleheal.html</link>
+      <link>https://www.todayintech.in/blog/unlocking-the-future-of-healthcare-with-white-label-teleheal.html</link>
       <description>Blog post about white label Telehealth</description>
       <pubDate>Sat, 27 Jun 2026 09:41:21 +0000</pubDate>
-      <guid isPermaLink="true">https://localhost/blog/unlocking-the-future-of-healthcare-with-white-label-teleheal.html</guid>
+      <guid isPermaLink="true">https://www.todayintech.in/blog/unlocking-the-future-of-healthcare-with-white-label-teleheal.html</guid>
     </item>
     <item>
       <title>Unlocking Potential: The Benefits of White Label Telehealth Solutions</title>
-      <link>https://localhost/blog/unlocking-potential-the-benefits-of-white-label-telehealth-s.html</link>
+      <link>https://www.todayintech.in/blog/unlocking-potential-the-benefits-of-white-label-telehealth-s.html</link>
       <description>Blog post about white label Telehealth</description>
       <pubDate>Sat, 27 Jun 2026 09:40:47 +0000</pubDate>
-      <guid isPermaLink="true">https://localhost/blog/unlocking-potential-the-benefits-of-white-label-telehealth-s.html</guid>
+      <guid isPermaLink="true">https://www.todayintech.in/blog/unlocking-potential-the-benefits-of-white-label-telehealth-s.html</guid>
     </item>
     <item>
       <title>Unlocking the Future of Healthcare with White Label Telehealth</title>
-      <link>https://localhost/blog/unlocking-the-future-of-healthcare-with-white-label-teleheal.html</link>
+      <link>https://www.todayintech.in/blog/unlocking-the-future-of-healthcare-with-white-label-teleheal.html</link>
       <description>Blog post about white label Telehealth</description>
       <pubDate>Sat, 27 Jun 2026 05:41:40 +0000</pubDate>
-      <guid isPermaLink="true">https://localhost/blog/unlocking-the-future-of-healthcare-with-white-label-teleheal.html</guid>
+      <guid isPermaLink="true">https://www.todayintech.in/blog/unlocking-the-future-of-healthcare-with-white-label-teleheal.html</guid>
     </item>
     <item>
       <title>சீமான்: தமிழில் அதன் முக்கியத்துவம் மற்றும் பயோபிராண்டிங்</title>
-      <link>https://localhost/blog/ச-ம-ன-தம-ழ-ல-அதன-ம-க-க-யத-த.html</link>
+      <link>https://www.todayintech.in/blog/ச-ம-ன-தம-ழ-ல-அதன-ம-க-க-யத-த.html</link>
       <description>Blog post about சீமான்</description>
       <pubDate>Sat, 27 Jun 2026 05:39:56 +0000</pubDate>
-      <guid isPermaLink="true">https://localhost/blog/ச-ம-ன-தம-ழ-ல-அதன-ம-க-க-யத-த.html</guid>
+      <guid isPermaLink="true">https://www.todayintech.in/blog/ச-ம-ன-தம-ழ-ல-அதன-ம-க-க-யத-த.html</guid>
     </item>
     <item>
       <title>Exploring the Legacy of K Bhagyaraj: A Cinematic Icon</title>
-      <link>https://localhost/blog/exploring-the-legacy-of-k-bhagyaraj-a-cinematic-icon.html</link>
+      <link>https://www.todayintech.in/blog/exploring-the-legacy-of-k-bhagyaraj-a-cinematic-icon.html</link>
       <description>Blog post about k bhagyaraj</description>
       <pubDate>Sat, 27 Jun 2026 05:21:48 +0000</pubDate>
-      <guid isPermaLink="true">https://localhost/blog/exploring-the-legacy-of-k-bhagyaraj-a-cinematic-icon.html</guid>
+      <guid isPermaLink="true">https://www.todayintech.in/blog/exploring-the-legacy-of-k-bhagyaraj-a-cinematic-icon.html</guid>
     </item>
     <item>
       <title>K. Bhagyaraj: The Icon of Tamil Cinema and His Enduring Legacy</title>
-      <link>https://localhost/blog/k-bhagyaraj-the-icon-of-tamil-cinema-and-his-enduring-legacy.html</link>
+      <link>https://www.todayintech.in/blog/k-bhagyaraj-the-icon-of-tamil-cinema-and-his-enduring-legacy.html</link>
       <description>Blog post about k bhagyaraj</description>
       <pubDate>Sat, 27 Jun 2026 05:20:37 +0000</pubDate>
-      <guid isPermaLink="true">https://localhost/blog/k-bhagyaraj-the-icon-of-tamil-cinema-and-his-enduring-legacy.html</guid>
+      <guid isPermaLink="true">https://www.todayintech.in/blog/k-bhagyaraj-the-icon-of-tamil-cinema-and-his-enduring-legacy.html</guid>
     </item>
     <item>
       <title>The Legacy of Bhagyaraj: A Pioneer in Tamil Cinema</title>
-      <link>https://localhost/blog/the-legacy-of-bhagyaraj-a-pioneer-in-tamil-cinema.html</link>
+      <link>https://www.todayintech.in/blog/the-legacy-of-bhagyaraj-a-pioneer-in-tamil-cinema.html</link>
       <description>Blog post about bhagyaraj</description>
       <pubDate>Sat, 27 Jun 2026 04:56:39 +0000</pubDate>
-      <guid isPermaLink="true">https://localhost/blog/the-legacy-of-bhagyaraj-a-pioneer-in-tamil-cinema.html</guid>
+      <guid isPermaLink="true">https://www.todayintech.in/blog/the-legacy-of-bhagyaraj-a-pioneer-in-tamil-cinema.html</guid>
     </item>
   </channel>
 </rss>
