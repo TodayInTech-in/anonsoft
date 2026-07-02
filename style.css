@@ -251,6 +251,7 @@ html.light-mode .navbar.scrolled .nav-links a:hover {
     position: relative;
     z-index: 1;
     display: block;
+    animation: logo-magnify 3s infinite ease-in-out;
 }
 
 /* Looping Shimmer effect over the logo left to right */
@@ -287,6 +288,21 @@ html.light-mode .navbar.scrolled .nav-links a:hover {
 
     100% {
         left: 150%;
+    }
+}
+
+@keyframes logo-magnify {
+    0% {
+        transform: scale(1);
+    }
+    15% {
+        transform: scale(1.08);
+    }
+    30% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
     }
 }
 
