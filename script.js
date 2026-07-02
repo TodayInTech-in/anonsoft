@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initPencilBanner();
     initHeroTabs();
     initStickyAnchorBar();
+    initGoogleAnalyticsTracking();
 });
 
 // ===== NAVBAR SCROLL EFFECT =====
@@ -645,3 +646,61 @@ function initStickyAnchorBar() {
         });
     });
 }
+
+// ===== GOOGLE ANALYTICS & CLICK TRACKING =====
+function initGoogleAnalyticsTracking() {
+    const gaMeasurementId = 'G-XXXXXXXXXX'; // Replace with actual Google Analytics Measurement ID
+
+    // 1. Inject GA4 global script if not already present
+    if (!window.gtag) {
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = `https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`;
+        document.head.appendChild(script);
+
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function() {
+            window.dataLayer.push(arguments);
+        };
+        window.gtag('js', new Date());
+        window.gtag('config', gaMeasurementId, {
+            send_page_view: true
+        });
+    }
+
+    // 2. Global Event Listener for Each and Every Click
+    document.body.addEventListener('click', (event) => {
+        // Track clicks on links, buttons, CTAs, and service/project cards
+        const target = event.target.closest('a, button, [role="button"], .service-card, .project-card, .btn-primary, .btn-secondary, .nav-cta, .whatsapp-float');
+        if (!target) return;
+
+        const text = target.innerText ? target.innerText.trim().substring(0, 100) : '';
+        const id = target.id || '';
+        const href = target.getAttribute('href') || '';
+        const className = target.className || '';
+        const category = target.closest('[data-service]') ? target.closest('[data-service]').getAttribute('data-service') : 'general';
+
+        // Prepare GA4 parameters
+        const eventParams = {
+            element_text: text,
+            element_id: id,
+            element_class: className,
+            element_href: href,
+            service_category: category,
+            page_path: window.location.pathname
+        };
+
+        // Send to GA4
+        if (typeof window.gtag === 'function') {
+            window.gtag('event', 'click_interaction', eventParams);
+        }
+
+        // Also push to GTM dataLayer
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            event: 'custom_click_event',
+            ...eventParams
+        });
+    });
+}
+
