@@ -264,17 +264,18 @@ html.light-mode .navbar.scrolled .nav-links a:hover {
     height: 100%;
     background: linear-gradient(
         to right,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(0, 212, 255, 0.3) 25%,
-        rgba(255, 255, 255, 0.95) 50%,
-        rgba(0, 212, 255, 0.3) 75%,
-        rgba(255, 255, 255, 0) 100%
+        rgba(28, 109, 222, 0) 0%,
+        rgba(28, 109, 222, 0.35) 25%,
+        rgba(15, 62, 128, 0.9) 50%,
+        rgba(28, 109, 222, 0.35) 75%,
+        rgba(28, 109, 222, 0) 100%
     );
     transform: skewX(-25deg);
-    z-index: 2;
+    z-index: 10;
     filter: blur(1px);
-    box-shadow: 0 0 12px rgba(0, 212, 255, 0.5);
+    box-shadow: 0 0 12px rgba(28, 109, 222, 0.6);
     animation: logo-shimmer 3s infinite linear;
+    pointer-events: none;
 }
 
 @keyframes logo-shimmer {
