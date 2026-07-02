@@ -245,8 +245,8 @@ html.light-mode .navbar.scrolled .nav-links a:hover {
 }
 
 .nav-logo img {
-    height: 38px;
-    width: 300px;
+    height: 48px;
+    width: auto;
     border-radius: 0;
     position: relative;
     z-index: 1;
