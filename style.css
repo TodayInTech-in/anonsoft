@@ -238,12 +238,48 @@ html.light-mode .navbar.scrolled .nav-links a:hover {
     align-items: center;
     gap: 12px;
     z-index: 1001;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .nav-logo img {
     width: 42px;
     height: 42px;
     border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Looping Shimmer effect over the logo left to right */
+.nav-logo::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.4) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: skewX(-20deg);
+    z-index: 2;
+    animation: logo-shimmer 3s infinite linear;
+}
+
+@keyframes logo-shimmer {
+    0% {
+        left: -150%;
+    }
+    30% {
+        left: 150%;
+    }
+    100% {
+        left: 150%;
+    }
 }
 
 .nav-logo-text {
