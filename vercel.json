@@ -1,4 +1,21 @@
 {
+  "redirects": [
+    {
+      "source": "/blog/unlocking-potential-the-benefits-of-white-label-telehealth-s.html",
+      "destination": "/blog/white-label-telehealth-platform-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-future-of-healthcare-a-deep-dive-into-white-la.html",
+      "destination": "/blog/white-label-telehealth-platform-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-future-of-healthcare-with-white-label-teleheal.html",
+      "destination": "/blog/white-label-telehealth-platform-guide.html",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",
