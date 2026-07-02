@@ -48,3 +48,17 @@ This document logs the hourly automated competitor SEO analysis, keyword ranking
 
 ---
 
+## Keyword Audit: "branded patient portal app builder"
+- **Category**: 1. Telehealth & Telemedicine Software
+- **Status**: Not in Top 10
+
+### Competitor Analysis Overview
+1. Competitor Landscape: Led by specialized white-label portal platforms (Medrics, Wellify, Curoflow, Doccure) and no-code builders (Knack, Adalo).
+2. Positioning Strategy: Emphasizes app store publication assistance, database templates, and patient journey customizations.
+
+### Strategic Action Plan
+1. Optimized projects/mednowna.html features grid to target the "Branded Patient Portal App" keyword and App Store deployment. (Applied!)
+2. Ensured sitemap and internal footers link directly to the landing page.
+
+---
+
