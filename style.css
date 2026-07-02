@@ -244,11 +244,12 @@ html.light-mode .navbar.scrolled .nav-links a:hover {
 }
 
 .nav-logo img {
-    width: 42px;
-    height: 42px;
-    border-radius: 10px;
+    height: 38px;
+    width: auto;
+    border-radius: 0;
     position: relative;
     z-index: 1;
+    display: block;
 }
 
 /* Looping Shimmer effect over the logo left to right */
