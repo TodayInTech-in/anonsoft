@@ -61,6 +61,20 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://todayintech.in/agents/</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://todayintech.in/bookademo/</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- ===== PROJECTS ===== -->
   <url>
     <loc>https://todayintech.in/projects/inventory-billing.html</loc>
