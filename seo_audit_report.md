@@ -260,3 +260,34 @@ Completed: Added a standalone vs. EHR integrated comparison grid detailing clini
 
 ---
 
+## Keyword Audit: "white-label school ERP software"
+- **Category**: 2. School Management & Campus ERP
+- **Status**: Not in Top 10
+
+### 1. Top 10 Ranking Websites
+1. Proctur (proctur.com)
+2. Schoolhub Tech (schoolhub.tech)
+3. Hyperlocal Cloud (hyperlocalcloud.com)
+4. Classe365 (classe365.com)
+5. Genius Edusoft (geniusedusoft.com)
+6. GoSchoolify (goschoolify.com)
+7. MyLeadingCampus (myleadingcampus.com)
+8. Entab (entab.in)
+9. Vaps Tech (vapstech.com)
+
+### 2. Competitor SEO Strategy Analysis
+- Competitors outline reseller benefits (rebranding dashboard/apps, zero R&D costs, partner commissions).
+- Incorporate explicit reselling keywords inside structured FAQ modules.
+
+### 3. Our Website Gaps & Loopholes
+- projects/school-management-system.html targeted direct school administration setups but lacked any pathway or copy addressing resellers/IT consultants.
+
+### 4. Detailed Implementation Plan
+- Task 1: Add a dedicated partnership block for white-label reselling options to projects/school-management-system.html.
+- Task 2: Insert a targeted FAQ accordion item addressing reseller partnerships.
+
+### 5. Implementation Status
+Completed: Added the white-label reseller partner program section and updated the FAQs in projects/school-management-system.html detailing rebranded mobile apps and domains.
+
+---
+
