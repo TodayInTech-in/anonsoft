@@ -319,3 +319,35 @@ Completed: Optimized the reseller partner program section on projects/school-man
 
 ---
 
+## Keyword Audit: "custom student portal app development"
+- **Category**: 2. School Management & Campus ERP
+- **Status**: Not in Top 10
+
+### 1. Top 10 Ranking Websites
+1. Anyforsoft (anyforsoft.com)
+2. Onest Tech (onesttech.com)
+3. Ingeniux (ingeniux.com)
+4. Softr (softr.io)
+5. Classter (classter.com)
+6. Mindfire (mindfiresolutions.com)
+7. Knack (knack.com)
+8. Mindbowser (mindbowser.com)
+9. Appsmith (appsmith.com)
+10. Caspio (caspio.com)
+
+### 2. Competitor SEO Strategy Analysis
+- Competitors explain core portal layers: SIS/LMS database bridges, personalized student analytics, and administrative payments.
+- Outline multiple development approaches (low-code vs. full bespoke frameworks).
+
+### 3. Our Website Gaps & Loopholes
+- projects/school-management-system.html featured student portals as a side item inside lists but lacked any dedicated copy/grid explaining custom mobile student portal engineering.
+
+### 4. Detailed Implementation Plan
+- Task 1: Insert a dedicated features section for "Custom Student Portal App Development" into projects/school-management-system.html.
+- Task 2: Verify code links.
+
+### 5. Implementation Status
+Completed: Added a detailed custom student portal app development block in projects/school-management-system.html outlining schedule tracking, Stripe invoicing, and communications.
+
+---
+
