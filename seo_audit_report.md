@@ -351,3 +351,32 @@ Completed: Added a detailed custom student portal app development block in proje
 
 ---
 
+## Keyword Audit: "multi-branch school management software"
+- **Category**: 2. School Management & Campus ERP
+- **Status**: Not in Top 10
+
+### 1. Top 10 Ranking Websites
+1. Proctur (proctur.com)
+2. DreamClass (dreamclass.io)
+3. SWEEDU (sweedu.com)
+4. Classter (classter.com)
+5. Vidyalaya (vidyalayaschoolsoftware.com)
+6. EduOpus (eduopus.com)
+7. Genius Edusoft (geniusedusoft.com)
+
+### 2. Competitor SEO Strategy Analysis
+- Competitors contrast central administration dashboards with campus-specific fee configurations.
+- Emphasize multi-currency, localized grading formats, and unified financial ledgers.
+
+### 3. Our Website Gaps & Loopholes
+- blog/how-to-choose-erp-for-multi-branch-schools.html used generic terms like "ERP for Multi-Branch Schools" instead of targeting "multi-branch school management software" explicitly.
+
+### 4. Detailed Implementation Plan
+- Task 1: Update title tag, main H1 header, intro paragraph, and subheadings in the target blog post to target "multi-branch school management software".
+- Task 2: Verify links across files.
+
+### 5. Implementation Status
+Completed: Optimized blog/how-to-choose-erp-for-multi-branch-schools.html by targeting multi-branch school management software copy and schema markup.
+
+---
+
