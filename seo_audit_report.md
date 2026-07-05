@@ -412,3 +412,34 @@ Completed: Optimized projects/school-management-system.html metadata, page title
 
 ---
 
+## Keyword Audit: "white label student information system SIS"
+- **Category**: 2. School Management & Campus ERP
+- **Status**: Not in Top 10
+
+### 1. Top 10 Ranking Websites
+1. TrainerCentral (trainercentral.com)
+2. SchoolHub (schoolhub.tech)
+3. Classe365 (classe365.com)
+4. Accredible (accredible.com)
+5. SmartSchool (smartschoolonline.in)
+6. Mykademy (mykademy.com)
+7. Folio3 (folio3.com)
+8. AgileSoftLabs (agilesoftlabs.com)
+9. FullFabric (fullfabric.com)
+
+### 2. Competitor SEO Strategy Analysis
+- Competitors emphasize agency capabilities (custom domains, custom logins, parent/student profiles).
+- Incorporate the term "Student Information System" alongside "SIS" repeatedly.
+
+### 3. Our Website Gaps & Loopholes
+- projects/school-management-system.html described reselling options but did not use the terms "student information system SIS" or "white label" in targeted headings.
+
+### 4. Detailed Implementation Plan
+- Task 1: Update partner section heading in projects/school-management-system.html to lead with "White Label Student Information System (SIS)".
+- Task 2: Update copy to target custom domain options.
+
+### 5. Implementation Status
+Completed: Optimized projects/school-management-system.html partner program headings and description targeting white label student information system SIS.
+
+---
+
