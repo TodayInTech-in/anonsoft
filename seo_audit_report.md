@@ -291,3 +291,31 @@ Completed: Added the white-label reseller partner program section and updated th
 
 ---
 
+## Keyword Audit: "school ERP software for resellers"
+- **Category**: 2. School Management & Campus ERP
+- **Status**: Not in Top 10
+
+### 1. Top 10 Ranking Websites
+1. Campus 365 (campus365.io)
+2. Vidyalaya (vidyalayaschoolsoftware.com)
+3. Genius Edusoft (geniusedusoft.com)
+4. Web School (web-school.in)
+5. ShuleKeeper (shulekeeper.com)
+6. School ERP India (schoolerpindia.com)
+
+### 2. Competitor SEO Strategy Analysis
+- Competitors outline partner models (White-Label, Channel Reseller, OEM).
+- Detail support resources (Partner Dashboards, Sales Collaterals, technical certifications).
+
+### 3. Our Website Gaps & Loopholes
+- projects/school-management-system.html had reseller program details under the "white-label" term but did not explicitly target the "reseller software" query phrase.
+
+### 4. Detailed Implementation Plan
+- Task 1: Update EdTech Partner Program copy to include the exact phrase "school ERP software for resellers".
+- Task 2: Verify links across internal files.
+
+### 5. Implementation Status
+Completed: Optimized the reseller partner program section on projects/school-management-system.html to target school ERP software resellers.
+
+---
+
