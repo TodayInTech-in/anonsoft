@@ -1,0 +1,34 @@
+# TodayInTech
+
+> A premier software development agency specializing in scalable custom software, HIPAA-compliant virtual care solutions, 3D product configurators, and EdTech platforms.
+
+## Core Pages
+
+- [TodayInTech Homepage](https://todayintech.in/): We help startups and businesses launch scalable software products quickly. SaaS, AI tools, mobile apps — production-ready in weeks. Book a free strategy call.
+- [Branded Wellness & Fitness App Development](https://todayintech.in/wellness-platform-development.html): Build a branded wellness app your members will actually use. Wearable integrations, nutrition tracking, live classes, and community features — faster and cheaper than custom. Get your free wellness app roadmap.
+- [Healthcare SaaS MVP Development](https://todayintech.in/healthcare-saas-mvp-development.html): Build a funded-ready healthcare SaaS MVP in 8 weeks. Scalable architecture, HIPAA compliance, and prior FDA/healthcare experience. Ideal for health-tech founders and pre-seed startups.
+- [White-Label Telemedicine Software for Clinics](https://todayintech.in/telemedicine-software-for-clinics.html): Launch a HIPAA-compliant, branded telemedicine experience for your clinic in 30 days. Epic/Cerner integration, no per-provider licensing fees. Book a free consultation.
+
+## Services & Projects
+
+- [AI Community College — Learn AI Step by Step | Case Study](https://todayintech.in/projects/ai-community.html): How we built a structured AI learning platform with 52 chapters and multi-language support.
+- [Campus Management System ERP & School ERP](https://todayintech.in/projects/school-management-system.html): Unify admissions, student directories, online fee collections, gradebooks, rosters, and parent portals in a secure, custom-engineered school ERP platform.
+- [Church Management Software for End-to-End Church Operations](https://todayintech.in/projects/church-management-software.html): Unify tithing, member databases, safety check-ins, volunteer plans, and accounting ledger sheets in a secure, custom-engineered platform.
+- [Custom Telemedicine Software Development | HIPAA Compliant](https://todayintech.in/projects/mednowna.html): We build secure, HIPAA-compliant custom telehealth applications with EHR integration and video consultations.
+- [Impakto — 3D Shoe Configurator Case Study](https://todayintech.in/projects/impakto.html): How we built an interactive, high-performance 3D e-commerce configurator using Three.js and WebGL.
+- [Master AI: GPT Magic in Hand | AI Mobile App Case Study](https://todayintech.in/projects/master-ai.html): Case study: How we built a premium AI assistant app integrating GPT-4 and Claude 3.5 for iOS and Android.
+- [NexBotix — Multi-Channel Marketing AI | Case Study](https://todayintech.in/projects/nexbotix.html): How we built a multi-channel marketing platform unifying WhatsApp, email, and AI chatbots into one powerful system.
+- [Radio Stiming — Live Radio Streaming Platform | Case Study](https://todayintech.in/projects/radio-station.html): How we built a live radio streaming platform reaching 100,000+ monthly listeners with real-time engagement features.
+- [Restaurant Management System & White-Label POS](https://todayintech.in/projects/restaurant-management-system.html): Deploy a custom-branded restaurant ERP with touch-screen POS, kitchen orders, delivery dispatch, GPS rider tracking, inventory control, and owner analytics.
+- [Senior Care Agency Software & Home Care ERP](https://todayintech.in/projects/senior-care-agency.html): Deploy a custom-branded home care ERP with caregiver scheduling, EVV compliance, automated billing, and a secure family portal.
+- [VocalFlow — AI Text to Speech Tool | Case Study](https://todayintech.in/projects/vocal-flow.html): How we built a free AI text-to-speech tool with 300+ voices and 50+ languages — no sign-up required.
+- [White-Label Inventory & Billing Software | Custom SaaS Solutions](https://todayintech.in/projects/inventory-billing.html): Deploy a complete, fully white-label inventory and billing platform — stock, invoicing, and sales tracking, ready to rebrand.
+
+## Featured Blog Articles
+
+- [5G Applications in Healthcare](https://todayintech.in/blog/5g-applications-in-healthcare.html): Complete guide on 5g applications in healthcare. Learn about development process, best practices, cost analysis, and implementation strategies for healthcare organizations in 2026.
+- [AI Clinical Workflow Automation: The $300B Healthcare Opportunity in 2026](https://todayintech.in/blog/ai-clinical-workflow-automation-healthcare-2026.html): How AI ambient documentation, agentic workflows, and clinical automation are transforming US healthcare — and how to build these systems with a HIPAA-compliant tech stack.
+- [AI Medical Scribe Software Development in 2026](https://todayintech.in/blog/ai-medical-scribe-software-development-in-2026.html): Complete guide on ai medical scribe software development in 2026. Learn about development process, best practices, cost analysis, and implementation strategies for healthcare organizations in 2026.
+- [AI Medical Scribe Software Development in 2026: Complete Guide for US Clinics](https://todayintech.in/blog/ai-medical-scribe-software-development-2026.html): Learn how to build a HIPAA-compliant ambient AI scribe for US clinics — architecture, LLM choice, EHR integration, pricing benchmarks, and go-to-market strategy.
+- [AI-Powered Healthcare Software Development: Top Trends for US Clinics & Health Startups in 2026](https://todayintech.in/blog/ai-powered-healthcare-software-trends-usa-2026.html): The top AI and digital health software trends transforming US healthcare in 2026 — and how to build HIPAA-compliant platforms faster with TodayInTech.
+- [Full Directory of Articles](https://todayintech.in/llms-full.txt): Comprehensive listing of all technical insights and blog posts.
