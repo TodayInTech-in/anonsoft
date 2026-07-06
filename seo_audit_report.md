@@ -640,3 +640,30 @@ Completed: Optimized projects/inventory-billing.html white-label feature descrip
 
 ---
 
+## Keyword Audit: "custom inventory management software"
+- **Category**: 3. Inventory & Billing Software
+- **Status**: Not in Top 10
+
+### 1. Top 10 Ranking Websites
+1. Diceus (diceus.com)
+2. Syberry (syberry.com)
+3. Itransition (itransition.com)
+4. IBR Infotech (ibrinfotech.com)
+5. Softr (softr.io)
+6. Zoho Creator (zoho.com)
+
+### 2. Competitor SEO Strategy Analysis
+- Competitors contrast rigid SaaS with custom-tailored database designs, multi-warehouse serial counting, and automated barcodes.
+
+### 3. Our Website Gaps & Loopholes
+- projects/inventory-billing.html focused mostly on invoicing templates rather than detailing warehouse custom tracking mechanisms.
+
+### 4. Detailed Implementation Plan
+- Task 1: Update the first card in the features grid on projects/inventory-billing.html to target "custom inventory management software".
+- Task 2: Outline batch/serial scanning and multi-warehouse operations.
+
+### 5. Implementation Status
+Completed: Optimized projects/inventory-billing.html main inventory feature card title and copy targeting custom inventory management software.
+
+---
+
