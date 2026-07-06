@@ -55,8 +55,74 @@ def parse_html_file(file_path):
     
     return title, description
 
+def clean_html_tags(text):
+    text = re.sub(r'<[^>]+>', '', text)
+    text = re.sub(r'\s+', ' ', text)
+    return text.strip()
+
+def parse_project_details(file_path):
+    with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
+        content = f.read()
+        
+    details = {}
+    
+    # Extract Problem/Challenge
+    prob_match = re.search(r'case-study-problem">.*?<h2>(.*?)</h2>.*?<p>(.*?)</p>(.*?)(?:</div>|\s*<div\s+class\s*=)', content, re.DOTALL)
+    if prob_match:
+        title = prob_match.group(1).strip()
+        desc = clean_html_tags(prob_match.group(2))
+        bullets = re.findall(r'<li>(.*?)</li>', prob_match.group(3), re.DOTALL)
+        details['problem'] = {
+            'title': title,
+            'description': desc,
+            'bullets': [clean_html_tags(b) for b in bullets]
+        }
+        
+    # Extract Solution
+    sol_match = re.search(r'case-study-solution">.*?<h2>(.*?)</h2>.*?<p>(.*?)</p>(.*?)(?:</div>|\s*<div\s+class\s*=)', content, re.DOTALL)
+    if sol_match:
+        title = sol_match.group(1).strip()
+        desc = clean_html_tags(sol_match.group(2))
+        bullets = re.findall(r'<li>(.*?)</li>', sol_match.group(3), re.DOTALL)
+        details['solution'] = {
+            'title': title,
+            'description': desc,
+            'bullets': [clean_html_tags(b) for b in bullets]
+        }
+
+    # Extract Results
+    res_match = re.search(r'case-study-result">.*?<h2>(.*?)</h2>.*?<p>(.*?)</p>(.*?)(?:</div>|\s*<div\s+class\s*=)', content, re.DOTALL)
+    if res_match:
+        title = res_match.group(1).strip()
+        desc = clean_html_tags(res_match.group(2))
+        bullets = re.findall(r'<li>(.*?)</li>', res_match.group(3), re.DOTALL)
+        details['results'] = {
+            'title': title,
+            'description': desc,
+            'bullets': [clean_html_tags(b) for b in bullets]
+        }
+        
+    # Extract Key Features
+    features = []
+    feature_blocks = re.findall(r'<div class="feature-card">.*?<h3>(.*?)</h3>.*?<p>(.*?)</p>', content, re.DOTALL)
+    for title, desc in feature_blocks:
+        features.append((title.strip(), clean_html_tags(desc)))
+    details['features'] = features
+    
+    # Extract Tech Stack
+    tech_tags = re.findall(r'<span class="tech-tag">(.*?)</span>', content)
+    if not tech_tags:
+        port_tech = re.search(r'class=["\'](?:portfolio-tech|tech-stack-tags|tech-stack)["\']>(.*?)</div>', content, re.DOTALL)
+        if port_tech:
+            tech_tags = re.findall(r'<span>(.*?)</span>', port_tech.group(1))
+            if not tech_tags:
+                tech_tags = re.findall(r'class="tech-tag">(.*?)</span>', port_tech.group(1))
+    
+    details['tech_stack'] = [t.strip() for t in tech_tags if len(t.strip()) < 40]
+    
+    return details
+
 def clean_url_ext(url):
-    # Remove .html extension and resolve index/ folder index
     if url.endswith("/index.html") or url.endswith("/index"):
         return url.rsplit("/index", 1)[0] + "/"
     if url.endswith(".html"):
@@ -85,7 +151,7 @@ def generate_llms_files(root_dir):
             
     core_pages.sort(key=lambda x: (x[1] != f"{domain}/", x[0]))
 
-    # 2. Parse projects directory
+    # 2. Parse projects directory and extract rich case study metadata
     projects_dir = os.path.join(root_dir, "projects")
     if os.path.isdir(projects_dir):
         for entry in os.scandir(projects_dir):
@@ -95,7 +161,11 @@ def generate_llms_files(root_dir):
                 title, desc = parse_html_file(entry.path)
                 url = f"{domain}/projects/{entry.name}"
                 url = clean_url_ext(url)
-                projects.append((title, url, desc))
+                
+                # Fetch rich parsed data
+                case_study_data = parse_project_details(entry.path)
+                
+                projects.append((title, url, desc, case_study_data))
     projects.sort(key=lambda x: x[0])
 
     # 3. Parse blog directory
@@ -113,17 +183,18 @@ def generate_llms_files(root_dir):
                 blogs.append((title, url, desc))
     blogs.sort(key=lambda x: x[0])
 
-    # Build standard llms.txt
+    # Build standard llms.txt (Compact metadata)
     llms_content = []
     llms_content.append("# TodayInTech\n")
     llms_content.append("> A premier software development agency specializing in scalable custom software, HIPAA-compliant virtual care solutions, 3D product configurators, and EdTech platforms.\n")
     llms_content.append("This is the main directory of the TodayInTech website, custom software solutions, and case studies, optimized for AI models, search crawlers, and LLM interpretation. Here you will find direct links to our key services, active portfolios, and engineering insights.\n")
+    
     llms_content.append("## Core Pages\n")
     for title, url, desc in core_pages:
         llms_content.append(f"- [{title}]({url}): {desc}")
     
     llms_content.append("\n## Services & Projects\n")
-    for title, url, desc in projects:
+    for title, url, desc, _ in projects:
         llms_content.append(f"- [{title}]({url}): {desc}")
         
     llms_content.append("\n## Featured Blog Articles\n")
@@ -131,7 +202,7 @@ def generate_llms_files(root_dir):
         llms_content.append(f"- [{title}]({url}): {desc}")
     llms_content.append(f"- [Full Directory of Articles]({domain}/llms-full.txt): Comprehensive listing of all technical insights and blog posts.")
     
-    # Save llms.txt to root and public/
+    # Save llms.txt
     llms_txt_data = "\n".join(llms_content) + "\n"
     
     llms_path = os.path.join(root_dir, "llms.txt")
@@ -139,29 +210,68 @@ def generate_llms_files(root_dir):
         f.write(llms_txt_data)
         
     public_llms_path = os.path.join(root_dir, "public", "llms.txt")
-    os.makedirs(os.path.dirname(public_llms_path), exist_ok=True)
     with open(public_llms_path, "w", encoding="utf-8") as f:
         f.write(llms_txt_data)
     print(f"Generated {llms_path} and {public_llms_path}")
 
-    # Build comprehensive llms-full.txt
+    # Build comprehensive llms-full.txt (Extremely detailed specs for all projects)
     llms_full_content = []
     llms_full_content.append("# TodayInTech - Full Index\n")
     llms_full_content.append("> Comprehensive site listing of all TodayInTech pages and technical blog posts for AI agents and LLM crawlers.\n")
     llms_full_content.append("This is the comprehensive index of all resources, pages, active projects, and technical blog posts published by TodayInTech, optimized for full exploration by LLMs and search crawlers.\n")
+    
     llms_full_content.append("## Core Pages\n")
     for title, url, desc in core_pages:
         llms_full_content.append(f"- [{title}]({url}): {desc}")
         
     llms_full_content.append("\n## Services & Projects\n")
-    for title, url, desc in projects:
-        llms_full_content.append(f"- [{title}]({url}): {desc}")
+    for title, url, desc, details in projects:
+        llms_full_content.append(f"### [{title}]({url})")
+        llms_full_content.append(f"{desc}\n")
+        
+        if details:
+            # Technology Stack
+            if details.get('tech_stack'):
+                stack_str = ", ".join(details['tech_stack'])
+                llms_full_content.append(f"- **Technology Stack**: {stack_str}")
+                
+            # Problem/Challenge
+            if details.get('problem'):
+                p_title = details['problem']['title']
+                p_desc = details['problem']['description']
+                llms_full_content.append(f"- **{p_title}**: {p_desc}")
+                for bullet in details['problem']['bullets']:
+                    llms_full_content.append(f"  - {bullet}")
+                    
+            # Solution
+            if details.get('solution'):
+                s_title = details['solution']['title']
+                s_desc = details['solution']['description']
+                llms_full_content.append(f"- **{s_title}**: {s_desc}")
+                for bullet in details['solution']['bullets']:
+                    llms_full_content.append(f"  - {bullet}")
+                    
+            # Key Features
+            if details.get('features'):
+                llms_full_content.append("- **Key Features**:")
+                for f_title, f_desc in details['features']:
+                    llms_full_content.append(f"  - *{f_title}*: {f_desc}")
+                    
+            # Key Results
+            if details.get('results'):
+                r_title = details['results']['title']
+                r_desc = details['results']['description']
+                llms_full_content.append(f"- **{r_title}**: {r_desc}")
+                for bullet in details['results']['bullets']:
+                    llms_full_content.append(f"  - {bullet}")
+                    
+        llms_full_content.append("") # spacer between projects
         
     llms_full_content.append("\n## All Blog Articles\n")
     for title, url, desc in blogs:
         llms_full_content.append(f"- [{title}]({url}): {desc}")
         
-    # Save llms-full.txt to root and public/
+    # Save llms-full.txt
     llms_full_txt_data = "\n".join(llms_full_content) + "\n"
     
     llms_full_path = os.path.join(root_dir, "llms-full.txt")

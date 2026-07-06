@@ -13,18 +13,258 @@ This is the comprehensive index of all resources, pages, active projects, and te
 
 ## Services & Projects
 
-- [AI Community College — Learn AI Step by Step | Case Study](https://todayintech.in/projects/ai-community): How we built a structured AI learning platform with 52 chapters and multi-language support.
-- [Campus Management System ERP & School ERP](https://todayintech.in/projects/school-management-system): Unify admissions, student directories, online fee collections, gradebooks, rosters, and parent portals in a secure, custom-engineered school ERP platform.
-- [Church Management Software for End-to-End Church Operations](https://todayintech.in/projects/church-management-software): Unify tithing, member databases, safety check-ins, volunteer plans, and accounting ledger sheets in a secure, custom-engineered platform.
-- [Custom Telemedicine Software Development | HIPAA Compliant](https://todayintech.in/projects/mednowna): We build secure, HIPAA-compliant custom telehealth applications with EHR integration and video consultations.
-- [Impakto — 3D Shoe Configurator Case Study](https://todayintech.in/projects/impakto): How we built an interactive, high-performance 3D e-commerce configurator using Three.js and WebGL.
-- [Master AI: GPT Magic in Hand | AI Mobile App Case Study](https://todayintech.in/projects/master-ai): Case study: How we built a premium AI assistant app integrating GPT-4 and Claude 3.5 for iOS and Android.
-- [NexBotix — Multi-Channel Marketing AI | Case Study](https://todayintech.in/projects/nexbotix): How we built a multi-channel marketing platform unifying WhatsApp, email, and AI chatbots into one powerful system.
-- [Radio Stiming — Live Radio Streaming Platform | Case Study](https://todayintech.in/projects/radio-station): How we built a live radio streaming platform reaching 100,000+ monthly listeners with real-time engagement features.
-- [Restaurant Management System & White-Label POS](https://todayintech.in/projects/restaurant-management-system): Deploy a custom-branded restaurant ERP with touch-screen POS, kitchen orders, delivery dispatch, GPS rider tracking, inventory control, and owner analytics.
-- [Senior Care Agency Software & Home Care ERP](https://todayintech.in/projects/senior-care-agency): Deploy a custom-branded home care ERP with caregiver scheduling, EVV compliance, automated billing, and a secure family portal.
-- [VocalFlow — AI Text to Speech Tool | Case Study](https://todayintech.in/projects/vocal-flow): How we built a free AI text-to-speech tool with 300+ voices and 50+ languages — no sign-up required.
-- [White-Label Inventory & Billing Software | Custom SaaS Solutions](https://todayintech.in/projects/inventory-billing): Deploy a complete, fully white-label inventory and billing platform — stock, invoicing, and sales tracking, ready to rebrand.
+### [AI Community College — Learn AI Step by Step | Case Study](https://todayintech.in/projects/ai-community)
+How we built a structured AI learning platform with 52 chapters and multi-language support.
+
+- **Technology Stack**: React, Node.js, Prisma, PostgreSQL, AI Integration, i18n, Vercel
+- **The Problem**: There was a growing demand for practical AI education, but most existing resources were either too academic, too fragmented, or too expensive. Aspiring AI practitioners needed a structured learning path that took them from absolute beginner to hands-on expert — with real projects, not just theory. Additionally, non-English speakers were largely excluded from quality AI education.
+  - No structured, beginner-friendly AI curriculum available for free
+  - Existing courses were theory-heavy with no hands-on projects
+  - Language barrier — most AI content was English-only
+  - No community support for learners to help each other
+- **Our Solution**: We built AI Community College — a comprehensive learning platform with 52 structured chapters covering everything from AI fundamentals to advanced deep learning. The platform includes multi-language support, a community feed for discussion and collaboration, progress tracking, and an admin moderation system. Each chapter combines theory with practical exercises and real-world projects.
+  - 52 structured chapters from beginner to expert level
+  - Multi-language content support for global accessibility
+  - Community feed with posts, discussions, and peer support
+  - Progress tracking and chapter completion system
+  - Admin moderation and content management dashboard
+  - Hands-on projects and real-world exercises in every chapter
+- **Key Features**:
+  - *Structured Curriculum*: 52 chapters organized from fundamentals to advanced topics with clear learning objectives.
+  - *Multi-Language Support*: Content available in multiple languages to make AI education globally accessible.
+  - *Community Feed*: Discussion board for learners to share progress, ask questions, and collaborate.
+  - *Progress Tracking*: Visual progress indicators and chapter completion tracking for every learner.
+  - *Hands-On Projects*: Real-world exercises and projects in every chapter for practical learning.
+  - *Admin Moderation*: Content management and moderation tools for maintaining quality discussions.
+- **The Result**: AI Community College has become a go-to resource for AI learners worldwide. The platform attracted thousands of learners within weeks of launch, with strong engagement metrics and community participation.
+  - 5,000+ registered learners in the first 3 months
+  - 52 structured chapters with hands-on projects
+  - 4 languages supported at launch
+  - 85% chapter completion rate (vs. 15% industry average)
+  - Active community with 1,000+ posts and discussions
+
+### [Campus Management System ERP & School ERP](https://todayintech.in/projects/school-management-system)
+Unify admissions, student directories, online fee collections, gradebooks, rosters, and parent portals in a secure, custom-engineered school ERP platform.
+
+
+### [Church Management Software for End-to-End Church Operations](https://todayintech.in/projects/church-management-software)
+Unify tithing, member databases, safety check-ins, volunteer plans, and accounting ledger sheets in a secure, custom-engineered platform.
+
+
+### [Custom Telemedicine Software Development | HIPAA Compliant](https://todayintech.in/projects/mednowna)
+We build secure, HIPAA-compliant custom telehealth applications with EHR integration and video consultations.
+
+- **Technology Stack**: React Native, Python, PostgreSQL, Docker, WebRTC, AWS, HL7/FHIR
+- **The Problem**: The client, a healthcare startup in the Philippines, needed a full-featured telehealth platform to connect patients with doctors remotely. Existing solutions were either too expensive to license or lacked critical features like HIPAA-compliant video calls, e-prescriptions, and integration with local healthcare systems. They needed a custom platform that could be launched quickly and scaled as the business grew.
+  - No affordable HIPAA-compliant telehealth solution available
+  - Manual appointment booking via phone calls
+  - Paper-based prescriptions and patient records
+  - No way for patients to consult doctors remotely
+- **Our Solution**: We built Mednowna from the ground up — a comprehensive telehealth platform with secure HD video consultations, digital appointment scheduling, electronic health records, e-prescriptions with pharmacy integration, and a cross-platform mobile app. The entire system was designed to be HIPAA-compliant with end-to-end encryption and role-based access controls.
+  - Secure WebRTC-based video consultations with adaptive bitrate
+  - Digital appointment scheduling with automated reminders
+  - Electronic health records and patient history management
+  - E-prescription system with pharmacy network integration
+  - Cross-platform apps for iOS, Android, and web
+  - HIPAA-compliant architecture with AES-256 encryption
+- **Key Features**:
+  - *Secure Video Consultations*: HD video calls with end-to-end encryption for private patient-doctor consultations.
+  - *Appointment Scheduling*: Easy booking system with automated reminders and calendar integration.
+  - *Electronic Health Records*: Complete patient history, lab results, and medical documents in one place.
+  - *E-Prescriptions*: Digital prescription management with pharmacy integration.
+  - *HIPAA Compliant Video Consultation*: Enterprise-grade HIPAA compliant video consultation software with AES-256 end-to-end encryption, MFA, detailed access logs, and BAA (Business Associate Agreement) signing ready.
+  - *Branded Patient Portal App*: Deploy a fully branded mobile app on iOS and Android app stores, customized to your agency workflows.
+- **The Result**: Mednowna launched successfully and quickly became the client's primary healthcare delivery channel. The platform eliminated paper-based workflows, reduced appointment no-shows, and enabled the client to serve patients across the country rather than just within clinic proximity.
+  - 80% reduction in appointment no-shows
+  - 3x increase in daily patient consultations
+  - 100% paperless prescription and record management
+  - 4 weeks from kickoff to MVP launch
+  - Zero data breaches — fully HIPAA compliant
+
+### [Impakto — 3D Shoe Configurator Case Study](https://todayintech.in/projects/impakto)
+How we built an interactive, high-performance 3D e-commerce configurator using Three.js and WebGL.
+
+- **The Problem**: Impakto launched India's first smart shoe, which features active step-tracking and built-in heat regulation. However, flat, static 2D product photos failed to convey the complex internal technology and advanced fabric structures of the shoe. Customers couldn't visualize the shoe from different angles, leading to hesitation, lower sales conversions, and high product return rates due to sizing or design mismatch.
+  - Standard 2D product photos lacked interactivity
+  - Inability to highlight smart tech components (heaters, sensors)
+  - Flat color selectors failed to show material textures
+  - Hesitation leading to high cart abandonment rates
+  - High product return rates from sizing/design mismatched expectations
+- **Key Features**:
+  - *WebGL Rendering Pipeline*: Configured Three.js WebGLRenderer with high-precision shadow maps, physical-based rendering (PBR) materials, and realistic environmental lighting.
+  - *Interactive 360° Controls*: Added custom OrbitControls with damping factors and limits on zoom and rotation to prevent the camera from clipping inside the sneaker model.
+  - *Mesh Raycasting Configurator*: Implemented mouse-click raycasting to detect which specific shoe panel (e.g., sole, mesh, laces) the user clicked, opening targeted material options.
+  - *GLTF Draco Compression*: Optimized the 3D shoe model from 45MB to 2.4MB using Draco compression and WebP textures, ensuring rapid mobile page loading.
+  - *Smart Feature Annotations*: Injected HTML-overlay annotation hotspots that lock onto 3D coordinate vectors, letting users click to see smart sensor explanations.
+  - *FPS Optimization*: Engineered dynamic level-of-detail (LOD) rendering and texture downscaling for low-power mobile devices, guaranteeing stable 60 FPS.
+- **The Result**: Integrating the 3D configurator completely transformed Impakto's e-commerce customer experience. The interactive engagement gave users the confidence to customize their footwear, driving brand excitement and dramatically reducing customer hesitation.
+  - 32% increase in average visitor session duration
+  - 18% boost in e-commerce checkout conversion rate
+  - 24% reduction in post-sale product returns
+  - Sub-2s initial 3D canvas loading on 4G connections
+  - 60 FPS smooth rendering performance on mobile browsers
+
+### [Master AI: GPT Magic in Hand | AI Mobile App Case Study](https://todayintech.in/projects/master-ai)
+Case study: How we built a premium AI assistant app integrating GPT-4 and Claude 3.5 for iOS and Android.
+
+- **Technology Stack**: Flutter, Dart, OpenAI API (GPT-4), Anthropic API (Claude 3.5), Node.js, Express, PostgreSQL, AWS ECS, Docker
+- **The Challenge**: AI technology is advancing rapidly, but accessing these tools on mobile remains fragmented and difficult for daily users. Consumers had to download multiple heavy apps for different workflows (e.g., chat, script generation, code fixing, or translations), paying costly recurring subscriptions for each. The challenge was to package complex large language models (LLMs) into a single, high-performance, and gorgeous mobile interface that anyone can use instantly.
+  - Fragmented user experience across multiple single-purpose AI tools
+  - Complex prompt engineering required for high-quality content output
+  - Slow mobile response times and high latency over API calls
+  - Lack of intuitive, pre-built workflows for social media creators
+- **Our Solution**: TodayInTech engineered Master AI—a native, lightweight mobile application integrating GPT-4 and Claude 3.5 via a unified API gateway. We built specialized workflow modules directly into the client interface, enabling users to generate ready-to-post viral scripts, fix programming bugs, translate between 50+ languages, and chat with AI in real-time, all with one tap.
+  - Unified API gateway dynamically routing requests to GPT-4, Claude 3.5, or Gemini
+  - "Go Viral" engine with pre-optimized prompts for social media scripts and copy
+  - Stream parsing responses for near-instant (under 1.2s) text rendering
+  - Secure local caching of chat history for offline retrieval
+  - Elegant dark-mode UI with smooth glassmorphism effects
+- **Key Features**:
+  - *Intelligent AI Chat*: Natural, contextual conversations powered by a hybrid network of GPT-4 and Claude 3.5.
+  - *Go Viral Scriptwriter*: One-tap content creator that outputs high-engagement hooks, scripts, and captions for social media.
+  - *Programming Assistant*: Write, refactor, and debug code snippets on the go across major languages like Python, JS, and C++.
+  - *Smart Translation*: Translate and learn languages with contextual explanations and grammatical insights.
+  - *Smart Model Routing*: Our custom backend routes tasks to the best-suited LLM, optimizing response speed and quality.
+  - *Premium Aesthetics*: Dark mode interface built with modern typography, glowing micro-animations, and fluid transitions.
+- **The Results**: Master AI successfully launched on the Google Play Store, quickly gaining traction among content creators, students, and software developers. The app stands as a showcase of TodayInTech's ability to engineer, wrap, and deploy state-of-the-art AI technology into customer-ready mobile products.
+  - 500+ Active Downloads on Google Play Store within weeks of launch
+  - 4.8/5 Star Rating from early users
+  - Under 1.2 Seconds average response latency using stream chunking
+  - 100% Native Feel utilizing optimized Flutter cross-platform architecture
+  - Zero Downtime achieved through automated multi-model failover routing
+
+### [NexBotix — Multi-Channel Marketing AI | Case Study](https://todayintech.in/projects/nexbotix)
+How we built a multi-channel marketing platform unifying WhatsApp, email, and AI chatbots into one powerful system.
+
+- **Technology Stack**: React, Node.js, WhatsApp Business API, OpenAI GPT, MongoDB, SMTP Integration, REST API, AWS
+- **The Problem**: Small and medium-sized businesses were struggling with fragmented marketing tools. They were using separate platforms for WhatsApp messaging, email campaigns, and customer support — leading to data silos, inconsistent messaging, and wasted time switching between tools. Most affordable solutions lacked AI capabilities, and enterprise tools were too expensive for growing businesses.
+  - Marketing spread across 4+ disconnected tools
+  - No unified view of customer interactions
+  - Manual lead follow-ups resulting in lost opportunities
+  - No AI-powered automation for customer engagement
+- **Our Solution**: We built NexBotix — a unified multi-channel marketing platform that combines WhatsApp Business API integration, professional email campaigns with SMTP support, and AI-powered website chatbots into a single dashboard. The platform includes contact management, campaign analytics, automated follow-ups, and a drag-and-drop chatbot builder.
+  - WhatsApp Business API integration for bulk messaging and automation
+  - Professional email campaign builder with templates and analytics
+  - AI-powered website chatbot with custom training
+  - Unified contact management and CRM
+  - Campaign performance analytics and reporting
+  - Automated lead scoring and follow-up sequences
+- **Key Features**:
+  - *WhatsApp Marketing*: Bulk messaging, automated replies, and template-based campaigns through WhatsApp Business API.
+  - *Email Campaigns*: Professional email builder with templates, scheduling, and detailed delivery analytics.
+  - *AI Website Chatbot*: Custom-trained AI chatbot that answers visitor questions and captures leads automatically.
+  - *Contact Management*: Unified CRM for managing all customer interactions across every channel.
+  - *Campaign Analytics*: Real-time dashboards showing open rates, click-through rates, and conversion metrics.
+  - *Automated Follow-Ups*: Smart sequences that automatically follow up with leads based on their behaviour.
+- **The Result**: NexBotix is now used by multiple businesses to manage their entire marketing operations from one platform. Clients have reported significant improvements in lead conversion, response times, and overall marketing efficiency.
+  - 3x increase in lead conversion rates
+  - 70% reduction in response time with AI chatbot
+  - 85% less time spent managing marketing tools
+  - 40% higher email open rates with optimized campaigns
+  - Single dashboard replacing 4+ separate tools
+
+### [Radio Stiming — Live Radio Streaming Platform | Case Study](https://todayintech.in/projects/radio-station)
+How we built a live radio streaming platform reaching 100,000+ monthly listeners with real-time engagement features.
+
+- **Technology Stack**: React, Node.js, WebSocket, Audio Streaming API, MongoDB, Vercel, Responsive CSS
+- **The Problem**: The client operated a growing radio station with 5+ years on air but had no online presence. Their entire operation — show scheduling, listener engagement, song requests, and host profiles — was managed manually through spreadsheets and phone calls. They were losing listeners to digital-first competitors and had no way to reach audiences beyond their FM signal range.
+  - No live streaming or web presence
+  - Manual show scheduling via spreadsheets
+  - No listener engagement or song request system
+  - Limited reach — FM only, no global audience
+- **Our Solution**: We designed and built a complete digital radio station platform from the ground up. The system includes real-time audio streaming, an automated show schedule with live status indicators, detailed DJ profiles, a listener song request system, a news and blog section, and a fully responsive mobile-first design — all wrapped in a premium dark-gold visual identity that matches the station's brand.
+  - Real-time audio streaming with persistent player
+  - Automated show scheduling with live/upcoming indicators
+  - Interactive song request and dedication system
+  - DJ profile pages with bios and show history
+  - News and blog management system
+  - Mobile-first responsive design
+- **Key Features**:
+  - *Live Audio Streaming*: 24/7 real-time audio streaming with adaptive bitrate for smooth playback on any connection.
+  - *Show Scheduling*: Automated weekly schedule with live status indicators, upcoming shows, and DJ assignments.
+  - *DJ Profiles*: Rich host profiles with bios, specialities, show history, and social media integration.
+  - *Song Request System*: Interactive request and dedication system that lets listeners participate in live shows.
+  - *News and Blog*: Built-in content management for station news, show announcements, and community updates.
+  - *Mobile-First Design*: Fully responsive interface optimized for listening on the go across all devices.
+- **The Result**: Within 3 months of launch, the station expanded its reach from a local FM audience to a global listener base. The platform now serves 100,000+ monthly listeners, hosts 14 live shows weekly with 6 expert DJs, and has completely eliminated manual scheduling overhead.
+  - 100,000+ monthly listeners (up from ~15,000 FM-only)
+  - 6x increase in audience reach
+  - 90% reduction in administrative overhead
+  - 500+ song requests processed weekly
+  - 24/7 automated live streaming with zero downtime
+
+### [Restaurant Management System & White-Label POS](https://todayintech.in/projects/restaurant-management-system)
+Deploy a custom-branded restaurant ERP with touch-screen POS, kitchen orders, delivery dispatch, GPS rider tracking, inventory control, and owner analytics.
+
+
+### [Senior Care Agency Software & Home Care ERP](https://todayintech.in/projects/senior-care-agency)
+Deploy a custom-branded home care ERP with caregiver scheduling, EVV compliance, automated billing, and a secure family portal.
+
+
+### [VocalFlow — AI Text to Speech Tool | Case Study](https://todayintech.in/projects/vocal-flow)
+How we built a free AI text-to-speech tool with 300+ voices and 50+ languages — no sign-up required.
+
+- **Technology Stack**: React, Web Speech API, JavaScript, CSS3, LocalStorage, Vercel, Open Source
+- **The Problem**: Content creators, educators, and small businesses needed high-quality voiceovers for their videos, courses, and presentations, but existing text-to-speech tools were either too expensive (charging per character), limited to a few robotic-sounding voices, or required lengthy sign-up processes. Most affordable options produced unnatural, monotone audio that was unusable for professional content.
+  - Premium TTS tools charge $30–$100+ per month
+  - Free alternatives sound robotic and unnatural
+  - Limited language support — most tools cover 5–10 languages only
+  - Mandatory sign-up and credit card requirements create friction
+  - No easy way to preview and compare different voices
+- **Our Solution**: We built VocalFlow — a completely free, open-source AI text-to-speech tool that runs directly in the browser. The platform leverages advanced speech synthesis APIs to offer 300+ natural-sounding voices across 50+ languages, with controls for pitch, speed, and volume. Users can type or paste up to 5,000 characters, preview different voices instantly, download audio files, and access their generation history — all without creating an account.
+  - 300+ natural-sounding AI voices across 50+ languages
+  - Adjustable pitch, speed, and volume controls
+  - Up to 5,000 characters per generation
+  - Instant voice preview and comparison
+  - Audio download in standard formats
+  - Generation history for quick access to past conversions
+  - Zero sign-up — works instantly in any browser
+- **Key Features**:
+  - *300+ AI Voices*: Choose from hundreds of natural-sounding voices — male, female, and neutral — across diverse accents and styles.
+  - *50+ Languages*: Generate speech in English, Spanish, French, Hindi, Arabic, Japanese, and dozens more languages.
+  - *Voice Customization*: Fine-tune pitch, speed, and volume to get exactly the voice and tone you need for your content.
+  - *Audio Download*: Download generated speech as audio files ready for use in videos, presentations, and podcasts.
+  - *Generation History*: Access and replay your past conversions without regenerating — saves time and effort.
+  - *Free and Open Source*: Completely free to use with no limits. Open-source codebase available for community contributions.
+- **The Result**: VocalFlow quickly gained traction among content creators, educators, and developers. Being free and open source made it a go-to alternative to paid tools, and the zero-friction experience (no sign-up) drove strong organic growth and word-of-mouth referrals.
+  - 10,000+ voiceovers generated in the first month
+  - 300+ AI voices available across 50+ languages
+  - Zero cost — completely free for all users
+  - 0 seconds onboarding — no sign-up required
+  - Open source — community contributions and transparency
+
+### [White-Label Inventory & Billing Software | Custom SaaS Solutions](https://todayintech.in/projects/inventory-billing)
+Deploy a complete, fully white-label inventory and billing platform — stock, invoicing, and sales tracking, ready to rebrand.
+
+- **Technology Stack**: React, Node.js, PostgreSQL, REST API, Multi-Tenant, White-Label, Vercel
+- **The Problem**: Small and mid-sized businesses struggle to keep stock levels, invoicing, and sales reporting in sync. Most rely on spreadsheets or disconnected tools that lead to stock-outs, billing errors, and zero visibility into what's actually selling. Off-the-shelf SaaS products are rigid, expensive per seat, and can't be rebranded — making them a non-starter for agencies and resellers who want to offer billing software under their own brand.
+  - Stock counts and sales data live in separate, unsynced spreadsheets
+  - Manual invoicing leads to errors and slow billing
+  - No real-time visibility into best-sellers or low-stock items
+  - Per-seat SaaS pricing becomes expensive as teams grow
+  - No way to rebrand existing tools for resale to clients
+- **Our Solution**: We built a premium white-label inventory software and billing platform that unifies stock tracking, invoicing, and sales analytics in one dashboard. Every element — logo, colors, domain, and branding — is configurable, so businesses and resellers can deploy it as their own product. The system handles GST-compliant billing, real-time stock tracking, multi-user roles, and detailed reporting out of the box.
+  - Real-time inventory tracking with low-stock alerts
+  - Professional, GST-compliant invoice & quotation generation
+  - Fully white-label — custom branding, colors, and domain
+  - Multi-user access with role-based permissions
+  - Sales, purchase, and tax reports with exportable data
+  - Customer and supplier management built in
+  - Ready to deploy for any business or reseller
+- **Key Features**:
+  - *Custom Inventory Management Software*: Our custom inventory management software tracks stock levels, serial numbers, and batches in real time, featuring low-stock triggers, multi-warehouse support, and automated barcode scanning.
+  - *Smart Billing & Invoicing*: Generate professional, GST-compliant invoices in seconds. Our retail billing app white label layout supports thermal printing, barcode scanner integration, and customized receipts.
+  - *Full White-Label*: Customize logo, colors, custom domain, and email SMTP servers. Run a highly scalable white-label invoicing SaaS platform under your own brand.
+  - *Multi-User Roles*: Give staff role-based access — admins, cashiers, and managers each see exactly what they need.
+  - *Reports & Analytics*: Detailed sales, purchase, and tax reports with exportable data to understand what's driving your business.
+  - *Customer & Supplier CRM*: Manage customers and suppliers, track balances, and keep a complete transaction history in one place.
+- **The Result**: The platform gave businesses a single source of truth for stock and billing, eliminating manual reconciliation and slashing invoicing time. Its white-label architecture turned it into a ready-to-resell product, opening a new revenue stream for agencies and distributors who deploy it under their own brand.
+  - Real-time stock and sales synced in one dashboard
+  - GST-ready invoicing in a few clicks
+  - 100% white-label — deploy under any brand
+  - Multi-user role-based access for whole teams
+  - Reseller-ready — a new revenue stream for partners
+
 
 ## All Blog Articles
 
