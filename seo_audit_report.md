@@ -528,3 +528,31 @@ Completed: Optimized the hero tagline and suite section headings in projects/sch
 
 ---
 
+## Keyword Audit: "white-label inventory software"
+- **Category**: 3. Inventory & Billing Software
+- **Status**: Not in Top 10
+
+### 1. Top 10 Ranking Websites
+1. Softr (softr.io)
+2. Noloco (noloco.io)
+3. Knack (knack.com)
+4. SkuVault (skuvault.com)
+5. Orderhive (orderhive.com)
+6. DEAR Systems (dearsystems.com)
+
+### 2. Competitor SEO Strategy Analysis
+- Competitors outline benefits of white-labeling (rebranding dashboards, custom domain connections, zero infrastructure R&D).
+- Target agencies, logistics consultants, and startup founders seeking SaaS resale.
+
+### 3. Our Website Gaps & Loopholes
+- projects/inventory-billing.html described general invoice ledgers and stock counts but did not target the "white-label inventory software" query phrase prominently.
+
+### 4. Detailed Implementation Plan
+- Task 1: Update the hero tagline on projects/inventory-billing.html to feature the keyword white-label inventory software.
+- Task 2: Update the Solution description text to use the target phrase.
+
+### 5. Implementation Status
+Completed: Optimized projects/inventory-billing.html tagline and solution descriptions to target white-label inventory software.
+
+---
+
