@@ -15,6 +15,16 @@
       "source": "/blog/unlocking-the-future-of-healthcare-with-white-label-teleheal.html",
       "destination": "/blog/white-label-telehealth-platform-guide",
       "permanent": true
+    },
+    {
+      "source": "/llms-full",
+      "destination": "/llms-full.txt",
+      "permanent": true
+    },
+    {
+      "source": "/llms",
+      "destination": "/llms.txt",
+      "permanent": true
     }
   ]
 }
