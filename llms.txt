@@ -2,6 +2,8 @@
 
 > A premier software development agency specializing in scalable custom software, HIPAA-compliant virtual care solutions, 3D product configurators, and EdTech platforms.
 
+This is the main directory of the TodayInTech website, custom software solutions, and case studies, optimized for AI models, search crawlers, and LLM interpretation. Here you will find direct links to our key services, active portfolios, and engineering insights.
+
 ## Core Pages
 
 - [TodayInTech Homepage](https://todayintech.in/): We help startups and businesses launch scalable software products quickly. SaaS, AI tools, mobile apps — production-ready in weeks. Book a free strategy call.

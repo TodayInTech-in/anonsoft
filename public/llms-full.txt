@@ -1,6 +1,8 @@
 # TodayInTech - Full Index
 
-> Comprehensive site listing for AI agents and LLM crawlers.
+> Comprehensive site listing of all TodayInTech pages and technical blog posts for AI agents and LLM crawlers.
+
+This is the comprehensive index of all resources, pages, active projects, and technical blog posts published by TodayInTech, optimized for full exploration by LLMs and search crawlers.
 
 ## Core Pages
 

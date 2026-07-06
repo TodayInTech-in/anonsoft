@@ -117,7 +117,7 @@ def generate_llms_files(root_dir):
     llms_content = []
     llms_content.append("# TodayInTech\n")
     llms_content.append("> A premier software development agency specializing in scalable custom software, HIPAA-compliant virtual care solutions, 3D product configurators, and EdTech platforms.\n")
-    
+    llms_content.append("This is the main directory of the TodayInTech website, custom software solutions, and case studies, optimized for AI models, search crawlers, and LLM interpretation. Here you will find direct links to our key services, active portfolios, and engineering insights.\n")
     llms_content.append("## Core Pages\n")
     for title, url, desc in core_pages:
         llms_content.append(f"- [{title}]({url}): {desc}")
@@ -147,8 +147,8 @@ def generate_llms_files(root_dir):
     # Build comprehensive llms-full.txt
     llms_full_content = []
     llms_full_content.append("# TodayInTech - Full Index\n")
-    llms_full_content.append("> Comprehensive site listing for AI agents and LLM crawlers.\n")
-    
+    llms_full_content.append("> Comprehensive site listing of all TodayInTech pages and technical blog posts for AI agents and LLM crawlers.\n")
+    llms_full_content.append("This is the comprehensive index of all resources, pages, active projects, and technical blog posts published by TodayInTech, optimized for full exploration by LLMs and search crawlers.\n")
     llms_full_content.append("## Core Pages\n")
     for title, url, desc in core_pages:
         llms_full_content.append(f"- [{title}]({url}): {desc}")
