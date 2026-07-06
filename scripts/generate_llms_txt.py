@@ -129,7 +129,7 @@ def generate_llms_files(root_dir):
     llms_content.append("\n## Featured Blog Articles\n")
     for title, url, desc in blogs[:5]:
         llms_content.append(f"- [{title}]({url}): {desc}")
-    llms_content.append(f"- [Full Directory of Articles]({domain}/llms-full): Comprehensive listing of all technical insights and blog posts.")
+    llms_content.append(f"- [Full Directory of Articles]({domain}/llms-full.txt): Comprehensive listing of all technical insights and blog posts.")
     
     # Save llms.txt to root and public/
     llms_txt_data = "\n".join(llms_content) + "\n"
