@@ -104,6 +104,38 @@ How we built an interactive, high-performance 3D e-commerce configurator using T
   - Sub-2s initial 3D canvas loading on 4G connections
   - 60 FPS smooth rendering performance on mobile browsers
 
+### [Inventory and Billing SaaS Platform | White-Label](https://todayintech.in/projects/inventory-billing)
+Deploy a complete, fully white-label inventory and billing platform — stock, invoicing, and sales tracking, ready to rebrand.
+
+- **Technology Stack**: React, Node.js, PostgreSQL, REST API, Multi-Tenant, White-Label, Vercel
+- **The Problem**: Small and mid-sized businesses struggle to keep stock levels, invoicing, and sales reporting in sync. Most rely on spreadsheets or disconnected tools that lead to stock-outs, billing errors, and zero visibility into what's actually selling. Off-the-shelf SaaS products are rigid, expensive per seat, and can't be rebranded — making them a non-starter for agencies and resellers who want to offer billing software under their own brand.
+  - Stock counts and sales data live in separate, unsynced spreadsheets
+  - Manual invoicing leads to errors and slow billing
+  - No real-time visibility into best-sellers or low-stock items
+  - Per-seat SaaS pricing becomes expensive as teams grow
+  - No way to rebrand existing tools for resale to clients
+- **Our Solution**: We built a premium white-label inventory software and billing platform that unifies stock tracking, invoicing, and sales analytics in one dashboard. Every element — logo, colors, domain, and branding — is configurable, so businesses and resellers can deploy it as their own product. The system handles GST-compliant billing, real-time stock tracking, multi-user roles, and detailed reporting out of the box.
+  - Real-time multi-warehouse inventory software custom setups with cross-location transfers
+  - Professional, GST-compliant invoice & quotation generation
+  - Fully white-label — custom branding, colors, and domain
+  - Multi-user access with role-based permissions
+  - Sales, purchase, and tax reports with exportable data
+  - Customer and supplier management built in
+  - Ready to deploy for any business or reseller
+- **Key Features**:
+  - *Custom Inventory Management Software*: Our custom inventory management software tracks stock levels, serial numbers, and batches in real time, featuring low-stock triggers, multi-warehouse support, and automated barcode scanning.
+  - *Smart Billing & Invoicing*: Generate professional, GST-compliant invoices in seconds. Our retail billing app white label layout supports thermal printing, barcode scanner integration, and customized receipts.
+  - *Full White-Label*: Customize logo, colors, custom domain, and email SMTP servers. Run a highly scalable white-label invoicing SaaS platform under your own brand.
+  - *Multi-User Roles*: Give staff role-based access — admins, cashiers, and managers each see exactly what they need.
+  - *Reports & Analytics*: Detailed sales, purchase, and tax reports with exportable data to understand what's driving your business.
+  - *Customer & Supplier CRM*: Manage customers and suppliers, track balances, and keep a complete transaction history in one place.
+- **The Result**: The platform gave businesses a single source of truth for stock and billing, eliminating manual reconciliation and slashing invoicing time. Its white-label architecture turned it into a ready-to-resell product, opening a new revenue stream for agencies and distributors who deploy it under their own brand.
+  - Real-time stock and sales synced in one dashboard
+  - GST-ready invoicing in a few clicks
+  - 100% white-label — deploy under any brand
+  - Multi-user role-based access for whole teams
+  - Reseller-ready — a new revenue stream for partners
+
 ### [Master AI: GPT Magic in Hand | AI Mobile App Case Study](https://todayintech.in/projects/master-ai)
 Case study: How we built a premium AI assistant app integrating GPT-4 and Claude 3.5 for iOS and Android.
 
@@ -232,38 +264,6 @@ How we built a free AI text-to-speech tool with 300+ voices and 50+ languages �
   - Zero cost — completely free for all users
   - 0 seconds onboarding — no sign-up required
   - Open source — community contributions and transparency
-
-### [White-Label Inventory & Billing Software | Custom SaaS Solutions](https://todayintech.in/projects/inventory-billing)
-Deploy a complete, fully white-label inventory and billing platform — stock, invoicing, and sales tracking, ready to rebrand.
-
-- **Technology Stack**: React, Node.js, PostgreSQL, REST API, Multi-Tenant, White-Label, Vercel
-- **The Problem**: Small and mid-sized businesses struggle to keep stock levels, invoicing, and sales reporting in sync. Most rely on spreadsheets or disconnected tools that lead to stock-outs, billing errors, and zero visibility into what's actually selling. Off-the-shelf SaaS products are rigid, expensive per seat, and can't be rebranded — making them a non-starter for agencies and resellers who want to offer billing software under their own brand.
-  - Stock counts and sales data live in separate, unsynced spreadsheets
-  - Manual invoicing leads to errors and slow billing
-  - No real-time visibility into best-sellers or low-stock items
-  - Per-seat SaaS pricing becomes expensive as teams grow
-  - No way to rebrand existing tools for resale to clients
-- **Our Solution**: We built a premium white-label inventory software and billing platform that unifies stock tracking, invoicing, and sales analytics in one dashboard. Every element — logo, colors, domain, and branding — is configurable, so businesses and resellers can deploy it as their own product. The system handles GST-compliant billing, real-time stock tracking, multi-user roles, and detailed reporting out of the box.
-  - Real-time multi-warehouse inventory software custom setups with cross-location transfers
-  - Professional, GST-compliant invoice & quotation generation
-  - Fully white-label — custom branding, colors, and domain
-  - Multi-user access with role-based permissions
-  - Sales, purchase, and tax reports with exportable data
-  - Customer and supplier management built in
-  - Ready to deploy for any business or reseller
-- **Key Features**:
-  - *Custom Inventory Management Software*: Our custom inventory management software tracks stock levels, serial numbers, and batches in real time, featuring low-stock triggers, multi-warehouse support, and automated barcode scanning.
-  - *Smart Billing & Invoicing*: Generate professional, GST-compliant invoices in seconds. Our retail billing app white label layout supports thermal printing, barcode scanner integration, and customized receipts.
-  - *Full White-Label*: Customize logo, colors, custom domain, and email SMTP servers. Run a highly scalable white-label invoicing SaaS platform under your own brand.
-  - *Multi-User Roles*: Give staff role-based access — admins, cashiers, and managers each see exactly what they need.
-  - *Reports & Analytics*: Detailed sales, purchase, and tax reports with exportable data to understand what's driving your business.
-  - *Customer & Supplier CRM*: Manage customers and suppliers, track balances, and keep a complete transaction history in one place.
-- **The Result**: The platform gave businesses a single source of truth for stock and billing, eliminating manual reconciliation and slashing invoicing time. Its white-label architecture turned it into a ready-to-resell product, opening a new revenue stream for agencies and distributors who deploy it under their own brand.
-  - Real-time stock and sales synced in one dashboard
-  - GST-ready invoicing in a few clicks
-  - 100% white-label — deploy under any brand
-  - Multi-user role-based access for whole teams
-  - Reseller-ready — a new revenue stream for partners
 
 
 ## All Blog Articles

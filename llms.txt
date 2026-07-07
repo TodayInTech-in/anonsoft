@@ -18,13 +18,13 @@ This is the main directory of the TodayInTech website, custom software solutions
 - [Church Management Software for End-to-End Church Operations](https://todayintech.in/projects/church-management-software): Unify tithing, member databases, safety check-ins, volunteer plans, and accounting ledger sheets in a secure, custom-engineered platform.
 - [Custom Telemedicine Software Development | HIPAA Compliant](https://todayintech.in/projects/mednowna): We build secure, HIPAA-compliant custom telehealth applications with EHR integration and video consultations.
 - [Impakto — 3D Shoe Configurator Case Study](https://todayintech.in/projects/impakto): How we built an interactive, high-performance 3D e-commerce configurator using Three.js and WebGL.
+- [Inventory and Billing SaaS Platform | White-Label](https://todayintech.in/projects/inventory-billing): Deploy a complete, fully white-label inventory and billing platform — stock, invoicing, and sales tracking, ready to rebrand.
 - [Master AI: GPT Magic in Hand | AI Mobile App Case Study](https://todayintech.in/projects/master-ai): Case study: How we built a premium AI assistant app integrating GPT-4 and Claude 3.5 for iOS and Android.
 - [NexBotix — Multi-Channel Marketing AI | Case Study](https://todayintech.in/projects/nexbotix): How we built a multi-channel marketing platform unifying WhatsApp, email, and AI chatbots into one powerful system.
 - [Radio Stiming — Live Radio Streaming Platform | Case Study](https://todayintech.in/projects/radio-station): How we built a live radio streaming platform reaching 100,000+ monthly listeners with real-time engagement features.
 - [Restaurant Management System & White-Label POS](https://todayintech.in/projects/restaurant-management-system): Deploy a custom-branded restaurant ERP with touch-screen POS, kitchen orders, delivery dispatch, GPS rider tracking, inventory control, and owner analytics.
 - [Senior Care Agency Software & Home Care ERP](https://todayintech.in/projects/senior-care-agency): Deploy a custom-branded home care ERP with caregiver scheduling, EVV compliance, automated billing, and a secure family portal.
 - [VocalFlow — AI Text to Speech Tool | Case Study](https://todayintech.in/projects/vocal-flow): How we built a free AI text-to-speech tool with 300+ voices and 50+ languages — no sign-up required.
-- [White-Label Inventory & Billing Software | Custom SaaS Solutions](https://todayintech.in/projects/inventory-billing): Deploy a complete, fully white-label inventory and billing platform — stock, invoicing, and sales tracking, ready to rebrand.
 
 ## Featured Blog Articles
 
