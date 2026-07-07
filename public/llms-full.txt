@@ -108,7 +108,7 @@ How we built an interactive, high-performance 3D e-commerce configurator using T
 Deploy a complete, fully white-label inventory and billing platform — stock, invoicing, and sales tracking, ready to rebrand.
 
 - **Technology Stack**: React, Node.js, PostgreSQL, REST API, Multi-Tenant, White-Label, Vercel
-- **The Problem**: Small and mid-sized businesses struggle to keep stock levels, invoicing, and sales reporting in sync. Most rely on spreadsheets or disconnected tools that lead to stock-outs, billing errors, and zero visibility into what's actually selling. Off-the-shelf SaaS products are rigid, expensive per seat, and can't be rebranded — making them a non-starter for agencies and resellers who want to offer billing software under their own brand.
+- **The Problem**: Small and mid-sized businesses struggle to keep stock levels, invoicing, and sales reporting in sync. Most rely on spreadsheets or disconnected tools that lead to stock-outs, billing errors, and zero visibility into what's actually selling. Without custom stock management software, off-the-shelf SaaS products are rigid, expensive per seat, and can't be rebranded — making them a non-starter for agencies and resellers who want to offer billing software under their own brand.
   - Stock counts and sales data live in separate, unsynced spreadsheets
   - Manual invoicing leads to errors and slow billing
   - No real-time visibility into best-sellers or low-stock items
