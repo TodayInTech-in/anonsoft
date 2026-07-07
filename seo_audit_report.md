@@ -976,3 +976,30 @@ Completed: Optimized projects/restaurant-management-system.html inventory featur
 
 ---
 
+## Keyword Audit: "white label table ordering system"
+- **Category**: 4. Restaurant POS & Kitchen ERP
+- **Status**: Not in Top 10
+
+### 1. Top 10 Ranking Websites
+1. WebShure (webshure.com)
+2. Liven (liven.love)
+3. ChowNow (chownow.com)
+4. Yo!Yumm (yoyumm.com)
+5. Gegsy (gegsy.com)
+6. GloriaFood (gloriafood.com)
+
+### 2. Competitor SEO Strategy Analysis
+- Competitors focus on QR-based menus, tableside payment routing, seat turnaround metrics, and labor cost savings.
+
+### 3. Our Website Gaps & Loopholes
+- projects/restaurant-management-system.html described general floor maps but didn't target "white label table ordering system" or details of direct customer checkout.
+
+### 4. Detailed Implementation Plan
+- Task 1: Update the tableside feature card heading on projects/restaurant-management-system.html to "White Label Table Ordering System".
+- Task 2: Update the description to target tableside QR orders and payment splits.
+
+### 5. Implementation Status
+Completed: Optimized projects/restaurant-management-system.html tableside card to target white label table ordering system.
+
+---
+
