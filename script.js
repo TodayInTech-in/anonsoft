@@ -103,14 +103,7 @@ function initCounters() {
     }, observerOptions);
 
     counters.forEach(counter => {
-        // Check if element is already in viewport on page load
-        const rect = counter.getBoundingClientRect();
-        const inViewport = rect.top < window.innerHeight && rect.bottom >= 0;
-        if (inViewport) {
-            animateCounter(counter);
-        } else {
-            observer.observe(counter);
-        }
+        observer.observe(counter);
     });
 }
 

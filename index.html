@@ -61,17 +61,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
   <link rel="preload" as="image" href="assets/hero-bg.png">
-  <link rel="preload" as="fetch" href="assets/3dmodels/portal_gate_sci-fi.glb" crossorigin="anonymous">
-  <link rel="preload" as="fetch" href="assets/3dmodels/smartphone.glb" crossorigin="anonymous">
-  <link rel="preload" as="fetch" href="assets/3dmodels/ai_robot.glb" crossorigin="anonymous">
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer">
+    crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'">
   <link rel="sitemap" type="application/xml" href="sitemap.xml">
-  <link rel="stylesheet" href="style.css?v=1.2">
+  <link rel="stylesheet" href="style.min.css">
   <link rel="stylesheet" href="liquid-glass.css">
 
   <!-- ===== JSON-LD STRUCTURED DATA ===== -->
@@ -270,7 +267,7 @@
   </script>
 
   <!-- Calendly -->
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" media="print" onload="this.media='all'">
   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 
   <!-- Theme Check for FOUC -->
@@ -281,6 +278,7 @@
   </script>
   <!-- Google Tag Manager -->
   <script>(function (w, d, s, l, i) {
+      if (i === 'GTM-XXXXXXX') return; // Prevent loading placeholder GTM container
       w[l] = w[l] || []; w[l].push({
         'gtm.start':
           new Date().getTime(), event: 'gtm.js'
@@ -292,9 +290,9 @@
 </head>
 
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- Google Tag Manager (noscript) placeholder deactivated -->
+  <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript> -->
   <!-- End Google Tag Manager (noscript) -->
 
   <!-- Pencil notice banner -->
@@ -310,14 +308,14 @@
 
   <!-- //CHATBOT -->
   <script
-    src="https://nexbotix-api.todayintech.in/api/website-chatbot/script?apikey=bsk_c394f91293303d0f48a41dfa9d832304"></script>
+    src="https://nexbotix-api.todayintech.in/api/website-chatbot/script?apikey=bsk_c394f91293303d0f48a41dfa9d832304" defer></script>
 
   <!-- ===== HEADER / NAVIGATION ===== -->
   <header>
     <nav class="navbar" id="navbar">
       <div class="container">
         <a href="/" class="nav-logo" aria-label="TodayInTech Homepage">
-          <img src="assets/nav_logo.png" alt="TodayInTech - Custom software and virtual care platform development logo" style="height: 48px !important; width: auto !important; max-width: none !important; border-radius: 0 !important;">
+          <img src="assets/nav_logo.png" alt="TodayInTech - Custom software and virtual care platform development logo" style="height: 48px !important; width: auto !important; max-width: none !important; border-radius: 0 !important;" width="103" height="48">
         </a>
         <div class="nav-links" id="navLinks">
           <a href="/services">Services</a>
@@ -404,16 +402,16 @@
               <div class="hero-tab-content">
                 <div class="hero-tab-pane active">
                   <img src="assets/project/biling-and-inventory.png" alt="SaaS Billing & Inventory Mockup"
-                    loading="lazy">
+                    loading="lazy" width="1024" height="1024">
                 </div>
                 <div class="hero-tab-pane">
-                  <img src="assets/project-fitness.png" alt="Fitness Mobile App Mockup" loading="lazy">
+                  <img src="assets/project-fitness.png" alt="Fitness Mobile App Mockup" loading="lazy" width="1024" height="1024">
                 </div>
                 <div class="hero-tab-pane">
-                  <img src="assets/project/marketing-tools.png" alt="Marketing Automation AI Mockup" loading="lazy">
+                  <img src="assets/project/marketing-tools.png" alt="Marketing Automation AI Mockup" loading="lazy" width="1024" height="1024">
                 </div>
                 <div class="hero-tab-pane">
-                  <img src="assets/project-telemedicine.png" alt="Telemedicine HealthTech Mockup" loading="lazy">
+                  <img src="assets/project-telemedicine.png" alt="Telemedicine HealthTech Mockup" loading="lazy" width="1024" height="1024">
                 </div>
               </div>
             </div>
@@ -431,7 +429,7 @@
               <i class="fab fa-aws"></i>
             </div>
             <div class="trust-badge-info">
-              <h4>Secure by AWS</h4>
+              <h3>Secure by AWS</h3>
               <p>Enterprise cloud security</p>
             </div>
           </div>
@@ -440,7 +438,7 @@
               <i class="fas fa-globe-americas"></i>
             </div>
             <div class="trust-badge-info">
-              <h4>50+ Clients Globally</h4>
+              <h3>50+ Clients Globally</h3>
               <p>Delivered software globally</p>
             </div>
           </div>
@@ -456,7 +454,7 @@
               </div>
             </div>
             <div class="trust-badge-info">
-              <h4>5 Star in Google Business</h4>
+              <h3>5 Star in Google Business</h3>
               <p>Highly rated services</p>
             </div>
           </div>
@@ -487,31 +485,31 @@
           <div class="people-image-side reveal">
             <!-- Founder -->
             <div class="team-card">
-              <img src="assets/founder.png" alt="Yasmin K" class="team-avatar-img" loading="lazy">
+              <img src="assets/founder.png" alt="Yasmin K" class="team-avatar-img" loading="lazy" width="1024" height="1024">
               <div class="team-name">Yasmin K</div>
               <div class="team-role">Founder &amp; Tech Lead</div>
             </div>
             <!-- Senior Developer -->
             <div class="team-card">
-              <img src="assets/reviewer-2.png" alt="Priya S." class="team-avatar-img" loading="lazy">
+              <img src="assets/reviewer-2.png" alt="Priya S." class="team-avatar-img" loading="lazy" width="1024" height="1024">
               <div class="team-name">Priya Sharma</div>
               <div class="team-role">Lead Fullstack Dev</div>
             </div>
             <!-- PM -->
             <div class="team-card">
-              <img src="assets/reviewer-1.png" alt="Amit V." class="team-avatar-img" loading="lazy">
+              <img src="assets/reviewer-1.png" alt="Amit V." class="team-avatar-img" loading="lazy" width="1024" height="1024">
               <div class="team-name">Amit Verma</div>
               <div class="team-role">Senior Architect</div>
             </div>
             <!-- QA -->
             <div class="team-card">
-              <img src="assets/reviewer-5.png" alt="Rahul S." class="team-avatar-img" loading="lazy">
+              <img src="assets/reviewer-5.png" alt="Rahul S." class="team-avatar-img" loading="lazy" width="1024" height="1024">
               <div class="team-name">Rahul Singh</div>
               <div class="team-role">QA &amp; Release Lead</div>
             </div>
             <!-- Business Analyst -->
             <div class="team-card">
-              <img src="assets/barun.png" alt="Barun Mandal" class="team-avatar-img" loading="lazy">
+              <img src="assets/barun.png" alt="Barun Mandal" class="team-avatar-img" loading="lazy" width="1024" height="1024">
               <div class="team-name">Barun Mandal</div>
               <div class="team-role">Business Analyst</div>
             </div>
@@ -559,7 +557,7 @@
           <div class="solution-image-col reveal">
             <div class="solution-image-wrapper">
               <img src="assets/project/biling-and-inventory.png" alt="SaaS Billing Mockup" class="solution-main-img"
-                loading="lazy">
+                loading="lazy" width="1024" height="1024">
             </div>
             <div class="solution-popout-card">
               <div class="popout-card-title">SaaS Launch</div>
@@ -595,7 +593,7 @@
 
           <div class="solution-image-col reveal">
             <div class="solution-image-wrapper">
-              <img src="assets/project-fitness.png" alt="Fitness App Mockup" class="solution-main-img" loading="lazy">
+              <img src="assets/project-fitness.png" alt="Fitness App Mockup" class="solution-main-img" loading="lazy" width="1024" height="1024">
             </div>
             <div class="solution-popout-card">
               <div class="popout-card-title">Performance</div>
@@ -630,7 +628,7 @@
           <div class="solution-image-col reveal">
             <div class="solution-image-wrapper">
               <img src="assets/project/marketing-tools.png" alt="AI Agent Mockup" class="solution-main-img"
-                loading="lazy">
+                loading="lazy" width="1024" height="1024">
             </div>
             <div class="solution-popout-card">
               <div class="popout-card-title">Automation</div>
@@ -665,7 +663,7 @@
           <div class="solution-image-col reveal">
             <div class="solution-image-wrapper">
               <img src="assets/project-telemedicine.png" alt="Telemedicine HealthTech Mockup" class="solution-main-img"
-                loading="lazy">
+                loading="lazy" width="1024" height="1024">
             </div>
             <div class="solution-popout-card">
               <div class="popout-card-title">Security</div>
@@ -725,7 +723,7 @@
           <a href="/projects/church-management-software" class="portfolio-card reveal">
             <div class="portfolio-image">
               <img src="assets/project-church-management.png" alt="Church Management Software — End-to-End Solution"
-                loading="lazy">
+                loading="lazy" width="1024" height="1024">
               <div class="portfolio-image-overlay"></div>
             </div>
             <div class="portfolio-info">
@@ -744,7 +742,7 @@
 
           <a href="/projects/school-management-system" class="portfolio-card reveal">
             <div class="portfolio-image">
-              <img src="assets/project-school-erp.png" alt="School Management System End-to-End ERP" loading="lazy">
+              <img src="assets/project-school-erp.png" alt="School Management System End-to-End ERP" loading="lazy" width="1024" height="1024">
               <div class="portfolio-image-overlay"></div>
             </div>
             <div class="portfolio-info">
@@ -764,7 +762,7 @@
           <a href="/projects/restaurant-management-system" class="portfolio-card reveal">
             <div class="portfolio-image">
               <img src="assets/project-restaurant-hero.png" alt="Restaurant Management System & White-Label POS"
-                loading="lazy">
+                loading="lazy" width="1024" height="1024">
               <div class="portfolio-image-overlay"></div>
             </div>
             <div class="portfolio-info">
@@ -784,7 +782,7 @@
           <a href="/projects/senior-care-agency" class="portfolio-card reveal">
             <div class="portfolio-image">
               <img src="assets/project-senior-care.png"
-                alt="TodayInTech SITES Senior Care Agency ERP & Home Care Software" loading="lazy">
+                alt="TodayInTech SITES Senior Care Agency ERP & Home Care Software" loading="lazy" width="1024" height="1024">
               <div class="portfolio-image-overlay"></div>
             </div>
             <div class="portfolio-info">
@@ -804,7 +802,7 @@
           <a href="/projects/impakto" class="portfolio-card reveal">
             <div class="portfolio-image">
               <img src="assets/project/impakto.png" alt="Impakto — 3D Shoe Configurator WebGL Experience"
-                loading="lazy">
+                loading="lazy" width="1024" height="1024">
               <div class="portfolio-image-overlay"></div>
             </div>
             <div class="portfolio-info">
@@ -823,7 +821,7 @@
 
           <a href="/projects/mednowna" class="portfolio-card reveal">
             <div class="portfolio-image">
-              <img src="assets/project-telemedicine.png" alt="Mednowna - Telehealth Platform" loading="lazy">
+              <img src="assets/project-telemedicine.png" alt="Mednowna - Telehealth Platform" loading="lazy" width="1024" height="1024">
               <div class="portfolio-image-overlay"></div>
             </div>
             <div class="portfolio-info">
@@ -843,7 +841,7 @@
           <a href="/projects/inventory-billing" class="portfolio-card reveal">
             <div class="portfolio-image">
               <img src="assets/project/biling-and-inventory.png"
-                alt="Inventory & Billing Software — Full White-Label Solution" loading="lazy">
+                alt="Inventory & Billing Software — Full White-Label Solution" loading="lazy" width="1024" height="1024">
               <div class="portfolio-image-overlay"></div>
             </div>
             <div class="portfolio-info">
@@ -863,7 +861,7 @@
 
           <a href="/projects/nexbotix" class="portfolio-card reveal">
             <div class="portfolio-image">
-              <img src="assets/project/marketing-tools.png" alt="NexBotix Marketing Automation" loading="lazy">
+              <img src="assets/project/marketing-tools.png" alt="NexBotix Marketing Automation" loading="lazy" width="1024" height="1024">
               <div class="portfolio-image-overlay"></div>
             </div>
             <div class="portfolio-info">
@@ -882,7 +880,7 @@
 
           <a href="/projects/ai-community" class="portfolio-card reveal">
             <div class="portfolio-image">
-              <img src="assets/project/ai-community.png" alt="AI Community College" loading="lazy">
+              <img src="assets/project/ai-community.png" alt="AI Community College" loading="lazy" width="1024" height="1024">
               <div class="portfolio-image-overlay"></div>
             </div>
             <div class="portfolio-info">
@@ -902,7 +900,7 @@
           <a href="/projects/radio-station" class="portfolio-card reveal">
             <div class="portfolio-image">
               <img src="assets/project/radio-station.png" alt="Radio Stiming - Live Radio Station Platform"
-                loading="lazy">
+                loading="lazy" width="1024" height="1024">
               <div class="portfolio-image-overlay"></div>
             </div>
             <div class="portfolio-info">
@@ -921,7 +919,7 @@
 
           <a href="/projects/vocal-flow" class="portfolio-card reveal">
             <div class="portfolio-image">
-              <img src="assets/project/vocal-flow.png" alt="VocalFlow - AI Text to Speech Tool" loading="lazy">
+              <img src="assets/project/vocal-flow.png" alt="VocalFlow - AI Text to Speech Tool" loading="lazy" width="1024" height="1024">
               <div class="portfolio-image-overlay"></div>
             </div>
             <div class="portfolio-info">
@@ -940,7 +938,7 @@
 
           <a href="/projects/master-ai" class="portfolio-card reveal">
             <div class="portfolio-image">
-              <img src="assets/project-master-ai.png" alt="Master AI: GPT Magic in Hand Mobile App" loading="lazy">
+              <img src="assets/project-master-ai.png" alt="Master AI: GPT Magic in Hand Mobile App" loading="lazy" width="1024" height="1024">
               <div class="portfolio-image-overlay"></div>
             </div>
             <div class="portfolio-info">
@@ -1748,7 +1746,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="/" class="nav-logo" aria-label="TodayInTech Homepage">
-          <img src="assets/nav_logo.png" alt="TodayInTech - Custom software and virtual care platform development logo" style="height: 48px !important; width: auto !important; max-width: none !important; border-radius: 0 !important;">
+          <img src="assets/nav_logo.png" alt="TodayInTech - Custom software and virtual care platform development logo" style="height: 48px !important; width: auto !important; max-width: none !important; border-radius: 0 !important;" width="103" height="48">
         </a>
           <p>We help startups and businesses build scalable SaaS platforms, AI tools, and mobile apps. Your vision, our
             expertise.</p>
@@ -1757,13 +1755,13 @@
           <div class="msme-badge"
             style="display: flex; align-items: center; gap: 12px; margin: 24px 0; padding: 12px 16px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; width: fit-content; transition: 0.3s;">
             <img src="assets/certificate/msme-loo.png" alt="MSME UDYAM Registered Logo"
-              style="height: 38px; width: auto; object-fit: contain;" loading="lazy">
+              style="height: 38px; width: auto; object-fit: contain;" loading="lazy" width="48" height="38">
             <div style="display: flex; flex-direction: column;">
               <span
-                style="font-size: 0.7rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Govt.
+                style="font-size: 0.7rem; color: rgba(255, 255, 255, 0.7); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Govt.
                 of India Registered MSME</span>
               <span
-                style="font-size: 0.85rem; color: var(--text-primary); font-weight: 700; font-family: monospace; letter-spacing: 0.5px; margin-top: 2px;">UDYAM-WB-03-0108090</span>
+                style="font-size: 0.85rem; color: #ffffff; font-weight: 700; font-family: monospace; letter-spacing: 0.5px; margin-top: 2px;">UDYAM-WB-03-0108090</span>
             </div>
           </div>
 
@@ -1778,7 +1776,7 @@
         </div>
 
         <div class="footer-column">
-          <h4>Services</h4>
+          <h3>Services</h3>
           <ul>
             <li><a href="/projects/inventory-billing">Inventory & Billing</a></li>
             <li><a href="/projects/school-management-system">School ERP System</a></li>
@@ -1789,7 +1787,7 @@
         </div>
 
         <div class="footer-column">
-          <h4>Company</h4>
+          <h3>Company</h3>
           <ul>
             <li><a href="/#about">About Us</a></li>
             <li><a href="/#portfolio">Our Work</a></li>
@@ -1800,7 +1798,7 @@
         </div>
 
         <div class="footer-column">
-          <h4>Contact</h4>
+          <h3>Contact</h3>
           <ul>
             <li><a href="mailto:contact@todayintech.in">contact@todayintech.in</a></li>
             <li><a href="tel:+917679349780">+91 7679349780</a></li>
@@ -1814,7 +1812,7 @@
 
       <div class="footer-bottom">
         <p class="footer-copyright">&copy; 2024–2026 TodayInTech. All rights reserved.</p>
-                                                                                <div class="footer-legal">
+                                                                                        <div class="footer-legal">
           <a href="/privacy">Privacy Policy</a>
           <a href="/terms">Terms of Service</a>
           <a href="/refund-policy">Refund Policy</a>
@@ -1907,8 +1905,7 @@
 
   <!-- Social proof toast removed for cleaner UX -->
 
-  <!-- ===== JAVASCRIPT ===== -->
-  <script src="script.js"></script>
+  <script src="script.min.js" defer></script>
 </body>
 
 </html>
