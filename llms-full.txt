@@ -51,8 +51,8 @@ Unify admissions, student directories, online fee collections, gradebooks, roste
 Unify tithing, member databases, safety check-ins, volunteer plans, and accounting ledger sheets in a secure, custom-engineered platform.
 
 
-### [Custom Telemedicine Software Development | HIPAA Compliant](https://todayintech.in/projects/mednowna)
-We build secure, HIPAA-compliant custom telehealth applications with EHR integration and video consultations.
+### [HIPAA-Compliant Telemedicine App Developer | Custom Telehealth](https://todayintech.in/projects/mednowna)
+We build secure, HIPAA-compliant custom telehealth applications and white-label platforms with EHR integration and video consultations.
 
 - **Technology Stack**: React Native, Python, PostgreSQL, Docker, WebRTC, AWS, HL7/FHIR
 - **The Problem**: The client, a healthcare startup in the Philippines, needed a full-featured telehealth platform to connect patients with doctors remotely. Existing solutions were either too expensive to license or lacked critical features like HIPAA-compliant video calls, e-prescriptions, and integration with local healthcare systems. They needed a custom platform that could be launched quickly and scaled as the business grew.
@@ -305,6 +305,7 @@ How we built a free AI text-to-speech tool with 300+ voices and 50+ languages �
 - [Health White-Label Software: Why Your Business Needs It in 2026](https://todayintech.in/blog/health-white-label-software-benefits): Launch your branded health platform in weeks, not months. Discover the top benefits of white-label healthcare software and how to choose the right partner.
 - [Hospital Information System Architecture](https://todayintech.in/blog/hospital-information-system-architecture): Complete guide on hospital information system architecture. Learn about development process, best practices, cost analysis, and implementation strategies for healthcare organizations in 2026.
 - [Hospital-at-Home Software Development: 2026 Virtual Care Trends](https://todayintech.in/blog/hospital-at-home-software-development-trends-2026): Delivering acute clinical care to patients' homes. Read the key technology trends, compliance frameworks, and architecture essentials for 2026.
+- [How FHIR Interoperability is Transforming Healthcare Software Development in 2026](https://todayintech.in/blog/fhir-interoperability-healthcare-software-development-2026): Learn how HL7 FHIR APIs, EHR integration standards, and secure data exchange are defining the next generation of interoperable medical software in 2026.
 - [How Much Does It Cost to Develop a Fitness App in 2026?](https://todayintech.in/blog/fitness-app-development-cost): Accurate fitness app development costs for 2026 — broken down by features, platform, and team location. Simple trackers to AI trainers.
 - [How to Build a Telemedicine App in 2026: Complete Development Guide](https://todayintech.in/blog/telemedicine-app-development-guide-2026): Everything you need to know to build a scalable, HIPAA-compliant telemedicine platform in 2026 — architecture, features, cost, and tech stack.
 - [How to Choose Multi-Branch School Management Software: Custom vs. White-Label](https://todayintech.in/blog/how-to-choose-erp-for-multi-branch-schools): Which path is best for your educational group? We break down setup costs, monthly maintenance, and database scaling between white-label school software and custom ERP coding.
