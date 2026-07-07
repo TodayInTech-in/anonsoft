@@ -244,7 +244,7 @@ Deploy a complete, fully white-label inventory and billing platform — stock, i
   - Per-seat SaaS pricing becomes expensive as teams grow
   - No way to rebrand existing tools for resale to clients
 - **Our Solution**: We built a premium white-label inventory software and billing platform that unifies stock tracking, invoicing, and sales analytics in one dashboard. Every element — logo, colors, domain, and branding — is configurable, so businesses and resellers can deploy it as their own product. The system handles GST-compliant billing, real-time stock tracking, multi-user roles, and detailed reporting out of the box.
-  - Real-time inventory tracking with low-stock alerts
+  - Real-time multi-warehouse inventory software custom setups with cross-location transfers
   - Professional, GST-compliant invoice & quotation generation
   - Fully white-label — custom branding, colors, and domain
   - Multi-user access with role-based permissions
