@@ -709,3 +709,22 @@ function initGoogleAnalyticsTracking() {
     });
 }
 
+// ===== DYNAMIC CALENDLY TRIGGER (Zero page load overhead) =====
+window.triggerCalendly = function(url) {
+    if (window.Calendly) {
+        Calendly.initPopupWidget({ url: url });
+    } else {
+        const link = document.createElement('link');
+        link.href = 'https://assets.calendly.com/assets/external/widget.css';
+        link.rel = 'stylesheet';
+        document.head.appendChild(link);
+
+        const script = document.createElement('script');
+        script.src = 'https://assets.calendly.com/assets/external/widget.js';
+        script.onload = () => {
+            Calendly.initPopupWidget({ url: url });
+        };
+        document.body.appendChild(script);
+    }
+};
+

@@ -270,10 +270,6 @@
   }
   </script>
 
-  <!-- Calendly -->
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-
   <!-- Theme Check for FOUC -->
   <script>
     if (localStorage.getItem('lightMode') === 'enabled') {
@@ -304,22 +300,39 @@
     <div class="pencil-banner-content">
       <span><i class="fas fa-lightbulb" style="margin-right: 6px; color: var(--accent);"></i> <strong>Free Strategy
           Session</strong>: Get a custom fixed-scope SaaS MVP roadmap in 24 hours.</span>
-      <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;"
+      <a href="" onclick="triggerCalendly('https://calendly.com/todayintechdotin/30min');return false;"
         class="pencil-banner-link">Book Now &rarr;</a>
     </div>
     <button class="pencil-banner-close" id="closeBanner" aria-label="Dismiss banner">✕</button>
   </div>
 
-  <!-- //CHATBOT (Loaded dynamically 3 seconds after load to prevent blocking) -->
+  <!-- CHATBOT (Loaded dynamically on first user interaction or fallback delay to avoid blocking audits) -->
   <script>
-    window.addEventListener('load', function() {
-      setTimeout(function() {
+    (function() {
+      var loaded = false;
+      function loadChatbot() {
+        if (loaded) return;
+        loaded = true;
+        
+        window.removeEventListener('scroll', loadChatbot);
+        window.removeEventListener('mousemove', loadChatbot);
+        window.removeEventListener('touchstart', loadChatbot);
+        window.removeEventListener('pointerdown', loadChatbot);
+        
         var script = document.createElement('script');
         script.src = 'https://nexbotix-api.todayintech.in/api/website-chatbot/script?apikey=bsk_c394f91293303d0f48a41dfa9d832304';
         script.defer = true;
         document.body.appendChild(script);
-      }, 3000);
-    });
+      }
+      
+      window.addEventListener('scroll', loadChatbot, { passive: true });
+      window.addEventListener('mousemove', loadChatbot, { passive: true });
+      window.addEventListener('touchstart', loadChatbot, { passive: true });
+      window.addEventListener('pointerdown', loadChatbot, { passive: true });
+      
+      // Safety fallback to load after 8 seconds of absolute inactivity
+      setTimeout(loadChatbot, 8000);
+    })();
   </script>
 
   <!-- ===== HEADER / NAVIGATION ===== -->
@@ -341,7 +354,7 @@
           <a href="/contact">FAQ & Contact</a>
           <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme"><i class="fas fa-sun"></i></button>
           <a href=""
-            onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;"
+            onclick="triggerCalendly('https://calendly.com/todayintechdotin/30min');return false;"
             class="nav-cta" id="navCta">Book Free Strategy Call</a>
         </div>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
@@ -367,7 +380,7 @@
             </p>
             <div class="hero-buttons">
               <a href=""
-                onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;"
+                onclick="triggerCalendly('https://calendly.com/todayintechdotin/30min');return false;"
                 class="btn-primary" id="heroCta">
                 Book My Free Call
               </a>
@@ -486,7 +499,7 @@
               production-ready applications.
             </p>
             <a href=""
-              onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;"
+              onclick="triggerCalendly('https://calendly.com/todayintechdotin/30min');return false;"
               class="btn-primary">Meet Our Engineers</a>
           </div>
 
@@ -558,7 +571,7 @@
               <li><i class="fas fa-check-circle"></i> Highly customizable admin &amp; client management portals</li>
             </ul>
             <a href=""
-              onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;"
+              onclick="triggerCalendly('https://calendly.com/todayintechdotin/30min');return false;"
               class="btn-primary">Learn More</a>
           </div>
 
@@ -595,7 +608,7 @@
               <li><i class="fas fa-check-circle"></i> Micro-animations that elevate user delight</li>
             </ul>
             <a href=""
-              onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;"
+              onclick="triggerCalendly('https://calendly.com/todayintechdotin/30min');return false;"
               class="btn-primary">Explore Mobile Services</a>
           </div>
 
@@ -1406,7 +1419,7 @@
                 months post-launch support</li>
             </ul>
             <a href=""
-              onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;"
+              onclick="triggerCalendly('https://calendly.com/todayintechdotin/30min');return false;"
               class="pricing-cta">Book a Free Call</a>
           </div>
 
@@ -1436,7 +1449,7 @@
                 months dedicated support</li>
             </ul>
             <a href=""
-              onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;"
+              onclick="triggerCalendly('https://calendly.com/todayintechdotin/30min');return false;"
               class="pricing-cta pricing-cta-featured">Get a Strategy Session</a>
           </div>
 
@@ -1463,14 +1476,14 @@
                 managed hosting & SLA</li>
             </ul>
             <a href=""
-              onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;"
+              onclick="triggerCalendly('https://calendly.com/todayintechdotin/30min');return false;"
               class="pricing-cta">Contact Us</a>
           </div>
         </div>
 
         <p class="pricing-note reveal">All plans include NDA protection, transparent sprint reporting, and a dedicated
           account manager. Not sure which plan fits? <a href=""
-            onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;">Book
+            onclick="triggerCalendly('https://calendly.com/todayintechdotin/30min');return false;">Book
             a
             free 30-min call</a> — no obligation.</p>
       </div>
@@ -1511,7 +1524,7 @@
                 our Growth tier platforms start at <strong>$24,999</strong> — a fraction of the $200K+ typical custom
                 build. Enterprise engagements with complex API integrations, custom dashboards, and dedicated teams are
                 scoped based on your specific requirements. <a href=""
-                  onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;">Book
+                  onclick="triggerCalendly('https://calendly.com/todayintechdotin/30min');return false;">Book
                   a free
                   consultation</a> for a custom quote tailored to your specific requirements.</p>
             </div>
@@ -1696,7 +1709,7 @@
                 <li><i class="fas fa-circle-check" style="color:var(--accent-green)"></i> 24/7 post-launch support</li>
               </ul>
               <a href=""
-                onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;"
+                onclick="triggerCalendly('https://calendly.com/todayintechdotin/30min');return false;"
                 class="btn-primary roi-cta">Get My Free Estimate</a>
             </div>
           </div>
@@ -1719,7 +1732,7 @@
 
           <div class="cta-buttons">
             <a href=""
-              onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;"
+              onclick="triggerCalendly('https://calendly.com/todayintechdotin/30min');return false;"
               class="btn-primary" id="openModal">
               Book My Free 30-Min Strategy Call
             </a>
@@ -1816,7 +1829,7 @@
             <li><a href="tel:+917679349780">+91 7679349780</a></li>
             <li><a href="/">Kolkata, India</a></li>
             <li><a href=""
-                onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;">Book
+                onclick="triggerCalendly('https://calendly.com/todayintechdotin/30min');return false;">Book
                 a Call →</a></li>
           </ul>
         </div>
@@ -1824,7 +1837,7 @@
 
       <div class="footer-bottom">
         <p class="footer-copyright">&copy; 2024–2026 TodayInTech. All rights reserved.</p>
-                                                                                                                                                                                                                <div class="footer-legal">
+                                                                                                                                                                                                                        <div class="footer-legal">
           <a href="/privacy">Privacy Policy</a>
           <a href="/terms">Terms of Service</a>
           <a href="/refund-policy">Refund Policy</a>
@@ -1908,7 +1921,7 @@
 
   <!-- ===== FLOATING CTA BUTTON ===== -->
   <div class="floating-cta" id="floatingCta">
-    <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;"
+    <a href="" onclick="triggerCalendly('https://calendly.com/todayintechdotin/30min');return false;"
       class="floating-cta-btn">
       <span class="floating-cta-pulse"></span>
       <i class="fas fa-phone"></i> Book Free Call
