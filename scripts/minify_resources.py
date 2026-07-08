@@ -16,7 +16,7 @@ def minify_css(input_path, output_path):
     # Remove whitespace around selectors and properties
     content = re.sub(r"\s+", " ", content)
     content = re.sub(r"\s*\{\s*", "{", content)
-    content = re.sub(r"\s*\}\s*", "}", content)
+    content = re.sub(r"\s*\}\s*", "}\n", content)
     content = re.sub(r"\s*;\s*", ";", content)
     content = re.sub(r"\s*:\s*", ":", content)
     content = re.sub(r"\s*,\s*", ",", content)
