@@ -229,10 +229,6 @@ How we built a live radio streaming platform reaching 100,000+ monthly listeners
 Deploy a custom-branded restaurant ERP with touch-screen POS, kitchen orders, delivery dispatch, GPS rider tracking, inventory control, and owner analytics.
 
 
-### [Senior Care Agency Software & Home Care ERP](https://todayintech.in/projects/senior-care-agency)
-Deploy a custom-branded home care ERP with caregiver scheduling, EVV compliance, automated billing, and a secure family portal.
-
-
 ### [VocalFlow — AI Text to Speech Tool | Case Study](https://todayintech.in/projects/vocal-flow)
 How we built a free AI text-to-speech tool with 300+ voices and 50+ languages — no sign-up required.
 
@@ -264,6 +260,10 @@ How we built a free AI text-to-speech tool with 300+ voices and 50+ languages �
   - Zero cost — completely free for all users
   - 0 seconds onboarding — no sign-up required
   - Open source — community contributions and transparency
+
+### [White-Label Home Care Agency Software & ERP](https://todayintech.in/projects/senior-care-agency)
+Deploy a custom-branded home care ERP with caregiver scheduling, EVV compliance, automated billing, and a secure family portal.
+
 
 
 ## All Blog Articles
