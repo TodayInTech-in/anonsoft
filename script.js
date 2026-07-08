@@ -572,27 +572,28 @@ function initHeroTabs() {
     let activeIndex = 0;
 
     function cycle() {
-        // Reset all timer widths
+        // Reset all timer widths without reflow
         document.querySelectorAll('.hero-tab-timer').forEach(timer => {
             timer.style.width = '0%';
             timer.style.transition = 'none';
         });
 
-        // Trigger layout reflow
-        const activeLink = tabLinks[activeIndex];
-        const timerEl = activeLink.querySelector('.hero-tab-timer');
-        if (timerEl) {
-            void timerEl.offsetWidth; // force reflow
-            timerEl.style.transition = `width ${tabDuration}ms linear`;
-            timerEl.style.width = '100%';
-        }
-
-        // Set active classes
+        // Set active classes first
         tabLinks.forEach(link => link.classList.remove('active'));
         tabPanes.forEach(pane => pane.classList.remove('active'));
-
         tabLinks[activeIndex].classList.add('active');
         tabPanes[activeIndex].classList.add('active');
+
+        // Restart timer animation using double-rAF (no forced reflow)
+        const timerEl = tabLinks[activeIndex].querySelector('.hero-tab-timer');
+        if (timerEl) {
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    timerEl.style.transition = `width ${tabDuration}ms linear`;
+                    timerEl.style.width = '100%';
+                });
+            });
+        }
 
         tabTimeout = setTimeout(() => {
             activeIndex = (activeIndex + 1) % tabLinks.length;
@@ -619,15 +620,26 @@ function initStickyAnchorBar() {
     const links = anchorBar.querySelectorAll('.anchors_link');
     const sections = Array.from(links).map(link => document.querySelector(link.getAttribute('href'))).filter(Boolean);
     const navbar = document.getElementById('navbar');
-    
+
+    // Cache heights — measure once, update on resize via ResizeObserver to avoid scroll-time reflows
+    let cachedNavHeight = (navbar ? navbar.offsetHeight : 80) + anchorBar.offsetHeight;
+    const ro = new ResizeObserver(() => {
+        cachedNavHeight = (navbar ? navbar.offsetHeight : 80) + anchorBar.offsetHeight;
+        // Pre-cache section offsetTop values
+        sectionTops = sections.map(s => s.offsetTop);
+    });
+    ro.observe(document.body);
+
+    // Pre-cache section tops
+    let sectionTops = sections.map(s => s.offsetTop);
+
     window.addEventListener('scroll', () => {
         let current = '';
-        const navHeight = (navbar ? navbar.offsetHeight : 80) + anchorBar.offsetHeight;
+        const scrollY = window.pageYOffset;
 
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop - navHeight - 30;
-            if (window.pageYOffset >= sectionTop) {
-                current = section.getAttribute('id');
+        sectionTops.forEach((top, i) => {
+            if (scrollY >= top - cachedNavHeight - 30) {
+                current = sections[i].getAttribute('id');
             }
         });
 
@@ -637,7 +649,7 @@ function initStickyAnchorBar() {
                 link.classList.add('active');
             }
         });
-    });
+    }, { passive: true });
 }
 
 // ===== GOOGLE ANALYTICS & CLICK TRACKING =====

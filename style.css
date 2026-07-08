@@ -4953,7 +4953,7 @@ textarea:focus-visible {
 .gr-reply-label {
     font-size: 0.75rem;
     font-weight: 600;
-    color: #4285F4;
+    color: #93c5fd;
     margin-bottom: 6px;
     display: flex;
     align-items: center;
@@ -5307,7 +5307,8 @@ body.has-pencil-banner .navbar.scrolled {
     font-size: 0.7rem;
 }
 
-.trust-badge-info h4 {
+.trust-badge-info h4,
+.trust-badge-title {
     margin: 0;
     font-size: 1.05rem;
     font-weight: 700;
