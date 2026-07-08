@@ -31,6 +31,7 @@
     --section-padding: 80px 0;
     --container-max: 1200px;
     --nav-height: 80px;
+    --pencil-banner-height: 44px;
 
     /* Typography */
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -2203,6 +2204,7 @@ html.light-mode .trust-certifications {
 @media (max-width: 768px) {
     :root {
         --section-padding: 72px 0;
+        --pencil-banner-height: 68px;
     }
 
     .container {
