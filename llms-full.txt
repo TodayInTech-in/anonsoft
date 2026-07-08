@@ -47,6 +47,29 @@ How we built a structured AI learning platform with 52 chapters and multi-langua
 Unify admissions, student directories, online fee collections, gradebooks, rosters, and parent portals in a secure, custom-engineered school ERP platform.
 
 
+### [Casino Blackjack — Custom HTML5 Game Engine](https://todayintech.in/projects/casino-blackjack-game)
+How we built an ultra-smooth, premium HTML5 Canvas Blackjack game engine with realistic physics and zero dealing latency.
+
+- **The Problem**: Launching custom web-based casino systems usually requires heavy native app wrapping, dealing with high latency during remote random number generator (RNG) draws, sluggish rendering on budget mobile screens, and poor layout scaling across different device ratios. Standard web games often feel cheap and sluggish, causing player drop-offs and poor brand trust.
+  - High network lag on remote server card requests
+  - Clunky animation loops dropping below 30 FPS on mobile
+  - Fixed-aspect layouts clipping or leaving giant black margins
+  - Lack of audio responsiveness and tactile feedback
+  - Complex integration steps for modular wallet networks
+- **Key Features**:
+  - *HTML5 Canvas Render Loop*: Designed a custom render pipeline with requestAnimationFrame. Minimizes browser reflows and repaints, resulting in smooth animation transitions.
+  - *Proportional Canvas Scaling*: Engineered an automatic viewport-matching matrix. Adapts the game felt, chips, and card vectors to any screen width and height perfectly.
+  - *Web Audio API Synthesizer*: Injected low-latency custom sound effect nodes for card dealing, chips movement, and dealer calls. Enhances visual action feedback.
+  - *Secure Game State Engine*: Implemented cryptographically signed state updates to prevent browser console manipulation of bet weights and chip balances.
+  - *Decoupled Wallet Layer*: Created an abstract API bridge supporting Web3 wallets, fiat APIs, and demo play tokens. Integration takes less than 50 lines of code.
+  - *Performance Budgets*: Optimized image spritesheets and sound bundles, capping the total game load weight at under 1.2MB for rapid loading on cellular connections.
+- **The Result**: The resulting game engine provides an incredibly premium, app-like gaming experience directly within any standard web browser. Startups can deploy their branded versions instantly without app store compliance issues, boosting conversion rates and user session duration.
+  - 60 FPS buttery smooth dealing on any low-end device
+  - 0ms network latency for local layout animations
+  - Sub-1s game engine initialization and bundle loading
+  - 100% responsive scaling across mobile, tablet, and desktop
+  - Zero app store wrapping or compliance required
+
 ### [Church Management Software for End-to-End Church Operations](https://todayintech.in/projects/church-management-software)
 Unify tithing, member databases, safety check-ins, volunteer plans, and accounting ledger sheets in a secure, custom-engineered platform.
 

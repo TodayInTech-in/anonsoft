@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casino Blackjack — Custom HTML5 Game Engine | TodayInTech</title>
+  <meta name="description" content="Read how TodayInTech built a high-performance custom Blackjack game engine using HTML5 Canvas and Web Audio API. Zero latency, 60 FPS, and cross-platform responsiveness.">
+  <meta name="keywords" content="HTML5 game development, custom casino game developer, online blackjack software, Canvas API, game engine optimization, mobile game dev, TodayInTech">
+  <link rel="canonical" href="https://todayintech.in/projects/casino-blackjack-game.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Branded Casino Blackjack — Custom Game Engine | TodayInTech">
+  <meta property="og:description" content="How we built an ultra-smooth, premium HTML5 Canvas Blackjack game engine with realistic physics and zero dealing latency.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://todayintech.in/projects/casino-blackjack-game.html">
+  <meta property="og:image" content="https://todayintech.in/assets/project-casino.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Casino Blackjack Game Engine | TodayInTech Case Study">
+  <meta name="twitter:description" content="How we engineered a premium, cross-platform mobile Blackjack game engine using HTML5 Canvas.">
+  <meta name="twitter:image" content="https://todayintech.in/assets/project-casino.png">
+
+  <link rel="icon" type="image/png" href="../assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../style.css?v=1.2">
+  <link rel="stylesheet" href="../liquid-glass.css">
+
+  <!-- Calendly -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Casino Blackjack — Custom HTML5 Game Engine Case Study",
+    "description": "How TodayInTech engineered a high-fidelity, interactive HTML5 Blackjack game engine using Canvas and Web Audio APIs for real-time mobile gameplay.",
+    "image": "https://todayintech.in/assets/project-casino.png",
+    "author": { "@type": "Organization", "name": "TodayInTech" },
+    "publisher": { "@type": "Organization", "name": "TodayInTech", "logo": { "@type": "ImageObject", "url": "https://todayintech.in/assets/logo.png" } },
+    "datePublished": "2026-07-08",
+    "dateModified": "2026-07-08"
+  }
+  </script>
+
+  <script>
+    if (localStorage.getItem('lightMode') === 'enabled') {
+      document.documentElement.classList.add('light-mode');
+    }
+  </script>
+
+  <!-- Brand Specific Overrides -->
+  <style>
+    :root {
+      --brand-gold: #ffaa00;
+      --brand-gold-hover: #e09500;
+      --brand-gold-bg: rgba(255, 170, 0, 0.1);
+    }
+    .btn-brand-primary {
+      background: var(--brand-gold) !important;
+      color: #000000 !important;
+      font-weight: 700 !important;
+      box-shadow: 0 4px 20px rgba(255, 170, 0, 0.3) !important;
+      transition: all var(--transition-fast) ease !important;
+    }
+    .btn-brand-primary:hover {
+      background: var(--brand-gold-hover) !important;
+      transform: translateY(-2px) !important;
+      box-shadow: 0 6px 25px rgba(255, 170, 0, 0.4) !important;
+    }
+    .project-category.brand-tag {
+      background: var(--brand-gold-bg) !important;
+      color: var(--brand-gold) !important;
+      border: 1px solid rgba(255, 170, 0, 0.2) !important;
+    }
+    html.light-mode .project-category.brand-tag {
+      background: rgba(224, 149, 0, 0.1) !important;
+      color: #8a5c00 !important;
+      border: 1px solid rgba(224, 149, 0, 0.2) !important;
+    }
+    .tech-tag.brand-tech {
+      background: rgba(255, 170, 0, 0.05) !important;
+      border: 1px solid rgba(255, 170, 0, 0.15) !important;
+    }
+    .tech-tag.brand-tech:hover {
+      border-color: var(--brand-gold) !important;
+      color: var(--brand-gold) !important;
+    }
+    html.light-mode .tech-tag.brand-tech:hover {
+      border-color: #8a5c00 !important;
+      color: #8a5c00 !important;
+    }
+    .case-study-icon.brand-icon i {
+      color: var(--brand-gold) !important;
+    }
+    html.light-mode .case-study-icon.brand-icon i {
+      color: #8a5c00 !important;
+    }
+    .case-study-result .case-study-icon i {
+      color: var(--accent-green) !important;
+    }
+  </style>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+dl:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <header>
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <a href="/" class="nav-logo" aria-label="TodayInTech Homepage">
+          <img src="../assets/nav_logo.png" alt="TodayInTech - Custom software and virtual care platform development logo" style="height: 48px !important; width: auto !important; max-width: none !important; border-radius: 0 !important;">
+        </a>
+        <div class="nav-links" id="navLinks">
+          <a href="/#services">Services</a>
+          <a href="/#portfolio">Portfolio</a>
+          <a href="/#pricing">Pricing</a>
+          <a href="/#contact">Contact</a>
+          <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme"><i class="fas fa-sun"></i></button>
+          <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;" class="nav-cta">Book Free Call</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-detail">
+      <div class="container">
+        <a href="/#portfolio" class="back-link"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+
+        <div class="project-header">
+          <span class="project-category brand-tag">HTML5 Canvas / Game Dev / Web3</span>
+          <h1>Branded Casino Blackjack</h1>
+          <p class="project-tagline">A premium, high-performance HTML5 Blackjack game engine built for casinos and startups, featuring realistic card dealing, responsive ratio-locked canvas layouts, and instant bet settling.</p>
+          <div class="project-actions">
+            <a href="https://casino.todayintech.in/" target="_blank" class="btn-brand-primary btn-primary">
+              <i class="fas fa-external-link-alt"></i> Visit Live Link
+            </a>
+            <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;" class="btn-secondary">
+              Build a Custom Game
+            </a>
+          </div>
+        </div>
+
+        <div class="project-hero-image">
+          <img src="../assets/project-casino.png" alt="TodayInTech Casino Blackjack Custom Game Experience" loading="lazy" style="border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); width: 100%; height: auto;">
+        </div>
+
+        <!-- ===== CASE STUDY: Problem → Solution → Result ===== -->
+        <div class="project-content">
+
+          <div class="case-study-grid">
+            <div class="case-study-card case-study-problem">
+              <div class="case-study-icon"><i class="fas fa-triangle-exclamation"></i></div>
+              <h2>The Problem</h2>
+              <p>Launching custom web-based casino systems usually requires heavy native app wrapping, dealing with high latency during remote random number generator (RNG) draws, sluggish rendering on budget mobile screens, and poor layout scaling across different device ratios. Standard web games often feel cheap and sluggish, causing player drop-offs and poor brand trust.</p>
+              <ul>
+                <li>High network lag on remote server card requests</li>
+                <li>Clunky animation loops dropping below 30 FPS on mobile</li>
+                <li>Fixed-aspect layouts clipping or leaving giant black margins</li>
+                <li>Lack of audio responsiveness and tactile feedback</li>
+                <li>Complex integration steps for modular wallet networks</li>
+              </ul>
+            </div>
+
+            <div class="case-study-card case-study-solution brand-card">
+              <div class="case-study-icon brand-icon"><i class="fas fa-lightbulb"></i></div>
+              <h2>Our Solution</h2>
+              <p>We engineered a highly optimized client-side game engine using vanilla HTML5 Canvas and requestAnimationFrame rendering loops. Features include custom double-buffer rendering to prevent flicker, local predictive card-flip rotations, and an advanced Web Audio spatial manager. The engine uses a dynamic aspect-ratio scaling algorithm that automatically matches the viewport while preserving game board proportions.</p>
+              <ul>
+                <li>Dual-buffer HTML5 Canvas for flicker-free rendering</li>
+                <li>60 FPS card-dealing, flip, and chip stack animations</li>
+                <li>Aspect-ratio locking viewport adapter for all screens</li>
+                <li>Real-time local state tracking and instant score calculations</li>
+                <li>Low-latency audio synthesis using Web Audio API</li>
+                <li>Decoupled wallet and bet integration module</li>
+              </ul>
+            </div>
+
+            <div class="case-study-card case-study-result">
+              <div class="case-study-icon"><i class="fas fa-chart-line"></i></div>
+              <h2>The Result</h2>
+              <p>The resulting game engine provides an incredibly premium, app-like gaming experience directly within any standard web browser. Startups can deploy their branded versions instantly without app store compliance issues, boosting conversion rates and user session duration.</p>
+              <ul>
+                <li><strong>60 FPS</strong> buttery smooth dealing on any low-end device</li>
+                <li><strong>0ms</strong> network latency for local layout animations</li>
+                <li><strong>Sub-1s</strong> game engine initialization and bundle loading</li>
+                <li><strong>100%</strong> responsive scaling across mobile, tablet, and desktop</li>
+                <li><strong>Zero</strong> app store wrapping or compliance required</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-section">
+            <h2>Key Implementation Details</h2>
+            <div class="features-grid">
+              <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-cube"></i></div>
+                <h3>HTML5 Canvas Render Loop</h3>
+                <p>Designed a custom render pipeline with requestAnimationFrame. Minimizes browser reflows and repaints, resulting in smooth animation transitions.</p>
+              </div>
+              <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-expand"></i></div>
+                <h3>Proportional Canvas Scaling</h3>
+                <p>Engineered an automatic viewport-matching matrix. Adapts the game felt, chips, and card vectors to any screen width and height perfectly.</p>
+              </div>
+              <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-volume-high"></i></div>
+                <h3>Web Audio API Synthesizer</h3>
+                <p>Injected low-latency custom sound effect nodes for card dealing, chips movement, and dealer calls. Enhances visual action feedback.</p>
+              </div>
+              <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-shield-halved"></i></div>
+                <h3>Secure Game State Engine</h3>
+                <p>Implemented cryptographically signed state updates to prevent browser console manipulation of bet weights and chip balances.</p>
+              </div>
+              <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-money-bill-transfer"></i></div>
+                <h3>Decoupled Wallet Layer</h3>
+                <p>Created an abstract API bridge supporting Web3 wallets, fiat APIs, and demo play tokens. Integration takes less than 50 lines of code.</p>
+              </div>
+              <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-gauge-high"></i></div>
+                <h3>Performance Budgets</h3>
+                <p>Optimized image spritesheets and sound bundles, capping the total game load weight at under 1.2MB for rapid loading on cellular connections.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-section">
+            <h2>Technology Stack</h2>
+            <div class="tech-stack-tags">
+              <span class="tech-tag brand-tech">HTML5 Canvas</span>
+              <span class="tech-tag brand-tech">Web Audio API</span>
+              <span class="tech-tag brand-tech">JavaScript (ES6)</span>
+              <span class="tech-tag brand-tech">CSS3 Variables</span>
+              <span class="tech-tag brand-tech">Double-buffering</span>
+              <span class="tech-tag brand-tech">Vercel</span>
+            </div>
+          </div>
+
+          <div class="project-section">
+            <h2>Project Stats</h2>
+            <div class="stats-card-grid" style="max-width:700px;">
+              <div class="stat-card">
+                <div class="stat-number">60 FPS</div>
+                <div class="stat-label">Smooth Mobile Dealing</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">&lt; 1.2 MB</div>
+                <div class="stat-label">Total Engine Asset Bundle</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">0 ms</div>
+                <div class="stat-label">Local Game Calculation Lag</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Cross-Platform Responsive</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-cta">
+            <h2>Want to Build a Custom Web Game?</h2>
+            <p>Engage your audience with interactive, custom-branded HTML5 games. We engineer high-performance web game engines, from simple card tables to full multiplayer platforms.</p>
+            <div class="cta-buttons">
+              <a href="https://casino.todayintech.in/" target="_blank" class="btn-brand-primary btn-primary">
+                <i class="fas fa-external-link-alt"></i> Visit Blackjack Live
+              </a>
+              <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;" class="btn-secondary">
+                Book a Free Strategy Call
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/917679349780" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2024–2026 TodayInTech. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
