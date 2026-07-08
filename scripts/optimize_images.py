@@ -13,7 +13,7 @@ def optimize_avatars():
         "assets/reviewer-5.png",
         "assets/reviewer-6.png"
     ]
-    
+       
     print("=== OPTIMIZING AVATARS ===")
     for path in avatars:
         if not os.path.exists(path):
