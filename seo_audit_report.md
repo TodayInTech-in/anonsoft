@@ -1212,3 +1212,28 @@ Completed: Optimized projects/senior-care-agency.html EVV benefit card to target
 
 ---
 
+## Keyword Audit: "caregiver scheduling software developer"
+- **Category**: 5. Senior Care Agency Software & Home Care ERP
+- **Status**: Not in Top 10
+
+### 1. Top 10 Ranking Websites
+1. AxisCare (axiscare.com)
+2. AlayaCare (alayacare.com)
+3. WellSky (wellsky.com)
+4. ShiftCare (shiftcare.com)
+
+### 2. Competitor SEO Strategy Analysis
+- Competitors outline drag-and-drop calendars, dynamic shift swaps, and integration with payroll models.
+
+### 3. Our Website Gaps & Loopholes
+- projects/senior-care-agency.html featured simple checklists but lacked direct matching key phrases for "caregiver scheduling software developer".
+
+### 4. Detailed Implementation Plan
+- Task 1: Update caregiver longevity card heading to "Caregiver Scheduling Software".
+- Task 2: Add description targeting caregiver scheduling software developer and drag-and-drop matching.
+
+### 5. Implementation Status
+Completed: Optimized projects/senior-care-agency.html caregiver card targeting caregiver scheduling software developer.
+
+---
+
