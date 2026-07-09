@@ -1336,3 +1336,27 @@ Completed: Optimized projects/senior-care-agency.html family portal module to ta
 
 ---
 
+## Keyword Audit: "home health agency billing software"
+- **Category**: 5. Senior Care Agency Software & Home Care ERP
+- **Status**: Not in Top 10
+
+### 1. Top 10 Ranking Websites
+1. Axxess (axxess.com)
+2. WellSky (wellsky.com)
+3. AlayaCare (alayacare.com)
+4. AxisCare (axiscare.com)
+
+### 2. Competitor SEO Strategy Analysis
+- Competitors explain billing automation, Revenue Cycle Management (RCM) options, Medicaid/Medicare claims submissions, and compliance.
+
+### 3. Our Website Gaps & Loopholes
+- projects/senior-care-agency.html featured automated billing mentions, but lacked explicit search queries matching "home health agency billing software" in FAQ accordion segments.
+
+### 4. Detailed Implementation Plan
+- Task 1: Add a dedicated FAQ item on projects/senior-care-agency.html answering how the portal handles claims, targeting the phrase "home health agency billing software".
+
+### 5. Implementation Status
+Completed: Added a new FAQ item in projects/senior-care-agency.html targeting home health agency billing software.
+
+---
+
