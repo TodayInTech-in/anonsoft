@@ -1312,3 +1312,27 @@ Completed: Optimized projects/senior-care-agency.html EVV module to target EVV c
 
 ---
 
+## Keyword Audit: "family portal software for home care"
+- **Category**: 5. Senior Care Agency Software & Home Care ERP
+- **Status**: Not in Top 10
+
+### 1. Top 10 Ranking Websites
+1. AlayaCare (alayacare.com)
+2. CareSmartz360 (caresmartz360.com)
+3. ShiftCare (shiftcare.com)
+4. Aaniie Care (aaniie.com)
+
+### 2. Competitor SEO Strategy Analysis
+- Competitors emphasize real-time scheduling checks, secure family-agency message boards, invoice payment systems, and document control options.
+
+### 3. Our Website Gaps & Loopholes
+- projects/senior-care-agency.html featured simple family portals but lacked direct query targeting for "family portal software for home care".
+
+### 4. Detailed Implementation Plan
+- Task 1: Update family portal description paragraph on projects/senior-care-agency.html to target "family portal software for home care".
+
+### 5. Implementation Status
+Completed: Optimized projects/senior-care-agency.html family portal module to target family portal software for home care.
+
+---
+
