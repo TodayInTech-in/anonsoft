@@ -104,29 +104,6 @@ We build secure, HIPAA-compliant custom telehealth applications and white-label 
   - 4 weeks from kickoff to MVP launch
   - Zero data breaches — fully HIPAA compliant
 
-### [Impakto — 3D Shoe Configurator Case Study](https://todayintech.in/projects/impakto)
-How we built an interactive, high-performance 3D e-commerce configurator using Three.js and WebGL.
-
-- **The Problem**: Impakto launched India's first smart shoe, which features active step-tracking and built-in heat regulation. However, flat, static 2D product photos failed to convey the complex internal technology and advanced fabric structures of the shoe. Customers couldn't visualize the shoe from different angles, leading to hesitation, lower sales conversions, and high product return rates due to sizing or design mismatch.
-  - Standard 2D product photos lacked interactivity
-  - Inability to highlight smart tech components (heaters, sensors)
-  - Flat color selectors failed to show material textures
-  - Hesitation leading to high cart abandonment rates
-  - High product return rates from sizing/design mismatched expectations
-- **Key Features**:
-  - *WebGL Rendering Pipeline*: Configured Three.js WebGLRenderer with high-precision shadow maps, physical-based rendering (PBR) materials, and realistic environmental lighting.
-  - *Interactive 360° Controls*: Added custom OrbitControls with damping factors and limits on zoom and rotation to prevent the camera from clipping inside the sneaker model.
-  - *Mesh Raycasting Configurator*: Implemented mouse-click raycasting to detect which specific shoe panel (e.g., sole, mesh, laces) the user clicked, opening targeted material options.
-  - *GLTF Draco Compression*: Optimized the 3D shoe model from 45MB to 2.4MB using Draco compression and WebP textures, ensuring rapid mobile page loading.
-  - *Smart Feature Annotations*: Injected HTML-overlay annotation hotspots that lock onto 3D coordinate vectors, letting users click to see smart sensor explanations.
-  - *FPS Optimization*: Engineered dynamic level-of-detail (LOD) rendering and texture downscaling for low-power mobile devices, guaranteeing stable 60 FPS.
-- **The Result**: Integrating the 3D configurator completely transformed Impakto's e-commerce customer experience. The interactive engagement gave users the confidence to customize their footwear, driving brand excitement and dramatically reducing customer hesitation.
-  - 32% increase in average visitor session duration
-  - 18% boost in e-commerce checkout conversion rate
-  - 24% reduction in post-sale product returns
-  - Sub-2s initial 3D canvas loading on 4G connections
-  - 60 FPS smooth rendering performance on mobile browsers
-
 ### [Inventory and Billing SaaS Platform | White-Label](https://todayintech.in/projects/inventory-billing)
 Deploy a complete, fully white-label inventory and billing platform — stock, invoicing, and sales tracking, ready to rebrand.
 
@@ -255,6 +232,29 @@ Deploy a custom-branded restaurant ERP with touch-screen POS, kitchen orders, de
 ### [Senior Care Agency Software Developer & Home Care ERP](https://todayintech.in/projects/senior-care-agency)
 Deploy a custom-branded home care ERP with caregiver scheduling, EVV compliance, automated billing, and a secure family portal.
 
+
+### [Three.js E-Commerce 3D Product Customizer | Impakto Case Study](https://todayintech.in/projects/impakto)
+How we built an interactive, high-performance 3D e-commerce configurator using Three.js and WebGL.
+
+- **The Problem**: To successfully sell their smart shoes online, Impakto required a Three.js e-commerce 3D product customizer, as flat static 2D product photos failed to convey the complex internal technology and advanced fabric structures of the shoe. Customers couldn't visualize the shoe from different angles, leading to hesitation, lower sales conversions, and high product return rates due to sizing or design mismatch.
+  - Standard 2D product photos lacked interactivity
+  - Inability to highlight smart tech components (heaters, sensors)
+  - Flat color selectors failed to show material textures
+  - Hesitation leading to high cart abandonment rates
+  - High product return rates from sizing/design mismatched expectations
+- **Key Features**:
+  - *WebGL Rendering Pipeline*: Configured Three.js WebGLRenderer with high-precision shadow maps, physical-based rendering (PBR) materials, and realistic environmental lighting.
+  - *Interactive 360° Controls*: Added custom OrbitControls with damping factors and limits on zoom and rotation to prevent the camera from clipping inside the sneaker model.
+  - *Mesh Raycasting Configurator*: Implemented mouse-click raycasting to detect which specific shoe panel (e.g., sole, mesh, laces) the user clicked, opening targeted material options.
+  - *GLTF Draco Compression*: Optimized the 3D shoe model from 45MB to 2.4MB using Draco compression and WebP textures, ensuring rapid mobile page loading.
+  - *Smart Feature Annotations*: Injected HTML-overlay annotation hotspots that lock onto 3D coordinate vectors, letting users click to see smart sensor explanations.
+  - *FPS Optimization*: Engineered dynamic level-of-detail (LOD) rendering and texture downscaling for low-power mobile devices, guaranteeing stable 60 FPS.
+- **The Result**: Integrating the 3D configurator completely transformed Impakto's e-commerce customer experience. The interactive engagement gave users the confidence to customize their footwear, driving brand excitement and dramatically reducing customer hesitation.
+  - 32% increase in average visitor session duration
+  - 18% boost in e-commerce checkout conversion rate
+  - 24% reduction in post-sale product returns
+  - Sub-2s initial 3D canvas loading on 4G connections
+  - 60 FPS smooth rendering performance on mobile browsers
 
 ### [VocalFlow — AI Text to Speech Tool | Case Study](https://todayintech.in/projects/vocal-flow)
 How we built a free AI text-to-speech tool with 300+ voices and 50+ languages — no sign-up required.

@@ -1385,3 +1385,27 @@ Completed: Optimized projects/senior-care-agency.html visual showcase Module 1 t
 
 ---
 
+## Keyword Audit: "Three.js e-commerce 3D product customizer"
+- **Category**: 6. 3D Configurator & WebGL (Three.js)
+- **Status**: Not in Top 10
+
+### 1. Top 10 Ranking Websites
+1. Dyadic Solutions (dyadicsolutions.com.tw)
+2. Nexgits (nexgits.com)
+3. Three.js Customizer Lab (threejscustom.com)
+
+### 2. Competitor SEO Strategy Analysis
+- Competitors explain React Three Fiber (R3F) setups, OrbitControls bindings, material swapping logic, and Draco asset performance.
+
+### 3. Our Website Gaps & Loopholes
+- projects/impakto.html used general 3D shoe configurator keywords, but lacked specific "Three.js e-commerce 3D product customizer" matches in headers or first-sentence structures.
+
+### 4. Detailed Implementation Plan
+- Task 1: Update metadata (title, keywords, description) in impakto.html to target "Three.js e-commerce 3D product customizer".
+- Task 2: Align the first sentences of the Problem and Solution paragraphs with the new search phrase.
+
+### 5. Implementation Status
+Completed: Optimized projects/impakto.html metadata, headers, problem, and solution sections for Three.js e-commerce 3D product customizer.
+
+---
+
