@@ -7,9 +7,9 @@ This is the main directory of the TodayInTech website, custom software solutions
 ## Core Pages
 
 - [TodayInTech Homepage](https://todayintech.in/): Looking for a custom startup software development agency? TodayInTech builds scalable SaaS, AI tools, and mobile apps, launching production-ready software in weeks.
-- [Branded Wellness & Fitness App Development](https://todayintech.in/wellness-platform-development): Build a branded wellness app your members will actually use. Wearable integrations, nutrition tracking, live classes, and community features — faster and cheaper than custom. Get your free wellness app roadmap.
-- [Healthcare SaaS MVP Development](https://todayintech.in/healthcare-saas-mvp-development): Build a funded-ready healthcare SaaS MVP in 8 weeks. Scalable architecture, HIPAA compliance, and prior FDA/healthcare experience. Ideal for health-tech founders and pre-seed startups.
-- [White-Label Telemedicine Software for Clinics](https://todayintech.in/telemedicine-software-for-clinics): Launch a HIPAA-compliant, branded telemedicine experience for your clinic in 30 days. Epic/Cerner integration, no per-provider licensing fees. Book a free consultation.
+- [Branded Wellness & Fitness App Development](https://todayintech.in/wellness-platform-development): Build a branded wellness app with wearable integration, nutrition tracking, live classes, and community features—delivered faster and cheaper than custom.
+- [Healthcare SaaS MVP Development](https://todayintech.in/healthcare-saas-mvp-development): Build a funded-ready healthcare SaaS MVP in 8 weeks. Learn about our scalable HIPAA-compliant architecture for health-tech founders and pre-seed startups.
+- [White-Label Telemedicine Software for Clinics](https://todayintech.in/telemedicine-software-for-clinics): Launch a HIPAA-compliant, branded telemedicine platform for your clinic in 30 days. Includes Epic/Cerner integration and no per-provider licensing fees.
 
 ## Services & Projects
 
