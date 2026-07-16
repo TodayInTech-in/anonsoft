@@ -1,5 +1,5 @@
 #!/bin/bash
-# setup_cron.sh — Setup local macOS crontab to automate blog posting every 5 hours
+# setup_cron.sh — Setup local macOS crontab to automate blog posting every 1 hour
 
 REPO_DIR="/Users/skjasimuddin/.zhwork/todayintechweb"
 SCRIPT_PATH="$REPO_DIR/scripts/auto_blog.py"
@@ -14,7 +14,7 @@ fi
 # Ensure script is executable
 chmod +x "$SCRIPT_PATH"
 
-CRON_JOB="0 */5 * * * cd $REPO_DIR && python3 $SCRIPT_PATH >> $LOG_PATH 2>&1"
+CRON_JOB="0 * * * * cd $REPO_DIR && python3 $SCRIPT_PATH >> $LOG_PATH 2>&1"
 
 # Backup current crontab
 crontab -l > current_cron.txt 2>/dev/null || touch current_cron.txt
