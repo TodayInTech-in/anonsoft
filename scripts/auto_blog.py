@@ -19,6 +19,13 @@ ARTICLES = [
         "excerpt": "Learn how HL7 FHIR APIs, EHR integration standards, and secure data exchange are defining the next generation of interoperable medical software in 2026.",
         "read_time": 8,
         "image": "software_prototype.png",
+        "faqs": [
+            {"q": "What is FHIR interoperability in healthcare?", "a": "FHIR (Fast Healthcare Interoperability Resources) is an HL7 standard that uses RESTful APIs and JSON to exchange clinical data between EHR systems, patient portals, and mobile apps in real time."},
+            {"q": "Why is FHIR better than HL7 v2 for modern apps?", "a": "Unlike pipe-delimited HL7 v2 messages, FHIR uses RESTful HTTP queries and JSON, making it much easier to integrate with modern web and mobile applications without complex middleware."},
+            {"q": "How long does FHIR EHR integration typically take?", "a": "A basic FHIR read integration with Epic or Cerner can take 4–8 weeks. Bidirectional write-back with custom workflows typically takes 10–16 weeks depending on the EHR vendor's sandbox access."},
+            {"q": "Is FHIR integration required for HIPAA compliance?", "a": "FHIR itself is not mandated by HIPAA, but the 21st Century Cures Act mandates FHIR-based APIs for certified EHR systems, meaning most enterprise healthcare software must support it to interoperate."},
+            {"q": "Can TodayInTech build FHIR-integrated healthcare software?", "a": "Yes. TodayInTech specializes in HIPAA-compliant healthcare software development including FHIR R4 API integrations with Epic, Cerner, and athenahealth. We deliver working prototypes with zero upfront payment."}
+        ],
         "content": """
         <h2>The Interoperability Mandate in Modern HealthTech</h2>
         <p>In 2026, building isolated healthcare software is no longer viable. Interoperability has transitioned from a compliance checklist item to a foundational product requirement. Driven by regulatory mandates and the demand for real-time patient care insights, developers must design platforms that seamlessly exchange data with major EHR systems like Epic, Cerner, and athenahealth.</p>
@@ -85,6 +92,13 @@ ARTICLES = [
         "excerpt": "Discover the latest technical innovations and security standards required to build secure, scalable, and fully HIPAA-compliant telemedicine applications in 2026.",
         "read_time": 7,
         "image": "software_prototype.png",
+        "faqs": [
+            {"q": "What makes a telehealth app fully HIPAA-compliant in 2026?", "a": "A HIPAA-compliant telehealth app in 2026 must include end-to-end encrypted video calls, PHI stored in isolated audited environments, signed BAAs with cloud vendors, role-based access control, and automated audit logs for every data access event."},
+            {"q": "How much does it cost to build a HIPAA-compliant telemedicine platform?", "a": "A production-ready HIPAA-compliant telemedicine platform typically costs $40,000–$120,000 depending on scope. TodayInTech delivers white-label platforms with zero upfront cost — you pay only after seeing your working prototype."},
+            {"q": "What cloud providers support HIPAA-compliant telehealth?", "a": "AWS, Google Cloud, and Azure all offer HIPAA BAAs. AWS is most commonly used for telehealth due to its Chime SDK for WebRTC video and HealthLake FHIR datastore."},
+            {"q": "Can you build a telehealth app that integrates with Epic or Cerner?", "a": "Yes. TodayInTech builds SMART on FHIR-enabled telehealth platforms that launch from within Epic and Cerner workflows, pulling patient context and writing back clinical notes automatically."},
+            {"q": "How long does it take to launch a telemedicine platform?", "a": "Using our pre-built HIPAA-compliant module library, TodayInTech can deliver a production-ready telehealth MVP in 6–10 weeks, far faster than building from scratch."}
+        ],
         "content": """
         <h2>Evolving Security Standards in Virtual Care</h2>
         <p>In 2026, healthcare software development demands more than simple socket connections and WebRTC links. Patient data privacy rules have evolved, requiring end-to-end encryption for all video packets, zero-knowledge clinical database architectures, and automated audit logs for every system interaction.</p>
@@ -127,6 +141,13 @@ ARTICLES = [
     },
     {
         "slug": "accelerating-threejs-loading-times-3d-customizers",
+        "faqs": [
+            {"q": "Why are Three.js 3D product configurators slow to load?", "a": "Three.js configurators load slowly mainly due to uncompressed GLB/GLTF mesh files, unoptimized textures, and blocking JavaScript. Large geometry and high-resolution PBR maps are the primary culprits."},
+            {"q": "What is Draco compression and how does it help Three.js performance?", "a": "Draco is a Google mesh compression library that can reduce GLB file sizes by 80–95%. Combined with the Three.js DRACOLoader, it dramatically reduces initial download size for 3D models."},
+            {"q": "How do I lazy-load 3D models in a Three.js product configurator?", "a": "Use Three.js LOD (Level of Detail) combined with Intersection Observer to defer loading high-resolution models until the user scrolls the configurator into the viewport."},
+            {"q": "What is the ideal GLB file size for a web-based 3D product customizer?", "a": "Aim for under 2MB per variant after Draco compression. For complex products, stream variants on demand rather than loading all variants upfront to keep initial load under 500ms."},
+            {"q": "Can TodayInTech build a fast Three.js 3D product configurator?", "a": "Yes. TodayInTech has shipped production Three.js 3D product configurators with sub-2-second load times using Draco compression, KTX2 textures, and progressive streaming. Book a free strategy call to see a live demo."}
+        ],
         "title": "Accelerating Three.js Loading Times for 3D Product Customizers",
         "category": "WebGL Technology",
         "excerpt": "WebGL applications face high bounce rates due to large asset sizes. Learn how to optimize Three.js assets, normal maps, and Draco loaders for instant loading.",
@@ -143,6 +164,13 @@ ARTICLES = [
     },
     {
         "slug": "why-white-label-software-drives-agency-growth",
+        "faqs": [
+            {"q": "What is white-label software for agencies?", "a": "White-label software is a pre-built platform that agencies rebrand and resell under their own name without building from scratch, dramatically reducing time-to-market and development cost."},
+            {"q": "How does white-label software help agencies grow faster?", "a": "White-label software lets agencies focus on sales and client relationships instead of engineering. They can take on more clients simultaneously since the product is already built, tested, and compliant."},
+            {"q": "What types of software can be white-labeled for agencies?", "a": "Common white-label products include CRM platforms, telemedicine apps, POS systems, school ERP software, restaurant management systems, and AI chatbot builders."},
+            {"q": "Is white-label software cheaper than custom development?", "a": "Yes, significantly. A white-label solution can be deployed in weeks for a fraction of the cost of custom development, which can take 6–18 months and cost $80,000–$500,000+."},
+            {"q": "Does TodayInTech offer white-label software solutions?", "a": "Yes. TodayInTech's SITES platform offers fully white-labeled SaaS products including restaurant POS, school ERP, senior care software, and church management systems. Book a free demo to see them live."}
+        ],
         "title": "Why White-Label Software is the Ultimate Growth Hack for Agencies",
         "category": "Business Growth",
         "excerpt": "Discover how agencies leverage white-label software, re-brandable SaaS, and outsourced engineering partnerships to scale their recurring revenue without hiring developers.",
@@ -156,6 +184,13 @@ ARTICLES = [
     },
     {
         "slug": "optimizing-clientside-render-speed-nextjs",
+        "faqs": [
+            {"q": "Why is my Next.js app slow on the client side?", "a": "Client-side slowness in Next.js usually comes from large JavaScript bundles, unoptimized images, blocking third-party scripts, or excessive re-renders caused by poor state management."},
+            {"q": "How do I reduce JavaScript bundle size in Next.js?", "a": "Use dynamic imports with next/dynamic to code-split heavy components, audit your bundle with @next/bundle-analyzer, and replace large libraries with lighter alternatives."},
+            {"q": "What is ISR (Incremental Static Regeneration) in Next.js?", "a": "ISR lets you pre-render pages at build time and revalidate them in the background on a schedule, combining the performance of static pages with the freshness of server-side rendering."},
+            {"q": "How does Next.js Image component improve Core Web Vitals?", "a": "The next/image component automatically serves WebP format, lazy-loads off-screen images, and sets correct width/height to prevent Cumulative Layout Shift (CLS), all of which directly improve LCP and CLS scores."},
+            {"q": "Can TodayInTech optimize an existing Next.js application?", "a": "Yes. TodayInTech's engineering team performs full Next.js performance audits covering bundle analysis, Core Web Vitals, server components migration, and caching strategy. Book a free call to discuss your project."}
+        ],
         "title": "Optimizing Client-Side Render Speed in Modern Next.js Applications",
         "category": "Web Performance",
         "excerpt": "Learn advanced performance metrics including INP optimization, route pre-fetching strategies, and bundle splitting tactics for high-traffic Next.js apps.",
@@ -169,6 +204,13 @@ ARTICLES = [
     },
     {
         "slug": "security-first-virtual-care-architecture",
+        "faqs": [
+            {"q": "What is a security-first architecture for virtual care platforms?", "a": "Security-first architecture means designing data isolation, encryption, access control, and audit logging from day one — not as an afterthought — with PHI stored in separate, audited environments."},
+            {"q": "What encryption standards should a telehealth platform use?", "a": "All PHI at rest must use AES-256 encryption. Data in transit must use TLS 1.3. Video streams should use SRTP (Secure Real-time Transport Protocol). Database backups must also be encrypted."},
+            {"q": "How do you prevent unauthorized access in a healthcare SaaS platform?", "a": "Implement role-based access control (RBAC), multi-factor authentication (MFA), least-privilege IAM policies, session timeouts, and real-time anomaly detection on login patterns."},
+            {"q": "What is a BAA and why is it required for HIPAA?", "a": "A Business Associate Agreement (BAA) is a legally required contract between a HIPAA-covered entity and any vendor who handles PHI on their behalf, including cloud providers, email services, and software vendors."},
+            {"q": "Can TodayInTech build a secure healthcare platform with penetration testing?", "a": "Yes. TodayInTech builds healthcare platforms with built-in HIPAA controls and can coordinate third-party VAPT (Vulnerability Assessment and Penetration Testing) as part of the delivery process."}
+        ],
         "title": "Building Security-First Virtual Care Platforms",
         "category": "Healthcare Compliance",
         "excerpt": "A deep dive into system architectures, microservices isolation, and automated network auditing protocols for enterprise-level medical SaaS platforms.",
@@ -182,6 +224,13 @@ ARTICLES = [
     },
     {
         "slug": "scopic-alternatives-healthcare-software-development",
+        "faqs": [
+            {"q": "What are the best alternatives to Scopic for healthcare software development?", "a": "The best Scopic alternatives for healthcare software development include TodayInTech (zero upfront payment model), Arkenea (healthcare-only), Innowise (enterprise staff augmentation), and ScienceSoft (compliance-heavy enterprise work)."},
+            {"q": "Why would I choose TodayInTech over Scopic for my health app?", "a": "TodayInTech offers a unique zero-risk prototype model — we build a fully functional interactive demo of your healthcare app with no upfront payment. You only sign a contract once you've seen it working."},
+            {"q": "How much does Scopic charge for healthcare app development?", "a": "Scopic typically operates on a time-and-materials model at $35–$65/hour for offshore teams. A mid-complexity health app can cost $60,000–$200,000 depending on scope and team size."},
+            {"q": "Can I switch agencies mid-project if I'm unhappy with my current healthcare developer?", "a": "Yes. TodayInTech regularly rescues mid-project healthcare software. We audit your existing codebase, identify technical debt, and deliver a clear migration plan before any new work begins."},
+            {"q": "What certifications should a healthcare software development agency have?", "a": "Look for agencies with HIPAA compliance experience, familiarity with FDA 21 CFR Part 11 (if applicable), ISO 27001 practices, and a track record of delivering EHR-integrated platforms."}
+        ],
         "title": "Scopic Alternatives: Top 5 Custom Healthcare Software Developers (2026)",
         "category": "Competitor Review",
         "excerpt": "Compare the best Scopic alternatives for custom healthcare software development in 2026. Evaluate TodayInTech, ScienceSoft, Innowise, and Arkenea on compliance, speed, and cost.",
@@ -309,6 +358,11 @@ BLOG_TEMPLATE = """<!DOCTYPE html>
   <meta property="og:site_name" content="TodayInTech">
   <meta property="article:published_time" content="{published_date}">
 
+  <!-- FAQPage Structured Data -->
+  <script type="application/ld+json">
+  {faq_schema}
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -361,6 +415,12 @@ BLOG_TEMPLATE = """<!DOCTYPE html>
       <div class="post-body">
         {content}
       </div>
+
+      <!-- FAQ Section -->
+      <section class="post-faq" style="margin-top:3rem;border-top:1px solid rgba(255,255,255,0.08);padding-top:2.5rem;">
+        <h2 style="font-size:1.6rem;margin-bottom:1.5rem;">Frequently Asked Questions</h2>
+        {faq_html}
+      </section>
 
     </article>
   </main>
@@ -426,6 +486,43 @@ def run_git_commands(commit_msg):
     os.system("git push origin main")
     print("Push completed successfully.")
 
+def build_faq_schema(faqs):
+    """Generate FAQPage JSON-LD structured data string."""
+    import json
+    entities = []
+    for faq in faqs:
+        entities.append({
+            "@type": "Question",
+            "name": faq["q"],
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq["a"]
+            }
+        })
+    schema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": entities
+    }
+    return json.dumps(schema, indent=2)
+
+
+def build_faq_html(faqs):
+    """Generate a styled HTML FAQ accordion for the blog post body."""
+    items = []
+    for i, faq in enumerate(faqs):
+        items.append(
+            f'<details style="border:1px solid rgba(255,255,255,0.1);border-radius:12px;'
+            f'margin-bottom:0.75rem;padding:1rem 1.25rem;background:rgba(255,255,255,0.03);">'
+            f'<summary style="font-weight:600;cursor:pointer;list-style:none;display:flex;'
+            f'justify-content:space-between;align-items:center;">'
+            f'{faq["q"]} <span style="font-size:1.2rem;transition:transform 0.2s;">+</span></summary>'
+            f'<p style="margin-top:0.75rem;color:rgba(255,255,255,0.72);line-height:1.7;">'
+            f'{faq["a"]}</p></details>'
+        )
+    return "\n".join(items)
+
+
 def publish_next_blog():
     idx = get_current_publish_index()
     if idx >= len(ARTICLES):
@@ -442,12 +539,15 @@ def publish_next_blog():
     read_time = article["read_time"]
     image = article["image"]
     content = article["content"]
+    faqs = article.get("faqs", [])
     
     current_date = datetime.now().strftime("%B %d, %Y")
     current_year = datetime.now().strftime("%Y")
     
     # 1. Generate the blog HTML file
     blog_html_path = os.path.join(BLOG_DIR, f"{slug}.html")
+    faq_schema = build_faq_schema(faqs) if faqs else '{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[]}'
+    faq_html = build_faq_html(faqs) if faqs else ''
     formatted_html = BLOG_TEMPLATE.format(
         title=title,
         excerpt=excerpt,
@@ -457,7 +557,9 @@ def publish_next_blog():
         read_time=read_time,
         content=content,
         published_date=current_date,
-        current_year=current_year
+        current_year=current_year,
+        faq_schema=faq_schema,
+        faq_html=faq_html
     )
     
     with open(blog_html_path, "w", encoding="utf-8") as f:
