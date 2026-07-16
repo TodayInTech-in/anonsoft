@@ -46,10 +46,62 @@ How we built a structured AI learning platform with 52 chapters and multi-langua
 ### [Campus Management System ERP & School ERP](https://todayintech.in/projects/school-management-system)
 Unify admissions, student directories, online fee collections, gradebooks, rosters, and parent portals in a secure, custom-engineered school ERP platform.
 
+- **Technology Stack**: React.js, Node.js, PostgreSQL, AWS, Docker, Stripe, Twilio
+- **The Challenge**: Schools and campuses struggle with fragmented administration — paper-based admissions, manual fee collection, disconnected gradebooks, and zero visibility for parents. Off-the-shelf ERP tools are either overpriced enterprise suites or under-featured generic tools that don't fit school workflows.
+  - Paper-based student enrollment and records management
+  - Manual fee collection with no online payment gateway
+  - No automated report card or gradebook system
+  - Parents have no real-time visibility into student performance
+  - No timetabling or bus-route tracking capability
+- **Our Solution**: We built a fully white-labeled School ERP platform covering every touchpoint — online admissions, student directories, fee collections, gradebooks, parent portals, timetables, attendance tracking, and GPS-based transport tracking — all under one unified dashboard.
+  - Online student admission with digital document uploads
+  - Integrated fee billing with Stripe/Razorpay/offline payment modes
+  - Automated report card generation with configurable grade schemes
+  - Real-time parent portal mobile app for iOS and Android
+  - Drag-and-drop timetable builder with conflict detection
+  - GPS live bus tracking for school transport management
+- **Key Features**:
+  - *Student Registry*: Manage digital registrations, student directories, family profiles, and class allocations easily.
+  - *Fee Collections*: Deploy secure school fee collection software white label modules with automated WhatsApp invoices and PCI-compliant online card/UPI payment gateways.
+  - *Academics & Grading*: Record exam scores, configure grading systems, and generate student report card sheets instantly.
+  - *Schedules & Timetable*: Coordinate school periods, resolve room conflicts, assign teachers, and track student attendance.
+  - *School Bus Tracking*: Optimize transport routes, track school bus GPS locations, and alert parents of arrival times.
+- **Business Impact**: Schools deploying our ERP reduce administrative overhead by over 60%, eliminate paper workflows entirely, and dramatically improve parent satisfaction scores.
+  - 60%+ reduction in administrative overhead
+  - 100% paperless admissions and fee collection
+  - Real-time visibility for parents via mobile app
+  - Deployable in under 4 weeks with full data migration
+  - Supports multi-campus and multi-branch operations
 
 ### [Church Management Software for End-to-End Church Operations](https://todayintech.in/projects/church-management-software)
 Unify tithing, member databases, safety check-ins, volunteer plans, and accounting ledger sheets in a secure, custom-engineered platform.
 
+- **Technology Stack**: React.js, Node.js, PostgreSQL, AWS, Stripe, Twilio, Google Maps API
+- **The Challenge**: Church administrations operate across multiple areas — member records, donation management, volunteer coordination, small group leadership, event planning, and safety check-ins — with no unified platform built for faith-based organizations. Generic CRMs don't understand church workflows.
+  - Manual tithing tracking via spreadsheets or cash envelopes
+  - No centralized member database or family grouping
+  - Volunteer scheduling done via email and phone calls
+  - No safety check-in system for children's ministry
+  - Disconnected accounting with no fund-specific tracking
+- **Our Solution**: We built a purpose-built Church Management Software unifying online giving, people & groups management, volunteer scheduling, fund accounting, children's ministry safety check-in, and an integrated church mobile app — all under a single white-labeled platform.
+  - Online giving portal with recurring donation support
+  - Centralized member database with family units and spiritual journey tracking
+  - Service plan builder for volunteer role assignments and availability
+  - Children's ministry safety check-in with QR code wristbands
+  - Fund-based church accounting with donation receipts
+  - Branded church mobile app for iOS and Android
+- **Key Features**:
+  - *People & Groups*: Nurture relationships, organize small groups, and track spiritual paths with family directories.
+  - *Donation Management*: Increase donor consistency through customized online giving, recurring donation setups, fund tracking, and text gifts.
+  - *Volunteer Scheduling*: Create service plans, assign volunteer roles, upload sheet music, and collect RSVP replies.
+  - *Fund Accounting*: Manage designated church funds, process payroll, balance ledger sheets, and run audits.
+  - *Child Safety Check-in*: Secure children's classrooms with high-speed tag printing, barcode pairing, and backgrounds.
+- **Business Impact**: Churches using our platform see a significant increase in online giving adoption, improved volunteer coordination, and stronger member engagement.
+  - 3x increase in online giving adoption within 3 months
+  - 80% reduction in volunteer scheduling administration time
+  - 100% digital check-in for children's ministry
+  - Centralized records for 500–5,000+ member congregations
+  - Deployable white-labeled in under 6 weeks
 
 ### [Custom Casino Game Development Company & Blackjack Software](https://todayintech.in/projects/casino-blackjack-game)
 How we built an ultra-smooth, premium HTML5 Canvas Blackjack game engine with realistic physics and zero dealing latency.
@@ -228,10 +280,64 @@ How we built a live radio streaming platform reaching 100,000+ monthly listeners
 ### [Restaurant Management System & White-Label POS](https://todayintech.in/projects/restaurant-management-system)
 Deploy a custom-branded restaurant ERP with touch-screen POS, kitchen orders, delivery dispatch, GPS rider tracking, inventory control, and owner analytics.
 
+- **Technology Stack**: React.js, Node.js, PostgreSQL, AWS, Stripe, Google Maps API, Flutter, WebSockets
+- **The Challenge**: Restaurant owners juggle point-of-sale transactions, kitchen order management, delivery dispatch, inventory tracking, and staff management across disconnected systems. Generic POS software locks restaurants into high per-transaction fees with no customization for their specific menu, kitchen flow, or delivery network.
+  - Disconnected POS, kitchen display, and delivery systems
+  - High per-transaction licensing fees from legacy POS vendors
+  - No GPS delivery dispatch or rider tracking capability
+  - Manual inventory counting with no real-time stock alerts
+  - No branded customer ordering app or loyalty program
+- **Our Solution**: We built a fully white-labeled Restaurant Management System with a touch-screen POS, cloud-based Kitchen Display System (KDS), GPS delivery dispatch, inventory management, and an owner analytics dashboard — custom-branded for each restaurant group.
+  - Custom touch-screen POS with table, takeaway, and delivery order modes
+  - Real-time Kitchen Display System (KDS) with order routing by station
+  - GPS rider tracking with automated dispatch and customer ETA updates
+  - Inventory management with low-stock alerts and supplier ordering
+  - Branded customer ordering app (iOS and Android) with loyalty rewards
+  - Multi-outlet analytics dashboard with revenue and cost reports
+- **Key Features**:
+  - *Custom POS Software*: Touch-screen point-of-sale with table management, split bills, modifiers, and payment terminal integration.
+  - *Kitchen Display System*: Cloud-based KDS routing orders to the correct preparation station in real time.
+  - *GPS Delivery Dispatch*: Automated delivery dispatch with live GPS rider tracking and customer delivery ETA notifications.
+  - *Inventory Management*: Real-time stock tracking with automated low-stock alerts and purchase order generation.
+  - *White-Label Ordering App*: Branded iOS and Android ordering app with menu browsing, cart, payment, and loyalty points.
+  - *Owner Analytics Dashboard*: Multi-outlet revenue reports, item popularity analysis, and staff performance metrics.
+- **Business Impact**: Restaurant groups deploying our platform eliminate third-party delivery commission fees, reduce kitchen errors, and gain real-time control over their full operation.
+  - Zero per-transaction licensing fees vs. legacy POS vendors
+  - 40% reduction in kitchen order errors via KDS
+  - Live GPS delivery tracking for all rider dispatches
+  - Real-time inventory with zero manual counting
+  - White-labeled and deployed in under 6 weeks
 
 ### [Senior Care Agency Software Developer & Home Care ERP](https://todayintech.in/projects/senior-care-agency)
 Deploy a custom-branded home care ERP with caregiver scheduling, EVV compliance, automated billing, and a secure family portal.
 
+- **Technology Stack**: React.js, Node.js, PostgreSQL, AWS, Flutter, Google Maps API, Twilio
+- **The Challenge**: Home care agencies manage complex operations across caregiver scheduling, Electronic Visit Verification (EVV) compliance, automated billing, care plan documentation, and family communication — all simultaneously. Off-the-shelf home care software is either too rigid or too expensive for mid-size agencies.
+  - Manual caregiver scheduling via phone calls and spreadsheets
+  - No EVV-compliant visit verification for Medicaid billing
+  - Disconnected billing with high accounts receivable delays
+  - No family portal for real-time care updates
+  - Care plans stored as unstructured paper documents
+- **Our Solution**: We built a fully white-labeled Home Care ERP with caregiver scheduling, EVV-compliant GPS check-ins, automated Medicaid and private-pay billing, digital care plans, and a secure family portal — all custom-branded for each agency.
+  - Drag-and-drop caregiver schedule management with conflict detection
+  - EVV-compliant GPS-based caregiver check-in and check-out
+  - Automated billing with Medicaid, Medicare, and private-pay claim generation
+  - Digital care plan builder with task checklists and medication management
+  - Secure family portal with real-time visit logs and caregiver profiles
+  - HIPAA-compliant document storage and messaging
+- **Key Features**:
+  - *Caregiver Scheduling*: Drag-and-drop schedule management matching caregiver skills, client preferences, and availability.
+  - *EVV Compliance*: GPS-verified electronic visit verification fully compliant with state Medicaid EVV mandates.
+  - *Automated Billing*: Auto-generated claims for Medicaid, Medicare, and private-pay with denial management tracking.
+  - *Digital Care Plans*: Structured care plan builder with daily task checklists, medication reminders, and incident reporting.
+  - *Family Portal*: Secure web and mobile portal giving families real-time visit logs, caregiver profiles, and messaging.
+  - *HIPAA-Compliant Storage*: Encrypted document management for care records, certifications, and compliance audits.
+- **Business Impact**: Home care agencies using our platform achieve full EVV compliance, dramatically cut billing cycle times, and improve caregiver retention through better scheduling transparency.
+  - 100% EVV compliance with state Medicaid requirements
+  - 60% reduction in billing cycle time
+  - Zero paper-based care plans or visit records
+  - Real-time visibility for families via secure portal
+  - White-labeled and deployed in under 6 weeks
 
 ### [Three.js E-Commerce 3D Product Customizer | Impakto Case Study](https://todayintech.in/projects/impakto)
 How we built an interactive, high-performance 3D e-commerce configurator using Three.js and WebGL.
