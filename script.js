@@ -875,8 +875,86 @@ function initGoogleAnalyticsTracking() {
 
 // ===== DYNAMIC CALENDLY TRIGGER (Zero page load overhead) =====
 window.triggerCalendly = function(url) {
-    if (window.Calendly) {
+    const openCalendly = () => {
         Calendly.initPopupWidget({ url: url });
+
+        // Inject "Open in new tab" pill on top of the Calendly overlay
+        // Small delay so the overlay DOM is present
+        setTimeout(() => {
+            // Avoid duplicate pills
+            if (document.getElementById('cal-newtab-btn')) return;
+
+            const overlay = document.querySelector('.calendly-overlay');
+            if (!overlay) return;
+
+            const pill = document.createElement('a');
+            pill.id = 'cal-newtab-btn';
+            pill.href = url;
+            pill.target = '_blank';
+            pill.rel = 'noopener noreferrer';
+            pill.title = 'Open Calendly in a new browser tab';
+            pill.innerHTML = `
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+                Open in new tab`;
+
+            Object.assign(pill.style, {
+                position: 'fixed',
+                bottom: '24px',
+                left: '50%',
+                transform: 'translateX(-50%)',
+                zIndex: '99999',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '7px',
+                padding: '9px 18px',
+                background: 'rgba(15,13,23,0.92)',
+                color: '#ffffff',
+                border: '1px solid rgba(255,255,255,0.18)',
+                borderRadius: '100px',
+                fontSize: '13px',
+                fontWeight: '600',
+                fontFamily: 'Inter, system-ui, sans-serif',
+                letterSpacing: '0.01em',
+                cursor: 'pointer',
+                textDecoration: 'none',
+                backdropFilter: 'blur(12px)',
+                WebkitBackdropFilter: 'blur(12px)',
+                boxShadow: '0 4px 24px rgba(0,0,0,0.45)',
+                transition: 'background 0.2s, transform 0.2s',
+                whiteSpace: 'nowrap',
+            });
+
+            // Hover effect
+            pill.addEventListener('mouseenter', () => {
+                pill.style.background = 'rgba(40,36,60,0.98)';
+                pill.style.transform = 'translateX(-50%) translateY(-2px)';
+            });
+            pill.addEventListener('mouseleave', () => {
+                pill.style.background = 'rgba(15,13,23,0.92)';
+                pill.style.transform = 'translateX(-50%)';
+            });
+
+            document.body.appendChild(pill);
+
+            // Auto-remove the pill when the overlay is gone
+            const observer = new MutationObserver(() => {
+                if (!document.querySelector('.calendly-overlay')) {
+                    const existing = document.getElementById('cal-newtab-btn');
+                    if (existing) existing.remove();
+                    observer.disconnect();
+                }
+            });
+            observer.observe(document.body, { childList: true, subtree: true });
+
+        }, 600);
+    };
+
+    if (window.Calendly) {
+        openCalendly();
     } else {
         const link = document.createElement('link');
         link.href = 'https://assets.calendly.com/assets/external/widget.css';
@@ -885,9 +963,7 @@ window.triggerCalendly = function(url) {
 
         const script = document.createElement('script');
         script.src = 'https://assets.calendly.com/assets/external/widget.js';
-        script.onload = () => {
-            Calendly.initPopupWidget({ url: url });
-        };
+        script.onload = () => { openCalendly(); };
         document.body.appendChild(script);
     }
 };
