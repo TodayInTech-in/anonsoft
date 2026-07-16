@@ -202,59 +202,75 @@
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What is health white-label software?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Health white-label software is a pre-built healthcare platform that can be rebranded and customized with your company's logo, colors, and features. TodayInTech builds white-label solutions for telemedicine, EHR/EMR, pharmacy management, and patient portals, allowing you to launch your branded health platform in weeks instead of months."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How much does it cost to build a healthcare app?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The cost varies based on complexity, features, and platform. A basic health app MVP starts from $15,000-$30,000, while a comprehensive white-label platform with telemedicine, EHR, and payment integration can range from $50,000-$150,000. Contact TodayInTech for a free consultation and custom quote."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is TodayInTech HIPAA compliant?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, all healthcare products built by TodayInTech are HIPAA compliant with enterprise-grade security including end-to-end encryption, secure data storage, access controls, and audit logging. We follow healthcare industry best practices to ensure patient data protection."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How long does it take to develop a telemedicine app?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "With our white-label approach, a fully branded telemedicine app can be launched in 2-4 weeks. Custom telemedicine platforms with advanced features like AI diagnostics, multi-provider scheduling, and EHR integration typically take 3-6 months. Our agile process ensures rapid delivery without compromising quality or HIPAA compliance."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What technologies does TodayInTech use?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We use industry-leading technologies including React, React Native, Flutter, Next.js, Node.js, Python, MongoDB, PostgreSQL, AWS, Docker, Kubernetes, Firebase, and GraphQL. Our tech stack is chosen to ensure scalability, performance, and long-term maintainability."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does TodayInTech provide post-launch support?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, we provide 24/7 post-launch support and maintenance. This includes bug fixes, performance monitoring, security updates, feature enhancements, and dedicated account management. We believe in long-term partnerships, not one-off projects."
-        }
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does HIPAA compliance mean for a healthcare app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "HIPAA compliance means your app protects patient health information (PHI) using AES-256 encryption at rest, TLS 1.3 in transit, role-based access control, audit logs, and signed Business Associate Agreements (BAAs) with all vendors handling PHI."
       }
-    ]
-  }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it mandatory to be HIPAA compliant for a telemedicine app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Any app that creates, stores, or transmits Protected Health Information in the USA must comply with HIPAA. Violations carry fines from $100 to $50,000 per violation. TodayInTech builds every healthcare app HIPAA-compliant from day one."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a Business Associate Agreement (BAA) in healthcare?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A BAA is a legal contract between a HIPAA-covered entity and any third-party vendor that accesses PHI. Cloud providers (AWS, Google Cloud, Azure), email services, and software vendors must all sign BAAs before they can process your patients' data."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a healthcare app be GDPR and HIPAA compliant simultaneously?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. While HIPAA focuses on US patient data and GDPR on EU residents, both require strong encryption, data minimization, consent management, and breach notification. TodayInTech builds platforms satisfying both frameworks simultaneously."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What security testing is required for a HIPAA-compliant app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "HIPAA's Security Rule requires a risk analysis covering technical safeguards \u2014 penetration testing, vulnerability scanning, access control audits, and disaster recovery testing. TodayInTech coordinates all of these as part of delivery."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does TodayInTech sign BAAs with clients?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We sign a Business Associate Agreement with every healthcare client before development begins, ensuring your patient data is handled with full legal accountability throughout the engagement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What cloud infrastructure does TodayInTech use for healthcare apps?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We primarily use AWS (with a signed BAA) for healthcare workloads \u2014 leveraging Amazon HealthLake (FHIR), S3 with server-side encryption, RDS with encryption at rest, VPC isolation, and CloudTrail for audit logging."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does HIPAA compliance setup take for a new healthcare platform?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Basic HIPAA technical safeguards can be configured in 1-2 weeks alongside development. Full administrative and physical safeguard documentation takes 3-4 additional weeks. TodayInTech handles the entire process."
+      }
+    }
+  ]
+}
   </script>
 
   <script type="application/ld+json">
@@ -1518,147 +1534,84 @@
         </div>
 
         <div class="faq-grid reveal">
+
           <details class="faq-item" open>
             <summary class="faq-question">
-              <span>What kind of custom software do you build?</span>
+              <span>What does HIPAA compliance mean for a healthcare app?</span>
               <span class="faq-icon"><i class="fas fa-plus"></i></span>
             </summary>
             <div class="faq-answer">
-              <p>We build all types of custom software, including <strong>HealthTech platforms</strong>, <strong>EdTech
-                  systems</strong>, <strong>FinTech dashboards</strong>, and <strong>eCommerce solutions</strong>. We
-                specialize in rapidly deploying scalable MVPs in 2-4 weeks, saving you significant time and budget
-                compared to traditional development cycles while maintaining full ownership and customization control.
-              </p>
+              <p>HIPAA compliance means your app protects patient health information (PHI) using AES-256 encryption at rest, TLS 1.3 in transit, role-based access control, audit logs, and signed Business Associate Agreements (BAAs) with all vendors handling PHI.</p>
             </div>
           </details>
 
           <details class="faq-item">
             <summary class="faq-question">
-              <span>How much does it cost to build a custom software application?</span>
+              <span>Is it mandatory to be HIPAA compliant for a telemedicine app?</span>
               <span class="faq-icon"><i class="fas fa-plus"></i></span>
             </summary>
             <div class="faq-answer">
-              <p>The cost depends on complexity and features. Our white-label <strong>MVPs start at $4,999</strong> and
-                our Growth tier platforms start at <strong>$24,999</strong> — a fraction of the $200K+ typical custom
-                build. Enterprise engagements with complex API integrations, custom dashboards, and dedicated teams are
-                scoped based on your specific requirements. <a href=""
-                  onclick="triggerCalendly('https://calendly.com/todayintechdotin/30min');return false;">Book
-                  a free
-                  consultation</a> for a custom quote tailored to your specific requirements.</p>
+              <p>Yes. Any app that creates, stores, or transmits Protected Health Information in the USA must comply with HIPAA. Violations carry fines from $100 to $50,000 per violation. TodayInTech builds every healthcare app HIPAA-compliant from day one.</p>
             </div>
           </details>
 
           <details class="faq-item">
             <summary class="faq-question">
-              <span>Are your healthcare solutions HIPAA and GDPR compliant?</span>
+              <span>What is a Business Associate Agreement (BAA) in healthcare?</span>
               <span class="faq-icon"><i class="fas fa-plus"></i></span>
             </summary>
             <div class="faq-answer">
-              <p>Absolutely. All healthcare products built by TodayInTech are fully <strong>HIPAA compliant</strong> and
-                can be configured for <strong>GDPR compliance</strong>. Our security measures include end-to-end
-                encryption (AES-256), secure cloud storage on AWS with BAA agreements, role-based access controls,
-                comprehensive audit logging, regular penetration testing, and SOC 2 compliance readiness. We follow
-                healthcare industry best practices to ensure complete patient data protection.</p>
+              <p>A BAA is a legal contract between a HIPAA-covered entity and any third-party vendor that accesses PHI. Cloud providers (AWS, Google Cloud, Azure), email services, and software vendors must all sign BAAs before they can process your patients' data.</p>
             </div>
           </details>
 
           <details class="faq-item">
             <summary class="faq-question">
-              <span>How long does it take to develop a telemedicine or healthcare app?</span>
+              <span>Can a healthcare app be GDPR and HIPAA compliant simultaneously?</span>
               <span class="faq-icon"><i class="fas fa-plus"></i></span>
             </summary>
             <div class="faq-answer">
-              <p>With our <strong>white-label approach</strong>, a fully branded telemedicine app can be launched in
-                <strong>2-4 weeks</strong>. Custom telemedicine platforms with advanced features like AI-powered
-                diagnostics, multi-provider scheduling, EHR integration, and insurance claim processing typically take
-                <strong>3-6 months</strong>. Our agile development process with 2-week sprints ensures transparency,
-                rapid
-                iteration, and delivery without compromising quality or security.
-              </p>
+              <p>Yes. While HIPAA focuses on US patient data and GDPR on EU residents, both require strong encryption, data minimization, consent management, and breach notification. TodayInTech builds platforms satisfying both frameworks simultaneously.</p>
             </div>
           </details>
 
           <details class="faq-item">
             <summary class="faq-question">
-              <span>What technologies does TodayInTech use for app development?</span>
+              <span>What security testing is required for a HIPAA-compliant app?</span>
               <span class="faq-icon"><i class="fas fa-plus"></i></span>
             </summary>
             <div class="faq-answer">
-              <p>We use industry-leading technologies chosen for scalability and performance: <strong>React &
-                  Next.js</strong> for web apps, <strong>React Native & Flutter</strong> for cross-platform mobile apps,
-                <strong>Node.js & Python</strong> for backend APIs, <strong>MongoDB & PostgreSQL</strong> for databases,
-                <strong>AWS & GCP</strong> for cloud infrastructure, <strong>Docker & Kubernetes</strong> for
-                containerization, and <strong>HL7 FHIR</strong> for healthcare data interoperability. Every tech
-                decision
-                is made to ensure long-term maintainability and scalability.
-              </p>
+              <p>HIPAA's Security Rule requires a risk analysis covering technical safeguards — penetration testing, vulnerability scanning, access control audits, and disaster recovery testing. TodayInTech coordinates all of these as part of delivery.</p>
             </div>
           </details>
 
           <details class="faq-item">
             <summary class="faq-question">
-              <span>Do you provide post-launch support and maintenance?</span>
+              <span>Does TodayInTech sign BAAs with clients?</span>
               <span class="faq-icon"><i class="fas fa-plus"></i></span>
             </summary>
             <div class="faq-answer">
-              <p>Yes, we provide comprehensive <strong>24/7 post-launch support</strong> including bug fixes,
-                performance
-                monitoring, security patches, feature enhancements, server management, and dedicated account management.
-                We offer flexible support plans — from basic maintenance to full managed services. We believe in
-                building
-                long-term partnerships with our clients, which is why <strong>95% of our clients continue working with
-                  us</strong> after their initial project launch.</p>
+              <p>Yes. We sign a Business Associate Agreement with every healthcare client before development begins, ensuring your patient data is handled with full legal accountability throughout the engagement.</p>
             </div>
           </details>
 
           <details class="faq-item">
             <summary class="faq-question">
-              <span>Can you integrate with existing hospital systems like Epic, Cerner, or Allscripts?</span>
+              <span>What cloud infrastructure does TodayInTech use for healthcare apps?</span>
               <span class="faq-icon"><i class="fas fa-plus"></i></span>
             </summary>
             <div class="faq-answer">
-              <p>Yes, we specialize in <strong>healthcare system integrations</strong>. Our team has extensive
-                experience
-                integrating with major EHR systems including Epic, Cerner, Allscripts, and athenahealth via <strong>HL7
-                  FHIR APIs</strong>. We also handle integrations with pharmacy networks (Surescripts), insurance
-                providers, payment gateways (Stripe, Square), lab systems, medical device APIs, and wearable platforms
-                (Apple Health, Google Fit, Fitbit).</p>
+              <p>We primarily use AWS (with a signed BAA) for healthcare workloads — leveraging Amazon HealthLake (FHIR), S3 with server-side encryption, RDS with encryption at rest, VPC isolation, and CloudTrail for audit logging.</p>
             </div>
           </details>
 
           <details class="faq-item">
             <summary class="faq-question">
-              <span>What industries does TodayInTech serve beyond healthcare?</span>
+              <span>How long does HIPAA compliance setup take for a new healthcare platform?</span>
               <span class="faq-icon"><i class="fas fa-plus"></i></span>
             </summary>
             <div class="faq-answer">
-              <p>While healthcare is our core specialization, we also build exceptional software for
-                <strong>fintech</strong>, <strong>e-commerce</strong>, <strong>education (EdTech)</strong>,
-                <strong>fitness & wellness</strong>, <strong>logistics</strong>, and <strong>enterprise SaaS</strong>.
-                Our
-                expertise in building secure, scalable, and compliant systems translates perfectly across regulated
-                industries. With 120+ projects delivered across 12+ countries, we bring cross-industry insights to every
-                project.
-              </p>
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-question">
-              <span>How does TodayInTech compare to healthcare software development companies like Arkenea or HTD
-                Health?</span>
-              <span class="faq-icon"><i class="fas fa-plus"></i></span>
-            </summary>
-            <div class="faq-answer">
-              <p>Unlike traditional agency models (such as Arkenea or HTD Health) that build custom software entirely
-                from scratch with high upfront retainers and 6+ month timelines, TodayInTech uses a hybrid model. We
-                maintain pre-built, production-ready, HIPAA-compliant modules for common digital health features to
-                cover 80% of the build, then custom-engineer your unique workflows and branding. This allows us to
-                launch in 4-8 weeks. Furthermore, we eliminate risk with our <strong>Free Prototype First</strong>
-                policy &mdash; we build a working prototype of your application with zero upfront payment, and you only
-                pay if you are completely satisfied with the result. Read our full comparison on <a
-                  href="/blog/arkenea-alternatives-healthcare-software-development">Arkenea alternatives and
-                  competitors</a>.</p>
+              <p>Basic HIPAA technical safeguards can be configured in 1-2 weeks alongside development. Full administrative and physical safeguard documentation takes 3-4 additional weeks. TodayInTech handles the entire process.</p>
             </div>
           </details>
         </div>
@@ -1855,7 +1808,7 @@
 
       <div class="footer-bottom">
         <p class="footer-copyright">&copy; 2024–2026 TodayInTech. All rights reserved.</p>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="footer-legal">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <div class="footer-legal">
           <a href="/privacy">Privacy Policy</a>
           <a href="/terms">Terms of Service</a>
           <a href="/refund-policy">Refund Policy</a>
