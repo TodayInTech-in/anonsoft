@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- ===== PRIMARY SEO META TAGS ===== -->
+  <title>Free Software Strategy & Consultation — TodayInTech</title>
+  <meta name="description"
+    content="Are you looking to deploy custom software, SaaS, or AI applications? Book a free 30-minute consultation call with TodayInTech's engineering team to get your product roadmap, tech stack, and cost estimate.">
+  <meta name="keywords"
+    content="free software consultation, saas strategy call, custom app development quote, healthtech roadmap, hire software developers, software estimation calculator, hire react developers">
+  <meta name="author" content="TodayInTech">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+  <link rel="canonical" href="https://todayintech.in/free-consultation/">
+
+  <!-- ===== GEO & LANGUAGE TAGS ===== -->
+  <meta name="geo.region" content="IN-KA">
+  <meta name="geo.placename" content="Bengaluru">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="3 days">
+  <meta name="rating" content="general">
+  <meta name="distribution" content="global">
+
+  <!-- ===== OPEN GRAPH (Facebook, LinkedIn) ===== -->
+  <meta property="og:title" content="Book a Free Software Strategy Call — TodayInTech">
+  <meta property="og:description"
+    content="Are you looking to deploy custom software, SaaS, or AI applications? Get a free architecture roadmap, tech stack recommendation, and timeline estimate.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://todayintech.in/free-consultation/">
+  <meta property="og:image" content="https://todayintech.in/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="TodayInTech Free Software Consultation">
+  <meta property="og:site_name" content="TodayInTech">
+  <meta property="og:locale" content="en_US">
+
+  <!-- ===== TWITTER CARD ===== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Free Software Consultation & Strategy Call — TodayInTech">
+  <meta name="twitter:description"
+    content="Discuss your software architecture, scaling plans, or white-label SaaS development with our engineering team for free.">
+  <meta name="twitter:image" content="https://todayintech.in/assets/og-image.png">
+  <meta name="twitter:image:alt" content="TodayInTech Consultation Call">
+  <meta name="twitter:site" content="@todayintech">
+  <meta name="twitter:creator" content="@todayintech">
+
+  <!-- ===== FAVICON & ICONS ===== -->
+  <link rel="icon" type="image/png" href="../assets/logo.png">
+  <link rel="apple-touch-icon" href="../assets/logo.png">
+
+  <!-- ===== PRECONNECT & STYLESHEET ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="sitemap" type="application/xml" href="../sitemap.xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="../style.css?v=1.2">
+  <link rel="stylesheet" href="../liquid-glass.css">
+
+  <!-- Theme Check for FOUC -->
+  <script>
+    if (localStorage.getItem('lightMode') === 'enabled') {
+      document.documentElement.classList.add('light-mode');
+    }
+  </script>
+
+  <style>
+    /* Custom layout styling for Consultation page */
+    .hero-features {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin: 32px auto 40px;
+      max-width: 580px;
+      text-align: left;
+    }
+
+    .hero-feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+    }
+
+    .hero-feature-item i {
+      color: var(--accent-green);
+      font-size: 1.2rem;
+      margin-top: 4px;
+    }
+
+    .hero-feature-item strong {
+      color: var(--text-primary);
+    }
+
+    /* Consultation Form Section */
+    .consultation-form-section {
+      padding: var(--section-padding);
+      position: relative;
+      background: var(--bg-darker);
+    }
+
+    .consultation-form-wrapper {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--bg-card);
+      border: 1.5px solid var(--border-glass);
+      border-radius: var(--radius-xl);
+      padding: 56px 48px;
+      box-shadow: var(--shadow-large);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .consultation-form-wrapper::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--gradient-primary);
+    }
+
+    .c-form-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .c-form-header h2 {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--text-primary);
+    }
+
+    .c-form-header p {
+      color: var(--text-secondary);
+      font-size: 1rem;
+    }
+
+    .c-form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .c-form-full {
+      grid-column: span 2;
+    }
+
+    .c-btn-submit {
+      width: 100%;
+      padding: 16px;
+      background: var(--gradient-primary);
+      color: var(--bg-dark);
+      font-weight: 700;
+      font-size: 1rem;
+      border-radius: var(--radius-md);
+      transition: var(--transition-normal);
+      margin-top: 12px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+
+    .c-btn-submit:hover {
+      box-shadow: 0 4px 20px rgba(0, 212, 255, 0.4);
+      transform: translateY(-2px);
+    }
+
+    /* Success Message State */
+    .c-form-success {
+      text-align: center;
+      padding: 60px 20px;
+      display: none;
+    }
+
+    .c-success-icon {
+      font-size: 3.5rem;
+      color: var(--accent-green);
+      margin-bottom: 24px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .c-form-success h3 {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: var(--text-primary);
+    }
+
+    .c-form-success p {
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      max-width: 500px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* Calendly Section */
+    .calendly-section {
+      padding: var(--section-padding);
+      position: relative;
+    }
+
+    .calendly-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+    }
+
+    @media (max-width: 768px) {
+      .c-form-grid {
+        grid-template-columns: 1fr;
+      }
+      .c-form-full {
+        grid-column: span 1;
+      }
+      .consultation-form-wrapper {
+        padding: 36px 24px;
+      }
+      .hero-features {
+        padding: 0 10px;
+      }
+    }
+  </style>
+
+  <!-- Calendly Link Widget CSS -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ===== HEADER / NAVIGATION ===== -->
+  <header>
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <a href="/" class="nav-logo" aria-label="TodayInTech Homepage">
+          <img src="../assets/nav_logo.png" alt="TodayInTech logo" style="height: 48px !important; width: auto !important; max-width: none !important; border-radius: 0 !important;">
+        </a>
+        <div class="nav-links" id="navLinks">
+          <a href="/services">Services</a>
+          <a href="/features">Features</a>
+          <a href="/about">About</a>
+          <a href="/health">HealthTech</a>
+          <a href="/ai">AI</a>
+          <a href="/careers">Careers</a>
+          <a href="/contact">FAQ & Contact</a>
+          <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme"><i class="fas fa-sun"></i></button>
+          <a href=""
+            onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;"
+            class="nav-cta" id="navCta">Get a Free Session</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" style="padding: calc(var(--nav-height) + 60px) 0 60px; text-align: center;">
+      <div class="hero-bg">
+        <img src="../assets/hero-bg.png" alt="Abstract digital networking background network mesh" loading="lazy">
+      </div>
+      <div class="container">
+        <div class="hero-content" style="grid-column: 1 / -1; margin: 0 auto; width: 100%; max-width: 900px; padding: 0;">
+          <span class="hero-badge msme-badge">
+            <span class="pulse"></span> Are you looking to deploy a new tech product?
+          </span>
+          
+          <h1 class="hero-title" style="font-size: clamp(2.5rem, 5.5vw, 4.2rem); margin-bottom: 24px; line-height: 1.15;">
+            Get a Free <span style="background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: transparent;">30-Minute</span> Strategy Session
+          </h1>
+          
+          <p class="hero-description" style="font-size: 1.2rem; color: var(--text-secondary); max-width: 700px; margin: 0 auto 32px;">
+            Partner with our expert developers and tech consultants to define your concept, plan the ideal architecture, and launch your product seamlessly.
+          </p>
+
+          <div class="hero-features">
+            <div class="hero-feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span><strong>Tech Stack Selection:</strong> Evaluate React, Flutter, Node.js, Python, or AWS for your project.</span>
+            </div>
+            <div class="hero-feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span><strong>Architecture Roadmap:</strong> Define high-performance server structures, database schemas, and API flows.</span>
+            </div>
+            <div class="hero-feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span><strong>Timeline & Budget Estimate:</strong> Receive a realistic plan to launch your MVP in 2–8 weeks.</span>
+            </div>
+          </div>
+
+          <div class="hero-buttons">
+            <a href="#calendly-booking" class="btn-primary">
+              <i class="fas fa-calendar-alt"></i> Book Online Session
+            </a>
+            <a href="https://wa.me/917679349780" target="_blank" rel="noopener" class="btn-secondary" style="border: 1px solid #25D366; color: var(--text-primary);">
+              <i class="fab fa-whatsapp" style="color: #25D366;"></i> Chat on WhatsApp
+            </a>
+          </div>
+
+          <div class="hero-stats" style="margin-top: 48px;">
+            <div class="hero-stat">
+              <div class="hero-stat-number">120+</div>
+              <div class="hero-stat-label">Projects Delivered</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-number">15+</div>
+              <div class="hero-stat-label">Verified Google Reviews</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-number">100%</div>
+              <div class="hero-stat-label">Data Security (HIPAA Ready)</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PORTFOLIO SECTION ===== -->
+    <section class="portfolio" id="portfolio">
+      <div class="bg-glow"></div>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Our Work</span>
+          <h2 class="section-title">Projects Built & Scaled</h2>
+          <p class="section-subtitle">Take a look at what we've delivered for businesses globally — from mobile medical apps to full SaaS platforms.</p>
+        </div>
+
+        <div class="portfolio-grid">
+          
+          <a href="/projects/senior-care-agency" class="portfolio-card reveal">
+            <div class="portfolio-image">
+              <img src="../assets/project-senior-care.png" alt="Senior Care ERP Home Care Software" loading="lazy" width="1024" height="1024">
+              <div class="portfolio-image-overlay"></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category">SaaS / Healthcare</span>
+              <h3>TodayInTech SITES — Senior Care ERP</h3>
+              <p>A comprehensive, white-label home care platform designed to manage scheduling, EVV compliance, client care logs, and secure family communications.</p>
+              <div class="portfolio-tech">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>PostgreSQL</span>
+                <span>AWS</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="/projects/mednowna" class="portfolio-card reveal">
+            <div class="portfolio-image">
+              <img src="../assets/project-telemedicine.png" alt="Mednowna - Telehealth Platform" loading="lazy" width="1024" height="1024">
+              <div class="portfolio-image-overlay"></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category">HealthTech</span>
+              <h3>Mednowna — Telehealth Platform</h3>
+              <p>A comprehensive virtual care and telemedicine platform offering end-to-end healthcare solutions, secure video consultations, and patient management.</p>
+              <div class="portfolio-tech">
+                <span>React Native</span>
+                <span>Python</span>
+                <span>PostgreSQL</span>
+                <span>Docker</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="/projects/school-management-system" class="portfolio-card reveal">
+            <div class="portfolio-image">
+              <img src="../assets/project-school-erp.png" alt="School ERP Platform" loading="lazy" width="1024" height="1024">
+              <div class="portfolio-image-overlay"></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category">EdTech / SaaS</span>
+              <h3>TodayInTech SITES — School Management ERP</h3>
+              <p>A campus ERP platform designed to automate student records, fee collection, grades, notifications, and parent-teacher communication portals.</p>
+              <div class="portfolio-tech">
+                <span>Vue.js</span>
+                <span>Node.js</span>
+                <span>MySQL</span>
+                <span>AWS</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="/projects/restaurant-management-system" class="portfolio-card reveal">
+            <div class="portfolio-image">
+              <img src="../assets/project-restaurant-hero.png" alt="Restaurant Management System & White-Label POS" loading="lazy" width="1024" height="1024">
+              <div class="portfolio-image-overlay"></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category">SaaS / POS</span>
+              <h3>TodayInTech SITES — Restaurant Management</h3>
+              <p>An end-to-end operations platform featuring touch POS billing, kitchen display queues, table booking layouts, and inventory stock tracking.</p>
+              <div class="portfolio-tech">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+                <span>AWS</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="/projects/impakto" class="portfolio-card reveal">
+            <div class="portfolio-image">
+              <img src="../assets/project/impakto.png" alt="Impakto — 3D Shoe Configurator WebGL Experience" loading="lazy" width="1024" height="1024">
+              <div class="portfolio-image-overlay"></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category">Three.js / WebGL</span>
+              <h3>Impakto — Interactive 3D Configurator</h3>
+              <p>An interactive, high-performance 3D sneaker customizer built with Three.js and WebGL. Personalize colors, materials, and parts in real time.</p>
+              <div class="portfolio-tech">
+                <span>Three.js</span>
+                <span>WebGL</span>
+                <span>Draco Loader</span>
+                <span>Vercel</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="/projects/ai-community" class="portfolio-card reveal">
+            <div class="portfolio-image">
+              <img src="../assets/project/ai-community.png" alt="AI Community Learning Platform" loading="lazy" width="1024" height="1024">
+              <div class="portfolio-image-overlay"></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category">EdTech / AI</span>
+              <h3>AI Community College — Learn Step by Step</h3>
+              <p>A structured, step-by-step AI learning platform with 52 modules. Master machine learning and AI prompts with real sandbox tools.</p>
+              <div class="portfolio-tech">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Gemini API</span>
+                <span>Vercel</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROCESS SECTION ===== -->
+    <section class="process" id="process">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">How We Work</span>
+          <h2 class="section-title">From Idea to Impact in 4 Steps</h2>
+          <p class="section-subtitle">Our proven process ensures every project is delivered on time, on budget, and beyond expectations.</p>
+        </div>
+
+        <div class="process-steps">
+          <div class="process-step reveal">
+            <div class="process-step-number">01</div>
+            <h3>Discovery & Strategy</h3>
+            <p>We dive deep into your requirements, market, and goals to craft the perfect roadmap for your product.</p>
+          </div>
+          <div class="process-step reveal">
+            <div class="process-step-number">02</div>
+            <h3>Design & Prototype</h3>
+            <p>Our designers create stunning UI/UX prototypes that you can test and iterate before development begins.</p>
+          </div>
+          <div class="process-step reveal">
+            <div class="process-step-number">03</div>
+            <h3>Development & Testing</h3>
+            <p>Agile sprints, continuous integration, and rigorous QA — we build robust software that just works.</p>
+          </div>
+          <div class="process-step reveal">
+            <div class="process-step-number">04</div>
+            <h3>Launch & Support</h3>
+            <p>From deployment to ongoing maintenance — we're with you every step of the way post-launch.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS SECTION ===== -->
+    <section class="google-reviews" id="google-reviews">
+      <div class="bg-glow"></div>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label"><i class="fab fa-google"></i> Google Business Reviews</span>
+          <h2 class="section-title">What Our Clients Say on Google</h2>
+          <p class="section-subtitle">100% genuine reviews from our Google Business profile — verified and public. Click any review to check on Google.</p>
+          <div class="google-reviews-summary">
+            <div class="gr-summary-rating">
+              <span class="gr-summary-score">5.0</span>
+              <div class="gr-summary-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <span class="gr-summary-count">15 reviews</span>
+            </div>
+            <a href="https://share.google/DXFATJs1FzVq4KXM7" target="_blank" rel="noopener" class="gr-verify-btn"><i class="fab fa-google"></i> Verify on Google</a>
+          </div>
+        </div>
+
+        <div class="gr-carousel-wrapper">
+          <button class="gr-carousel-arrow gr-arrow-left" aria-label="Previous reviews"><i class="fas fa-chevron-left"></i></button>
+          <div class="gr-carousel" id="grCarousel">
+
+            <div class="gr-card">
+              <div class="gr-card-header">
+                <div class="gr-avatar">DJ</div>
+                <div>
+                  <div class="gr-name">David Jemns</div>
+                  <div class="gr-meta">Verified Client</div>
+                </div>
+              </div>
+              <div class="gr-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <p class="gr-text">Impressive work and good communication. They handled the project professionally and met all expectations.</p>
+              <div class="gr-reply">
+                <div class="gr-reply-label"><i class="fas fa-reply"></i> TodayInTech Solution — Owner</div>
+                <p>Thank you for the positive feedback! We are committed to delivering high-performance, secure solutions and are thrilled to hear our approach helped your project succeed.</p>
+              </div>
+            </div>
+
+            <div class="gr-card">
+              <div class="gr-card-header">
+                <div class="gr-avatar">SA</div>
+                <div>
+                  <div class="gr-name">Sarah Alvi</div>
+                  <div class="gr-meta">Verified Client</div>
+                </div>
+              </div>
+              <div class="gr-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <p class="gr-text">The TodayInTech team took my idea and launched a beautiful, functional MVP in weeks. Highly recommend their services!</p>
+              <div class="gr-reply">
+                <div class="gr-reply-label"><i class="fas fa-reply"></i> TodayInTech Solution — Owner</div>
+                <p>Thank you, Sarah! It was a pleasure working with you to bring your SaaS vision to life so rapidly.</p>
+              </div>
+            </div>
+
+            <div class="gr-card">
+              <div class="gr-card-header">
+                <div class="gr-avatar">RK</div>
+                <div>
+                  <div class="gr-name">Rajesh Kumar</div>
+                  <div class="gr-meta">Verified Client</div>
+                </div>
+              </div>
+              <div class="gr-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <p class="gr-text">Outstanding quality of code and very professional delivery. Helped us design a HIPAA-compliant portal and EHR integration.</p>
+              <div class="gr-reply">
+                <div class="gr-reply-label"><i class="fas fa-reply"></i> TodayInTech Solution — Owner</div>
+                <p>Thank you Rajesh! Building secure and interoperable healthcare systems is a core focus of ours. Glad to support your EHR integrations.</p>
+              </div>
+            </div>
+
+          </div>
+          <button class="gr-carousel-arrow gr-arrow-right" aria-label="Next reviews"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CALENDLY EMBED SECTION ===== -->
+    <section class="calendly-section" id="calendly-booking">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label"><i class="fas fa-calendar-check"></i> Book Instantly</span>
+          <h2 class="section-title">Schedule Your Strategy Call</h2>
+          <p class="section-subtitle">Pick a time that works best for you. The calendar below updates dynamically with our team's availability.</p>
+        </div>
+        
+        <div class="calendly-card reveal">
+          <!-- Calendly inline widget start -->
+          <div class="calendly-inline-widget" data-url="https://calendly.com/todayintechdotin/30min" style="min-width:320px;height:700px;background-color: var(--bg-card);"></div>
+          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+          <!-- Calendly inline widget end -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== INLINE CONSULTATION FORM SECTION ===== -->
+    <section class="consultation-form-section" id="inquiry-form">
+      <div class="container">
+        <div class="consultation-form-wrapper reveal">
+          
+          <div id="cFormContent">
+            <div class="c-form-header">
+              <h2>Send an Inquiry</h2>
+              <p>Prefer writing? Drop us details about your project, and we will email you a proposal in 24 hours.</p>
+            </div>
+
+            <form id="inlineConsultationForm" onsubmit="handleInlineFormSubmit(event)">
+              <div class="c-form-grid">
+                <div class="form-group">
+                  <label for="cFirstName">First Name *</label>
+                  <input type="text" id="cFirstName" placeholder="John" required>
+                </div>
+                <div class="form-group">
+                  <label for="cLastName">Last Name *</label>
+                  <input type="text" id="cLastName" placeholder="Doe" required>
+                </div>
+                <div class="form-group c-form-full">
+                  <label for="cEmail">Work Email *</label>
+                  <input type="email" id="cEmail" placeholder="john@company.com" required>
+                </div>
+                <div class="form-group c-form-full">
+                  <label for="cCompany">Company Name</label>
+                  <input type="text" id="cCompany" placeholder="Your Company">
+                </div>
+                <div class="form-group c-form-full">
+                  <label for="cProjectType">Project Type *</label>
+                  <select id="cProjectType" required>
+                    <option value="" disabled selected>Select a project type</option>
+                    <option value="saas-development">Custom SaaS Application</option>
+                    <option value="healthcare-software">HIPAA Healthcare Platform</option>
+                    <option value="mobile-app">iOS / Android Mobile App</option>
+                    <option value="ai-integration">AI Integration & Chatbots</option>
+                    <option value="ui-ux">UI/UX Design & Prototyping</option>
+                    <option value="other">Other Software Development</option>
+                  </select>
+                </div>
+                <div class="form-group c-form-full">
+                  <label for="cMessage">Tell us about your project</label>
+                  <textarea id="cMessage" placeholder="Briefly describe your requirements, expected timeline, and estimated budget..." required></textarea>
+                </div>
+                <div class="c-form-full">
+                  <button type="submit" class="c-btn-submit">
+                    <i class="fas fa-paper-plane"></i> Send Strategy Request
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="c-form-success" id="cFormSuccess">
+            <div class="c-success-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Thank You!</h3>
+            <p>Your inquiry details have been received successfully. Our engineering team will review your project details and respond via email within 24 hours.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="nav-logo" aria-label="TodayInTech Homepage">
+            <img src="../assets/nav_logo.png" alt="TodayInTech logo" style="height: 48px !important; width: auto !important; max-width: none !important; border-radius: 0 !important;">
+          </a>
+          <p>Empowering healthcare and technology businesses with world-class software solutions. Your vision, our expertise.</p>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/people/Today-In-Tech/61583127425585/" target="_blank"
+              class="footer-social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/todayintech/" target="_blank" class="footer-social"
+              aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/109768769" target="_blank" class="footer-social"
+              aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="/projects/inventory-billing">Inventory & Billing</a></li>
+            <li><a href="/projects/school-management-system">School ERP System</a></li>
+            <li><a href="/projects/restaurant-management-system">Restaurant POS System</a></li>
+            <li><a href="/projects/senior-care-agency">Senior Care Agency</a></li>
+            <li><a href="/projects/impakto">3D Product Customizer</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/#about">About Us</a></li>
+            <li><a href="/#portfolio">Our Work</a></li>
+            <li><a href="/#process">Process</a></li>
+            <li><a href="/#testimonials">Reviews</a></li>
+            <li><a href="/#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:contact@todayintech.in">contact@todayintech.in</a></li>
+            <li><a href="tel:+917679349780">+91 7679349780</a></li>
+            <li><a href="/">Kolkata, India</a></li>
+            <li><a href=""
+                onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;">Book
+                a Call →</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2026 TodayInTech. All rights reserved.</p>
+                        <div class="footer-legal">
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/terms">Terms of Service</a>
+          <a href="/refund-policy">Refund Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BOOKING MODAL (For navbar/footer actions) ===== -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal">
+      <button class="modal-close" onclick="closeBookingModal()" aria-label="Close modal">✕</button>
+
+      <div class="form-content" id="formContent">
+        <h2>Book a Free Consultation</h2>
+        <p class="modal-subtitle">Tell us about your project and we'll get back to you within 24 hours.</p>
+
+        <form id="bookingForm" onsubmit="handleFormSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input type="text" id="firstName" placeholder="John" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name *</label>
+              <input type="text" id="lastName" placeholder="Doe" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Work Email *</label>
+            <input type="email" id="email" placeholder="john@company.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="company">Company Name</label>
+            <input type="text" id="company" placeholder="Your Company">
+          </div>
+
+          <div class="form-group">
+            <label for="projectType">Project Type *</label>
+            <select id="projectType" required>
+              <option value="" disabled selected>Select a service</option>
+              <option value="health-whitelabel">Health White-Label Software</option>
+              <option value="mobile-app">Mobile App Development</option>
+              <option value="web-app">Web Application</option>
+              <option value="cloud-devops">Cloud & DevOps</option>
+              <option value="ui-ux">UI/UX Design</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Tell us about your project</label>
+            <textarea id="message"
+              placeholder="Briefly describe your project requirements, timeline, and budget..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">
+            <i class="fas fa-paper-plane" style="margin-right: 8px;"></i> Send Request & Book a Call
+          </button>
+        </form>
+      </div>
+
+      <div class="form-success" id="formSuccess">
+        <div class="check-icon"><i class="fas fa-check-circle" style="color: var(--accent-green); font-size: 2.5rem;"></i></div>
+        <h3>Thank You!</h3>
+        <p>Your booking request has been received. Our team will reach out to you within 24 hours to schedule your free consultation call.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FLOATING CTA BUTTON ===== -->
+  <div class="floating-cta" id="floatingCta">
+    <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;"
+      class="floating-cta-btn">
+      <span class="floating-cta-pulse"></span>
+      Book Free Call
+    </a>
+  </div>
+
+  <!-- ===== WHATSAPP FLOATING BUTTON ===== -->
+  <a href="https://wa.me/917679349780" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script src="../script.js"></script>
+  <script src="../liquid-glass.js"></script>
+
+  <script>
+    // Standalone Inline Consultation Form Submit Handler
+    function handleInlineFormSubmit(e) {
+      e.preventDefault();
+      
+      const formData = {
+        firstName: document.getElementById('cFirstName').value,
+        lastName: document.getElementById('cLastName').value,
+        email: document.getElementById('cEmail').value,
+        company: document.getElementById('cCompany').value,
+        projectType: document.getElementById('cProjectType').value,
+        message: document.getElementById('cMessage').value
+      };
+      
+      console.log('Inline Consultation Submission:', formData);
+      
+      // Hide form contents, display success message inside form container
+      document.getElementById('cFormContent').style.display = 'none';
+      document.getElementById('cFormSuccess').style.display = 'block';
+      
+      // Reset input fields
+      document.getElementById('inlineConsultationForm').reset();
+    }
+  </script>
+</body>
+
+</html>
