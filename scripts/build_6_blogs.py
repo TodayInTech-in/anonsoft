@@ -2,6 +2,281 @@ import os
 
 output_dir = "/Users/skjasimuddin/.zhwork/todayintechweb/blog"
 
+def create_blog_html(
+    title, slug, image_name, category, publish_date, read_time, meta_desc, keywords,
+    intro_text, body_content, faqs, tags, article_section="AI & Automation"
+):
+    faq_schema_items = []
+    faq_html_items = []
+    for q, a in faqs:
+        faq_schema_items.append(f"""      {{
+        "@type": "Question",
+        "name": "{q.replace('"', '\\"')}",
+        "acceptedAnswer": {{
+          "@type": "Answer",
+          "text": "{a.replace('"', '\\"')}"
+        }}
+      }}""")
+        
+        faq_html_items.append(f"""          <details style="border:1.5px solid #e2e8f0;border-radius:12px;margin-bottom:0.75rem;padding:1rem 1.25rem;background:#f8fafc;">
+            <summary style="font-weight:700;color:#1e293b;cursor:pointer;display:flex;justify-content:space-between;align-items:center;">
+              {q}
+              <span style="font-size:1.2rem;color:var(--primary);transition:transform 0.2s;">+</span>
+            </summary>
+            <p style="margin-top:0.75rem;color:#475569;line-height:1.7;">{a}</p>
+          </details>""")
+
+    faq_schema = ",\n".join(faq_schema_items)
+    faq_html = "\n".join(faq_html_items)
+
+    tag_spans = "".join([f"<span>{t}</span>" for t in tags])
+
+    return f"""<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>{title} | TodayInTech</title>
+  <meta name="description" content="{meta_desc}">
+  <meta name="keywords" content="{keywords}">
+  <meta name="author" content="TodayInTech">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://todayintech.in/blog/{slug}">
+
+  <meta property="og:title" content="{title}">
+  <meta property="og:description" content="{meta_desc}">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://todayintech.in/blog/{slug}">
+  <meta property="og:image" content="https://todayintech.in/assets/blog/{image_name}">
+  <meta property="og:site_name" content="TodayInTech">
+  <meta property="article:published_time" content="{publish_date}">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{title}">
+  <meta name="twitter:description" content="{meta_desc}">
+  <meta name="twitter:image" content="https://todayintech.in/assets/blog/{image_name}">
+  <meta name="twitter:site" content="@todayintech">
+
+  <!-- Article Structured Data -->
+  <script type="application/ld+json">
+  {{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{title}",
+    "description": "{meta_desc}",
+    "image": "https://todayintech.in/assets/blog/{image_name}",
+    "author": {{ "@type": "Organization", "name": "TodayInTech", "url": "https://todayintech.in" }},
+    "publisher": {{
+      "@type": "Organization",
+      "name": "TodayInTech",
+      "logo": {{ "@type": "ImageObject", "url": "https://todayintech.in/assets/logo.png" }}
+    }},
+    "datePublished": "{publish_date}",
+    "dateModified": "{publish_date}",
+    "url": "https://todayintech.in/blog/{slug}",
+    "articleSection": "{article_section}",
+    "keywords": "{keywords}"
+  }}
+  </script>
+
+  <!-- FAQPage Structured Data -->
+  <script type="application/ld+json">
+  {{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+{faq_schema}
+    ]
+  }}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css?v=1.2">
+  <link rel="stylesheet" href="../liquid-glass.css">
+  <link rel="stylesheet" href="blog-post.css">
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  <script>(function(w,d,s,l,i){{w[l]=w[l]||[];w[l].push({{'gtm.start': new Date().getTime(),event:'gtm.js'}});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+dl:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); }})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+
+  <style>
+    .post-faq details[open] {{ border-color: #7c3aed !important; background: #faf5ff !important; }}
+    .post-faq summary {{ color: #1e293b !important; }}
+    .post-faq details p {{ color: #475569 !important; }}
+    .tech-table th {{ background: #f1f5f9; color: #1e293b; font-weight: 700; border-bottom: 2px solid #cbd5e1; }}
+    .tech-table td {{ border-bottom: 1px solid #e2e8f0; color: #334155; }}
+    .tech-table tr:hover td {{ background: #f8fafc; }}
+  </style>
+</head>
+
+<body>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <header>
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <a href="/" class="nav-logo" aria-label="TodayInTech Homepage">
+          <img src="../assets/nav_logo.png" alt="TodayInTech Logo" style="height: 48px !important; width: auto !important; max-width: none !important; border-radius: 0 !important;">
+        </a>
+        <div class="nav-links" id="navLinks">
+          <a href="/#services">Services</a>
+          <a href="/#about">About</a>
+          <a href="/#portfolio">Portfolio</a>
+          <a href="/#process">Process</a>
+          <a href="/#testimonials">Reviews</a>
+          <a href="/#faq">FAQ</a>
+          <a href="/blog/" class="active">Blog</a>
+          <a href="" onclick="triggerCalendly('https://calendly.com/todayintechdotin/30min');return false;" class="nav-cta">Book a Call</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="blog-post-main">
+    <article class="blog-post-container">
+      <div class="post-header">
+        <div class="post-meta">
+          <span class="post-category">{category}</span>
+          <span class="post-date">July 17, 2026</span>
+          <span class="post-read-time">{read_time} min read</span>
+        </div>
+        <h1>{title}</h1>
+        <p class="post-intro">{intro_text}</p>
+      </div>
+
+      <div class="post-body">
+        <div style="margin-bottom: 36px; border-radius: 16px; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 8px 40px rgba(0,0,0,0.1);">
+          <img src="../assets/blog/{image_name}" alt="{title} cover illustration" style="width: 100%; height: auto; display: block;" loading="eager">
+        </div>
+
+{body_content}
+
+        <section class="post-faq" style="margin-top:3rem;border-top:1px solid #e2e8f0;padding-top:2.5rem;">
+          <h2 style="font-family:'Space Grotesk',sans-serif;font-size:1.6rem;font-weight:800;color:#1e293b;margin-bottom:1.5rem;">Frequently Asked Questions</h2>
+{faq_html}
+        </section>
+      </div>
+
+      <div class="post-footer">
+        <div class="post-tags">
+          {tag_spans}
+        </div>
+        <a href="/blog/" class="back-to-blog">&larr; Back to Blog</a>
+      </div>
+    </article>
+
+    <aside class="blog-sidebar">
+      <div class="sidebar-widget">
+        <h3>Related Posts</h3>
+        <ul class="sidebar-posts">
+          <li><a href="/blog/ai-chatbots-vs-traditional-chatbots">AI Chatbots vs Traditional Chatbots</a></li>
+          <li><a href="/blog/what-is-model-context-protocol">What is Model Context Protocol (MCP)?</a></li>
+          <li><a href="/blog/agentic-ai-healthcare-software-2026">Agentic AI in Healthcare 2026</a></li>
+          <li><a href="/blog/no-upfront-payment-software-agency">We Build First, You Pay After</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-widget sidebar-cta">
+        <h3>Build With TodayInTech</h3>
+        <p>Production-ready software in weeks. Zero upfront payment.</p>
+        <a href="" onclick="triggerCalendly('https://calendly.com/todayintechdotin/30min');return false;" class="btn btn-primary btn-sm">Book Free Call</a>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="nav-logo">
+            <img src="../assets/nav_logo.png" alt="TodayInTech Logo" style="height: 48px !important; width: auto !important; max-width: none !important; border-radius: 0 !important;">
+          </a>
+          <p>We help startups and businesses build scalable SaaS platforms, AI tools, and mobile apps.</p>
+          <div class="msme-badge" style="display:flex;align-items:center;gap:12px;margin:24px 0;padding:12px 16px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;width:fit-content;">
+            <img src="../assets/certificate/msme-loo.png" alt="MSME UDYAM Registered Logo" style="height:38px;width:auto;object-fit:contain;" loading="lazy">
+            <div style="display:flex;flex-direction:column;">
+              <span style="font-size:0.7rem;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:0.5px;">Govt. of India Registered MSME</span>
+              <span style="font-size:0.85rem;color:var(--text-primary);font-weight:700;font-family:monospace;letter-spacing:0.5px;margin-top:2px;">UDYAM-WB-03-0108090</span>
+            </div>
+          </div>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/people/Today-In-Tech/61583127425585/" target="_blank" rel="noopener" class="footer-social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/todayintech/" target="_blank" rel="noopener" class="footer-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/109768769" target="_blank" rel="noopener" class="footer-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="/projects/inventory-billing">Inventory &amp; Billing</a></li>
+            <li><a href="/projects/school-management-system">School ERP System</a></li>
+            <li><a href="/projects/restaurant-management-system">Restaurant POS</a></li>
+            <li><a href="/projects/senior-care-agency">Senior Care Agency</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/#about">About Us</a></li>
+            <li><a href="/#portfolio">Our Work</a></li>
+            <li><a href="/#process">Process</a></li>
+            <li><a href="/#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:contact@todayintech.in">contact@todayintech.in</a></li>
+            <li><a href="tel:+917679349780">+91 7679349780</a></li>
+            <li><a href="/">Kolkata, India</a></li>
+            <li><a href="" onclick="triggerCalendly('https://calendly.com/todayintechdotin/30min');return false;">Book a Call &rarr;</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2024&ndash;2026 TodayInTech. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/terms">Terms of Service</a>
+          <a href="/refund-policy">Refund Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script>
+    window.addEventListener('scroll', () => {{
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {{
+        navbar.style.background = 'rgba(6, 9, 17, 0.98)';
+        navbar.style.boxShadow = '0 2px 30px rgba(0,0,0,0.4)';
+      }} else {{
+        navbar.style.background = '';
+        navbar.style.boxShadow = '';
+      }}
+    }});
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    if (navToggle) {{
+      navToggle.addEventListener('click', () => {{
+        navLinks.classList.toggle('active');
+        navToggle.classList.toggle('active');
+      }});
+    }}
+  </script>
+  <script src="../liquid-glass.js"></script>
+</body>
+</html>"""
+
 # ==========================================
 # BLOG 1: WhatsApp Automation
 # ==========================================

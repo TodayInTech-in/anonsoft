@@ -718,8 +718,57 @@
   </url>
 
   <url>
-    <loc>https://todayintech.in/blog/what-is-model-context-protocol.html</loc>
+    <loc>https://todayintech.in/blog/what-is-model-context-protocol</loc>
     <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://todayintech.in/blog/ai-chatbots-vs-traditional-chatbots</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://todayintech.in/blog/whatsapp-automation-increase-business-sales</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://todayintech.in/blog/why-every-business-needs-ai-automation-2026</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://todayintech.in/blog/custom-crm-development-cost-2026</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://todayintech.in/blog/react-native-vs-flutter-2026</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://todayintech.in/blog/how-ai-is-transforming-healthcare-software-2026</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://todayintech.in/blog/top-10-business-processes-automate-ai-2026</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
