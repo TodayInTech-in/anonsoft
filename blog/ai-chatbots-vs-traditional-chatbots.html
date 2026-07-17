@@ -125,6 +125,7 @@
 
   <!-- Inline comparison table styles -->
   <style>
+    /* ─── Compare Grid ──────────────────────────────────────── */
     .compare-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -134,15 +135,15 @@
     .compare-card {
       border-radius: 14px;
       padding: 24px;
-      border: 1px solid;
+      border: 2px solid;
     }
     .compare-card.traditional {
-      background: rgba(74, 222, 128, 0.04);
-      border-color: rgba(74, 222, 128, 0.18);
+      background: #f0fdf4;
+      border-color: #86efac;
     }
     .compare-card.ai {
-      background: rgba(0, 212, 255, 0.05);
-      border-color: rgba(0, 212, 255, 0.2);
+      background: #ecfeff;
+      border-color: #67e8f9;
     }
     .compare-card h4 {
       font-family: 'Space Grotesk', sans-serif;
@@ -153,8 +154,8 @@
       align-items: center;
       gap: 8px;
     }
-    .compare-card.traditional h4 { color: #4ade80; }
-    .compare-card.ai h4 { color: #00d4ff; }
+    .compare-card.traditional h4 { color: #15803d; }
+    .compare-card.ai h4 { color: #0369a1; }
     .compare-card ul {
       list-style: none;
       padding: 0;
@@ -163,20 +164,21 @@
     .compare-card ul li {
       padding: 5px 0;
       font-size: 0.88rem;
-      color: rgba(255,255,255,0.7);
-      border-bottom: 1px solid rgba(255,255,255,0.04);
+      color: #334155;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
       display: flex;
       align-items: flex-start;
       gap: 8px;
     }
     .compare-card ul li:last-child { border-bottom: none; }
     .compare-card ul li::before { content: '•'; flex-shrink: 0; margin-top: 1px; }
-    .compare-card.traditional ul li::before { color: #4ade80; }
-    .compare-card.ai ul li::before { color: #00d4ff; }
+    .compare-card.traditional ul li::before { color: #16a34a; }
+    .compare-card.ai ul li::before { color: #0284c7; }
 
+    /* ─── Verdict Bar ───────────────────────────────────────── */
     .verdict-bar {
-      background: linear-gradient(135deg, rgba(0,212,255,0.06), rgba(123,47,255,0.06));
-      border: 1px solid rgba(123,47,255,0.2);
+      background: #f5f3ff;
+      border: 1.5px solid #c4b5fd;
       border-radius: 14px;
       padding: 20px 24px;
       margin: 24px 0;
@@ -191,7 +193,7 @@
     }
     .verdict-bar .verdict-text strong {
       display: block;
-      color: #c084fc;
+      color: #7c3aed;
       font-size: 0.8rem;
       font-weight: 700;
       text-transform: uppercase;
@@ -200,11 +202,12 @@
     }
     .verdict-bar .verdict-text p {
       margin: 0;
-      color: rgba(255,255,255,0.72);
+      color: #475569;
       font-size: 0.9rem;
       line-height: 1.6;
     }
 
+    /* ─── Stat Row ──────────────────────────────────────────── */
     .stat-row {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -212,8 +215,8 @@
       margin: 28px 0;
     }
     .stat-box {
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.08);
+      background: #f8fafc;
+      border: 1.5px solid #e2e8f0;
       border-radius: 12px;
       padding: 20px 16px;
       text-align: center;
@@ -222,14 +225,30 @@
       font-family: 'Space Grotesk', sans-serif;
       font-size: 1.8rem;
       font-weight: 800;
-      color: #00d4ff;
+      color: #0369a1;
       line-height: 1;
       margin-bottom: 6px;
     }
     .stat-box .stat-label {
       font-size: 0.78rem;
-      color: rgba(255,255,255,0.55);
+      color: #64748b;
       line-height: 1.4;
+    }
+
+    /* ─── FAQ Accordion ─────────────────────────────────────── */
+    .post-faq details {
+      border: 1.5px solid #e2e8f0 !important;
+      background: #f8fafc !important;
+    }
+    .post-faq details[open] {
+      border-color: #7c3aed !important;
+      background: #faf5ff !important;
+    }
+    .post-faq summary {
+      color: #1e293b !important;
+    }
+    .post-faq details p {
+      color: #475569 !important;
     }
 
     @media (max-width: 600px) {
@@ -666,7 +685,7 @@
               What is the main difference between AI chatbots and traditional chatbots?
               <span style="font-size:1.2rem;color:var(--primary);transition:transform 0.2s;">+</span>
             </summary>
-            <p style="margin-top:0.75rem;color:rgba(255,255,255,0.72);line-height:1.7;">Traditional chatbots follow rigid, pre-programmed decision trees and can only respond to exact keyword matches. AI chatbots use Natural Language Processing (NLP) and Large Language Models (LLMs) to understand intent, context, and nuance — handling conversations they were never explicitly programmed for.</p>
+            <p style="margin-top:0.75rem;color:#475569;line-height:1.7;">Traditional chatbots follow rigid, pre-programmed decision trees and can only respond to exact keyword matches. AI chatbots use Natural Language Processing (NLP) and Large Language Models (LLMs) to understand intent, context, and nuance — handling conversations they were never explicitly programmed for.</p>
           </details>
 
           <details style="border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:0.75rem;padding:1rem 1.25rem;background:rgba(255,255,255,0.03);">
@@ -674,7 +693,7 @@
               Are AI chatbots more expensive than traditional chatbots?
               <span style="font-size:1.2rem;color:var(--primary);transition:transform 0.2s;">+</span>
             </summary>
-            <p style="margin-top:0.75rem;color:rgba(255,255,255,0.72);line-height:1.7;">AI chatbots have higher upfront setup costs ($8,000–$25,000 for a RAG pipeline) and ongoing LLM API usage costs. However, their ability to deflect 60–80% of support tickets autonomously delivers a much higher ROI — most businesses recover the cost within 3–6 months through support team savings.</p>
+            <p style="margin-top:0.75rem;color:#475569;line-height:1.7;">AI chatbots have higher upfront setup costs ($8,000–$25,000 for a RAG pipeline) and ongoing LLM API usage costs. However, their ability to deflect 60–80% of support tickets autonomously delivers a much higher ROI — most businesses recover the cost within 3–6 months through support team savings.</p>
           </details>
 
           <details style="border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:0.75rem;padding:1rem 1.25rem;background:rgba(255,255,255,0.03);">
@@ -682,7 +701,7 @@
               Which chatbot is better for customer support — AI or rule-based?
               <span style="font-size:1.2rem;color:var(--primary);transition:transform 0.2s;">+</span>
             </summary>
-            <p style="margin-top:0.75rem;color:rgba(255,255,255,0.72);line-height:1.7;">AI chatbots outperform rule-based chatbots for customer support in almost every metric: they handle open-ended questions, understand context across multiple messages, support multiple languages without extra configuration, and escalate to humans intelligently. For high-volume, complex support, AI chatbots are the clear choice in 2026.</p>
+            <p style="margin-top:0.75rem;color:#475569;line-height:1.7;">AI chatbots outperform rule-based chatbots for customer support in almost every metric: they handle open-ended questions, understand context across multiple messages, support multiple languages without extra configuration, and escalate to humans intelligently. For high-volume, complex support, AI chatbots are the clear choice in 2026.</p>
           </details>
 
           <details style="border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:0.75rem;padding:1rem 1.25rem;background:rgba(255,255,255,0.03);">
@@ -690,7 +709,7 @@
               Can I build a custom AI chatbot for my business?
               <span style="font-size:1.2rem;color:var(--primary);transition:transform 0.2s;">+</span>
             </summary>
-            <p style="margin-top:0.75rem;color:rgba(255,255,255,0.72);line-height:1.7;">Yes. TodayInTech builds custom AI chatbots trained on your specific documentation, product catalog, and support history — using RAG pipelines to ensure accurate, business-specific answers. We integrate with your website, WhatsApp, Slack, and CRM. Book a free strategy call to see a live demo — zero upfront payment required.</p>
+            <p style="margin-top:0.75rem;color:#475569;line-height:1.7;">Yes. TodayInTech builds custom AI chatbots trained on your specific documentation, product catalog, and support history — using RAG pipelines to ensure accurate, business-specific answers. We integrate with your website, WhatsApp, Slack, and CRM. Book a free strategy call to see a live demo — zero upfront payment required.</p>
           </details>
 
           <details style="border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:0.75rem;padding:1rem 1.25rem;background:rgba(255,255,255,0.03);">
@@ -698,7 +717,7 @@
               What is a RAG chatbot and how is it different from a standard ChatGPT integration?
               <span style="font-size:1.2rem;color:var(--primary);transition:transform 0.2s;">+</span>
             </summary>
-            <p style="margin-top:0.75rem;color:rgba(255,255,255,0.72);line-height:1.7;">A RAG (Retrieval-Augmented Generation) chatbot combines a vector database seeded with your proprietary content (docs, FAQs, product specs) with an LLM. Unlike a plain ChatGPT integration that answers from training data, a RAG chatbot answers exclusively from YOUR data — making responses accurate, up-to-date, and hallucination-resistant.</p>
+            <p style="margin-top:0.75rem;color:#475569;line-height:1.7;">A RAG (Retrieval-Augmented Generation) chatbot combines a vector database seeded with your proprietary content (docs, FAQs, product specs) with an LLM. Unlike a plain ChatGPT integration that answers from training data, a RAG chatbot answers exclusively from YOUR data — making responses accurate, up-to-date, and hallucination-resistant.</p>
           </details>
         </section>
 
@@ -806,7 +825,7 @@
 
       <div class="footer-bottom">
         <p class="footer-copyright">&copy; 2024&ndash;2026 TodayInTech. All rights reserved.</p>
-                        <div class="footer-legal">
+                                <div class="footer-legal">
           <a href="/privacy">Privacy Policy</a>
           <a href="/terms">Terms of Service</a>
           <a href="/refund-policy">Refund Policy</a>
