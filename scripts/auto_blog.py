@@ -417,7 +417,7 @@ BLOG_TEMPLATE = """<!DOCTYPE html>
       </div>
 
       <!-- FAQ Section -->
-      <section class="post-faq" style="margin-top:3rem;border-top:1px solid rgba(255,255,255,0.08);padding-top:2.5rem;">
+      <section class="post-faq" style="margin-top:3rem;border-top:1px solid #e2e8f0;padding-top:2.5rem;">
         <h2 style="font-size:1.6rem;margin-bottom:1.5rem;">Frequently Asked Questions</h2>
         {faq_html}
       </section>
@@ -512,12 +512,12 @@ def build_faq_html(faqs):
     items = []
     for i, faq in enumerate(faqs):
         items.append(
-            f'<details style="border:1px solid rgba(255,255,255,0.1);border-radius:12px;'
-            f'margin-bottom:0.75rem;padding:1rem 1.25rem;background:rgba(255,255,255,0.03);">'
+            f'<details style="border:1px solid #e2e8f0;border-radius:12px;'
+            f'margin-bottom:0.75rem;padding:1rem 1.25rem;background:#f8fafc;">'
             f'<summary style="font-weight:600;cursor:pointer;list-style:none;display:flex;'
-            f'justify-content:space-between;align-items:center;">'
-            f'{faq["q"]} <span style="font-size:1.2rem;transition:transform 0.2s;">+</span></summary>'
-            f'<p style="margin-top:0.75rem;color:rgba(255,255,255,0.72);line-height:1.7;">'
+            f'justify-content:space-between;align-items:center;color:#1e293b;">'
+            f'{faq["q"]} <span style="font-size:1.2rem;color:#0369a1;transition:transform 0.2s;">+</span></summary>'
+            f'<p style="margin-top:0.75rem;color:#475569;line-height:1.7;">'
             f'{faq["a"]}</p></details>'
         )
     return "\n".join(items)
