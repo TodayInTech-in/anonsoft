@@ -1,80 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>https://www.todayintech.in Blog</title>
-    <link>https://www.todayintech.in</link>
-    <description>Latest blog posts from https://www.todayintech.in</description>
+    <title>TodayInTech Blog</title>
+    <link>https://todayintech.in</link>
+    <description>Latest custom software engineering, virtual care compliance, and product builder insights from TodayInTech.</description>
     <language>en-us</language>
-    <atom:link href="https://www.todayintech.in/public/feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://todayintech.in/public/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Transform Your Congregation: The Ultimate Guide to Church Management Software</title>
-      <link>https://www.todayintech.in/blog/transform-your-congregation-the-ultimate-guide-to-church-man.html</link>
-      <description>Blog post about Church Management Software</description>
-      <pubDate>Mon, 29 Jun 2026 10:51:12 +0000</pubDate>
-      <guid isPermaLink="true">https://www.todayintech.in/blog/transform-your-congregation-the-ultimate-guide-to-church-man.html</guid>
+      <title>Intellectsoft Alternatives: Top 5 Healthcare Software Development Partners (2026)</title>
+      <link>https://todayintech.in/blog/intellectsoft-alternatives-healthcare-software-development</link>
+      <description>Compare the best Intellectsoft alternatives for custom healthcare software development in 2026. Evaluate TodayInTech, ScienceSoft, HTD Health, and Arkenea on cost, compliance, and IP ownership.</description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/intellectsoft-alternatives-healthcare-software-development</guid>
     </item>
     <item>
-      <title>Unlocking Success with White Label Hotel Management Solutions</title>
-      <link>https://www.todayintech.in/blog/unlocking-success-with-white-label-hotel-management-solution.html</link>
-      <description>Blog post about White label hotel management</description>
-      <pubDate>Sat, 27 Jun 2026 12:49:34 +0000</pubDate>
-      <guid isPermaLink="true">https://www.todayintech.in/blog/unlocking-success-with-white-label-hotel-management-solution.html</guid>
+      <title>Scopic Alternatives: Top 5 Custom Healthcare Software Developers (2026)</title>
+      <link>https://todayintech.in/blog/scopic-alternatives-healthcare-software-development</link>
+      <description>Compare the best Scopic alternatives for custom healthcare software development in 2026. Evaluate TodayInTech, ScienceSoft, Innowise, and Arkenea on compliance, speed, and cost.</description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/scopic-alternatives-healthcare-software-development</guid>
     </item>
     <item>
-      <title>Unlocking the Future of Healthcare: A Deep Dive into White Label Telehealth</title>
-      <link>https://www.todayintech.in/blog/unlocking-the-future-of-healthcare-a-deep-dive-into-white-la.html</link>
-      <description>Blog post about white label Telehealth</description>
-      <pubDate>Sat, 27 Jun 2026 09:45:49 +0000</pubDate>
-      <guid isPermaLink="true">https://www.todayintech.in/blog/unlocking-the-future-of-healthcare-a-deep-dive-into-white-la.html</guid>
+      <title>Agentic AI in Healthcare: Automating Prior Authorization & RCM in 2026</title>
+      <link>https://todayintech.in/blog/agentic-ai-prior-authorization-revenue-cycle-management-healthcare</link>
+      <description>Deploy autonomous AI agents to automate prior authorizations, claim submissions, and revenue cycle management (RCM) for US clinics while ensuring strict HIPAA compliance.</description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/agentic-ai-prior-authorization-revenue-cycle-management-healthcare</guid>
     </item>
     <item>
-      <title>Unlocking the Future of Healthcare with White Label Telehealth Solutions</title>
-      <link>https://www.todayintech.in/blog/unlocking-the-future-of-healthcare-with-white-label-teleheal.html</link>
-      <description>Blog post about white label Telehealth</description>
-      <pubDate>Sat, 27 Jun 2026 09:41:21 +0000</pubDate>
-      <guid isPermaLink="true">https://www.todayintech.in/blog/unlocking-the-future-of-healthcare-with-white-label-teleheal.html</guid>
+      <title>Agentic AI in Healthcare Operations: Clinical Workflow Automation (2026)</title>
+      <link>https://todayintech.in/blog/agentic-ai-clinical-workflows-healthcare-software</link>
+      <description>How healthcare organizations are deploying Agentic AI in 2026 to automate prior authorizations, clinical scheduling, and EHR data entry while maintaining HIPAA compliance.</description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/agentic-ai-clinical-workflows-healthcare-software</guid>
     </item>
     <item>
-      <title>Unlocking Potential: The Benefits of White Label Telehealth Solutions</title>
-      <link>https://www.todayintech.in/blog/unlocking-potential-the-benefits-of-white-label-telehealth-s.html</link>
-      <description>Blog post about white label Telehealth</description>
-      <pubDate>Sat, 27 Jun 2026 09:40:47 +0000</pubDate>
-      <guid isPermaLink="true">https://www.todayintech.in/blog/unlocking-potential-the-benefits-of-white-label-telehealth-s.html</guid>
+      <title>5G Applications in Healthcare</title>
+      <link>https://todayintech.in/blog/5g-applications-in-healthcare</link>
+      <description>Complete guide on 5g applications in healthcare. Learn about development process, best practices, cost analysis, and implementation strategies for healthcare organizations in 2026.</description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/5g-applications-in-healthcare</guid>
     </item>
     <item>
-      <title>Unlocking the Future of Healthcare with White Label Telehealth</title>
-      <link>https://www.todayintech.in/blog/unlocking-the-future-of-healthcare-with-white-label-teleheal.html</link>
-      <description>Blog post about white label Telehealth</description>
-      <pubDate>Sat, 27 Jun 2026 05:41:40 +0000</pubDate>
-      <guid isPermaLink="true">https://www.todayintech.in/blog/unlocking-the-future-of-healthcare-with-white-label-teleheal.html</guid>
+      <title>Computer Vision for Medical Imaging</title>
+      <link>https://todayintech.in/blog/computer-vision-for-medical-imaging</link>
+      <description>Complete guide on computer vision for medical imaging. Learn about development process, best practices, cost analysis, and implementation strategies for healthcare organizations in 2026.</description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/computer-vision-for-medical-imaging</guid>
     </item>
     <item>
-      <title>சீமான்: தமிழில் அதன் முக்கியத்துவம் மற்றும் பயோபிராண்டிங்</title>
-      <link>https://www.todayintech.in/blog/ச-ம-ன-தம-ழ-ல-அதன-ம-க-க-யத-த.html</link>
-      <description>Blog post about சீமான்</description>
-      <pubDate>Sat, 27 Jun 2026 05:39:56 +0000</pubDate>
-      <guid isPermaLink="true">https://www.todayintech.in/blog/ச-ம-ன-தம-ழ-ல-அதன-ம-க-க-யத-த.html</guid>
+      <title>Wheel Alternatives: Top 5 B2B Telehealth Platforms (2026)</title>
+      <link>https://todayintech.in/blog/wheel-alternatives-healthcare-software-development</link>
+      <description>Compare the best Wheel alternatives for B2B telehealth infrastructure, software development, and clinician staffing in 2026. Evaluate TodayInTech, OpenLoop, SteadyMD, and Bask Health.</description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/wheel-alternatives-healthcare-software-development</guid>
     </item>
     <item>
-      <title>Exploring the Legacy of K Bhagyaraj: A Cinematic Icon</title>
-      <link>https://www.todayintech.in/blog/exploring-the-legacy-of-k-bhagyaraj-a-cinematic-icon.html</link>
-      <description>Blog post about k bhagyaraj</description>
-      <pubDate>Sat, 27 Jun 2026 05:21:48 +0000</pubDate>
-      <guid isPermaLink="true">https://www.todayintech.in/blog/exploring-the-legacy-of-k-bhagyaraj-a-cinematic-icon.html</guid>
+      <title>AI Clinical Workflow Automation: The $300B Healthcare Opportunity in 2026</title>
+      <link>https://todayintech.in/blog/ai-clinical-workflow-automation-healthcare-2026</link>
+      <description>Discover how AI clinical workflow automation is reshaping US healthcare in 2026. Learn about ambient documentation, agentic AI, EHR integration, and how to build HIPAA-compliant AI-powered healthcare software.</description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/ai-clinical-workflow-automation-healthcare-2026</guid>
     </item>
     <item>
-      <title>K. Bhagyaraj: The Icon of Tamil Cinema and His Enduring Legacy</title>
-      <link>https://www.todayintech.in/blog/k-bhagyaraj-the-icon-of-tamil-cinema-and-his-enduring-legacy.html</link>
-      <description>Blog post about k bhagyaraj</description>
-      <pubDate>Sat, 27 Jun 2026 05:20:37 +0000</pubDate>
-      <guid isPermaLink="true">https://www.todayintech.in/blog/k-bhagyaraj-the-icon-of-tamil-cinema-and-his-enduring-legacy.html</guid>
+      <title>White-Label vs. Custom Healthcare Software: TodayInTech vs. Arkenea, HTD Health, &amp; Healee</title>
+      <link>https://todayintech.in/blog/white-label-vs-custom-healthcare-software</link>
+      <description>Deciding between white-label, custom builds, and TodayInTech's hybrid model. Compare TodayInTech against Arkenea, HTD Health, and Healee for launching digital health software in 2026.</description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/white-label-vs-custom-healthcare-software</guid>
     </item>
     <item>
-      <title>The Legacy of Bhagyaraj: A Pioneer in Tamil Cinema</title>
-      <link>https://www.todayintech.in/blog/the-legacy-of-bhagyaraj-a-pioneer-in-tamil-cinema.html</link>
-      <description>Blog post about bhagyaraj</description>
-      <pubDate>Sat, 27 Jun 2026 04:56:39 +0000</pubDate>
-      <guid isPermaLink="true">https://www.todayintech.in/blog/the-legacy-of-bhagyaraj-a-pioneer-in-tamil-cinema.html</guid>
+      <title>Real-Time Data Processing in Healthcare</title>
+      <link>https://todayintech.in/blog/real-time-data-processing-in-healthcare</link>
+      <description>Complete guide on real-time data processing in healthcare. Learn about development process, best practices, cost analysis, and implementation strategies for healthcare organizations in 2026.</description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/real-time-data-processing-in-healthcare</guid>
+    </item>
+    <item>
+      <title>Hospital Information System Architecture</title>
+      <link>https://todayintech.in/blog/hospital-information-system-architecture</link>
+      <description>Complete guide on hospital information system architecture. Learn about development process, best practices, cost analysis, and implementation strategies for healthcare organizations in 2026.</description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/hospital-information-system-architecture</guid>
+    </item>
+    <item>
+      <title>White Label Healthcare Software Benefits for Clinics</title>
+      <link>https://todayintech.in/blog/white-label-healthcare-software-benefits-for-clinics</link>
+      <description>Complete guide on white label healthcare software benefits for clinics. Learn about development process, best practices, cost analysis, and implementation strategies for healthcare organizations in 2026.</description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/white-label-healthcare-software-benefits-for-clinics</guid>
+    </item>
+    <item>
+      <title>ScienceSoft Alternatives: Top 5 Healthcare Software Developers (2026)</title>
+      <link>https://todayintech.in/blog/sciencesoft-alternatives-healthcare-software-development</link>
+      <description>Compare the best ScienceSoft alternatives for healthcare software development in 2026. Evaluate TodayInTech, Arkenea, HTD Health, and Healee on cost, speed, and HIPAA compliance.</description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/sciencesoft-alternatives-healthcare-software-development</guid>
+    </item>
+    <item>
+      <title>Internet of Medical Things (IoMT) Development</title>
+      <link>https://todayintech.in/blog/internet-of-medical-things-(iomt)-development</link>
+      <description>Complete guide on internet of medical things (iomt) development. Learn about development process, best practices, cost analysis, and implementation strategies for healthcare organizations in 2026.</description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/internet-of-medical-things-(iomt)-development</guid>
+    </item>
+    <item>
+      <title>API Development for Healthcare Integrations</title>
+      <link>https://todayintech.in/blog/api-development-for-healthcare-integrations</link>
+      <description>Complete guide on api development for healthcare integrations. Learn about development process, best practices, cost analysis, and implementation strategies for healthcare organizations in 2026.</description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/api-development-for-healthcare-integrations</guid>
     </item>
   </channel>
 </rss>
