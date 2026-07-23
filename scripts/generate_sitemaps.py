@@ -5,6 +5,12 @@ from datetime import datetime
 
 DOMAIN = "https://todayintech.in"
 
+def xml_escape(text):
+    """Escape XML special characters in string."""
+    if not text:
+        return ""
+    return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;").replace("'", "&apos;")
+
 def is_redirect_file(file_path):
     """Check if an HTML file is a refresh redirect shell."""
     try:
@@ -138,7 +144,7 @@ def generate_sitemaps():
         f.write('  <!-- ===== CORE PAGES ===== -->\n')
         for url, freq, pri, date in core_urls:
             f.write('  <url>\n')
-            f.write(f'    <loc>{url}</loc>\n')
+            f.write(f'    <loc>{xml_escape(url)}</loc>\n')
             f.write(f'    <lastmod>{date}</lastmod>\n')
             f.write(f'    <changefreq>{freq}</changefreq>\n')
             f.write(f'    <priority>{pri}</priority>\n')
@@ -147,7 +153,7 @@ def generate_sitemaps():
         f.write('\n  <!-- ===== PROJECTS ===== -->\n')
         for url, freq, pri, date in project_urls:
             f.write('  <url>\n')
-            f.write(f'    <loc>{url}</loc>\n')
+            f.write(f'    <loc>{xml_escape(url)}</loc>\n')
             f.write(f'    <lastmod>{date}</lastmod>\n')
             f.write(f'    <changefreq>{freq}</changefreq>\n')
             f.write(f'    <priority>{pri}</priority>\n')
@@ -172,7 +178,7 @@ def generate_sitemaps():
         
         for url, freq, pri, date, _, _ in blog_urls:
             f.write('  <url>\n')
-            f.write(f'    <loc>{url}</loc>\n')
+            f.write(f'    <loc>{xml_escape(url)}</loc>\n')
             f.write(f'    <lastmod>{date}</lastmod>\n')
             f.write(f'    <changefreq>{freq}</changefreq>\n')
             f.write(f'    <priority>{pri}</priority>\n')
@@ -217,11 +223,11 @@ def generate_sitemaps():
                 pub_date = date
                 
             f.write('    <item>\n')
-            f.write(f'      <title>{title}</title>\n')
-            f.write(f'      <link>{url}</link>\n')
-            f.write(f'      <description>{desc}</description>\n')
+            f.write(f'      <title>{xml_escape(title)}</title>\n')
+            f.write(f'      <link>{xml_escape(url)}</link>\n')
+            f.write(f'      <description>{xml_escape(desc)}</description>\n')
             f.write(f'      <pubDate>{pub_date}</pubDate>\n')
-            f.write(f'      <guid isPermaLink="true">{url}</guid>\n')
+            f.write(f'      <guid isPermaLink="true">{xml_escape(url)}</guid>\n')
             f.write('    </item>\n')
             
         f.write('  </channel>\n')
