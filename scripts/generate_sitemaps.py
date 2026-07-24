@@ -136,6 +136,7 @@ def generate_sitemaps():
     sitemap_xml_path = os.path.join(root_dir, 'sitemap.xml')
     with open(sitemap_xml_path, 'w', encoding='utf-8') as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
+        f.write('<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>\n')
         f.write('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n')
         f.write('        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"\n')
         f.write('        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9\n')
@@ -183,6 +184,7 @@ def generate_sitemaps():
     sitemap_blog_path = os.path.join(root_dir, 'public', 'sitemap-blog.xml')
     with open(sitemap_blog_path, 'w', encoding='utf-8') as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
+        f.write('<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>\n')
         f.write('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
         
         for url, freq, pri, date, _, _ in blog_urls:
