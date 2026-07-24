@@ -8,12 +8,12 @@ This is the comprehensive index of all resources, pages, active projects, and te
 
 - [TodayInTech Homepage](https://todayintech.in/): Looking for a custom startup software development agency? TodayInTech builds scalable SaaS, AI tools, and mobile apps, launching production-ready software in weeks.
 - [Branded Wellness & Fitness App Development](https://todayintech.in/wellness-platform-development): Build a branded wellness app with wearable integration, nutrition tracking, live classes, and community features—delivered faster and cheaper than custom.
-- [Healthcare SaaS MVP Development](https://todayintech.in/healthcare-saas-mvp-development): Build a funded-ready healthcare SaaS MVP in 8 weeks. Learn about our scalable HIPAA-compliant architecture for health-tech founders and pre-seed startups.
+- [Healthcare SaaS MVP Development Studio](https://todayintech.in/healthcare-saas-mvp-development): Build a funded-ready healthcare SaaS MVP in 8 weeks. Learn about our scalable HIPAA-compliant architecture for health-tech founders and pre-seed startups.
 - [White-Label Telemedicine Software for Clinics](https://todayintech.in/telemedicine-software-for-clinics): Launch a HIPAA-compliant, branded telemedicine platform for your clinic in 30 days. Includes Epic/Cerner integration and no per-provider licensing fees.
 
 ## Services & Projects
 
-### [AI Community College — Learn AI Step by Step | Case Study](https://todayintech.in/projects/ai-community)
+### [AI Community Platform & Learning App](https://todayintech.in/projects/ai-community)
 How we built a structured AI learning platform with 52 chapters and multi-language support.
 
 - **Technology Stack**: React, Node.js, Prisma, PostgreSQL, AI Integration, i18n, Vercel
@@ -43,37 +43,39 @@ How we built a structured AI learning platform with 52 chapters and multi-langua
   - 85% chapter completion rate (vs. 15% industry average)
   - Active community with 1,000+ posts and discussions
 
-### [Campus Management System ERP & School ERP](https://todayintech.in/projects/school-management-system)
-Unify admissions, student directories, online fee collections, gradebooks, rosters, and parent portals in a secure, custom-engineered school ERP platform.
+### [AI Text to Speech Voice Cloning SaaS](https://todayintech.in/projects/vocal-flow)
+How we built a free AI text-to-speech tool with 300+ voices and 50+ languages — no sign-up required.
 
-- **Technology Stack**: React.js, Node.js, PostgreSQL, AWS, Docker, Stripe, Twilio
-- **The Challenge**: Schools and campuses struggle with fragmented administration — paper-based admissions, manual fee collection, disconnected gradebooks, and zero visibility for parents. Off-the-shelf ERP tools are either overpriced enterprise suites or under-featured generic tools that don't fit school workflows.
-  - Paper-based student enrollment and records management
-  - Manual fee collection with no online payment gateway
-  - No automated report card or gradebook system
-  - Parents have no real-time visibility into student performance
-  - No timetabling or bus-route tracking capability
-- **Our Solution**: We built a fully white-labeled School ERP platform covering every touchpoint — online admissions, student directories, fee collections, gradebooks, parent portals, timetables, attendance tracking, and GPS-based transport tracking — all under one unified dashboard.
-  - Online student admission with digital document uploads
-  - Integrated fee billing with Stripe/Razorpay/offline payment modes
-  - Automated report card generation with configurable grade schemes
-  - Real-time parent portal mobile app for iOS and Android
-  - Drag-and-drop timetable builder with conflict detection
-  - GPS live bus tracking for school transport management
+- **Technology Stack**: React, Web Speech API, JavaScript, CSS3, LocalStorage, Vercel, Open Source
+- **The Problem**: Content creators, educators, and small businesses needed high-quality voiceovers for their videos, courses, and presentations, but existing text-to-speech tools were either too expensive (charging per character), limited to a few robotic-sounding voices, or required lengthy sign-up processes. Most affordable options produced unnatural, monotone audio that was unusable for professional content.
+  - Premium TTS tools charge $30–$100+ per month
+  - Free alternatives sound robotic and unnatural
+  - Limited language support — most tools cover 5–10 languages only
+  - Mandatory sign-up and credit card requirements create friction
+  - No easy way to preview and compare different voices
+- **Our Solution**: We built VocalFlow — a completely free, open-source AI text-to-speech tool that runs directly in the browser. The platform leverages advanced speech synthesis APIs to offer 300+ natural-sounding voices across 50+ languages, with controls for pitch, speed, and volume. Users can type or paste up to 5,000 characters, preview different voices instantly, download audio files, and access their generation history — all without creating an account.
+  - 300+ natural-sounding AI voices across 50+ languages
+  - Adjustable pitch, speed, and volume controls
+  - Up to 5,000 characters per generation
+  - Instant voice preview and comparison
+  - Audio download in standard formats
+  - Generation history for quick access to past conversions
+  - Zero sign-up — works instantly in any browser
 - **Key Features**:
-  - *Student Registry*: Manage digital registrations, student directories, family profiles, and class allocations easily.
-  - *Fee Collections*: Deploy secure school fee collection software white label modules with automated WhatsApp invoices and PCI-compliant online card/UPI payment gateways.
-  - *Academics & Grading*: Record exam scores, configure grading systems, and generate student report card sheets instantly.
-  - *Schedules & Timetable*: Coordinate school periods, resolve room conflicts, assign teachers, and track student attendance.
-  - *School Bus Tracking*: Optimize transport routes, track school bus GPS locations, and alert parents of arrival times.
-- **Business Impact**: Schools deploying our ERP reduce administrative overhead by over 60%, eliminate paper workflows entirely, and dramatically improve parent satisfaction scores.
-  - 60%+ reduction in administrative overhead
-  - 100% paperless admissions and fee collection
-  - Real-time visibility for parents via mobile app
-  - Deployable in under 4 weeks with full data migration
-  - Supports multi-campus and multi-branch operations
+  - *300+ AI Voices*: Choose from hundreds of natural-sounding voices — male, female, and neutral — across diverse accents and styles.
+  - *50+ Languages*: Generate speech in English, Spanish, French, Hindi, Arabic, Japanese, and dozens more languages.
+  - *Voice Customization*: Fine-tune pitch, speed, and volume to get exactly the voice and tone you need for your content.
+  - *Audio Download*: Download generated speech as audio files ready for use in videos, presentations, and podcasts.
+  - *Generation History*: Access and replay your past conversions without regenerating — saves time and effort.
+  - *Free and Open Source*: Completely free to use with no limits. Open-source codebase available for community contributions.
+- **The Result**: VocalFlow quickly gained traction among content creators, educators, and developers. Being free and open source made it a go-to alternative to paid tools, and the zero-friction experience (no sign-up) drove strong organic growth and word-of-mouth referrals.
+  - 10,000+ voiceovers generated in the first month
+  - 300+ AI voices available across 50+ languages
+  - Zero cost — completely free for all users
+  - 0 seconds onboarding — no sign-up required
+  - Open source — community contributions and transparency
 
-### [Church Management Software for End-to-End Church Operations](https://todayintech.in/projects/church-management-software)
+### [Church Management Software (ChMS)](https://todayintech.in/projects/church-management-software)
 Unify tithing, member databases, safety check-ins, volunteer plans, and accounting ledger sheets in a secure, custom-engineered platform.
 
 - **Technology Stack**: React.js, Node.js, PostgreSQL, AWS, Stripe, Twilio, Google Maps API
@@ -103,7 +105,7 @@ Unify tithing, member databases, safety check-ins, volunteer plans, and accounti
   - Centralized records for 500–5,000+ member congregations
   - Deployable white-labeled in under 6 weeks
 
-### [Custom Casino Game Development Company & Blackjack Software](https://todayintech.in/projects/casino-blackjack-game)
+### [Custom Casino Game Development Company](https://todayintech.in/projects/casino-blackjack-game)
 How we built an ultra-smooth, premium HTML5 Canvas Blackjack game engine with realistic physics and zero dealing latency.
 
 - **The Problem**: Without a dedicated HTML5 casino game developer, off-the-shelf casino scripts suffer from high server lag, failing to support custom betting limits or unique rules. Launching custom web-based casino systems usually requires heavy native app wrapping, dealing with high latency during remote random number generator (RNG) draws, sluggish rendering on budget mobile screens, and poor layout scaling across different device ratios. Standard web games often feel cheap and sluggish, causing player drop-offs and poor brand trust.
@@ -126,7 +128,7 @@ How we built an ultra-smooth, premium HTML5 Canvas Blackjack game engine with re
   - 100% responsive scaling across mobile, tablet, and desktop
   - Zero app store wrapping or compliance required
 
-### [HIPAA-Compliant Telemedicine App Developer | Custom Telehealth](https://todayintech.in/projects/mednowna)
+### [HIPAA-Compliant Telemedicine Developer](https://todayintech.in/projects/mednowna)
 We build secure, HIPAA-compliant custom telehealth applications and white-label platforms with EHR integration and video consultations.
 
 - **Technology Stack**: React Native, Python, PostgreSQL, Docker, WebRTC, AWS, HL7/FHIR
@@ -156,7 +158,150 @@ We build secure, HIPAA-compliant custom telehealth applications and white-label 
   - 4 weeks from kickoff to MVP launch
   - Zero data breaches — fully HIPAA compliant
 
-### [Inventory and Billing SaaS Platform | White-Label](https://todayintech.in/projects/inventory-billing)
+### [Master AI Mobile App & GPT Assistant](https://todayintech.in/projects/master-ai)
+Case study: How we built a premium AI assistant app integrating GPT-4 and Claude 3.5 for iOS and Android.
+
+- **Technology Stack**: Flutter, Dart, OpenAI API (GPT-4), Anthropic API (Claude 3.5), Node.js, Express, PostgreSQL, AWS ECS, Docker
+- **The Challenge**: AI technology is advancing rapidly, but accessing these tools on mobile remains fragmented and difficult for daily users. Consumers had to download multiple heavy apps for different workflows (e.g., chat, script generation, code fixing, or translations), paying costly recurring subscriptions for each. The challenge was to package complex large language models (LLMs) into a single, high-performance, and gorgeous mobile interface that anyone can use instantly.
+  - Fragmented user experience across multiple single-purpose AI tools
+  - Complex prompt engineering required for high-quality content output
+  - Slow mobile response times and high latency over API calls
+  - Lack of intuitive, pre-built workflows for social media creators
+- **Our Solution**: TodayInTech engineered Master AI—a native, lightweight mobile application integrating GPT-4 and Claude 3.5 via a unified API gateway. We built specialized workflow modules directly into the client interface, enabling users to generate ready-to-post viral scripts, fix programming bugs, translate between 50+ languages, and chat with AI in real-time, all with one tap.
+  - Unified API gateway dynamically routing requests to GPT-4, Claude 3.5, or Gemini
+  - "Go Viral" engine with pre-optimized prompts for social media scripts and copy
+  - Stream parsing responses for near-instant (under 1.2s) text rendering
+  - Secure local caching of chat history for offline retrieval
+  - Elegant dark-mode UI with smooth glassmorphism effects
+- **Key Features**:
+  - *Intelligent AI Chat*: Natural, contextual conversations powered by a hybrid network of GPT-4 and Claude 3.5.
+  - *Go Viral Scriptwriter*: One-tap content creator that outputs high-engagement hooks, scripts, and captions for social media.
+  - *Programming Assistant*: Write, refactor, and debug code snippets on the go across major languages like Python, JS, and C++.
+  - *Smart Translation*: Translate and learn languages with contextual explanations and grammatical insights.
+  - *Smart Model Routing*: Our custom backend routes tasks to the best-suited LLM, optimizing response speed and quality.
+  - *Premium Aesthetics*: Dark mode interface built with modern typography, glowing micro-animations, and fluid transitions.
+- **The Results**: Master AI successfully launched on the Google Play Store, quickly gaining traction among content creators, students, and software developers. The app stands as a showcase of TodayInTech's ability to engineer, wrap, and deploy state-of-the-art AI technology into customer-ready mobile products.
+  - 500+ Active Downloads on Google Play Store within weeks of launch
+  - 4.8/5 Star Rating from early users
+  - Under 1.2 Seconds average response latency using stream chunking
+  - 100% Native Feel utilizing optimized Flutter cross-platform architecture
+  - Zero Downtime achieved through automated multi-model failover routing
+
+### [NexBotix — Multi-Channel Marketing AI](https://todayintech.in/projects/nexbotix)
+How we built a multi-channel marketing platform unifying WhatsApp, email, and AI chatbots into one powerful system.
+
+- **Technology Stack**: React, Node.js, WhatsApp Business API, OpenAI GPT, MongoDB, SMTP Integration, REST API, AWS
+- **The Problem**: Small and medium-sized businesses were struggling with fragmented marketing tools. They were using separate platforms for WhatsApp messaging, email campaigns, and customer support — leading to data silos, inconsistent messaging, and wasted time switching between tools. Most affordable solutions lacked AI capabilities, and enterprise tools were too expensive for growing businesses.
+  - Marketing spread across 4+ disconnected tools
+  - No unified view of customer interactions
+  - Manual lead follow-ups resulting in lost opportunities
+  - No AI-powered automation for customer engagement
+- **Our Solution**: We built NexBotix — a unified multi-channel marketing platform that combines WhatsApp Business API integration, professional email campaigns with SMTP support, and AI-powered website chatbots into a single dashboard. The platform includes contact management, campaign analytics, automated follow-ups, and a drag-and-drop chatbot builder.
+  - WhatsApp Business API integration for bulk messaging and automation
+  - Professional email campaign builder with templates and analytics
+  - AI-powered website chatbot with custom training
+  - Unified contact management and CRM
+  - Campaign performance analytics and reporting
+  - Automated lead scoring and follow-up sequences
+- **Key Features**:
+  - *WhatsApp Marketing*: Bulk messaging, automated replies, and template-based campaigns through WhatsApp Business API.
+  - *Email Campaigns*: Professional email builder with templates, scheduling, and detailed delivery analytics.
+  - *AI Website Chatbot*: Custom-trained AI chatbot that answers visitor questions and captures leads automatically.
+  - *Contact Management*: Unified CRM for managing all customer interactions across every channel.
+  - *Campaign Analytics*: Real-time dashboards showing open rates, click-through rates, and conversion metrics.
+  - *Automated Follow-Ups*: Smart sequences that automatically follow up with leads based on their behaviour.
+- **The Result**: NexBotix is now used by multiple businesses to manage their entire marketing operations from one platform. Clients have reported significant improvements in lead conversion, response times, and overall marketing efficiency.
+  - 3x increase in lead conversion rates
+  - 70% reduction in response time with AI chatbot
+  - 85% less time spent managing marketing tools
+  - 40% higher email open rates with optimized campaigns
+  - Single dashboard replacing 4+ separate tools
+
+### [Radio Stiming — Live Streaming App](https://todayintech.in/projects/radio-station)
+How we built a live radio streaming platform reaching 100,000+ monthly listeners with real-time engagement features.
+
+- **Technology Stack**: React, Node.js, WebSocket, Audio Streaming API, MongoDB, Vercel, Responsive CSS
+- **The Problem**: The client operated a growing radio station with 5+ years on air but had no online presence. Their entire operation — show scheduling, listener engagement, song requests, and host profiles — was managed manually through spreadsheets and phone calls. They were losing listeners to digital-first competitors and had no way to reach audiences beyond their FM signal range.
+  - No live streaming or web presence
+  - Manual show scheduling via spreadsheets
+  - No listener engagement or song request system
+  - Limited reach — FM only, no global audience
+- **Our Solution**: We designed and built a complete digital radio station platform from the ground up. The system includes real-time audio streaming, an automated show schedule with live status indicators, detailed DJ profiles, a listener song request system, a news and blog section, and a fully responsive mobile-first design — all wrapped in a premium dark-gold visual identity that matches the station's brand.
+  - Real-time audio streaming with persistent player
+  - Automated show scheduling with live/upcoming indicators
+  - Interactive song request and dedication system
+  - DJ profile pages with bios and show history
+  - News and blog management system
+  - Mobile-first responsive design
+- **Key Features**:
+  - *Live Audio Streaming*: 24/7 real-time audio streaming with adaptive bitrate for smooth playback on any connection.
+  - *Show Scheduling*: Automated weekly schedule with live status indicators, upcoming shows, and DJ assignments.
+  - *DJ Profiles*: Rich host profiles with bios, specialities, show history, and social media integration.
+  - *Song Request System*: Interactive request and dedication system that lets listeners participate in live shows.
+  - *News and Blog*: Built-in content management for station news, show announcements, and community updates.
+  - *Mobile-First Design*: Fully responsive interface optimized for listening on the go across all devices.
+- **The Result**: Within 3 months of launch, the station expanded its reach from a local FM audience to a global listener base. The platform now serves 100,000+ monthly listeners, hosts 14 live shows weekly with 6 expert DJs, and has completely eliminated manual scheduling overhead.
+  - 100,000+ monthly listeners (up from ~15,000 FM-only)
+  - 6x increase in audience reach
+  - 90% reduction in administrative overhead
+  - 500+ song requests processed weekly
+  - 24/7 automated live streaming with zero downtime
+
+### [Senior Care Agency Software & Home Care](https://todayintech.in/projects/senior-care-agency)
+Deploy a custom-branded home care ERP with caregiver scheduling, EVV compliance, automated billing, and a secure family portal.
+
+- **Technology Stack**: React.js, Node.js, PostgreSQL, AWS, Flutter, Google Maps API, Twilio
+- **The Challenge**: Home care agencies manage complex operations across caregiver scheduling, Electronic Visit Verification (EVV) compliance, automated billing, care plan documentation, and family communication — all simultaneously. Off-the-shelf home care software is either too rigid or too expensive for mid-size agencies.
+  - Manual caregiver scheduling via phone calls and spreadsheets
+  - No EVV-compliant visit verification for Medicaid billing
+  - Disconnected billing with high accounts receivable delays
+  - No family portal for real-time care updates
+  - Care plans stored as unstructured paper documents
+- **Our Solution**: We built a fully white-labeled Home Care ERP with caregiver scheduling, EVV-compliant GPS check-ins, automated Medicaid and private-pay billing, digital care plans, and a secure family portal — all custom-branded for each agency.
+  - Drag-and-drop caregiver schedule management with conflict detection
+  - EVV-compliant GPS-based caregiver check-in and check-out
+  - Automated billing with Medicaid, Medicare, and private-pay claim generation
+  - Digital care plan builder with task checklists and medication management
+  - Secure family portal with real-time visit logs and caregiver profiles
+  - HIPAA-compliant document storage and messaging
+- **Key Features**:
+  - *Caregiver Scheduling*: Drag-and-drop schedule management matching caregiver skills, client preferences, and availability.
+  - *EVV Compliance*: GPS-verified electronic visit verification fully compliant with state Medicaid EVV mandates.
+  - *Automated Billing*: Auto-generated claims for Medicaid, Medicare, and private-pay with denial management tracking.
+  - *Digital Care Plans*: Structured care plan builder with daily task checklists, medication reminders, and incident reporting.
+  - *Family Portal*: Secure web and mobile portal giving families real-time visit logs, caregiver profiles, and messaging.
+  - *HIPAA-Compliant Storage*: Encrypted document management for care records, certifications, and compliance audits.
+- **Business Impact**: Home care agencies using our platform achieve full EVV compliance, dramatically cut billing cycle times, and improve caregiver retention through better scheduling transparency.
+  - 100% EVV compliance with state Medicaid requirements
+  - 60% reduction in billing cycle time
+  - Zero paper-based care plans or visit records
+  - Real-time visibility for families via secure portal
+  - White-labeled and deployed in under 6 weeks
+
+### [Three.js 3D Product Customizer WebGL](https://todayintech.in/projects/impakto)
+How we built an interactive, high-performance 3D e-commerce configurator using Three.js and WebGL.
+
+- **The Problem**: To successfully sell their smart shoes online, Impakto required a Three.js e-commerce 3D product customizer, as flat static 2D product photos failed to convey the complex internal technology and advanced fabric structures of the shoe. Customers couldn't visualize the shoe from different angles, leading to hesitation, lower sales conversions, and high product return rates due to sizing or design mismatch.
+  - Standard 2D product photos lacked interactivity
+  - Inability to highlight smart tech components (heaters, sensors)
+  - Flat color selectors failed to show material textures
+  - Hesitation leading to high cart abandonment rates
+  - High product return rates from sizing/design mismatched expectations
+- **Key Features**:
+  - *WebGL Rendering Pipeline*: Configured Three.js WebGLRenderer with high-precision shadow maps, physical-based rendering (PBR) materials, and realistic environmental lighting.
+  - *Interactive 360° Controls*: Added custom OrbitControls with damping factors and limits on zoom and rotation to prevent the camera from clipping inside the sneaker model.
+  - *Mesh Raycasting Configurator*: Implemented mouse-click raycasting to detect which specific shoe panel (e.g., sole, mesh, laces) the user clicked, opening targeted material options.
+  - *GLTF Draco Compression*: Optimized the 3D shoe model from 45MB to 2.4MB using Draco compression and WebP textures, ensuring rapid mobile page loading.
+  - *Smart Feature Annotations*: Injected HTML-overlay annotation hotspots that lock onto 3D coordinate vectors, letting users click to see smart sensor explanations.
+  - *FPS Optimization*: Engineered dynamic level-of-detail (LOD) rendering and texture downscaling for low-power mobile devices, guaranteeing stable 60 FPS.
+- **The Result**: Integrating the 3D configurator completely transformed Impakto's e-commerce customer experience. The interactive engagement gave users the confidence to customize their footwear, driving brand excitement and dramatically reducing customer hesitation.
+  - 32% increase in average visitor session duration
+  - 18% boost in e-commerce checkout conversion rate
+  - 24% reduction in post-sale product returns
+  - Sub-2s initial 3D canvas loading on 4G connections
+  - 60 FPS smooth rendering performance on mobile browsers
+
+### [White-Label Inventory & Billing SaaS](https://todayintech.in/projects/inventory-billing)
 Deploy a complete, fully white-label inventory and billing platform — stock, invoicing, and sales tracking, ready to rebrand.
 
 - **Technology Stack**: React, Node.js, PostgreSQL, REST API, Multi-Tenant, White-Label, Vercel
@@ -188,96 +333,7 @@ Deploy a complete, fully white-label inventory and billing platform — stock, i
   - Multi-user role-based access for whole teams
   - Reseller-ready — a new revenue stream for partners
 
-### [Master AI: GPT Magic in Hand | AI Mobile App Case Study](https://todayintech.in/projects/master-ai)
-Case study: How we built a premium AI assistant app integrating GPT-4 and Claude 3.5 for iOS and Android.
-
-- **Technology Stack**: Flutter, Dart, OpenAI API (GPT-4), Anthropic API (Claude 3.5), Node.js, Express, PostgreSQL, AWS ECS, Docker
-- **The Challenge**: AI technology is advancing rapidly, but accessing these tools on mobile remains fragmented and difficult for daily users. Consumers had to download multiple heavy apps for different workflows (e.g., chat, script generation, code fixing, or translations), paying costly recurring subscriptions for each. The challenge was to package complex large language models (LLMs) into a single, high-performance, and gorgeous mobile interface that anyone can use instantly.
-  - Fragmented user experience across multiple single-purpose AI tools
-  - Complex prompt engineering required for high-quality content output
-  - Slow mobile response times and high latency over API calls
-  - Lack of intuitive, pre-built workflows for social media creators
-- **Our Solution**: TodayInTech engineered Master AI—a native, lightweight mobile application integrating GPT-4 and Claude 3.5 via a unified API gateway. We built specialized workflow modules directly into the client interface, enabling users to generate ready-to-post viral scripts, fix programming bugs, translate between 50+ languages, and chat with AI in real-time, all with one tap.
-  - Unified API gateway dynamically routing requests to GPT-4, Claude 3.5, or Gemini
-  - "Go Viral" engine with pre-optimized prompts for social media scripts and copy
-  - Stream parsing responses for near-instant (under 1.2s) text rendering
-  - Secure local caching of chat history for offline retrieval
-  - Elegant dark-mode UI with smooth glassmorphism effects
-- **Key Features**:
-  - *Intelligent AI Chat*: Natural, contextual conversations powered by a hybrid network of GPT-4 and Claude 3.5.
-  - *Go Viral Scriptwriter*: One-tap content creator that outputs high-engagement hooks, scripts, and captions for social media.
-  - *Programming Assistant*: Write, refactor, and debug code snippets on the go across major languages like Python, JS, and C++.
-  - *Smart Translation*: Translate and learn languages with contextual explanations and grammatical insights.
-  - *Smart Model Routing*: Our custom backend routes tasks to the best-suited LLM, optimizing response speed and quality.
-  - *Premium Aesthetics*: Dark mode interface built with modern typography, glowing micro-animations, and fluid transitions.
-- **The Results**: Master AI successfully launched on the Google Play Store, quickly gaining traction among content creators, students, and software developers. The app stands as a showcase of TodayInTech's ability to engineer, wrap, and deploy state-of-the-art AI technology into customer-ready mobile products.
-  - 500+ Active Downloads on Google Play Store within weeks of launch
-  - 4.8/5 Star Rating from early users
-  - Under 1.2 Seconds average response latency using stream chunking
-  - 100% Native Feel utilizing optimized Flutter cross-platform architecture
-  - Zero Downtime achieved through automated multi-model failover routing
-
-### [NexBotix — Multi-Channel Marketing AI | Case Study](https://todayintech.in/projects/nexbotix)
-How we built a multi-channel marketing platform unifying WhatsApp, email, and AI chatbots into one powerful system.
-
-- **Technology Stack**: React, Node.js, WhatsApp Business API, OpenAI GPT, MongoDB, SMTP Integration, REST API, AWS
-- **The Problem**: Small and medium-sized businesses were struggling with fragmented marketing tools. They were using separate platforms for WhatsApp messaging, email campaigns, and customer support — leading to data silos, inconsistent messaging, and wasted time switching between tools. Most affordable solutions lacked AI capabilities, and enterprise tools were too expensive for growing businesses.
-  - Marketing spread across 4+ disconnected tools
-  - No unified view of customer interactions
-  - Manual lead follow-ups resulting in lost opportunities
-  - No AI-powered automation for customer engagement
-- **Our Solution**: We built NexBotix — a unified multi-channel marketing platform that combines WhatsApp Business API integration, professional email campaigns with SMTP support, and AI-powered website chatbots into a single dashboard. The platform includes contact management, campaign analytics, automated follow-ups, and a drag-and-drop chatbot builder.
-  - WhatsApp Business API integration for bulk messaging and automation
-  - Professional email campaign builder with templates and analytics
-  - AI-powered website chatbot with custom training
-  - Unified contact management and CRM
-  - Campaign performance analytics and reporting
-  - Automated lead scoring and follow-up sequences
-- **Key Features**:
-  - *WhatsApp Marketing*: Bulk messaging, automated replies, and template-based campaigns through WhatsApp Business API.
-  - *Email Campaigns*: Professional email builder with templates, scheduling, and detailed delivery analytics.
-  - *AI Website Chatbot*: Custom-trained AI chatbot that answers visitor questions and captures leads automatically.
-  - *Contact Management*: Unified CRM for managing all customer interactions across every channel.
-  - *Campaign Analytics*: Real-time dashboards showing open rates, click-through rates, and conversion metrics.
-  - *Automated Follow-Ups*: Smart sequences that automatically follow up with leads based on their behaviour.
-- **The Result**: NexBotix is now used by multiple businesses to manage their entire marketing operations from one platform. Clients have reported significant improvements in lead conversion, response times, and overall marketing efficiency.
-  - 3x increase in lead conversion rates
-  - 70% reduction in response time with AI chatbot
-  - 85% less time spent managing marketing tools
-  - 40% higher email open rates with optimized campaigns
-  - Single dashboard replacing 4+ separate tools
-
-### [Radio Stiming — Live Radio Streaming Platform | Case Study](https://todayintech.in/projects/radio-station)
-How we built a live radio streaming platform reaching 100,000+ monthly listeners with real-time engagement features.
-
-- **Technology Stack**: React, Node.js, WebSocket, Audio Streaming API, MongoDB, Vercel, Responsive CSS
-- **The Problem**: The client operated a growing radio station with 5+ years on air but had no online presence. Their entire operation — show scheduling, listener engagement, song requests, and host profiles — was managed manually through spreadsheets and phone calls. They were losing listeners to digital-first competitors and had no way to reach audiences beyond their FM signal range.
-  - No live streaming or web presence
-  - Manual show scheduling via spreadsheets
-  - No listener engagement or song request system
-  - Limited reach — FM only, no global audience
-- **Our Solution**: We designed and built a complete digital radio station platform from the ground up. The system includes real-time audio streaming, an automated show schedule with live status indicators, detailed DJ profiles, a listener song request system, a news and blog section, and a fully responsive mobile-first design — all wrapped in a premium dark-gold visual identity that matches the station's brand.
-  - Real-time audio streaming with persistent player
-  - Automated show scheduling with live/upcoming indicators
-  - Interactive song request and dedication system
-  - DJ profile pages with bios and show history
-  - News and blog management system
-  - Mobile-first responsive design
-- **Key Features**:
-  - *Live Audio Streaming*: 24/7 real-time audio streaming with adaptive bitrate for smooth playback on any connection.
-  - *Show Scheduling*: Automated weekly schedule with live status indicators, upcoming shows, and DJ assignments.
-  - *DJ Profiles*: Rich host profiles with bios, specialities, show history, and social media integration.
-  - *Song Request System*: Interactive request and dedication system that lets listeners participate in live shows.
-  - *News and Blog*: Built-in content management for station news, show announcements, and community updates.
-  - *Mobile-First Design*: Fully responsive interface optimized for listening on the go across all devices.
-- **The Result**: Within 3 months of launch, the station expanded its reach from a local FM audience to a global listener base. The platform now serves 100,000+ monthly listeners, hosts 14 live shows weekly with 6 expert DJs, and has completely eliminated manual scheduling overhead.
-  - 100,000+ monthly listeners (up from ~15,000 FM-only)
-  - 6x increase in audience reach
-  - 90% reduction in administrative overhead
-  - 500+ song requests processed weekly
-  - 24/7 automated live streaming with zero downtime
-
-### [Restaurant Management System & White-Label POS](https://todayintech.in/projects/restaurant-management-system)
+### [White-Label Restaurant POS & Kitchen](https://todayintech.in/projects/restaurant-management-system)
 Deploy a custom-branded restaurant ERP with touch-screen POS, kitchen orders, delivery dispatch, GPS rider tracking, inventory control, and owner analytics.
 
 - **Technology Stack**: React.js, Node.js, PostgreSQL, AWS, Stripe, Google Maps API, Flutter, WebSockets
@@ -308,91 +364,35 @@ Deploy a custom-branded restaurant ERP with touch-screen POS, kitchen orders, de
   - Real-time inventory with zero manual counting
   - White-labeled and deployed in under 6 weeks
 
-### [Senior Care Agency Software Developer & Home Care ERP](https://todayintech.in/projects/senior-care-agency)
-Deploy a custom-branded home care ERP with caregiver scheduling, EVV compliance, automated billing, and a secure family portal.
+### [White-Label School ERP & Campus SaaS](https://todayintech.in/projects/school-management-system)
+Unify admissions, student directories, online fee collections, gradebooks, rosters, and parent portals in a secure, custom-engineered school ERP platform.
 
-- **Technology Stack**: React.js, Node.js, PostgreSQL, AWS, Flutter, Google Maps API, Twilio
-- **The Challenge**: Home care agencies manage complex operations across caregiver scheduling, Electronic Visit Verification (EVV) compliance, automated billing, care plan documentation, and family communication — all simultaneously. Off-the-shelf home care software is either too rigid or too expensive for mid-size agencies.
-  - Manual caregiver scheduling via phone calls and spreadsheets
-  - No EVV-compliant visit verification for Medicaid billing
-  - Disconnected billing with high accounts receivable delays
-  - No family portal for real-time care updates
-  - Care plans stored as unstructured paper documents
-- **Our Solution**: We built a fully white-labeled Home Care ERP with caregiver scheduling, EVV-compliant GPS check-ins, automated Medicaid and private-pay billing, digital care plans, and a secure family portal — all custom-branded for each agency.
-  - Drag-and-drop caregiver schedule management with conflict detection
-  - EVV-compliant GPS-based caregiver check-in and check-out
-  - Automated billing with Medicaid, Medicare, and private-pay claim generation
-  - Digital care plan builder with task checklists and medication management
-  - Secure family portal with real-time visit logs and caregiver profiles
-  - HIPAA-compliant document storage and messaging
+- **Technology Stack**: React.js, Node.js, PostgreSQL, AWS, Docker, Stripe, Twilio
+- **The Challenge**: Schools and campuses struggle with fragmented administration — paper-based admissions, manual fee collection, disconnected gradebooks, and zero visibility for parents. Off-the-shelf ERP tools are either overpriced enterprise suites or under-featured generic tools that don't fit school workflows.
+  - Paper-based student enrollment and records management
+  - Manual fee collection with no online payment gateway
+  - No automated report card or gradebook system
+  - Parents have no real-time visibility into student performance
+  - No timetabling or bus-route tracking capability
+- **Our Solution**: We built a fully white-labeled School ERP platform covering every touchpoint — online admissions, student directories, fee collections, gradebooks, parent portals, timetables, attendance tracking, and GPS-based transport tracking — all under one unified dashboard.
+  - Online student admission with digital document uploads
+  - Integrated fee billing with Stripe/Razorpay/offline payment modes
+  - Automated report card generation with configurable grade schemes
+  - Real-time parent portal mobile app for iOS and Android
+  - Drag-and-drop timetable builder with conflict detection
+  - GPS live bus tracking for school transport management
 - **Key Features**:
-  - *Caregiver Scheduling*: Drag-and-drop schedule management matching caregiver skills, client preferences, and availability.
-  - *EVV Compliance*: GPS-verified electronic visit verification fully compliant with state Medicaid EVV mandates.
-  - *Automated Billing*: Auto-generated claims for Medicaid, Medicare, and private-pay with denial management tracking.
-  - *Digital Care Plans*: Structured care plan builder with daily task checklists, medication reminders, and incident reporting.
-  - *Family Portal*: Secure web and mobile portal giving families real-time visit logs, caregiver profiles, and messaging.
-  - *HIPAA-Compliant Storage*: Encrypted document management for care records, certifications, and compliance audits.
-- **Business Impact**: Home care agencies using our platform achieve full EVV compliance, dramatically cut billing cycle times, and improve caregiver retention through better scheduling transparency.
-  - 100% EVV compliance with state Medicaid requirements
-  - 60% reduction in billing cycle time
-  - Zero paper-based care plans or visit records
-  - Real-time visibility for families via secure portal
-  - White-labeled and deployed in under 6 weeks
-
-### [Three.js E-Commerce 3D Product Customizer | Impakto Case Study](https://todayintech.in/projects/impakto)
-How we built an interactive, high-performance 3D e-commerce configurator using Three.js and WebGL.
-
-- **The Problem**: To successfully sell their smart shoes online, Impakto required a Three.js e-commerce 3D product customizer, as flat static 2D product photos failed to convey the complex internal technology and advanced fabric structures of the shoe. Customers couldn't visualize the shoe from different angles, leading to hesitation, lower sales conversions, and high product return rates due to sizing or design mismatch.
-  - Standard 2D product photos lacked interactivity
-  - Inability to highlight smart tech components (heaters, sensors)
-  - Flat color selectors failed to show material textures
-  - Hesitation leading to high cart abandonment rates
-  - High product return rates from sizing/design mismatched expectations
-- **Key Features**:
-  - *WebGL Rendering Pipeline*: Configured Three.js WebGLRenderer with high-precision shadow maps, physical-based rendering (PBR) materials, and realistic environmental lighting.
-  - *Interactive 360° Controls*: Added custom OrbitControls with damping factors and limits on zoom and rotation to prevent the camera from clipping inside the sneaker model.
-  - *Mesh Raycasting Configurator*: Implemented mouse-click raycasting to detect which specific shoe panel (e.g., sole, mesh, laces) the user clicked, opening targeted material options.
-  - *GLTF Draco Compression*: Optimized the 3D shoe model from 45MB to 2.4MB using Draco compression and WebP textures, ensuring rapid mobile page loading.
-  - *Smart Feature Annotations*: Injected HTML-overlay annotation hotspots that lock onto 3D coordinate vectors, letting users click to see smart sensor explanations.
-  - *FPS Optimization*: Engineered dynamic level-of-detail (LOD) rendering and texture downscaling for low-power mobile devices, guaranteeing stable 60 FPS.
-- **The Result**: Integrating the 3D configurator completely transformed Impakto's e-commerce customer experience. The interactive engagement gave users the confidence to customize their footwear, driving brand excitement and dramatically reducing customer hesitation.
-  - 32% increase in average visitor session duration
-  - 18% boost in e-commerce checkout conversion rate
-  - 24% reduction in post-sale product returns
-  - Sub-2s initial 3D canvas loading on 4G connections
-  - 60 FPS smooth rendering performance on mobile browsers
-
-### [VocalFlow — AI Text to Speech Tool | Case Study](https://todayintech.in/projects/vocal-flow)
-How we built a free AI text-to-speech tool with 300+ voices and 50+ languages — no sign-up required.
-
-- **Technology Stack**: React, Web Speech API, JavaScript, CSS3, LocalStorage, Vercel, Open Source
-- **The Problem**: Content creators, educators, and small businesses needed high-quality voiceovers for their videos, courses, and presentations, but existing text-to-speech tools were either too expensive (charging per character), limited to a few robotic-sounding voices, or required lengthy sign-up processes. Most affordable options produced unnatural, monotone audio that was unusable for professional content.
-  - Premium TTS tools charge $30–$100+ per month
-  - Free alternatives sound robotic and unnatural
-  - Limited language support — most tools cover 5–10 languages only
-  - Mandatory sign-up and credit card requirements create friction
-  - No easy way to preview and compare different voices
-- **Our Solution**: We built VocalFlow — a completely free, open-source AI text-to-speech tool that runs directly in the browser. The platform leverages advanced speech synthesis APIs to offer 300+ natural-sounding voices across 50+ languages, with controls for pitch, speed, and volume. Users can type or paste up to 5,000 characters, preview different voices instantly, download audio files, and access their generation history — all without creating an account.
-  - 300+ natural-sounding AI voices across 50+ languages
-  - Adjustable pitch, speed, and volume controls
-  - Up to 5,000 characters per generation
-  - Instant voice preview and comparison
-  - Audio download in standard formats
-  - Generation history for quick access to past conversions
-  - Zero sign-up — works instantly in any browser
-- **Key Features**:
-  - *300+ AI Voices*: Choose from hundreds of natural-sounding voices — male, female, and neutral — across diverse accents and styles.
-  - *50+ Languages*: Generate speech in English, Spanish, French, Hindi, Arabic, Japanese, and dozens more languages.
-  - *Voice Customization*: Fine-tune pitch, speed, and volume to get exactly the voice and tone you need for your content.
-  - *Audio Download*: Download generated speech as audio files ready for use in videos, presentations, and podcasts.
-  - *Generation History*: Access and replay your past conversions without regenerating — saves time and effort.
-  - *Free and Open Source*: Completely free to use with no limits. Open-source codebase available for community contributions.
-- **The Result**: VocalFlow quickly gained traction among content creators, educators, and developers. Being free and open source made it a go-to alternative to paid tools, and the zero-friction experience (no sign-up) drove strong organic growth and word-of-mouth referrals.
-  - 10,000+ voiceovers generated in the first month
-  - 300+ AI voices available across 50+ languages
-  - Zero cost — completely free for all users
-  - 0 seconds onboarding — no sign-up required
-  - Open source — community contributions and transparency
+  - *Student Registry*: Manage digital registrations, student directories, family profiles, and class allocations easily.
+  - *Fee Collections*: Deploy secure school fee collection software white label modules with automated WhatsApp invoices and PCI-compliant online card/UPI payment gateways.
+  - *Academics & Grading*: Record exam scores, configure grading systems, and generate student report card sheets instantly.
+  - *Schedules & Timetable*: Coordinate school periods, resolve room conflicts, assign teachers, and track student attendance.
+  - *School Bus Tracking*: Optimize transport routes, track school bus GPS locations, and alert parents of arrival times.
+- **Business Impact**: Schools deploying our ERP reduce administrative overhead by over 60%, eliminate paper workflows entirely, and dramatically improve parent satisfaction scores.
+  - 60%+ reduction in administrative overhead
+  - 100% paperless admissions and fee collection
+  - Real-time visibility for parents via mobile app
+  - Deployable in under 4 weeks with full data migration
+  - Supports multi-campus and multi-branch operations
 
 
 ## All Blog Articles

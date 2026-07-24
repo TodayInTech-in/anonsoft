@@ -8,24 +8,24 @@ This is the main directory of the TodayInTech website, custom software solutions
 
 - [TodayInTech Homepage](https://todayintech.in/): Looking for a custom startup software development agency? TodayInTech builds scalable SaaS, AI tools, and mobile apps, launching production-ready software in weeks.
 - [Branded Wellness & Fitness App Development](https://todayintech.in/wellness-platform-development): Build a branded wellness app with wearable integration, nutrition tracking, live classes, and community features—delivered faster and cheaper than custom.
-- [Healthcare SaaS MVP Development](https://todayintech.in/healthcare-saas-mvp-development): Build a funded-ready healthcare SaaS MVP in 8 weeks. Learn about our scalable HIPAA-compliant architecture for health-tech founders and pre-seed startups.
+- [Healthcare SaaS MVP Development Studio](https://todayintech.in/healthcare-saas-mvp-development): Build a funded-ready healthcare SaaS MVP in 8 weeks. Learn about our scalable HIPAA-compliant architecture for health-tech founders and pre-seed startups.
 - [White-Label Telemedicine Software for Clinics](https://todayintech.in/telemedicine-software-for-clinics): Launch a HIPAA-compliant, branded telemedicine platform for your clinic in 30 days. Includes Epic/Cerner integration and no per-provider licensing fees.
 
 ## Services & Projects
 
-- [AI Community College — Learn AI Step by Step | Case Study](https://todayintech.in/projects/ai-community): How we built a structured AI learning platform with 52 chapters and multi-language support.
-- [Campus Management System ERP & School ERP](https://todayintech.in/projects/school-management-system): Unify admissions, student directories, online fee collections, gradebooks, rosters, and parent portals in a secure, custom-engineered school ERP platform.
-- [Church Management Software for End-to-End Church Operations](https://todayintech.in/projects/church-management-software): Unify tithing, member databases, safety check-ins, volunteer plans, and accounting ledger sheets in a secure, custom-engineered platform.
-- [Custom Casino Game Development Company & Blackjack Software](https://todayintech.in/projects/casino-blackjack-game): How we built an ultra-smooth, premium HTML5 Canvas Blackjack game engine with realistic physics and zero dealing latency.
-- [HIPAA-Compliant Telemedicine App Developer | Custom Telehealth](https://todayintech.in/projects/mednowna): We build secure, HIPAA-compliant custom telehealth applications and white-label platforms with EHR integration and video consultations.
-- [Inventory and Billing SaaS Platform | White-Label](https://todayintech.in/projects/inventory-billing): Deploy a complete, fully white-label inventory and billing platform — stock, invoicing, and sales tracking, ready to rebrand.
-- [Master AI: GPT Magic in Hand | AI Mobile App Case Study](https://todayintech.in/projects/master-ai): Case study: How we built a premium AI assistant app integrating GPT-4 and Claude 3.5 for iOS and Android.
-- [NexBotix — Multi-Channel Marketing AI | Case Study](https://todayintech.in/projects/nexbotix): How we built a multi-channel marketing platform unifying WhatsApp, email, and AI chatbots into one powerful system.
-- [Radio Stiming — Live Radio Streaming Platform | Case Study](https://todayintech.in/projects/radio-station): How we built a live radio streaming platform reaching 100,000+ monthly listeners with real-time engagement features.
-- [Restaurant Management System & White-Label POS](https://todayintech.in/projects/restaurant-management-system): Deploy a custom-branded restaurant ERP with touch-screen POS, kitchen orders, delivery dispatch, GPS rider tracking, inventory control, and owner analytics.
-- [Senior Care Agency Software Developer & Home Care ERP](https://todayintech.in/projects/senior-care-agency): Deploy a custom-branded home care ERP with caregiver scheduling, EVV compliance, automated billing, and a secure family portal.
-- [Three.js E-Commerce 3D Product Customizer | Impakto Case Study](https://todayintech.in/projects/impakto): How we built an interactive, high-performance 3D e-commerce configurator using Three.js and WebGL.
-- [VocalFlow — AI Text to Speech Tool | Case Study](https://todayintech.in/projects/vocal-flow): How we built a free AI text-to-speech tool with 300+ voices and 50+ languages — no sign-up required.
+- [AI Community Platform & Learning App](https://todayintech.in/projects/ai-community): How we built a structured AI learning platform with 52 chapters and multi-language support.
+- [AI Text to Speech Voice Cloning SaaS](https://todayintech.in/projects/vocal-flow): How we built a free AI text-to-speech tool with 300+ voices and 50+ languages — no sign-up required.
+- [Church Management Software (ChMS)](https://todayintech.in/projects/church-management-software): Unify tithing, member databases, safety check-ins, volunteer plans, and accounting ledger sheets in a secure, custom-engineered platform.
+- [Custom Casino Game Development Company](https://todayintech.in/projects/casino-blackjack-game): How we built an ultra-smooth, premium HTML5 Canvas Blackjack game engine with realistic physics and zero dealing latency.
+- [HIPAA-Compliant Telemedicine Developer](https://todayintech.in/projects/mednowna): We build secure, HIPAA-compliant custom telehealth applications and white-label platforms with EHR integration and video consultations.
+- [Master AI Mobile App & GPT Assistant](https://todayintech.in/projects/master-ai): Case study: How we built a premium AI assistant app integrating GPT-4 and Claude 3.5 for iOS and Android.
+- [NexBotix — Multi-Channel Marketing AI](https://todayintech.in/projects/nexbotix): How we built a multi-channel marketing platform unifying WhatsApp, email, and AI chatbots into one powerful system.
+- [Radio Stiming — Live Streaming App](https://todayintech.in/projects/radio-station): How we built a live radio streaming platform reaching 100,000+ monthly listeners with real-time engagement features.
+- [Senior Care Agency Software & Home Care](https://todayintech.in/projects/senior-care-agency): Deploy a custom-branded home care ERP with caregiver scheduling, EVV compliance, automated billing, and a secure family portal.
+- [Three.js 3D Product Customizer WebGL](https://todayintech.in/projects/impakto): How we built an interactive, high-performance 3D e-commerce configurator using Three.js and WebGL.
+- [White-Label Inventory & Billing SaaS](https://todayintech.in/projects/inventory-billing): Deploy a complete, fully white-label inventory and billing platform — stock, invoicing, and sales tracking, ready to rebrand.
+- [White-Label Restaurant POS & Kitchen](https://todayintech.in/projects/restaurant-management-system): Deploy a custom-branded restaurant ERP with touch-screen POS, kitchen orders, delivery dispatch, GPS rider tracking, inventory control, and owner analytics.
+- [White-Label School ERP & Campus SaaS](https://todayintech.in/projects/school-management-system): Unify admissions, student directories, online fee collections, gradebooks, rosters, and parent portals in a secure, custom-engineered school ERP platform.
 
 ## Featured Blog Articles
 
