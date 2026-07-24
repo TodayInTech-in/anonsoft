@@ -615,13 +615,17 @@ def publish_next_blog():
     # 3. Clean HTML Links in modified files
     print("Running link cleaning script...")
     os.system("python3 scripts/clean_html_links.py")
+
+    # 4. Generate Sitemaps & RSS Feed
+    print("Running sitemap generation script...")
+    os.system("python3 scripts/generate_sitemaps.py")
     
-    # 4. Generate llms.txt & llms-full.txt
+    # 5. Generate llms.txt & llms-full.txt
     print("Running LLMs index generation script...")
     os.system("python3 scripts/generate_llms_txt.py")
     
-    # 5. Commit and push to git
-    run_git_commands(f"auto: publish blog post - {title}")
+    # 6. Commit and push to git
+    run_git_commands(f"auto: publish blog post - {title} [sitemap updated]")
     
     # 6. Save new state index
     save_publish_index(idx + 1)
