@@ -1,115 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TodayInTech Blog</title>
+    <title>https://todayintech.in Blog</title>
     <link>https://todayintech.in</link>
-    <description>Latest custom software engineering, virtual care compliance, and product builder insights from TodayInTech.</description>
+    <description>Latest blog posts from https://todayintech.in</description>
     <language>en-us</language>
     <atom:link href="https://todayintech.in/public/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Intellectsoft Alternatives: Top 5 Healthcare Software Development Partners (2026)</title>
-      <link>https://todayintech.in/blog/intellectsoft-alternatives-healthcare-software-development</link>
-      <description>Compare the best Intellectsoft alternatives for custom healthcare software development in 2026. Evaluate TodayInTech, ScienceSoft, HTD Health, and Arkenea on cost, compliance, and IP ownership.</description>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/intellectsoft-alternatives-healthcare-software-development</guid>
+      <title>Exploring the Cast of 'Tommy Karate' and Pete Davidson's Role</title>
+      <link>https://todayintech.in/blog/exploring-the-cast-of-tommy-karate-and-pete-davidson-s-role.html</link>
+      <description>Dive into the captivating cast of </description>
+      <pubDate>Fri, 24 Jul 2026 09:09:53 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/exploring-the-cast-of-tommy-karate-and-pete-davidson-s-role.html</guid>
     </item>
     <item>
-      <title>Scopic Alternatives: Top 5 Custom Healthcare Software Developers (2026)</title>
-      <link>https://todayintech.in/blog/scopic-alternatives-healthcare-software-development</link>
-      <description>Compare the best Scopic alternatives for custom healthcare software development in 2026. Evaluate TodayInTech, ScienceSoft, Innowise, and Arkenea on compliance, speed, and cost.</description>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/scopic-alternatives-healthcare-software-development</guid>
-    </item>
-    <item>
-      <title>Agentic AI in Healthcare: Automating Prior Authorization &amp; RCM in 2026</title>
-      <link>https://todayintech.in/blog/agentic-ai-prior-authorization-revenue-cycle-management-healthcare</link>
-      <description>Deploy autonomous AI agents to automate prior authorizations, claim submissions, and revenue cycle management (RCM) for US clinics while ensuring strict HIPAA compliance.</description>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/agentic-ai-prior-authorization-revenue-cycle-management-healthcare</guid>
-    </item>
-    <item>
-      <title>Agentic AI in Healthcare Operations: Clinical Workflow Automation (2026)</title>
-      <link>https://todayintech.in/blog/agentic-ai-clinical-workflows-healthcare-software</link>
-      <description>How healthcare organizations are deploying Agentic AI in 2026 to automate prior authorizations, clinical scheduling, and EHR data entry while maintaining HIPAA compliance.</description>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/agentic-ai-clinical-workflows-healthcare-software</guid>
-    </item>
-    <item>
-      <title>5G Applications in Healthcare</title>
-      <link>https://todayintech.in/blog/5g-applications-in-healthcare</link>
-      <description>Complete guide on 5g applications in healthcare. Learn about development process, best practices, cost analysis, and implementation strategies for healthcare organizations in 2026.</description>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/5g-applications-in-healthcare</guid>
-    </item>
-    <item>
-      <title>Computer Vision for Medical Imaging</title>
-      <link>https://todayintech.in/blog/computer-vision-for-medical-imaging</link>
-      <description>Complete guide on computer vision for medical imaging. Learn about development process, best practices, cost analysis, and implementation strategies for healthcare organizations in 2026.</description>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/computer-vision-for-medical-imaging</guid>
-    </item>
-    <item>
-      <title>Wheel Alternatives: Top 5 B2B Telehealth Platforms (2026)</title>
-      <link>https://todayintech.in/blog/wheel-alternatives-healthcare-software-development</link>
-      <description>Compare the best Wheel alternatives for B2B telehealth infrastructure, software development, and clinician staffing in 2026. Evaluate TodayInTech, OpenLoop, SteadyMD, and Bask Health.</description>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/wheel-alternatives-healthcare-software-development</guid>
-    </item>
-    <item>
-      <title>AI Clinical Workflow Automation: The $300B Healthcare Opportunity in 2026</title>
-      <link>https://todayintech.in/blog/ai-clinical-workflow-automation-healthcare-2026</link>
-      <description>Discover how AI clinical workflow automation is reshaping US healthcare in 2026. Learn about ambient documentation, agentic AI, EHR integration, and how to build HIPAA-compliant AI-powered healthcare software.</description>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/ai-clinical-workflow-automation-healthcare-2026</guid>
-    </item>
-    <item>
-      <title>White-Label vs. Custom Healthcare Software: TodayInTech vs. Arkenea, HTD Health, &amp;amp; Healee</title>
-      <link>https://todayintech.in/blog/white-label-vs-custom-healthcare-software</link>
-      <description>Deciding between white-label, custom builds, and TodayInTech&apos;s hybrid model. Compare TodayInTech against Arkenea, HTD Health, and Healee for launching digital health software in 2026.</description>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/white-label-vs-custom-healthcare-software</guid>
-    </item>
-    <item>
-      <title>Real-Time Data Processing in Healthcare</title>
-      <link>https://todayintech.in/blog/real-time-data-processing-in-healthcare</link>
-      <description>Complete guide on real-time data processing in healthcare. Learn about development process, best practices, cost analysis, and implementation strategies for healthcare organizations in 2026.</description>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/real-time-data-processing-in-healthcare</guid>
-    </item>
-    <item>
-      <title>Hospital Information System Architecture</title>
-      <link>https://todayintech.in/blog/hospital-information-system-architecture</link>
-      <description>Complete guide on hospital information system architecture. Learn about development process, best practices, cost analysis, and implementation strategies for healthcare organizations in 2026.</description>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/hospital-information-system-architecture</guid>
-    </item>
-    <item>
-      <title>White Label Healthcare Software Benefits for Clinics</title>
-      <link>https://todayintech.in/blog/white-label-healthcare-software-benefits-for-clinics</link>
-      <description>Complete guide on white label healthcare software benefits for clinics. Learn about development process, best practices, cost analysis, and implementation strategies for healthcare organizations in 2026.</description>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/white-label-healthcare-software-benefits-for-clinics</guid>
-    </item>
-    <item>
-      <title>ScienceSoft Alternatives: Top 5 Healthcare Software Developers (2026)</title>
-      <link>https://todayintech.in/blog/sciencesoft-alternatives-healthcare-software-development</link>
-      <description>Compare the best ScienceSoft alternatives for healthcare software development in 2026. Evaluate TodayInTech, Arkenea, HTD Health, and Healee on cost, speed, and HIPAA compliance.</description>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/sciencesoft-alternatives-healthcare-software-development</guid>
-    </item>
-    <item>
-      <title>Internet of Medical Things (IoMT) Development</title>
-      <link>https://todayintech.in/blog/internet-of-medical-things-(iomt)-development</link>
-      <description>Complete guide on internet of medical things (iomt) development. Learn about development process, best practices, cost analysis, and implementation strategies for healthcare organizations in 2026.</description>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/internet-of-medical-things-(iomt)-development</guid>
-    </item>
-    <item>
-      <title>API Development for Healthcare Integrations</title>
-      <link>https://todayintech.in/blog/api-development-for-healthcare-integrations</link>
-      <description>Complete guide on api development for healthcare integrations. Learn about development process, best practices, cost analysis, and implementation strategies for healthcare organizations in 2026.</description>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/api-development-for-healthcare-integrations</guid>
+      <title>The Enduring Legacy of Martha Stewart: Beyond Home and Garden</title>
+      <link>https://todayintech.in/blog/the-enduring-legacy-of-martha-stewart-beyond-home-and-garden.html</link>
+      <description>Explore the multifaceted career of Martha Stewart, a pioneer in lifestyle branding and home entertaining.</description>
+      <pubDate>Thu, 23 Jul 2026 14:45:15 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/the-enduring-legacy-of-martha-stewart-beyond-home-and-garden.html</guid>
     </item>
   </channel>
 </rss>
