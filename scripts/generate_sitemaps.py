@@ -159,6 +159,15 @@ def generate_sitemaps():
             f.write(f'    <priority>{pri}</priority>\n')
             f.write('  </url>\n')
             
+        f.write('\n  <!-- ===== BLOG POSTS ===== -->\n')
+        for url, freq, pri, date, _, _ in blog_urls:
+            f.write('  <url>\n')
+            f.write(f'    <loc>{xml_escape(url)}</loc>\n')
+            f.write(f'    <lastmod>{date}</lastmod>\n')
+            f.write(f'    <changefreq>{freq}</changefreq>\n')
+            f.write(f'    <priority>{pri}</priority>\n')
+            f.write('  </url>\n')
+            
         f.write('</urlset>\n')
     print(f"Generated root sitemap: {sitemap_xml_path}")
     
