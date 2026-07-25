@@ -207,66 +207,66 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is white-label software?",
+      "name": "What is the difference between an EHR and an EMR?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "White-label software is a pre-built product developed by one company and sold to another, which rebrands it under its own name. The buyer skips the cost and time of building from scratch and goes to market immediately."
+        "text": "An EMR (Electronic Medical Record) is a digital version of a patient's chart within one practice. An EHR (Electronic Health Record) is designed to share patient data across multiple healthcare providers and organizations. EHR is the modern standard."
       }
     },
     {
       "@type": "Question",
-      "name": "What are the advantages of white-label software for startups?",
+      "name": "What is HL7 FHIR and why does it matter?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "White-label software reduces launch time from months to weeks, cuts development cost by 60-80%, eliminates technology risk (the product is already proven), and lets founders focus on sales and growth instead of engineering."
+        "text": "HL7 FHIR (Fast Healthcare Interoperability Resources) is the international standard for healthcare data exchange using RESTful APIs and JSON. The 21st Century Cures Act mandates FHIR-based APIs for certified EHR systems in the USA, making it essential for any healthcare software."
       }
     },
     {
       "@type": "Question",
-      "name": "What is the difference between white-label and SaaS?",
+      "name": "What EHR systems does TodayInTech integrate with?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "SaaS is rented and shared \u2014 you can't rebrand it or own it. White-label software is fully branded as yours, with complete IP ownership. You can resell it, customize it, and scale it without any licensing restrictions."
+        "text": "TodayInTech integrates with Epic (via SMART on FHIR), Cerner (Millennium FHIR APIs), athenahealth, Allscripts, and eClinicalWorks. We handle sandbox access, FHIR resource mapping, and write-back workflows."
       }
     },
     {
       "@type": "Question",
-      "name": "What types of software can be white-labeled?",
+      "name": "What is SMART on FHIR?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Common white-label products include telemedicine platforms, restaurant POS, school ERP, church management software, e-commerce backends, CRM systems, HR platforms, and AI chatbot builders. TodayInTech's SITES platform covers all of these."
+        "text": "SMART on FHIR combines OAuth 2.0 authorization with HL7 FHIR APIs to allow third-party apps to launch from within an EHR and access patient data securely. Epic and Cerner both support SMART on FHIR app launch contexts."
       }
     },
     {
       "@type": "Question",
-      "name": "How long does it take to deploy a white-label software platform?",
+      "name": "How long does EHR integration take?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Standard white-label deployment (branding, domain, payment setup) takes 1-2 weeks. Full customization with feature additions takes 4-8 weeks \u2014 dramatically faster than custom development which takes 6-18 months."
+        "text": "Read-only FHIR integration (fetching patient data) takes 4-8 weeks. Bidirectional integration with write-back (posting clinical notes, billing codes) takes 10-16 weeks, depending on EHR vendor sandbox access."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I add custom features to a white-label platform?",
+      "name": "What is a FHIR resource?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. TodayInTech white-label products are modular and extensible. We can add custom workflows, new integrations, industry-specific features, and custom reporting dashboards to any base platform we deliver."
+        "text": "A FHIR Resource is a discrete unit of healthcare data \u2014 such as Patient, Observation, MedicationRequest, Encounter, or DiagnosticReport. FHIR APIs expose these resources as JSON objects queryable via RESTful HTTP requests."
       }
     },
     {
       "@type": "Question",
-      "name": "How is white-label software priced?",
+      "name": "Can I build a patient portal that connects to an EHR?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "TodayInTech prices white-label deployments as a one-time setup fee covering branding and configuration, plus optional monthly support. Unlike SaaS subscriptions, there are no per-user fees that grow with your customer base."
+        "text": "Yes. Using SMART on FHIR, a patient portal can allow patients to view their own health records, lab results, medication lists, and appointment history pulled directly from their provider's EHR. TodayInTech builds EHR-connected patient portals."
       }
     },
     {
       "@type": "Question",
-      "name": "What is the TodayInTech SITES platform?",
+      "name": "What is the 21st Century Cures Act?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "SITES is TodayInTech's portfolio of white-label software products covering healthcare, hospitality, education, and enterprise verticals. Each SITES product is pre-built, HIPAA-ready where applicable, and deployable in weeks under your brand."
+        "text": "The 21st Century Cures Act (2016, implemented 2022) prohibits information blocking in healthcare and mandates that certified EHR systems expose FHIR APIs so patients and third-party apps can freely access health data. This makes FHIR integration essential for all new health apps."
       }
     }
   ]
@@ -1530,81 +1530,81 @@
 
           <details class="faq-item" open>
             <summary class="faq-question">
-              <span>What is white-label software?</span>
+              <span>What is the difference between an EHR and an EMR?</span>
               <span class="faq-icon"><i class="fas fa-plus"></i></span>
             </summary>
             <div class="faq-answer">
-              <p>White-label software is a pre-built product developed by one company and sold to another, which rebrands it under its own name. The buyer skips the cost and time of building from scratch and goes to market immediately.</p>
+              <p>An EMR (Electronic Medical Record) is a digital version of a patient's chart within one practice. An EHR (Electronic Health Record) is designed to share patient data across multiple healthcare providers and organizations. EHR is the modern standard.</p>
             </div>
           </details>
 
           <details class="faq-item">
             <summary class="faq-question">
-              <span>What are the advantages of white-label software for startups?</span>
+              <span>What is HL7 FHIR and why does it matter?</span>
               <span class="faq-icon"><i class="fas fa-plus"></i></span>
             </summary>
             <div class="faq-answer">
-              <p>White-label software reduces launch time from months to weeks, cuts development cost by 60-80%, eliminates technology risk (the product is already proven), and lets founders focus on sales and growth instead of engineering.</p>
+              <p>HL7 FHIR (Fast Healthcare Interoperability Resources) is the international standard for healthcare data exchange using RESTful APIs and JSON. The 21st Century Cures Act mandates FHIR-based APIs for certified EHR systems in the USA, making it essential for any healthcare software.</p>
             </div>
           </details>
 
           <details class="faq-item">
             <summary class="faq-question">
-              <span>What is the difference between white-label and SaaS?</span>
+              <span>What EHR systems does TodayInTech integrate with?</span>
               <span class="faq-icon"><i class="fas fa-plus"></i></span>
             </summary>
             <div class="faq-answer">
-              <p>SaaS is rented and shared — you can't rebrand it or own it. White-label software is fully branded as yours, with complete IP ownership. You can resell it, customize it, and scale it without any licensing restrictions.</p>
+              <p>TodayInTech integrates with Epic (via SMART on FHIR), Cerner (Millennium FHIR APIs), athenahealth, Allscripts, and eClinicalWorks. We handle sandbox access, FHIR resource mapping, and write-back workflows.</p>
             </div>
           </details>
 
           <details class="faq-item">
             <summary class="faq-question">
-              <span>What types of software can be white-labeled?</span>
+              <span>What is SMART on FHIR?</span>
               <span class="faq-icon"><i class="fas fa-plus"></i></span>
             </summary>
             <div class="faq-answer">
-              <p>Common white-label products include telemedicine platforms, restaurant POS, school ERP, church management software, e-commerce backends, CRM systems, HR platforms, and AI chatbot builders. TodayInTech's SITES platform covers all of these.</p>
+              <p>SMART on FHIR combines OAuth 2.0 authorization with HL7 FHIR APIs to allow third-party apps to launch from within an EHR and access patient data securely. Epic and Cerner both support SMART on FHIR app launch contexts.</p>
             </div>
           </details>
 
           <details class="faq-item">
             <summary class="faq-question">
-              <span>How long does it take to deploy a white-label software platform?</span>
+              <span>How long does EHR integration take?</span>
               <span class="faq-icon"><i class="fas fa-plus"></i></span>
             </summary>
             <div class="faq-answer">
-              <p>Standard white-label deployment (branding, domain, payment setup) takes 1-2 weeks. Full customization with feature additions takes 4-8 weeks — dramatically faster than custom development which takes 6-18 months.</p>
+              <p>Read-only FHIR integration (fetching patient data) takes 4-8 weeks. Bidirectional integration with write-back (posting clinical notes, billing codes) takes 10-16 weeks, depending on EHR vendor sandbox access.</p>
             </div>
           </details>
 
           <details class="faq-item">
             <summary class="faq-question">
-              <span>Can I add custom features to a white-label platform?</span>
+              <span>What is a FHIR resource?</span>
               <span class="faq-icon"><i class="fas fa-plus"></i></span>
             </summary>
             <div class="faq-answer">
-              <p>Yes. TodayInTech white-label products are modular and extensible. We can add custom workflows, new integrations, industry-specific features, and custom reporting dashboards to any base platform we deliver.</p>
+              <p>A FHIR Resource is a discrete unit of healthcare data — such as Patient, Observation, MedicationRequest, Encounter, or DiagnosticReport. FHIR APIs expose these resources as JSON objects queryable via RESTful HTTP requests.</p>
             </div>
           </details>
 
           <details class="faq-item">
             <summary class="faq-question">
-              <span>How is white-label software priced?</span>
+              <span>Can I build a patient portal that connects to an EHR?</span>
               <span class="faq-icon"><i class="fas fa-plus"></i></span>
             </summary>
             <div class="faq-answer">
-              <p>TodayInTech prices white-label deployments as a one-time setup fee covering branding and configuration, plus optional monthly support. Unlike SaaS subscriptions, there are no per-user fees that grow with your customer base.</p>
+              <p>Yes. Using SMART on FHIR, a patient portal can allow patients to view their own health records, lab results, medication lists, and appointment history pulled directly from their provider's EHR. TodayInTech builds EHR-connected patient portals.</p>
             </div>
           </details>
 
           <details class="faq-item">
             <summary class="faq-question">
-              <span>What is the TodayInTech SITES platform?</span>
+              <span>What is the 21st Century Cures Act?</span>
               <span class="faq-icon"><i class="fas fa-plus"></i></span>
             </summary>
             <div class="faq-answer">
-              <p>SITES is TodayInTech's portfolio of white-label software products covering healthcare, hospitality, education, and enterprise verticals. Each SITES product is pre-built, HIPAA-ready where applicable, and deployable in weeks under your brand.</p>
+              <p>The 21st Century Cures Act (2016, implemented 2022) prohibits information blocking in healthcare and mandates that certified EHR systems expose FHIR APIs so patients and third-party apps can freely access health data. This makes FHIR integration essential for all new health apps.</p>
             </div>
           </details>
         </div>
@@ -1801,7 +1801,7 @@
 
       <div class="footer-bottom">
         <p class="footer-copyright">&copy; 2024–2026 TodayInTech. All rights reserved.</p>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <div class="footer-legal">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="footer-legal">
           <a href="/privacy">Privacy Policy</a>
           <a href="/terms">Terms of Service</a>
           <a href="/refund-policy">Refund Policy</a>
