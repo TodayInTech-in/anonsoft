@@ -12,7 +12,7 @@ export default function AiPage() {
   const page = loadPageContent('ai/index.html');
 
   return (
-    <main style={{ padding: '100px 0 60px' }}>
+    <main>
       <div dangerouslySetInnerHTML={{ __html: page.body }} />
     </main>
   );

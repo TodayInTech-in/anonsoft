@@ -12,7 +12,7 @@ export default function HealthPage() {
   const page = loadPageContent('health/index.html');
 
   return (
-    <main style={{ padding: '100px 0 60px' }}>
+    <main>
       <div dangerouslySetInnerHTML={{ __html: page.body }} />
     </main>
   );

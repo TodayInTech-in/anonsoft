@@ -12,7 +12,7 @@ export default function AboutPage() {
   const page = loadPageContent('about/index.html');
 
   return (
-    <main style={{ padding: '100px 0 60px' }}>
+    <main>
       <div dangerouslySetInnerHTML={{ __html: page.body }} />
     </main>
   );
