@@ -11,6 +11,8 @@ export default function RoiCalculator() {
   const todayInTechCost = Math.round(customCost * 0.3);
   const savings = customCost - todayInTechCost;
 
+  const formatNumber = (num) => num.toLocaleString('en-US');
+
   return (
     <section className="roi-calculator-section" style={{ padding: '80px 0', background: '#f8fafc', borderTop: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0' }}>
       <div className="container" style={{ maxWidth: '900px' }}>
@@ -54,15 +56,15 @@ export default function RoiCalculator() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '16px', background: '#f8fafc', padding: '24px', borderRadius: '12px', textAlign: 'center' }}>
             <div>
               <span style={{ fontSize: '0.85rem', color: '#64748b', display: 'block' }}>Traditional Custom Dev</span>
-              <strong style={{ fontSize: '1.4rem', color: '#dc2626' }}>${customCost.toLocaleString()}</strong>
+              <strong style={{ fontSize: '1.4rem', color: '#dc2626' }} suppressHydrationWarning>${formatNumber(customCost)}</strong>
             </div>
             <div>
               <span style={{ fontSize: '0.85rem', color: '#64748b', display: 'block' }}>TodayInTech Fixed Hybrid</span>
-              <strong style={{ fontSize: '1.4rem', color: '#0369a1' }}>${todayInTechCost.toLocaleString()}</strong>
+              <strong style={{ fontSize: '1.4rem', color: '#0369a1' }} suppressHydrationWarning>${formatNumber(todayInTechCost)}</strong>
             </div>
             <div>
               <span style={{ fontSize: '0.85rem', color: '#64748b', display: 'block' }}>Your Estimated Savings</span>
-              <strong style={{ fontSize: '1.4rem', color: '#15803d' }}>${savings.toLocaleString()} (70%)</strong>
+              <strong style={{ fontSize: '1.4rem', color: '#15803d' }} suppressHydrationWarning>${formatNumber(savings)} (70%)</strong>
             </div>
           </div>
         </div>
