@@ -6,16 +6,19 @@ import Footer from './components/Footer';
 export const metadata = {
   metadataBase: new URL('https://todayintech.in'),
   title: {
-    default: 'TodayInTech — Launch Your Health Platform in 4–8 Weeks | Software Agency',
+    default: 'TodayInTech — Custom Startup Software Development Agency',
     template: '%s | TodayInTech',
   },
   description:
-    'TodayInTech builds HIPAA-compliant telemedicine, EHR, RPM, and healthcare SaaS platforms in 4–8 weeks with zero upfront payment.',
+    'We help startups launch scalable software quickly: SaaS platforms, AI tools, and mobile apps—production-ready in weeks. Book a free strategy call.',
   keywords: [
+    'custom startup software development agency',
+    'SaaS development company',
+    'AI tool development',
+    'mobile app development',
     'healthcare software development',
     'telemedicine app developer',
     'HIPAA compliant software',
-    'white label healthcare software',
     'zero upfront payment software agency',
   ],
   authors: [{ name: 'TodayInTech' }],
@@ -31,7 +34,7 @@ export const metadata = {
     locale: 'en_US',
     url: 'https://todayintech.in/',
     siteName: 'TodayInTech',
-    title: 'TodayInTech — Launch Your Health Platform in 4–8 Weeks',
+    title: 'TodayInTech — Custom Startup Software Development Agency',
     description:
       'HIPAA-compliant white-label software for telemedicine, EHR, pharmacy, and wellness with zero upfront payment.',
     images: [{ url: 'https://todayintech.in/assets/og-image.png' }],
@@ -39,7 +42,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     site: '@todayintech',
-    title: 'TodayInTech — Health Software Agency',
+    title: 'TodayInTech — Health & Startup Software Agency',
     description:
       'Launch your branded health platform in 4–8 weeks with zero upfront payment.',
     images: ['https://todayintech.in/assets/og-image.png'],
@@ -53,8 +56,15 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
           rel="stylesheet"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+          crossOrigin="anonymous"
+          referrerPolicy="no-referrer"
         />
         <script
           type="application/ld+json"
@@ -63,10 +73,12 @@ export default function RootLayout({ children }) {
               '@context': 'https://schema.org',
               '@type': 'Organization',
               name: 'TodayInTech',
-              url: 'https://todayintech.in',
-              logo: 'https://todayintech.in/assets/logo.png',
+              alternateName: ['Today In Tech', 'TodayInTech Software'],
+              url: 'https://www.todayintech.in/',
+              logo: 'https://www.todayintech.in/assets/logo.png',
+              image: 'https://www.todayintech.in/assets/og-image.png',
               description:
-                'TodayInTech is an AI-powered software agency providing zero upfront payment custom healthcare and SaaS platform development.',
+                'TodayInTech is a leading software development company helping startups and businesses build SaaS platforms, AI tools, and mobile apps quickly.',
             }),
           }}
         />
