@@ -1,10 +1,16 @@
 'use client';
 
 import { useState } from 'react';
+import { triggerCalendly } from '../lib/calendly';
 
 export default function PencilBanner() {
   const [dismissed, setDismissed] = useState(false);
   if (dismissed) return null;
+
+  const handleBooking = (e) => {
+    e.preventDefault();
+    triggerCalendly('https://calendly.com/todayintechdotin/30min');
+  };
 
   return (
     <div className="pencil-banner" id="pencilBanner">
@@ -13,7 +19,9 @@ export default function PencilBanner() {
           <i className="fas fa-lightbulb" style={{ marginRight: '6px', color: 'var(--accent)' }}></i>
           <strong>Free Strategy Session</strong>: Get a custom fixed-scope SaaS MVP roadmap in 24 hours.
         </span>
-        <a href="#contact" className="pencil-banner-link">Book Now &rarr;</a>
+        <a href="https://calendly.com/todayintechdotin/30min" onClick={handleBooking} className="pencil-banner-link">
+          Book Now &rarr;
+        </a>
       </div>
       <button className="pencil-banner-close" onClick={() => setDismissed(true)} aria-label="Dismiss banner">✕</button>
     </div>

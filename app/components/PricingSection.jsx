@@ -1,8 +1,13 @@
 'use client';
 
-import Link from 'next/link';
+import { triggerCalendly } from '../lib/calendly';
 
 export default function PricingSection() {
+  const handleBooking = (e) => {
+    e.preventDefault();
+    triggerCalendly('https://calendly.com/todayintechdotin/30min');
+  };
+
   return (
     <section id="pricing" className="pricing">
       <div className="container">
@@ -25,7 +30,7 @@ export default function PricingSection() {
               <li>✓ Basic Patient / Admin Portal</li>
               <li>✓ 100% Source Code Ownership</li>
             </ul>
-            <Link href="#contact" className="pricing-cta">Get Started &rarr;</Link>
+            <a href="https://calendly.com/todayintechdotin/30min" onClick={handleBooking} className="pricing-cta">Get Started &rarr;</a>
           </div>
 
           <div className="pricing-card pricing-card-featured">
@@ -42,7 +47,7 @@ export default function PricingSection() {
               <li>✓ Payment Gateway & Billing</li>
               <li>✓ 3 Months Free Support</li>
             </ul>
-            <Link href="#contact" className="pricing-cta pricing-cta-featured">Book Free Call &rarr;</Link>
+            <a href="https://calendly.com/todayintechdotin/30min" onClick={handleBooking} className="pricing-cta pricing-cta-featured">Book Free Call &rarr;</a>
           </div>
 
           <div className="pricing-card">
@@ -57,7 +62,7 @@ export default function PricingSection() {
               <li>✓ Custom Microservices Architecture</li>
               <li>✓ Dedicated Support Lead & BAA</li>
             </ul>
-            <Link href="#contact" className="pricing-cta">Contact Sales &rarr;</Link>
+            <a href="https://calendly.com/todayintechdotin/30min" onClick={handleBooking} className="pricing-cta">Contact Sales &rarr;</a>
           </div>
         </div>
       </div>

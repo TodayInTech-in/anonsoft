@@ -1,4 +1,13 @@
+'use client';
+
+import { triggerCalendly } from '../lib/calendly';
+
 export default function CtaSection() {
+  const handleBooking = (e) => {
+    e.preventDefault();
+    triggerCalendly('https://calendly.com/todayintechdotin/30min');
+  };
+
   return (
     <section id="contact" className="cta">
       <div className="container">
@@ -8,8 +17,11 @@ export default function CtaSection() {
             Zero upfront payment. Schedule a free 30-minute strategy call with our engineering team today.
           </p>
           <div className="cta-buttons">
-            <a href="mailto:contact@todayintech.in" className="btn-primary">
-              contact@todayintech.in &rarr;
+            <a href="https://calendly.com/todayintechdotin/30min" onClick={handleBooking} className="btn-primary">
+              Book Strategy Call &rarr;
+            </a>
+            <a href="mailto:contact@todayintech.in" className="btn-secondary" style={{ color: '#ffffff', border: '1px solid rgba(255,255,255,0.3)' }}>
+              contact@todayintech.in
             </a>
           </div>
           <div className="cta-trust">

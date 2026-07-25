@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { triggerCalendly } from '../lib/calendly';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -14,6 +15,12 @@ export default function Header() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const handleBooking = (e) => {
+    e.preventDefault();
+    setMobileActive(false);
+    triggerCalendly('https://calendly.com/todayintechdotin/30min');
+  };
 
   return (
     <header>
@@ -39,9 +46,13 @@ export default function Header() {
             <Link href="/blog" onClick={() => setMobileActive(false)}>Blog</Link>
             <Link href="/careers" onClick={() => setMobileActive(false)}>Careers</Link>
             <Link href="/contact" onClick={() => setMobileActive(false)}>FAQ & Contact</Link>
-            <Link href="/free-consultation" className="nav-cta" onClick={() => setMobileActive(false)}>
+            <a
+              href="https://calendly.com/todayintechdotin/30min"
+              className="nav-cta"
+              onClick={handleBooking}
+            >
               Book Free Strategy Call
-            </Link>
+            </a>
           </nav>
 
           <button

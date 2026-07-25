@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { triggerCalendly } from '../lib/calendly';
 
 const ALERTS = [
   { name: 'Clinic Director in Texas', action: 'booked a Telemedicine Strategy Call', time: '12 minutes ago' },
@@ -29,12 +30,17 @@ export default function SocialProofToast() {
     };
   }, []);
 
+  const handleClick = () => {
+    triggerCalendly('https://calendly.com/todayintechdotin/30min');
+  };
+
   if (!visible) return null;
 
   const current = ALERTS[index];
 
   return (
     <div
+      onClick={handleClick}
       style={{
         position: 'fixed',
         bottom: '24px',
@@ -49,12 +55,14 @@ export default function SocialProofToast() {
         alignItems: 'center',
         gap: '12px',
         maxWidth: '340px',
+        cursor: 'pointer',
         transition: 'all 0.3s ease',
       }}
     >
-      <div style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#16a34a' }}></div>
+      <div style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#16a34a', flexShrink: 0 }}></div>
       <div style={{ fontSize: '0.82rem', color: '#334155' }}>
-        <strong>{current.name}</strong> {current.action} <span style={{ color: '#64748b', fontSize: '0.75rem', display: 'block' }}>{current.time}</span>
+        <strong>{current.name}</strong> {current.action}{' '}
+        <span style={{ color: '#64748b', fontSize: '0.75rem', display: 'block' }}>{current.time}</span>
       </div>
     </div>
   );

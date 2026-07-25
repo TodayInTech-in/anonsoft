@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
+import { triggerCalendly } from '../lib/calendly';
 
 export default function HeroSection() {
   const [activeTab, setActiveTab] = useState(0);
@@ -12,6 +12,11 @@ export default function HeroSection() {
     { label: 'AI', img: '/assets/project/marketing-tools.png', alt: 'Marketing Automation AI Mockup' },
     { label: 'Healthcare', img: '/assets/project-telemedicine.png', alt: 'Telemedicine HealthTech Mockup' },
   ];
+
+  const handleBooking = (e) => {
+    e.preventDefault();
+    triggerCalendly('https://calendly.com/todayintechdotin/30min');
+  };
 
   return (
     <section className="hero" id="hero">
@@ -25,9 +30,9 @@ export default function HeroSection() {
               We help startups launch scalable SaaS, AI tools, and mobile apps quickly. Partner with a dedicated custom startup software development agency to build your production-ready product in weeks.
             </p>
             <div className="hero-buttons">
-              <Link href="#contact" className="btn-primary" id="heroCta">
+              <a href="https://calendly.com/todayintechdotin/30min" onClick={handleBooking} className="btn-primary" id="heroCta">
                 Book My Free Call
-              </Link>
+              </a>
               <a
                 href="https://wa.me/917679349780"
                 target="_blank"
