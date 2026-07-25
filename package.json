@@ -1,15 +1,17 @@
 {
   "name": "todayintech",
   "version": "1.0.0",
-  "description": "<p align=\"center\">\r   <img src=\"assets/logo.png\" alt=\"TodayInTech Logo\" width=\"80\" height=\"80\" style=\"border-radius: 16px;\">\r </p>",
-  "main": "fixpaths.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
+    "next": "^14.2.15",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "googleapis": "^171.4.0"
   }
 }
