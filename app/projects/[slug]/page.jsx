@@ -34,10 +34,9 @@ export default function ProjectPage({ params }) {
   }
 
   return (
-    <main style={{ padding: '120px 0 80px', background: '#ffffff', minHeight: '100vh' }}>
-      <div className="container" style={{ maxWidth: '900px' }}>
-        <div dangerouslySetInnerHTML={{ __html: project.body }} />
-      </div>
+    <main style={{ background: '#ffffff', minHeight: '100vh', paddingTop: '80px' }}>
+      {project.customCss && <link rel="stylesheet" href={project.customCss} />}
+      <div dangerouslySetInnerHTML={{ __html: project.body }} />
     </main>
   );
 }

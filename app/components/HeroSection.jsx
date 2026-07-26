@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { triggerCalendly } from '../lib/calendly';
 
 export default function HeroSection() {
@@ -12,6 +12,13 @@ export default function HeroSection() {
     { label: 'AI', img: '/assets/project/marketing-tools.png', alt: 'Marketing Automation AI Mockup' },
     { label: 'Healthcare', img: '/assets/project-telemedicine.png', alt: 'Telemedicine HealthTech Mockup' },
   ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveTab((prev) => (prev + 1) % tabs.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [tabs.length]);
 
   const handleBooking = (e) => {
     e.preventDefault();
@@ -60,7 +67,13 @@ export default function HeroSection() {
                     onClick={() => setActiveTab(idx)}
                   >
                     {tab.label}
-                    <div className="hero-tab-timer"></div>
+                    <div
+                      className="hero-tab-timer"
+                      style={{
+                        width: activeTab === idx ? '100%' : '0%',
+                        transition: activeTab === idx ? 'width 5000ms linear' : 'none'
+                      }}
+                    ></div>
                   </button>
                 ))}
               </div>

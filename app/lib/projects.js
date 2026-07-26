@@ -24,14 +24,39 @@ export function getAllProjects() {
     let body = content;
     const mainMatch = content.match(/<main[\s\S]*?<\/main>/i);
     if (mainMatch) {
-      body = mainMatch[0];
+      body = mainMatch[0].replace(/^<main[\s\S]*?>/i, '').replace(/<\/main>$/i, '');
+    } else {
+      const bodyMatch = content.match(/<body[\s\S]*?<\/body>/i);
+      if (bodyMatch) {
+        body = bodyMatch[0]
+          .replace(/^<body[\s\S]*?>/i, '')
+          .replace(/<\/body>$/i, '')
+          .replace(/<header[\s\S]*?<\/header>/gi, '')
+          .replace(/<footer[\s\S]*?<\/footer>/gi, '')
+          .replace(/<script[\s\S]*?<\/script>/gi, '');
+      }
     }
+
+    // Fix asset and link paths inside project pages
+    body = body
+      .replace(/src="\.\.\/assets\//g, 'src="/assets/')
+      .replace(/src="assets\//g, 'src="/assets/')
+      .replace(/href="\.\.\/assets\//g, 'href="/assets/')
+      .replace(/href="\.\.\//g, 'href="/');
+
+    // Check if project has dedicated CSS stylesheet
+    let customCss = null;
+    if (content.includes('church-management.css')) customCss = '/projects/church-management.css';
+    if (content.includes('restaurant-management.css')) customCss = '/projects/restaurant-management.css';
+    if (content.includes('school-management.css')) customCss = '/projects/school-management.css';
+    if (content.includes('senior-care.css')) customCss = '/projects/senior-care.css';
 
     projects.push({
       slug,
       title,
       description,
       body,
+      customCss,
     });
   }
 
