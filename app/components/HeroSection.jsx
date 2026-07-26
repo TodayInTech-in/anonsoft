@@ -57,73 +57,94 @@ export default function HeroSection() {
     triggerCalendly('https://calendly.com/todayintechdotin/30min');
   };
 
-  const currentSlide = slides[activeTab];
-
   return (
-    <section className="hero" id="hero">
-      <div className="container">
-        <div className="hero-grid">
-          <div className="hero-content" style={{ transition: 'all 0.4s ease-in-out' }}>
-            <span className="section-label" style={{ display: 'inline-block', marginBottom: '12px' }}>
-              {currentSlide.badge}
-            </span>
-            <h1 className="hero-title" style={{ minHeight: '120px' }}>
-              {currentSlide.title}
-            </h1>
-            <p className="hero-description" style={{ minHeight: '72px' }}>
-              {currentSlide.description}
-            </p>
-            <div className="hero-buttons">
-              <a href="https://calendly.com/todayintechdotin/30min" onClick={handleBooking} className="btn-primary" id="heroCta">
-                {currentSlide.ctaText}
-              </a>
-              <a
-                href="https://wa.me/917679349780"
-                target="_blank"
-                rel="noreferrer"
-                className="btn-secondary"
-                style={{ border: '1px solid #25D366', color: '#25D366', display: 'inline-flex', alignItems: 'center', gap: '8px' }}
-              >
-                <i className="fab fa-whatsapp"></i> Chat on WhatsApp
-              </a>
-            </div>
-            <div style={{ marginTop: '24px', fontSize: '0.85rem', opacity: 0.85, display: 'flex', gap: '16px', flexWrap: 'wrap', alignItems: 'center' }}>
-              <span><i className="fas fa-check-circle" style={{ color: 'var(--accent-green)', marginRight: '6px' }}></i>No obligation</span>
-              <span><i className="fas fa-check-circle" style={{ color: 'var(--accent-green)', marginRight: '6px' }}></i>NDA on request</span>
-              <span><i className="fas fa-check-circle" style={{ color: 'var(--accent-green)', marginRight: '6px' }}></i>Fixed-scope quote in 24 hours</span>
-            </div>
-          </div>
-
-          <div className="hero-tabs-column">
-            <div className="hero-tabs-container">
-              <div className="hero-tabs-menu">
-                {slides.map((slide, idx) => (
-                  <button
-                    key={idx}
-                    className={`hero-tab-link ${activeTab === idx ? 'active' : ''}`}
-                    onClick={() => setActiveTab(idx)}
-                  >
-                    {slide.label}
-                    <div
-                      className="hero-tab-timer"
-                      style={{
-                        width: activeTab === idx ? '100%' : '0%',
-                        transition: activeTab === idx ? 'width 5500ms linear' : 'none'
-                      }}
-                    ></div>
-                  </button>
-                ))}
-              </div>
-              <div className="hero-tab-content">
-                {slides.map((slide, idx) => (
-                  <div key={idx} className={`hero-tab-pane ${activeTab === idx ? 'active' : ''}`}>
-                    <img src={slide.img} alt={slide.alt} width="1024" height="1024" />
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+    <section className="hero" id="hero" style={{ position: 'relative', overflow: 'hidden', paddingBottom: '40px' }}>
+      {/* Top Floating Category Switcher */}
+      <div className="container" style={{ marginBottom: '24px', position: 'relative', zIndex: 10 }}>
+        <div className="hero-tabs-menu" style={{ maxWidth: '480px', margin: '0 auto', background: 'rgba(255, 255, 255, 0.8)', backdropFilter: 'blur(8px)', padding: '6px', borderRadius: '99px', boxShadow: '0 4px 20px rgba(0,0,0,0.06)' }}>
+          {slides.map((slide, idx) => (
+            <button
+              key={idx}
+              className={`hero-tab-link ${activeTab === idx ? 'active' : ''}`}
+              onClick={() => setActiveTab(idx)}
+              style={{ flex: 1, padding: '8px 16px', borderRadius: '99px', fontSize: '0.88rem', fontWeight: '600' }}
+            >
+              {slide.label}
+              <div
+                className="hero-tab-timer"
+                style={{
+                  width: activeTab === idx ? '100%' : '0%',
+                  transition: activeTab === idx ? 'width 5500ms linear' : 'none'
+                }}
+              ></div>
+            </button>
+          ))}
         </div>
+      </div>
+
+      {/* Full Section Horizontal Track Slider */}
+      <div
+        style={{
+          display: 'flex',
+          width: `${slides.length * 100}%`,
+          transform: `translateX(-${(activeTab * 100) / slides.length}%)`,
+          transition: 'transform 0.65s cubic-bezier(0.25, 1, 0.5, 1)',
+        }}
+      >
+        {slides.map((slide, idx) => (
+          <div
+            key={idx}
+            style={{
+              width: `${100 / slides.length}%`,
+              flexShrink: 0,
+            }}
+          >
+            <div className="container">
+              <div className="hero-grid">
+                <div className="hero-content">
+                  <span className="section-label" style={{ display: 'inline-block', marginBottom: '12px' }}>
+                    {slide.badge}
+                  </span>
+                  <h1 className="hero-title">
+                    {slide.title}
+                  </h1>
+                  <p className="hero-description">
+                    {slide.description}
+                  </p>
+                  <div className="hero-buttons">
+                    <a href="https://calendly.com/todayintechdotin/30min" onClick={handleBooking} className="btn-primary">
+                      {slide.ctaText}
+                    </a>
+                    <a
+                      href="https://wa.me/917679349780"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="btn-secondary"
+                      style={{ border: '1px solid #25D366', color: '#25D366', display: 'inline-flex', alignItems: 'center', gap: '8px' }}
+                    >
+                      <i className="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                  </div>
+                  <div style={{ marginTop: '24px', fontSize: '0.85rem', opacity: 0.85, display: 'flex', gap: '16px', flexWrap: 'wrap', alignItems: 'center' }}>
+                    <span><i className="fas fa-check-circle" style={{ color: 'var(--accent-green)', marginRight: '6px' }}></i>No obligation</span>
+                    <span><i className="fas fa-check-circle" style={{ color: 'var(--accent-green)', marginRight: '6px' }}></i>NDA on request</span>
+                    <span><i className="fas fa-check-circle" style={{ color: 'var(--accent-green)', marginRight: '6px' }}></i>Fixed-scope quote in 24 hours</span>
+                  </div>
+                </div>
+
+                <div className="hero-tabs-column">
+                  <div className="hero-tabs-container">
+                    <div className="hero-tab-content">
+                      <div className="hero-tab-pane active">
+                        <img src={slide.img} alt={slide.alt} width="1024" height="1024" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );
