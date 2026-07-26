@@ -1,20 +1,33 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 import { triggerCalendly } from '../lib/calendly';
+
+gsap.registerPlugin(useGSAP);
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileActive, setMobileActive] = useState(false);
+  const headerRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 40);
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useGSAP(() => {
+    gsap.fromTo(
+      '.nav-logo, .nav-links a',
+      { autoAlpha: 0, y: -10 },
+      { autoAlpha: 1, y: 0, duration: 0.5, stagger: 0.05, ease: 'power2.out' }
+    );
+  }, { scope: headerRef });
 
   const handleBooking = (e) => {
     e.preventDefault();
@@ -23,7 +36,7 @@ export default function Header() {
   };
 
   return (
-    <header>
+    <header ref={headerRef}>
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="container">
           <Link href="/" className="nav-logo">

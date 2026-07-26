@@ -1,68 +1,99 @@
 'use client';
 
+import { useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useGSAP } from '@gsap/react';
 import { triggerCalendly } from '../lib/calendly';
 
+gsap.registerPlugin(ScrollTrigger, useGSAP);
+
 export default function PricingSection() {
+  const sectionRef = useRef(null);
+
+  useGSAP(() => {
+    gsap.fromTo(
+      '.pricing-card',
+      { autoAlpha: 0, y: 40 },
+      {
+        autoAlpha: 1,
+        y: 0,
+        duration: 0.6,
+        stagger: 0.15,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: 'top 80%',
+        },
+      }
+    );
+  }, { scope: sectionRef });
+
   const handleBooking = (e) => {
     e.preventDefault();
     triggerCalendly('https://calendly.com/todayintechdotin/30min');
   };
 
   return (
-    <section id="pricing" className="pricing">
+    <section id="pricing" className="pricing" ref={sectionRef}>
       <div className="container">
         <div className="section-header">
-          <div className="section-label">Transparent Pricing</div>
-          <h2 className="section-title">Zero Upfront Payment Models</h2>
-          <p className="section-subtitle">Choose a fixed-scope plan. Pay only after reviewing your working prototype.</p>
+          <div className="section-label">Transparent Engagement</div>
+          <h2 className="section-title">Fixed-Scope SaaS & App Development Packages</h2>
+          <p className="section-subtitle">No hidden fees, no hourly surprises. Predictable pricing with clear deliverables.</p>
         </div>
 
         <div className="pricing-grid">
           <div className="pricing-card">
-            <div className="pricing-tier">Starter MVP</div>
-            <div className="pricing-price">
-              <strong>$2,999</strong> <span className="price-period">one-time</span>
-            </div>
-            <div className="pricing-timeline">4 Weeks Delivery</div>
+            <div className="pricing-badge">Fast Track</div>
+            <h3>MVP Sprint</h3>
+            <div className="pricing-price">$4,999 <span>/ fixed</span></div>
+            <p>Ideal for early-stage founders needing a functional, investor-ready prototype in 3–4 weeks.</p>
             <ul className="pricing-features">
-              <li>✓ Core White-Label Platform</li>
-              <li>✓ Custom Branding & Domain</li>
-              <li>✓ Basic Patient / Admin Portal</li>
-              <li>✓ 100% Source Code Ownership</li>
+              <li><i className="fas fa-check"></i> Core SaaS / HealthTech Features</li>
+              <li><i className="fas fa-check"></i> Mobile Responsive Web App</li>
+              <li><i className="fas fa-check"></i> Database & Authentication</li>
+              <li><i className="fas fa-check"></i> Vercel / AWS Deployment</li>
+              <li><i className="fas fa-check"></i> 14 Days Post-Launch Support</li>
             </ul>
-            <a href="https://calendly.com/todayintechdotin/30min" onClick={handleBooking} className="pricing-cta">Get Started &rarr;</a>
+            <a href="https://calendly.com/todayintechdotin/30min" onClick={handleBooking} className="btn-secondary" style={{ width: '100%', textAlign: 'center' }}>
+              Book MVP Consultation
+            </a>
           </div>
 
-          <div className="pricing-card pricing-card-featured">
-            <div className="pricing-popular-badge">Most Popular</div>
-            <div className="pricing-tier">Growth Platform</div>
-            <div className="pricing-price">
-              <strong>$5,999</strong> <span className="price-period">one-time</span>
-            </div>
-            <div className="pricing-timeline">6 Weeks Delivery</div>
+          <div className="pricing-card featured">
+            <div className="pricing-badge featured-badge">Most Popular</div>
+            <h3>Full Platform Build</h3>
+            <div className="pricing-price">$9,999 <span>/ fixed</span></div>
+            <p>Complete end-to-end web & mobile platform with multi-role dashboards and API integrations.</p>
             <ul className="pricing-features">
-              <li>✓ Everything in Starter MVP</li>
-              <li>✓ Full Telehealth WebRTC Video</li>
-              <li>✓ EHR / FHIR API Connector</li>
-              <li>✓ Payment Gateway & Billing</li>
-              <li>✓ 3 Months Free Support</li>
+              <li><i className="fas fa-check"></i> Everything in MVP Sprint</li>
+              <li><i className="fas fa-check"></i> iOS & Android Mobile Apps</li>
+              <li><i className="fas fa-check"></i> Stripe / Payment Gateway</li>
+              <li><i className="fas fa-check"></i> HIPAA Security Encryption</li>
+              <li><i className="fas fa-check"></i> EHR / Third-Party API Integration</li>
+              <li><i className="fas fa-check"></i> 30 Days Post-Launch Support</li>
             </ul>
-            <a href="https://calendly.com/todayintechdotin/30min" onClick={handleBooking} className="pricing-cta pricing-cta-featured">Book Free Call &rarr;</a>
+            <a href="https://calendly.com/todayintechdotin/30min" onClick={handleBooking} className="btn-primary" style={{ width: '100%', textAlign: 'center' }}>
+              Book Production Call
+            </a>
           </div>
 
           <div className="pricing-card">
-            <div className="pricing-tier">Enterprise Suite</div>
-            <div className="pricing-price">
-              <strong>Custom</strong>
-            </div>
-            <div className="pricing-timeline">8 Weeks Delivery</div>
+            <div className="pricing-badge">Enterprise</div>
+            <h3>Dedicated Tech Team</h3>
+            <div className="pricing-price">$6,500 <span>/ month</span></div>
+            <p>Full-stack React, Next.js, Node.js, and Python developers working exclusively on your product.</p>
             <ul className="pricing-features">
-              <li>✓ Multi-Clinic / Multi-Tenant ERP</li>
-              <li>✓ Ambient AI Medical Scribe</li>
-              <li>✓ Custom Microservices Architecture</li>
-              <li>✓ Dedicated Support Lead & BAA</li>
+              <li><i className="fas fa-check"></i> Senior Full-Stack Engineers</li>
+              <li><i className="fas fa-check"></i> Dedicated Tech Lead & PM</li>
+              <li><i className="fas fa-check"></i> Daily Standups & Slack Access</li>
+              <li><i className="fas fa-check"></i> Scalable Infrastructure Audit</li>
+              <li><i className="fas fa-check"></i> Flexible Monthly Subscription</li>
             </ul>
-            <a href="https://calendly.com/todayintechdotin/30min" onClick={handleBooking} className="pricing-cta">Contact Sales &rarr;</a>
+            <a href="https://calendly.com/todayintechdotin/30min" onClick={handleBooking} className="btn-secondary" style={{ width: '100%', textAlign: 'center' }}>
+              Hire Dedicated Team
+            </a>
           </div>
         </div>
       </div>

@@ -1,6 +1,16 @@
+'use client';
+
+import { useRef } from 'react';
 import Link from 'next/link';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useGSAP } from '@gsap/react';
+
+gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 export default function PortfolioSection() {
+  const sectionRef = useRef(null);
+
   const projects = [
     {
       slug: 'church-management-software',
@@ -108,8 +118,26 @@ export default function PortfolioSection() {
     }
   ];
 
+  useGSAP(() => {
+    gsap.fromTo(
+      '.portfolio-card',
+      { autoAlpha: 0, y: 35 },
+      {
+        autoAlpha: 1,
+        y: 0,
+        duration: 0.55,
+        stagger: 0.1,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: '.portfolio-grid',
+          start: 'top 85%',
+        },
+      }
+    );
+  }, { scope: sectionRef });
+
   return (
-    <section id="projects" className="portfolio">
+    <section id="projects" className="portfolio" ref={sectionRef}>
       <div className="container">
         <div className="section-header">
           <div className="section-label">Selected Case Studies</div>

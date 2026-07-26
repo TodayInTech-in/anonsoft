@@ -1,55 +1,66 @@
+'use client';
+
+import { useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useGSAP } from '@gsap/react';
+
+gsap.registerPlugin(ScrollTrigger, useGSAP);
+
 export default function TrustCertifications() {
+  const sectionRef = useRef(null);
+
+  useGSAP(() => {
+    gsap.fromTo(
+      '.trust-card',
+      { autoAlpha: 0, y: 30 },
+      {
+        autoAlpha: 1,
+        y: 0,
+        duration: 0.55,
+        stagger: 0.12,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: 'top 85%',
+        },
+      }
+    );
+  }, { scope: sectionRef });
+
   return (
-    <section className="trust-certifications">
+    <section className="trust-certifications" style={{ padding: '60px 0', background: 'var(--bg-light)' }} ref={sectionRef}>
       <div className="container">
-        <div className="trust-cert-grid">
-          <a href="https://www.google.com" target="_blank" rel="noreferrer" className="trust-cert-card">
-            <div className="trust-cert-icon google-icon"><i className="fab fa-google"></i></div>
-            <div className="trust-cert-rating">
-              <div className="trust-cert-stars">★★★★★</div>
-              <span className="trust-cert-score">5.0/5</span>
-            </div>
-            <div className="trust-cert-label">Google Reviews</div>
-            <div className="trust-cert-desc">100% Client Satisfaction</div>
-            <div className="trust-cert-cta">Read Reviews <i className="fas fa-arrow-right"></i></div>
-          </a>
-
-          <a href="https://www.trustpilot.com" target="_blank" rel="noreferrer" className="trust-cert-card">
-            <div className="trust-cert-icon trustpilot-icon"><i className="fas fa-star"></i></div>
-            <div className="trust-cert-rating">
-              <div className="trust-cert-stars">★★★★★</div>
-              <span className="trust-cert-score">4.9/5</span>
-            </div>
-            <div className="trust-cert-label">Trustpilot Rating</div>
-            <div className="trust-cert-desc">Verified Enterprise Feedback</div>
-            <div className="trust-cert-cta">Verify Profile <i className="fas fa-arrow-right"></i></div>
-          </a>
-
-          <div className="trust-cert-card">
-            <div className="trust-cert-icon hipaa-icon"><i className="fas fa-user-shield"></i></div>
-            <div className="trust-cert-badge">Security Ready</div>
-            <div className="trust-cert-label">HIPAA Compliant</div>
-            <div className="trust-cert-desc">BAA Agreements & Encryption</div>
-            <div className="trust-cert-cta">Security Specs <i className="fas fa-arrow-right"></i></div>
-          </div>
-
-          <div className="trust-cert-card">
-            <div className="trust-cert-icon msme-icon">
-              <img src="/assets/certificate/msme-loo.png" alt="MSME Logo" style={{ height: '36px', width: 'auto' }} />
-            </div>
-            <div className="trust-cert-badge" style={{ background: 'rgba(255,153,0,0.15)', color: '#D97706' }}>Government Registered</div>
-            <div className="trust-cert-label">MSME Registered</div>
-            <div className="trust-cert-desc">Govt. of India Certified Agency</div>
-            <div className="trust-cert-cta">UDYAM-WB-14-0097126</div>
-          </div>
+        <div className="section-header" style={{ marginBottom: '32px' }}>
+          <div className="section-label">Enterprise Grade</div>
+          <h2 className="section-title">Built to Meet Rigorous Compliance Standards</h2>
+          <p className="section-subtitle">Security, privacy, and reliability baked into every line of code.</p>
         </div>
 
-        <div className="trust-indicators">
-          <div className="trust-indicator"><i className="fas fa-shield-alt trust-indicator-icon"></i> SOC2 Type II Certified Process</div>
-          <span className="trust-indicator-divider">•</span>
-          <div className="trust-indicator"><i className="fas fa-lock trust-indicator-icon"></i> ISO 27001 Data Security</div>
-          <span className="trust-indicator-divider">•</span>
-          <div className="trust-indicator"><i className="fas fa-file-contract trust-indicator-icon"></i> 100% IP & Source Code Transfer</div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '24px' }}>
+          <div className="trust-card" style={{ background: '#ffffff', padding: '24px', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
+            <div style={{ color: '#0284c7', fontSize: '1.8rem', marginBottom: '12px' }}><i className="fas fa-user-shield"></i></div>
+            <h4 style={{ fontSize: '1.1rem', fontWeight: '700', marginBottom: '8px' }}>HIPAA Compliant</h4>
+            <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', margin: 0 }}>End-to-end BAA agreements, AES-256 encrypted storage, and PHI audit trails for US healthtech startups.</p>
+          </div>
+
+          <div className="trust-card" style={{ background: '#ffffff', padding: '24px', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
+            <div style={{ color: '#16a34a', fontSize: '1.8rem', marginBottom: '12px' }}><i className="fas fa-lock"></i></div>
+            <h4 style={{ fontSize: '1.1rem', fontWeight: '700', marginBottom: '8px' }}>SOC 2 Ready</h4>
+            <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', margin: 0 }}>Role-based access controls (RBAC), multi-factor authentication, and automated vulnerability scanning.</p>
+          </div>
+
+          <div className="trust-card" style={{ background: '#ffffff', padding: '24px', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
+            <div style={{ color: '#9333ea', fontSize: '1.8rem', marginBottom: '12px' }}><i className="fas fa-network-wired"></i></div>
+            <h4 style={{ fontSize: '1.1rem', fontWeight: '700', marginBottom: '8px' }}>SMART on FHIR</h4>
+            <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', margin: 0 }}>Interoperable HL7 FHIR v4 API integrations with Epic, Cerner, Athenahealth, and Allscripts.</p>
+          </div>
+
+          <div className="trust-card" style={{ background: '#ffffff', padding: '24px', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
+            <div style={{ color: '#ea580c', fontSize: '1.8rem', marginBottom: '12px' }}><i className="fas fa-server"></i></div>
+            <h4 style={{ fontSize: '1.1rem', fontWeight: '700', marginBottom: '8px' }}>99.99% Uptime Architecture</h4>
+            <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', margin: 0 }}>Multi-region cloud infrastructure on AWS & Vercel with automated failover and daily automated backups.</p>
+          </div>
         </div>
       </div>
     </section>

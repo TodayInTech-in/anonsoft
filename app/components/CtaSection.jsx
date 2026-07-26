@@ -1,33 +1,60 @@
 'use client';
 
+import { useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useGSAP } from '@gsap/react';
 import { triggerCalendly } from '../lib/calendly';
 
+gsap.registerPlugin(ScrollTrigger, useGSAP);
+
 export default function CtaSection() {
+  const sectionRef = useRef(null);
+
+  useGSAP(() => {
+    gsap.fromTo(
+      '.cta-box',
+      { autoAlpha: 0, scale: 0.95, y: 30 },
+      {
+        autoAlpha: 1,
+        scale: 1,
+        y: 0,
+        duration: 0.65,
+        ease: 'back.out(1.2)',
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: 'top 85%',
+        },
+      }
+    );
+  }, { scope: sectionRef });
+
   const handleBooking = (e) => {
     e.preventDefault();
     triggerCalendly('https://calendly.com/todayintechdotin/30min');
   };
 
   return (
-    <section id="contact" className="cta">
+    <section className="cta" ref={sectionRef}>
       <div className="container">
-        <div className="cta-wrapper">
-          <h2 className="cta-title">Ready to See Your Working Prototype?</h2>
-          <p className="cta-subtitle">
-            Zero upfront payment. Schedule a free 30-minute strategy call with our engineering team today.
+        <div className="cta-box">
+          <h2 className="cta-title">Ready to Turn Your SaaS or HealthTech Vision Into Production Code?</h2>
+          <p className="cta-description">
+            Schedule a free 30-minute discovery call with our technical architect. We'll audit your product concept, suggest technical architecture, and provide a fixed-scope quote in 24 hours.
           </p>
           <div className="cta-buttons">
-            <a href="https://calendly.com/todayintechdotin/30min" onClick={handleBooking} className="btn-primary">
-              Book Strategy Call &rarr;
+            <a href="https://calendly.com/todayintechdotin/30min" onClick={handleBooking} className="btn-primary" id="finalCta">
+              Book Free Strategy Call
             </a>
-            <a href="mailto:contact@todayintech.in" className="btn-secondary" style={{ color: '#ffffff', border: '1px solid rgba(255,255,255,0.3)' }}>
-              contact@todayintech.in
+            <a
+              href="https://wa.me/917679349780"
+              target="_blank"
+              rel="noreferrer"
+              className="btn-secondary"
+              style={{ border: '1px solid #ffffff', color: '#ffffff', display: 'inline-flex', alignItems: 'center', gap: '8px' }}
+            >
+              <i className="fab fa-whatsapp"></i> Chat on WhatsApp
             </a>
-          </div>
-          <div className="cta-trust">
-            <div className="cta-trust-item"><span style={{ color: 'var(--accent-green)' }}>✓</span> Fixed-Scope Quote in 24 Hours</div>
-            <div className="cta-trust-item"><span style={{ color: 'var(--accent-green)' }}>✓</span> Strict NDA Protection</div>
-            <div className="cta-trust-item"><span style={{ color: 'var(--accent-green)' }}>✓</span> 100% IP Transfer</div>
           </div>
         </div>
       </div>

@@ -1,6 +1,50 @@
+'use client';
+
+import { useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useGSAP } from '@gsap/react';
+
+gsap.registerPlugin(ScrollTrigger, useGSAP);
+
 export default function ServicesSection() {
+  const sectionRef = useRef(null);
+
+  useGSAP(() => {
+    gsap.fromTo(
+      '.section-header',
+      { autoAlpha: 0, y: 30 },
+      {
+        autoAlpha: 1,
+        y: 0,
+        duration: 0.6,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: 'top 80%',
+        },
+      }
+    );
+
+    gsap.fromTo(
+      '.service-card',
+      { autoAlpha: 0, y: 40 },
+      {
+        autoAlpha: 1,
+        y: 0,
+        duration: 0.6,
+        stagger: 0.12,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: '.services-grid',
+          start: 'top 85%',
+        },
+      }
+    );
+  }, { scope: sectionRef });
+
   return (
-    <section id="services" className="services">
+    <section id="services" className="services" ref={sectionRef}>
       <div className="container">
         <div className="section-header">
           <div className="section-label">Our Capabilities</div>
