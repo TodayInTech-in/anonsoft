@@ -22,11 +22,17 @@ export function getAllBlogs() {
     const descMatch = content.match(/<meta\s+name="description"\s+content="(.*?)"/i);
     const categoryMatch = content.match(/<meta\s+property="article:section"\s+content="(.*?)"/i);
     const dateMatch = content.match(/<meta\s+property="article:published_time"\s+content="(.*?)"/i);
+    const ogImageMatch = content.match(/<meta\s+property="og:image"\s+content="(.*?)"/i);
+    const keywordsMatch = content.match(/<meta\s+name="keywords"\s+content="(.*?)"/i);
+    const jsonLdMatch = content.match(/<script\s+type="application\/ld\+json">([\s\S]*?)<\/script>/i);
 
-    const title = titleMatch ? titleMatch[1].replace(' | TodayInTech', '') : slug;
+    const title = titleMatch ? titleMatch[1].replace(' | TodayInTech', '').replace(' | Today In Tech', '') : slug;
     const description = descMatch ? descMatch[1] : '';
     const category = categoryMatch ? categoryMatch[1] : 'Healthcare Software';
     const date = dateMatch ? dateMatch[1] : '2026-07-25';
+    const ogImage = ogImageMatch ? ogImageMatch[1] : 'https://todayintech.in/assets/og-image.png';
+    const keywords = keywordsMatch ? keywordsMatch[1].split(',').map((k) => k.trim()) : [];
+    const jsonLd = jsonLdMatch ? jsonLdMatch[1] : null;
 
     // Extract article content inside <article class="post-content"> or <main>
     let body = content;
@@ -35,12 +41,23 @@ export function getAllBlogs() {
       body = articleMatch[0];
     }
 
+    // Fix relative asset paths inside blog HTML
+    body = body
+      .replace(/src="\.\.\/assets\//g, 'src="/assets/')
+      .replace(/src="assets\//g, 'src="/assets/')
+      .replace(/href="\.\.\/assets\//g, 'href="/assets/')
+      .replace(/href="\.\.\/blog\//g, 'href="/blog/')
+      .replace(/href="\.\.\//g, 'href="/');
+
     blogs.push({
       slug,
       title,
       description,
       category,
       date,
+      ogImage,
+      keywords,
+      jsonLd,
       body,
     });
   }
@@ -52,3 +69,4 @@ export function getBlogBySlug(slug) {
   const blogs = getAllBlogs();
   return blogs.find((b) => b.slug === slug);
 }
+

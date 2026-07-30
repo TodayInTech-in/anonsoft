@@ -17,9 +17,15 @@ export function getAllProjects() {
     const slug = file.replace('.html', '');
     const titleMatch = content.match(/<title>(.*?)<\/title>/i);
     const descMatch = content.match(/<meta\s+name="description"\s+content="(.*?)"/i);
+    const ogImageMatch = content.match(/<meta\s+property="og:image"\s+content="(.*?)"/i);
+    const keywordsMatch = content.match(/<meta\s+name="keywords"\s+content="(.*?)"/i);
+    const jsonLdMatch = content.match(/<script\s+type="application\/ld\+json">([\s\S]*?)<\/script>/i);
 
-    const title = titleMatch ? titleMatch[1].replace(' | TodayInTech', '') : slug;
+    const title = titleMatch ? titleMatch[1].replace(' | TodayInTech', '').replace(' | TodayInTech SITES', '') : slug;
     const description = descMatch ? descMatch[1] : '';
+    const ogImage = ogImageMatch ? ogImageMatch[1] : 'https://todayintech.in/assets/og-image.png';
+    const keywords = keywordsMatch ? keywordsMatch[1].split(',').map((k) => k.trim()) : [];
+    const jsonLd = jsonLdMatch ? jsonLdMatch[1] : null;
 
     let body = content;
     const mainMatch = content.match(/<main[\s\S]*?<\/main>/i);
@@ -42,6 +48,7 @@ export function getAllProjects() {
       .replace(/src="\.\.\/assets\//g, 'src="/assets/')
       .replace(/src="assets\//g, 'src="/assets/')
       .replace(/href="\.\.\/assets\//g, 'href="/assets/')
+      .replace(/href="\.\.\/projects\//g, 'href="/projects/')
       .replace(/href="\.\.\//g, 'href="/');
 
     // Check if project has dedicated CSS stylesheet
@@ -55,6 +62,9 @@ export function getAllProjects() {
       slug,
       title,
       description,
+      ogImage,
+      keywords,
+      jsonLd,
       body,
       customCss,
     });
@@ -67,3 +77,4 @@ export function getProjectBySlug(slug) {
   const projects = getAllProjects();
   return projects.find((p) => p.slug === slug);
 }
+
