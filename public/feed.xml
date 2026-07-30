@@ -7,6 +7,20 @@
     <language>en-us</language>
     <atom:link href="https://todayintech.in/public/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>How to Build a HIPAA-Compliant LLM &amp; RAG Architecture for Healthcare Software (2026)</title>
+      <link>https://todayintech.in/blog/hipaa-compliant-llm-rag-architecture-healthcare-software-2026</link>
+      <description>Engineering guide to building production HIPAA-compliant Retrieval-Augmented Generation (RAG) and LLM architectures in 2026. Covers pgvector KMS encryption, zero-retention LLM endpoints, and mTLS API security.</description>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/hipaa-compliant-llm-rag-architecture-healthcare-software-2026</guid>
+    </item>
+    <item>
+      <title>Agentic AI in Prior Authorization &amp; Revenue Cycle Management (2026 Guide)</title>
+      <link>https://todayintech.in/blog/agentic-ai-prior-authorization-rcm-automation-2026</link>
+      <description>Learn how Agentic AI is automating prior authorization and revenue cycle management (RCM) in 2026. Technical architecture guide covering X12 278 FHIR workflows, automated ICD-10 coding, and EHR write-backs.</description>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/agentic-ai-prior-authorization-rcm-automation-2026</guid>
+    </item>
+    <item>
       <title>Exploring the Cast of &apos;Tommy Karate&apos; and Pete Davidson&apos;s Role</title>
       <link>https://todayintech.in/blog/exploring-the-cast-of-tommy-karate-and-pete-davidson-s-role</link>
       <description>Dive into the captivating cast of &apos;Tommy Karate&apos; and Pete Davidson&apos;s unique role in this dynamic film.</description>
@@ -96,20 +110,6 @@
       <description>Deciding between white-label, custom builds, and TodayInTech&apos;s hybrid model. Compare TodayInTech against Arkenea, HTD Health, and Healee for launching digital health software in 2026.</description>
       <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://todayintech.in/blog/white-label-vs-custom-healthcare-software</guid>
-    </item>
-    <item>
-      <title>Real-Time Data Processing in Healthcare</title>
-      <link>https://todayintech.in/blog/real-time-data-processing-in-healthcare</link>
-      <description>Complete guide on real-time data processing in healthcare. Learn about development process, best practices, cost analysis, and implementation strategies for healthcare organizations in 2026.</description>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/real-time-data-processing-in-healthcare</guid>
-    </item>
-    <item>
-      <title>Hospital Information System Architecture</title>
-      <link>https://todayintech.in/blog/hospital-information-system-architecture</link>
-      <description>Complete guide on hospital information system architecture. Learn about development process, best practices, cost analysis, and implementation strategies for healthcare organizations in 2026.</description>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/hospital-information-system-architecture</guid>
     </item>
   </channel>
 </rss>
