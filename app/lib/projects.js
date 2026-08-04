@@ -10,7 +10,7 @@ export function getAllProjects() {
   const projects = [];
 
   for (const file of files) {
-    if (!file.endsWith('.html') || file === 'index.html' || file.includes('demo')) continue;
+    if (!file.endsWith('.html') || file === 'index.html') continue;
     const filePath = path.join(PROJECTS_DIR, file);
     const content = fs.readFileSync(filePath, 'utf-8');
 

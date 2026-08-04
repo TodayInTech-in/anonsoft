@@ -6,6 +6,16 @@ export default async function sitemap() {
 
   const coreRoutes = [
     '',
+    '/about',
+    '/services',
+    '/features',
+    '/agents',
+    '/ai',
+    '/health',
+    '/careers',
+    '/contact',
+    '/bookademo',
+    '/free-consultation',
     '/telemedicine-software-for-clinics',
     '/healthcare-saas-mvp-development',
     '/wellness-platform-development',
