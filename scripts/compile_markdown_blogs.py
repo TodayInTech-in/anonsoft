@@ -240,22 +240,29 @@ def compile_markdown_files():
             desc = metadata.get('description', title)
             keywords = metadata.get('keywords', [])
             
-            # Map category based on keywords/slug
-            category = "Technology Insights"
-            slug_lower = slug.lower()
-            if any(k in slug_lower for k in ['telehealth', 'teleheal', 'healthcare']):
-                category = "Healthcare Technology"
-            elif 'church' in slug_lower:
-                category = "SaaS Solutions"
-            elif 'hotel' in slug_lower:
-                category = "Hospitality Tech"
-            elif any(k in slug_lower for k in ['bhagyaraj', 'seeman']):
-                category = "Regional Insights"
+            # Map category based on metadata or keywords/slug
+            if 'category' in metadata and metadata['category']:
+                category = metadata['category']
+            else:
+                category = "Technology Insights"
+                slug_lower = slug.lower()
+                if any(k in slug_lower for k in ['telehealth', 'teleheal', 'healthcare']):
+                    category = "Healthcare Technology"
+                elif 'church' in slug_lower:
+                    category = "SaaS Solutions"
+                elif 'hotel' in slug_lower:
+                    category = "Hospitality Tech"
+                elif any(k in slug_lower for k in ['bhagyaraj', 'seeman']):
+                    category = "Regional Insights"
+                elif any(k in slug_lower for k in ['voice', 'speech', 'ai', 'tts']):
+                    category = "AI Solutions"
             
             # Map image based on category/slug
             image = "software_prototype.png"
             if category == "Healthcare Technology":
                 image = "white_label_health.png"
+            elif category in ["AI Solutions", "AI & SaaS Solutions"]:
+                image = "ai_agent_medical.png"
             elif category == "Regional Insights":
                 image = "software_prototype.png"
             elif category == "SaaS Solutions" or category == "Hospitality Tech":
