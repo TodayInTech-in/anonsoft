@@ -62,12 +62,14 @@ def parse_frontmatter(file_path):
     return metadata, body_text
 
 def format_inline_markdown(text):
+    # Images: ![alt](url)
+    text = re.sub(r'!\[(.*?)\]\((.*?)\)', r'<img src="\2" alt="\1" class="blog-inline-img" style="max-width:100%;height:auto;border-radius:16px;margin:1.5rem 0;box-shadow:0 8px 30px rgba(0,0,0,0.12);" loading="lazy">', text)
     # Bold: **text** or __text__
     text = re.sub(r'\*\*(.*?)\*\*|__(.*?)__', lambda m: f'<strong>{m.group(1) or m.group(2)}</strong>', text)
     # Inline code: `code`
     text = re.sub(r'`(.*?)`', r'<code>\1</code>', text)
     # Links: [text](url)
-    text = re.sub(r'\[(.*?)\]\((.*?)\)', r'<a href="\2">\1</a>', text)
+    text = re.sub(r'(?<!\!)\[(.*?)\]\((.*?)\)', r'<a href="\2">\1</a>', text)
     return text
 
 def markdown_to_html(text):
@@ -257,16 +259,19 @@ def compile_markdown_files():
                 elif any(k in slug_lower for k in ['voice', 'speech', 'ai', 'tts']):
                     category = "AI Solutions"
             
-            # Map image based on category/slug
-            image = "software_prototype.png"
-            if category == "Healthcare Technology":
-                image = "white_label_health.png"
-            elif category in ["AI Solutions", "AI & SaaS Solutions"]:
-                image = "ai_agent_medical.png"
-            elif category == "Regional Insights":
+            # Map image based on frontmatter or category/slug
+            if 'image' in metadata and metadata['image']:
+                image = metadata['image']
+            else:
                 image = "software_prototype.png"
-            elif category == "SaaS Solutions" or category == "Hospitality Tech":
-                image = "white_label_vs_custom.png"
+                if category == "Healthcare Technology":
+                    image = "white_label_health.png"
+                elif category in ["AI Solutions", "AI & SaaS Solutions"]:
+                    image = "ai_agent_medical.png"
+                elif category == "Regional Insights":
+                    image = "software_prototype.png"
+                elif category == "SaaS Solutions" or category == "Hospitality Tech":
+                    image = "white_label_vs_custom.png"
                 
             # Date formatting
             date_str = metadata.get('date', datetime.now().strftime('%Y-%m-%d'))
