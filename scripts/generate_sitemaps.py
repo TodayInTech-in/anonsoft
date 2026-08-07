@@ -180,6 +180,15 @@ def generate_sitemaps():
             f.write(sf.read())
     print(f"Copied root sitemap to: {public_sitemap_path}")
     
+    # Sync assets directory to public/assets
+    import shutil
+    src_assets = os.path.join(root_dir, 'assets')
+    dst_assets = os.path.join(root_dir, 'public', 'assets')
+    if os.path.exists(src_assets):
+        os.makedirs(dst_assets, exist_ok=True)
+        shutil.copytree(src_assets, dst_assets, dirs_exist_ok=True)
+        print("Synced assets/ to public/assets/")
+    
     # ────────────── Write public/sitemap-blog.xml ──────────────
     sitemap_blog_path = os.path.join(root_dir, 'public', 'sitemap-blog.xml')
     with open(sitemap_blog_path, 'w', encoding='utf-8') as f:
