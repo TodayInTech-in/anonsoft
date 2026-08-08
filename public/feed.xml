@@ -7,6 +7,13 @@
     <language>en-us</language>
     <atom:link href="https://todayintech.in/public/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>AI-Powered Credit Underwriting: The Future of B2B FinTech (2026)</title>
+      <link>https://todayintech.in/blog/ai-powered-credit-underwriting-b2b-fintech-2026</link>
+      <description>Discover how AI-powered credit underwriting and real-time risk modeling are transforming B2B FinTech platforms in 2026. Learn about API-driven risk engines, automated financial analysis, and machine learning models for corporate credit risk.</description>
+      <pubDate>Sun, 09 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/ai-powered-credit-underwriting-b2b-fintech-2026</guid>
+    </item>
+    <item>
       <title>AI Voice Cloning &amp; Custom Text-to-Speech (TTS) SaaS Development in 2026: Technical Guide &amp; Cost</title>
       <link>https://todayintech.in/blog/ai-voice-cloning-text-to-speech-saas-development-guide-2026</link>
       <description>Discover how to build an AI voice cloning and custom text-to-speech (TTS) SaaS app in 2026. Technical architecture, ElevenLabs API alternatives, latency optimization, and cost breakdown.</description>
@@ -103,13 +110,6 @@
       <description>Compare the best healthcare software development agencies in 2026. Data-driven benchmark of TodayInTech, Arkenea, ScienceSoft, Chetu, Appinventiv, and Innowise on HIPAA compliance, FHIR APIs, pricing, and speed.</description>
       <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://todayintech.in/blog/top-healthcare-software-development-companies-2026-ranking</guid>
-    </item>
-    <item>
-      <title>Edge Computing for Healthcare Systems</title>
-      <link>https://todayintech.in/blog/edge-computing-for-healthcare-systems</link>
-      <description>Complete guide on edge computing for healthcare systems. Learn about development process, best practices, cost analysis, and implementation strategies for healthcare organizations in 2026.</description>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/edge-computing-for-healthcare-systems</guid>
     </item>
   </channel>
 </rss>
