@@ -85,7 +85,12 @@
 <hr>
 <h2>Technical Architecture of a Multi-Tenant EdTech Platform</h2>
 <p>To support thousands of concurrent students, parents, and administrators while maintaining strict data isolation, a multi-tenant database architecture is essential. The system utilizes subdomains or request headers to identify the active school tenant dynamically.</p>
-<p><code></code><code>mermaid graph TD A[Student / Parent Portal] -->|Tenant Subdomain| B[Reverse Proxy Cloudflare] B -->|Route Ingress| C[Multi-Tenant Next.js App] C -->|Database Row Isolation| D[PostgreSQL with RLS] C -->|Real-Time Grades / Attendance| E[Redis WebSocket Hub] C -->|File Storage: Lecture Notes / PDFs| F[Encrypted AWS S3 Bucket] </code><code></code></p>
+<div class="mermaid-diagram" style="margin: 2rem 0; text-align: center;"><pre class="mermaid">graph TD
+    A[Student / Parent Portal] --&gt;|Tenant Subdomain| B[Reverse Proxy Cloudflare]
+    B --&gt;|Route Ingress| C[Multi-Tenant Next.js App]
+    C --&gt;|Database Row Isolation| D[PostgreSQL with RLS]
+    C --&gt;|Real-Time Grades / Attendance| E[Redis WebSocket Hub]
+    C --&gt;|File Storage: Lecture Notes / PDFs| F[Encrypted AWS S3 Bucket]</pre></div>
 <h3>1. Row-Level Security (RLS) Database Isolation</h3>
 <p>In a multi-tenant SaaS, preventing cross-tenant data leakage is critical. Rather than provisioning a database database-per-tenant (which is complex and expensive to scale), we recommend using Postgres Row-Level Security (RLS). Every table contains a <code>tenant_id</code> column, and database connection policies automatically restrict reads and writes to the authenticated tenant context.</p>
 <h3>2. Low-Latency Real-Time Classrooms and Grades Sync</h3>
@@ -95,17 +100,82 @@
 <hr>
 <h2>Comparing School ERP Architectures: Custom vs. White-Label</h2>
 <p>Choosing how to build or deploy an EdTech platform has significant timeline and budget implications:</p>
-<p>| Feature | Legacy On-Premise SIS | Custom-Built Cloud LMS | White-Label SaaS ERP (TodayInTech) | |---|---|---|---| | <strong>Deployment Time</strong> | 4 - 8 Months (hardware & server setup) | 9 - 14 Months (full development lifecycle) | 2 - 3 Weeks (branded, pre-built deployment) | | <strong>Development Cost</strong> | High licensing and local IT cost | $150,000+ custom software engineering | Predictable monthly SaaS subscription | | <strong>Tenancy Isolation</strong> | Single-tenant (installed per school) | Custom multi-tenant implementation | Out-of-the-box RLS database tenancy | | <strong>Mobile Access</strong> | Poor (desktop-only or slow web wrappers) | Custom mobile app development | Responsive design with progressive web app (PWA) | | <strong>Reseller Rights</strong> | None (vendor lock-in) | Proprietary control | Unlimited rebranding & custom sub-billing |</p>
+<div class="tech-table"><table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Legacy On-Premise SIS</th>
+      <th>Custom-Built Cloud LMS</th>
+      <th>White-Label SaaS ERP (TodayInTech)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Deployment Time</strong></td>
+      <td>4 - 8 Months (hardware & server setup)</td>
+      <td>9 - 14 Months (full development lifecycle)</td>
+      <td>2 - 3 Weeks (branded, pre-built deployment)</td>
+    </tr>
+    <tr>
+      <td><strong>Development Cost</strong></td>
+      <td>High licensing and local IT cost</td>
+      <td>$150,000+ custom software engineering</td>
+      <td>Predictable monthly SaaS subscription</td>
+    </tr>
+    <tr>
+      <td><strong>Tenancy Isolation</strong></td>
+      <td>Single-tenant (installed per school)</td>
+      <td>Custom multi-tenant implementation</td>
+      <td>Out-of-the-box RLS database tenancy</td>
+    </tr>
+    <tr>
+      <td><strong>Mobile Access</strong></td>
+      <td>Poor (desktop-only or slow web wrappers)</td>
+      <td>Custom mobile app development</td>
+      <td>Responsive design with progressive web app (PWA)</td>
+    </tr>
+    <tr>
+      <td><strong>Reseller Rights</strong></td>
+      <td>None (vendor lock-in)</td>
+      <td>Proprietary control</td>
+      <td>Unlimited rebranding & custom sub-billing</td>
+    </tr>
+  </tbody>
+</table></div>
 <hr>
 <h2>Technical Snippet: Multi-Tenant Tenant Identification Middleware</h2>
 <p>Below is an example of an Express.js middleware function used to identify the active school tenant based on the request host subdomain and attach it to the request context:</p>
-<p><code></code>`javascript // middleware/tenantResolver.js const { getTenantBySubdomain } = require('../services/tenantService');</p>
-<p>async function tenantResolver(req, res, next) { const host = req.headers.host; // e.g., school1.edunexus.com const parts = host.split('.');</p>
-<p>// Extract subdomain (assuming subdomain.domain.com) const subdomain = parts.length > 2 ? parts[0] : null;</p>
-<p>if (!subdomain || subdomain === 'www') { req.tenant = null; // Main landing website return next(); }</p>
-<p>try { const tenant = await getTenantBySubdomain(subdomain); if (!tenant) { return res.status(404).json({ error: 'School tenant not found' }); }</p>
-<p>// Attach tenant configuration to request object req.tenant = tenant; next(); } catch (error) { console.error('Tenant resolution error:', error); res.status(500).json({ error: 'Internal server error resolving tenant' }); } }</p>
-<p>module.exports = tenantResolver; <code></code>`</p>
+<pre><code class="language-javascript">// middleware/tenantResolver.js
+const { getTenantBySubdomain } = require('../services/tenantService');
+
+async function tenantResolver(req, res, next) {
+  const host = req.headers.host; // e.g., school1.edunexus.com
+  const parts = host.split('.');
+  
+  // Extract subdomain (assuming subdomain.domain.com)
+  const subdomain = parts.length &gt; 2 ? parts[0] : null;
+  
+  if (!subdomain || subdomain === 'www') {
+    req.tenant = null; // Main landing website
+    return next();
+  }
+  
+  try {
+    const tenant = await getTenantBySubdomain(subdomain);
+    if (!tenant) {
+      return res.status(404).json({ error: 'School tenant not found' });
+    }
+    
+    // Attach tenant configuration to request object
+    req.tenant = tenant;
+    next();
+  } catch (error) {
+    console.error('Tenant resolution error:', error);
+    res.status(500).json({ error: 'Internal server error resolving tenant' });
+  }
+}
+
+module.exports = tenantResolver;</code></pre>
 <hr>
 <h2>Frequently Asked Questions (FAQ)</h2>
 <h3>What is a white-label school management system?</h3>

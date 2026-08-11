@@ -90,7 +90,24 @@
 <hr>
 <h2>Architectural Overview of a Modern AI Voice SaaS Platform</h2>
 <p>A production-ready voice cloning platform requires a modular, distributed microservices architecture designed to handle heavy GPU inference workloads, real-time audio chunking, and multi-tenant SaaS billing.</p>
-<p><code></code><code> [ Client Application (Web / Mobile) ] | v [ REST / WebSockets / WebRTC API Gateway ] | +--------+--------+ |                 | v                 v [ Auth & Subscription ]  [ Voice Audio Ingestion & Pre-processing ] (Stripe / JWT / RBAC)    (Denoising, Normalization, Silence Trimming) | v [ Neural TTS & Voice Cloning Engine ] (Zero-Shot Diffusion / VITS / XTTS / Tortoise) | v [ Audio Streaming & Cache Layer ] (Redis Audio Chunks / S3 Storage CDN) </code><code></code></p>
+<pre><code class="language-text">[ Client Application (Web / Mobile) ]
+                 |
+                 v
+   [ REST / WebSockets / WebRTC API Gateway ]
+                 |
+        +--------+--------+
+        |                 |
+        v                 v
+ [ Auth &amp; Subscription ]  [ Voice Audio Ingestion &amp; Pre-processing ]
+ (Stripe / JWT / RBAC)    (Denoising, Normalization, Silence Trimming)
+                          |
+                          v
+               [ Neural TTS &amp; Voice Cloning Engine ]
+               (Zero-Shot Diffusion / VITS / XTTS / Tortoise)
+                          |
+                          v
+               [ Audio Streaming &amp; Cache Layer ]
+               (Redis Audio Chunks / S3 Storage CDN)</code></pre>
 <h3>1. Audio Ingestion & Feature Extraction</h3>
 <ul>
   <li><strong>Reference Audio Upload</strong>: Users upload 5–30 seconds of clear speaker audio (WAV/MP3).</li>
@@ -106,7 +123,42 @@
 <hr>
 <h2>Open-Source vs. Proprietary APIs: Choosing Your AI Voice Engine</h2>
 <p>When building your <strong>custom text-to-speech software builder</strong>, selecting the underlying inference stack determines your operational margins:</p>
-<p>| Criteria | ElevenLabs / Play.ht APIs | Self-Hosted Open-Source Stack (XTTS v2 / Bark / F5-TTS) | | :--- | :--- | :--- | | <strong>Development Speed</strong> | Immediate (1–2 days API integration) | 3–6 weeks custom model pipeline setup | | <strong>Cost per 1M Characters</strong> | $15.00 – $30.00+ | $1.50 – $3.50 (Server GPU hosting cost) | | <strong>Streaming Latency</strong> | ~250ms – 400ms | ~90ms – 180ms (Triton / TensorRT optimized) | | <strong>Data Privacy & Compliance</strong> | Data processed on vendor servers | 100% On-premise / Private VPC isolatable | | <strong>Custom Voice Fine-Tuning</strong> | Limited to vendor portal limits | Unlimited full-weights fine-tuning & domain adaptation |</p>
+<div class="tech-table"><table>
+  <thead>
+    <tr>
+      <th>Criteria</th>
+      <th>ElevenLabs / Play.ht APIs</th>
+      <th>Self-Hosted Open-Source Stack (XTTS v2 / Bark / F5-TTS)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Development Speed</strong></td>
+      <td>Immediate (1–2 days API integration)</td>
+      <td>3–6 weeks custom model pipeline setup</td>
+    </tr>
+    <tr>
+      <td><strong>Cost per 1M Characters</strong></td>
+      <td>$15.00 – $30.00+</td>
+      <td>$1.50 – $3.50 (Server GPU hosting cost)</td>
+    </tr>
+    <tr>
+      <td><strong>Streaming Latency</strong></td>
+      <td>~250ms – 400ms</td>
+      <td>~90ms – 180ms (Triton / TensorRT optimized)</td>
+    </tr>
+    <tr>
+      <td><strong>Data Privacy & Compliance</strong></td>
+      <td>Data processed on vendor servers</td>
+      <td>100% On-premise / Private VPC isolatable</td>
+    </tr>
+    <tr>
+      <td><strong>Custom Voice Fine-Tuning</strong></td>
+      <td>Limited to vendor portal limits</td>
+      <td>Unlimited full-weights fine-tuning & domain adaptation</td>
+    </tr>
+  </tbody>
+</table></div>
 <blockquote>
 <p><strong>Engineering Recommendation</strong>: For early MVPs, use a hybrid architecture—route low-volume requests via high-tier APIs while running high-frequency background streaming jobs on self-hosted GPU nodes running NVIDIA Triton Inference Server with TensorRT-LLM.</p>
 </blockquote>

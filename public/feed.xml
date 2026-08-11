@@ -7,6 +7,13 @@
     <language>en-us</language>
     <atom:link href="https://todayintech.in/public/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Building a White-Label Home Care Agency Software and Caregiver Scheduling ERP (2026)</title>
+      <link>https://todayintech.in/blog/white-label-home-care-agency-software-scheduling-erp</link>
+      <description>An engineering blueprint to designing a white-label home care agency platform, elder care portals, EVV tracking, and caregiver scheduling ERP software.</description>
+      <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/white-label-home-care-agency-software-scheduling-erp</guid>
+    </item>
+    <item>
       <title>Building a White-Label K-12 EdTech SaaS and Student Information System ERP (2026)</title>
       <link>https://todayintech.in/blog/white-label-k12-edtech-saas-sis-erp-guide</link>
       <description>An engineering guide to designing a white-label school management SaaS, Student Information System (SIS), and LMS ERP with offline synchronization and billing integrations.</description>
@@ -103,13 +110,6 @@
       <description>Explore the key hospital-at-home software development trends in 2026. Learn about IoT integrations, clinical decision support (CDS), EHR interoperability, and logistics coordination.</description>
       <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://todayintech.in/blog/hospital-at-home-software-development-trends-2026</guid>
-    </item>
-    <item>
-      <title>Building a GLP-1 Telehealth &amp;amp; Compounding Pharmacy SaaS Platform (2026 Guide)</title>
-      <link>https://todayintech.in/blog/glp1-telehealth-compounding-pharmacy-platform-guide-2026</link>
-      <description>Are you looking to launch a GLP-1 weight loss telehealth platform? Learn how to build a custom cash-pay telehealth app with asynchronous medical intakes, e-prescribing, and compounding pharmacy fulfillment APIs in 2026.</description>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/glp1-telehealth-compounding-pharmacy-platform-guide-2026</guid>
     </item>
   </channel>
 </rss>

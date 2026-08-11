@@ -78,90 +78,167 @@ def markdown_to_html(text):
     
     in_list = None  # 'ul', 'ol', or None
     in_quote = False
+    in_code = False
+    in_table = False
+    code_block_accum = []
     paragraph_accum = []
+    table_rows = []
     
+    def flush_paragraph():
+        nonlocal paragraph_accum
+        if paragraph_accum:
+            p_text = format_inline_markdown(' '.join(paragraph_accum))
+            html_lines.append(f'<p>{p_text}</p>')
+            paragraph_accum = []
+            
+    def flush_list():
+        nonlocal in_list
+        if in_list:
+            html_lines.append(f'</{in_list}>')
+            in_list = None
+            
+    def flush_quote():
+        nonlocal in_quote
+        if in_quote:
+            html_lines.append('</blockquote>')
+            in_quote = False
+
+    def flush_table():
+        nonlocal in_table, table_rows
+        if in_table:
+            if table_rows:
+                html_lines.append('<div class="tech-table"><table>')
+                # Determine header row
+                header_row = table_rows[0]
+                html_lines.append('  <thead>\n    <tr>')
+                for cell in header_row:
+                    html_lines.append(f'      <th>{cell}</th>')
+                html_lines.append('    </tr>\n  </thead>')
+                
+                # Body rows
+                if len(table_rows) > 1:
+                    html_lines.append('  <tbody>')
+                    for row in table_rows[1:]:
+                        html_lines.append('    <tr>')
+                        for cell in row:
+                            html_lines.append(f'      <td>{cell}</td>')
+                        html_lines.append('    </tr>')
+                    html_lines.append('  </tbody>')
+                html_lines.append('</table></div>')
+            table_rows = []
+            in_table = False
+
     for line in lines:
         stripped = line.strip()
         
-        # Close lists and paragraphs if we hit an empty line
-        if not stripped:
-            if paragraph_accum:
-                p_text = format_inline_markdown(' '.join(paragraph_accum))
-                html_lines.append(f'<p>{p_text}</p>')
-                paragraph_accum = []
-            if in_list:
-                html_lines.append(f'</{in_list}>')
-                in_list = None
-            if in_quote:
-                html_lines.append('</blockquote>')
-                in_quote = False
+        # 1. Handle code blocks
+        if stripped.startswith('```'):
+            if in_code:
+                # End of code block
+                code_content = '\n'.join(code_block_accum)
+                # Escape code content
+                code_content = code_content.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+                # check if code content looks like mermaid diagram
+                if in_code == 'mermaid':
+                    html_lines.append(f'<div class="mermaid-diagram" style="margin: 2rem 0; text-align: center;"><pre class="mermaid">{code_content}</pre></div>')
+                else:
+                    html_lines.append(f'<pre><code class="language-{in_code}">{code_content}</code></pre>')
+                in_code = False
+                code_block_accum = []
+            else:
+                # Start of code block
+                flush_paragraph()
+                flush_list()
+                flush_quote()
+                flush_table()
+                lang = stripped[3:].strip() or 'text'
+                in_code = lang
             continue
             
-        # Check for horizontal rules
+        if in_code:
+            code_block_accum.append(line)
+            continue
+            
+        # 2. Handle tables
+        if stripped.startswith('|') and stripped.endswith('|'):
+            # It's a table row
+            # If it's a separator like |---|---|, skip it if we are already in a table
+            is_separator = re.match(r'^\|[\s\-\|:]+\|$', stripped) is not None
+            
+            if is_separator:
+                # If we are not in a table, it shouldn't happen, but just ignore it
+                continue
+                
+            flush_paragraph()
+            flush_list()
+            flush_quote()
+            
+            if not in_table:
+                in_table = True
+                table_rows = []
+                
+            # Parse cells
+            # Split by '|' and strip spaces. Ignore first and last empty elements
+            cells = [format_inline_markdown(cell.strip()) for cell in stripped.split('|')[1:-1]]
+            table_rows.append(cells)
+            continue
+        elif in_table:
+            # We hit something that is not a table row, so flush the table
+            flush_table()
+            
+        # 3. Handle empty line
+        if not stripped:
+            flush_paragraph()
+            flush_list()
+            flush_quote()
+            continue
+            
+        # 4. Handle horizontal rules
         if stripped in ['---', '***', '___']:
-            if paragraph_accum:
-                p_text = format_inline_markdown(' '.join(paragraph_accum))
-                html_lines.append(f'<p>{p_text}</p>')
-                paragraph_accum = []
-            if in_list:
-                html_lines.append(f'</{in_list}>')
-                in_list = None
-            if in_quote:
-                html_lines.append('</blockquote>')
-                in_quote = False
+            flush_paragraph()
+            flush_list()
+            flush_quote()
             html_lines.append('<hr>')
             continue
             
-        # Headers
+        # 5. Handle headers
         header_match = re.match(r'^(#+)\s+(.*)$', stripped)
         if header_match:
-            if paragraph_accum:
-                p_text = format_inline_markdown(' '.join(paragraph_accum))
-                html_lines.append(f'<p>{p_text}</p>')
-                paragraph_accum = []
-            if in_list:
-                html_lines.append(f'</{in_list}>')
-                in_list = None
-            if in_quote:
-                html_lines.append('</blockquote>')
-                in_quote = False
-                
+            flush_paragraph()
+            flush_list()
+            flush_quote()
+            
             level = len(header_match.group(1))
             header_text = format_inline_markdown(header_match.group(2))
             html_lines.append(f'<h{level}>{header_text}</h{level}>')
             continue
             
-        # Blockquotes
+        # 6. Handle blockquotes
         if stripped.startswith('>'):
-            if paragraph_accum:
-                p_text = format_inline_markdown(' '.join(paragraph_accum))
-                html_lines.append(f'<p>{p_text}</p>')
-                paragraph_accum = []
-            if in_list:
-                html_lines.append(f'</{in_list}>')
-                in_list = None
+            flush_paragraph()
+            flush_list()
+            
+            # Remove leading '>' and one space if exists
+            quote_line = stripped[1:]
+            if quote_line.startswith(' '):
+                quote_line = quote_line[1:]
+                
             if not in_quote:
                 html_lines.append('<blockquote>')
                 in_quote = True
-            
-            quote_text = stripped.lstrip('>').strip()
-            quote_text = format_inline_markdown(quote_text)
+                
+            quote_text = format_inline_markdown(quote_line)
             html_lines.append(f'<p>{quote_text}</p>')
             continue
+        elif in_quote:
+            flush_quote()
             
-        # Ordered lists
+        # 7. Handle ordered lists
         ol_match = re.match(r'^(\d+)\.\s+(.*)$', stripped)
         if ol_match:
-            if paragraph_accum:
-                p_text = format_inline_markdown(' '.join(paragraph_accum))
-                html_lines.append(f'<p>{p_text}</p>')
-                paragraph_accum = []
-            if in_quote:
-                html_lines.append('</blockquote>')
-                in_quote = False
+            flush_paragraph()
             if in_list and in_list != 'ol':
-                html_lines.append(f'</{in_list}>')
-                in_list = None
+                flush_list()
             if not in_list:
                 html_lines.append('<ol>')
                 in_list = 'ol'
@@ -170,19 +247,12 @@ def markdown_to_html(text):
             html_lines.append(f'  <li>{item_text}</li>')
             continue
             
-        # Unordered lists
+        # 8. Handle unordered lists
         ul_match = re.match(r'^([-\*])\s+(.*)$', stripped)
         if ul_match:
-            if paragraph_accum:
-                p_text = format_inline_markdown(' '.join(paragraph_accum))
-                html_lines.append(f'<p>{p_text}</p>')
-                paragraph_accum = []
-            if in_quote:
-                html_lines.append('</blockquote>')
-                in_quote = False
+            flush_paragraph()
             if in_list and in_list != 'ul':
-                html_lines.append(f'</{in_list}>')
-                in_list = None
+                flush_list()
             if not in_list:
                 html_lines.append('<ul>')
                 in_list = 'ul'
@@ -191,25 +261,16 @@ def markdown_to_html(text):
             html_lines.append(f'  <li>{item_text}</li>')
             continue
             
-        # Regular text
-        if in_list:
-            html_lines.append(f'</{in_list}>')
-            in_list = None
-        if in_quote:
-            quote_text = format_inline_markdown(stripped)
-            html_lines.append(f'<p>{quote_text}</p>')
-        else:
-            paragraph_accum.append(stripped)
-            
-    # Flush remaining
-    if paragraph_accum:
-        p_text = format_inline_markdown(' '.join(paragraph_accum))
-        html_lines.append(f'<p>{p_text}</p>')
-    if in_list:
-        html_lines.append(f'</{in_list}>')
-    if in_quote:
-        html_lines.append('</blockquote>')
+        # 9. Regular text
+        flush_list()
+        paragraph_accum.append(stripped)
         
+    # Flush remaining states at the end
+    flush_paragraph()
+    flush_list()
+    flush_quote()
+    flush_table()
+    
     return '\n'.join(html_lines)
 
 def compile_markdown_files():

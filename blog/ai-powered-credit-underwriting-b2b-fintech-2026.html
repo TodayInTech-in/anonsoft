@@ -85,7 +85,12 @@
 <hr>
 <h2>Architectural Breakdown of an AI Underwriting Engine</h2>
 <p>Building a robust, enterprise-grade B2B credit decisioning platform requires a clean, event-driven microservices architecture. The system must ingest raw financial data, process it through specialized machine learning models, and securely execute automated credit decisions.</p>
-<p><code></code><code>mermaid graph TD A[Data Ingress: Open Banking APIs] --> B[NLP Parser: Tax & Audit PDFs] B --> C[Vector Feature Store] C --> D[ML Risk Classifier] D --> E[Decisioning Rules Engine] E --> F[API Gateway: Instant Approval] </code><code></code></p>
+<div class="mermaid-diagram" style="margin: 2rem 0; text-align: center;"><pre class="mermaid">graph TD
+    A[Data Ingress: Open Banking APIs] --&gt; B[NLP Parser: Tax &amp; Audit PDFs]
+    B --&gt; C[Vector Feature Store]
+    C --&gt; D[ML Risk Classifier]
+    D --&gt; E[Decisioning Rules Engine]
+    E --&gt; F[API Gateway: Instant Approval]</pre></div>
 <h3>1. Unified Financial Data Ingress</h3>
 <p>Instead of relying on self-reported financial statements, the platform integrates directly with bank account aggregators (like Plaid or Codat) and corporate accounting APIs (such as QuickBooks, Xero, and NetSuite). This pipeline streams real-time cash flow statements, accounts receivable ledger items, and historical transaction volumes directly into the risk engine.</p>
 <h3>2. Document Processing via OCR & NLP</h3>
@@ -102,7 +107,47 @@
 <hr>
 <h2>Comparing Underwriting Methodologies</h2>
 <p>To understand the benefits of modern financial architectures, we can compare traditional manual processes against automated AI risk pipelines:</p>
-<p>| Feature | Traditional Underwriting | AI-Powered Underwriting (2026) | |---|---|---| | <strong>Data Ingestion</strong> | Manual uploads, paper statements | Automated API extraction & open banking sync | | <strong>Analysis Window</strong> | Historic annual reports (12–18 months old) | Real-time cash flow analysis (updated hourly) | | <strong>Risk Factors Considered</strong> | Credit bureau scores, basic debt ratios | 1,000+ data points including transaction patterns | | <strong>Decision Time</strong> | 3 to 10 business days | Under 30 seconds (instant decisioning) | | <strong>Fraud Detection</strong> | Manual audit, random verification | Real-time pattern anomaly & document signature audits | | <strong>Default Rate Reduction</strong> | Baseline control | Up to 25% lower default probability |</p>
+<div class="tech-table"><table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Traditional Underwriting</th>
+      <th>AI-Powered Underwriting (2026)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Data Ingestion</strong></td>
+      <td>Manual uploads, paper statements</td>
+      <td>Automated API extraction & open banking sync</td>
+    </tr>
+    <tr>
+      <td><strong>Analysis Window</strong></td>
+      <td>Historic annual reports (12–18 months old)</td>
+      <td>Real-time cash flow analysis (updated hourly)</td>
+    </tr>
+    <tr>
+      <td><strong>Risk Factors Considered</strong></td>
+      <td>Credit bureau scores, basic debt ratios</td>
+      <td>1,000+ data points including transaction patterns</td>
+    </tr>
+    <tr>
+      <td><strong>Decision Time</strong></td>
+      <td>3 to 10 business days</td>
+      <td>Under 30 seconds (instant decisioning)</td>
+    </tr>
+    <tr>
+      <td><strong>Fraud Detection</strong></td>
+      <td>Manual audit, random verification</td>
+      <td>Real-time pattern anomaly & document signature audits</td>
+    </tr>
+    <tr>
+      <td><strong>Default Rate Reduction</strong></td>
+      <td>Baseline control</td>
+      <td>Up to 25% lower default probability</td>
+    </tr>
+  </tbody>
+</table></div>
 <hr>
 <h2>Key Technologies for FinTech Risk Development</h2>
 <p>For developers building B2B FinTech risk platforms in 2026, we recommend the following modern technology stack:</p>

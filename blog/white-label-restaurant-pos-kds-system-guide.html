@@ -85,7 +85,12 @@
 <hr>
 <h2>Technical Architecture of a Real-Time POS & KDS Network</h2>
 <p>To support thousands of transactions daily and ensure zero orders are lost during network drops, a hybrid local-cloud system is required. The architecture utilizes localized edge servers at each outlet synced with a central multi-tenant cloud dashboard.</p>
-<p><code></code><code>mermaid graph TD A[Waiter Tablet / Table QR] -->|WebSocket / LAN| B[Local POS Edge Node] B -->|Offline Cache: SQLite| B B -->|Real-Time Bump| C[Kitchen Display System: KDS] B -->|Central Sync: HTTPS| D[Cloud Multi-Tenant API] D -->|Analytics / Inventory| E[Global Admin ERP Console] </code><code></code></p>
+<div class="mermaid-diagram" style="margin: 2rem 0; text-align: center;"><pre class="mermaid">graph TD
+    A[Waiter Tablet / Table QR] --&gt;|WebSocket / LAN| B[Local POS Edge Node]
+    B --&gt;|Offline Cache: SQLite| B
+    B --&gt;|Real-Time Bump| C[Kitchen Display System: KDS]
+    B --&gt;|Central Sync: HTTPS| D[Cloud Multi-Tenant API]
+    D --&gt;|Analytics / Inventory| E[Global Admin ERP Console]</pre></div>
 <h3>1. Offline-First Database Synchronization</h3>
 <p>If the internet connection drops during a busy dinner service, billing operations must not halt. Waiter tablets cache local orders inside a SQLite / IndexedDB instance. Once connectivity is restored, a background synchronization worker pushes transaction logs to the cloud API using differential conflict-free replicated data types (CRDTs).</p>
 <h3>2. Event-Driven Kitchen Display Orchestration</h3>
@@ -100,7 +105,48 @@
 <hr>
 <h2>Comparing POS Architectures: Custom vs. White-Label</h2>
 <p>Choosing how to build or deploy a hospitality platform has significant timeline and budget implications:</p>
-<p>| Feature | Legacy Desktop POS Systems | Custom-Built Cloud POS | White-Label SaaS POS (TodayInTech) | |---|---|---|---| | <strong>Deployment Time</strong> | 3 - 6 Months (on-site hardware setup) | 8 - 12 Months (full development lifecycle) | 2 - 4 Weeks (branded, pre-built deployment) | | <strong>Development Cost</strong> | High upfront hardware licensing | $120,000+ custom software engineering | Predictable subscription model | | <strong>Offline Performance</strong> | Good (pure local execution) | Poor (breaks during internet outages) | Excellent (hybrid local-first synchronization) | | <strong>BOH Integration</strong> | Paper tickets / separate KDS software | Integrated APIs | Native WebSockets-based KDS ERP included | | <strong>Reseller Rights</strong> | Strictly locked down | Proprietary control | Unlimited rebranding & custom sub-billing |</p>
+<div class="tech-table"><table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Legacy Desktop POS Systems</th>
+      <th>Custom-Built Cloud POS</th>
+      <th>White-Label SaaS POS (TodayInTech)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Deployment Time</strong></td>
+      <td>3 - 6 Months (on-site hardware setup)</td>
+      <td>8 - 12 Months (full development lifecycle)</td>
+      <td>2 - 4 Weeks (branded, pre-built deployment)</td>
+    </tr>
+    <tr>
+      <td><strong>Development Cost</strong></td>
+      <td>High upfront hardware licensing</td>
+      <td>$120,000+ custom software engineering</td>
+      <td>Predictable subscription model</td>
+    </tr>
+    <tr>
+      <td><strong>Offline Performance</strong></td>
+      <td>Good (pure local execution)</td>
+      <td>Poor (breaks during internet outages)</td>
+      <td>Excellent (hybrid local-first synchronization)</td>
+    </tr>
+    <tr>
+      <td><strong>BOH Integration</strong></td>
+      <td>Paper tickets / separate KDS software</td>
+      <td>Integrated APIs</td>
+      <td>Native WebSockets-based KDS ERP included</td>
+    </tr>
+    <tr>
+      <td><strong>Reseller Rights</strong></td>
+      <td>Strictly locked down</td>
+      <td>Proprietary control</td>
+      <td>Unlimited rebranding & custom sub-billing</td>
+    </tr>
+  </tbody>
+</table></div>
 <hr>
 <h2>Technology Stack Recommendations for POS Developers</h2>
 <p>For teams engineering restaurant management platforms in 2026, we recommend the following stack:</p>
