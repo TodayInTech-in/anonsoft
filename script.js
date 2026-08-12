@@ -218,6 +218,13 @@ function handleFormSubmit(e) {
     // Log form data (in production, send to backend)
     console.log('Booking Request:', formData);
 
+    // Track Consultation Form Submission
+    if (typeof gtag === 'function') {
+        gtag('event', 'generate_lead', {
+            'project_type': formData.projectType
+        });
+    }
+
     // Show success message
     document.getElementById('formContent').classList.add('hide');
     document.getElementById('formSuccess').classList.add('show');
@@ -416,6 +423,20 @@ function initRoiCalculator() {
     teamSlider.addEventListener('input', window.updateROI);
     monthsSlider.addEventListener('input', window.updateROI);
     rateSlider.addEventListener('input', window.updateROI);
+
+    // Track ROI Calculator adjustments when users release sliders
+    const trackSliderChange = (e) => {
+        if (typeof gtag === 'function') {
+            gtag('event', 'roi_calculator_adjust', {
+                'slider_name': e.target.id,
+                'slider_value': e.target.value
+            });
+        }
+    };
+    teamSlider.addEventListener('change', trackSliderChange);
+    monthsSlider.addEventListener('change', trackSliderChange);
+    rateSlider.addEventListener('change', trackSliderChange);
+
     window.updateROI();
 }
 
@@ -479,8 +500,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         themeToggleBtn.addEventListener('click', () => {
             if (document.documentElement.classList.contains('light-mode')) {
+                if (typeof gtag === 'function') {
+                    gtag('event', 'toggle_theme', { 'theme': 'dark' });
+                }
                 disableLightMode();
             } else {
+                if (typeof gtag === 'function') {
+                    gtag('event', 'toggle_theme', { 'theme': 'light' });
+                }
                 enableLightMode();
             }
         });
