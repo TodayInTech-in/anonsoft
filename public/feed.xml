@@ -7,6 +7,13 @@
     <language>en-us</language>
     <atom:link href="https://todayintech.in/public/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Building a White-Label Church Management System (ChMS) and Custom Donation Platform (2026)</title>
+      <link>https://todayintech.in/blog/white-label-church-management-software-chms-guide-2026</link>
+      <description>An engineering blueprint to designing a white-label church management system (ChMS), custom tithing platforms, member tracking, and event scheduling ERPs.</description>
+      <pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/white-label-church-management-software-chms-guide-2026</guid>
+    </item>
+    <item>
       <title>Selecting the Ultimate Startup MVP Software Development Partner in 2026</title>
       <link>https://todayintech.in/blog/startup-mvp-software-development-partner-guide-2026</link>
       <description>A comprehensive guide to selecting the right startup MVP software development partner. Explore modern SaaS architecture, cost structures, and flexible engineering models.</description>
@@ -103,13 +110,6 @@
       <description>Compare the best Scopic alternatives for custom healthcare software development in 2026. Evaluate TodayInTech, ScienceSoft, Innowise, and Arkenea on compliance, speed, and cost.</description>
       <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://todayintech.in/blog/scopic-alternatives-healthcare-software-development</guid>
-    </item>
-    <item>
-      <title>AI Medical Scribe Software Development in 2026: Complete Guide for US Clinics</title>
-      <link>https://todayintech.in/blog/ai-medical-scribe-software-development-2026</link>
-      <description>Build a HIPAA-compliant AI medical scribe for US clinics in 2026. Ambient documentation architecture, EHR integration (Epic, Cerner, athenahealth), LLM selection, pricing benchmarks, and build vs. buy guidance for healthcare startups.</description>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/ai-medical-scribe-software-development-2026</guid>
     </item>
   </channel>
 </rss>
