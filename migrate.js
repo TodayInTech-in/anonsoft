@@ -6,6 +6,7 @@ let html = fs.readFileSync('index.html', 'utf8');
 let newNav = `        <div class="nav-links" id="navLinks">
           <a href="/services/">Services</a>
           <a href="/features/">Features</a>
+          <a href="/#portfolio">Portfolio</a>
           <a href="/about/">About</a>
           <a href="/health/">HealthTech</a>
           <a href="/ai/">AI Solutions</a>
@@ -87,6 +88,7 @@ ${footerScripts}`;
 let updatedIndex = fixFalsePositives(convertToAbsolute(html));
 // Fix the logo link that convertToAbsolute modified by mistake from "/" to "/#/"
 updatedIndex = updatedIndex.replace(/href="\/#\/"/g, 'href="/"');
+updatedIndex = updatedIndex.replace(/href="\/#portfolio"/g, 'href="#portfolio"');
 updatedIndex = updatedIndex.replace(/href="\/#\/services\/"/g, 'href="/services/"'); // fix the double replaces
 updatedIndex = updatedIndex.replace(/href="\/#\/features\/"/g, 'href="/features/"');
 updatedIndex = updatedIndex.replace(/href="\/#\/about\/"/g, 'href="/about/"');
