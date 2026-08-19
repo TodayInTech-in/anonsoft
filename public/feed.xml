@@ -7,6 +7,13 @@
     <language>en-us</language>
     <atom:link href="https://todayintech.in/public/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Building an AI-Powered Embedded B2B Payments &amp; Multi-Bank Treasury SaaS: Architecture, FedNow / RTP Rails, and Real-Time Reconciliation (2026)</title>
+      <link>https://todayintech.in/blog/ai-powered-b2b-treasury-embedded-payments-saas-guide-2026</link>
+      <description>An engineering blueprint for building a multi-tenant B2B embedded payments and multi-bank treasury management SaaS with instant FedNow/RTP rails, double-entry ledgers, and AI reconciliation in 2026.</description>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/ai-powered-b2b-treasury-embedded-payments-saas-guide-2026</guid>
+    </item>
+    <item>
       <title>Building an AI-Powered Cloud POS &amp; Self-Ordering Kiosk SaaS: Architecture, Offline-First Sync, and Multi-Location Franchises (2026)</title>
       <link>https://todayintech.in/blog/ai-powered-cloud-pos-self-ordering-kiosk-saas-guide-2026</link>
       <description>An engineering blueprint for building a multi-tenant cloud POS and self-ordering kiosk SaaS with offline-first CRDT sync, IoT payment gateway abstraction, and real-time AI inventory orchestration in 2026.</description>
@@ -103,13 +110,6 @@
       <description>Engineering guide to building production HIPAA-compliant Retrieval-Augmented Generation (RAG) and LLM architectures in 2026. Covers pgvector KMS encryption, zero-retention LLM endpoints, and mTLS API security.</description>
       <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://todayintech.in/blog/hipaa-compliant-llm-rag-architecture-healthcare-software-2026</guid>
-    </item>
-    <item>
-      <title>Agentic AI in Prior Authorization &amp; Revenue Cycle Management (2026 Guide)</title>
-      <link>https://todayintech.in/blog/agentic-ai-prior-authorization-rcm-automation-2026</link>
-      <description>Learn how Agentic AI is automating prior authorization and revenue cycle management (RCM) in 2026. Technical architecture guide covering X12 278 FHIR workflows, automated ICD-10 coding, and EHR write-backs.</description>
-      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/agentic-ai-prior-authorization-rcm-automation-2026</guid>
     </item>
   </channel>
 </rss>
