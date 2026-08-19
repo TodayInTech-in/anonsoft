@@ -385,7 +385,7 @@ BLOG_TEMPLATE = """<!DOCTYPE html>
         <div class="nav-links" id="navLinks">
           <a href="/#services">Services</a>
           <a href="/#about">About</a>
-          <a href="/#portfolio">Portfolio</a>
+          <a href="/portfolio">Portfolio</a>
           <a href="/#process">Process</a>
           <a href="/#testimonials">Reviews</a>
           <a href="/#faq">FAQ</a>
@@ -441,7 +441,7 @@ BLOG_TEMPLATE = """<!DOCTYPE html>
         <div class="footer-links-col">
           <h4>Agency</h4>
           <a href="/#about">About Us</a>
-          <a href="/#portfolio">Portfolio</a>
+          <a href="/portfolio">Portfolio</a>
           <a href="/blog/">Blog Insights</a>
         </div>
       </div>

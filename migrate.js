@@ -6,7 +6,7 @@ let html = fs.readFileSync('index.html', 'utf8');
 let newNav = `        <div class="nav-links" id="navLinks">
           <a href="/services/">Services</a>
           <a href="/features/">Features</a>
-          <a href="/#portfolio">Portfolio</a>
+          <a href="/portfolio">Portfolio</a>
           <a href="/about/">About</a>
           <a href="/health/">HealthTech</a>
           <a href="/ai/">AI Solutions</a>
@@ -51,15 +51,21 @@ let footerScripts = '\n  </main>\n\n  <!-- ===== FOOTER ===== -->' + mainEndSpli
 headAndNav = fixFalsePositives(convertToAbsolute(headAndNav));
 footerScripts = fixFalsePositives(convertToAbsolute(footerScripts));
 
-const pages = ['services', 'features', 'about', 'contact', 'careers', 'ai', 'health'];
+const pages = ['services', 'features', 'about', 'contact', 'careers', 'ai', 'health', 'portfolio'];
+
+// Extract portfolio HTML from index.html and style it as the first section on its own page
+const portfolioMatch = html.match(/(<!-- ===== PORTFOLIO SECTION ===== -->[\s\S]*?<\/section>)/);
+const portfolioHtml = portfolioMatch ? portfolioMatch[1].replace('class="portfolio" id="portfolio"', 'class="portfolio" id="portfolio" style="padding-top: 150px; padding-bottom: 80px;"') : '';
 
 pages.forEach(page => {
   // Generate specialized SEO titles for each page
   let specificHead = headAndNav.replace(/<title>.*?<\/title>/, `<title>${page.charAt(0).toUpperCase() + page.slice(1)} — TodayInTech Software Agency</title>`);
 
-  // Minimalist specialized hero section
-  const pageHtml = `${specificHead}
-    <section class="hero" style="padding-top: 150px; padding-bottom: 80px; min-height: 50vh; display: flex; align-items: center; text-align: center; position: relative;">
+  let bodyContent = '';
+  if (page === 'portfolio') {
+    bodyContent = portfolioHtml;
+  } else {
+    bodyContent = `    <section class="hero" style="padding-top: 150px; padding-bottom: 80px; min-height: 50vh; display: flex; align-items: center; text-align: center; position: relative;">
       <div class="container" style="position: relative; z-index: 2;">
         <h1 class="hero-title" style="font-size: clamp(3rem, 6vw, 4.5rem); margin-bottom: 24px;"><span class="gradient-text">${page.charAt(0).toUpperCase() + page.slice(1)}</span></h1>
         <p class="hero-description" style="max-width: 600px; margin: 0 auto 30px; font-size: 1.1rem; color: var(--text-secondary);">We are migrating our dedicated ${page} content into this specialized domain. Check back soon for deep case studies, feature breakdowns, and comprehensive service details.</p>
@@ -72,7 +78,11 @@ pages.forEach(page => {
             </a>
         </div>
       </div>
-    </section>
+    </section>`;
+  }
+
+  const pageHtml = `${specificHead}
+${bodyContent}
 ${footerScripts}`;
 
   try {
@@ -88,7 +98,6 @@ ${footerScripts}`;
 let updatedIndex = fixFalsePositives(convertToAbsolute(html));
 // Fix the logo link that convertToAbsolute modified by mistake from "/" to "/#/"
 updatedIndex = updatedIndex.replace(/href="\/#\/"/g, 'href="/"');
-updatedIndex = updatedIndex.replace(/href="\/#portfolio"/g, 'href="#portfolio"');
 updatedIndex = updatedIndex.replace(/href="\/#\/services\/"/g, 'href="/services/"'); // fix the double replaces
 updatedIndex = updatedIndex.replace(/href="\/#\/features\/"/g, 'href="/features/"');
 updatedIndex = updatedIndex.replace(/href="\/#\/about\/"/g, 'href="/about/"');

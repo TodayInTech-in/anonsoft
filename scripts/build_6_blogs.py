@@ -126,7 +126,7 @@ def create_blog_html(
         <div class="nav-links" id="navLinks">
           <a href="/#services">Services</a>
           <a href="/#about">About</a>
-          <a href="/#portfolio">Portfolio</a>
+          <a href="/portfolio">Portfolio</a>
           <a href="/#process">Process</a>
           <a href="/#testimonials">Reviews</a>
           <a href="/#faq">FAQ</a>
@@ -226,7 +226,7 @@ def create_blog_html(
           <h4>Company</h4>
           <ul>
             <li><a href="/#about">About Us</a></li>
-            <li><a href="/#portfolio">Our Work</a></li>
+            <li><a href="/portfolio">Our Work</a></li>
             <li><a href="/#process">Process</a></li>
             <li><a href="/#contact">Contact</a></li>
           </ul>
