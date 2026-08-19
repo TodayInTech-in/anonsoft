@@ -2,6 +2,11 @@
   "cleanUrls": true,
   "redirects": [
     {
+      "source": "/tit_deck",
+      "destination": "/tit_deck.pdf",
+      "permanent": true
+    },
+    {
       "source": "/blog/unlocking-potential-the-benefits-of-white-label-telehealth-s.html",
       "destination": "/blog/white-label-telehealth-platform-guide",
       "permanent": true
