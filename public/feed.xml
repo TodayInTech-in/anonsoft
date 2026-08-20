@@ -7,6 +7,13 @@
     <language>en-us</language>
     <atom:link href="https://todayintech.in/public/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Building an AI-Powered B2B Contract Lifecycle Management (CLM) SaaS: Multi-Agent Redlining, Legal RAG, and ERP Integration (2026)</title>
+      <link>https://todayintech.in/blog/ai-powered-b2b-contract-lifecycle-management-clm-saas-guide-2026</link>
+      <description>An engineering blueprint for building a multi-tenant B2B contract lifecycle management (CLM) SaaS with agentic redlining, OpenXML AST diffing, legal RAG, and automated ERP/CRM synchronization in 2026.</description>
+      <pubDate>Fri, 21 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/ai-powered-b2b-contract-lifecycle-management-clm-saas-guide-2026</guid>
+    </item>
+    <item>
       <title>Building an AI-Powered Embedded B2B Payments &amp; Multi-Bank Treasury SaaS: Architecture, FedNow / RTP Rails, and Real-Time Reconciliation (2026)</title>
       <link>https://todayintech.in/blog/ai-powered-b2b-treasury-embedded-payments-saas-guide-2026</link>
       <description>An engineering blueprint for building a multi-tenant B2B embedded payments and multi-bank treasury management SaaS with instant FedNow/RTP rails, double-entry ledgers, and AI reconciliation in 2026.</description>
@@ -103,13 +110,6 @@
       <description>Discover how to build an AI voice cloning and custom text-to-speech (TTS) SaaS app in 2026. Technical architecture, ElevenLabs API alternatives, latency optimization, and cost breakdown.</description>
       <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://todayintech.in/blog/ai-voice-cloning-text-to-speech-saas-development-guide-2026</guid>
-    </item>
-    <item>
-      <title>How to Build a HIPAA-Compliant LLM &amp; RAG Architecture for Healthcare Software (2026)</title>
-      <link>https://todayintech.in/blog/hipaa-compliant-llm-rag-architecture-healthcare-software-2026</link>
-      <description>Engineering guide to building production HIPAA-compliant Retrieval-Augmented Generation (RAG) and LLM architectures in 2026. Covers pgvector KMS encryption, zero-retention LLM endpoints, and mTLS API security.</description>
-      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/hipaa-compliant-llm-rag-architecture-healthcare-software-2026</guid>
     </item>
   </channel>
 </rss>
