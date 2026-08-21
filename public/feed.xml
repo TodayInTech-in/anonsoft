@@ -7,6 +7,13 @@
     <language>en-us</language>
     <atom:link href="https://todayintech.in/public/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Building an AI-Powered Remote Patient Monitoring (RPM) &amp; Chronic Care Management (CCM) SaaS: HIPAA IoT Telemetry, Real-Time Vitals Alerting, and Medicare CPT Billing (2026)</title>
+      <link>https://todayintech.in/blog/ai-powered-remote-patient-monitoring-rpm-ccm-saas-guide-2026</link>
+      <description>An engineering blueprint for building a multi-tenant B2B Remote Patient Monitoring (RPM) and Chronic Care Management (CCM) SaaS with cellular IoT telemetry, automated CPT billing, and EHR integration in 2026.</description>
+      <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/ai-powered-remote-patient-monitoring-rpm-ccm-saas-guide-2026</guid>
+    </item>
+    <item>
       <title>Building an AI-Powered B2B Contract Lifecycle Management (CLM) SaaS: Multi-Agent Redlining, Legal RAG, and ERP Integration (2026)</title>
       <link>https://todayintech.in/blog/ai-powered-b2b-contract-lifecycle-management-clm-saas-guide-2026</link>
       <description>An engineering blueprint for building a multi-tenant B2B contract lifecycle management (CLM) SaaS with agentic redlining, OpenXML AST diffing, legal RAG, and automated ERP/CRM synchronization in 2026.</description>
@@ -103,13 +110,6 @@
       <description>Discover how AI-powered credit underwriting and real-time risk modeling are transforming B2B FinTech platforms in 2026. Learn about API-driven risk engines, automated financial analysis, and machine learning models for corporate credit risk.</description>
       <pubDate>Sun, 09 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://todayintech.in/blog/ai-powered-credit-underwriting-b2b-fintech-2026</guid>
-    </item>
-    <item>
-      <title>AI Voice Cloning &amp; Custom Text-to-Speech (TTS) SaaS Development in 2026: Technical Guide &amp; Cost</title>
-      <link>https://todayintech.in/blog/ai-voice-cloning-text-to-speech-saas-development-guide-2026</link>
-      <description>Discover how to build an AI voice cloning and custom text-to-speech (TTS) SaaS app in 2026. Technical architecture, ElevenLabs API alternatives, latency optimization, and cost breakdown.</description>
-      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/ai-voice-cloning-text-to-speech-saas-development-guide-2026</guid>
     </item>
   </channel>
 </rss>
