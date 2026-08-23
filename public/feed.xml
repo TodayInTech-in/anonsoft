@@ -7,6 +7,13 @@
     <language>en-us</language>
     <atom:link href="https://todayintech.in/public/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Building an AI-Powered Real-Time Voice Agent &amp; Autonomous Customer Support SaaS: WebSockets, Sub-300ms Audio Pipelines, Knowledge Graph RAG, and CRM Orchestration (2026)</title>
+      <link>https://todayintech.in/blog/ai-powered-real-time-voice-agent-customer-support-saas-guide-2026</link>
+      <description>An engineering blueprint for building an enterprise-grade AI voice agent SaaS with bidirectional WebSockets, sub-300ms STT/TTS streaming, turn detection, knowledge RAG, and CRM telephony orchestration in 2026.</description>
+      <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/ai-powered-real-time-voice-agent-customer-support-saas-guide-2026</guid>
+    </item>
+    <item>
       <title>Building an AI-Powered Home Care Agency SaaS &amp; EVV Platform: GPS Geofencing, Smart Caregiver Scheduling, and Medicaid Billing Architecture (2026)</title>
       <link>https://todayintech.in/blog/ai-powered-home-care-agency-software-gps-evv-scheduling-saas-guide-2026</link>
       <description>An engineering blueprint for building a multi-tenant B2B Home Care Agency SaaS and 21st Century Cures Act compliant EVV platform with GPS geofencing, AI shift-matching, and automated Medicaid billing in 2026.</description>
@@ -103,13 +110,6 @@
       <description>An engineering guide to designing a white-label school management SaaS, Student Information System (SIS), and LMS ERP with offline synchronization and billing integrations.</description>
       <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://todayintech.in/blog/white-label-k12-edtech-saas-sis-erp-guide</guid>
-    </item>
-    <item>
-      <title>Building a White-Label Restaurant POS and Kitchen Display ERP (2026)</title>
-      <link>https://todayintech.in/blog/white-label-restaurant-pos-kds-system-guide</link>
-      <description>An engineering guide to designing a white-label restaurant POS system and kitchen display system (KDS) ERP with offline synchronization and real-time order printing.</description>
-      <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/white-label-restaurant-pos-kds-system-guide</guid>
     </item>
   </channel>
 </rss>
