@@ -7,6 +7,13 @@
     <language>en-us</language>
     <atom:link href="https://todayintech.in/public/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Building an AI-Powered Multi-Warehouse Inventory &amp; Supply Chain Demand Forecasting SaaS: Real-Time Stock Sync, ML Prediction, and ERP Integration (2026)</title>
+      <link>https://todayintech.in/blog/ai-powered-multi-warehouse-inventory-demand-forecasting-saas-guide-2026</link>
+      <description>An engineering blueprint for building a multi-tenant, multi-warehouse inventory management SaaS with real-time WebSocket stock synchronization, ML demand forecasting, automated PO reordering, and multi-channel ERP integration in 2026.</description>
+      <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/ai-powered-multi-warehouse-inventory-demand-forecasting-saas-guide-2026</guid>
+    </item>
+    <item>
       <title>Building an AI-Powered Real-Time Voice Agent &amp; Autonomous Customer Support SaaS: WebSockets, Sub-300ms Audio Pipelines, Knowledge Graph RAG, and CRM Orchestration (2026)</title>
       <link>https://todayintech.in/blog/ai-powered-real-time-voice-agent-customer-support-saas-guide-2026</link>
       <description>An engineering blueprint for building an enterprise-grade AI voice agent SaaS with bidirectional WebSockets, sub-300ms STT/TTS streaming, turn detection, knowledge RAG, and CRM telephony orchestration in 2026.</description>
@@ -103,13 +110,6 @@
       <description>An engineering blueprint to designing a white-label home care agency platform, elder care portals, EVV tracking, and caregiver scheduling ERP software.</description>
       <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://todayintech.in/blog/white-label-home-care-agency-software-scheduling-erp</guid>
-    </item>
-    <item>
-      <title>Building a White-Label K-12 EdTech SaaS and Student Information System ERP (2026)</title>
-      <link>https://todayintech.in/blog/white-label-k12-edtech-saas-sis-erp-guide</link>
-      <description>An engineering guide to designing a white-label school management SaaS, Student Information System (SIS), and LMS ERP with offline synchronization and billing integrations.</description>
-      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/white-label-k12-edtech-saas-sis-erp-guide</guid>
     </item>
   </channel>
 </rss>
