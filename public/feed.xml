@@ -7,6 +7,13 @@
     <language>en-us</language>
     <atom:link href="https://todayintech.in/public/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Building an AI-Powered Accounts Payable (AP) Automation &amp; Autonomous Invoice Processing SaaS: Multi-Modal Vision LLMs, 3-Way PO Matching, Real-Time ERP Sync, and Fraud Detection (2026)</title>
+      <link>https://todayintech.in/blog/ai-powered-accounts-payable-invoice-automation-saas-guide-2026</link>
+      <description>An engineering blueprint for building a multi-tenant AI Accounts Payable (AP) and invoice automation SaaS with multi-modal Vision LLM OCR, automated 3-way PO matching, ERP synchronization, and anomaly fraud detection in 2026.</description>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/ai-powered-accounts-payable-invoice-automation-saas-guide-2026</guid>
+    </item>
+    <item>
       <title>Building an AI-Powered Adaptive Learning &amp; Automated Grading EdTech SaaS: Knowledge Tracing Graphs, LTI 1.3 LMS Interoperability, Real-Time Feedback Pipelines, and Multi-Tenant Architecture (2026)</title>
       <link>https://todayintech.in/blog/ai-powered-adaptive-learning-automated-grading-edtech-saas-guide-2026</link>
       <description>An engineering blueprint for building a multi-tenant AI adaptive learning and automated grading EdTech SaaS with Deep Knowledge Tracing (DKT), vector RAG rubric evaluation, LTI 1.3 LMS integration, and sub-second feedback in 2026.</description>
@@ -103,13 +110,6 @@
       <description>An engineering guide to designing a multi-tenant, white-label inventory and invoicing SaaS platform with multi-warehouse sync and automated billing.</description>
       <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://todayintech.in/blog/white-label-inventory-billing-saas-platform-guide</guid>
-    </item>
-    <item>
-      <title>Building a Three.js e-Commerce 3D Product Customizer: The WebGL Blueprint</title>
-      <link>https://todayintech.in/blog/threejs-ecommerce-3d-product-customizer-guide-2026</link>
-      <description>An engineering guide to designing a high-performance interactive 3D product customizer using Three.js, WebGL, Draco compression, and e-commerce integrations.</description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/threejs-ecommerce-3d-product-customizer-guide-2026</guid>
     </item>
   </channel>
 </rss>
