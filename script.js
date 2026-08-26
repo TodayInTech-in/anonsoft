@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initHeroTabs();
     initStickyAnchorBar();
     initGoogleAnalyticsTracking();
+    initLeadMagnet();
 });
 
 // ===== NAVBAR SCROLL EFFECT =====
@@ -994,4 +995,350 @@ window.triggerCalendly = function(url) {
         document.body.appendChild(script);
     }
 };
+
+// ===== LEAD MAGNET POPUP =====
+function initLeadMagnet() {
+    // 1. Inject Styles
+    const style = document.createElement('style');
+    style.innerHTML = `
+        /* Lead Magnet Floating Card */
+        .lead-magnet-floating {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 9999;
+            background: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 20px;
+            max-width: 320px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            transform: translateY(150%);
+            opacity: 0;
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .lead-magnet-floating.visible {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        .lead-magnet-floating h3 {
+            font-size: 1.1rem;
+            color: #ffffff;
+            font-weight: 600;
+            margin: 0;
+            line-height: 1.4;
+        }
+        .lead-magnet-floating p {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin: 0;
+            line-height: 1.5;
+        }
+        .lead-magnet-floating .download-btn {
+            background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            padding: 10px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-align: center;
+            transition: opacity 0.2s;
+        }
+        .lead-magnet-floating .download-btn:hover {
+            opacity: 0.9;
+        }
+        .lead-magnet-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 1rem;
+            cursor: pointer;
+            padding: 0;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Lead Magnet Modal Overlay */
+        .lead-modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(10, 10, 12, 0.8);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+        .lead-modal-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .lead-modal {
+            background: #111827;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 35px;
+            max-width: 450px;
+            width: 95%;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+            position: relative;
+            transform: scale(0.95);
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .lead-modal-overlay.active .lead-modal {
+            transform: scale(1);
+        }
+        .lead-modal h2 {
+            font-size: 1.6rem;
+            color: #ffffff;
+            margin-top: 0;
+            margin-bottom: 10px;
+            text-align: center;
+            line-height: 1.3;
+        }
+        .lead-modal h2 span {
+            background: linear-gradient(135deg, #a78bfa 0%, #818cf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .lead-modal p.subtitle {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+            text-align: center;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+        .lead-form {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .lead-input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .lead-input-group label {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.6);
+            font-weight: 500;
+        }
+        .lead-input-group input {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 8px;
+            padding: 12px 14px;
+            color: #ffffff;
+            font-size: 0.9rem;
+            transition: border-color 0.2s;
+        }
+        .lead-input-group input:focus {
+            outline: none;
+            border-color: #8b5cf6;
+        }
+        .lead-submit-btn {
+            background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            padding: 14px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: opacity 0.2s;
+            margin-top: 10px;
+        }
+        .lead-submit-btn:hover {
+            opacity: 0.9;
+        }
+        .lead-modal-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+        
+        /* Light Mode Overrides */
+        .light-mode .lead-magnet-floating {
+            background: rgba(255, 255, 255, 0.95);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            color: #1e293b;
+        }
+        .light-mode .lead-magnet-floating h3 {
+            color: #1e293b;
+        }
+        .light-mode .lead-magnet-floating p {
+            color: #475569;
+        }
+        .light-mode .lead-modal {
+            background: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        .light-mode .lead-modal h2 {
+            color: #1e293b;
+        }
+        .light-mode .lead-modal p.subtitle {
+            color: #475569;
+        }
+        .light-mode .lead-input-group label {
+            color: #64748b;
+        }
+        .light-mode .lead-input-group input {
+            background: #f8fafc;
+            border: 1px solid #cbd5e1;
+            color: #1e293b;
+        }
+        .light-mode .lead-input-group input:focus {
+            border-color: #6366f1;
+        }
+    `;
+    document.head.appendChild(style);
+
+    // 2. Inject HTML elements
+    const floatingCard = document.createElement('div');
+    floatingCard.className = 'lead-magnet-floating';
+    floatingCard.id = 'leadMagnetFloating';
+    floatingCard.innerHTML = `
+        <button class="lead-magnet-close" id="closeFloatingLead" aria-label="Close">&times;</button>
+        <h3>📈 Scale Your Startup</h3>
+        <p>Get our exclusive Software & Product Blueprint PDF (FREE). Discover the secrets to launching MVPs in 4 weeks.</p>
+        <button class="download-btn" id="triggerLeadModal">Download Free Guide</button>
+    `;
+    document.body.appendChild(floatingCard);
+
+    const modalOverlay = document.createElement('div');
+    modalOverlay.className = 'lead-modal-overlay';
+    modalOverlay.id = 'leadModalOverlay';
+    modalOverlay.innerHTML = `
+        <div class="lead-modal">
+            <button class="lead-modal-close" id="closeLeadModal">&times;</button>
+            <h2>Get the <span>Product Blueprint</span></h2>
+            <p class="subtitle">Enter your details to instantly download the TodayInTech Custom Software blueprint & success secrets guide.</p>
+            <form class="lead-form" id="leadForm">
+                <div class="lead-input-group">
+                    <label for="leadName">Full Name *</label>
+                    <input type="text" id="leadName" required placeholder="John Doe">
+                </div>
+                <div class="lead-input-group">
+                    <label for="leadEmail">Work Email *</label>
+                    <input type="email" id="leadEmail" required placeholder="john@company.com">
+                </div>
+                <div class="lead-input-group">
+                    <label for="leadPhone">Phone Number (Optional)</label>
+                    <input type="tel" id="leadPhone" placeholder="+1 (555) 000-0000">
+                </div>
+                <button type="submit" class="lead-submit-btn" id="leadSubmitBtn">Download PDF Now</button>
+            </form>
+        </div>
+    `;
+    document.body.appendChild(modalOverlay);
+
+    // 3. Event Listeners
+    const triggerBtn = document.getElementById('triggerLeadModal');
+    const closeFloating = document.getElementById('closeFloatingLead');
+    const closeBtn = document.getElementById('closeLeadModal');
+    const form = document.getElementById('leadForm');
+    const submitBtn = document.getElementById('leadSubmitBtn');
+
+    const openModal = () => {
+        modalOverlay.classList.add('active');
+        floatingCard.classList.remove('visible');
+    };
+
+    const closeModal = () => {
+        modalOverlay.classList.remove('active');
+    };
+
+    triggerBtn.addEventListener('click', openModal);
+    closeFloating.addEventListener('click', () => {
+        floatingCard.classList.remove('visible');
+        localStorage.setItem('leadMagnetDismissed', 'true');
+    });
+    closeBtn.addEventListener('click', closeModal);
+    modalOverlay.addEventListener('click', (e) => {
+        if (e.target === modalOverlay) closeModal();
+    });
+
+    // Handle Form Submit
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        const name = document.getElementById('leadName').value;
+        const email = document.getElementById('leadEmail').value;
+        const phone = document.getElementById('leadPhone').value;
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending...';
+
+        try {
+            const response = await fetch('https://tt-api.todayintech.in/api/leads', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ name, email, phone })
+            });
+
+            if (response.ok) {
+                submitBtn.textContent = 'Thank you!';
+                localStorage.setItem('leadMagnetDismissed', 'true');
+                
+                if (typeof gtag === 'function') {
+                    gtag('event', 'lead_magnet_download', {
+                        'lead_name': name,
+                        'lead_email': email
+                    });
+                }
+
+                setTimeout(() => {
+                    closeModal();
+                    window.location.href = '/tit_deck';
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Download PDF Now';
+                    form.reset();
+                }, 1000);
+            } else {
+                throw new Error('Failed to record lead');
+            }
+        } catch (err) {
+            console.error(err);
+            alert('Something went wrong. Starting download directly...');
+            window.location.href = '/tit_deck';
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Download PDF Now';
+            closeModal();
+        }
+    });
+
+    // 4. Timer Trigger
+    if (!localStorage.getItem('leadMagnetDismissed')) {
+        setTimeout(() => {
+            floatingCard.classList.add('visible');
+        }, 5000); // Show after 5 seconds
+    }
+}
 
