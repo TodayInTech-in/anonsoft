@@ -1334,11 +1334,11 @@ function initLeadMagnet() {
         }
     });
 
-    // 4. Timer Trigger
+    // 4. Trigger immediately
     if (!localStorage.getItem('leadMagnetDismissed')) {
         setTimeout(() => {
             floatingCard.classList.add('visible');
-        }, 5000); // Show after 5 seconds
+        }, 100); // Tiny 100ms delay to let the DOM settle and trigger transition
     }
 }
 
