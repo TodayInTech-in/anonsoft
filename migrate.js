@@ -10,6 +10,7 @@ let newNav = `        <div class="nav-links" id="navLinks">
           <a href="/about/">About</a>
           <a href="/health/">HealthTech</a>
           <a href="/ai/">AI Solutions</a>
+          <a href="/blog/">Blog</a>
           <a href="/careers/">Careers</a>
           <a href="/contact/">FAQ & Contact</a>
           <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme">☀️</button>
