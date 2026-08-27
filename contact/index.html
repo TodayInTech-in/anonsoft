@@ -359,7 +359,7 @@
         <a href="/" class="nav-logo" aria-label="TodayInTech Homepage">
           <img src="/assets/nav_logo.png" alt="TodayInTech - Custom software and virtual care platform development logo" style="height: 48px !important; width: auto !important; max-width: none !important; border-radius: 0 !important;" width="103" height="48">
         </a>
-                                                                <div class="nav-links" id="navLinks">
+                                                                        <div class="nav-links" id="navLinks">
           <a href="/services/">Services</a>
           <a href="/features/">Features</a>
           <a href="/portfolio">Portfolio</a>
@@ -382,20 +382,226 @@
 
   <main>
 
-    <section class="hero" style="padding-top: 150px; padding-bottom: 80px; min-height: 50vh; display: flex; align-items: center; text-align: center; position: relative;">
-      <div class="container" style="position: relative; z-index: 2;">
-        <h1 class="hero-title" style="font-size: clamp(3rem, 6vw, 4.5rem); margin-bottom: 24px;"><span class="gradient-text">Contact</span></h1>
-        <p class="hero-description" style="max-width: 600px; margin: 0 auto 30px; font-size: 1.1rem; color: var(--text-secondary);">We are migrating our dedicated contact content into this specialized domain. Check back soon for deep case studies, feature breakdowns, and comprehensive service details.</p>
-        <div class="hero-buttons" style="justify-content: center;">
-            <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;" class="btn-primary">
-              Get a Free Strategy Session
-            </a>
-            <a href="/" class="btn-secondary" style="border: 1px solid var(--primary); color: var(--primary);">
-              Return to Homepage
-            </a>
+
+
+    <section class="hero" style="padding: calc(var(--nav-height) + 60px) 0 40px; text-align: center;">
+      <div class="container">
+        <div class="hero-content"
+          style="grid-column: 1 / -1; margin: 0 auto; width: 100%; max-width: 800px; padding: 0;">
+          <span class="section-label">Get in Touch</span>
+          <h1 class="hero-title" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 24px;">Let's Talk <span
+              style="background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: transparent;">Strategy</span>
+          </h1>
         </div>
       </div>
     </section>
+    <section class="roi-calculator" id="roi-calculator">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">ROI Calculator</span>
+          <h2 class="section-title">How Much Could You Save?</h2>
+          <p class="section-subtitle">See the real cost difference between building from scratch and launching with
+            TodayInTech's white-label platform.</p>
+        </div>
+
+        <div class="roi-wrapper reveal">
+          <div class="roi-inputs">
+            <div class="roi-input-group">
+              <label for="roi-team-size">Estimated In-House Dev Team Size</label>
+              <div class="roi-slider-wrapper">
+                <input type="range" id="roi-team-size" min="1" max="10" value="3" class="roi-slider">
+                <span class="roi-slider-value" id="roi-team-display">3 engineers</span>
+              </div>
+            </div>
+            <div class="roi-input-group">
+              <label for="roi-months">Custom Build Timeline (months)</label>
+              <div class="roi-slider-wrapper">
+                <input type="range" id="roi-months" min="2" max="12" value="5" class="roi-slider">
+                <span class="roi-slider-value" id="roi-months-display">5 months</span>
+              </div>
+            </div>
+            <div class="roi-input-group">
+              <label for="roi-rate">Average Dev Hourly Rate (USD)</label>
+              <div class="roi-slider-wrapper">
+                <input type="range" id="roi-rate" min="40" max="150" value="65" step="5" class="roi-slider">
+                <span class="roi-slider-value" id="roi-rate-display">$65/hr</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="roi-results">
+            <div class="roi-result-card roi-scratch">
+              <div class="roi-result-label">Building From Scratch</div>
+              <div class="roi-result-cost" id="roi-scratch-cost">$1,440,000</div>
+              <div class="roi-result-time" id="roi-scratch-time">9 months to launch</div>
+              <ul class="roi-result-risks">
+                <li>❌ HIPAA compliance work: +$50K</li>
+                <li>❌ HL7/FHIR integrations: +3 months</li>
+                <li>❌ QA & security testing: +$30K</li>
+                <li>❌ High risk of delays & overruns</li>
+              </ul>
+            </div>
+            <div class="roi-result-card roi-us">
+              <div class="roi-popular-label">Save Up To</div>
+              <div class="roi-savings" id="roi-savings">$1,390,000</div>
+              <div class="roi-result-label">With TodayInTech</div>
+              <div class="roi-result-cost roi-our-cost">From <strong>$99</strong></div>
+              <div class="roi-result-time">Launch in 4–8 weeks</div>
+              <ul class="roi-result-risks">
+                <li>✅ HIPAA-compliant by default</li>
+                <li>✅ HL7/FHIR pre-integrated</li>
+                <li>✅ Fixed-scope, no surprises</li>
+                <li>✅ 24/7 post-launch support</li>
+              </ul>
+              <a href=""
+                onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;"
+                class="btn-primary roi-cta">Get My Free Estimate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Frequently Asked Questions</span>
+          <h2 class="section-title">Everything You Need to Know About Our Health Software Solutions</h2>
+          <p class="section-subtitle">Got questions about white-label healthcare software, telemedicine development, or
+            working with TodayInTech? We've got answers.</p>
+        </div>
+
+        <div class="faq-grid reveal">
+          <details class="faq-item" open>
+            <summary class="faq-question">
+              <span>What kind of custom software do you build?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>We build all types of custom software, including <strong>HealthTech platforms</strong>, <strong>EdTech
+                  systems</strong>, <strong>FinTech dashboards</strong>, and <strong>eCommerce solutions</strong>. We
+                specialize in rapidly deploying scalable MVPs in 1-2 Weeks, saving you significant time and budget
+                compared to traditional development cycles while maintaining full ownership and customization control.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>How much does it cost to build a custom software application?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>The cost depends on complexity and features. We focus on lean, high-value <strong>MVPs starting from
+                  just $99</strong> to get you to market quickly and affordably. A comprehensive <strong>enterprise
+                  platform</strong> with complex API integrations and custom dashboards can scale appropriately with
+                your budget. <a href=""
+                  onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;">Book
+                  a free
+                  consultation</a> for a custom quote tailored to your specific requirements.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Are your healthcare solutions HIPAA and GDPR compliant?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Absolutely. All healthcare products built by TodayInTech are fully <strong>HIPAA compliant</strong> and
+                can be configured for <strong>GDPR compliance</strong>. Our security measures include end-to-end
+                encryption (AES-256), secure cloud storage on AWS with BAA agreements, role-based access controls,
+                comprehensive audit logging, regular penetration testing, and SOC 2 compliance readiness. We follow
+                healthcare industry best practices to ensure complete patient data protection.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>How long does it take to develop a telemedicine or healthcare app?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>With our <strong>white-label approach</strong>, a fully branded telemedicine app can be launched in
+                <strong>1-2 Weeks</strong>. Custom telemedicine platforms with advanced features like AI-powered
+                diagnostics, multi-provider scheduling, EHR integration, and insurance claim processing typically take
+                <strong>3-6 months</strong>. Our agile development process with 2-week sprints ensures transparency,
+                rapid
+                iteration, and delivery without compromising quality or security.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>What technologies does TodayInTech use for app development?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>We use industry-leading technologies chosen for scalability and performance: <strong>React &
+                  Next.js</strong> for web apps, <strong>React Native & Flutter</strong> for cross-platform mobile apps,
+                <strong>Node.js & Python</strong> for backend APIs, <strong>MongoDB & PostgreSQL</strong> for databases,
+                <strong>AWS & GCP</strong> for cloud infrastructure, <strong>Docker & Kubernetes</strong> for
+                containerization, and <strong>HL7 FHIR</strong> for healthcare data interoperability. Every tech
+                decision
+                is made to ensure long-term maintainability and scalability.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Do you provide post-launch support and maintenance?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Yes, we provide comprehensive <strong>24/7 post-launch support</strong> including bug fixes,
+                performance
+                monitoring, security patches, feature enhancements, server management, and dedicated account management.
+                We offer flexible support plans — from basic maintenance to full managed services. We believe in
+                building
+                long-term partnerships with our clients, which is why <strong>95% of our clients continue working with
+                  us</strong> after their initial project launch.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Can you integrate with existing hospital systems like Epic, Cerner, or Allscripts?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Yes, we specialize in <strong>healthcare system integrations</strong>. Our team has extensive
+                experience
+                integrating with major EHR systems including Epic, Cerner, Allscripts, and athenahealth via <strong>HL7
+                  FHIR APIs</strong>. We also handle integrations with pharmacy networks (Surescripts), insurance
+                providers, payment gateways (Stripe, Square), lab systems, medical device APIs, and wearable platforms
+                (Apple Health, Google Fit, Fitbit).</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>What industries does TodayInTech serve beyond healthcare?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>While healthcare is our core specialization, we also build exceptional software for
+                <strong>fintech</strong>, <strong>e-commerce</strong>, <strong>education (EdTech)</strong>,
+                <strong>fitness & wellness</strong>, <strong>logistics</strong>, and <strong>enterprise SaaS</strong>.
+                Our
+                expertise in building secure, scalable, and compliant systems translates perfectly across regulated
+                industries. With 120+ projects delivered across 12+ countries, we bring cross-industry insights to every
+                project.
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+      </div>
+    </section>
+
+  
 
   </main>
 

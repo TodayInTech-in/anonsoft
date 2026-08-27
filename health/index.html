@@ -359,7 +359,7 @@
         <a href="/" class="nav-logo" aria-label="TodayInTech Homepage">
           <img src="/assets/nav_logo.png" alt="TodayInTech - Custom software and virtual care platform development logo" style="height: 48px !important; width: auto !important; max-width: none !important; border-radius: 0 !important;" width="103" height="48">
         </a>
-                                                                <div class="nav-links" id="navLinks">
+                                                                        <div class="nav-links" id="navLinks">
           <a href="/services/">Services</a>
           <a href="/features/">Features</a>
           <a href="/portfolio">Portfolio</a>
@@ -382,20 +382,390 @@
 
   <main>
 
-    <section class="hero" style="padding-top: 150px; padding-bottom: 80px; min-height: 50vh; display: flex; align-items: center; text-align: center; position: relative;">
-      <div class="container" style="position: relative; z-index: 2;">
-        <h1 class="hero-title" style="font-size: clamp(3rem, 6vw, 4.5rem); margin-bottom: 24px;"><span class="gradient-text">Health</span></h1>
-        <p class="hero-description" style="max-width: 600px; margin: 0 auto 30px; font-size: 1.1rem; color: var(--text-secondary);">We are migrating our dedicated health content into this specialized domain. Check back soon for deep case studies, feature breakdowns, and comprehensive service details.</p>
-        <div class="hero-buttons" style="justify-content: center;">
-            <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;" class="btn-primary">
-              Get a Free Strategy Session
-            </a>
-            <a href="/" class="btn-secondary" style="border: 1px solid var(--primary); color: var(--primary);">
-              Return to Homepage
-            </a>
+
+
+    <section class="hero" style="padding: calc(var(--nav-height) + 60px) 0 40px; text-align: center;">
+      <div class="container">
+        <div class="hero-content"
+          style="grid-column: 1 / -1; margin: 0 auto; width: 100%; max-width: 800px; padding: 0;">
+          <span class="section-label">Healthcare Solutions</span>
+          <h1 class="hero-title" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 24px;">HIPAA-Compliant <span
+              style="background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: transparent;">Telemedicine</span>
+          </h1>
+          <p style="max-width: 600px; margin: 0 auto; color: var(--text-secondary);">Whitelabel healthcare platforms
+            launching in record time.</p>
         </div>
       </div>
     </section>
+    <section class="comparison" id="why-whitelabel">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Why White-Label</span>
+          <h2 class="section-title">White-Label vs. Building From Scratch</h2>
+          <p class="section-subtitle">See why 50+ healthcare brands chose our white-label approach over hiring a
+            development team or building custom from day one.</p>
+        </div>
+        <div class="comparison-table reveal">
+          <div class="comparison-col comparison-col-label">
+            <div class="comparison-header-cell"></div>
+            <div class="comparison-cell">Time to Launch</div>
+            <div class="comparison-cell">Development Cost</div>
+            <div class="comparison-cell">HIPAA Compliance</div>
+            <div class="comparison-cell">HL7/FHIR Integration</div>
+            <div class="comparison-cell">Ongoing Maintenance</div>
+            <div class="comparison-cell">Brand Customization</div>
+            <div class="comparison-cell">Risk</div>
+          </div>
+          <div class="comparison-col comparison-col-us">
+            <div class="comparison-header-cell winner">TodayInTech White-Label</div>
+            <div class="comparison-cell winner-cell">✅ 4–8 Weeks</div>
+            <div class="comparison-cell winner-cell">✅ $99+</div>
+            <div class="comparison-cell winner-cell">✅ Built-in</div>
+            <div class="comparison-cell winner-cell">✅ Pre-integrated</div>
+            <div class="comparison-cell winner-cell">✅ 24/7 Support Included</div>
+            <div class="comparison-cell winner-cell">✅ Full Branding Control</div>
+            <div class="comparison-cell winner-cell">✅ Low — proven platform</div>
+          </div>
+          <div class="comparison-col comparison-col-scratch">
+            <div class="comparison-header-cell">Custom Build / Hiring In-house</div>
+            <div class="comparison-cell">❌ 6–18 Months</div>
+            <div class="comparison-cell">❌ $200K–$1M+</div>
+            <div class="comparison-cell">❌ Your responsibility</div>
+            <div class="comparison-cell">❌ Months of custom work</div>
+            <div class="comparison-cell">❌ Separate ops team needed</div>
+            <div class="comparison-cell">⚠️ Possible but costly</div>
+            <div class="comparison-cell">❌ High — unproven code</div>
+          </div>
+        </div>
+        <p class="section-subtitle" style="margin-top: 24px;">Want the full breakdown? Read our
+          <a href="/blog/white-label-telehealth-platform-guide">step-by-step guide to implementing a white-label
+            telehealth platform</a>, including vendor selection, HIPAA requirements, and a 5-step rollout plan.</p>
+      </div>
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <div class="bg-glow"></div>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Our Work</span>
+          <h2 class="section-title">Projects We're Proud Of</h2>
+          <p class="section-subtitle">From concept to launch — see how we've helped healthcare and technology businesses
+            thrive.</p>
+        </div>
+
+        <div class="portfolio-grid">
+          <div class="portfolio-card reveal">
+            <div class="portfolio-image">
+              <img src="../assets/project-edusphere.png" alt="EduSphere LMS" loading="lazy">
+              <div class="portfolio-image-overlay"></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category">EdTech Platform</span>
+              <h3>EduSphere — Learning Management System</h3>
+              <p>A comprehensive virtual learning platform for universities with live classes, assignments, grading, and
+                student portals — all under their own brand.</p>
+              <div class="portfolio-tech">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>WebRTC</span>
+                <span>AWS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card reveal">
+            <div class="portfolio-image">
+              <img src="../assets/project-telemedicine.png" alt="Mednowna - Telehealth Platform" loading="lazy">
+              <div class="portfolio-image-overlay"></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category">HealthTech</span>
+              <h3><a href="https://www.mednowna.com/" target="_blank" rel="noopener" style="color: inherit;">Mednowna —
+                  Telehealth Platform</a></h3>
+              <p>A comprehensive virtual care and telemedicine platform offering end-to-end healthcare solutions, secure
+                video consultations, and patient management.</p>
+              <div class="portfolio-tech">
+                <span>React Native</span>
+                <span>Python</span>
+                <span>PostgreSQL</span>
+                <span>Docker</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card reveal">
+            <div class="portfolio-image">
+              <img src="../assets/project-logistics.png" alt="GlobalLogistics Fleet" loading="lazy">
+              <div class="portfolio-image-overlay"></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category">Logistics & Supply Chain</span>
+              <h3>GlobalLogistics — Fleet Management</h3>
+              <p>Real-time vehicle tracking, route optimization, automated dispatching, and driver-facing mobile app for
+                global logistics operations.</p>
+              <div class="portfolio-tech">
+                <span>Flutter</span>
+                <span>Firebase</span>
+                <span>Google Maps APIs</span>
+                <span>Redis</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card reveal">
+            <div class="portfolio-image">
+              <img src="../assets/project-finflow.png" alt="FinFlow Dashboard" loading="lazy">
+              <div class="portfolio-image-overlay"></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category">Fintech & Finance</span>
+              <h3>FinFlow — Wealth Management App</h3>
+              <p>AI-powered financial app with personalized insights, wealth tracking, banking API integration, and
+                custom reporting features.</p>
+              <div class="portfolio-tech">
+                <span>Next.js</span>
+                <span>GraphQL</span>
+                <span>Plaid API</span>
+                <span>GCP</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card reveal">
+            <div class="portfolio-image">
+              <img src="../assets/project-crm.png" alt="CloudSync CRM" loading="lazy">
+              <div class="portfolio-image-overlay"></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category">Enterprise SaaS</span>
+              <h3>CloudSync — CRM & Analytics</h3>
+              <p>A powerful customer relationship management platform with AI-driven analytics, sales pipelines, and
+                automated reporting.</p>
+              <div class="portfolio-tech">
+                <span>Vue.js</span>
+                <span>Python</span>
+                <span>PostgreSQL</span>
+                <span>AWS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card reveal">
+            <div class="portfolio-image">
+              <img src="../assets/project-ecommerce.png" alt="ShopSphere B2B" loading="lazy">
+              <div class="portfolio-image-overlay"></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category">E-Commerce</span>
+              <h3>ShopSphere — B2B Retail Platform</h3>
+              <p>A highly scalable multi-vendor B2B e-commerce platform with inventory sync, automated billing, and a
+                vendor portal.</p>
+              <div class="portfolio-tech">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Stripe API</span>
+                <span>MongoDB</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Frequently Asked Questions</span>
+          <h2 class="section-title">Everything You Need to Know About Our Health Software Solutions</h2>
+          <p class="section-subtitle">Got questions about white-label healthcare software, telemedicine development, or
+            working with TodayInTech? We've got answers.</p>
+        </div>
+
+        <div class="faq-grid reveal">
+          <details class="faq-item" open>
+            <summary class="faq-question">
+              <span>What kind of custom software do you build?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>We build all types of custom software, including <strong>HealthTech platforms</strong>, <strong>EdTech
+                  systems</strong>, <strong>FinTech dashboards</strong>, and <strong>eCommerce solutions</strong>. We
+                specialize in rapidly deploying scalable MVPs in 1-2 Weeks, saving you significant time and budget
+                compared to traditional development cycles while maintaining full ownership and customization control.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>How much does it cost to build a custom software application?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>The cost depends on complexity and features. We focus on lean, high-value <strong>MVPs starting from
+                  just $99</strong> to get you to market quickly and affordably. A comprehensive <strong>enterprise
+                  platform</strong> with complex API integrations and custom dashboards can scale appropriately with
+                your budget. <a href=""
+                  onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;">Book
+                  a free
+                  consultation</a> for a custom quote tailored to your specific requirements. See our
+                <a href="/blog/white-label-vs-custom-healthcare-software">white-label vs. custom healthcare
+                  software comparison</a> for a full cost and timeline breakdown.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Are your healthcare solutions HIPAA and GDPR compliant?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Absolutely. All healthcare products built by TodayInTech are fully <strong>HIPAA compliant</strong> and
+                can be configured for <strong>GDPR compliance</strong>. Our security measures include end-to-end
+                encryption (AES-256), secure cloud storage on AWS with BAA agreements, role-based access controls,
+                comprehensive audit logging, regular penetration testing, and SOC 2 compliance readiness. We follow
+                healthcare industry best practices to ensure complete patient data protection. For the full
+                regulatory picture — including state telehealth licensure and payer reimbursement rules — see our
+                <a href="/blog/white-label-telehealth-platform-guide">white-label telehealth platform guide</a>.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>How long does it take to develop a telemedicine or healthcare app?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>With our <strong>white-label approach</strong>, a fully branded telemedicine app can be launched in
+                <strong>1-2 Weeks</strong>. Custom telemedicine platforms with advanced features like AI-powered
+                diagnostics, multi-provider scheduling, EHR integration, and insurance claim processing typically take
+                <strong>3-6 months</strong>. Our agile development process with 2-week sprints ensures transparency,
+                rapid
+                iteration, and delivery without compromising quality or security. Walk through the exact process in
+                our <a href="/blog/white-label-telehealth-platform-guide">5-step white-label telehealth
+                  implementation guide</a>.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>What technologies does TodayInTech use for app development?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>We use industry-leading technologies chosen for scalability and performance: <strong>React &
+                  Next.js</strong> for web apps, <strong>React Native & Flutter</strong> for cross-platform mobile apps,
+                <strong>Node.js & Python</strong> for backend APIs, <strong>MongoDB & PostgreSQL</strong> for databases,
+                <strong>AWS & GCP</strong> for cloud infrastructure, <strong>Docker & Kubernetes</strong> for
+                containerization, and <strong>HL7 FHIR</strong> for healthcare data interoperability. Every tech
+                decision
+                is made to ensure long-term maintainability and scalability.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Do you provide post-launch support and maintenance?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Yes, we provide comprehensive <strong>24/7 post-launch support</strong> including bug fixes,
+                performance
+                monitoring, security patches, feature enhancements, server management, and dedicated account management.
+                We offer flexible support plans — from basic maintenance to full managed services. We believe in
+                building
+                long-term partnerships with our clients, which is why <strong>95% of our clients continue working with
+                  us</strong> after their initial project launch.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Can you integrate with existing hospital systems like Epic, Cerner, or Allscripts?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Yes, we specialize in <strong>healthcare system integrations</strong>. Our team has extensive
+                experience
+                integrating with major EHR systems including Epic, Cerner, Allscripts, and athenahealth via <strong>HL7
+                  FHIR APIs</strong>. We also handle integrations with pharmacy networks (Surescripts), insurance
+                providers, payment gateways (Stripe, Square), lab systems, medical device APIs, and wearable platforms
+                (Apple Health, Google Fit, Fitbit). See what's next for these integrations in our rundown of
+                <a href="/blog/white-label-telehealth-platform-guide">2026 technology trends shaping white-label
+                  telehealth</a>, including remote patient monitoring and AI-assisted clinical workflows.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>What industries does TodayInTech serve beyond healthcare?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>While healthcare is our core specialization, we also build exceptional software for
+                <strong>fintech</strong>, <strong>e-commerce</strong>, <strong>education (EdTech)</strong>,
+                <strong>fitness & wellness</strong>, <strong>logistics</strong>, and <strong>enterprise SaaS</strong>.
+                Our
+                expertise in building secure, scalable, and compliant systems translates perfectly across regulated
+                industries. With 120+ projects delivered across 12+ countries, we bring cross-industry insights to every
+                project.
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <div style="padding: 2rem 0;">
+      <section class="cta" id="contact">
+        <div class="container">
+          <div class="cta-wrapper reveal">
+            <div class="bg-glow glow-1"></div>
+            <div class="bg-glow glow-2"></div>
+
+            <span class="section-label">Ready to Launch?</span>
+            <h2 class="cta-title">Your Branded Health Platform,<br><span
+                style="background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: transparent;">Live
+                in 4–8 Weeks.</span></h2>
+            <p class="cta-subtitle">Book a free 30-minute strategy session. We'll map your product, give you a clear
+              timeline and cost estimate, and show you exactly how fast we can get you to launch — zero obligation.</p>
+
+            <div class="cta-buttons">
+              <a href=""
+                onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;"
+                class="btn-primary" id="openModal">
+                Book My Free Strategy Session
+              </a>
+              <a href="mailto:contact@todayintech.in" class="btn-secondary">
+                Email Us Directly
+              </a>
+            </div>
+
+            <div class="cta-trust">
+              <div class="cta-trust-item">
+                <span>✓</span> Free Consultation
+              </div>
+              <div class="cta-trust-item">
+                <span>✓</span> No Sales Pressure
+              </div>
+              <div class="cta-trust-item">
+                <span>✓</span> NDA Available
+              </div>
+              <div class="cta-trust-item">
+                <span>✓</span> Response in 24hrs
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </section>
+    </div>
+
+
+  
 
   </main>
 

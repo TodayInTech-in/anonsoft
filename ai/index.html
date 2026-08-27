@@ -359,7 +359,7 @@
         <a href="/" class="nav-logo" aria-label="TodayInTech Homepage">
           <img src="/assets/nav_logo.png" alt="TodayInTech - Custom software and virtual care platform development logo" style="height: 48px !important; width: auto !important; max-width: none !important; border-radius: 0 !important;" width="103" height="48">
         </a>
-                                                                <div class="nav-links" id="navLinks">
+                                                                        <div class="nav-links" id="navLinks">
           <a href="/services/">Services</a>
           <a href="/features/">Features</a>
           <a href="/portfolio">Portfolio</a>
@@ -382,20 +382,93 @@
 
   <main>
 
-    <section class="hero" style="padding-top: 150px; padding-bottom: 80px; min-height: 50vh; display: flex; align-items: center; text-align: center; position: relative;">
-      <div class="container" style="position: relative; z-index: 2;">
-        <h1 class="hero-title" style="font-size: clamp(3rem, 6vw, 4.5rem); margin-bottom: 24px;"><span class="gradient-text">Ai</span></h1>
-        <p class="hero-description" style="max-width: 600px; margin: 0 auto 30px; font-size: 1.1rem; color: var(--text-secondary);">We are migrating our dedicated ai content into this specialized domain. Check back soon for deep case studies, feature breakdowns, and comprehensive service details.</p>
-        <div class="hero-buttons" style="justify-content: center;">
-            <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;" class="btn-primary">
-              Get a Free Strategy Session
-            </a>
-            <a href="/" class="btn-secondary" style="border: 1px solid var(--primary); color: var(--primary);">
-              Return to Homepage
-            </a>
+
+
+    <section class="hero" style="min-height: auto; padding: calc(var(--nav-height) + 20px) 0 40px; text-align: center;">
+      <div class="container">
+        <div class="hero-content"
+          style="grid-column: 1 / -1; margin: 0 auto; width: 100%; max-width: 800px; padding: 0;">
+          <span class="section-label">Artificial Intelligence</span>
+          <h1 class="hero-title" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 24px;">Generative <span
+              style="background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: transparent;">AI
+              Integrations</span></h1>
+          <p style="max-width: 600px; margin: 0 auto; color: var(--text-secondary);">From custom LLM wrappers to
+            predictive analytics, automate your workflow.</p>
         </div>
       </div>
     </section>
+    <section class="services" style="padding-bottom: 80px;">
+      <div class="container">
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <div class="service-icon icon-purple"><i class="fas fa-robot"></i></div>
+            <h3>Custom LLM Agents</h3>
+            <p>Integrate ChatGPT, Claude, or local open-source models directly into your product to automate customer
+              support.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon icon-blue"><i class="fas fa-chart-bar"></i></div>
+            <h3>Predictive Analytics</h3>
+            <p>Train machine learning models on your proprietary data to unlock predictive forecasting and operational
+              dominance.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon icon-red"><i class="fas fa-brain"></i></div>
+            <h3>Computer Vision</h3>
+            <p>Automate quality control, image classification, and processing workflows via API.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <div style="padding: 2rem 0;">
+      <section class="cta" id="contact">
+        <div class="container">
+          <div class="cta-wrapper reveal">
+            <div class="bg-glow glow-1"></div>
+            <div class="bg-glow glow-2"></div>
+
+            <span class="section-label">Ready to Launch?</span>
+            <h2 class="cta-title">Your Branded Health Platform,<br><span
+                style="background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: transparent;">Live
+                in 4–8 Weeks.</span></h2>
+            <p class="cta-subtitle">Book a free 30-minute strategy session. We'll map your product, give you a clear
+              timeline and cost estimate, and show you exactly how fast we can get you to launch — zero obligation.</p>
+
+            <div class="cta-buttons">
+              <a href=""
+                onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;"
+                class="btn-primary" id="openModal">
+                Book My Free Strategy Session
+              </a>
+              <a href="mailto:contact@todayintech.in" class="btn-secondary">
+                Email Us Directly
+              </a>
+            </div>
+
+            <div class="cta-trust">
+              <div class="cta-trust-item">
+                <span>✓</span> Free Consultation
+              </div>
+              <div class="cta-trust-item">
+                <span>✓</span> No Sales Pressure
+              </div>
+              <div class="cta-trust-item">
+                <span>✓</span> NDA Available
+              </div>
+              <div class="cta-trust-item">
+                <span>✓</span> Response in 24hrs
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </section>
+    </div>
+
+
+  
 
   </main>
 

@@ -67,7 +67,16 @@ pages.forEach(page => {
   if (page === 'portfolio') {
     bodyContent = portfolioHtml;
   } else {
-    bodyContent = `    <section class="hero" style="padding-top: 150px; padding-bottom: 80px; min-height: 50vh; display: flex; align-items: center; text-align: center; position: relative;">
+    const pagePath = `${page}/index.html`;
+    let existingHtml = '';
+    if (fs.existsSync(pagePath)) {
+      existingHtml = fs.readFileSync(pagePath, 'utf8');
+    }
+    const mainMatch = existingHtml.match(/<main>([\s\S]*?)<\/main>/);
+    if (mainMatch && mainMatch[1].trim() && !mainMatch[1].includes('We are migrating our dedicated')) {
+      bodyContent = mainMatch[1];
+    } else {
+      bodyContent = `    <section class="hero" style="padding-top: 150px; padding-bottom: 80px; min-height: 50vh; display: flex; align-items: center; text-align: center; position: relative;">
       <div class="container" style="position: relative; z-index: 2;">
         <h1 class="hero-title" style="font-size: clamp(3rem, 6vw, 4.5rem); margin-bottom: 24px;"><span class="gradient-text">${page.charAt(0).toUpperCase() + page.slice(1)}</span></h1>
         <p class="hero-description" style="max-width: 600px; margin: 0 auto 30px; font-size: 1.1rem; color: var(--text-secondary);">We are migrating our dedicated ${page} content into this specialized domain. Check back soon for deep case studies, feature breakdowns, and comprehensive service details.</p>
@@ -81,6 +90,7 @@ pages.forEach(page => {
         </div>
       </div>
     </section>`;
+    }
   }
 
   const pageHtml = `${specificHead}
