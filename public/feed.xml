@@ -7,6 +7,13 @@
     <language>en-us</language>
     <atom:link href="https://todayintech.in/public/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Building an AI-Powered Field Service Management (FSM) SaaS: Autonomous Dispatching, Computer Vision Diagnostics, Offline Mobile Architecture, and Dynamic Route Optimization (2026)</title>
+      <link>https://todayintech.in/blog/ai-powered-field-service-management-fsm-saas-guide-2026</link>
+      <description>An engineering blueprint for building a high-scale, multi-tenant AI Field Service Management (FSM) SaaS with constraint-based autonomous dispatching, edge computer vision diagnostics, offline-first mobile sync, and live IoT telematics in 2026.</description>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/ai-powered-field-service-management-fsm-saas-guide-2026</guid>
+    </item>
+    <item>
       <title>Building an AI-Powered Accounts Payable (AP) Automation &amp; Autonomous Invoice Processing SaaS: Multi-Modal Vision LLMs, 3-Way PO Matching, Real-Time ERP Sync, and Fraud Detection (2026)</title>
       <link>https://todayintech.in/blog/ai-powered-accounts-payable-invoice-automation-saas-guide-2026</link>
       <description>An engineering blueprint for building a multi-tenant AI Accounts Payable (AP) and invoice automation SaaS with multi-modal Vision LLM OCR, automated 3-way PO matching, ERP synchronization, and anomaly fraud detection in 2026.</description>
@@ -103,13 +110,6 @@
       <description>Discover how to build custom, HIPAA-compliant telemedicine software in 2026. Learn about WebRTC video infrastructure, FHIR/EHR integrations, security compliance, and development costs.</description>
       <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://todayintech.in/blog/custom-telemedicine-software-development-guide-2026</guid>
-    </item>
-    <item>
-      <title>Designing a White-Label Inventory and Invoicing SaaS Platform (2026)</title>
-      <link>https://todayintech.in/blog/white-label-inventory-billing-saas-platform-guide</link>
-      <description>An engineering guide to designing a multi-tenant, white-label inventory and invoicing SaaS platform with multi-warehouse sync and automated billing.</description>
-      <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/white-label-inventory-billing-saas-platform-guide</guid>
     </item>
   </channel>
 </rss>
