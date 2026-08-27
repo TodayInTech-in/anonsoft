@@ -26,6 +26,7 @@ html = html.replace(/<a href="#" class="nav-logo">/g, '<a href="/" class="nav-lo
 const convertToAbsolute = (str) => {
   return str.replace(/href="style\.css"/g, 'href="/style.css"')
     .replace(/src="script\.js"/g, 'src="/script.js"')
+    .replace(/src="script\.min\.js"/g, 'src="/script.min.js?v=1.4"')
     .replace(/src="assets\//g, 'src="/assets/')
     .replace(/href="assets\//g, 'href="/assets/')
     .replace(/href="#/g, 'href="/#'); // Catch remaining hash links in footer
