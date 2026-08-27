@@ -24,7 +24,8 @@ html = html.replace(/<a href="#" class="nav-logo">/g, '<a href="/" class="nav-lo
 
 // We MUST update absolute routes so /services/ loads css from /style.css correctly
 const convertToAbsolute = (str) => {
-  return str.replace(/href="style\.css"/g, 'href="/style.css"')
+  return str.replace(/href="style\.min\.css"/g, 'href="/style.min.css"')
+    .replace(/href="liquid-glass\.css"/g, 'href="/liquid-glass.css"')
     .replace(/src="script\.js"/g, 'src="/script.js"')
     .replace(/src="script\.min\.js"/g, 'src="/script.min.js?v=1.4"')
     .replace(/src="assets\//g, 'src="/assets/')
