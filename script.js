@@ -1071,6 +1071,37 @@ function initLeadMagnet() {
             justify-content: center;
         }
 
+        /* Lead Magnet Floating Badge */
+        .lead-badge-trigger {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 9998;
+            background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50px;
+            padding: 12px 24px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transform: translateY(150%);
+            opacity: 0;
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .lead-badge-trigger.visible {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        .lead-badge-trigger:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(139, 92, 246, 0.4);
+        }
+
         /* Lead Magnet Modal Overlay */
         .lead-modal-overlay {
             position: fixed;
@@ -1194,6 +1225,9 @@ function initLeadMagnet() {
         .light-mode .lead-magnet-floating p {
             color: #475569;
         }
+        .light-mode .lead-badge-trigger {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
         .light-mode .lead-modal {
             background: #ffffff;
             border: 1px solid rgba(0, 0, 0, 0.1);
@@ -1229,6 +1263,14 @@ function initLeadMagnet() {
         <button class="download-btn" id="triggerLeadModal">Download Free Guide</button>
     `;
     document.body.appendChild(floatingCard);
+
+    const badgeTrigger = document.createElement('button');
+    badgeTrigger.className = 'lead-badge-trigger';
+    badgeTrigger.id = 'leadBadgeTrigger';
+    badgeTrigger.innerHTML = `
+        <span>🎁</span> Free Blueprint Guide
+    `;
+    document.body.appendChild(badgeTrigger);
 
     const modalOverlay = document.createElement('div');
     modalOverlay.className = 'lead-modal-overlay';
@@ -1267,16 +1309,25 @@ function initLeadMagnet() {
     const openModal = () => {
         modalOverlay.classList.add('active');
         floatingCard.classList.remove('visible');
+        badgeTrigger.classList.remove('visible');
     };
 
     const closeModal = () => {
         modalOverlay.classList.remove('active');
+        if (sessionStorage.getItem('leadMagnetDismissed')) {
+            badgeTrigger.classList.add('visible');
+        }
     };
 
     triggerBtn.addEventListener('click', openModal);
+    badgeTrigger.addEventListener('click', openModal);
+    
     closeFloating.addEventListener('click', () => {
         floatingCard.classList.remove('visible');
-        localStorage.setItem('leadMagnetDismissed', 'true');
+        sessionStorage.setItem('leadMagnetDismissed', 'true');
+        setTimeout(() => {
+            badgeTrigger.classList.add('visible');
+        }, 300);
     });
     closeBtn.addEventListener('click', closeModal);
     modalOverlay.addEventListener('click', (e) => {
@@ -1305,7 +1356,7 @@ function initLeadMagnet() {
 
             if (response.ok) {
                 submitBtn.textContent = 'Thank you!';
-                localStorage.setItem('leadMagnetDismissed', 'true');
+                sessionStorage.setItem('leadMagnetDismissed', 'true');
                 
                 if (typeof gtag === 'function') {
                     gtag('event', 'lead_magnet_download', {
@@ -1335,10 +1386,14 @@ function initLeadMagnet() {
     });
 
     // 4. Trigger immediately
-    if (!localStorage.getItem('leadMagnetDismissed')) {
+    if (!sessionStorage.getItem('leadMagnetDismissed')) {
         setTimeout(() => {
             floatingCard.classList.add('visible');
         }, 100); // Tiny 100ms delay to let the DOM settle and trigger transition
+    } else {
+        setTimeout(() => {
+            badgeTrigger.classList.add('visible');
+        }, 100);
     }
 }
 
