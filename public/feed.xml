@@ -7,6 +7,13 @@
     <language>en-us</language>
     <atom:link href="https://todayintech.in/public/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Building an AI-Powered Healthcare Revenue Cycle Management (RCM) &amp; Autonomous Claims Adjudication SaaS: Autonomous Medical Coding, Real-Time ANSI 837/835 EDI Pipelines, Predictive Denial Prevention, and Appeal Agents (2026)</title>
+      <link>https://todayintech.in/blog/ai-powered-healthcare-revenue-cycle-management-rcm-saas-guide-2026</link>
+      <description>An in-depth engineering blueprint for building a HIPAA-compliant AI Revenue Cycle Management (RCM) SaaS platform with autonomous clinical coding, ANSI 837/835 EDI clearinghouse engines, ML denial prediction, and autonomous appeal agents in 2026.</description>
+      <pubDate>Sat, 29 Aug 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/ai-powered-healthcare-revenue-cycle-management-rcm-saas-guide-2026</guid>
+    </item>
+    <item>
       <title>Building an AI-Powered Field Service Management (FSM) SaaS: Autonomous Dispatching, Computer Vision Diagnostics, Offline Mobile Architecture, and Dynamic Route Optimization (2026)</title>
       <link>https://todayintech.in/blog/ai-powered-field-service-management-fsm-saas-guide-2026</link>
       <description>An engineering blueprint for building a high-scale, multi-tenant AI Field Service Management (FSM) SaaS with constraint-based autonomous dispatching, edge computer vision diagnostics, offline-first mobile sync, and live IoT telematics in 2026.</description>
@@ -103,13 +110,6 @@
       <description>A comprehensive guide to selecting the right startup MVP software development partner. Explore modern SaaS architecture, cost structures, and flexible engineering models.</description>
       <pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://todayintech.in/blog/startup-mvp-software-development-partner-guide-2026</guid>
-    </item>
-    <item>
-      <title>Custom Telemedicine Software Development in 2026: A Technical Blueprint for HIPAA-Compliant Video &amp; EHR Integrations</title>
-      <link>https://todayintech.in/blog/custom-telemedicine-software-development-guide-2026</link>
-      <description>Discover how to build custom, HIPAA-compliant telemedicine software in 2026. Learn about WebRTC video infrastructure, FHIR/EHR integrations, security compliance, and development costs.</description>
-      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/custom-telemedicine-software-development-guide-2026</guid>
     </item>
   </channel>
 </rss>
