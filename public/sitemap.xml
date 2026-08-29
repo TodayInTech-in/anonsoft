@@ -143,6 +143,12 @@
 
   <!-- ===== BLOG POSTS ===== -->
   <url>
+    <loc>https://todayintech.in/blog/ai-powered-telepharmacy-e-prescribing-saas-guide-2026</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://todayintech.in/blog/ai-powered-healthcare-revenue-cycle-management-rcm-saas-guide-2026</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
