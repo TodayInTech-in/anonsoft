@@ -7,6 +7,13 @@
     <language>en-us</language>
     <atom:link href="https://todayintech.in/public/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Building an AI-Powered All-in-One Church Management Software (ChMS) &amp; Non-Profit Donation SaaS Platform: Multi-Campus Member CRM, Automated Recurring Tithing, Smart Volunteer Scheduling, Child Safety Check-In Kiosks, and Fund Accounting Architecture (2026)</title>
+      <link>https://todayintech.in/blog/ai-powered-church-management-software-chms-donation-saas-guide-2026</link>
+      <description>An in-depth technical engineering blueprint for building a multi-tenant AI Church Management Software (ChMS) &amp; Non-Profit SaaS with automated tithing, volunteer scheduling, child security check-in, and double-entry fund accounting in 2026.</description>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/ai-powered-church-management-software-chms-donation-saas-guide-2026</guid>
+    </item>
+    <item>
       <title>Building an AI-Powered 3D Product Configurator &amp; Visual CPQ SaaS: Three.js WebGL Architecture, Draco Mesh Compression, Real-Time PBR Shaders, and WebXR AR Integration (2026)</title>
       <link>https://todayintech.in/blog/ai-powered-3d-product-configurator-visual-cpq-saas-guide-2026</link>
       <description>An in-depth engineering blueprint for building a multi-tenant AI 3D Product Configurator and Visual CPQ (Configure, Price, Quote) SaaS platform with Three.js WebGL rendering, Draco compression, dynamic parametric geometry, and WebXR AR in 2026.</description>
@@ -103,13 +110,6 @@
       <description>An engineering blueprint to building an ambient AI medical scribe SaaS with real-time speech diarization, FHIR/HL7 EHR integration, and zero-data-retention HIPAA architecture in 2026.</description>
       <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://todayintech.in/blog/hipaa-compliant-ai-medical-scribe-ehr-integration-guide-2026</guid>
-    </item>
-    <item>
-      <title>Building an AI-Powered White-Label School ERP: The Reseller&apos;s Guide to Multi-Branch Campus Management (2026)</title>
-      <link>https://todayintech.in/blog/ai-powered-white-label-school-erp-software-reseller-guide-2026</link>
-      <description>An engineering blueprint to designing a white-label, multi-branch school ERP and Student Information System (SIS) SaaS platform for educational resellers.</description>
-      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/ai-powered-white-label-school-erp-software-reseller-guide-2026</guid>
     </item>
   </channel>
 </rss>
