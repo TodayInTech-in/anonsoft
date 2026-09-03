@@ -7,6 +7,13 @@
     <language>en-us</language>
     <atom:link href="https://todayintech.in/public/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Building an AI-Powered Behavioral Health &amp; Mental Health Telehealth SaaS: HIPAA-Compliant WebRTC, Automated SOAP/DAP Clinical Scribing, Measurement-Based Care, and Insurance Superbill Billing (2026)</title>
+      <link>https://todayintech.in/blog/ai-powered-behavioral-health-telehealth-saas-guide-2026</link>
+      <description>An in-depth engineering blueprint for building an enterprise multi-tenant AI Behavioral Health &amp; Mental Health Telehealth SaaS platform with HIPAA WebRTC video, automated SOAP/DAP clinical scribing, measurement-based care, and insurance superbills in 2026.</description>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/ai-powered-behavioral-health-telehealth-saas-guide-2026</guid>
+    </item>
+    <item>
       <title>Building an AI-Powered Laboratory Information Management System (LIMS) &amp; Clinical Diagnostics SaaS: Automated Sample Tracking (2D Barcode/RFID), Instrument Bi-Directional ASTM/HL7 Interfaces, FDA 21 CFR Part 11 Compliance, and AI Pathology Triage (2026)</title>
       <link>https://todayintech.in/blog/ai-powered-laboratory-information-management-system-lims-saas-guide-2026</link>
       <description>An in-depth technical engineering blueprint for building an enterprise multi-tenant AI Laboratory Information Management System (LIMS) and Clinical Diagnostics SaaS with ASTM/HL7 instrument interfacing, 2D cryogenic sample tracking, FDA 21 CFR Part 11 audit trails, and automated digital pathology triage in 2026.</description>
@@ -103,13 +110,6 @@
       <description>An engineering blueprint for building a multi-tenant B2B contract lifecycle management (CLM) SaaS with agentic redlining, OpenXML AST diffing, legal RAG, and automated ERP/CRM synchronization in 2026.</description>
       <pubDate>Fri, 21 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://todayintech.in/blog/ai-powered-b2b-contract-lifecycle-management-clm-saas-guide-2026</guid>
-    </item>
-    <item>
-      <title>Building an AI-Powered Embedded B2B Payments &amp; Multi-Bank Treasury SaaS: Architecture, FedNow / RTP Rails, and Real-Time Reconciliation (2026)</title>
-      <link>https://todayintech.in/blog/ai-powered-b2b-treasury-embedded-payments-saas-guide-2026</link>
-      <description>An engineering blueprint for building a multi-tenant B2B embedded payments and multi-bank treasury management SaaS with instant FedNow/RTP rails, double-entry ledgers, and AI reconciliation in 2026.</description>
-      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/ai-powered-b2b-treasury-embedded-payments-saas-guide-2026</guid>
     </item>
   </channel>
 </rss>
