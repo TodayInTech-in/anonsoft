@@ -95,6 +95,25 @@ This website is built with **zero dependencies** — pure web technologies:
 
 ---
 
+## 🏷️ White-Labeling & Instant Rebranding
+
+This entire website can be transformed into any company's brand in seconds using a single source of truth configuration file (`whitelabel.json`).
+
+### How to Rebrand the Entire Website:
+
+1. Edit [`whitelabel.json`](file:///root/project/todayintechweb/whitelabel.json) with your target company details (name, domain, emails, WhatsApp, Calendly, social links).
+2. Run the white-label engine:
+   ```bash
+   python3 scripts/apply_whitelabel.py
+   ```
+3. The engine automatically:
+   - Scans and replaces all company names, emails, phone numbers, and URLs across all HTML, JSX, markdown blogs, scripts, and metadata files.
+   - Regenerates XML Sitemaps (`sitemap.xml`, `sitemap-blog.xml`, `public/sitemap.xml`) with your new domain.
+   - Re-indexes `llms.txt` and `llms-full.txt`.
+   - Re-compiles all blog markdown files with updated canonical links and author branding.
+
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites

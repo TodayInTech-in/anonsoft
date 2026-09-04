@@ -1,0 +1,21 @@
+{
+  "brand": {
+    "name": "AcmeSoftware",
+    "name_spaced": "Acme Software",
+    "name_lower": "acmesoftware",
+    "tagline": "Enterprise Custom Software & HealthTech Agency",
+    "domain": "acmesoftware.com",
+    "full_url": "https://acmesoftware.com",
+    "logo_path": "/assets/nav_logo.png",
+    "og_image": "https://acmesoftware.com/assets/og-image.png"
+  },
+  "contacts": {
+    "email": "hello@acmesoftware.com",
+    "phone": "+1 800 555 0199",
+    "whatsapp_number": "18005550199",
+    "whatsapp_url": "https://wa.me/18005550199",
+    "calendly_url": "https://calendly.com/acmesoftware/30min",
+    "calendly_handle": "acmesoftware",
+    "twitter": "@acmesoftware"
+  }
+}

@@ -7,6 +7,13 @@
     <language>en-us</language>
     <atom:link href="https://todayintech.in/public/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Building an AI-Powered Dental Practice Management System (PMS) &amp; Teledentistry SaaS: Computer Vision Radiography, Automated CDT Insurance Billing, and Cloud Odontograms (2026)</title>
+      <link>https://todayintech.in/blog/ai-powered-dental-practice-management-radiology-saas-guide-2026</link>
+      <description>An in-depth engineering blueprint for building an enterprise multi-tenant AI Dental Practice Management SaaS with computer vision X-ray analysis, automated ADA CDT coding, 3D interactive odontograms, and HIPAA-compliant teledentistry in 2026.</description>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/ai-powered-dental-practice-management-radiology-saas-guide-2026</guid>
+    </item>
+    <item>
       <title>Building an AI-Powered Behavioral Health &amp; Mental Health Telehealth SaaS: HIPAA-Compliant WebRTC, Automated SOAP/DAP Clinical Scribing, Measurement-Based Care, and Insurance Superbill Billing (2026)</title>
       <link>https://todayintech.in/blog/ai-powered-behavioral-health-telehealth-saas-guide-2026</link>
       <description>An in-depth engineering blueprint for building an enterprise multi-tenant AI Behavioral Health &amp; Mental Health Telehealth SaaS platform with HIPAA WebRTC video, automated SOAP/DAP clinical scribing, measurement-based care, and insurance superbills in 2026.</description>
@@ -103,13 +110,6 @@
       <description>An engineering blueprint for building a multi-tenant B2B Remote Patient Monitoring (RPM) and Chronic Care Management (CCM) SaaS with cellular IoT telemetry, automated CPT billing, and EHR integration in 2026.</description>
       <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://todayintech.in/blog/ai-powered-remote-patient-monitoring-rpm-ccm-saas-guide-2026</guid>
-    </item>
-    <item>
-      <title>Building an AI-Powered B2B Contract Lifecycle Management (CLM) SaaS: Multi-Agent Redlining, Legal RAG, and ERP Integration (2026)</title>
-      <link>https://todayintech.in/blog/ai-powered-b2b-contract-lifecycle-management-clm-saas-guide-2026</link>
-      <description>An engineering blueprint for building a multi-tenant B2B contract lifecycle management (CLM) SaaS with agentic redlining, OpenXML AST diffing, legal RAG, and automated ERP/CRM synchronization in 2026.</description>
-      <pubDate>Fri, 21 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/ai-powered-b2b-contract-lifecycle-management-clm-saas-guide-2026</guid>
     </item>
   </channel>
 </rss>

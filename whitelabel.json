@@ -1,0 +1,21 @@
+{
+  "brand": {
+    "name": "TodayInTech",
+    "name_spaced": "Today In Tech",
+    "name_lower": "todayintech",
+    "tagline": "Custom Startup Software Development Agency",
+    "domain": "todayintech.in",
+    "full_url": "https://todayintech.in",
+    "logo_path": "/assets/nav_logo.png",
+    "og_image": "https://todayintech.in/assets/og-image.png"
+  },
+  "contacts": {
+    "email": "contact@todayintech.in",
+    "phone": "+91 76793 49780",
+    "whatsapp_number": "917679349780",
+    "whatsapp_url": "https://wa.me/917679349780",
+    "calendly_url": "https://calendly.com/todayintechdotin/30min",
+    "calendly_handle": "todayintechdotin",
+    "twitter": "@todayintech"
+  }
+}
