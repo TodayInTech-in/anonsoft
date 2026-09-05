@@ -7,6 +7,13 @@
     <language>en-us</language>
     <atom:link href="https://todayintech.in/public/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Building an AI-Powered Anti-Money Laundering (AML) &amp; Real-Time Fraud Detection FinTech SaaS: Graph Neural Networks, Apache Flink Stream Ingestion, Automated FinCEN SAR Generation, and Sanctions Screening (2026)</title>
+      <link>https://todayintech.in/blog/ai-powered-anti-money-laundering-aml-fraud-detection-fintech-saas-guide-2026</link>
+      <description>A comprehensive engineering blueprint for building an enterprise AI-powered Anti-Money Laundering (AML) and real-time transaction monitoring SaaS with Graph Neural Networks, sub-50ms fraud scoring, automated SAR filing, and ISO 20022 compliance in 2026.</description>
+      <pubDate>Sun, 06 Sep 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/ai-powered-anti-money-laundering-aml-fraud-detection-fintech-saas-guide-2026</guid>
+    </item>
+    <item>
       <title>Building an AI-Powered Dental Practice Management System (PMS) &amp; Teledentistry SaaS: Computer Vision Radiography, Automated CDT Insurance Billing, and Cloud Odontograms (2026)</title>
       <link>https://todayintech.in/blog/ai-powered-dental-practice-management-radiology-saas-guide-2026</link>
       <description>An in-depth engineering blueprint for building an enterprise multi-tenant AI Dental Practice Management SaaS with computer vision X-ray analysis, automated ADA CDT coding, 3D interactive odontograms, and HIPAA-compliant teledentistry in 2026.</description>
@@ -103,13 +110,6 @@
       <description>An engineering blueprint for building a multi-tenant B2B Home Care Agency SaaS and 21st Century Cures Act compliant EVV platform with GPS geofencing, AI shift-matching, and automated Medicaid billing in 2026.</description>
       <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://todayintech.in/blog/ai-powered-home-care-agency-software-gps-evv-scheduling-saas-guide-2026</guid>
-    </item>
-    <item>
-      <title>Building an AI-Powered Remote Patient Monitoring (RPM) &amp; Chronic Care Management (CCM) SaaS: HIPAA IoT Telemetry, Real-Time Vitals Alerting, and Medicare CPT Billing (2026)</title>
-      <link>https://todayintech.in/blog/ai-powered-remote-patient-monitoring-rpm-ccm-saas-guide-2026</link>
-      <description>An engineering blueprint for building a multi-tenant B2B Remote Patient Monitoring (RPM) and Chronic Care Management (CCM) SaaS with cellular IoT telemetry, automated CPT billing, and EHR integration in 2026.</description>
-      <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/ai-powered-remote-patient-monitoring-rpm-ccm-saas-guide-2026</guid>
     </item>
   </channel>
 </rss>
