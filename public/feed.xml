@@ -7,6 +7,13 @@
     <language>en-us</language>
     <atom:link href="https://todayintech.in/public/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Building an AI-Powered Autonomous Cybersecurity SOC &amp; XDR SaaS: eBPF Kernel Telemetry, Agentic Incident Triage, Automated SOAR Playbooks, and MITRE ATT&amp;CK Mapping (2026)</title>
+      <link>https://todayintech.in/blog/ai-powered-autonomous-cybersecurity-soc-xdr-saas-guide-2026</link>
+      <description>An enterprise engineering blueprint for building an AI-native Security Operations Center (SOC) and Extended Detection and Response (XDR) SaaS with eBPF telemetry, sub-second threat scoring, autonomous agentic triage, and automated SOAR orchestration in 2026.</description>
+      <pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/ai-powered-autonomous-cybersecurity-soc-xdr-saas-guide-2026</guid>
+    </item>
+    <item>
       <title>Building an AI-Powered Anti-Money Laundering (AML) &amp; Real-Time Fraud Detection FinTech SaaS: Graph Neural Networks, Apache Flink Stream Ingestion, Automated FinCEN SAR Generation, and Sanctions Screening (2026)</title>
       <link>https://todayintech.in/blog/ai-powered-anti-money-laundering-aml-fraud-detection-fintech-saas-guide-2026</link>
       <description>A comprehensive engineering blueprint for building an enterprise AI-powered Anti-Money Laundering (AML) and real-time transaction monitoring SaaS with Graph Neural Networks, sub-50ms fraud scoring, automated SAR filing, and ISO 20022 compliance in 2026.</description>
@@ -103,13 +110,6 @@
       <description>An engineering blueprint for building an enterprise-grade AI voice agent SaaS with bidirectional WebSockets, sub-300ms STT/TTS streaming, turn detection, knowledge RAG, and CRM telephony orchestration in 2026.</description>
       <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://todayintech.in/blog/ai-powered-real-time-voice-agent-customer-support-saas-guide-2026</guid>
-    </item>
-    <item>
-      <title>Building an AI-Powered Home Care Agency SaaS &amp; EVV Platform: GPS Geofencing, Smart Caregiver Scheduling, and Medicaid Billing Architecture (2026)</title>
-      <link>https://todayintech.in/blog/ai-powered-home-care-agency-software-gps-evv-scheduling-saas-guide-2026</link>
-      <description>An engineering blueprint for building a multi-tenant B2B Home Care Agency SaaS and 21st Century Cures Act compliant EVV platform with GPS geofencing, AI shift-matching, and automated Medicaid billing in 2026.</description>
-      <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/ai-powered-home-care-agency-software-gps-evv-scheduling-saas-guide-2026</guid>
     </item>
   </channel>
 </rss>
