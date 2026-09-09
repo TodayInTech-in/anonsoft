@@ -7,6 +7,13 @@
     <language>en-us</language>
     <atom:link href="https://todayintech.in/public/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Building an AI-Powered Global Supply Chain Visibility &amp; Intelligent Freight Logistics SaaS: IoT Telematics, Dynamic Route Optimization, Autonomous Bill of Lading OCR, and EDI 204/214 Integration (2026)</title>
+      <link>https://todayintech.in/blog/ai-powered-supply-chain-freight-logistics-saas-guide-2026</link>
+      <description>An authoritative engineering blueprint for building an enterprise AI-powered supply chain visibility and freight logistics SaaS with real-time IoT telematics, dynamic multi-modal route optimization, autonomous bill of lading OCR, and EDI carrier integrations in 2026.</description>
+      <pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/ai-powered-supply-chain-freight-logistics-saas-guide-2026</guid>
+    </item>
+    <item>
       <title>Building an AI-Powered Clinical Trial Matching &amp; Patient Recruitment SaaS: FHIR R4 Ingestion, LLM Protocol Parsing, Vector Search, and FDA 21 CFR Part 11 Compliance (2026)</title>
       <link>https://todayintech.in/blog/ai-powered-clinical-trial-matching-patient-recruitment-saas-guide-2026</link>
       <description>An authoritative engineering blueprint for building an AI-powered clinical trial matching and patient recruitment SaaS with HL7 FHIR ingestion, unstructured protocol NLP, sub-second cohort vector search, and FDA 21 CFR Part 11 validation in 2026.</description>
@@ -103,13 +110,6 @@
       <description>An engineering blueprint for building a multi-tenant AI Accounts Payable (AP) and invoice automation SaaS with multi-modal Vision LLM OCR, automated 3-way PO matching, ERP synchronization, and anomaly fraud detection in 2026.</description>
       <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://todayintech.in/blog/ai-powered-accounts-payable-invoice-automation-saas-guide-2026</guid>
-    </item>
-    <item>
-      <title>Building an AI-Powered Adaptive Learning &amp; Automated Grading EdTech SaaS: Knowledge Tracing Graphs, LTI 1.3 LMS Interoperability, Real-Time Feedback Pipelines, and Multi-Tenant Architecture (2026)</title>
-      <link>https://todayintech.in/blog/ai-powered-adaptive-learning-automated-grading-edtech-saas-guide-2026</link>
-      <description>An engineering blueprint for building a multi-tenant AI adaptive learning and automated grading EdTech SaaS with Deep Knowledge Tracing (DKT), vector RAG rubric evaluation, LTI 1.3 LMS integration, and sub-second feedback in 2026.</description>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/ai-powered-adaptive-learning-automated-grading-edtech-saas-guide-2026</guid>
     </item>
   </channel>
 </rss>
