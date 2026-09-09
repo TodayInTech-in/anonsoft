@@ -31,7 +31,7 @@ export default function CtaSection() {
 
   const handleBooking = (e) => {
     e.preventDefault();
-    triggerCalendly('https://calendly.com/todayintechdotin/30min');
+    triggerCalendly('https://calendly.com/anonsoftdotin/30min');
   };
 
   return (
@@ -43,11 +43,11 @@ export default function CtaSection() {
             Schedule a free 30-minute discovery call with our technical architect. We'll audit your product concept, suggest technical architecture, and provide a fixed-scope quote in 24 hours.
           </p>
           <div className="cta-buttons">
-            <a href="https://calendly.com/todayintechdotin/30min" onClick={handleBooking} className="btn-primary" id="finalCta">
+            <a href="https://calendly.com/anonsoftdotin/30min" onClick={handleBooking} className="btn-primary" id="finalCta">
               Book Free Strategy Call
             </a>
             <a
-              href="https://wa.me/917679349780"
+              href="https://wa.me/919007900972"
               target="_blank"
               rel="noreferrer"
               className="btn-secondary"

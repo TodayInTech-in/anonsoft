@@ -1,37 +1,37 @@
-# TodayInTech
+# Anonsoft
 
 > A premier software development agency specializing in scalable custom software, HIPAA-compliant virtual care solutions, 3D product configurators, and EdTech platforms.
 
-This is the main directory of the TodayInTech website, custom software solutions, and case studies, optimized for AI models, search crawlers, and LLM interpretation. Here you will find direct links to our key services, active portfolios, and engineering insights.
+This is the main directory of the Anonsoft website, custom software solutions, and case studies, optimized for AI models, search crawlers, and LLM interpretation. Here you will find direct links to our key services, active portfolios, and engineering insights.
 
 ## Core Pages
 
-- [TodayInTech Homepage](https://todayintech.in/): Looking for a custom startup software development agency? TodayInTech builds scalable SaaS, AI tools, and mobile apps, launching production-ready software in weeks.
-- [Branded Wellness & Fitness App Development](https://todayintech.in/wellness-platform-development): Build a branded wellness app with wearable integration, nutrition tracking, live classes, and community features—delivered faster and cheaper than custom.
-- [Healthcare SaaS MVP Development Studio](https://todayintech.in/healthcare-saas-mvp-development): Build a funded-ready healthcare SaaS MVP in 8 weeks. Learn about our scalable HIPAA-compliant architecture for health-tech founders and pre-seed startups.
-- [White-Label Telemedicine Software for Clinics](https://todayintech.in/telemedicine-software-for-clinics): Launch a HIPAA-compliant, branded telemedicine platform for your clinic in 30 days. Includes Epic/Cerner integration and no per-provider licensing fees.
+- [Anonsoft Homepage](https://anonsoft.in/): Looking for a custom startup software development agency? Anonsoft builds scalable SaaS, AI tools, and mobile apps, launching production-ready software in weeks.
+- [Branded Wellness & Fitness App Development](https://anonsoft.in/wellness-platform-development): Build a branded wellness app with wearable integration, nutrition tracking, live classes, and community features—delivered faster and cheaper than custom.
+- [Healthcare SaaS MVP Development Studio](https://anonsoft.in/healthcare-saas-mvp-development): Build a funded-ready healthcare SaaS MVP in 8 weeks. Learn about our scalable HIPAA-compliant architecture for health-tech founders and pre-seed startups.
+- [White-Label Telemedicine Software for Clinics](https://anonsoft.in/telemedicine-software-for-clinics): Launch a HIPAA-compliant, branded telemedicine platform for your clinic in 30 days. Includes Epic/Cerner integration and no per-provider licensing fees.
 
 ## Services & Projects
 
-- [AI Community Platform & Learning App](https://todayintech.in/projects/ai-community): How TodayInTech built AI Community College — a structured AI learning platform with 52 chapters and multi-language support for AI learners.
-- [AI Text to Speech Voice Cloning SaaS](https://todayintech.in/projects/vocal-flow): How TodayInTech built VocalFlow — an AI text-to-speech tool with 300+ voices and 50+ languages to generate lifelike voiceovers in seconds.
-- [Church Management Software (ChMS)](https://todayintech.in/projects/church-management-software): Discover TodayInTech ChMS — a modern Church Management Software platform to manage member directories, online tithing, rosters, and bookkeeping.
-- [Custom Casino Game Development Company](https://todayintech.in/projects/casino-blackjack-game): Partner with a top casino game development company to launch custom online casino games, HTML5 blackjack engines, and multiplayer table software.
-- [HIPAA-Compliant Telemedicine Developer](https://todayintech.in/projects/mednowna): Hire a top HIPAA-compliant telemedicine app developer. We build white-label telehealth platforms, patient portal apps, and FHIR virtual care software.
-- [Master AI Mobile App & GPT Assistant](https://todayintech.in/projects/master-ai): Discover how TodayInTech built Master AI — a mobile app powered by GPT-4 and Claude, featuring AI chat and viral script creation tools.
-- [NexBotix — Multi-Channel Marketing AI](https://todayintech.in/projects/nexbotix): How TodayInTech built NexBotix — a multi-channel marketing automation platform with WhatsApp marketing, AI chatbots, and email automation.
-- [Radio Stiming — Live Streaming App](https://todayintech.in/projects/radio-station): How TodayInTech built Radio Stiming — a live radio streaming platform with show scheduling, DJ profiles, and listener engagement tools.
-- [Senior Care Agency Software & Home Care](https://todayintech.in/projects/senior-care-agency): Build or rebrand EVV-compliant home care agency software, caregiver scheduling tools, and family portals with a top HIPAA healthcare software agency.
-- [Three.js 3D Product Customizer WebGL](https://todayintech.in/projects/impakto): How we built an interactive, high-performance 3D e-commerce configurator using Three.js and WebGL.
-- [White-Label Inventory & Billing SaaS](https://todayintech.in/projects/inventory-billing): Deploy a white-label retail billing SaaS and inventory management system. Built for software resellers and multi-warehouse operations.
-- [White-Label Restaurant POS & Kitchen](https://todayintech.in/projects/restaurant-management-system): Discover TodayInTech Restaurant Management — a white-label POS with kitchen displays, table reservations, delivery tracking, and inventory control.
-- [White-Label School ERP & Campus SaaS](https://todayintech.in/projects/school-management-system): Discover TodayInTech School ERP — a campus management platform to streamline admissions, automated fee billing, gradebooks, and parent portals.
+- [AI Community Platform & Learning App](https://anonsoft.in/projects/ai-community): How Anonsoft built AI Community College — a structured AI learning platform with 52 chapters and multi-language support for AI learners.
+- [AI Text to Speech Voice Cloning SaaS](https://anonsoft.in/projects/vocal-flow): How Anonsoft built VocalFlow — an AI text-to-speech tool with 300+ voices and 50+ languages to generate lifelike voiceovers in seconds.
+- [Church Management Software (ChMS)](https://anonsoft.in/projects/church-management-software): Discover Anonsoft ChMS — a modern Church Management Software platform to manage member directories, online tithing, rosters, and bookkeeping.
+- [Custom Casino Game Development Company](https://anonsoft.in/projects/casino-blackjack-game): Partner with a top casino game development company to launch custom online casino games, HTML5 blackjack engines, and multiplayer table software.
+- [HIPAA-Compliant Telemedicine Developer](https://anonsoft.in/projects/mednowna): Hire a top HIPAA-compliant telemedicine app developer. We build white-label telehealth platforms, patient portal apps, and FHIR virtual care software.
+- [Master AI Mobile App & GPT Assistant](https://anonsoft.in/projects/master-ai): Discover how Anonsoft built Master AI — a mobile app powered by GPT-4 and Claude, featuring AI chat and viral script creation tools.
+- [NexBotix — Multi-Channel Marketing AI](https://anonsoft.in/projects/nexbotix): How Anonsoft built NexBotix — a multi-channel marketing automation platform with WhatsApp marketing, AI chatbots, and email automation.
+- [Radio Stiming — Live Streaming App](https://anonsoft.in/projects/radio-station): How Anonsoft built Radio Stiming — a live radio streaming platform with show scheduling, DJ profiles, and listener engagement tools.
+- [Senior Care Agency Software & Home Care](https://anonsoft.in/projects/senior-care-agency): Build or rebrand EVV-compliant home care agency software, caregiver scheduling tools, and family portals with a top HIPAA healthcare software agency.
+- [Three.js 3D Product Customizer WebGL](https://anonsoft.in/projects/impakto): How we built an interactive, high-performance 3D e-commerce configurator using Three.js and WebGL.
+- [White-Label Inventory & Billing SaaS](https://anonsoft.in/projects/inventory-billing): Deploy a white-label retail billing SaaS and inventory management system. Built for software resellers and multi-warehouse operations.
+- [White-Label Restaurant POS & Kitchen](https://anonsoft.in/projects/restaurant-management-system): Discover Anonsoft Restaurant Management — a white-label POS with kitchen displays, table reservations, delivery tracking, and inventory control.
+- [White-Label School ERP & Campus SaaS](https://anonsoft.in/projects/school-management-system): Discover Anonsoft School ERP — a campus management platform to streamline admissions, automated fee billing, gradebooks, and parent portals.
 
 ## Featured Blog Articles
 
-- [5G Applications in Healthcare](https://todayintech.in/blog/5g-applications-in-healthcare): Complete guide on 5g applications in healthcare. Learn about development process, best practices, cost analysis, and implementation strategies for healthcare organizations in 2026.
-- [AI Chatbots vs Traditional Chatbots: The Complete 2026 Comparison](https://todayintech.in/blog/ai-chatbots-vs-traditional-chatbots): Are you choosing between AI and rule-based chatbots? A deep technical comparison covering NLP, LLM, cost, accuracy, and business ROI in 2026.
-- [AI Clinical Workflow Automation: The $300B Healthcare Opportunity in 2026](https://todayintech.in/blog/ai-clinical-workflow-automation-healthcare-2026): How AI ambient documentation, agentic workflows, and clinical automation are transforming US healthcare — and how to build these systems with a HIPAA-compliant tech stack.
-- [AI Medical Scribe Software Development in 2026](https://todayintech.in/blog/ai-medical-scribe-software-development-in-2026): Complete guide on ai medical scribe software development in 2026. Learn about development process, best practices, cost analysis, and implementation strategies for healthcare organizations in 2026.
-- [AI Medical Scribe Software Development in 2026: Complete Guide for US Clinics](https://todayintech.in/blog/ai-medical-scribe-software-development-2026): Learn how to build a HIPAA-compliant ambient AI scribe for US clinics — architecture, LLM choice, EHR integration, pricing benchmarks, and go-to-market strategy.
-- [Full Directory of Articles](https://todayintech.in/llms-full.txt): Comprehensive listing of all technical insights and blog posts.
+- [5G Applications in Healthcare](https://anonsoft.in/blog/5g-applications-in-healthcare): Complete guide on 5g applications in healthcare. Learn about development process, best practices, cost analysis, and implementation strategies for healthcare organizations in 2026.
+- [AI Chatbots vs Traditional Chatbots: The Complete 2026 Comparison](https://anonsoft.in/blog/ai-chatbots-vs-traditional-chatbots): Are you choosing between AI and rule-based chatbots? A deep technical comparison covering NLP, LLM, cost, accuracy, and business ROI in 2026.
+- [AI Clinical Workflow Automation: The $300B Healthcare Opportunity in 2026](https://anonsoft.in/blog/ai-clinical-workflow-automation-healthcare-2026): How AI ambient documentation, agentic workflows, and clinical automation are transforming US healthcare — and how to build these systems with a HIPAA-compliant tech stack.
+- [AI Medical Scribe Software Development in 2026](https://anonsoft.in/blog/ai-medical-scribe-software-development-in-2026): Complete guide on ai medical scribe software development in 2026. Learn about development process, best practices, cost analysis, and implementation strategies for healthcare organizations in 2026.
+- [AI Medical Scribe Software Development in 2026: Complete Guide for US Clinics](https://anonsoft.in/blog/ai-medical-scribe-software-development-2026): Learn how to build a HIPAA-compliant ambient AI scribe for US clinics — architecture, LLM choice, EHR integration, pricing benchmarks, and go-to-market strategy.
+- [Full Directory of Articles](https://anonsoft.in/llms-full.txt): Comprehensive listing of all technical insights and blog posts.

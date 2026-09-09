@@ -2,7 +2,7 @@
 title: "Building a White-Label Church Management System (ChMS) and Custom Donation Platform (2026)"
 description: "An engineering blueprint to designing a white-label church management system (ChMS), custom tithing platforms, member tracking, and event scheduling ERPs."
 date: "2026-08-16"
-author: "TodayInTech Engineering Team"
+author: "Anonsoft Engineering Team"
 category: "SaaS Solutions"
 image: "church_chms_hero.jpg"
 keywords: ["all-in-one church management system ChMS", "custom church donation platform developer", "white-label church administration software", "ChMS database solutions developer", "church membership tracking software custom", "white label church event scheduling tool", "church mobile app development company", "custom church tithing and contribution software", "private label church management software", "church volunteer scheduling software custom"]
@@ -92,9 +92,9 @@ Yes. Modern ChMS databases support webhooks and automated daily synchronization 
 
 ---
 
-## Get Started with TodayInTech ChMS Engineering Services
+## Get Started with Anonsoft ChMS Engineering Services
 
-Are you ready to design a scalable, white-label church administration tool, launch a custom church donation platform, or engineer a native mobile app for your congregation? TodayInTech is your dedicated software development partner.
+Are you ready to design a scalable, white-label church administration tool, launch a custom church donation platform, or engineer a native mobile app for your congregation? Anonsoft is your dedicated software development partner.
 
 * Discover our custom ERP and SaaS systems at [projects/church-management-software.html](/projects/church-management-software.html).
 * Speak directly with our lead architects and engineers by visiting [/bookademo/](/bookademo/).

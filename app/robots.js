@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://todayintech.in/sitemap.xml',
+    sitemap: 'https://anonsoft.in/sitemap.xml',
   };
 }

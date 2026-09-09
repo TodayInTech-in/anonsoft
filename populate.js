@@ -73,7 +73,7 @@ const pagesData = {
         <section class="hero" style="padding: calc(var(--nav-height) + 60px) 0 40px; text-align: center;">
             <div class="container">
                 <span class="section-label">The Agency</span>
-                <h1 class="hero-title" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 24px;">Who is <span class="gradient-text">TodayInTech?</span></h1>
+                <h1 class="hero-title" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 24px;">Who is <span class="gradient-text">Anonsoft?</span></h1>
                 <p style="max-width: 600px; margin: 0 auto; color: var(--text-secondary);">A global collective of engineers, designers, and strategists redefining what software delivery should look like.</p>
             </div>
         </section>
@@ -152,7 +152,7 @@ const pagesData = {
                           <li>5+ Years React/Node</li>
                           <li>Experience with AWS and CI/CD workflows</li>
                         </ul>
-                        <a href="mailto:careers@todayintech.in" class="btn-secondary" style="display:inline-block; border-color:var(--primary); color:var(--primary); padding: 8px 16px; border-radius: 8px; font-weight: bold; text-decoration: none;">Apply Now</a>
+                        <a href="mailto:careers@anonsoft.in" class="btn-secondary" style="display:inline-block; border-color:var(--primary); color:var(--primary); padding: 8px 16px; border-radius: 8px; font-weight: bold; text-decoration: none;">Apply Now</a>
                     </div>
                     <div class="process-step" style="text-align: left;">
                         <h3>Lead UX/UI Designer</h3>
@@ -161,7 +161,7 @@ const pagesData = {
                           <li>Strong Figma & Prototyping portfolio</li>
                           <li>Experience with healthcare design a plus</li>
                         </ul>
-                        <a href="mailto:careers@todayintech.in" class="btn-secondary" style="display:inline-block; border-color:var(--primary); color:var(--primary); padding: 8px 16px; border-radius: 8px; font-weight: bold; text-decoration: none;">Apply Now</a>
+                        <a href="mailto:careers@anonsoft.in" class="btn-secondary" style="display:inline-block; border-color:var(--primary); color:var(--primary); padding: 8px 16px; border-radius: 8px; font-weight: bold; text-decoration: none;">Apply Now</a>
                     </div>
                 </div>
             </div>

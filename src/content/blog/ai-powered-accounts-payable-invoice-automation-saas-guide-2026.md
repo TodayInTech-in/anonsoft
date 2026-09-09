@@ -2,7 +2,7 @@
 title: "Building an AI-Powered Accounts Payable (AP) Automation & Autonomous Invoice Processing SaaS: Multi-Modal Vision LLMs, 3-Way PO Matching, Real-Time ERP Sync, and Fraud Detection (2026)"
 description: "An engineering blueprint for building a multi-tenant AI Accounts Payable (AP) and invoice automation SaaS with multi-modal Vision LLM OCR, automated 3-way PO matching, ERP synchronization, and anomaly fraud detection in 2026."
 date: "2026-08-27"
-author: "TodayInTech Engineering Team"
+author: "Anonsoft Engineering Team"
 category: "FinTech & B2B SaaS"
 image: "ai_ap_invoice_automation_hero.jpg"
 keywords: ["white-label invoicing saas platform", "billing software development company", "ai accounts payable software", "automated invoice processing saas", "3-way po matching software", "b2b fintech software development", "custom inventory and billing software", "erp invoice automation"]
@@ -301,15 +301,15 @@ Yes. Enterprise AP platforms utilize hybrid API connectors and secure on-premise
 The platform uses multi-layered fraud defense: cryptographic file hashes to detect duplicate uploads, fuzzy string and date matching on invoice numbers, bank detail drift detection that flags unauthorized remittance account changes, and anomaly detection algorithms for unusual transaction spikes.
 
 ### 5. What is the typical development timeline for building a custom white-label AP automation platform?
-With a specialized development partner like TodayInTech, a fully functional MVP featuring multi-modal invoice extraction, automated 3-way matching, human-in-the-loop validation, and ERP integration can be built and deployed in **4 to 8 weeks**.
+With a specialized development partner like Anonsoft, a fully functional MVP featuring multi-modal invoice extraction, automated 3-way matching, human-in-the-loop validation, and ERP integration can be built and deployed in **4 to 8 weeks**.
 
 ---
 
 ## Ready to Build Your Custom AI-Powered Invoicing & AP SaaS?
 
-Whether you are launching a high-growth B2B FinTech product, automating multi-entity accounts payable, or modernizing your enterprise ERP billing stack, **TodayInTech** is your dedicated software engineering partner.
+Whether you are launching a high-growth B2B FinTech product, automating multi-entity accounts payable, or modernizing your enterprise ERP billing stack, **Anonsoft** is your dedicated software engineering partner.
 
 * **Explore Our Invoicing Solutions:** Learn more on our [Custom Invoicing & Billing Software Platform](/projects/inventory-billing.html).
 * **AI & Automation Capabilities:** Explore our AI workflow platform at [NexBotix Enterprise Automation](/projects/nexbotix.html).
 * **Zero Upfront Risk:** We build your functional working prototype first under our [No Upfront Payment Software Agency Model](/blog/no-upfront-payment-software-agency).
-* **Schedule an Engineering Consultation:** [Book a 30-Minute Architecture Call with Our Engineering Team](https://calendly.com/todayintechdotin/30min).
+* **Schedule an Engineering Consultation:** [Book a 30-Minute Architecture Call with Our Engineering Team](https://calendly.com/anonsoftdotin/30min).

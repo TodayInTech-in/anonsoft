@@ -1,6 +1,6 @@
 # Outreach Run — April 18, 2026
 
-**From:** TodayInTech
+**From:** Anonsoft
 **Calendar link:** https://calendly.com/LaunchHealthApp
 **Target:** Clinics, telehealth startups, small businesses with low budget — Goal: Book a call
 **Run type:** Automated (scheduled-task run)
@@ -85,13 +85,13 @@ Total messages: **9**
 >
 > Here's the part that usually gets painful around month two or three: the tech. A new DPC practice needs a real membership sign-up flow, online scheduling, a simple patient portal, and a way to do telehealth on the days people can't drive in. Most agencies quote $25k–$60k for that stack and take three months. That's hard to justify when every dollar is meant to go back to patient care.
 >
-> At TodayInTech we work with small clinics and telehealth brands at exactly this stage. We build you a free prototype first — no deposit, no SOW — and you only pay if you're happy with it. If not, you walk away with zero owed.
+> At Anonsoft we work with small clinics and telehealth brands at exactly this stage. We build you a free prototype first — no deposit, no SOW — and you only pay if you're happy with it. If not, you walk away with zero owed.
 >
 > Would 15 minutes next week be worth it to see what that could look like for Twisted Roots?
 >
 > Book here: https://calendly.com/LaunchHealthApp
 >
-> — TodayInTech
+> — Anonsoft
 
 **Follow-up Day 2:**
 
@@ -103,7 +103,7 @@ Total messages: **9**
 >
 > Or grab a time whenever: https://calendly.com/LaunchHealthApp
 >
-> — TodayInTech
+> — Anonsoft
 
 **Follow-up Day 5:**
 
@@ -117,7 +117,7 @@ Total messages: **9**
 >
 > Wishing the practice a great start.
 >
-> — TodayInTech
+> — Anonsoft
 
 ---
 
@@ -131,13 +131,13 @@ Total messages: **9**
 >
 > One thing we see a lot with nonprofit and rural clinics at this exact moment: the big EHR and practice-management vendors quote six figures up front for what's actually needed on day one, which is fairly simple — membership signup, scheduling, secure patient messaging, and intake forms. Waiting months and spending that kind of capital is rarely the right move when the goal is to open fast.
 >
-> At TodayInTech we build a free working prototype first for clinics in this position. You see the signup flow, the appointment system, the portal — all running — before spending a dollar. If it's right, we finish it; if it isn't, you owe nothing.
+> At Anonsoft we build a free working prototype first for clinics in this position. You see the signup flow, the appointment system, the portal — all running — before spending a dollar. If it's right, we finish it; if it isn't, you owe nothing.
 >
 > Could we get 15 minutes on the calendar this or next week to see if we can help the Castine launch move faster?
 >
 > https://calendly.com/LaunchHealthApp
 >
-> — TodayInTech
+> — Anonsoft
 
 **Follow-up Day 2:**
 
@@ -149,7 +149,7 @@ Total messages: **9**
 >
 > https://calendly.com/LaunchHealthApp
 >
-> — TodayInTech
+> — Anonsoft
 
 **Follow-up Day 5:**
 
@@ -163,7 +163,7 @@ Total messages: **9**
 >
 > Rooting for the clinic.
 >
-> — TodayInTech
+> — Anonsoft
 
 ---
 
@@ -177,13 +177,13 @@ Total messages: **9**
 >
 > Here's where I've seen founders in your exact spot get stuck: the product backlog stops being about shipping and starts being about which of five "next-quarter" features you actually have time to build. Provider onboarding polish, vertical-specific booking flows for therapists vs chiros vs otolaryngologists, reporting for practice owners — they sit there because you are the engineer.
 >
-> At TodayInTech we take overflow feature work off technical founders' plates. You scope the feature, we prototype it free, you only pay when it's production-ready and meets your bar. No retainer, no SOW, no onboarding your codebase if you don't want to — we can ship as a microservice against your API.
+> At Anonsoft we take overflow feature work off technical founders' plates. You scope the feature, we prototype it free, you only pay when it's production-ready and meets your bar. No retainer, no SOW, no onboarding your codebase if you don't want to — we can ship as a microservice against your API.
 >
 > Worth 15 minutes to see if we can unstick a feature or two on Blossend's roadmap?
 >
 > https://calendly.com/LaunchHealthApp
 >
-> — TodayInTech
+> — Anonsoft
 
 **Follow-up Day 2:**
 
@@ -195,7 +195,7 @@ Total messages: **9**
 >
 > https://calendly.com/LaunchHealthApp
 >
-> — TodayInTech
+> — Anonsoft
 
 **Follow-up Day 5:**
 
@@ -207,7 +207,7 @@ Total messages: **9**
 >
 > https://calendly.com/LaunchHealthApp
 >
-> — TodayInTech
+> — Anonsoft
 
 ---
 
@@ -217,7 +217,7 @@ Total messages: **9**
 - For Twisted Roots specifically: their website (twistedrootshealth.com) was blocked by the egress proxy this run — on a future run, pull the real contact email and confirm whether they already have a vendor (e.g. Hint, Atlas.md, Elation DPC). If they do, reframe the pitch as custom work on top of their EHR, not replacement.
 - Castine: the news cycle mentioned a February announcement of structure/timeline/staffing. By the time this lands, they should have a named practice director — personalize the Day-0 greeting to that person before sending.
 - Blossend: Pablo is technical. If he replies, the bar will be high — have a real scoped example (provider onboarding or a specific booking-flow vertical) ready, not a generic deck.
-- The task file's calendar link (https://calendly.com/LaunchHealthApp) differs from the one used in the March 29 run (calendly.com/todayintechdotin/30min/30min). This run uses the task-file link as instructed. Flag for human: confirm which is the current booking link before sending.
+- The task file's calendar link (https://calendly.com/LaunchHealthApp) differs from the one used in the March 29 run (calendly.com/anonsoftdotin/30min/30min). This run uses the task-file link as instructed. Flag for human: confirm which is the current booking link before sending.
 - Next run sourcing ideas:
   - `dpcfrontier.com/mapper` — filter for clinics opened <6 months, cash-pay, single-provider. Strong match for our offer.
   - State nurse-practitioner association press releases — NPs going independent is a growing segment.

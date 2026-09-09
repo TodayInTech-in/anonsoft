@@ -20,18 +20,18 @@ export async function generateMetadata({ params }) {
       title: blog.title,
       description: blog.description,
       type: 'article',
-      url: `https://todayintech.in/blog/${blog.slug}`,
+      url: `https://anonsoft.in/blog/${blog.slug}`,
       publishedTime: blog.date,
-      images: [{ url: blog.ogImage || 'https://todayintech.in/assets/og-image.png' }],
+      images: [{ url: blog.ogImage || 'https://anonsoft.com/assets/anon-soft-og.png' }],
     },
     twitter: {
       card: 'summary_large_image',
       title: blog.title,
       description: blog.description,
-      images: [blog.ogImage || 'https://todayintech.in/assets/og-image.png'],
+      images: [blog.ogImage || 'https://anonsoft.com/assets/anon-soft-og.png'],
     },
     alternates: {
-      canonical: `https://todayintech.in/blog/${blog.slug}`,
+      canonical: `https://anonsoft.in/blog/${blog.slug}`,
     },
   };
 }

@@ -2,7 +2,7 @@
 title: "Agentic AI in Prior Authorization & Revenue Cycle Management (2026 Guide)"
 description: "Learn how Agentic AI is automating prior authorization and revenue cycle management (RCM) in 2026. Technical architecture guide covering X12 278 FHIR workflows, automated ICD-10 coding, and EHR write-backs."
 date: "2026-07-30"
-author: "TodayInTech Engineering Team"
+author: "Anonsoft Engineering Team"
 category: "Healthcare SaaS"
 keywords: ["agentic ai prior authorization 2026", "rcm automation software development", "ehr integrated prior authorization ai", "medical coding automation agent", "hipaa compliant rcm platform"]
 ---
@@ -28,7 +28,7 @@ To build a production-grade Agentic AI RCM platform, developers must decouple cl
 
 ## HIPAA & Zero-Trust Data Pipeline Security
 
-Deploying AI agents on patient financial and medical data requires strict HIPAA compliance safeguards. At TodayInTech, we enforce zero-knowledge architecture across all AI RCM deployments:
+Deploying AI agents on patient financial and medical data requires strict HIPAA compliance safeguards. At Anonsoft, we enforce zero-knowledge architecture across all AI RCM deployments:
 
 * **Zero Data Retention Endpoints**: LLM requests are routed through enterprise endpoints (Azure OpenAI / AWS Bedrock) with signed BAAs.
 * **De-identification Microservices**: SafeHarbor-compliant NLP sanitizers redact Direct PHI identifiers before reasoning tokens enter vector search pipelines.

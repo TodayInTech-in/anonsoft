@@ -23,6 +23,8 @@ import sys
 import json
 import argparse
 import subprocess
+import shutil
+import re
 from datetime import datetime
 
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -31,23 +33,24 @@ DEFAULT_CONFIG_FILE = os.path.join(ROOT_DIR, "whitelabel.json")
 
 DEFAULT_ORIGINAL_BRAND = {
     "brand": {
-        "name": "TodayInTech",
-        "name_spaced": "Today In Tech",
-        "name_lower": "todayintech",
+        "name": "Anonsoft",
+        "name_spaced": "Anonsoft",
+        "name_lower": "anonsoft",
         "tagline": "Custom Startup Software Development Agency",
-        "domain": "todayintech.in",
-        "full_url": "https://todayintech.in",
-        "logo_path": "/assets/nav_logo.png",
-        "og_image": "https://todayintech.in/assets/og-image.png"
+        "domain": "anonsoft.in",
+        "full_url": "https://anonsoft.in",
+        "logo_path": "/assets/anonsoft.svg",
+        "favicon_path": "/assets/favicon.ico",
+        "og_image": "https://anonsoft.com/assets/anon-soft-og.png"
     },
     "contacts": {
-        "email": "contact@todayintech.in",
-        "phone": "+91 76793 49780",
-        "whatsapp_number": "917679349780",
-        "whatsapp_url": "https://wa.me/917679349780",
-        "calendly_url": "https://calendly.com/todayintechdotin/30min",
-        "calendly_handle": "todayintechdotin",
-        "twitter": "@todayintech"
+        "email": "contact@anonsoft.in",
+        "phone": "+91 9007900972",
+        "whatsapp_number": "919007900972",
+        "whatsapp_url": "https://wa.me/919007900972",
+        "calendly_url": "https://calendly.com/anonsoftdotin/30min",
+        "calendly_handle": "anonsoftdotin",
+        "twitter": "@anonsoft"
     }
 }
 
@@ -126,11 +129,13 @@ def build_replacement_rules(old_cfg, new_cfg):
         rules.append((f"www.{old_dom}", f"www.{new_dom}"))
         rules.append((old_dom, new_dom))
 
-    # 5. OG Image & Logos
+    # 5. OG Image, Logos & Favicon
     if old_b.get("og_image") and new_b.get("og_image"):
         rules.append((old_b["og_image"], new_b["og_image"]))
     if old_b.get("logo_path") and new_b.get("logo_path"):
         rules.append((old_b["logo_path"], new_b["logo_path"]))
+    if old_b.get("favicon_path") and new_b.get("favicon_path"):
+        rules.append((old_b["favicon_path"], new_b["favicon_path"]))
 
     # 6. Brand Names
     old_name = old_b.get("name", "").strip()
@@ -164,7 +169,113 @@ def build_replacement_rules(old_cfg, new_cfg):
 
     return final_rules
 
-def apply_replacements(rules):
+def get_icon_mime_type(icon_path):
+    ext = os.path.splitext(icon_path)[1].lower()
+    if ext == ".png":
+        return "image/png"
+    elif ext == ".svg":
+        return "image/svg+xml"
+    return "image/x-icon"
+
+def update_favicon_in_html(content, favicon_path):
+    mime_type = get_icon_mime_type(favicon_path)
+    icon_pattern = re.compile(r'<link\s+[^>]*rel=["\'](?:shortcut\s+)?icon["\'][^>]*>', re.IGNORECASE)
+    apple_pattern = re.compile(r'<link\s+[^>]*rel=["\']apple-touch-icon["\'][^>]*>', re.IGNORECASE)
+
+    new_icon_tag = f'<link rel="icon" type="{mime_type}" href="{favicon_path}">'
+    new_apple_tag = f'<link rel="apple-touch-icon" href="{favicon_path}">'
+
+    changed = False
+
+    if icon_pattern.search(content):
+        new_content, count = icon_pattern.subn(new_icon_tag, content)
+        if count > 0 and new_content != content:
+            content = new_content
+            changed = True
+    elif "</head>" in content:
+        content = content.replace("</head>", f'  {new_icon_tag}\n  {new_apple_tag}\n</head>', 1)
+        changed = True
+
+    if apple_pattern.search(content):
+        new_content, count = apple_pattern.subn(new_apple_tag, content)
+        if count > 0 and new_content != content:
+            content = new_content
+            changed = True
+
+    return content, changed
+
+def sync_favicon_files(new_cfg, config_path, dry_run=False):
+    """
+    Synchronizes favicon files.
+    If a favicon file/source is specified (or exists at new_cfg's favicon_path),
+    copies it to standard project locations:
+      - assets/favicon.ico
+      - public/assets/favicon.ico
+      - public/favicon.ico
+      - favicon.ico (root)
+    """
+    brand = new_cfg.get("brand", {})
+    favicon_path = brand.get("favicon_path", "").strip() or "/assets/favicon.ico"
+    favicon_file = brand.get("favicon_file") or brand.get("favicon_source") or favicon_path
+
+    candidate_paths = [
+        favicon_file,
+        os.path.join(os.path.dirname(config_path), favicon_file),
+        os.path.join(ROOT_DIR, favicon_file.lstrip("/")),
+        os.path.join(ROOT_DIR, "assets", os.path.basename(favicon_file)),
+    ]
+
+    source_path = None
+    for cp in candidate_paths:
+        if os.path.isfile(cp):
+            source_path = os.path.abspath(cp)
+            break
+
+    # Fallback to existing assets/favicon.ico if present
+    if not source_path:
+        default_asset = os.path.join(ROOT_DIR, "assets", "favicon.ico")
+        if os.path.isfile(default_asset):
+            source_path = default_asset
+
+    if not source_path or not os.path.isfile(source_path):
+        print("  ⚠ Notice: No source favicon file found to sync.")
+        return []
+
+    destinations = [
+        os.path.join(ROOT_DIR, "assets", "favicon.ico"),
+        os.path.join(ROOT_DIR, "public", "assets", "favicon.ico"),
+        os.path.join(ROOT_DIR, "public", "favicon.ico"),
+        os.path.join(ROOT_DIR, "favicon.ico"),
+    ]
+
+    custom_name = os.path.basename(favicon_path)
+    if custom_name and custom_name != "favicon.ico":
+        destinations.extend([
+            os.path.join(ROOT_DIR, "assets", custom_name),
+            os.path.join(ROOT_DIR, "public", "assets", custom_name),
+        ])
+
+    synced_files = []
+    for dest in destinations:
+        try:
+            os.makedirs(os.path.dirname(dest), exist_ok=True)
+            needs_copy = False
+            if not os.path.exists(dest):
+                needs_copy = True
+            elif os.path.abspath(source_path) != os.path.abspath(dest):
+                if os.path.getmtime(source_path) > os.path.getmtime(dest) or os.path.getsize(source_path) != os.path.getsize(dest):
+                    needs_copy = True
+
+            if needs_copy:
+                if not dry_run:
+                    shutil.copyfile(source_path, dest)
+                synced_files.append(os.path.relpath(dest, ROOT_DIR))
+        except Exception as e:
+            print(f"  ⚠ Warning: Could not copy favicon to {dest}: {e}")
+
+    return synced_files
+
+def apply_replacements(rules, new_favicon_path=None):
     modified_files = []
     total_files_scanned = 0
 
@@ -195,6 +306,10 @@ def apply_replacements(rules):
                 for search_str, replace_str in rules:
                     if search_str in content:
                         content = content.replace(search_str, replace_str)
+
+                # If this is an HTML file and new_favicon_path is set, update favicon tags
+                if ext.lower() == ".html" and new_favicon_path:
+                    content, _ = update_favicon_in_html(content, new_favicon_path)
 
                 if content != original_content:
                     with open(filepath, "w", encoding="utf-8") as f:
@@ -227,7 +342,7 @@ def run_post_generation_scripts():
                 print(f"    ✗ Error running {script_name}: {e}")
 
 def main():
-    parser = argparse.ArgumentParser(description="White-label the entire TodayInTech website.")
+    parser = argparse.ArgumentParser(description="White-label the entire Anonsoft website.")
     parser.add_argument("--config", default=DEFAULT_CONFIG_FILE, help="Path to target whitelabel JSON config.")
     parser.add_argument("--dry-run", action="store_true", help="Preview changes without modifying files.")
     parser.add_argument("--skip-scripts", action="store_true", help="Skip running post-generation sitemaps/llms builders.")
@@ -242,7 +357,7 @@ def main():
     current_state = get_current_state()
 
     print("==================================================")
-    print("      TodayInTech White-Label Engine")
+    print("      Anonsoft White-Label Engine")
     print("==================================================")
     print(f"Source Config : {config_path}")
     print(f"Current Brand : {current_state.get('brand', {}).get('name')} ({current_state.get('brand', {}).get('domain')})")
@@ -250,26 +365,32 @@ def main():
     print("--------------------------------------------------")
 
     rules = build_replacement_rules(current_state, new_config)
+    target_fav = new_config.get("brand", {}).get("favicon_path", "/assets/favicon.ico").strip()
 
-    if not rules:
-        print("No differences detected between current state and target configuration.")
-        print("Site is already up-to-date with this configuration!")
-        if not args.skip_scripts:
-            run_post_generation_scripts()
-        return
+    # 1. Synchronize binary favicon assets
+    print("\n[*] Synchronizing Favicon Assets...")
+    synced_favicons = sync_favicon_files(new_config, config_path, dry_run=args.dry_run)
+    if synced_favicons:
+        for f in synced_favicons:
+            print(f"    ✓ Synced: {f}")
+    else:
+        print("    ✓ Favicon files are up to date.")
 
-    print(f"Generated {len(rules)} active replacement rule(s):")
-    for s, r in rules[:8]:
-        print(f"  • '{s}'  -->  '{r}'")
-    if len(rules) > 8:
-        print(f"  • ... and {len(rules) - 8} more rules.")
+    if rules:
+        print(f"\nGenerated {len(rules)} active replacement rule(s):")
+        for s, r in rules[:8]:
+            print(f"  • '{s}'  -->  '{r}'")
+        if len(rules) > 8:
+            print(f"  • ... and {len(rules) - 8} more rules.")
+    else:
+        print("\nNo brand text differences detected, checking favicon links across pages...")
     print("--------------------------------------------------")
 
     if args.dry_run:
-        print("[DRY-RUN] No files were modified.")
+        print("[DRY-RUN] Preview complete. No files were modified.")
         return
 
-    scanned, modified = apply_replacements(rules)
+    scanned, modified = apply_replacements(rules, new_favicon_path=target_fav)
     print(f"Scanned  : {scanned} text files")
     print(f"Modified : {len(modified)} files")
 

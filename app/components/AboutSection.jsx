@@ -50,7 +50,7 @@ export default function AboutSection() {
             <div className="section-label">Why Partner With Us</div>
             <h2 className="section-title">Built for Founders Who Need Velocity Without Compromise</h2>
             <p className="about-p">
-              TodayInTech is an agile software engineering studio specializing in HealthTech MVPs, enterprise white-label platforms, and custom SaaS architectures.
+              Anonsoft is an agile software engineering studio specializing in HealthTech MVPs, enterprise white-label platforms, and custom SaaS architectures.
             </p>
             <p className="about-p">
               Instead of spending 6–12 months hiring expensive in-house teams, partner with our senior engineers to build, launch, and scale your production software in weeks.

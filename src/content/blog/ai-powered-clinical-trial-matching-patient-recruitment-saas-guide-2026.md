@@ -2,7 +2,7 @@
 title: "Building an AI-Powered Clinical Trial Matching & Patient Recruitment SaaS: FHIR R4 Ingestion, LLM Protocol Parsing, Vector Search, and FDA 21 CFR Part 11 Compliance (2026)"
 description: "An authoritative engineering blueprint for building an AI-powered clinical trial matching and patient recruitment SaaS with HL7 FHIR ingestion, unstructured protocol NLP, sub-second cohort vector search, and FDA 21 CFR Part 11 validation in 2026."
 date: "2026-09-09"
-author: "TodayInTech Engineering Team"
+author: "Anonsoft Engineering Team"
 category: "HealthTech & Life Sciences SaaS"
 image: "ai_clinical_trial_matching_hero.jpg"
 keywords: ["AI clinical trial matching software", "patient recruitment SaaS", "clinical trial protocol NLP", "FHIR R4 patient matching", "custom healthtech development", "FDA 21 CFR Part 11 compliant SaaS", "electronic data capture EDC integration", "biotech clinical trial platform", "white label healthcare software"]
@@ -307,14 +307,14 @@ The platform connects to modern hospital EHRs using standard **SMART on FHIR R4 
 
 ---
 
-## Build Your AI-Powered Clinical Trial Matching Platform with TodayInTech
+## Build Your AI-Powered Clinical Trial Matching Platform with Anonsoft
 
 Engineering an enterprise-ready, compliant, and lightning-fast Clinical Trial Matching & Patient Recruitment SaaS demands deep expertise across healthcare interoperability, clinical NLP, vector search architectures, and life sciences regulatory compliance.
 
-At **TodayInTech**, we specialize in architecting and delivering bespoke HealthTech and Life Sciences software:
+At **Anonsoft**, we specialize in architecting and delivering bespoke HealthTech and Life Sciences software:
 
 * **Zero Upfront Payment Prototype:** We architect and deliver a fully functional, interactive working prototype of your clinical trial matching platform before you pay a single dollar.
 * **Full-Cycle HealthTech Engineering:** Complete implementation of SMART on FHIR R4 connectors, OMOP CDM data normalization, agentic protocol parsers, and EDC/CTMS integrations.
 * **Life Sciences Compliance & Security:** FDA 21 CFR Part 11 compliance readiness, HIPAA and SOC2 Type II security frameworks, BAA execution, and immutable cryptographic audit logging.
 
-Ready to build the future of AI-driven clinical trials? [**Schedule a Technical Architecture Demo with TodayInTech**](/bookademo/) or explore our engineering capabilities at [**TodayInTech.in**](/).
+Ready to build the future of AI-driven clinical trials? [**Schedule a Technical Architecture Demo with Anonsoft**](/bookademo/) or explore our engineering capabilities at [**Anonsoft.in**](/).

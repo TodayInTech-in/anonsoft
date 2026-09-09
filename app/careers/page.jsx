@@ -35,7 +35,7 @@ export default function CareersPage() {
                   <h3 style={{ fontSize: '1.15rem', color: '#1e293b', marginBottom: '4px' }}>{p.title}</h3>
                   <div style={{ fontSize: '0.85rem', color: '#64748b' }}>{p.location} • {p.type}</div>
                 </div>
-                <a href="mailto:careers@todayintech.in" className="btn-primary" style={{ padding: '8px 20px', fontSize: '0.85rem' }}>Apply Now &rarr;</a>
+                <a href="mailto:careers@anonsoft.in" className="btn-primary" style={{ padding: '8px 20px', fontSize: '0.85rem' }}>Apply Now &rarr;</a>
               </div>
             ))}
           </div>

@@ -1,7 +1,7 @@
 # Outreach Run — March 29, 2026
 
 **Sent from:** launchhealthapp@gmail.com
-**Calendar link:** https://calendly.com/todayintechdotin/30min/30min
+**Calendar link:** https://calendly.com/anonsoftdotin/30min/30min
 **Target:** Clinics, telehealth startups, small businesses — Goal: Book a call
 
 ---
@@ -73,13 +73,13 @@ Total drafts created: **9**
 >
 > Here's something I see a lot with bootstrapped telehealth founders at your stage: the first agency gets you to MVP, but then every new feature becomes a 6–8 week SOW, a new invoice, and a new round of back-and-forth. That friction compounds fast when you're trying to move as quickly as the GLP-1 market demands.
 >
-> At TodayInTech, we work with health startups specifically at this inflection point. We build a free prototype first — you see exactly what you're getting before committing anything. You only pay when you're satisfied.
+> At Anonsoft, we work with health startups specifically at this inflection point. We build a free prototype first — you see exactly what you're getting before committing anything. You only pay when you're satisfied.
 >
 > Worth 15 minutes to see if we can cut your current dev cycle in half?
 >
-> Book here: https://calendly.com/todayintechdotin/30min/30min
+> Book here: https://calendly.com/anonsoftdotin/30min/30min
 >
-> — TodayInTech
+> — Anonsoft
 
 **Follow-up Day 2:**
 
@@ -89,9 +89,9 @@ Total drafts created: **9**
 >
 > Happy to walk you through a quick example of what we shipped for a similar GLP-1 telehealth brand in under 3 weeks. No agency SOW, no surprise invoice.
 >
-> If this week is hectic, book a time that works: https://calendly.com/todayintechdotin/30min/30min
+> If this week is hectic, book a time that works: https://calendly.com/anonsoftdotin/30min/30min
 >
-> — TodayInTech
+> — Anonsoft
 
 **Follow-up Day 5:**
 
@@ -99,9 +99,9 @@ Total drafts created: **9**
 >
 > Last note from me — if the timing isn't right, totally understood. Building a telehealth brand at the pace Fridays is moving leaves little room for vendor conversations.
 >
-> But if you ever hit a sprint where you need a feature shipped fast and you don't want to go through a 3-month agency cycle, we're one click away: https://calendly.com/todayintechdotin/30min/30min
+> But if you ever hit a sprint where you need a feature shipped fast and you don't want to go through a 3-month agency cycle, we're one click away: https://calendly.com/anonsoftdotin/30min/30min
 >
-> — TodayInTech
+> — Anonsoft
 
 ---
 
@@ -115,13 +115,13 @@ Total drafts created: **9**
 >
 > At 10,000+ patients, you're likely hitting the point where small tech gaps start costing real outcomes. Onboarding drop-off, care team dashboards that don't quite fit the workflow, prescription tracking that needs another click — these things pile up when the dev backlog isn't moving fast enough.
 >
-> At TodayInTech, we help growing health platforms ship features quickly without ballooning engineering costs. We always start with a free prototype, and you pay only when you're happy with what's built. No long agency SOWs, no risk upfront.
+> At Anonsoft, we help growing health platforms ship features quickly without ballooning engineering costs. We always start with a free prototype, and you pay only when you're happy with what's built. No long agency SOWs, no risk upfront.
 >
 > Can we get on a 15-minute call this week?
 >
-> Book here: https://calendly.com/todayintechdotin/30min/30min
+> Book here: https://calendly.com/anonsoftdotin/30min/30min
 >
-> — TodayInTech
+> — Anonsoft
 
 **Follow-up Day 2:**
 
@@ -131,9 +131,9 @@ Total drafts created: **9**
 >
 > Happy to show you what we recently built for a comparable weight management platform — took 2 weeks, cost a fraction of what an agency quoted. Might be relevant as Accomplish keeps scaling.
 >
-> If you're open to a quick 15-minute chat: https://calendly.com/todayintechdotin/30min/30min
+> If you're open to a quick 15-minute chat: https://calendly.com/anonsoftdotin/30min/30min
 >
-> — TodayInTech
+> — Anonsoft
 
 **Follow-up Day 5:**
 
@@ -143,9 +143,9 @@ Total drafts created: **9**
 >
 > Whenever Accomplish needs to move fast on a feature — patient dashboard, care coordination tool, onboarding flow — without a long dev cycle, we'd be glad to help. Free prototype first, you pay only when it's right.
 >
-> Book here whenever it makes sense: https://calendly.com/todayintechdotin/30min/30min
+> Book here whenever it makes sense: https://calendly.com/anonsoftdotin/30min/30min
 >
-> — TodayInTech
+> — Anonsoft
 
 ---
 
@@ -159,13 +159,13 @@ Total drafts created: **9**
 >
 > With a 4-person team, I'd guess the dev backlog is a constant constraint. Every sprint is a tradeoff: build the next clinical feature, or fix what's already shipped. That pressure builds fast in YC pace.
 >
-> At TodayInTech, we work with early-stage health startups as an extension of the core team — taking 1–2 features off the backlog per sprint, HIPAA-compliant, fast turnaround. We prototype first at no cost, and you only pay when the work meets the bar.
+> At Anonsoft, we work with early-stage health startups as an extension of the core team — taking 1–2 features off the backlog per sprint, HIPAA-compliant, fast turnaround. We prototype first at no cost, and you only pay when the work meets the bar.
 >
 > If you're trying to move faster on any specific feature this quarter, let's talk.
 >
-> Book here: https://calendly.com/todayintechdotin/30min/30min
+> Book here: https://calendly.com/anonsoftdotin/30min/30min
 >
-> — TodayInTech
+> — Anonsoft
 
 **Follow-up Day 2:**
 
@@ -175,9 +175,9 @@ Total drafts created: **9**
 >
 > We recently helped another early-stage health startup ship a HIPAA-compliant feature in 2 weeks — no bloated onboarding, no agency overhead. Might be worth 15 minutes if the backlog is growing.
 >
-> Book here whenever: https://calendly.com/todayintechdotin/30min/30min
+> Book here whenever: https://calendly.com/anonsoftdotin/30min/30min
 >
-> — TodayInTech
+> — Anonsoft
 
 **Follow-up Day 5:**
 
@@ -187,9 +187,9 @@ Total drafts created: **9**
 >
 > Whenever you need to move fast on a feature — clinic onboarding flow, provider dashboard, messaging system — and want a partner who prototypes first and charges only when you're satisfied, we're here.
 >
-> One click away: https://calendly.com/todayintechdotin/30min/30min
+> One click away: https://calendly.com/anonsoftdotin/30min/30min
 >
-> — TodayInTech
+> — Anonsoft
 
 ---
 

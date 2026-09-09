@@ -2,7 +2,7 @@
 title: "Building an AI-Powered Embedded B2B Payments & Multi-Bank Treasury SaaS: Architecture, FedNow / RTP Rails, and Real-Time Reconciliation (2026)"
 description: "An engineering blueprint for building a multi-tenant B2B embedded payments and multi-bank treasury management SaaS with instant FedNow/RTP rails, double-entry ledgers, and AI reconciliation in 2026."
 date: "2026-08-20"
-author: "TodayInTech Engineering Team"
+author: "Anonsoft Engineering Team"
 category: "FinTech SaaS"
 image: "b2b_treasury_payments_hero.jpg"
 keywords: ["embedded b2b payments saas", "multi-bank treasury management software", "fednow rtp integration architecture", "fintech saas development", "automated bank reconciliation engine", "custom fintech software agency"]
@@ -144,7 +144,7 @@ The engine evaluates potential matches through a multi-tier pipeline:
 
 ## Comparison: Legacy ERP Treasury vs. First-Gen Aggregators vs. AI Embedded SaaS
 
-| Architectural Feature | Legacy ERP Treasury (SAP / NetSuite) | First-Gen Aggregators (Plaid / MX) | AI Embedded Treasury SaaS (TodayInTech) |
+| Architectural Feature | Legacy ERP Treasury (SAP / NetSuite) | First-Gen Aggregators (Plaid / MX) | AI Embedded Treasury SaaS (Anonsoft) |
 |---|---|---|---|
 | **Data Sync Frequency** | Batch overnight file imports (T+1) | Read-only balance pulls (polling) | Real-time WebSockets & ISO 20022 webhooks (< 3 sec) |
 | **Payment Execution** | External manual bank initiation | Payment initiation limited / 3rd party | Native FedNow, RTP, ACH, and Virtual Card orchestration |
@@ -202,16 +202,16 @@ An immutable double-entry ledger prevents balance drift by requiring every finan
 ### Can an embedded treasury platform connect directly to my existing ERP?
 Yes. Modern treasury SaaS architectures feature bidirectional bi-sync connectors for NetSuite, QuickBooks Online, Xero, Sage Intacct, SAP S/4HANA, and Microsoft Dynamics 365, syncing chart-of-accounts, vendor bills, invoice payment statuses, and journal entries automatically.
 
-### How does TodayInTech build custom FinTech and Treasury software?
-TodayInTech specializes in custom, enterprise-grade FinTech SaaS development with zero upfront payment. Our engineering team designs the complete cloud architecture, double-entry ledger, bank integrations, and AI reconciliation workflows, delivering a working, interactive prototype before any contract or billing commences.
+### How does Anonsoft build custom FinTech and Treasury software?
+Anonsoft specializes in custom, enterprise-grade FinTech SaaS development with zero upfront payment. Our engineering team designs the complete cloud architecture, double-entry ledger, bank integrations, and AI reconciliation workflows, delivering a working, interactive prototype before any contract or billing commences.
 
 ---
 
-## Build Your Custom FinTech & Treasury Platform with TodayInTech
+## Build Your Custom FinTech & Treasury Platform with Anonsoft
 
 Building an enterprise-grade B2B payments, multi-bank treasury, or embedded finance SaaS requires specialized full-stack and systems engineering across distributed ledgers, banking APIs, and bank-grade security protocols.
 
-At **TodayInTech**, we eliminate the risk of software development:
+At **Anonsoft**, we eliminate the risk of software development:
 * **Zero Upfront Payment:** We design, architect, and construct your functional prototype first. You pay only after you test and approve the working software.
 * **Production-Grade FinTech Engineering:** Scalable microservices, ISO 20022 message parsers, FedNow/RTP rails, and SOC 2-compliant architectures.
 * **White-Label & Dedicated Ownership:** 100% intellectual property ownership with full source code, deployment scripts, and zero vendor lock-in.

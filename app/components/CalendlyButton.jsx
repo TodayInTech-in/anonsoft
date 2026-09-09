@@ -3,7 +3,7 @@
 import { triggerCalendly } from '../lib/calendly';
 
 export default function CalendlyButton({
-  url = 'https://calendly.com/todayintechdotin/30min',
+  url = 'https://calendly.com/anonsoftdotin/30min',
   className = 'btn-primary',
   style = {},
   children = 'Tell Us About Your MVP',

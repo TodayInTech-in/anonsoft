@@ -394,7 +394,7 @@ function initRoiCalculator() {
         // Calculation: team * rate * 160hrs/month * months
         const customCost = team * rate * 160 * months;
         
-        // TodayInTech starting from $99/mo (Monthly) or $99/year (Yearly)
+        // Anonsoft starting from $99/mo (Monthly) or $99/year (Yearly)
         let ourCost = 0;
         if (isYearlyBilling) {
             ourCost = 99; // $99/year flat
@@ -410,7 +410,7 @@ function initRoiCalculator() {
         document.getElementById('roi-scratch-time').textContent = months + ' months to launch';
         document.getElementById('roi-savings').textContent = formatMoney(savings);
 
-        // Dynamic TodayInTech Cost card update
+        // Dynamic Anonsoft Cost card update
         const ourCostEl = document.getElementById('roi-our-cost');
         if (ourCostEl) {
             if (isYearlyBilling) {
@@ -1279,7 +1279,7 @@ function initLeadMagnet() {
         <div class="lead-modal">
             <button class="lead-modal-close" id="closeLeadModal">&times;</button>
             <h2>Get the <span>Product Blueprint</span></h2>
-            <p class="subtitle">Enter your details to instantly download the TodayInTech Custom Software blueprint & success secrets guide.</p>
+            <p class="subtitle">Enter your details to instantly download the Anonsoft Custom Software blueprint & success secrets guide.</p>
             <form class="lead-form" id="leadForm">
                 <div class="lead-input-group">
                     <label for="leadName">Full Name *</label>
@@ -1346,7 +1346,7 @@ function initLeadMagnet() {
         submitBtn.textContent = 'Sending...';
 
         try {
-            const response = await fetch('https://tt-api.todayintech.in/api/leads', {
+            const response = await fetch('https://tt-api.anonsoft.in/api/leads', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

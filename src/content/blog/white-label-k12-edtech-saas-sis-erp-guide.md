@@ -2,7 +2,7 @@
 title: "Building a White-Label K-12 EdTech SaaS and Student Information System ERP (2026)"
 description: "An engineering guide to designing a white-label school management SaaS, Student Information System (SIS), and LMS ERP with offline synchronization and billing integrations."
 date: "2026-08-11"
-author: "TodayInTech Engineering Team"
+author: "Anonsoft Engineering Team"
 category: "SaaS Solutions"
 image: "edtech_saas_hero.jpg"
 keywords: ["white-label school management system", "K-12 student information system ERP", "custom EdTech SaaS platform", "school billing and LMS software", "multi-tenant education ERP"]
@@ -48,7 +48,7 @@ Educational ERPs must handle complex tuition payment schedules. Using third-part
 
 Choosing how to build or deploy an EdTech platform has significant timeline and budget implications:
 
-| Feature | Legacy On-Premise SIS | Custom-Built Cloud LMS | White-Label SaaS ERP (TodayInTech) |
+| Feature | Legacy On-Premise SIS | Custom-Built Cloud LMS | White-Label SaaS ERP (Anonsoft) |
 |---|---|---|---|
 | **Deployment Time** | 4 - 8 Months (hardware & server setup) | 9 - 14 Months (full development lifecycle) | 2 - 3 Weeks (branded, pre-built deployment) |
 | **Development Cost** | High licensing and local IT cost | $150,000+ custom software engineering | Predictable monthly SaaS subscription |
@@ -109,14 +109,14 @@ Row-level security (RLS) is a database engine feature that restricts which rows 
 ### Can parents pay tuition fees directly through the mobile app?
 Yes. The platform integrates with major payment processors like Stripe and Razorpay, allowing parents to securely view invoices and make tuition payments via credit card, ACH, or UPI directly from their mobile portal.
 
-### Does TodayInTech customize EdTech platforms?
-Yes. TodayInTech provides a complete white-label student information system and LMS ERP solution. We handle full custom branding, payment gateway integrations, regional compliance auditing, and cloud deployment. Contact us to book a demo.
+### Does Anonsoft customize EdTech platforms?
+Yes. Anonsoft provides a complete white-label student information system and LMS ERP solution. We handle full custom branding, payment gateway integrations, regional compliance auditing, and cloud deployment. Contact us to book a demo.
 
 ---
 
 ## Scale Your Educational Institution Today
 
-Are you ready to build or launch a branded student information system? TodayInTech's experienced software engineering team specializes in high-availability web portals, multi-tenant databases, and secure education software integrations.
+Are you ready to build or launch a branded student information system? Anonsoft's experienced software engineering team specializes in high-availability web portals, multi-tenant databases, and secure education software integrations.
 
-* **Learn more about our services:** [Explore TodayInTech Projects](/projects/)
+* **Learn more about our services:** [Explore Anonsoft Projects](/projects/)
 * **Get in touch with an expert:** [Book a Consultation Demo](/bookademo/)

@@ -2,7 +2,7 @@
 title: "Building an AI-Powered All-in-One Church Management Software (ChMS) & Non-Profit Donation SaaS Platform: Multi-Campus Member CRM, Automated Recurring Tithing, Smart Volunteer Scheduling, Child Safety Check-In Kiosks, and Fund Accounting Architecture (2026)"
 description: "An in-depth technical engineering blueprint for building a multi-tenant AI Church Management Software (ChMS) & Non-Profit SaaS with automated tithing, volunteer scheduling, child security check-in, and double-entry fund accounting in 2026."
 date: "2026-09-01"
-author: "TodayInTech Engineering Team"
+author: "Anonsoft Engineering Team"
 category: "Church Management & Non-Profit SaaS"
 image: "ai_church_management_chms_hero.jpg"
 keywords: ["all-in-one church management system ChMS", "custom church donation platform developer", "white-label church administration software", "ChMS database solutions developer", "church membership tracking software custom", "white label church event scheduling tool", "church mobile app development company", "custom church tithing and contribution software", "private label church management software", "church volunteer scheduling software custom", "church child check-in software", "church fund accounting software"]
@@ -422,7 +422,7 @@ pie title Modern ChMS SaaS Revenue Streams
 ## Frequently Asked Questions (Technical & Operational)
 
 ### 1. How does the check-in system ensure uninterrupted operation if the church Wi-Fi crashes on Sunday morning?
-The TodayInTech child check-in kiosk runs on an **offline-first local architecture** using embedded SQLite. The client pre-fetches the active church roster and household pairings prior to service time. When a parent checks in without internet connectivity, the kiosk generates a cryptographically hashed pairing code locally, prints the thermal security badges via direct USB or local network socket, and queues the check-in event in a local persistent journal. Once network connectivity is restored, the local journal synchronizes idempotently with the cloud PostgreSQL master.
+The Anonsoft child check-in kiosk runs on an **offline-first local architecture** using embedded SQLite. The client pre-fetches the active church roster and household pairings prior to service time. When a parent checks in without internet connectivity, the kiosk generates a cryptographically hashed pairing code locally, prints the thermal security badges via direct USB or local network socket, and queues the check-in event in a local persistent journal. Once network connectivity is restored, the local journal synchronizes idempotently with the cloud PostgreSQL master.
 
 ### 2. Can our church customize the mobile app with our own logo, colors, and branding on the App Store?
 Yes. Our architecture supports full **white-label application compilation**. We build and publish standalone native iOS and Android binaries to your organization's Apple Developer and Google Play Console accounts, featuring your church's app icon, splash screens, custom color schemas, and localized push notification channels.
@@ -438,14 +438,14 @@ The volunteer matrix runs a deterministic constraint solver. When a department l
 
 ---
 
-## Launch Your Custom White-Label Church Management Platform with TodayInTech
+## Launch Your Custom White-Label Church Management Platform with Anonsoft
 
 Are you ready to replace fragmented tools, eliminate excessive donation processing fees, and empower ministry leaders with an enterprise-grade Church Management System?
 
-Whether you need a **turnkey white-label ChMS SaaS for church resellers**, a **custom church donation & tithing platform**, or a **dedicated multi-campus administration ecosystem**, **TodayInTech** is your elite software engineering partner.
+Whether you need a **turnkey white-label ChMS SaaS for church resellers**, a **custom church donation & tithing platform**, or a **dedicated multi-campus administration ecosystem**, **Anonsoft** is your elite software engineering partner.
 
-Explore our dedicated [Church Management Software Platform](file:///root/project/todayintechweb/projects/church-management-software.html) to view live product capabilities, or schedule a direct architectural consultation with our senior engineering team:
+Explore our dedicated [Church Management Software Platform](file:///root/project/anonsoftweb/projects/church-management-software.html) to view live product capabilities, or schedule a direct architectural consultation with our senior engineering team:
 
-* 📖 **Explore the Product:** [TodayInTech Church Management Software (ChMS)](file:///root/project/todayintechweb/projects/church-management-software.html)
-* 🚀 **Book an Architectural Demo:** [Book a 1-on-1 Consultation](file:///root/project/todayintechweb/index.html#bookademo)
-* 💬 **Contact Engineering:** [contact@todayintech.in](mailto:contact@todayintech.in)
+* 📖 **Explore the Product:** [Anonsoft Church Management Software (ChMS)](file:///root/project/anonsoftweb/projects/church-management-software.html)
+* 🚀 **Book an Architectural Demo:** [Book a 1-on-1 Consultation](file:///root/project/anonsoftweb/index.html#bookademo)
+* 💬 **Contact Engineering:** [contact@anonsoft.in](mailto:contact@anonsoft.in)

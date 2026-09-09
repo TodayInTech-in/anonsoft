@@ -1,11 +1,11 @@
-# TodayInTech Robots.txt
+# Anonsoft Robots.txt
 # Health White-Label Software Development Company
 
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://todayintech.in/sitemap.xml
+Sitemap: https://anonsoft.in/sitemap.xml
 
 # Crawl-delay: 1
 

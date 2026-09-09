@@ -2,7 +2,7 @@
 title: "Building an AI-Powered Dental Practice Management System (PMS) & Teledentistry SaaS: Computer Vision Radiography, Automated CDT Insurance Billing, and Cloud Odontograms (2026)"
 description: "An in-depth engineering blueprint for building an enterprise multi-tenant AI Dental Practice Management SaaS with computer vision X-ray analysis, automated ADA CDT coding, 3D interactive odontograms, and HIPAA-compliant teledentistry in 2026."
 date: "2026-09-05"
-author: "TodayInTech Engineering Team"
+author: "Anonsoft Engineering Team"
 category: "Dental Tech & Healthcare SaaS"
 image: "ai_dental_pms_hero.jpg"
 keywords: ["dental practice management software", "AI dental radiography SaaS", "computer vision dental X-ray detection", "cloud dental PMS", "ADA CDT insurance billing software", "teledentistry software development", "3D interactive odontogram web", "custom dental software development", "HIPAA compliant dental software"]
@@ -252,17 +252,17 @@ Yes. The 3D odontogram is engineered using hardware-accelerated **WebGL and Thre
 ### 4. How does the system handle multi-location Dental Support Organizations (DSOs)?
 The platform architecture utilizes database Row-Level Security (RLS) and multi-tenant scoping. Providers and front-desk staff can switch between different clinic locations with a single login, while executive leadership gains consolidated enterprise reporting on chair utilization, provider production, and insurance collection rates across all branches.
 
-### 5. Can TodayInTech build a custom white-label Dental PMS or Teledentistry SaaS for my company?
-Yes! **TodayInTech** specializes in custom healthcare and dental software engineering. We architect and deliver fully functional, production-ready prototypes before requiring any upfront payment. [Book a Free Technical Strategy Call](https://calendly.com/todayintechdotin/30min) or explore our [healthcare software portfolio](/health/) to get started.
+### 5. Can Anonsoft build a custom white-label Dental PMS or Teledentistry SaaS for my company?
+Yes! **Anonsoft** specializes in custom healthcare and dental software engineering. We architect and deliver fully functional, production-ready prototypes before requiring any upfront payment. [Book a Free Technical Strategy Call](https://calendly.com/anonsoftdotin/30min) or explore our [healthcare software portfolio](/health/) to get started.
 
 ---
 
-## Build Your Custom Dental SaaS with TodayInTech
+## Build Your Custom Dental SaaS with Anonsoft
 
-Whether you are building an AI-first Dental Practice Management SaaS, launching an enterprise DSO software suite, or developing a specialized computer vision radiology tool, **TodayInTech** is your dedicated software engineering partner.
+Whether you are building an AI-first Dental Practice Management SaaS, launching an enterprise DSO software suite, or developing a specialized computer vision radiology tool, **Anonsoft** is your dedicated software engineering partner.
 
 * **Zero Upfront Payment:** We design and code a functional, interactive software prototype of your dental platform first. You only pay after reviewing and approving the live build.
 * **100% Full Source Code Ownership:** Proprietary architecture with no vendor lock-in or per-seat platform taxes.
 * **Full Dental Tech Interoperability:** Native DICOM viewers, AI computer vision pipelines, 3D WebGL odontograms, and automated EDI 837D / 270/271 clearinghouse integration.
 
-Ready to engineer the future of dental software? **[Schedule a Strategy Call with Our Engineering Leadership](https://calendly.com/todayintechdotin/30min)** today.
+Ready to engineer the future of dental software? **[Schedule a Strategy Call with Our Engineering Leadership](https://calendly.com/anonsoftdotin/30min)** today.

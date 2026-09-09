@@ -26,11 +26,11 @@ export function getAllBlogs() {
     const keywordsMatch = content.match(/<meta\s+name="keywords"\s+content="(.*?)"/i);
     const jsonLdMatch = content.match(/<script\s+type="application\/ld\+json">([\s\S]*?)<\/script>/i);
 
-    const title = titleMatch ? titleMatch[1].replace(' | TodayInTech', '').replace(' | Today In Tech', '') : slug;
+    const title = titleMatch ? titleMatch[1].replace(' | Anonsoft', '').replace(' | Anonsoft', '') : slug;
     const description = descMatch ? descMatch[1] : '';
     const category = categoryMatch ? categoryMatch[1] : 'Healthcare Software';
     const date = dateMatch ? dateMatch[1] : '2026-07-25';
-    const ogImage = ogImageMatch ? ogImageMatch[1] : 'https://todayintech.in/assets/og-image.png';
+    const ogImage = ogImageMatch ? ogImageMatch[1] : 'https://anonsoft.com/assets/anon-soft-og.png';
     const keywords = keywordsMatch ? keywordsMatch[1].split(',').map((k) => k.trim()) : [];
     const jsonLd = jsonLdMatch ? jsonLdMatch[1] : null;
 

@@ -1,6 +1,6 @@
 import os
 
-output_dir = "/Users/skjasimuddin/.zhwork/todayintechweb/blog"
+output_dir = "/Users/skjasimuddin/.zhwork/anonsoftweb/blog"
 
 def create_blog_html(
     title, slug, image_name, category, publish_date, read_time, meta_desc, keywords,
@@ -39,26 +39,26 @@ def create_blog_html(
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>{title} | TodayInTech</title>
+  <title>{title} | Anonsoft</title>
   <meta name="description" content="{meta_desc}">
   <meta name="keywords" content="{keywords}">
-  <meta name="author" content="TodayInTech">
+  <meta name="author" content="Anonsoft">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-  <link rel="canonical" href="https://todayintech.in/blog/{slug}">
+  <link rel="canonical" href="https://anonsoft.in/blog/{slug}">
 
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{meta_desc}">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://todayintech.in/blog/{slug}">
-  <meta property="og:image" content="https://todayintech.in/assets/blog/{image_name}">
-  <meta property="og:site_name" content="TodayInTech">
+  <meta property="og:url" content="https://anonsoft.in/blog/{slug}">
+  <meta property="og:image" content="https://anonsoft.in/assets/blog/{image_name}">
+  <meta property="og:site_name" content="Anonsoft">
   <meta property="article:published_time" content="{publish_date}">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{title}">
   <meta name="twitter:description" content="{meta_desc}">
-  <meta name="twitter:image" content="https://todayintech.in/assets/blog/{image_name}">
-  <meta name="twitter:site" content="@todayintech">
+  <meta name="twitter:image" content="https://anonsoft.in/assets/blog/{image_name}">
+  <meta name="twitter:site" content="@anonsoft">
 
   <!-- Article Structured Data -->
   <script type="application/ld+json">
@@ -67,16 +67,16 @@ def create_blog_html(
     "@type": "Article",
     "headline": "{title}",
     "description": "{meta_desc}",
-    "image": "https://todayintech.in/assets/blog/{image_name}",
-    "author": {{ "@type": "Organization", "name": "TodayInTech", "url": "https://todayintech.in" }},
+    "image": "https://anonsoft.in/assets/blog/{image_name}",
+    "author": {{ "@type": "Organization", "name": "Anonsoft", "url": "https://anonsoft.in" }},
     "publisher": {{
       "@type": "Organization",
-      "name": "TodayInTech",
-      "logo": {{ "@type": "ImageObject", "url": "https://todayintech.in/assets/logo.png" }}
+      "name": "Anonsoft",
+      "logo": {{ "@type": "ImageObject", "url": "https://anonsoft.in/assets/logo.png" }}
     }},
     "datePublished": "{publish_date}",
     "dateModified": "{publish_date}",
-    "url": "https://todayintech.in/blog/{slug}",
+    "url": "https://anonsoft.in/blog/{slug}",
     "articleSection": "{article_section}",
     "keywords": "{keywords}"
   }}
@@ -120,8 +120,8 @@ def create_blog_html(
   <header>
     <nav class="navbar" id="navbar">
       <div class="container">
-        <a href="/" class="nav-logo" aria-label="TodayInTech Homepage">
-          <img src="../assets/nav_logo.png" alt="TodayInTech Logo" style="height: 48px !important; width: auto !important; max-width: none !important; border-radius: 0 !important;">
+        <a href="/" class="nav-logo" aria-label="Anonsoft Homepage">
+          <img src="../assets/anonsoft.svg" alt="Anonsoft Logo" style="height: 48px !important; width: auto !important; max-width: none !important; border-radius: 0 !important;">
         </a>
         <div class="nav-links" id="navLinks">
           <a href="/#services">Services</a>
@@ -131,7 +131,7 @@ def create_blog_html(
           <a href="/#testimonials">Reviews</a>
           <a href="/#faq">FAQ</a>
           <a href="/blog/" class="active">Blog</a>
-          <a href="" onclick="triggerCalendly('https://calendly.com/todayintechdotin/30min');return false;" class="nav-cta">Book a Call</a>
+          <a href="" onclick="triggerCalendly('https://calendly.com/anonsoftdotin/30min');return false;" class="nav-cta">Book a Call</a>
         </div>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
           <span></span><span></span><span></span>
@@ -185,9 +185,9 @@ def create_blog_html(
       </div>
 
       <div class="sidebar-widget sidebar-cta">
-        <h3>Build With TodayInTech</h3>
+        <h3>Build With Anonsoft</h3>
         <p>Production-ready software in weeks. Zero upfront payment.</p>
-        <a href="" onclick="triggerCalendly('https://calendly.com/todayintechdotin/30min');return false;" class="btn btn-primary btn-sm">Book Free Call</a>
+        <a href="" onclick="triggerCalendly('https://calendly.com/anonsoftdotin/30min');return false;" class="btn btn-primary btn-sm">Book Free Call</a>
       </div>
     </aside>
   </main>
@@ -197,7 +197,7 @@ def create_blog_html(
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="/" class="nav-logo">
-            <img src="../assets/nav_logo.png" alt="TodayInTech Logo" style="height: 48px !important; width: auto !important; max-width: none !important; border-radius: 0 !important;">
+            <img src="../assets/anonsoft.svg" alt="Anonsoft Logo" style="height: 48px !important; width: auto !important; max-width: none !important; border-radius: 0 !important;">
           </a>
           <p>We help startups and businesses build scalable SaaS platforms, AI tools, and mobile apps.</p>
           <div class="msme-badge" style="display:flex;align-items:center;gap:12px;margin:24px 0;padding:12px 16px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;width:fit-content;">
@@ -209,7 +209,7 @@ def create_blog_html(
           </div>
           <div class="footer-socials">
             <a href="https://www.facebook.com/people/Today-In-Tech/61583127425585/" target="_blank" rel="noopener" class="footer-social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/todayintech/" target="_blank" rel="noopener" class="footer-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/anonsoft/" target="_blank" rel="noopener" class="footer-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             <a href="https://www.linkedin.com/company/109768769" target="_blank" rel="noopener" class="footer-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
@@ -234,15 +234,15 @@ def create_blog_html(
         <div class="footer-column">
           <h4>Contact</h4>
           <ul>
-            <li><a href="mailto:contact@todayintech.in">contact@todayintech.in</a></li>
-            <li><a href="tel:+917679349780">+91 7679349780</a></li>
+            <li><a href="mailto:contact@anonsoft.in">contact@anonsoft.in</a></li>
+            <li><a href="tel:+919007900972">+91 7679349780</a></li>
             <li><a href="/">Kolkata, India</a></li>
-            <li><a href="" onclick="triggerCalendly('https://calendly.com/todayintechdotin/30min');return false;">Book a Call &rarr;</a></li>
+            <li><a href="" onclick="triggerCalendly('https://calendly.com/anonsoftdotin/30min');return false;">Book a Call &rarr;</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p class="footer-copyright">&copy; 2024&ndash;2026 TodayInTech. All rights reserved.</p>
+        <p class="footer-copyright">&copy; 2024&ndash;2026 Anonsoft. All rights reserved.</p>
         <div class="footer-legal">
           <a href="/privacy">Privacy Policy</a>
           <a href="/terms">Terms of Service</a>
@@ -345,12 +345,12 @@ b1_body = """
 <h2>Setting Up Official WhatsApp Business API vs Unofficial Automation</h2>
 <p>To implement scalable WhatsApp automation without risking phone number bans, businesses must utilize the <strong>Official WhatsApp Business API (Cloud API)</strong>. While unofficial scraping scripts or third-party web bots may seem cheaper initially, Meta strictly enforces policies against unauthorized bulk tools.</p>
 
-<p>TodayInTech builds custom enterprise integrations using official Meta APIs combined with vector-search AI models (RAG) and CRM synchronization (Salesforce, HubSpot, custom platforms). This guarantees 100% compliance, green checkmark verification eligibility, and zero risk of account suspension.</p>
+<p>Anonsoft builds custom enterprise integrations using official Meta APIs combined with vector-search AI models (RAG) and CRM synchronization (Salesforce, HubSpot, custom platforms). This guarantees 100% compliance, green checkmark verification eligibility, and zero risk of account suspension.</p>
 
 <div class="post-cta">
   <h3>Ready to Automate Your WhatsApp Sales Pipeline?</h3>
   <p>We build custom WhatsApp AI agents and CRM integrations with zero upfront payment. You pay only after seeing your working prototype.</p>
-  <a href="" onclick="triggerCalendly('https://calendly.com/todayintechdotin/30min');return false;" class="btn btn-primary">Book a Free Strategy Call</a>
+  <a href="" onclick="triggerCalendly('https://calendly.com/anonsoftdotin/30min');return false;" class="btn btn-primary">Book a Free Strategy Call</a>
 </div>
 
 <h2>Key Components of a High-Converting WhatsApp Sales Bot</h2>
@@ -365,9 +365,9 @@ b1_body = """
 b1_faqs = [
   ("How does WhatsApp automation increase sales for e-commerce and B2B?", "WhatsApp automation boosts sales by sending instant abandoned cart recoveries, qualifying inbound leads 24/7, delivering targeted broadcast campaigns with 98% open rates, and providing one-click checkout links."),
   ("What is the difference between WhatsApp Business App and WhatsApp API?", "The free WhatsApp Business App is designed for small manual messaging (1 device, broadcast limit of 256 contacts). The WhatsApp Business API allows multi-agent logins, unlimited automated broadcasts, AI chatbot integrations, and full CRM synchronization."),
-  ("Can WhatsApp automation integrate with our existing CRM?", "Yes. TodayInTech integrates official WhatsApp Business API with HubSpot, Salesforce, Zoho, Shopify, custom CRMs, and payment gateways like Stripe or Razorpay using custom webhooks."),
+  ("Can WhatsApp automation integrate with our existing CRM?", "Yes. Anonsoft integrates official WhatsApp Business API with HubSpot, Salesforce, Zoho, Shopify, custom CRMs, and payment gateways like Stripe or Razorpay using custom webhooks."),
   ("Is automated WhatsApp messaging compliant with Meta policies?", "Yes, as long as you use the official Meta Cloud API and obtain user opt-in before sending outbound promotional broadcast messages."),
-  ("How much does it cost to implement WhatsApp sales automation?", "Official API costs consist of Meta's per-conversation messaging rates (fractions of a cent per conversation) plus your custom AI chatbot development cost. TodayInTech provides full custom setup with zero upfront payment.")
+  ("How much does it cost to implement WhatsApp sales automation?", "Official API costs consist of Meta's per-conversation messaging rates (fractions of a cent per conversation) plus your custom AI chatbot development cost. Anonsoft provides full custom setup with zero upfront payment.")
 ]
 
 # Write Blog 1
@@ -483,14 +483,14 @@ b2_body = """
 
 <div class="post-cta">
   <h3>Ready to Eliminate Manual Bottlenecks with AI?</h3>
-  <p>TodayInTech builds custom AI workflows, autonomous agents, and system integrations. We build your working prototype first — you pay only after seeing it in action.</p>
-  <a href="" onclick="triggerCalendly('https://calendly.com/todayintechdotin/30min');return false;" class="btn btn-primary">Schedule Your Free AI Audit</a>
+  <p>Anonsoft builds custom AI workflows, autonomous agents, and system integrations. We build your working prototype first — you pay only after seeing it in action.</p>
+  <a href="" onclick="triggerCalendly('https://calendly.com/anonsoftdotin/30min');return false;" class="btn btn-primary">Schedule Your Free AI Audit</a>
 </div>
 """
 
 b2_faqs = [
   ("Why is AI automation necessary for small and medium businesses in 2026?", "AI automation allows small and medium businesses to operate with enterprise-level speed and responsiveness without incurring massive hiring costs, allowing them to outcompete slow manual competitors."),
-  ("What are the best tools for business process automation?", "Popular tools include n8n, Make, Zapier, LangChain, AutoGen, and custom Python/Node.js webhooks combined with LLM APIs (OpenAI, Anthropic, Gemini). TodayInTech builds custom tailored solutions."),
+  ("What are the best tools for business process automation?", "Popular tools include n8n, Make, Zapier, LangChain, AutoGen, and custom Python/Node.js webhooks combined with LLM APIs (OpenAI, Anthropic, Gemini). Anonsoft builds custom tailored solutions."),
   ("Will AI automation replace our existing staff?", "In practice, AI automation handles tedious, low-value manual tasks (data entry, simple ticket triage), freeing your human employees to focus on high-impact strategic growth, client relationships, and creative problem solving."),
   ("How long does it take to deploy a custom AI automation workflow?", "Targeted AI workflows can be developed and deployed in 1 to 3 weeks using modern API connectors and pre-built agent frameworks."),
   ("How much can a business save with AI automation?", "Most businesses see an immediate 40–70% reduction in operational cost for automated processes, recovering their initial development investment within 90 days.")
@@ -601,17 +601,17 @@ b3_body = """
 
 <div class="post-cta">
   <h3>Want an Exact Quote for Your Custom CRM Project?</h3>
-  <p>TodayInTech delivers production-ready custom CRM software with full source code IP ownership and zero upfront payment. We build your prototype first!</p>
-  <a href="" onclick="triggerCalendly('https://calendly.com/todayintechdotin/30min');return false;" class="btn btn-primary">Get a Free CRM Scoping Estimate</a>
+  <p>Anonsoft delivers production-ready custom CRM software with full source code IP ownership and zero upfront payment. We build your prototype first!</p>
+  <a href="" onclick="triggerCalendly('https://calendly.com/anonsoftdotin/30min');return false;" class="btn btn-primary">Get a Free CRM Scoping Estimate</a>
 </div>
 """
 
 b3_faqs = [
   ("Is building a custom CRM cheaper than buying Salesforce or HubSpot?", "For companies with 15+ users, a custom CRM is significantly cheaper over a 3-year period. While off-the-shelf CRMs charge recurring fees per user per month indefinitely, custom CRMs involve a one-time build cost and zero license fees."),
   ("How long does it take to build a custom CRM?", "A basic custom CRM MVP takes 3 to 6 weeks, while a comprehensive mid-level business CRM takes 6 to 12 weeks."),
-  ("Who owns the intellectual property (IP) and source code of the custom CRM?", "With TodayInTech, you own 100% of the source code, database architecture, and intellectual property upon delivery."),
+  ("Who owns the intellectual property (IP) and source code of the custom CRM?", "With Anonsoft, you own 100% of the source code, database architecture, and intellectual property upon delivery."),
   ("Can a custom CRM be integrated with our existing mobile apps and accounting tools?", "Yes, custom CRMs are built API-first and can seamlessly connect to QuickBooks, Xero, Stripe, WhatsApp, custom ERPs, and mobile applications."),
-  ("How does TodayInTech's zero upfront payment model work for CRM development?", "We scope your CRM requirements, design the UX, and engineer a working functional prototype first. You pay only after testing and approving the working software.")
+  ("How does Anonsoft's zero upfront payment model work for CRM development?", "We scope your CRM requirements, design the UX, and engineer a working functional prototype first. You pay only after testing and approving the working software.")
 ]
 
 h3 = create_blog_html(
@@ -730,8 +730,8 @@ b4_body = """
 
 <div class="post-cta">
   <h3>Need Help Building Your Next Mobile App?</h3>
-  <p>TodayInTech's senior mobile engineers build high-performance React Native and Flutter apps. We deliver working prototypes first — zero upfront payment required.</p>
-  <a href="" onclick="triggerCalendly('https://calendly.com/todayintechdotin/30min');return false;" class="btn btn-primary">Book a Free App Strategy Call</a>
+  <p>Anonsoft's senior mobile engineers build high-performance React Native and Flutter apps. We deliver working prototypes first — zero upfront payment required.</p>
+  <a href="" onclick="triggerCalendly('https://calendly.com/anonsoftdotin/30min');return false;" class="btn btn-primary">Book a Free App Strategy Call</a>
 </div>
 """
 
@@ -841,8 +841,8 @@ b5_body = """
 
 <div class="post-cta">
   <h3>Building HIPAA-Compliant AI Healthcare Software?</h3>
-  <p>TodayInTech specializes in custom FHIR/EHR integrations, AI medical scribes, and RPM platforms. We build your working prototype first — zero upfront payment required.</p>
-  <a href="" onclick="triggerCalendly('https://calendly.com/todayintechdotin/30min');return false;" class="btn btn-primary">Book a Healthcare Tech Consultation</a>
+  <p>Anonsoft specializes in custom FHIR/EHR integrations, AI medical scribes, and RPM platforms. We build your working prototype first — zero upfront payment required.</p>
+  <a href="" onclick="triggerCalendly('https://calendly.com/anonsoftdotin/30min');return false;" class="btn btn-primary">Book a Healthcare Tech Consultation</a>
 </div>
 """
 
@@ -851,7 +851,7 @@ b5_faqs = [
   ("Is AI medical scribe software HIPAA compliant?", "Yes, provided the AI platform uses encrypted data pipelines (TLS 1.3/AES-256), Business Associate Agreements (BAAs), and zero-data-retention agreements with LLM API providers."),
   ("What is FDA SaMD in healthcare AI software?", "Software as a Medical Device (SaMD) refers to software intended for medical diagnostic or therapeutic purposes without being part of hardware. SaMD algorithms require FDA clearance."),
   ("How long does it take to develop a custom AI healthcare solution?", "Basic HIPAA-compliant administrative AI tools take 4 to 8 weeks, while complex FDA-regulated diagnostic platforms take 4 to 9 months."),
-  ("How does TodayInTech ensure healthcare data security?", "TodayInTech builds security-first platforms with end-to-end encryption, HL7/FHIR standards compliance, strict RBAC, and dedicated audit logs.")
+  ("How does Anonsoft ensure healthcare data security?", "Anonsoft builds security-first platforms with end-to-end encryption, HL7/FHIR standards compliance, strict RBAC, and dedicated audit logs.")
 ]
 
 h5 = create_blog_html(
@@ -963,8 +963,8 @@ b6_body = """
   </table>
 </div>
 
-<h2>How to Start Automating Your Workflows with TodayInTech</h2>
-<p>Implementing AI automation does not require rebuilding your entire software infrastructure. TodayInTech follows a lean, non-disruptive implementation model:</p>
+<h2>How to Start Automating Your Workflows with Anonsoft</h2>
+<p>Implementing AI automation does not require rebuilding your entire software infrastructure. Anonsoft follows a lean, non-disruptive implementation model:</p>
 <ol>
   <li><strong>Free Workflow Audit:</strong> We identify your top 3 time-wasting manual processes.</li>
   <li><strong>Prototype First:</strong> We build a live working automation prototype within 7 days.</li>
@@ -974,14 +974,14 @@ b6_body = """
 <div class="post-cta">
   <h3>Ready to Automate Your Top Business Processes?</h3>
   <p>Let's eliminate your manual bottlenecks. We build custom AI automation tools with zero upfront payment.</p>
-  <a href="" onclick="triggerCalendly('https://calendly.com/todayintechdotin/30min');return false;" class="btn btn-primary">Book Your Free Automation Strategy Call</a>
+  <a href="" onclick="triggerCalendly('https://calendly.com/anonsoftdotin/30min');return false;" class="btn btn-primary">Book Your Free Automation Strategy Call</a>
 </div>
 """
 
 b6_faqs = [
   ("What business processes are easiest to automate with AI?", "Processes with repetitive digital steps and structured data — like support ticket triage, invoice extraction, lead scoring, and automated email follow-ups — are the easiest and fastest to automate."),
   ("How much does business process AI automation cost?", "Targeted single-workflow AI automations cost between $3,000 and $10,000, while comprehensive multi-department enterprise systems range from $15,000 to $45,000."),
-  ("Can AI automation integrate with legacy software?", "Yes. TodayInTech builds custom API adapters, database webhooks, and headless browser agents to connect modern AI tools with legacy software."),
+  ("Can AI automation integrate with legacy software?", "Yes. Anonsoft builds custom API adapters, database webhooks, and headless browser agents to connect modern AI tools with legacy software."),
   ("Is AI automation secure for sensitive customer data?", "Yes, enterprise AI automations enforce strict data encryption, private vector databases, zero-retention API policies, and role-based access control."),
   ("How do we measure the ROI of AI automation?", "ROI is measured by tracking human hours saved per week, reductions in processing error rates, improvements in customer response speed, and overall operational cost savings.")
 ]

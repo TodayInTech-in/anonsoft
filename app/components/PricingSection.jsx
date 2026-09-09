@@ -31,7 +31,7 @@ export default function PricingSection() {
 
   const handleBooking = (e) => {
     e.preventDefault();
-    triggerCalendly('https://calendly.com/todayintechdotin/30min');
+    triggerCalendly('https://calendly.com/anonsoftdotin/30min');
   };
 
   return (
@@ -56,7 +56,7 @@ export default function PricingSection() {
               <li><i className="fas fa-check"></i> Vercel / AWS Deployment</li>
               <li><i className="fas fa-check"></i> 14 Days Post-Launch Support</li>
             </ul>
-            <a href="https://calendly.com/todayintechdotin/30min" onClick={handleBooking} className="btn-secondary" style={{ width: '100%', textAlign: 'center' }}>
+            <a href="https://calendly.com/anonsoftdotin/30min" onClick={handleBooking} className="btn-secondary" style={{ width: '100%', textAlign: 'center' }}>
               Book MVP Consultation
             </a>
           </div>
@@ -74,7 +74,7 @@ export default function PricingSection() {
               <li><i className="fas fa-check"></i> EHR / Third-Party API Integration</li>
               <li><i className="fas fa-check"></i> 30 Days Post-Launch Support</li>
             </ul>
-            <a href="https://calendly.com/todayintechdotin/30min" onClick={handleBooking} className="btn-primary" style={{ width: '100%', textAlign: 'center' }}>
+            <a href="https://calendly.com/anonsoftdotin/30min" onClick={handleBooking} className="btn-primary" style={{ width: '100%', textAlign: 'center' }}>
               Book Production Call
             </a>
           </div>
@@ -91,7 +91,7 @@ export default function PricingSection() {
               <li><i className="fas fa-check"></i> Scalable Infrastructure Audit</li>
               <li><i className="fas fa-check"></i> Flexible Monthly Subscription</li>
             </ul>
-            <a href="https://calendly.com/todayintechdotin/30min" onClick={handleBooking} className="btn-secondary" style={{ width: '100%', textAlign: 'center' }}>
+            <a href="https://calendly.com/anonsoftdotin/30min" onClick={handleBooking} className="btn-secondary" style={{ width: '100%', textAlign: 'center' }}>
               Hire Dedicated Team
             </a>
           </div>

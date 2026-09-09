@@ -1,11 +1,11 @@
-# TodayInTech SITES SEO Keyword Targets
+# Anonsoft SITES SEO Keyword Targets
 
-This document outlines the targeted B2B and commercial search keywords for all TodayInTech software services, along with their respective landing page paths.
+This document outlines the targeted B2B and commercial search keywords for all Anonsoft software services, along with their respective landing page paths.
 
 ---
 
 ## 1. Telehealth & Telemedicine Software
-* **Landing Page**: [projects/mednowna.html](file:///Users/skjasimuddin/.zhwork/todayintechweb/projects/mednowna.html)
+* **Landing Page**: [projects/mednowna.html](file:///Users/skjasimuddin/.zhwork/anonsoftweb/projects/mednowna.html)
 1. `HIPAA-compliant telemedicine app developer`
 2. `white-label telehealth platform`
 3. `custom telemedicine software development`
@@ -20,7 +20,7 @@ This document outlines the targeted B2B and commercial search keywords for all T
 ---
 
 ## 2. School Management & Campus ERP
-* **Landing Page**: [projects/school-management-system.html](file:///Users/skjasimuddin/.zhwork/todayintechweb/projects/school-management-system.html)
+* **Landing Page**: [projects/school-management-system.html](file:///Users/skjasimuddin/.zhwork/anonsoftweb/projects/school-management-system.html)
 1. `white-label school ERP software`
 2. `school management system end-to-end ERP`
 3. `school ERP software for resellers`
@@ -35,7 +35,7 @@ This document outlines the targeted B2B and commercial search keywords for all T
 ---
 
 ## 3. Inventory & Billing Software
-* **Landing Page**: [projects/inventory-billing.html](file:///Users/skjasimuddin/.zhwork/todayintechweb/projects/inventory-billing.html)
+* **Landing Page**: [projects/inventory-billing.html](file:///Users/skjasimuddin/.zhwork/anonsoftweb/projects/inventory-billing.html)
 1. `white-label inventory software`
 2. `billing software development company`
 3. `retail billing app white label`
@@ -50,7 +50,7 @@ This document outlines the targeted B2B and commercial search keywords for all T
 ---
 
 ## 4. Restaurant POS & Kitchen ERP
-* **Landing Page**: [projects/restaurant-management-system.html](file:///Users/skjasimuddin/.zhwork/todayintechweb/projects/restaurant-management-system.html)
+* **Landing Page**: [projects/restaurant-management-system.html](file:///Users/skjasimuddin/.zhwork/anonsoftweb/projects/restaurant-management-system.html)
 1. `white-label restaurant POS system`
 2. `restaurant billing and kitchen display ERP`
 3. `custom restaurant POS software builder`
@@ -65,7 +65,7 @@ This document outlines the targeted B2B and commercial search keywords for all T
 ---
 
 ## 5. Senior Care Agency Software & Home Care ERP
-* **Landing Page**: [projects/senior-care-agency.html](file:///Users/skjasimuddin/.zhwork/todayintechweb/projects/senior-care-agency.html)
+* **Landing Page**: [projects/senior-care-agency.html](file:///Users/skjasimuddin/.zhwork/anonsoftweb/projects/senior-care-agency.html)
 1. `white-label home care agency software`
 2. `senior care agency software developer`
 3. `GPS Electronic Visit Verification EVV software`
@@ -80,7 +80,7 @@ This document outlines the targeted B2B and commercial search keywords for all T
 ---
 
 ## 6. 3D Configurator & WebGL (Three.js)
-* **Landing Page**: [projects/impakto.html](file:///Users/skjasimuddin/.zhwork/todayintechweb/projects/impakto.html)
+* **Landing Page**: [projects/impakto.html](file:///Users/skjasimuddin/.zhwork/anonsoftweb/projects/impakto.html)
 1. `Three.js e-commerce 3D product customizer`
 2. `WebGL shoe configurator development`
 3. `Three.js product customizer development cost`
@@ -95,7 +95,7 @@ This document outlines the targeted B2B and commercial search keywords for all T
 ---
 
 ## 7. AI Voice & TTS (Text-to-Speech)
-* **Landing Page**: [projects/vocal-flow.html](file:///Users/skjasimuddin/.zhwork/todayintechweb/projects/vocal-flow.html)
+* **Landing Page**: [projects/vocal-flow.html](file:///Users/skjasimuddin/.zhwork/anonsoftweb/projects/vocal-flow.html)
 1. `custom AI text-to-speech voice cloning app`
 2. `AI voice cloning software development`
 3. `white-label text-to-speech SaaS app`
@@ -110,7 +110,7 @@ This document outlines the targeted B2B and commercial search keywords for all T
 ---
 
 ## 8. Church Software (ChMS)
-* **Landing Page**: [projects/church-management-software.html](file:///Users/skjasimuddin/.zhwork/todayintechweb/projects/church-management-software.html)
+* **Landing Page**: [projects/church-management-software.html](file:///Users/skjasimuddin/.zhwork/anonsoftweb/projects/church-management-software.html)
 1. `all-in-one church management system ChMS`
 2. `custom church donation platform developer`
 3. `white-label church administration software`
@@ -125,7 +125,7 @@ This document outlines the targeted B2B and commercial search keywords for all T
 ---
 
 ## 9. Core Agency & Startup MVP Development
-* **Landing Page**: [index.html](file:///Users/skjasimuddin/.zhwork/todayintechweb/index.html)
+* **Landing Page**: [index.html](file:///Users/skjasimuddin/.zhwork/anonsoftweb/index.html)
 1. `custom software agency for startups`
 2. `startup MVP software development partner`
 3. `no upfront payment software development agency`

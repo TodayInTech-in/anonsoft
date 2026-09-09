@@ -2,7 +2,7 @@
 title: "Building an AI-Powered Behavioral Health & Mental Health Telehealth SaaS: HIPAA-Compliant WebRTC, Automated SOAP/DAP Clinical Scribing, Measurement-Based Care, and Insurance Superbill Billing (2026)"
 description: "An in-depth engineering blueprint for building an enterprise multi-tenant AI Behavioral Health & Mental Health Telehealth SaaS platform with HIPAA WebRTC video, automated SOAP/DAP clinical scribing, measurement-based care, and insurance superbills in 2026."
 date: "2026-09-04"
-author: "TodayInTech Engineering Team"
+author: "Anonsoft Engineering Team"
 category: "Behavioral Health & Telemedicine SaaS"
 image: "ai_behavioral_health_hero.jpg"
 keywords: ["behavioral health EHR software", "mental health telehealth SaaS", "HIPAA compliant teletherapy platform", "automated clinical notes mental health", "psychiatry practice management software", "custom telehealth developer", "white-label mental health app"]
@@ -97,7 +97,7 @@ Streamlining revenue cycle management is vital for solo practitioners and large 
 
 ## Technical Architecture Comparison: Teletherapy Platforms
 
-| Architectural Feature | Generic Video Tools (Zoom / Teams) | First-Gen EHR Telehealth | Modern AI Behavioral Health SaaS (TodayInTech) |
+| Architectural Feature | Generic Video Tools (Zoom / Teams) | First-Gen EHR Telehealth | Modern AI Behavioral Health SaaS (Anonsoft) |
 |---|---|---|---|
 | **E2EE Video & HIPAA BAA** | Generic add-on BAA | Basic web iframe | **Native WebRTC SFU with sub-150ms latency** |
 | **Clinical Session Documentation** | Manual typing in separate window | Basic static templates | **Automated Ambient AI DAP/SOAP generation** |
@@ -230,17 +230,17 @@ The platform monitors exact video session durations and documentation content to
 ### 4. What is Measurement-Based Care (MBC) and why is it important in mental health software?
 Measurement-Based Care is the practice of systematically administering validated clinical symptom rating scales (such as the PHQ-9 for depression and GAD-7 for anxiety) before and throughout treatment. Modern EHRs automate questionnaire distribution and graph score trajectories over time, helping clinicians tailor treatment plans and providing required outcome data for insurance reimbursement.
 
-### 5. Can TodayInTech build a custom white-label behavioral health platform for my organization?
-Yes. TodayInTech designs and develops custom, HIPAA-compliant telehealth, EHR, and practice management SaaS platforms. We build an interactive, working software prototype before requiring any upfront financial commitment. [Book a Free Technical Strategy Call](https://calendly.com/todayintechdotin/30min) or explore our [telemedicine software solutions](/projects/mednowna.html) to discuss your roadmap.
+### 5. Can Anonsoft build a custom white-label behavioral health platform for my organization?
+Yes. Anonsoft designs and develops custom, HIPAA-compliant telehealth, EHR, and practice management SaaS platforms. We build an interactive, working software prototype before requiring any upfront financial commitment. [Book a Free Technical Strategy Call](https://calendly.com/anonsoftdotin/30min) or explore our [telemedicine software solutions](/projects/mednowna.html) to discuss your roadmap.
 
 ---
 
-## Build Your Custom Behavioral Health SaaS with TodayInTech
+## Build Your Custom Behavioral Health SaaS with Anonsoft
 
-Whether you are scaling a nationwide virtual mental health clinic, launching a specialized teledermatology/psychiatry group, or creating a B2B behavioral health EHR SaaS, **TodayInTech** delivers the engineering expertise you need.
+Whether you are scaling a nationwide virtual mental health clinic, launching a specialized teledermatology/psychiatry group, or creating a B2B behavioral health EHR SaaS, **Anonsoft** delivers the engineering expertise you need.
 
 * **Zero Upfront Payment:** We engineer an interactive, working software prototype of your custom behavioral health platform first. You only pay after reviewing and approving the live prototype.
 * **100% Source Code Ownership:** Proprietary architecture with no ongoing vendor lock-in or recurring per-seat platform fees.
 * **Full Healthcare Interoperability:** Certified WebRTC video, automated DAP/SOAP scribing, HL7/FHIR EHR connectors, and integrated clearinghouse billing.
 
-Ready to build the future of mental healthcare? **[Schedule a Strategy Call with Our Engineering Leadership](https://calendly.com/todayintechdotin/30min)** today.
+Ready to build the future of mental healthcare? **[Schedule a Strategy Call with Our Engineering Leadership](https://calendly.com/anonsoftdotin/30min)** today.

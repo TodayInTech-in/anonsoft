@@ -21,9 +21,9 @@ export function getAllProjects() {
     const keywordsMatch = content.match(/<meta\s+name="keywords"\s+content="(.*?)"/i);
     const jsonLdMatch = content.match(/<script\s+type="application\/ld\+json">([\s\S]*?)<\/script>/i);
 
-    const title = titleMatch ? titleMatch[1].replace(' | TodayInTech', '').replace(' | TodayInTech SITES', '') : slug;
+    const title = titleMatch ? titleMatch[1].replace(' | Anonsoft', '').replace(' | Anonsoft SITES', '') : slug;
     const description = descMatch ? descMatch[1] : '';
-    const ogImage = ogImageMatch ? ogImageMatch[1] : 'https://todayintech.in/assets/og-image.png';
+    const ogImage = ogImageMatch ? ogImageMatch[1] : 'https://anonsoft.com/assets/anon-soft-og.png';
     const keywords = keywordsMatch ? keywordsMatch[1].split(',').map((k) => k.trim()) : [];
     const jsonLd = jsonLdMatch ? jsonLdMatch[1] : null;
 

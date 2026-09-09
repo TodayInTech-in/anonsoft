@@ -32,7 +32,7 @@ export default function Header() {
   const handleBooking = (e) => {
     e.preventDefault();
     setMobileActive(false);
-    triggerCalendly('https://calendly.com/todayintechdotin/30min');
+    triggerCalendly('https://calendly.com/anonsoftdotin/30min');
   };
 
   return (
@@ -41,8 +41,8 @@ export default function Header() {
         <div className="container">
           <Link href="/" className="nav-logo">
             <img
-              src="/assets/nav_logo.png"
-              alt="TodayInTech - Custom software and virtual care platform development logo"
+              src="/assets/anonsoft.svg"
+              alt="Anonsoft - Custom software and virtual care platform development logo"
               style={{ height: '48px', width: 'auto', display: 'block' }}
               width="103"
               height="48"
@@ -60,7 +60,7 @@ export default function Header() {
             <Link href="/careers" onClick={() => setMobileActive(false)}>Careers</Link>
             <Link href="/contact" onClick={() => setMobileActive(false)}>FAQ & Contact</Link>
             <a
-              href="https://calendly.com/todayintechdotin/30min"
+              href="https://calendly.com/anonsoftdotin/30min"
               className="nav-cta"
               onClick={handleBooking}
             >

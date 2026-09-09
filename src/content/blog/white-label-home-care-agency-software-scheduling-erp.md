@@ -2,7 +2,7 @@
 title: "Building a White-Label Home Care Agency Software and Caregiver Scheduling ERP (2026)"
 description: "An engineering blueprint to designing a white-label home care agency platform, elder care portals, EVV tracking, and caregiver scheduling ERP software."
 date: "2026-08-12"
-author: "TodayInTech Engineering Team"
+author: "Anonsoft Engineering Team"
 category: "Healthcare SaaS"
 image: "senior_care_erp_hero.jpg"
 keywords: ["white-label home care agency software", "senior care agency software developer", "GPS Electronic Visit Verification EVV software", "caregiver scheduling software developer", "custom home care ERP development", "elder care portal software white label", "EVV compliant caregiver tracking app", "family portal software for home care", "home health agency billing software", "caregiver schedule planning platform"]
@@ -54,7 +54,7 @@ Matching the right caregiver with a client depends on factors such as location p
 
 Choosing how to build or deploy a home care platform has significant timeline and budget implications:
 
-| Feature | Legacy Home Care Software | Custom-Built Cloud ERP | White-Label Home Care SaaS (TodayInTech) |
+| Feature | Legacy Home Care Software | Custom-Built Cloud ERP | White-Label Home Care SaaS (Anonsoft) |
 |---|---|---|---|
 | **Deployment Time** | 3 - 5 Months (manual setup per branch) | 9 - 14 Months (full development lifecycle) | 2 - 3 Weeks (branded, pre-built deployment) |
 | **Development Cost** | High licensing and local setup fees | $140,000+ custom software engineering | Predictable monthly SaaS subscription |
@@ -128,8 +128,8 @@ A white-label home care agency software is a pre-developed senior care managemen
 ### What is GPS Electronic Visit Verification (EVV) software compliance?
 EVV compliance requires digital capture of caregiver visit details, including the service type, individual receiving the service, date, time, location (via GPS coordinates), and duration of the visit. Our platform integrates native geofencing to log and verify these visits automatically.
 
-### Can TodayInTech customize caregiver scheduling software?
-Yes. TodayInTech is a leading senior care agency software developer. We customize schedules, family portals, EVV integrations, and payment modules to match your exact agency workflows and operational requirements.
+### Can Anonsoft customize caregiver scheduling software?
+Yes. Anonsoft is a leading senior care agency software developer. We customize schedules, family portals, EVV integrations, and payment modules to match your exact agency workflows and operational requirements.
 
 ### Does the system support home health agency billing software?
 Yes. The ERP features an automated billing and invoicing module that syncs caregiver logs and EVV approvals directly with invoice generators, generating electronic invoices and ledger entries for insurance claims and private pay clients.
@@ -138,7 +138,7 @@ Yes. The ERP features an automated billing and invoicing module that syncs careg
 
 ## Launch Your Home Care SaaS Solution Today
 
-Are you ready to build or launch a branded senior care or caregiver scheduling platform? TodayInTech's experienced software engineering team specializes in HIPAA-compliant cloud architectures, real-time tracking applications, and custom B2B SaaS deployments.
+Are you ready to build or launch a branded senior care or caregiver scheduling platform? Anonsoft's experienced software engineering team specializes in HIPAA-compliant cloud architectures, real-time tracking applications, and custom B2B SaaS deployments.
 
-* **Learn more about our services:** [Explore TodayInTech Projects](/projects/)
+* **Learn more about our services:** [Explore Anonsoft Projects](/projects/)
 * **Get in touch with an expert:** [Book a Consultation Demo](/bookademo/)

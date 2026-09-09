@@ -2,7 +2,7 @@
 title: "Building an AI-Powered White-Label School ERP: The Reseller's Guide to Multi-Branch Campus Management (2026)"
 description: "An engineering blueprint to designing a white-label, multi-branch school ERP and Student Information System (SIS) SaaS platform for educational resellers."
 date: "2026-08-17"
-author: "TodayInTech Engineering Team"
+author: "Anonsoft Engineering Team"
 category: "EdTech SaaS"
 image: "school_erp_reseller_hero.jpg"
 keywords: ["school ERP software for resellers", "white-label school ERP software", "multi-branch school management software", "campus management system ERP", "school fee collection software white label"]
@@ -59,7 +59,7 @@ Parent-teacher-student coordination requires a dedicated web and mobile interfac
 
 Launching a campus management system from scratch is a significant undertaking. Below is an engineering comparison of development paths:
 
-| Feature | Legacy On-Premise SIS | Custom-Built Cloud ERP | White-Label School ERP (TodayInTech) |
+| Feature | Legacy On-Premise SIS | Custom-Built Cloud ERP | White-Label School ERP (Anonsoft) |
 |---|---|---|---|
 | **Time-to-Market** | 6 - 9 Months (manual installation per site) | 10 - 15 Months (full development lifecycle) | 2 - 3 Weeks (branded, pre-configured deployment) |
 | **Upfront Cost** | High licensing and local hardware setups | $150,000+ custom software engineering | Low monthly subscription / API pricing |
@@ -124,14 +124,14 @@ The database uses hierarchical row-level security. A global HQ administrator can
 ### How do we determine the school database management system cost?
 The cost is determined by the deployment architecture. Self-hosting a monolithic database on basic cloud servers can be cheap ($50/month), but scaling to a multi-branch tenant-isolated PostgreSQL cluster on AWS with failover backups typically starts around $300-$800/month depending on query volume and document storage.
 
-### Does TodayInTech customize school ERP software for resellers?
-Yes. TodayInTech provides a complete white-label school management system and campus ERP. We handle domain mapping, custom logo branding, payment gateways integrations, and local language localization. Contact us to schedule a demo.
+### Does Anonsoft customize school ERP software for resellers?
+Yes. Anonsoft provides a complete white-label school management system and campus ERP. We handle domain mapping, custom logo branding, payment gateways integrations, and local language localization. Contact us to schedule a demo.
 
 ---
 
 ## Launch Your Educational SaaS Today
 
-Are you ready to launch a branded school management system or student information platform? TodayInTech's experienced software engineering team specializes in scalable database architectures, secure multi-tenant portals, and modern EdTech integrations.
+Are you ready to launch a branded school management system or student information platform? Anonsoft's experienced software engineering team specializes in scalable database architectures, secure multi-tenant portals, and modern EdTech integrations.
 
-* **Learn more about our services:** [Explore TodayInTech Projects](/projects/school-management-system.html)
+* **Learn more about our services:** [Explore Anonsoft Projects](/projects/school-management-system.html)
 * **Get in touch with an expert:** [Book a Consultation Demo](/bookademo/)

@@ -2,7 +2,7 @@
 title: "Building a HIPAA-Compliant AI Medical Scribe: Ambient Clinical Documentation & EHR Integration Guide (2026)"
 description: "An engineering blueprint to building an ambient AI medical scribe SaaS with real-time speech diarization, FHIR/HL7 EHR integration, and zero-data-retention HIPAA architecture in 2026."
 date: "2026-08-18"
-author: "TodayInTech Engineering Team"
+author: "Anonsoft Engineering Team"
 category: "HealthTech SaaS"
 image: "ai_medical_scribe_hero.jpg"
 keywords: ["HIPAA-compliant telemedicine app developer", "custom telemedicine software development", "EHR integrated telehealth solution", "ambient AI medical scribe software", "healthcare software development"]
@@ -66,7 +66,7 @@ Once the clinician approves or edits the generated note in the review interface,
 
 ## Architectural Comparison: Clinical Documentation Paradigms
 
-| Capability | Legacy Human Medical Scribes | First-Gen Voice Dictation (e.g., Dragon) | Modern Ambient AI Scribe (TodayInTech) |
+| Capability | Legacy Human Medical Scribes | First-Gen Voice Dictation (e.g., Dragon) | Modern Ambient AI Scribe (Anonsoft) |
 |---|---|---|---|
 | **Operational Overhead** | High ($25–$35/hr per clinician) | Moderate software license | Highly scalable per-seat/per-encounter SaaS |
 | **Workflow Impact** | Invasive in-room human presence | Requires unnatural dictation commands | Completely ambient & passive conversation capture |
@@ -131,15 +131,15 @@ Under a standard **Zero-Data-Retention (ZDR)** architecture, audio streams are p
 The platform communicates with EHR platforms using standardized **SMART on FHIR** REST APIs and HL7 integration engines. Clinicians launch the ambient scribe directly inside their EHR chart iframe, and the finalized SOAP note is pushed directly into the clinical encounter documentation tab with one click.
 
 ### Can this AI scribe be integrated into custom telehealth software?
-Yes. TodayInTech specializes in building and integrating ambient AI scribes directly into [custom telemedicine software platforms](/projects/mednowna.html), eliminating the need for clinicians to run third-party background software during virtual video consultations.
+Yes. Anonsoft specializes in building and integrating ambient AI scribes directly into [custom telemedicine software platforms](/projects/mednowna.html), eliminating the need for clinicians to run third-party background software during virtual video consultations.
 
 ---
 
-## Partner with TodayInTech to Build Your Healthcare AI Platform
+## Partner with Anonsoft to Build Your Healthcare AI Platform
 
 Building HIPAA-compliant AI medical software requires deep domain experience in real-time WebRTC audio processing, clinical language modeling, FHIR interoperability, and stringent regulatory compliance.
 
-At **TodayInTech**, we build enterprise-grade [telemedicine platforms](/projects/mednowna.html), AI clinical assistants, and custom healthtech SaaS solutions with **zero upfront payment**—you only pay after reviewing your fully functional working prototype.
+At **Anonsoft**, we build enterprise-grade [telemedicine platforms](/projects/mednowna.html), AI clinical assistants, and custom healthtech SaaS solutions with **zero upfront payment**—you only pay after reviewing your fully functional working prototype.
 
 * Explore our [Telemedicine & HealthTech Software Solutions](/projects/mednowna.html)
 * Learn about our [Startup MVP Engineering Model](/)

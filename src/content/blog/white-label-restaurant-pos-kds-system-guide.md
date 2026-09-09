@@ -2,7 +2,7 @@
 title: "Building a White-Label Restaurant POS and Kitchen Display ERP (2026)"
 description: "An engineering guide to designing a white-label restaurant POS system and kitchen display system (KDS) ERP with offline synchronization and real-time order printing."
 date: "2026-08-10"
-author: "TodayInTech Engineering Team"
+author: "Anonsoft Engineering Team"
 category: "SaaS Solutions"
 image: "restaurant_pos_hero.jpg"
 keywords: ["white-label restaurant POS system", "restaurant billing and kitchen display ERP", "white label kitchen display system KDS", "custom POS software for restaurants", "multi-outlet restaurant POS software"]
@@ -51,7 +51,7 @@ Order tickets change states dynamically based on prep statuses:
 
 Choosing how to build or deploy a hospitality platform has significant timeline and budget implications:
 
-| Feature | Legacy Desktop POS Systems | Custom-Built Cloud POS | White-Label SaaS POS (TodayInTech) |
+| Feature | Legacy Desktop POS Systems | Custom-Built Cloud POS | White-Label SaaS POS (Anonsoft) |
 |---|---|---|---|
 | **Deployment Time** | 3 - 6 Months (on-site hardware setup) | 8 - 12 Months (full development lifecycle) | 2 - 4 Weeks (branded, pre-built deployment) |
 | **Development Cost** | High upfront hardware licensing | $120,000+ custom software engineering | Predictable subscription model |
@@ -84,14 +84,14 @@ The KDS connects directly to the local POS edge node via secure WebSockets. The 
 ### Can the billing system print receipts without an internet connection?
 Yes. Modern hybrid POS applications communicate directly with thermal receipt printers over the local network (LAN) using ESC/POS commands. Printing works independently of cloud internet connectivity.
 
-### Does TodayInTech offer POS and KDS software customizations?
-Yes. TodayInTech provides a complete white-label restaurant POS and kitchen display ERP solution. We handle the custom branding, domain mapping, local printing configurations, and deployment. Contact us to book a demo.
+### Does Anonsoft offer POS and KDS software customizations?
+Yes. Anonsoft provides a complete white-label restaurant POS and kitchen display ERP solution. We handle the custom branding, domain mapping, local printing configurations, and deployment. Contact us to book a demo.
 
 ---
 
 ## Scale Your Hospitality Business Today
 
-Are you ready to build or launch a branded restaurant point-of-sale system? TodayInTech's experienced software engineering team specializes in high-availability WebGL interfaces, real-time sync systems, and secure cloud SaaS platforms.
+Are you ready to build or launch a branded restaurant point-of-sale system? Anonsoft's experienced software engineering team specializes in high-availability WebGL interfaces, real-time sync systems, and secure cloud SaaS platforms.
 
-* **Learn more about our services:** [Explore TodayInTech Projects](/projects/)
+* **Learn more about our services:** [Explore Anonsoft Projects](/projects/)
 * **Get in touch with an expert:** [Book a Consultation Demo](/bookademo/)

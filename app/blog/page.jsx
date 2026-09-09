@@ -4,7 +4,7 @@ import { getAllBlogs } from '../lib/blogs';
 export const metadata = {
   title: 'Blog — Health Tech Insights, App Development Guides & Digital Health Trends',
   description:
-    'Explore TodayInTech’s blog for expert insights on telemedicine app development, EHR/EMR integration, HIPAA compliance, white-label healthcare software, and digital health trends in 2026.',
+    'Explore Anonsoft’s blog for expert insights on telemedicine app development, EHR/EMR integration, HIPAA compliance, white-label healthcare software, and digital health trends in 2026.',
 };
 
 export default function BlogIndexPage() {
@@ -15,7 +15,7 @@ export default function BlogIndexPage() {
       <div className="container">
         <header style={{ textAlign: 'center', marginBottom: '60px' }}>
           <div className="section-label">Health Tech & Software Insights</div>
-          <h1 className="section-title">TodayInTech Blog</h1>
+          <h1 className="section-title">Anonsoft Blog</h1>
           <p className="section-subtitle">
             Guides on telemedicine, EHR integration, HIPAA compliance, white-label software, and 2026 healthcare trends.
           </p>

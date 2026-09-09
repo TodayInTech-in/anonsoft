@@ -2,7 +2,7 @@
 title: "Building an AI-Powered Cloud POS & Self-Ordering Kiosk SaaS: Architecture, Offline-First Sync, and Multi-Location Franchises (2026)"
 description: "An engineering blueprint for building a multi-tenant cloud POS and self-ordering kiosk SaaS with offline-first CRDT sync, IoT payment gateway abstraction, and real-time AI inventory orchestration in 2026."
 date: "2026-08-19"
-author: "TodayInTech Engineering Team"
+author: "Anonsoft Engineering Team"
 category: "POS & Retail SaaS"
 image: "cloud_pos_kiosk_hero.jpg"
 keywords: ["cloud POS software development", "self-ordering kiosk SaaS", "offline-first POS architecture", "white-label restaurant POS", "retail management software", "custom POS developer"]
@@ -77,7 +77,7 @@ Unlike static upsell banners that frustrate users, AI-powered kiosks leverage re
 
 ## Architecture Comparison: POS Paradigms
 
-| Technical Dimension | Legacy On-Premise POS | First-Gen Cloud POS (SaaS 1.0) | Modern Edge-Cloud POS (TodayInTech) |
+| Technical Dimension | Legacy On-Premise POS | First-Gen Cloud POS (SaaS 1.0) | Modern Edge-Cloud POS (Anonsoft) |
 |---|---|---|---|
 | **System Architecture** | Local Windows server + serial DB | Centralized single-page web app | Distributed Edge-Cloud with CRDT sync |
 | **Internet Dependency** | Zero cloud capabilities | Complete outage during disconnection | **100% Offline-capable** with auto-sync |
@@ -196,22 +196,22 @@ Traditional POS software runs on local on-premise servers and requires manual so
 An offline-first POS processes cash sales, gift cards, and queued offline card transactions (known as Store & Forward) locally using embedded SQLite databases and cryptographic local queuing. Once the internet connection is restored, transactions sync automatically with the cloud ledger and payment gateway.
 
 ### 3. How much does it cost to build a custom white-label cloud POS or kiosk platform?
-A custom, enterprise-ready white-label cloud POS platform with self-ordering kiosk support typically costs between **$25,000 and $75,000** depending on features like hardware peripheral support, KDS integration, and multi-tenant franchise dashboards. TodayInTech delivers custom POS prototypes with **zero upfront cost** under our working prototype model.
+A custom, enterprise-ready white-label cloud POS platform with self-ordering kiosk support typically costs between **$25,000 and $75,000** depending on features like hardware peripheral support, KDS integration, and multi-tenant franchise dashboards. Anonsoft delivers custom POS prototypes with **zero upfront cost** under our working prototype model.
 
 ### 4. What hardware peripherals are compatible with modern web-based POS platforms?
 Modern web-based POS platforms integrate directly with ESC/POS thermal receipt printers (Epson, Star Micronics), barcode scanners (Honeywell, Zebra), automated cash drawers, customer-facing displays, and EMV chip card readers (Stripe BBPOS, PAX, Verifone) via WebUSB, WebSerial, and local TCP/IP sockets.
 
-### 5. Can TodayInTech build custom POS and self-ordering kiosk software for my business?
-Yes. TodayInTech specializes in developing custom, HIPAA-compliant, PCI-compliant, and high-performance SaaS solutions. We build working software prototypes before asking for any financial commitment. [Book a strategy call](https://calendly.com/todayintechdotin/30min) or explore our [restaurant POS platform](/projects/restaurant-management-system.html) to get started.
+### 5. Can Anonsoft build custom POS and self-ordering kiosk software for my business?
+Yes. Anonsoft specializes in developing custom, HIPAA-compliant, PCI-compliant, and high-performance SaaS solutions. We build working software prototypes before asking for any financial commitment. [Book a strategy call](https://calendly.com/anonsoftdotin/30min) or explore our [restaurant POS platform](/projects/restaurant-management-system.html) to get started.
 
 ---
 
-## Build Your Next-Gen POS Platform with TodayInTech
+## Build Your Next-Gen POS Platform with Anonsoft
 
-Whether you are an established franchise chain seeking to cut licensing fees from legacy POS vendors or a SaaS entrepreneur building a vertical POS software for retail, salons, or QSRs, **TodayInTech** is your engineering partner.
+Whether you are an established franchise chain seeking to cut licensing fees from legacy POS vendors or a SaaS entrepreneur building a vertical POS software for retail, salons, or QSRs, **Anonsoft** is your engineering partner.
 
 * **Zero Upfront Payment:** We engineer a functional, interactive prototype of your custom POS or kiosk system first. You only pay after you review and approve the working build.
 * **Full Source Code Ownership:** 100% proprietary code with zero vendor lock-in.
 * **End-to-End Delivery:** From custom kiosk UI/UX design to edge offline sync, payment gateway certifications, and kitchen display systems.
 
-Ready to bring your POS software vision to life? **[Book a Free Technical Strategy Call](https://calendly.com/todayintechdotin/30min)** with our engineering leadership today.
+Ready to bring your POS software vision to life? **[Book a Free Technical Strategy Call](https://calendly.com/anonsoftdotin/30min)** with our engineering leadership today.

@@ -4,9 +4,9 @@ import PricingSection from '../components/PricingSection';
 import CtaSection from '../components/CtaSection';
 
 export const metadata = {
-  title: 'Services — TodayInTech Software Agency',
+  title: 'Services — Anonsoft Software Agency',
   description:
-    'TodayInTech builds scalable custom software, HealthTech platforms, and EdTech solutions. Launch your branded MVP in weeks — not months. Trusted by 50+ brands worldwide.',
+    'Anonsoft builds scalable custom software, HealthTech platforms, and EdTech solutions. Launch your branded MVP in weeks — not months. Trusted by 50+ brands worldwide.',
   keywords: [
     'custom software development',
     'edtech solutions',
@@ -18,35 +18,35 @@ export const metadata = {
     'saas development company',
   ],
   alternates: {
-    canonical: 'https://todayintech.in/services',
+    canonical: 'https://anonsoft.in/services',
   },
   openGraph: {
-    title: 'Software Development Services — TodayInTech',
+    title: 'Software Development Services — Anonsoft',
     description:
-      'TodayInTech builds scalable custom software, HealthTech platforms, and EdTech solutions. Launch your branded MVP in weeks.',
-    url: 'https://todayintech.in/services',
+      'Anonsoft builds scalable custom software, HealthTech platforms, and EdTech solutions. Launch your branded MVP in weeks.',
+    url: 'https://anonsoft.in/services',
     type: 'website',
-    images: [{ url: 'https://todayintech.in/assets/og-image.png' }],
+    images: [{ url: 'https://anonsoft.com/assets/anon-soft-og.png' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Services — TodayInTech Software Agency',
+    title: 'Services — Anonsoft Software Agency',
     description:
-      'TodayInTech builds scalable custom software, HealthTech platforms, and EdTech solutions.',
-    images: ['https://todayintech.in/assets/og-image.png'],
+      'Anonsoft builds scalable custom software, HealthTech platforms, and EdTech solutions.',
+    images: ['https://anonsoft.com/assets/anon-soft-og.png'],
   },
 };
 
 const jsonLdOrg = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'TodayInTech',
-  alternateName: ['Today In Tech', 'TodayInTech Software', 'TodayInTech Health Tech'],
-  url: 'https://todayintech.in',
-  logo: 'https://todayintech.in/assets/logo.png',
-  image: 'https://todayintech.in/assets/og-image.png',
+  name: 'Anonsoft',
+  alternateName: ['Anonsoft', 'Anonsoft Software', 'Anonsoft Health Tech'],
+  url: 'https://anonsoft.in',
+  logo: 'https://anonsoft.in/assets/logo.png',
+  image: 'https://anonsoft.com/assets/anon-soft-og.png',
   description:
-    'TodayInTech is a leading health white-label software development company specializing in telemedicine, EHR/EMR, pharmacy management, fitness apps, and HIPAA-compliant healthcare solutions.',
+    'Anonsoft is a leading health white-label software development company specializing in telemedicine, EHR/EMR, pharmacy management, fitness apps, and HIPAA-compliant healthcare solutions.',
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '4.9',
@@ -58,9 +58,9 @@ const jsonLdOrg = {
 const jsonLdService = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
-  name: 'TodayInTech',
-  image: 'https://todayintech.in/assets/logo.png',
-  url: 'https://todayintech.in',
+  name: 'Anonsoft',
+  image: 'https://anonsoft.in/assets/logo.png',
+  url: 'https://anonsoft.in',
   telephone: '+91-7679349780',
   priceRange: '$$',
   hasOfferCatalog: {
@@ -107,15 +107,15 @@ const jsonLdFaq = {
       name: 'What is health white-label software?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Health white-label software is a pre-built healthcare platform that can be rebranded and customized with your company logo, colors, and features. TodayInTech builds white-label solutions for telemedicine, EHR/EMR, pharmacy management, and patient portals.',
+        text: 'Health white-label software is a pre-built healthcare platform that can be rebranded and customized with your company logo, colors, and features. Anonsoft builds white-label solutions for telemedicine, EHR/EMR, pharmacy management, and patient portals.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Is TodayInTech HIPAA compliant?',
+      name: 'Is Anonsoft HIPAA compliant?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, all healthcare products built by TodayInTech are HIPAA compliant with enterprise-grade security including end-to-end encryption, secure data storage, access controls, and audit logging.',
+        text: 'Yes, all healthcare products built by Anonsoft are HIPAA compliant with enterprise-grade security including end-to-end encryption, secure data storage, access controls, and audit logging.',
       },
     },
   ],

@@ -1,27 +1,27 @@
 import Script from 'next/script';
 
 export const metadata = {
-  title: 'Book a Demo — TodayInTech Software Agency',
+  title: 'Book a Demo — Anonsoft Software Agency',
   description:
-    'Book a free demo and consultation with TodayInTech. Launch your custom software or HealthTech platform in weeks.',
+    'Book a free demo and consultation with Anonsoft. Launch your custom software or HealthTech platform in weeks.',
   alternates: {
-    canonical: 'https://todayintech.in/bookademo/',
+    canonical: 'https://anonsoft.in/bookademo/',
   },
   openGraph: {
-    title: 'Book a Demo — TodayInTech Software Agency',
+    title: 'Book a Demo — Anonsoft Software Agency',
     description:
-      'Book a free demo and consultation with TodayInTech. Launch your custom software or HealthTech platform in weeks.',
-    url: 'https://todayintech.in/bookademo/',
-    siteName: 'TodayInTech',
-    images: [{ url: 'https://todayintech.in/assets/og-image.png' }],
+      'Book a free demo and consultation with Anonsoft. Launch your custom software or HealthTech platform in weeks.',
+    url: 'https://anonsoft.in/bookademo/',
+    siteName: 'Anonsoft',
+    images: [{ url: 'https://anonsoft.com/assets/anon-soft-og.png' }],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Book a Demo — TodayInTech Software Agency',
+    title: 'Book a Demo — Anonsoft Software Agency',
     description:
-      'Book a free demo and consultation with TodayInTech. Launch your custom software or HealthTech platform in weeks.',
-    images: ['https://todayintech.in/assets/og-image.png'],
+      'Book a free demo and consultation with Anonsoft. Launch your custom software or HealthTech platform in weeks.',
+    images: ['https://anonsoft.com/assets/anon-soft-og.png'],
   },
 };
 
@@ -96,7 +96,7 @@ export default function BookDemoPage() {
           <div className="demo-form-wrapper">
             <div
               className="calendly-inline-widget"
-              data-url="https://calendly.com/todayintechdotin/30min?hide_gdpr_banner=1"
+              data-url="https://calendly.com/anonsoftdotin/30min?hide_gdpr_banner=1"
               style={{ minWidth: '320px', height: '700px' }}
             />
           </div>

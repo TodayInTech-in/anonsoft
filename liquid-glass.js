@@ -1,5 +1,5 @@
 /* ===================================================
-   LIQUID GLASS & BUBBLE SYSTEM — TodayInTech
+   LIQUID GLASS & BUBBLE SYSTEM — Anonsoft
    =================================================== */
 (function () {
   'use strict';

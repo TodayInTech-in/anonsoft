@@ -19,17 +19,17 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: project.title,
       description: project.description,
-      url: `https://todayintech.in/projects/${project.slug}`,
-      images: [{ url: project.ogImage || 'https://todayintech.in/assets/og-image.png' }],
+      url: `https://anonsoft.in/projects/${project.slug}`,
+      images: [{ url: project.ogImage || 'https://anonsoft.com/assets/anon-soft-og.png' }],
     },
     twitter: {
       card: 'summary_large_image',
       title: project.title,
       description: project.description,
-      images: [project.ogImage || 'https://todayintech.in/assets/og-image.png'],
+      images: [project.ogImage || 'https://anonsoft.com/assets/anon-soft-og.png'],
     },
     alternates: {
-      canonical: `https://todayintech.in/projects/${project.slug}`,
+      canonical: `https://anonsoft.in/projects/${project.slug}`,
     },
   };
 }

@@ -1,6 +1,6 @@
-# TodayInTech — Competitor Analysis & CRO Report
+# Anonsoft — Competitor Analysis & CRO Report
 **Generated:** 2026-03-29 | **Analyst:** Automated Growth Strategy Run
-**Site Analyzed:** https://root.todayintech.in/
+**Site Analyzed:** https://root.anonsoft.in/
 **Scope:** US Healthcare SaaS / Dev Agency Market
 
 ---
@@ -100,7 +100,7 @@ All 6 testimonials remain without LinkedIn URLs or external verification links. 
 
 ## 5. COMPETITOR COMPARISON — Updated
 
-| Dimension | TodayInTech | Arkenea | HTD Health | Healee | Bacancy |
+| Dimension | Anonsoft | Arkenea | HTD Health | Healee | Bacancy |
 |---|---|---|---|---|---|
 | **Hero specificity** | ✅ High (4–8 weeks + 70%) | High (14 yrs) | High | Ultra-specific (5 days) | Medium |
 | **Pricing transparency** | ✅ Dedicated section | None | None | Tiered | Rate cards |

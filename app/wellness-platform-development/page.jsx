@@ -2,7 +2,7 @@ import Link from 'next/link';
 import CalendlyButton from '../components/CalendlyButton';
 
 export const metadata = {
-  title: 'Branded Wellness & Fitness App Development | TodayInTech',
+  title: 'Branded Wellness & Fitness App Development | Anonsoft',
   description:
     'Build a branded wellness app with wearable integration, nutrition tracking, live classes, and community features—delivered faster and cheaper than custom.',
   keywords: [
@@ -14,22 +14,22 @@ export const metadata = {
     'wellness platform development',
   ],
   alternates: {
-    canonical: 'https://todayintech.in/wellness-platform-development',
+    canonical: 'https://anonsoft.in/wellness-platform-development',
   },
   openGraph: {
-    title: 'Branded Wellness & Fitness App Development | TodayInTech',
+    title: 'Branded Wellness & Fitness App Development | Anonsoft',
     description:
       'Build a branded wellness app with wearable integration, nutrition tracking, live classes, and community features—delivered in 4–8 weeks.',
-    url: 'https://todayintech.in/wellness-platform-development',
+    url: 'https://anonsoft.in/wellness-platform-development',
     type: 'website',
-    images: [{ url: 'https://todayintech.in/assets/og-image.png' }],
+    images: [{ url: 'https://anonsoft.com/assets/anon-soft-og.png' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Branded Wellness & Fitness App Development | TodayInTech',
+    title: 'Branded Wellness & Fitness App Development | Anonsoft',
     description:
       'Build a branded wellness app with wearable integration, live classes, and community features.',
-    images: ['https://todayintech.in/assets/og-image.png'],
+    images: ['https://anonsoft.com/assets/anon-soft-og.png'],
   },
 };
 
@@ -39,8 +39,8 @@ const jsonLd = {
   name: 'Branded Wellness & Fitness App Development',
   provider: {
     '@type': 'Organization',
-    name: 'TodayInTech',
-    url: 'https://todayintech.in',
+    name: 'Anonsoft',
+    url: 'https://anonsoft.in',
   },
   serviceType: 'Mobile & Web App Development',
   description:

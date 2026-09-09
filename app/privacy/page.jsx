@@ -1,23 +1,23 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Privacy Policy — TodayInTech',
+  title: 'Privacy Policy — Anonsoft',
   description:
-    'Read TodayInTech\'s privacy policy to understand how we collect, store, and protect user data when using our website and custom software development services.',
+    'Read Anonsoft\'s privacy policy to understand how we collect, store, and protect user data when using our website and custom software development services.',
   keywords: [
-    'privacy policy todayintech',
+    'privacy policy anonsoft',
     'data protection',
     'software development privacy',
     'HIPAA compliant privacy',
   ],
   alternates: {
-    canonical: 'https://todayintech.in/privacy',
+    canonical: 'https://anonsoft.in/privacy',
   },
   openGraph: {
-    title: 'Privacy Policy — TodayInTech',
+    title: 'Privacy Policy — Anonsoft',
     description:
-      'Read TodayInTech\'s privacy policy to understand how we collect, store, and protect user data.',
-    url: 'https://todayintech.in/privacy',
+      'Read Anonsoft\'s privacy policy to understand how we collect, store, and protect user data.',
+    url: 'https://anonsoft.in/privacy',
     type: 'website',
   },
 };
@@ -53,7 +53,7 @@ export default function PrivacyPage() {
 
         <div style={{ color: '#334155', lineHeight: '1.8', fontSize: '1rem' }}>
           <p style={{ marginBottom: '20px' }}>
-            At TodayInTech ("we," "our," or "us"), protecting your privacy is our top priority. This Privacy Policy details how we collect, store, share, and protect your personal information when you visit our website (<Link href="/" style={{ color: '#0369a1', textDecoration: 'underline' }}>todayintech.in</Link>) or engage our custom software and mobile application development services.
+            At Anonsoft ("we," "our," or "us"), protecting your privacy is our top priority. This Privacy Policy details how we collect, store, share, and protect your personal information when you visit our website (<Link href="/" style={{ color: '#0369a1', textDecoration: 'underline' }}>anonsoft.in</Link>) or engage our custom software and mobile application development services.
           </p>
 
           <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', fontWeight: 700, color: '#1e293b', margin: '30px 0 15px' }}>
@@ -128,10 +128,10 @@ export default function PrivacyPage() {
             If you have any questions regarding this Privacy Policy, your data handling, or wish to update your records, please contact us at:
           </p>
           <p style={{ marginBottom: '5px' }}>
-            <strong>Email:</strong> <a href="mailto:contact@todayintech.in" style={{ color: '#0369a1' }}>contact@todayintech.in</a>
+            <strong>Email:</strong> <a href="mailto:contact@anonsoft.in" style={{ color: '#0369a1' }}>contact@anonsoft.in</a>
           </p>
           <p style={{ marginBottom: '5px' }}>
-            <strong>Phone:</strong> <a href="tel:+917679349780" style={{ color: '#0369a1' }}>+91 7679349780</a>
+            <strong>Phone:</strong> <a href="tel:+919007900972" style={{ color: '#0369a1' }}>+91 7679349780</a>
           </p>
           <p style={{ marginBottom: '5px' }}>
             <strong>Address:</strong> Salt Lake Sector V, Kolkata, West Bengal, India

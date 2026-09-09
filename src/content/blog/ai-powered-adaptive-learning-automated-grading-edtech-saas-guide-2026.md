@@ -2,7 +2,7 @@
 title: "Building an AI-Powered Adaptive Learning & Automated Grading EdTech SaaS: Knowledge Tracing Graphs, LTI 1.3 LMS Interoperability, Real-Time Feedback Pipelines, and Multi-Tenant Architecture (2026)"
 description: "An engineering blueprint for building a multi-tenant AI adaptive learning and automated grading EdTech SaaS with Deep Knowledge Tracing (DKT), vector RAG rubric evaluation, LTI 1.3 LMS integration, and sub-second feedback in 2026."
 date: "2026-08-26"
-author: "TodayInTech Engineering Team"
+author: "Anonsoft Engineering Team"
 category: "EdTech & AI SaaS"
 image: "ai_adaptive_learning_edtech_hero.jpg"
 keywords: ["white-label school erp", "custom edtech software development", "ai adaptive learning platform", "automated essay grading software", "lti 1.3 lms integration", "edtech saas development", "school management system development", "ai in education software"]
@@ -207,9 +207,9 @@ Educational software handles sensitive minor student records. Enterprise deploym
 
 ---
 
-## Feature Matrix: Custom TodayInTech AI EdTech SaaS vs. Legacy LMS Add-ons
+## Feature Matrix: Custom Anonsoft AI EdTech SaaS vs. Legacy LMS Add-ons
 
-| Capability | Generic Off-The-Shelf LMS Plugins | Custom TodayInTech Built EdTech SaaS |
+| Capability | Generic Off-The-Shelf LMS Plugins | Custom Anonsoft Built EdTech SaaS |
 | :--- | :--- | :--- |
 | **Source Code & IP Ownership** | ❌ Proprietary vendor lock-in | ✅ **100% Full IP & Source Code Ownership** |
 | **Adaptive Knowledge Tracing** | ❌ Basic linear branching rules | ✅ **Neural Graph Deep Knowledge Tracing (DKT)** |
@@ -240,15 +240,15 @@ We recommend:
 * **Execution Environment:** Docker with gVisor / AWS ECS Fargate for sandboxed code grading.
 
 ### 5. How long does it take to develop a production-ready AI EdTech MVP?
-Using TodayInTech's pre-built modular libraries for LTI 1.3, sandboxed code execution, and knowledge tracing algorithms, a fully functional, white-label AI EdTech MVP can be developed and deployed in **6 to 10 weeks**.
+Using Anonsoft's pre-built modular libraries for LTI 1.3, sandboxed code execution, and knowledge tracing algorithms, a fully functional, white-label AI EdTech MVP can be developed and deployed in **6 to 10 weeks**.
 
 ---
 
-## Build Your AI-Powered EdTech Platform with TodayInTech
+## Build Your AI-Powered EdTech Platform with Anonsoft
 
 Are you ready to launch an intelligent adaptive learning platform, build an automated grading SaaS for universities, or white-label a modern school ERP for K-12 school systems?
 
-At **TodayInTech**, we specialize in engineering high-throughput AI SaaS platforms, custom educational technology, and enterprise-grade cloud systems.
+At **Anonsoft**, we specialize in engineering high-throughput AI SaaS platforms, custom educational technology, and enterprise-grade cloud systems.
 
 * **Explore Our Education Solutions:** Check out our [White-Label School Management ERP](/projects/school-management-system.html).
 * **Zero Upfront Risk:** We build your functional working prototype first—you only pay after testing and approving your software.

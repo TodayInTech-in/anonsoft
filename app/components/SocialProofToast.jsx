@@ -31,7 +31,7 @@ export default function SocialProofToast() {
   }, []);
 
   const handleClick = () => {
-    triggerCalendly('https://calendly.com/todayintechdotin/30min');
+    triggerCalendly('https://calendly.com/anonsoftdotin/30min');
   };
 
   if (!visible) return null;

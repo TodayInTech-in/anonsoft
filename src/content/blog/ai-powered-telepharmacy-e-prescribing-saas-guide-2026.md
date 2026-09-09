@@ -2,7 +2,7 @@
 title: "Building an AI-Powered Telepharmacy & E-Prescribing SaaS: NCPDP SCRIPT 2023061 Integration, Automated Drug-Drug Interaction (DDI) Screening, EPCS Compliance, and 50-State Digital Prescription Fulfillment (2026)"
 description: "An in-depth engineering blueprint for building a multi-tenant AI Telepharmacy and E-Prescribing SaaS platform with real-time NCPDP SCRIPT networks, EPCS two-factor authentication, automated drug interaction screening, and compounding pharmacy workflows in 2026."
 date: "2026-08-30"
-author: "TodayInTech Engineering Team"
+author: "Anonsoft Engineering Team"
 category: "Healthcare SaaS & AI"
 image: "ai_telepharmacy_saas_hero.jpg"
 keywords: ["telepharmacy software development", "e-prescribing SaaS platform", "NCPDP SCRIPT standard integration", "EPCS compliance software", "compounding pharmacy management software", "custom healthtech software development", "HIPAA-compliant telemedicine app developer", "digital pharmacy fulfillment API"]
@@ -142,7 +142,7 @@ import hmac
 import hashlib
 import time
 
-app = FastAPI(title="TodayInTech Telepharmacy E-Rx Engine", version="2026.1")
+app = FastAPI(title="Anonsoft Telepharmacy E-Rx Engine", version="2026.1")
 
 class MedicationItem(BaseModel):
     ndc: str = Field(..., description="National Drug Code (11 digits)")
@@ -279,23 +279,23 @@ The NCPDP SCRIPT Standard Version 2023061 is the updated national data exchange 
 ### What are the DEA requirements for EPCS (Electronic Prescriptions for Controlled Substances)?
 DEA 21 CFR Part 1311 mandates that software for e-prescribing controlled substances (Schedules II–V) must use two-factor authentication (something you know, something you have, or something you are), undergo an independent third-party audit/certification, and maintain tamper-evident audit logs.
 
-### Can TodayInTech build custom 503A and 503B compounding pharmacy software?
-Yes. TodayInTech specializes in custom compounding pharmacy management software, including USP 795/797/800 compliant batch records, lot traceability, beyond-use dating (BUD) engines, and multi-state pharmacist teleconsultation integrations.
+### Can Anonsoft build custom 503A and 503B compounding pharmacy software?
+Yes. Anonsoft specializes in custom compounding pharmacy management software, including USP 795/797/800 compliant batch records, lot traceability, beyond-use dating (BUD) engines, and multi-state pharmacist teleconsultation integrations.
 
-### How does TodayInTech's zero-upfront payment model work?
-TodayInTech develops a working, functional prototype of your custom telepharmacy or healthtech software first. You review and test the actual software prototype with zero financial commitment before proceeding with full-scale development.
+### How does Anonsoft's zero-upfront payment model work?
+Anonsoft develops a working, functional prototype of your custom telepharmacy or healthtech software first. You review and test the actual software prototype with zero financial commitment before proceeding with full-scale development.
 
 ---
 
-## Why Choose TodayInTech as Your Telepharmacy & HealthTech Engineering Partner?
+## Why Choose Anonsoft as Your Telepharmacy & HealthTech Engineering Partner?
 
 Building a custom, HIPAA-compliant Telepharmacy & E-Prescribing SaaS platform from scratch is fraught with compliance risks, protocol intricacies, and integration hurdles.
 
-At **TodayInTech**, we specialize in architecting and deploying cutting-edge digital health, telemedicine, and telepharmacy platforms:
+At **Anonsoft**, we specialize in architecting and deploying cutting-edge digital health, telemedicine, and telepharmacy platforms:
 
 * **Zero Upfront Payment Model:** We build your working software prototype first. You test and validate the functional prototype before committing to development fees.
 * **Deep Protocol & Clearinghouse Expertise:** Pre-built, battle-tested integrations for Surescripts, Change Healthcare, NCPDP SCRIPT 2023061, SMART on FHIR R4, and EPCS certification.
 * **50-State Telehealth Architecture:** Multi-tenant infrastructure engineered for rapid nationwide scaling, automated state board compliance, and distributed fulfillment routing.
 * **End-to-End Enterprise Delivery:** From intuitive clinician portals and patient mobile apps to robotic dispensing integrations and real-time courier tracking.
 
-**Ready to launch or modernize your Telepharmacy & E-Prescribing platform in 2026?** [Schedule a 30-minute technical consultation with our engineering team today](https://calendly.com/todayintechdotin/30min).
+**Ready to launch or modernize your Telepharmacy & E-Prescribing platform in 2026?** [Schedule a 30-minute technical consultation with our engineering team today](https://calendly.com/anonsoftdotin/30min).

@@ -49,7 +49,7 @@ def bullet_row(c, x, y, text, sub=None):
         c.drawString(x + 6*mm, y - 4*mm, sub)
 
 def generate_amc():
-    out = "/mnt/user-data/outputs/ShieldsPro_AMC_Proposal_TodayInTech.pdf"
+    out = "/mnt/user-data/outputs/ShieldsPro_AMC_Proposal_Anonsoft.pdf"
     c = canvas.Canvas(out, pagesize=A4)
     margin = 20*mm
 
@@ -72,11 +72,11 @@ def generate_amc():
     # Company name
     c.setFillColor(WHITE)
     c.setFont("Helvetica-Bold", 20)
-    c.drawRightString(W - margin, H - 20*mm, "TodayInTech")
+    c.drawRightString(W - margin, H - 20*mm, "Anonsoft")
     c.setFillColor(LIGHT_GRAY)
     c.setFont("Helvetica", 9)
-    c.drawRightString(W - margin, H - 27*mm, "www.todayintech.in")
-    c.drawRightString(W - margin, H - 33*mm, "contact@todayintech.in")
+    c.drawRightString(W - margin, H - 27*mm, "www.anonsoft.in")
+    c.drawRightString(W - margin, H - 33*mm, "contact@anonsoft.in")
 
     # Doc label tag
     c.setFillColor(WHITE)
@@ -230,7 +230,7 @@ def generate_amc():
     rrect(c, margin, sig_y - 24*mm, 90*mm, 22*mm, fill=BOX_BG, stroke=RULE_GRAY)
     c.setFillColor(MID_GRAY)
     c.setFont("Helvetica", 8)
-    c.drawString(margin + 4*mm, sig_y - 5*mm, "Authorized By — TodayInTech")
+    c.drawString(margin + 4*mm, sig_y - 5*mm, "Authorized By — Anonsoft")
     c.setStrokeColor(BLACK)
     c.setLineWidth(0.8)
     c.line(margin + 4*mm, sig_y - 12*mm, margin + 52*mm, sig_y - 12*mm)
@@ -239,7 +239,7 @@ def generate_amc():
     c.drawString(margin + 4*mm, sig_y - 17*mm, "Yasmin K")
     c.setFillColor(MID_GRAY)
     c.setFont("Helvetica", 8.5)
-    c.drawString(margin + 4*mm, sig_y - 22*mm, "Founder & CEO, TodayInTech")
+    c.drawString(margin + 4*mm, sig_y - 22*mm, "Founder & CEO, Anonsoft")
 
     # Official seal text
     seal_x = W - margin - 55*mm
@@ -252,14 +252,14 @@ def generate_amc():
     c.drawCentredString(seal_x + 27.5*mm, sig_y - 9*mm, "TODAYINTECH")
     c.setFont("Helvetica", 7)
     c.drawCentredString(seal_x + 27.5*mm, sig_y - 14*mm, "Official Seal")
-    c.drawCentredString(seal_x + 27.5*mm, sig_y - 19*mm, "www.todayintech.in")
+    c.drawCentredString(seal_x + 27.5*mm, sig_y - 19*mm, "www.anonsoft.in")
 
     # Footer
     c.setFillColor(BLACK)
     c.rect(0, 0, W, 16*mm, fill=1, stroke=0)
     c.setFillColor(WHITE)
     c.setFont("Helvetica", 8)
-    c.drawCentredString(W/2, 9*mm, "Thank you for your business!  ·  www.todayintech.in  ·  contact@todayintech.in")
+    c.drawCentredString(W/2, 9*mm, "Thank you for your business!  ·  www.anonsoft.in  ·  contact@anonsoft.in")
     c.setFillColor(LIGHT_GRAY)
     c.setFont("Helvetica", 7)
     c.drawCentredString(W/2, 4*mm, "This document is confidential and intended solely for the named client.")

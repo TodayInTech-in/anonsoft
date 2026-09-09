@@ -96,7 +96,7 @@ export default function HeroSection() {
 
   const handleBooking = (e) => {
     e.preventDefault();
-    triggerCalendly('https://calendly.com/todayintechdotin/30min');
+    triggerCalendly('https://calendly.com/anonsoftdotin/30min');
   };
 
   const currentSlide = slides[activeTab];
@@ -117,11 +117,11 @@ export default function HeroSection() {
               {currentSlide.description}
             </p>
             <div className="hero-buttons">
-              <a href="https://calendly.com/todayintechdotin/30min" onClick={handleBooking} className="btn-primary" id="heroCta">
+              <a href="https://calendly.com/anonsoftdotin/30min" onClick={handleBooking} className="btn-primary" id="heroCta">
                 {currentSlide.ctaText}
               </a>
               <a
-                href="https://wa.me/917679349780"
+                href="https://wa.me/919007900972"
                 target="_blank"
                 rel="noreferrer"
                 className="btn-secondary"

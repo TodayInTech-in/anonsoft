@@ -1,23 +1,23 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Refund & Cancellation Policy — TodayInTech',
+  title: 'Refund & Cancellation Policy — Anonsoft',
   description:
-    'Read TodayInTech\'s refund and cancellation policy regarding project cancellations, prototype verification, and milestone refund details.',
+    'Read Anonsoft\'s refund and cancellation policy regarding project cancellations, prototype verification, and milestone refund details.',
   keywords: [
-    'refund policy todayintech',
+    'refund policy anonsoft',
     'cancellation fee',
     'prototype trial cancel',
     'client payment refund',
   ],
   alternates: {
-    canonical: 'https://todayintech.in/refund-policy',
+    canonical: 'https://anonsoft.in/refund-policy',
   },
   openGraph: {
-    title: 'Refund & Cancellation Policy — TodayInTech',
+    title: 'Refund & Cancellation Policy — Anonsoft',
     description:
-      'Read TodayInTech\'s refund and cancellation policy regarding project cancellations and prototype verification.',
-    url: 'https://todayintech.in/refund-policy',
+      'Read Anonsoft\'s refund and cancellation policy regarding project cancellations and prototype verification.',
+    url: 'https://anonsoft.in/refund-policy',
     type: 'website',
   },
 };
@@ -53,7 +53,7 @@ export default function RefundPolicyPage() {
 
         <div style={{ color: '#334155', lineHeight: '1.8', fontSize: '1rem' }}>
           <p style={{ marginBottom: '20px' }}>
-            We want you to feel completely confident when working with TodayInTech. This Refund & Cancellation Policy outlines the refund terms and cancellation rights associated with our custom software, app, and website development services.
+            We want you to feel completely confident when working with Anonsoft. This Refund & Cancellation Policy outlines the refund terms and cancellation rights associated with our custom software, app, and website development services.
           </p>
 
           <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', fontWeight: 700, color: '#1e293b', margin: '30px 0 15px' }}>
@@ -79,7 +79,7 @@ export default function RefundPolicyPage() {
           </p>
           <ul style={{ marginLeft: '20px', marginBottom: '20px', listStyleType: 'disc' }}>
             <li style={{ marginBottom: '8px' }}>
-              <strong>Cancellation Request:</strong> You may cancel development at any milestone by sending a written notice to <a href="mailto:contact@todayintech.in" style={{ color: '#0369a1' }}>contact@todayintech.in</a>.
+              <strong>Cancellation Request:</strong> You may cancel development at any milestone by sending a written notice to <a href="mailto:contact@anonsoft.in" style={{ color: '#0369a1' }}>contact@anonsoft.in</a>.
             </li>
             <li style={{ marginBottom: '8px' }}>
               <strong>Milestone Progress:</strong> Upon receipt of a cancellation notice, we will immediately halt all development. The Client is billed only for the specific milestone phase currently in progress on a pro-rata basis. Previous completed and approved milestones are non-cancelable and non-refundable.
@@ -94,7 +94,7 @@ export default function RefundPolicyPage() {
           </p>
           <ul style={{ marginLeft: '20px', marginBottom: '20px', listStyleType: 'disc' }}>
             <li style={{ marginBottom: '8px' }}>
-              <strong>Work in Progress:</strong> Payments made for active milestones are refundable only if TodayInTech fails to deliver the specified milestones in the contract without reasonable cause.
+              <strong>Work in Progress:</strong> Payments made for active milestones are refundable only if Anonsoft fails to deliver the specified milestones in the contract without reasonable cause.
             </li>
             <li style={{ marginBottom: '8px' }}>
               <strong>Completed Deliverables:</strong> Approved and delivered milestones (where source code or beta builds have been shared with the client) are non-refundable as they represent manual engineering hours completed.
@@ -108,7 +108,7 @@ export default function RefundPolicyPage() {
             4. Refund Execution
           </h2>
           <p style={{ marginBottom: '15px' }}>
-            If a refund is approved by TodayInTech under your project contract, it will be processed and returned to your original payment method (wire transfer or credit card) within <strong>7 to 14 business days</strong>, depending on bank processing delays.
+            If a refund is approved by Anonsoft under your project contract, it will be processed and returned to your original payment method (wire transfer or credit card) within <strong>7 to 14 business days</strong>, depending on bank processing delays.
           </p>
 
           <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', fontWeight: 700, color: '#1e293b', margin: '30px 0 15px' }}>
@@ -118,10 +118,10 @@ export default function RefundPolicyPage() {
             To request a project cancellation, check your billing details, or inquire about a refund, contact us at:
           </p>
           <p style={{ marginBottom: '5px' }}>
-            <strong>Email:</strong> <a href="mailto:contact@todayintech.in" style={{ color: '#0369a1' }}>contact@todayintech.in</a>
+            <strong>Email:</strong> <a href="mailto:contact@anonsoft.in" style={{ color: '#0369a1' }}>contact@anonsoft.in</a>
           </p>
           <p style={{ marginBottom: '5px' }}>
-            <strong>Phone:</strong> <a href="tel:+917679349780" style={{ color: '#0369a1' }}>+91 7679349780</a>
+            <strong>Phone:</strong> <a href="tel:+919007900972" style={{ color: '#0369a1' }}>+91 7679349780</a>
           </p>
         </div>
       </div>

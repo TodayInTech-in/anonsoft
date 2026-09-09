@@ -40,7 +40,7 @@ export default function RoiCalculator() {
       <div className="container">
         <div className="section-header">
           <div className="section-label">Cost Efficiency Calculator</div>
-          <h2 className="section-title">Calculate Your Dev Savings with TodayInTech</h2>
+          <h2 className="section-title">Calculate Your Dev Savings with Anonsoft</h2>
           <p className="section-subtitle">See how much capital you save compared to building an internal US/EU dev team.</p>
         </div>
 
@@ -120,7 +120,7 @@ export default function RoiCalculator() {
             </div>
 
             <div>
-              <span style={{ fontSize: '0.85rem', color: '#0369a1', textTransform: 'uppercase', fontWeight: '700' }}>TodayInTech Fixed Cost</span>
+              <span style={{ fontSize: '0.85rem', color: '#0369a1', textTransform: 'uppercase', fontWeight: '700' }}>Anonsoft Fixed Cost</span>
               <h3 style={{ fontSize: '1.6rem', color: '#0369a1', marginTop: '6px', wordBreak: 'break-word' }}>${todayInTechCost.toLocaleString()}</h3>
             </div>
 

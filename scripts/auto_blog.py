@@ -10,7 +10,7 @@ STATE_FILE = os.path.join(ROOT_DIR, "scripts", ".last_published_index")
 BLOG_DIR = os.path.join(ROOT_DIR, "blog")
 INDEX_HTML = os.path.join(BLOG_DIR, "index.html")
 
-# Curated list of high-quality tech blog posts matching TodayInTech branding and layout
+# Curated list of high-quality tech blog posts matching Anonsoft branding and layout
 ARTICLES = [
     {
         "slug": "fhir-interoperability-healthcare-software-development-2026",
@@ -24,7 +24,7 @@ ARTICLES = [
             {"q": "Why is FHIR better than HL7 v2 for modern apps?", "a": "Unlike pipe-delimited HL7 v2 messages, FHIR uses RESTful HTTP queries and JSON, making it much easier to integrate with modern web and mobile applications without complex middleware."},
             {"q": "How long does FHIR EHR integration typically take?", "a": "A basic FHIR read integration with Epic or Cerner can take 4–8 weeks. Bidirectional write-back with custom workflows typically takes 10–16 weeks depending on the EHR vendor's sandbox access."},
             {"q": "Is FHIR integration required for HIPAA compliance?", "a": "FHIR itself is not mandated by HIPAA, but the 21st Century Cures Act mandates FHIR-based APIs for certified EHR systems, meaning most enterprise healthcare software must support it to interoperate."},
-            {"q": "Can TodayInTech build FHIR-integrated healthcare software?", "a": "Yes. TodayInTech specializes in HIPAA-compliant healthcare software development including FHIR R4 API integrations with Epic, Cerner, and athenahealth. We deliver working prototypes with zero upfront payment."}
+            {"q": "Can Anonsoft build FHIR-integrated healthcare software?", "a": "Yes. Anonsoft specializes in HIPAA-compliant healthcare software development including FHIR R4 API integrations with Epic, Cerner, and athenahealth. We deliver working prototypes with zero upfront payment."}
         ],
         "content": """
         <h2>The Interoperability Mandate in Modern HealthTech</h2>
@@ -94,10 +94,10 @@ ARTICLES = [
         "image": "software_prototype.png",
         "faqs": [
             {"q": "What makes a telehealth app fully HIPAA-compliant in 2026?", "a": "A HIPAA-compliant telehealth app in 2026 must include end-to-end encrypted video calls, PHI stored in isolated audited environments, signed BAAs with cloud vendors, role-based access control, and automated audit logs for every data access event."},
-            {"q": "How much does it cost to build a HIPAA-compliant telemedicine platform?", "a": "A production-ready HIPAA-compliant telemedicine platform typically costs $40,000–$120,000 depending on scope. TodayInTech delivers white-label platforms with zero upfront cost — you pay only after seeing your working prototype."},
+            {"q": "How much does it cost to build a HIPAA-compliant telemedicine platform?", "a": "A production-ready HIPAA-compliant telemedicine platform typically costs $40,000–$120,000 depending on scope. Anonsoft delivers white-label platforms with zero upfront cost — you pay only after seeing your working prototype."},
             {"q": "What cloud providers support HIPAA-compliant telehealth?", "a": "AWS, Google Cloud, and Azure all offer HIPAA BAAs. AWS is most commonly used for telehealth due to its Chime SDK for WebRTC video and HealthLake FHIR datastore."},
-            {"q": "Can you build a telehealth app that integrates with Epic or Cerner?", "a": "Yes. TodayInTech builds SMART on FHIR-enabled telehealth platforms that launch from within Epic and Cerner workflows, pulling patient context and writing back clinical notes automatically."},
-            {"q": "How long does it take to launch a telemedicine platform?", "a": "Using our pre-built HIPAA-compliant module library, TodayInTech can deliver a production-ready telehealth MVP in 6–10 weeks, far faster than building from scratch."}
+            {"q": "Can you build a telehealth app that integrates with Epic or Cerner?", "a": "Yes. Anonsoft builds SMART on FHIR-enabled telehealth platforms that launch from within Epic and Cerner workflows, pulling patient context and writing back clinical notes automatically."},
+            {"q": "How long does it take to launch a telemedicine platform?", "a": "Using our pre-built HIPAA-compliant module library, Anonsoft can deliver a production-ready telehealth MVP in 6–10 weeks, far faster than building from scratch."}
         ],
         "content": """
         <h2>Evolving Security Standards in Virtual Care</h2>
@@ -146,7 +146,7 @@ ARTICLES = [
             {"q": "What is Draco compression and how does it help Three.js performance?", "a": "Draco is a Google mesh compression library that can reduce GLB file sizes by 80–95%. Combined with the Three.js DRACOLoader, it dramatically reduces initial download size for 3D models."},
             {"q": "How do I lazy-load 3D models in a Three.js product configurator?", "a": "Use Three.js LOD (Level of Detail) combined with Intersection Observer to defer loading high-resolution models until the user scrolls the configurator into the viewport."},
             {"q": "What is the ideal GLB file size for a web-based 3D product customizer?", "a": "Aim for under 2MB per variant after Draco compression. For complex products, stream variants on demand rather than loading all variants upfront to keep initial load under 500ms."},
-            {"q": "Can TodayInTech build a fast Three.js 3D product configurator?", "a": "Yes. TodayInTech has shipped production Three.js 3D product configurators with sub-2-second load times using Draco compression, KTX2 textures, and progressive streaming. Book a free strategy call to see a live demo."}
+            {"q": "Can Anonsoft build a fast Three.js 3D product configurator?", "a": "Yes. Anonsoft has shipped production Three.js 3D product configurators with sub-2-second load times using Draco compression, KTX2 textures, and progressive streaming. Book a free strategy call to see a live demo."}
         ],
         "title": "Accelerating Three.js Loading Times for 3D Product Customizers",
         "category": "WebGL Technology",
@@ -169,7 +169,7 @@ ARTICLES = [
             {"q": "How does white-label software help agencies grow faster?", "a": "White-label software lets agencies focus on sales and client relationships instead of engineering. They can take on more clients simultaneously since the product is already built, tested, and compliant."},
             {"q": "What types of software can be white-labeled for agencies?", "a": "Common white-label products include CRM platforms, telemedicine apps, POS systems, school ERP software, restaurant management systems, and AI chatbot builders."},
             {"q": "Is white-label software cheaper than custom development?", "a": "Yes, significantly. A white-label solution can be deployed in weeks for a fraction of the cost of custom development, which can take 6–18 months and cost $80,000–$500,000+."},
-            {"q": "Does TodayInTech offer white-label software solutions?", "a": "Yes. TodayInTech's SITES platform offers fully white-labeled SaaS products including restaurant POS, school ERP, senior care software, and church management systems. Book a free demo to see them live."}
+            {"q": "Does Anonsoft offer white-label software solutions?", "a": "Yes. Anonsoft's SITES platform offers fully white-labeled SaaS products including restaurant POS, school ERP, senior care software, and church management systems. Book a free demo to see them live."}
         ],
         "title": "Why White-Label Software is the Ultimate Growth Hack for Agencies",
         "category": "Business Growth",
@@ -189,7 +189,7 @@ ARTICLES = [
             {"q": "How do I reduce JavaScript bundle size in Next.js?", "a": "Use dynamic imports with next/dynamic to code-split heavy components, audit your bundle with @next/bundle-analyzer, and replace large libraries with lighter alternatives."},
             {"q": "What is ISR (Incremental Static Regeneration) in Next.js?", "a": "ISR lets you pre-render pages at build time and revalidate them in the background on a schedule, combining the performance of static pages with the freshness of server-side rendering."},
             {"q": "How does Next.js Image component improve Core Web Vitals?", "a": "The next/image component automatically serves WebP format, lazy-loads off-screen images, and sets correct width/height to prevent Cumulative Layout Shift (CLS), all of which directly improve LCP and CLS scores."},
-            {"q": "Can TodayInTech optimize an existing Next.js application?", "a": "Yes. TodayInTech's engineering team performs full Next.js performance audits covering bundle analysis, Core Web Vitals, server components migration, and caching strategy. Book a free call to discuss your project."}
+            {"q": "Can Anonsoft optimize an existing Next.js application?", "a": "Yes. Anonsoft's engineering team performs full Next.js performance audits covering bundle analysis, Core Web Vitals, server components migration, and caching strategy. Book a free call to discuss your project."}
         ],
         "title": "Optimizing Client-Side Render Speed in Modern Next.js Applications",
         "category": "Web Performance",
@@ -209,7 +209,7 @@ ARTICLES = [
             {"q": "What encryption standards should a telehealth platform use?", "a": "All PHI at rest must use AES-256 encryption. Data in transit must use TLS 1.3. Video streams should use SRTP (Secure Real-time Transport Protocol). Database backups must also be encrypted."},
             {"q": "How do you prevent unauthorized access in a healthcare SaaS platform?", "a": "Implement role-based access control (RBAC), multi-factor authentication (MFA), least-privilege IAM policies, session timeouts, and real-time anomaly detection on login patterns."},
             {"q": "What is a BAA and why is it required for HIPAA?", "a": "A Business Associate Agreement (BAA) is a legally required contract between a HIPAA-covered entity and any vendor who handles PHI on their behalf, including cloud providers, email services, and software vendors."},
-            {"q": "Can TodayInTech build a secure healthcare platform with penetration testing?", "a": "Yes. TodayInTech builds healthcare platforms with built-in HIPAA controls and can coordinate third-party VAPT (Vulnerability Assessment and Penetration Testing) as part of the delivery process."}
+            {"q": "Can Anonsoft build a secure healthcare platform with penetration testing?", "a": "Yes. Anonsoft builds healthcare platforms with built-in HIPAA controls and can coordinate third-party VAPT (Vulnerability Assessment and Penetration Testing) as part of the delivery process."}
         ],
         "title": "Building Security-First Virtual Care Platforms",
         "category": "Healthcare Compliance",
@@ -225,15 +225,15 @@ ARTICLES = [
     {
         "slug": "scopic-alternatives-healthcare-software-development",
         "faqs": [
-            {"q": "What are the best alternatives to Scopic for healthcare software development?", "a": "The best Scopic alternatives for healthcare software development include TodayInTech (zero upfront payment model), Arkenea (healthcare-only), Innowise (enterprise staff augmentation), and ScienceSoft (compliance-heavy enterprise work)."},
-            {"q": "Why would I choose TodayInTech over Scopic for my health app?", "a": "TodayInTech offers a unique zero-risk prototype model — we build a fully functional interactive demo of your healthcare app with no upfront payment. You only sign a contract once you've seen it working."},
+            {"q": "What are the best alternatives to Scopic for healthcare software development?", "a": "The best Scopic alternatives for healthcare software development include Anonsoft (zero upfront payment model), Arkenea (healthcare-only), Innowise (enterprise staff augmentation), and ScienceSoft (compliance-heavy enterprise work)."},
+            {"q": "Why would I choose Anonsoft over Scopic for my health app?", "a": "Anonsoft offers a unique zero-risk prototype model — we build a fully functional interactive demo of your healthcare app with no upfront payment. You only sign a contract once you've seen it working."},
             {"q": "How much does Scopic charge for healthcare app development?", "a": "Scopic typically operates on a time-and-materials model at $35–$65/hour for offshore teams. A mid-complexity health app can cost $60,000–$200,000 depending on scope and team size."},
-            {"q": "Can I switch agencies mid-project if I'm unhappy with my current healthcare developer?", "a": "Yes. TodayInTech regularly rescues mid-project healthcare software. We audit your existing codebase, identify technical debt, and deliver a clear migration plan before any new work begins."},
+            {"q": "Can I switch agencies mid-project if I'm unhappy with my current healthcare developer?", "a": "Yes. Anonsoft regularly rescues mid-project healthcare software. We audit your existing codebase, identify technical debt, and deliver a clear migration plan before any new work begins."},
             {"q": "What certifications should a healthcare software development agency have?", "a": "Look for agencies with HIPAA compliance experience, familiarity with FDA 21 CFR Part 11 (if applicable), ISO 27001 practices, and a track record of delivering EHR-integrated platforms."}
         ],
         "title": "Scopic Alternatives: Top 5 Custom Healthcare Software Developers (2026)",
         "category": "Competitor Review",
-        "excerpt": "Compare the best Scopic alternatives for custom healthcare software development in 2026. Evaluate TodayInTech, ScienceSoft, Innowise, and Arkenea on compliance, speed, and cost.",
+        "excerpt": "Compare the best Scopic alternatives for custom healthcare software development in 2026. Evaluate Anonsoft, ScienceSoft, Innowise, and Arkenea on compliance, speed, and cost.",
         "read_time": 8,
         "image": "competitor_review.png",
         "content": """
@@ -267,7 +267,7 @@ ARTICLES = [
             </thead>
             <tbody>
               <tr>
-                <td><strong>TodayInTech</strong></td>
+                <td><strong>Anonsoft</strong></td>
                 <td>100% Healthcare & WebGL</td>
                 <td>Yes (BAA signed)</td>
                 <td><strong>$0 Upfront Working Prototype</strong></td>
@@ -310,8 +310,8 @@ ARTICLES = [
           </table>
         </div>
 
-        <h3>1. TodayInTech — The Risk-Free Prototyping Partner</h3>
-        <p>TodayInTech bridges the gap between fast product delivery and bespoke engineering. We specialize in building secure, HIPAA-compliant telehealth applications, wellness tracking apps, and high-performance WebGL integrations (such as interactive 3D orthotic or clinical product builders). What sets TodayInTech apart is our <strong>zero-risk procurement model</strong>: we build a fully interactive, working prototype of your application with no upfront payment. You only pay after you review, test, and approve the functioning prototype.</p>
+        <h3>1. Anonsoft — The Risk-Free Prototyping Partner</h3>
+        <p>Anonsoft bridges the gap between fast product delivery and bespoke engineering. We specialize in building secure, HIPAA-compliant telehealth applications, wellness tracking apps, and high-performance WebGL integrations (such as interactive 3D orthotic or clinical product builders). What sets Anonsoft apart is our <strong>zero-risk procurement model</strong>: we build a fully interactive, working prototype of your application with no upfront payment. You only pay after you review, test, and approve the functioning prototype.</p>
         <p>We sign a Business Associate Agreement (BAA) at the project start and provide complete, unencumbered ownership of the source code and database structure immediately upon launch. This allows you to host the platform on your own cloud (AWS, Azure, GCP) and scale without licensing limits.</p>
 
         <h3>2. ScienceSoft — The Enterprise Healthcare Giant</h3>
@@ -321,7 +321,7 @@ ARTICLES = [
         <p>Innowise is a major software house with global delivery capabilities. They work across dozens of industries, delivering custom web, mobile, and desktop client-server applications. They have a strong healthcare practice with solid HIPAA training. If you need a large team of developers for cross-platform enterprise systems and are comfortable working with a large generalist agency, Innowise is a powerful partner.</p>
 
         <h3>4. Arkenea — Boutique Healthcare Specialist</h3>
-        <p>Arkenea is a development firm that works exclusively in the healthcare field. Like TodayInTech, they do not build software for retail, finance, or gaming; they focus entirely on digital health products, compliance, and clinical applications. They provide deep consulting expertise, though their engagement model requires standard paid discovery agreements before development begins.</p>
+        <p>Arkenea is a development firm that works exclusively in the healthcare field. Like Anonsoft, they do not build software for retail, finance, or gaming; they focus entirely on digital health products, compliance, and clinical applications. They provide deep consulting expertise, though their engagement model requires standard paid discovery agreements before development begins.</p>
 
         <h2>Summary: Which Scopic Competitor is Right for You?</h2>
         <ul>
@@ -329,7 +329,7 @@ ARTICLES = [
           <li><strong>Choose ScienceSoft if:</strong> You are an enterprise healthcare network requiring extensive compliance audits, consulting depth, and massive resource scaling.</li>
           <li><strong>Choose Innowise if:</strong> You require broad staff augmentation across a diverse range of technical stacks.</li>
           <li><strong>Choose Arkenea if:</strong> You want a healthcare-only partner focused on clinical workflows and standard consulting models.</li>
-          <li><strong>Choose TodayInTech if:</strong> You want a healthcare-specialist team, need to validate your software with a zero-risk prototype before committing capital, and want complete IP ownership to pitch to investors or scale without seat fees.</li>
+          <li><strong>Choose Anonsoft if:</strong> You want a healthcare-specialist team, need to validate your software with a zero-risk prototype before committing capital, and want complete IP ownership to pitch to investors or scale without seat fees.</li>
         </ul>
         """
     }
@@ -344,18 +344,18 @@ BLOG_TEMPLATE = """<!DOCTYPE html>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>{title} | TodayInTech</title>
+  <title>{title} | Anonsoft</title>
   <meta name="description" content="{excerpt}">
-  <meta name="author" content="TodayInTech">
+  <meta name="author" content="Anonsoft">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-  <link rel="canonical" href="https://todayintech.in/blog/{slug}.html">
+  <link rel="canonical" href="https://anonsoft.in/blog/{slug}.html">
 
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{excerpt}">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://todayintech.in/blog/{slug}.html">
-  <meta property="og:image" content="https://todayintech.in/assets/blog/{image}">
-  <meta property="og:site_name" content="TodayInTech">
+  <meta property="og:url" content="https://anonsoft.in/blog/{slug}.html">
+  <meta property="og:image" content="https://anonsoft.in/assets/blog/{image}">
+  <meta property="og:site_name" content="Anonsoft">
   <meta property="article:published_time" content="{published_date}">
 
   <!-- FAQPage Structured Data -->
@@ -379,8 +379,8 @@ BLOG_TEMPLATE = """<!DOCTYPE html>
   <header>
     <nav class="navbar" id="navbar">
       <div class="container">
-        <a href="/" class="nav-logo" aria-label="TodayInTech Homepage">
-          <img src="../assets/nav_logo.png" alt="TodayInTech Logo" style="height: 48px !important; width: auto !important; max-width: none !important; border-radius: 0 !important;">
+        <a href="/" class="nav-logo" aria-label="Anonsoft Homepage">
+          <img src="../assets/anonsoft.svg" alt="Anonsoft Logo" style="height: 48px !important; width: auto !important; max-width: none !important; border-radius: 0 !important;">
         </a>
         <div class="nav-links" id="navLinks">
           <a href="/#services">Services</a>
@@ -390,7 +390,7 @@ BLOG_TEMPLATE = """<!DOCTYPE html>
           <a href="/#testimonials">Reviews</a>
           <a href="/#faq">FAQ</a>
           <a href="/blog/" class="active">Blog</a>
-          <a href="" onclick="Calendly.initPopupWidget({{url:'https://calendly.com/todayintechdotin/30min'}});return false;" class="nav-cta">Book a Call</a>
+          <a href="" onclick="Calendly.initPopupWidget({{url:'https://calendly.com/anonsoftdotin/30min'}});return false;" class="nav-cta">Book a Call</a>
         </div>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
           <span></span><span></span><span></span>
@@ -429,7 +429,7 @@ BLOG_TEMPLATE = """<!DOCTYPE html>
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="../assets/nav_logo.png" alt="TodayInTech Logo" class="footer-logo" style="height: 48px !important; width: auto !important; max-width: none !important; border-radius: 0 !important; margin-bottom: 20px;">
+          <img src="../assets/anonsoft.svg" alt="Anonsoft Logo" class="footer-logo" style="height: 48px !important; width: auto !important; max-width: none !important; border-radius: 0 !important; margin-bottom: 20px;">
           <p class="footer-desc">Premium software engineering and product customizer development agency.</p>
         </div>
         <div class="footer-links-col">
@@ -446,7 +446,7 @@ BLOG_TEMPLATE = """<!DOCTYPE html>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; {current_year} TodayInTech. All rights reserved.</p>
+        <p>&copy; {current_year} Anonsoft. All rights reserved.</p>
         <div class="footer-legal">
           <a href="/privacy">Privacy Policy</a>
           <a href="/terms">Terms of Service</a>

@@ -2,7 +2,7 @@
 title: "Building a Three.js e-Commerce 3D Product Customizer: The WebGL Blueprint"
 description: "An engineering guide to designing a high-performance interactive 3D product customizer using Three.js, WebGL, Draco compression, and e-commerce integrations."
 date: "2026-08-13"
-author: "TodayInTech Engineering Team"
+author: "Anonsoft Engineering Team"
 category: "3D & E-Commerce Tech"
 image: "threejs_3d_customizer.jpg"
 keywords: ["Three.js e-commerce 3D product customizer", "WebGL shoe configurator development", "Three.js product customizer development cost", "interactive 3D product customizer WebGL", "custom 3D product customizer Three.js", "WebGL configurator e-commerce development"]
@@ -224,7 +224,7 @@ Building a fully customized 3D configurator is an investment. It requires 3D mod
 * **Pros**: Complete control over features and hosting.
 * **Cons**: Finding developers who specialize in WebGL/Three.js math and e-commerce integrations is difficult. Development typically takes 3–6 months.
 
-### 3. Hiring a Specialized Agency (e.g., TodayInTech)
+### 3. Hiring a Specialized Agency (e.g., Anonsoft)
 * **Pros**: Expertise in Draco optimization, high-fidelity lighting models, fast delivery, no monthly fees, complete IP ownership.
 * **Cons**: Higher initial capital expenditure than a basic SaaS subscription.
 
@@ -234,7 +234,7 @@ Building a fully customized 3D configurator is an investment. It requires 3D mod
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Configurator SaaS** | $500 - $2,500 | $150 - $900/month | 1 - 2 weeks | Medium (Server-dependent) | Restricted |
 | **In-House Team** | $25,000 - $60,000 | Developer Salaries | 12 - 24 weeks | Variable (Skill-dependent) | Unlimited |
-| **TodayInTech Agency** | **$8,000 - $18,000** | **$0 (Self-hosted)** | **4 - 6 weeks** | **Excellent (Draco, PBR, WebGL)** | **Unlimited** |
+| **Anonsoft Agency** | **$8,000 - $18,000** | **$0 (Self-hosted)** | **4 - 6 weeks** | **Excellent (Draco, PBR, WebGL)** | **Unlimited** |
 
 ---
 
@@ -253,9 +253,9 @@ Generally, yes. Specialized development teams will ingest your product CAD files
 
 ## Leverage Immersive 3D Customizers for Your Brand
 
-Adding an interactive 3D configurator elevates your e-commerce experience from a simple catalog to an engaging shopping playground. At TodayInTech, we specialize in building fast, optimized, and visually stunning Three.js configurations integrated directly into your custom Shopify, BigCommerce, or headless storefronts.
+Adding an interactive 3D configurator elevates your e-commerce experience from a simple catalog to an engaging shopping playground. At Anonsoft, we specialize in building fast, optimized, and visually stunning Three.js configurations integrated directly into your custom Shopify, BigCommerce, or headless storefronts.
 
 Want to learn how we can bring your catalog to life in interactive 3D? We design and build functional prototypes for your products so you can verify the performance and aesthetics before committing any budget.
 
 **Ready to stand out?**
-[Book a Demo with the TodayInTech Engineering Team](/bookademo/) or explore our WebGL case studies at [Impakto 3D Configurator Project](/projects/impakto.html).
+[Book a Demo with the Anonsoft Engineering Team](/bookademo/) or explore our WebGL case studies at [Impakto 3D Configurator Project](/projects/impakto.html).

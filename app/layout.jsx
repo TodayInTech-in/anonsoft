@@ -4,10 +4,10 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 export const metadata = {
-  metadataBase: new URL('https://todayintech.in'),
+  metadataBase: new URL('https://anonsoft.in'),
   title: {
-    default: 'TodayInTech — Custom Startup Software Development Agency',
-    template: '%s | TodayInTech',
+    default: 'Anonsoft — Custom Startup Software Development Agency',
+    template: '%s | Anonsoft',
   },
   description:
     'We help startups launch scalable software quickly: SaaS platforms, AI tools, and mobile apps—production-ready in weeks. Book a free strategy call.',
@@ -21,7 +21,7 @@ export const metadata = {
     'HIPAA compliant software',
     'zero upfront payment software agency',
   ],
-  authors: [{ name: 'TodayInTech' }],
+  authors: [{ name: 'Anonsoft' }],
   robots: {
     index: true,
     follow: true,
@@ -32,20 +32,20 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://todayintech.in/',
-    siteName: 'TodayInTech',
-    title: 'TodayInTech — Custom Startup Software Development Agency',
+    url: 'https://anonsoft.in/',
+    siteName: 'Anonsoft',
+    title: 'Anonsoft — Custom Startup Software Development Agency',
     description:
       'HIPAA-compliant white-label software for telemedicine, EHR, pharmacy, and wellness with zero upfront payment.',
-    images: [{ url: 'https://todayintech.in/assets/og-image.png' }],
+    images: [{ url: 'https://anonsoft.com/assets/anon-soft-og.png' }],
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@todayintech',
-    title: 'TodayInTech — Health & Startup Software Agency',
+    site: '@anonsoft',
+    title: 'Anonsoft — Health & Startup Software Agency',
     description:
       'Launch your branded health platform in 4–8 weeks with zero upfront payment.',
-    images: ['https://todayintech.in/assets/og-image.png'],
+    images: ['https://anonsoft.com/assets/anon-soft-og.png'],
   },
 };
 
@@ -72,13 +72,13 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Organization',
-              name: 'TodayInTech',
-              alternateName: ['Today In Tech', 'TodayInTech Software'],
-              url: 'https://www.todayintech.in/',
-              logo: 'https://www.todayintech.in/assets/logo.png',
-              image: 'https://www.todayintech.in/assets/og-image.png',
+              name: 'Anonsoft',
+              alternateName: ['Anonsoft', 'Anonsoft Software'],
+              url: 'https://www.anonsoft.in/',
+              logo: 'https://www.anonsoft.in/assets/logo.png',
+              image: 'https://www.anonsoft.in/assets/og-image.png',
               description:
-                'TodayInTech is a leading software development company helping startups and businesses build SaaS platforms, AI tools, and mobile apps quickly.',
+                'Anonsoft is a leading software development company helping startups and businesses build SaaS platforms, AI tools, and mobile apps quickly.',
             }),
           }}
         />

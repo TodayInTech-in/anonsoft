@@ -1,4 +1,4 @@
-export function triggerCalendly(url = 'https://calendly.com/todayintechdotin/30min') {
+export function triggerCalendly(url = 'https://calendly.com/anonsoftdotin/30min') {
   if (typeof window === 'undefined') return;
 
   const openPopup = () => {

@@ -2,7 +2,7 @@
 title: "Building an AI-Powered Home Care Agency SaaS & EVV Platform: GPS Geofencing, Smart Caregiver Scheduling, and Medicaid Billing Architecture (2026)"
 description: "An engineering blueprint for building a multi-tenant B2B Home Care Agency SaaS and 21st Century Cures Act compliant EVV platform with GPS geofencing, AI shift-matching, and automated Medicaid billing in 2026."
 date: "2026-08-23"
-author: "TodayInTech Engineering Team"
+author: "Anonsoft Engineering Team"
 category: "HealthTech & Home Care SaaS"
 image: "ai_home_care_evv_saas_hero.jpg"
 keywords: ["white-label home care agency software", "senior care agency software developer", "GPS Electronic Visit Verification EVV software", "caregiver scheduling software developer", "custom home care ERP development", "EVV compliant caregiver tracking app", "family portal software for home care", "home health agency billing software", "caregiver schedule planning platform"]
@@ -236,18 +236,18 @@ To be federally compliant, your EVV software must electronically capture and log
 Modern home care SaaS platforms utilize an **Offline-First PWA / Local SQLite Architecture**. The caregiver's mobile device records the cryptographic GPS coordinates, local device timestamp, and completed task checklist locally in encrypted storage. When the phone reconnects to cellular data or Wi-Fi, the payload is securely synchronized with the central cloud server and verified against server network time.
 
 ### Can this platform connect directly with state Medicaid aggregators like Sandata and HHAeXchange?
-Yes. TodayInTech builds custom bidirectional integration bridges that map your internal agency visit data to state-specific specifications (including Sandata, HHAeXchange, Tellus, and CareBridge), verifying data integrity prior to transmission to guarantee zero billing claim rejections.
+Yes. Anonsoft builds custom bidirectional integration bridges that map your internal agency visit data to state-specific specifications (including Sandata, HHAeXchange, Tellus, and CareBridge), verifying data integrity prior to transmission to guarantee zero billing claim rejections.
 
 ### How does the AI Caregiver Scheduling engine reduce agency payroll overhead?
 The scheduling engine automatically evaluates caregiver travel times, hourly pay rates, and current weekly logged hours in real time. By prioritizing nearby qualified caregivers who haven't breached the 40-hour weekly threshold, agencies eliminate costly non-productive drive times and avoid expensive unbudgeted overtime payouts.
 
 ---
 
-## Build Your Custom Home Care & EVV Platform with TodayInTech
+## Build Your Custom Home Care & EVV Platform with Anonsoft
 
 Building a compliant, high-performing Home Care ERP requires deep domain knowledge across healthcare regulations, real-time geofencing, and automated healthcare claims processing.
 
-At **TodayInTech**, we specialize in engineering custom healthcare and home care software with zero upfront payment—we build your working prototype first so you can test it with real coordinators and caregivers before paying a single dollar.
+At **Anonsoft**, we specialize in engineering custom healthcare and home care software with zero upfront payment—we build your working prototype first so you can test it with real coordinators and caregivers before paying a single dollar.
 
 * Explore our [Senior Care Agency Software Portfolio](/projects/senior-care-agency.html)
 * Learn about our [HIPAA Telemedicine Development Capabilities](/projects/mednowna.html)

@@ -35,7 +35,7 @@ export default function TestimonialsSection() {
         <div className="section-header">
           <div className="section-label">Client Stories</div>
           <h2 className="section-title">Trusted by Founders & Healthcare Leaders</h2>
-          <p className="section-subtitle">Read how startups and clinics accelerated their launch timeline with TodayInTech.</p>
+          <p className="section-subtitle">Read how startups and clinics accelerated their launch timeline with Anonsoft.</p>
         </div>
 
         <div className="testimonials-grid">
@@ -44,7 +44,7 @@ export default function TestimonialsSection() {
               <i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i>
             </div>
             <p className="testimonial-quote">
-              "TodayInTech delivered our HIPAA-compliant virtual care MVP in under 6 weeks. Their pre-built telehealth components saved us over $40,000 in dev costs."
+              "Anonsoft delivered our HIPAA-compliant virtual care MVP in under 6 weeks. Their pre-built telehealth components saved us over $40,000 in dev costs."
             </p>
             <div className="testimonial-author">
               <div className="author-avatar">DR</div>
@@ -60,7 +60,7 @@ export default function TestimonialsSection() {
               <i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i>
             </div>
             <p className="testimonial-quote">
-              "The EVV caregiver tracking platform built by TodayInTech passed state compliance audits with zero findings. Highly recommend for home care software."
+              "The EVV caregiver tracking platform built by Anonsoft passed state compliance audits with zero findings. Highly recommend for home care software."
             </p>
             <div className="testimonial-author">
               <div className="author-avatar">SM</div>

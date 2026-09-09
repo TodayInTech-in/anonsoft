@@ -2,7 +2,7 @@
 title: "Building an AI-Powered 3D Product Configurator & Visual CPQ SaaS: Three.js WebGL Architecture, Draco Mesh Compression, Real-Time PBR Shaders, and WebXR AR Integration (2026)"
 description: "An in-depth engineering blueprint for building a multi-tenant AI 3D Product Configurator and Visual CPQ (Configure, Price, Quote) SaaS platform with Three.js WebGL rendering, Draco compression, dynamic parametric geometry, and WebXR AR in 2026."
 date: "2026-08-31"
-author: "TodayInTech Engineering Team"
+author: "Anonsoft Engineering Team"
 category: "3D & Visual CPQ SaaS"
 image: "ai_3d_cpq_hero.jpg"
 keywords: ["Three.js e-commerce 3D product customizer", "WebGL shoe configurator development", "Three.js product customizer development cost", "interactive 3D product customizer WebGL", "custom 3D product customizer Three.js", "3D configurator website developer", "WebGL configurator e-commerce development", "Threejs 3D product configuration software", "Draco loader WebGL compression optimization", "e-commerce 3D visualization developer", "Visual CPQ 3D configurator SaaS", "WebXR product customizer Three.js"]
@@ -466,8 +466,8 @@ Yes. We integrate fine-tuned diffusion models (such as Stable Diffusion with Con
 
 ## Ready to Build Your Custom 3D Product Configurator or Visual CPQ SaaS?
 
-Whether you are launching an interactive 3D footwear configurator, an enterprise modular furniture CPQ platform, or an industrial machinery visualization tool, **TodayInTech** delivers battle-tested, high-performance WebGL and Three.js engineering.
+Whether you are launching an interactive 3D footwear configurator, an enterprise modular furniture CPQ platform, or an industrial machinery visualization tool, **Anonsoft** delivers battle-tested, high-performance WebGL and Three.js engineering.
 
 * Explore our live interactive 3D showcase: [Impakto 3D Shoe Configurator Case Study](/projects/impakto.html)
-* Discover our full engineering portfolio: [TodayInTech Projects & Architecture](/projects/)
-* [Book a 30-Minute Technical Discovery Call](https://calendly.com/todayintechdotin/30min) with our senior 3D graphics and full-stack engineering team.
+* Discover our full engineering portfolio: [Anonsoft Projects & Architecture](/projects/)
+* [Book a 30-Minute Technical Discovery Call](https://calendly.com/anonsoftdotin/30min) with our senior 3D graphics and full-stack engineering team.

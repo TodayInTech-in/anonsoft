@@ -2,7 +2,7 @@
 title: "Building an AI-Powered Anti-Money Laundering (AML) & Real-Time Fraud Detection FinTech SaaS: Graph Neural Networks, Apache Flink Stream Ingestion, Automated FinCEN SAR Generation, and Sanctions Screening (2026)"
 description: "A comprehensive engineering blueprint for building an enterprise AI-powered Anti-Money Laundering (AML) and real-time transaction monitoring SaaS with Graph Neural Networks, sub-50ms fraud scoring, automated SAR filing, and ISO 20022 compliance in 2026."
 date: "2026-09-06"
-author: "TodayInTech Engineering Team"
+author: "Anonsoft Engineering Team"
 category: "FinTech & RegTech SaaS"
 image: "ai_aml_fraud_detection_hero.jpg"
 keywords: ["AI anti money laundering software", "real-time fraud detection SaaS", "graph neural networks AML", "automated SAR filing software", "custom fintech compliance platform", "sanctions screening API", "transaction monitoring SaaS", "fintech fraud prevention architecture", "white label AML software"]
@@ -300,14 +300,14 @@ The SAR generation pipeline uses **locally hosted open-weight LLMs (such as Llam
 
 ---
 
-## Build Your AI-Powered FinTech AML & RegTech Platform with TodayInTech
+## Build Your AI-Powered FinTech AML & RegTech Platform with Anonsoft
 
 Building an enterprise-ready, low-latency Anti-Money Laundering and fraud detection system requires deep domain mastery across distributed stream computing, graph data structures, financial regulatory schemas, and enterprise security.
 
-At **TodayInTech**, we specialize in designing and engineering custom, white-label, and enterprise FinTech platforms:
+At **Anonsoft**, we specialize in designing and engineering custom, white-label, and enterprise FinTech platforms:
 
 * **Zero Upfront Payment Prototype:** We architect and deliver a fully functional working prototype of your custom FinTech compliance platform before you pay a single dollar.
 * **End-to-End RegTech Engineering:** Full integration with ISO 20022 messaging, Core Banking APIs, Kafka/Flink streaming pipelines, Neo4j/Memgraph graph knowledge networks, and automated FinCEN BSA E-Filing.
 * **Enterprise Security & Compliance:** SOC2 Type II compliance readiness, PCI-DSS Level 1 compliance, ISO 27001 standards, and automated cryptographic audit logging.
 
-Ready to build your next-generation AI AML & Fraud Prevention SaaS? [**Schedule a Technical Architecture Demo with TodayInTech Today**](/bookademo/) or explore our custom development services at [**TodayInTech.in**](/).
+Ready to build your next-generation AI AML & Fraud Prevention SaaS? [**Schedule a Technical Architecture Demo with Anonsoft Today**](/bookademo/) or explore our custom development services at [**Anonsoft.in**](/).

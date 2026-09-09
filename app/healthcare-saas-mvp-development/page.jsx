@@ -2,7 +2,7 @@ import Link from 'next/link';
 import CalendlyButton from '../components/CalendlyButton';
 
 export const metadata = {
-  title: 'Healthcare SaaS MVP Development Studio | TodayInTech',
+  title: 'Healthcare SaaS MVP Development Studio | Anonsoft',
   description:
     'Build a funded-ready healthcare SaaS MVP in 8 weeks. Learn about our scalable HIPAA-compliant architecture for health-tech founders and pre-seed startups.',
   keywords: [
@@ -14,22 +14,22 @@ export const metadata = {
     'health tech founder development partner',
   ],
   alternates: {
-    canonical: 'https://todayintech.in/healthcare-saas-mvp-development',
+    canonical: 'https://anonsoft.in/healthcare-saas-mvp-development',
   },
   openGraph: {
-    title: 'Healthcare SaaS MVP Development Studio | TodayInTech',
+    title: 'Healthcare SaaS MVP Development Studio | Anonsoft',
     description:
       'Build a funded-ready healthcare SaaS MVP in 8 weeks. HIPAA-compliant architecture for health-tech founders and pre-seed startups.',
-    url: 'https://todayintech.in/healthcare-saas-mvp-development',
+    url: 'https://anonsoft.in/healthcare-saas-mvp-development',
     type: 'website',
-    images: [{ url: 'https://todayintech.in/assets/og-image.png' }],
+    images: [{ url: 'https://anonsoft.com/assets/anon-soft-og.png' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Healthcare SaaS MVP Development Studio | TodayInTech',
+    title: 'Healthcare SaaS MVP Development Studio | Anonsoft',
     description:
       'Build a funded-ready healthcare SaaS MVP in 8 weeks. HIPAA-compliant architecture for health-tech founders.',
-    images: ['https://todayintech.in/assets/og-image.png'],
+    images: ['https://anonsoft.com/assets/anon-soft-og.png'],
   },
 };
 
@@ -39,8 +39,8 @@ const jsonLd = {
   name: 'Healthcare SaaS MVP Development',
   provider: {
     '@type': 'Organization',
-    name: 'TodayInTech',
-    url: 'https://todayintech.in',
+    name: 'Anonsoft',
+    url: 'https://anonsoft.in',
   },
   serviceType: 'Healthcare Software Development',
   description:
@@ -171,7 +171,7 @@ export default function HealthcareMvpPage() {
       <section className="lp-founder-quote">
         <div className="container">
           <blockquote>
-            "TodayInTech delivered our telemedicine MVP in 7 weeks — fully HIPAA-compliant and polished enough to
+            "Anonsoft delivered our telemedicine MVP in 7 weeks — fully HIPAA-compliant and polished enough to
             close our seed round. Their healthcare domain expertise saved us months of compliance work."
           </blockquote>
           <cite>— James W., Co-Founder, FitPulse Health &bull; UK</cite>

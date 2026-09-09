@@ -36,7 +36,7 @@ def draw_rounded_rect(c, x, y, w, h, r, fill=None, stroke=None, sw=0.5):
     c.drawPath(p, fill=bool(fill), stroke=bool(stroke))
 
 def generate_invoice():
-    out = "/mnt/user-data/outputs/ShieldsPro_Invoice_TodayInTech.pdf"
+    out = "/mnt/user-data/outputs/ShieldsPro_Invoice_Anonsoft.pdf"
     c = canvas.Canvas(out, pagesize=A4)
     margin = 20*mm
 
@@ -64,11 +64,11 @@ def generate_invoice():
     # Company name (white on black)
     c.setFillColor(WHITE)
     c.setFont("Helvetica-Bold", 20)
-    c.drawRightString(W - margin, H - 22*mm, "TodayInTech")
+    c.drawRightString(W - margin, H - 22*mm, "Anonsoft")
     c.setFillColor(LIGHT_GRAY)
     c.setFont("Helvetica", 9)
-    c.drawRightString(W - margin, H - 29*mm, "www.todayintech.in")
-    c.drawRightString(W - margin, H - 35*mm, "contact@todayintech.in")
+    c.drawRightString(W - margin, H - 29*mm, "www.anonsoft.in")
+    c.drawRightString(W - margin, H - 35*mm, "contact@anonsoft.in")
 
     # --- INVOICE title (white on black) ---
     c.setFillColor(WHITE)
@@ -108,9 +108,9 @@ def generate_invoice():
     c.drawString(margin + 4*mm, sec_y - 12*mm, "Yasmin K")
     c.setFillColor(MID_GRAY)
     c.setFont("Helvetica", 9)
-    c.drawString(margin + 4*mm, sec_y - 18*mm, "Founder & CEO, TodayInTech")
-    c.drawString(margin + 4*mm, sec_y - 24*mm, "www.todayintech.in")
-    c.drawString(margin + 4*mm, sec_y - 30*mm, "contact@todayintech.in")
+    c.drawString(margin + 4*mm, sec_y - 18*mm, "Founder & CEO, Anonsoft")
+    c.drawString(margin + 4*mm, sec_y - 24*mm, "www.anonsoft.in")
+    c.drawString(margin + 4*mm, sec_y - 30*mm, "contact@anonsoft.in")
 
     # BILLED TO
     to_x = W/2 + 5*mm
@@ -257,14 +257,14 @@ def generate_invoice():
     c.drawString(margin + 4*mm, sig_y - 16*mm, "Yasmin K")
     c.setFillColor(MID_GRAY)
     c.setFont("Helvetica", 8.5)
-    c.drawString(margin + 4*mm, sig_y - 22*mm, "Founder & CEO, TodayInTech")
+    c.drawString(margin + 4*mm, sig_y - 22*mm, "Founder & CEO, Anonsoft")
 
     # --- Footer ---
     c.setFillColor(BLACK)
     c.rect(0, 0, W, 16*mm, fill=1, stroke=0)
     c.setFillColor(WHITE)
     c.setFont("Helvetica", 8)
-    c.drawCentredString(W/2, 9*mm, "Thank you for your business!  ·  www.todayintech.in  ·  contact@todayintech.in")
+    c.drawCentredString(W/2, 9*mm, "Thank you for your business!  ·  www.anonsoft.in  ·  contact@anonsoft.in")
     c.setFillColor(LIGHT_GRAY)
     c.setFont("Helvetica", 7)
     c.drawCentredString(W/2, 4*mm, "This invoice is computer generated and valid without physical signature.")

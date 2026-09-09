@@ -2,7 +2,7 @@
 title: "How to Build a HIPAA-Compliant LLM & RAG Architecture for Healthcare Software (2026)"
 description: "Engineering guide to building production HIPAA-compliant Retrieval-Augmented Generation (RAG) and LLM architectures in 2026. Covers pgvector KMS encryption, zero-retention LLM endpoints, and mTLS API security."
 date: "2026-07-30"
-author: "TodayInTech Engineering Team"
+author: "Anonsoft Engineering Team"
 category: "AI Healthcare Engineering"
 keywords: ["hipaa compliant llm architecture 2026", "rag pipeline healthcare software", "building hipaa compliant medical ai", "vector database encryption healthcare", "smart on fhir llm integration"]
 ---

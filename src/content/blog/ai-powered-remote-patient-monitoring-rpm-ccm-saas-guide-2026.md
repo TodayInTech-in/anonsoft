@@ -2,7 +2,7 @@
 title: "Building an AI-Powered Remote Patient Monitoring (RPM) & Chronic Care Management (CCM) SaaS: HIPAA IoT Telemetry, Real-Time Vitals Alerting, and Medicare CPT Billing (2026)"
 description: "An engineering blueprint for building a multi-tenant B2B Remote Patient Monitoring (RPM) and Chronic Care Management (CCM) SaaS with cellular IoT telemetry, automated CPT billing, and EHR integration in 2026."
 date: "2026-08-22"
-author: "TodayInTech Engineering Team"
+author: "Anonsoft Engineering Team"
 category: "HealthTech SaaS"
 image: "ai_rpm_ccm_saas_hero.jpg"
 keywords: ["remote patient monitoring software development", "RPM SaaS platform builder", "custom chronic care management software", "HIPAA-compliant telemedicine app developer", "custom telemedicine software development", "EHR integrated telehealth solution", "healthcare software development"]
@@ -193,17 +193,17 @@ CREATE POLICY tenant_isolation_vitals ON patient_vitals_telemetry
 ```
 
 ### SMART on FHIR Embeds
-* **Single Sign-On (SSO):** Clinicians launch the TodayInTech RPM workspace directly from within Epic Hyperspace or Cerner PowerChart via OAuth 2.0 / OpenID Connect.
+* **Single Sign-On (SSO):** Clinicians launch the Anonsoft RPM workspace directly from within Epic Hyperspace or Cerner PowerChart via OAuth 2.0 / OpenID Connect.
 * **Context Synchronization:** As the physician switches patient charts inside the EHR, the embedded iframe automatically synchronizes to display the active patient's live biometric curves, trend charts, and medication correlation views.
 * **Automated Encounter Writeback:** Upon completing a monthly CCM review, the platform pushes a structured `Encounter` and `DocumentReference` FHIR resource back to the EHR chart.
 
 ---
 
-## Comparative Matrix: Custom RPM Development vs. Off-the-Shelf SaaS vs. TodayInTech White-Label Architecture
+## Comparative Matrix: Custom RPM Development vs. Off-the-Shelf SaaS vs. Anonsoft White-Label Architecture
 
 Choosing the right engineering pathway determines time-to-market, customizability, and operational margins:
 
-| Capability | Generic Off-the-Shelf RPM Vendors | In-House Custom Build from Scratch | TodayInTech White-Label RPM/CCM Architecture |
+| Capability | Generic Off-the-Shelf RPM Vendors | In-House Custom Build from Scratch | Anonsoft White-Label RPM/CCM Architecture |
 |---|---|---|---|
 | **Time to Market** | 2–4 Weeks (Locked ecosystem) | 12–18 Months | **3–4 Weeks (Fully custom branded)** |
 | **Initial Capital Expenditure** | $0 upfront (High revenue share 40–60%) | $250,000–$450,000+ software build | **Fraction of custom build cost (No upfront dev risk)** |
@@ -273,15 +273,15 @@ Yes. The platform supports standard HL7 v2 messaging and modern SMART on FHIR RE
 
 ---
 
-## Build Your AI-Powered RPM & CCM Platform with TodayInTech
+## Build Your AI-Powered RPM & CCM Platform with Anonsoft
 
 Building a production-grade, HIPAA-compliant Remote Patient Monitoring and Chronic Care Management SaaS requires specialized expertise across medical IoT engineering, real-time telemetry streaming, clinical AI workflows, and healthcare regulatory compliance.
 
-At **TodayInTech**, we specialize in designing, engineering, and deploying custom, white-label digital health platforms with **zero upfront risk**:
+At **Anonsoft**, we specialize in designing, engineering, and deploying custom, white-label digital health platforms with **zero upfront risk**:
 
 * **Working Prototype First:** We build your functional RPM/CCM prototype before you pay a single dollar.
 * **Full IP & Source Code Ownership:** 100% ownership of your codebase, database schemas, and intellectual property.
 * **Zero Revenue Share:** Keep 100% of your SaaS subscription revenue and clinical CPT reimbursement margins.
 * **Turnkey Compliance:** Built-in HIPAA, SOC 2, HL7/FHIR, and Medicare audit-proof compliance architecture.
 
-Explore our healthcare solutions at [MedNowNA Telemedicine & Healthcare Platform](file:///root/project/todayintechweb/projects/mednowna.html), check our [Healthcare SaaS MVP Development](file:///root/project/todayintechweb/healthcare-saas-mvp-development.html) and [Telemedicine Software for Clinics](file:///root/project/todayintechweb/telemedicine-software-for-clinics.html) guides, or [Book a 30-Minute Architecture Discovery Call](file:///root/project/todayintechweb/bookademo/index.html) with our senior engineering team today. Ready to start? [Contact Us](file:///root/project/todayintechweb/contact/index.html) to discuss your project requirements.
+Explore our healthcare solutions at [MedNowNA Telemedicine & Healthcare Platform](file:///root/project/anonsoftweb/projects/mednowna.html), check our [Healthcare SaaS MVP Development](file:///root/project/anonsoftweb/healthcare-saas-mvp-development.html) and [Telemedicine Software for Clinics](file:///root/project/anonsoftweb/telemedicine-software-for-clinics.html) guides, or [Book a 30-Minute Architecture Discovery Call](file:///root/project/anonsoftweb/bookademo/index.html) with our senior engineering team today. Ready to start? [Contact Us](file:///root/project/anonsoftweb/contact/index.html) to discuss your project requirements.

@@ -16,7 +16,7 @@ import CtaSection from './components/CtaSection';
 import SocialProofToast from './components/SocialProofToast';
 
 export const metadata = {
-  title: 'TodayInTech — Custom Startup Software Development Agency',
+  title: 'Anonsoft — Custom Startup Software Development Agency',
   description:
     'We help startups launch scalable software quickly: SaaS platforms, AI tools, and mobile apps—production-ready in weeks. Book a free strategy call.',
 };

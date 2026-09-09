@@ -10,7 +10,7 @@ export function loadPageContent(relativeHtmlPath) {
   const titleMatch = content.match(/<title>(.*?)<\/title>/i);
   const descMatch = content.match(/<meta\s+name="description"\s+content="(.*?)"/i);
 
-  const title = titleMatch ? titleMatch[1].replace(' | TodayInTech', '') : '';
+  const title = titleMatch ? titleMatch[1].replace(' | Anonsoft', '') : '';
   const description = descMatch ? descMatch[1] : '';
 
   let body = content;

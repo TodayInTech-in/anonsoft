@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="assets/logo.png" alt="TodayInTech Logo" width="80" height="80" style="border-radius: 16px;">
+  <img src="assets/logo.png" alt="Anonsoft Logo" width="80" height="80" style="border-radius: 16px;">
 </p>
 
-<h1 align="center">TodayInTech</h1>
+<h1 align="center">Anonsoft</h1>
 
 <p align="center">
   <strong>🚀 Building the Future of Health Tech Software</strong>
@@ -30,9 +30,9 @@
 
 
 
-## 🏥 About TodayInTech
+## 🏥 About Anonsoft
 
-**TodayInTech** is a professional technology company specializing in **health white-label software solutions**. We work with healthcare brands, clinics, pharmacies, and wellness companies to deliver production-ready software products under their own brand.
+**Anonsoft** is a professional technology company specializing in **health white-label software solutions**. We work with healthcare brands, clinics, pharmacies, and wellness companies to deliver production-ready software products under their own brand.
 
 Beyond health tech, we also deliver custom software across multiple domains — from mobile apps to cloud-native platforms — with a proven track record of **50+ happy clients** and **120+ projects delivered**.
 
@@ -101,7 +101,7 @@ This entire website can be transformed into any company's brand in seconds using
 
 ### How to Rebrand the Entire Website:
 
-1. Edit [`whitelabel.json`](file:///root/project/todayintechweb/whitelabel.json) with your target company details (name, domain, emails, WhatsApp, Calendly, social links).
+1. Edit [`whitelabel.json`](file:///root/project/anonsoftweb/whitelabel.json) with your target company details (name, domain, emails, WhatsApp, Calendly, social links).
 2. Run the white-label engine:
    ```bash
    python3 scripts/apply_whitelabel.py
@@ -125,8 +125,8 @@ This entire website can be transformed into any company's brand in seconds using
 
 1. **Clone the repository**
    ```bash
-   git clone git@github.com:JASIM0021/todayintechweb.git
-   cd todayintechweb
+   git clone git@github.com:JASIM0021/anonsoftweb.git
+   cd anonsoftweb
    ```
 
 2. **Open directly in browser**
@@ -145,7 +145,7 @@ This entire website can be transformed into any company's brand in seconds using
 ## 📁 Project Structure
 
 ```
-todayintechweb/
+anonsoftweb/
 │
 ├── index.html              # Main HTML page (all sections)
 ├── style.css               # Complete CSS design system
@@ -165,7 +165,7 @@ todayintechweb/
 │                             ├── Booking modal logic
 │                             └── Active nav highlighting
 ├── assets/
-│   ├── logo.png             # TodayInTech brand logo
+│   ├── logo.png             # Anonsoft brand logo
 │   ├── hero-bg.png          # Hero section background
 │   ├── project-health-app.png     # Portfolio: Health app
 │   ├── project-telemedicine.png   # Portfolio: Telemedicine
@@ -198,10 +198,10 @@ todayintechweb/
 
 ## 🤝 Our Clients Love Us
 
-> *"TodayInTech transformed our clinic's operations. Their white-label platform saved us 6 months of development."*
+> *"Anonsoft transformed our clinic's operations. Their white-label platform saved us 6 months of development."*
 > — **Dr. Rahul Mehta**, CEO, MediCare Plus
 
-> *"Working with TodayInTech was seamless. They delivered our telemedicine app ahead of schedule."*
+> *"Working with Anonsoft was seamless. They delivered our telemedicine app ahead of schedule."*
 > — **Sarah Anderson**, CTO, DocConnect
 
 > *"The pharmacy management system handles 10,000+ daily transactions flawlessly."*
@@ -228,9 +228,9 @@ Ready to build your next health tech product? Let's talk!
 
 | Channel | Details |
 |---------|---------|
-| 📧 **Email** | [contact@todayintech.in](mailto:contact@todayintech.in) |
+| 📧 **Email** | [contact@anonsoft.in](mailto:contact@anonsoft.in) |
 | 📞 **Phone** | +91 7679349780 |
-| 🌐 **Website** | [todayintech.com](https://todayintech.com) |
+| 🌐 **Website** | [anonsoft.com](https://anonsoft.com) |
 | 📍 **Location** | Kolkata, India |
 
 ---
@@ -242,11 +242,11 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 ---
 
 <p align="center">
-  Made with ❤️ by <strong>TodayInTech</strong>
+  Made with ❤️ by <strong>Anonsoft</strong>
 </p>
 
 <p align="center">
-  <a href="https://todayintech.com">Website</a> •
-  <a href="mailto:contact@todayintech.in">Email</a> •
-  <a href="https://linkedin.com/company/todayintech">LinkedIn</a>
+  <a href="https://anonsoft.com">Website</a> •
+  <a href="mailto:contact@anonsoft.in">Email</a> •
+  <a href="https://linkedin.com/company/anonsoft">LinkedIn</a>
 </p>

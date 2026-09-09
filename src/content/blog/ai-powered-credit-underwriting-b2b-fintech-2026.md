@@ -2,7 +2,7 @@
 title: "AI-Powered Credit Underwriting: The Future of B2B FinTech (2026)"
 description: "Discover how AI-powered credit underwriting and real-time risk modeling are transforming B2B FinTech platforms in 2026. Learn about API-driven risk engines, automated financial analysis, and machine learning models for corporate credit risk."
 date: "2026-08-09"
-author: "TodayInTech Engineering Team"
+author: "Anonsoft Engineering Team"
 category: "FinTech SaaS"
 keywords: ["AI credit underwriting", "B2B fintech credit risk", "automated credit risk assessment", "financial software development", "real-time risk modeling"]
 image: "b2b_fintech_hero.jpg"

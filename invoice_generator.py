@@ -74,13 +74,13 @@ def generate_invoice(company_name, services):
     # --- Company name + website (top right) ---
     c.setFillColor(WHITE)
     c.setFont("Helvetica-Bold", 18)
-    c.drawRightString(W - margin, H - 22*mm, "TodayInTech")
+    c.drawRightString(W - margin, H - 22*mm, "Anonsoft")
     c.setFillColor(CYAN)
     c.setFont("Helvetica", 9)
-    c.drawRightString(W - margin, H - 29*mm, "www.todayintech.in")
+    c.drawRightString(W - margin, H - 29*mm, "www.anonsoft.in")
     c.setFillColor(LIGHT_GRAY)
     c.setFont("Helvetica", 8)
-    c.drawRightString(W - margin, H - 35*mm, "contact@todayintech.in")
+    c.drawRightString(W - margin, H - 35*mm, "contact@anonsoft.in")
 
     # --- INVOICE title ---
     c.setFillColor(WHITE)
@@ -125,9 +125,9 @@ def generate_invoice(company_name, services):
     c.drawString(margin + 4*mm, sec_y - 12*mm, "Sk Jasimuddin")
     c.setFillColor(LIGHT_GRAY)
     c.setFont("Helvetica", 9)
-    c.drawString(margin + 4*mm, sec_y - 18*mm, "Founder & CEO, TodayInTech")
-    c.drawString(margin + 4*mm, sec_y - 24*mm, "www.todayintech.in")
-    c.drawString(margin + 4*mm, sec_y - 30*mm, "contact@todayintech.in")
+    c.drawString(margin + 4*mm, sec_y - 18*mm, "Founder & CEO, Anonsoft")
+    c.drawString(margin + 4*mm, sec_y - 24*mm, "www.anonsoft.in")
+    c.drawString(margin + 4*mm, sec_y - 30*mm, "contact@anonsoft.in")
 
     # TO box
     to_x = W/2 + 5*mm
@@ -142,7 +142,7 @@ def generate_invoice(company_name, services):
     c.setFillColor(LIGHT_GRAY)
     c.setFont("Helvetica", 9)
     c.drawString(to_x + 4*mm, sec_y - 18*mm, "Client")
-    c.drawString(to_x + 4*mm, sec_y - 24*mm, "Services provided by TodayInTech")
+    c.drawString(to_x + 4*mm, sec_y - 24*mm, "Services provided by Anonsoft")
 
     # --- Items Table ---
     N = len(services)
@@ -261,7 +261,7 @@ def generate_invoice(company_name, services):
     c.drawString(margin + 4*mm, sig_y - 15*mm, "Sk Jasimuddin")
     c.setFillColor(LIGHT_GRAY)
     c.setFont("Helvetica", 8)
-    c.drawString(margin + 4*mm, sig_y - 20*mm, "Founder & CEO, TodayInTech")
+    c.drawString(margin + 4*mm, sig_y - 20*mm, "Founder & CEO, Anonsoft")
 
     # --- Footer ---
     c.setFillColor(colors.HexColor("#0D1117"))
@@ -272,7 +272,7 @@ def generate_invoice(company_name, services):
 
     c.setFillColor(LIGHT_GRAY)
     c.setFont("Helvetica", 8)
-    c.drawCentredString(W/2, 12*mm, "Thank you for your business! · www.todayintech.in · contact@todayintech.in")
+    c.drawCentredString(W/2, 12*mm, "Thank you for your business! · www.anonsoft.in · contact@anonsoft.in")
     c.setFillColor(colors.HexColor("#3A3A4A"))
     c.setFont("Helvetica", 7)
     c.drawCentredString(W/2, 7*mm, "This invoice is computer generated and valid without physical signature.")

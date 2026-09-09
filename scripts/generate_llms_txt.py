@@ -233,9 +233,9 @@ def parse_html_file(file_path):
         print(f"Error parsing {file_path}: {e}")
 
     title = parser.title.strip()
-    title = re.sub(r"\s*\|\s*TodayInTech.*", "", title, flags=re.IGNORECASE)
-    title = re.sub(r"\s*\|\s*Today In Tech.*", "", title, flags=re.IGNORECASE)
-    title = re.sub(r"\s*-\s*TodayInTech.*", "", title, flags=re.IGNORECASE)
+    title = re.sub(r"\s*\|\s*Anonsoft.*", "", title, flags=re.IGNORECASE)
+    title = re.sub(r"\s*\|\s*Anonsoft.*", "", title, flags=re.IGNORECASE)
+    title = re.sub(r"\s*-\s*Anonsoft.*", "", title, flags=re.IGNORECASE)
 
     description = parser.meta_desc_temp.strip()
     if not description:
@@ -375,7 +375,7 @@ def clean_url_ext(url):
 # ─────────────────────────────────────────────────────────────────────────────
 
 def generate_llms_files(root_dir):
-    domain = "https://todayintech.in"
+    domain = "https://anonsoft.in"
 
     core_pages = []
     projects = []
@@ -396,7 +396,7 @@ def generate_llms_files(root_dir):
                 else f"{domain}/{entry.name}"
             )
             if entry.name == "index.html":
-                title = "TodayInTech Homepage"
+                title = "Anonsoft Homepage"
             url = clean_url_ext(url)
             core_pages.append((title, url, desc))
 
@@ -431,13 +431,13 @@ def generate_llms_files(root_dir):
 
     # ── llms.txt (compact) ────────────────────────────────────────────────────
     llms_content = []
-    llms_content.append("# TodayInTech\n")
+    llms_content.append("# Anonsoft\n")
     llms_content.append(
         "> A premier software development agency specializing in scalable custom software, "
         "HIPAA-compliant virtual care solutions, 3D product configurators, and EdTech platforms.\n"
     )
     llms_content.append(
-        "This is the main directory of the TodayInTech website, custom software solutions, and case studies, "
+        "This is the main directory of the Anonsoft website, custom software solutions, and case studies, "
         "optimized for AI models, search crawlers, and LLM interpretation. "
         "Here you will find direct links to our key services, active portfolios, and engineering insights.\n"
     )
@@ -470,14 +470,14 @@ def generate_llms_files(root_dir):
 
     # ── llms-full.txt (rich project details) ─────────────────────────────────
     llms_full_content = []
-    llms_full_content.append("# TodayInTech - Full Index\n")
+    llms_full_content.append("# Anonsoft - Full Index\n")
     llms_full_content.append(
-        "> Comprehensive site listing of all TodayInTech pages and technical blog posts "
+        "> Comprehensive site listing of all Anonsoft pages and technical blog posts "
         "for AI agents and LLM crawlers.\n"
     )
     llms_full_content.append(
         "This is the comprehensive index of all resources, pages, active projects, and technical blog posts "
-        "published by TodayInTech, optimized for full exploration by LLMs and search crawlers.\n"
+        "published by Anonsoft, optimized for full exploration by LLMs and search crawlers.\n"
     )
 
     llms_full_content.append("## Core Pages\n")

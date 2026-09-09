@@ -6,18 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Building an AI-Powered Remote Patient Monitoring (RPM) & Chronic Care Management (CCM) SaaS: HIPAA IoT Telemetry, Real-Time Vitals Alerting, and Medicare CPT Billing (2026) | TodayInTech</title>
+  <title>Building an AI-Powered Remote Patient Monitoring (RPM) & Chronic Care Management (CCM) SaaS: HIPAA IoT Telemetry, Real-Time Vitals Alerting, and Medicare CPT Billing (2026) | Anonsoft</title>
   <meta name="description" content="An engineering blueprint for building a multi-tenant B2B Remote Patient Monitoring (RPM) and Chronic Care Management (CCM) SaaS with cellular IoT telemetry, automated CPT billing, and EHR integration in 2026.">
-  <meta name="author" content="TodayInTech">
+  <meta name="author" content="Anonsoft">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-  <link rel="canonical" href="https://todayintech.in/blog/ai-powered-remote-patient-monitoring-rpm-ccm-saas-guide-2026.html">
+  <link rel="canonical" href="https://anonsoft.in/blog/ai-powered-remote-patient-monitoring-rpm-ccm-saas-guide-2026.html">
 
   <meta property="og:title" content="Building an AI-Powered Remote Patient Monitoring (RPM) & Chronic Care Management (CCM) SaaS: HIPAA IoT Telemetry, Real-Time Vitals Alerting, and Medicare CPT Billing (2026)">
   <meta property="og:description" content="An engineering blueprint for building a multi-tenant B2B Remote Patient Monitoring (RPM) and Chronic Care Management (CCM) SaaS with cellular IoT telemetry, automated CPT billing, and EHR integration in 2026.">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://todayintech.in/blog/ai-powered-remote-patient-monitoring-rpm-ccm-saas-guide-2026.html">
-  <meta property="og:image" content="https://todayintech.in/assets/blog/ai_rpm_ccm_saas_hero.jpg">
-  <meta property="og:site_name" content="TodayInTech">
+  <meta property="og:url" content="https://anonsoft.in/blog/ai-powered-remote-patient-monitoring-rpm-ccm-saas-guide-2026.html">
+  <meta property="og:image" content="https://anonsoft.in/assets/blog/ai_rpm_ccm_saas_hero.jpg">
+  <meta property="og:site_name" content="Anonsoft">
   <meta property="article:published_time" content="August 22, 2026">
 
   <!-- FAQPage Structured Data -->
@@ -41,8 +41,8 @@
   <header>
     <nav class="navbar" id="navbar">
       <div class="container">
-        <a href="/" class="nav-logo" aria-label="TodayInTech Homepage">
-          <img src="../assets/nav_logo.png" alt="TodayInTech Logo" style="height: 48px !important; width: auto !important; max-width: none !important; border-radius: 0 !important;">
+        <a href="/" class="nav-logo" aria-label="Anonsoft Homepage">
+          <img src="../assets/anonsoft.svg" alt="Anonsoft Logo" style="height: 48px !important; width: auto !important; max-width: none !important; border-radius: 0 !important;">
         </a>
         <div class="nav-links" id="navLinks">
           <a href="/#services">Services</a>
@@ -52,7 +52,7 @@
           <a href="/#testimonials">Reviews</a>
           <a href="/#faq">FAQ</a>
           <a href="/blog/" class="active">Blog</a>
-          <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/todayintechdotin/30min'});return false;" class="nav-cta">Book a Call</a>
+          <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/anonsoftdotin/30min'});return false;" class="nav-cta">Book a Call</a>
         </div>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
           <span></span><span></span><span></span>
@@ -285,12 +285,12 @@ CREATE POLICY tenant_isolation_vitals ON patient_vitals_telemetry
     USING (tenant_id = NULLIF(current_setting('app.current_tenant_id', true), '')::UUID);</code></pre>
 <h3>SMART on FHIR Embeds</h3>
 <ul>
-  <li><strong>Single Sign-On (SSO):</strong> Clinicians launch the TodayInTech RPM workspace directly from within Epic Hyperspace or Cerner PowerChart via OAuth 2.0 / OpenID Connect.</li>
+  <li><strong>Single Sign-On (SSO):</strong> Clinicians launch the Anonsoft RPM workspace directly from within Epic Hyperspace or Cerner PowerChart via OAuth 2.0 / OpenID Connect.</li>
   <li><strong>Context Synchronization:</strong> As the physician switches patient charts inside the EHR, the embedded iframe automatically synchronizes to display the active patient's live biometric curves, trend charts, and medication correlation views.</li>
   <li><strong>Automated Encounter Writeback:</strong> Upon completing a monthly CCM review, the platform pushes a structured <code>Encounter</code> and <code>DocumentReference</code> FHIR resource back to the EHR chart.</li>
 </ul>
 <hr>
-<h2>Comparative Matrix: Custom RPM Development vs. Off-the-Shelf SaaS vs. TodayInTech White-Label Architecture</h2>
+<h2>Comparative Matrix: Custom RPM Development vs. Off-the-Shelf SaaS vs. Anonsoft White-Label Architecture</h2>
 <p>Choosing the right engineering pathway determines time-to-market, customizability, and operational margins:</p>
 <div class="tech-table"><table>
   <thead>
@@ -298,7 +298,7 @@ CREATE POLICY tenant_isolation_vitals ON patient_vitals_telemetry
       <th>Capability</th>
       <th>Generic Off-the-Shelf RPM Vendors</th>
       <th>In-House Custom Build from Scratch</th>
-      <th>TodayInTech White-Label RPM/CCM Architecture</th>
+      <th>Anonsoft White-Label RPM/CCM Architecture</th>
     </tr>
   </thead>
   <tbody>
@@ -394,16 +394,16 @@ CREATE POLICY tenant_isolation_vitals ON patient_vitals_telemetry
 <h3>4. Can the RPM SaaS platform integrate with existing EHRs like Epic, Cerner, and Athenahealth?</h3>
 <p>Yes. The platform supports standard HL7 v2 messaging and modern SMART on FHIR REST APIs. Clinicians can access the RPM dashboard directly inside their EHR chart without separate logins, and patient biometric observations (<code>FHIR Observation</code> resources) and encounter documentation are automatically written back to the patient's EHR chart.</p>
 <hr>
-<h2>Build Your AI-Powered RPM & CCM Platform with TodayInTech</h2>
+<h2>Build Your AI-Powered RPM & CCM Platform with Anonsoft</h2>
 <p>Building a production-grade, HIPAA-compliant Remote Patient Monitoring and Chronic Care Management SaaS requires specialized expertise across medical IoT engineering, real-time telemetry streaming, clinical AI workflows, and healthcare regulatory compliance.</p>
-<p>At <strong>TodayInTech</strong>, we specialize in designing, engineering, and deploying custom, white-label digital health platforms with <strong>zero upfront risk</strong>:</p>
+<p>At <strong>Anonsoft</strong>, we specialize in designing, engineering, and deploying custom, white-label digital health platforms with <strong>zero upfront risk</strong>:</p>
 <ul>
   <li><strong>Working Prototype First:</strong> We build your functional RPM/CCM prototype before you pay a single dollar.</li>
   <li><strong>Full IP & Source Code Ownership:</strong> 100% ownership of your codebase, database schemas, and intellectual property.</li>
   <li><strong>Zero Revenue Share:</strong> Keep 100% of your SaaS subscription revenue and clinical CPT reimbursement margins.</li>
   <li><strong>Turnkey Compliance:</strong> Built-in HIPAA, SOC 2, HL7/FHIR, and Medicare audit-proof compliance architecture.</li>
 </ul>
-<p>Explore our healthcare solutions at <a href="/file:///root/project/todayintechweb/projects/mednowna">MedNowNA Telemedicine & Healthcare Platform</a>, check our <a href="/file:///root/project/todayintechweb/healthcare-saas-mvp-development">Healthcare SaaS MVP Development</a> and <a href="/file:///root/project/todayintechweb/telemedicine-software-for-clinics">Telemedicine Software for Clinics</a> guides, or <a href="/file:///root/project/todayintechweb/bookademo">Book a 30-Minute Architecture Discovery Call</a> with our senior engineering team today. Ready to start? <a href="/file:///root/project/todayintechweb/contact">Contact Us</a> to discuss your project requirements.</p>
+<p>Explore our healthcare solutions at <a href="file:///root/project/anonsoftweb/projects/mednowna.html">MedNowNA Telemedicine & Healthcare Platform</a>, check our <a href="file:///root/project/anonsoftweb/healthcare-saas-mvp-development.html">Healthcare SaaS MVP Development</a> and <a href="file:///root/project/anonsoftweb/telemedicine-software-for-clinics.html">Telemedicine Software for Clinics</a> guides, or <a href="file:///root/project/anonsoftweb/bookademo/index.html">Book a 30-Minute Architecture Discovery Call</a> with our senior engineering team today. Ready to start? <a href="file:///root/project/anonsoftweb/contact/index.html">Contact Us</a> to discuss your project requirements.</p>
       </div>
 
       <!-- FAQ Section -->
@@ -419,7 +419,7 @@ CREATE POLICY tenant_isolation_vitals ON patient_vitals_telemetry
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="../assets/nav_logo.png" alt="TodayInTech Logo" class="footer-logo" style="height: 48px !important; width: auto !important; max-width: none !important; border-radius: 0 !important; margin-bottom: 20px;">
+          <img src="../assets/anonsoft.svg" alt="Anonsoft Logo" class="footer-logo" style="height: 48px !important; width: auto !important; max-width: none !important; border-radius: 0 !important; margin-bottom: 20px;">
           <p class="footer-desc">Premium software engineering and product customizer development agency.</p>
         </div>
         <div class="footer-links-col">
@@ -436,8 +436,8 @@ CREATE POLICY tenant_isolation_vitals ON patient_vitals_telemetry
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 TodayInTech. All rights reserved.</p>
-                <div class="footer-legal">
+        <p>&copy; 2026 Anonsoft. All rights reserved.</p>
+        <div class="footer-legal">
           <a href="/privacy">Privacy Policy</a>
           <a href="/terms">Terms of Service</a>
           <a href="/refund-policy">Refund Policy</a>

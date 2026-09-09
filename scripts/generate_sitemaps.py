@@ -3,7 +3,7 @@ import os
 import re
 from datetime import datetime
 
-DOMAIN = "https://todayintech.in"
+DOMAIN = "https://anonsoft.in"
 
 def xml_escape(text):
     """Escape XML special characters in string."""
@@ -29,7 +29,7 @@ def get_html_title_desc(file_path):
         
         title_match = re.search(r"<title>(.*?)</title>", content, re.IGNORECASE)
         if title_match:
-            title = title_match.group(1).replace(" | TodayInTech", "").replace(" — TodayInTech Software Agency", "")
+            title = title_match.group(1).replace(" | Anonsoft", "").replace(" — Anonsoft Software Agency", "")
             
         desc_match = re.search(r"<meta\s+name=\"description\"\s+content=\"(.*?)\"", content, re.IGNORECASE)
         if not desc_match:
@@ -227,9 +227,9 @@ def generate_sitemaps():
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
         f.write('<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n')
         f.write('  <channel>\n')
-        f.write('    <title>TodayInTech Blog</title>\n')
+        f.write('    <title>Anonsoft Blog</title>\n')
         f.write(f'    <link>{DOMAIN}</link>\n')
-        f.write('    <description>Latest custom software engineering, virtual care compliance, and product builder insights from TodayInTech.</description>\n')
+        f.write('    <description>Latest custom software engineering, virtual care compliance, and product builder insights from Anonsoft.</description>\n')
         f.write('    <language>en-us</language>\n')
         f.write(f'    <atom:link href="{DOMAIN}/public/feed.xml" rel="self" type="application/rss+xml"/>\n')
         

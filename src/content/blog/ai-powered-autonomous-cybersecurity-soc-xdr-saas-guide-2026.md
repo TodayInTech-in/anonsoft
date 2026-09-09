@@ -2,7 +2,7 @@
 title: "Building an AI-Powered Autonomous Cybersecurity SOC & XDR SaaS: eBPF Kernel Telemetry, Agentic Incident Triage, Automated SOAR Playbooks, and MITRE ATT&CK Mapping (2026)"
 description: "An enterprise engineering blueprint for building an AI-native Security Operations Center (SOC) and Extended Detection and Response (XDR) SaaS with eBPF telemetry, sub-second threat scoring, autonomous agentic triage, and automated SOAR orchestration in 2026."
 date: "2026-09-07"
-author: "TodayInTech Engineering Team"
+author: "Anonsoft Engineering Team"
 category: "Cybersecurity & Enterprise AI SaaS"
 image: "ai_soc_xdr_cybersecurity_hero.jpg"
 keywords: ["AI cybersecurity SOC SaaS", "autonomous XDR platform development", "eBPF security telemetry", "agentic incident triage software", "automated SOAR playbooks", "MITRE ATT&CK AI correlation", "custom SIEM software development", "cloud security operations SaaS", "white label cybersecurity software"]
@@ -297,22 +297,22 @@ Our autonomous SOC architecture implements a **calibrated dual-mode governance m
 ### 2. What is the query latency difference between ClickHouse and traditional Elasticsearch for SecOps?
 ClickHouse provides **5x to 15x faster vector aggregation and columnar search speeds while consuming 60% to 75% less RAM and disk storage compared to Elasticsearch**. For high-volume cybersecurity telemetry exceeding 50,000 EPS, ClickHouse's columnar compression (ZSTD/LZ4) and vectorized SIMD execution allow SecOps analysts to query months of historical logs in sub-second timelines.
 
-### 3. Can TodayInTech build a white-label version of this SOC/XDR platform for our MSSP?
-Yes. TodayInTech specializes in developing custom, enterprise-grade white-label cybersecurity software. We provide the complete frontend dashboard (Next.js, Tailwind, Three.js 3D threat maps), real-time streaming backend (Kafka, Flink, ClickHouse), eBPF agent binaries, and custom LLM triage agents branded under your company name with full source code ownership.
+### 3. Can Anonsoft build a white-label version of this SOC/XDR platform for our MSSP?
+Yes. Anonsoft specializes in developing custom, enterprise-grade white-label cybersecurity software. We provide the complete frontend dashboard (Next.js, Tailwind, Three.js 3D threat maps), real-time streaming backend (Kafka, Flink, ClickHouse), eBPF agent binaries, and custom LLM triage agents branded under your company name with full source code ownership.
 
-### 4. How does TodayInTech's zero upfront payment model work for cybersecurity software?
+### 4. How does Anonsoft's zero upfront payment model work for cybersecurity software?
 We operate with a **working prototype first, zero upfront payment** guarantee. Our engineering team designs and builds a functional prototype of your custom SOC/XDR dashboard with working telemetry feeds and AI triage workflows before you pay a single cent. You review the functional build, test the architecture, and only proceed once fully satisfied.
 
 ---
 
-## Build Your AI-Powered Cybersecurity SOC & XDR SaaS with TodayInTech
+## Build Your AI-Powered Cybersecurity SOC & XDR SaaS with Anonsoft
 
 Engineering a low-latency, scalable, and resilient autonomous cybersecurity platform demands specialized expertise in Linux kernel internals, distributed real-time streaming, enterprise identity protocols, and advanced AI reasoning architectures.
 
-At **TodayInTech**, we help cybersecurity startups, enterprises, and MSSPs bring state-of-the-art security software products to market:
+At **Anonsoft**, we help cybersecurity startups, enterprises, and MSSPs bring state-of-the-art security software products to market:
 
 * **Zero Upfront Payment Guarantee:** We architect and deliver a fully functional working prototype of your custom SOC/XDR SaaS before taking any payment.
 * **Full-Stack Security Engineering:** In-kernel eBPF probes, ClickHouse/Flink streaming pipelines, MITRE ATT&CK knowledge graphs, and automated SOAR orchestration.
 * **Enterprise Security Standards:** SOC 2 Type II, ISO 27001, and HIPAA compliance readiness with per-tenant cryptographic isolation.
 
-Ready to launch your enterprise AI SOC & XDR platform? [**Book a Technical Architecture Session with TodayInTech**](/bookademo/) or explore our custom engineering services at [**TodayInTech.in**](/).
+Ready to launch your enterprise AI SOC & XDR platform? [**Book a Technical Architecture Session with Anonsoft**](/bookademo/) or explore our custom engineering services at [**Anonsoft.in**](/).

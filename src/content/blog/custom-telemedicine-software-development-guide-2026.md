@@ -2,7 +2,7 @@
 title: "Custom Telemedicine Software Development in 2026: A Technical Blueprint for HIPAA-Compliant Video & EHR Integrations"
 description: "Discover how to build custom, HIPAA-compliant telemedicine software in 2026. Learn about WebRTC video infrastructure, FHIR/EHR integrations, security compliance, and development costs."
 date: "2026-08-15"
-author: "TodayInTech Engineering Team"
+author: "Anonsoft Engineering Team"
 category: "Healthcare SaaS"
 image: "telemedicine_development.jpg"
 keywords: ["HIPAA-compliant telemedicine app developer", "custom telemedicine software development", "branded patient portal app builder", "telemedicine app development cost", "HIPAA compliant video consultation software", "EHR integrated telehealth solution"]
@@ -112,7 +112,7 @@ Generally, a custom telemedicine platform MVP costs between **$30,000 and $80,00
 ### What makes a telemedicine app developer HIPAA-compliant?
 A developer is not HIPAA-compliant by default; the entire software development lifecycle (SDLC) and deployment environment must adhere to HIPAA rules. This includes executing Business Associate Agreements (BAAs), utilizing encrypted Git repositories, configuring secure production server environments (such as AWS GovCloud or secure Vercel/Node clusters), and conducting routine penetration testing.
 
-### How much does custom telemedicine software development cost with TodayInTech?
+### How much does custom telemedicine software development cost with Anonsoft?
 Depending on complexity and third-party integrations, development starts at **$35,000**. Because we operate under a **Zero Upfront Payment** model, we design, build, and demonstrate your working prototype before you pay anything. You only fund the project when you verify the software works as intended.
 
 ### Can a custom telehealth platform integrate with all major EMR systems?
@@ -123,9 +123,9 @@ For rapid deployments, we often leverage BAA-compliant SDKs such as Zoom Video S
 
 ---
 
-## Accelerate Your Healthcare SaaS with TodayInTech
+## Accelerate Your Healthcare SaaS with Anonsoft
 
-Building a robust, scalable, and secure telehealth platform requires specialized expertise. At **TodayInTech**, we specialize in designing and engineering high-performance healthcare software.
+Building a robust, scalable, and secure telehealth platform requires specialized expertise. At **Anonsoft**, we specialize in designing and engineering high-performance healthcare software.
 
 We eliminate development risk through our **Zero Upfront Payment** model:
 * **Consult & Scope**: We align on your unique feature requirements and clinical workflows.

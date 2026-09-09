@@ -15,7 +15,7 @@ export default function PortfolioSection() {
     {
       slug: 'church-management-software',
       category: 'ChMS / SaaS',
-      title: 'TodayInTech SITES — Church Management',
+      title: 'Anonsoft SITES — Church Management',
       description: 'A comprehensive platform designed to manage member data, online giving, scheduling, accounting, and church communications from one connected interface.',
       image: '/assets/project-church-management.png',
       tech: ['React', 'Node.js', 'PostgreSQL', 'AWS']
@@ -142,7 +142,7 @@ export default function PortfolioSection() {
         <div className="section-header">
           <div className="section-label">Selected Case Studies</div>
           <h2 className="section-title">Battle-Tested Digital Products</h2>
-          <p className="section-subtitle">Explore all 13 battle-tested white-label SaaS, HealthTech, and AI platforms built by TodayInTech.</p>
+          <p className="section-subtitle">Explore all 13 battle-tested white-label SaaS, HealthTech, and AI platforms built by Anonsoft.</p>
         </div>
 
         <div className="portfolio-grid">

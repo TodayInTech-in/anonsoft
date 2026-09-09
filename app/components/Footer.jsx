@@ -6,7 +6,7 @@ import { triggerCalendly } from '../lib/calendly';
 export default function Footer() {
   const handleBooking = (e) => {
     e.preventDefault();
-    triggerCalendly('https://calendly.com/todayintechdotin/30min');
+    triggerCalendly('https://calendly.com/anonsoftdotin/30min');
   };
 
   return (
@@ -15,7 +15,7 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <Link href="/" className="nav-logo" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <img src="/assets/nav_logo.png" alt="TodayInTech Logo" style={{ height: '36px', width: 'auto' }} />
+              <img src="/assets/anonsoft.svg" alt="Anonsoft Logo" style={{ height: '36px', width: 'auto' }} />
             </Link>
             <p style={{ marginTop: '14px' }}>
               Launch your branded healthcare platform in 4–8 weeks with zero upfront payment. HIPAA-compliant software for clinics, healthtech startups, and wellness brands.
@@ -49,7 +49,7 @@ export default function Footer() {
               <li><Link href="/careers">Careers</Link></li>
               <li><Link href="/blog">Blog</Link></li>
               <li>
-                <a href="https://calendly.com/todayintechdotin/30min" onClick={handleBooking} style={{ color: 'var(--primary)', fontWeight: '600' }}>
+                <a href="https://calendly.com/anonsoftdotin/30min" onClick={handleBooking} style={{ color: 'var(--primary)', fontWeight: '600' }}>
                   Book Free Call &rarr;
                 </a>
               </li>
@@ -58,7 +58,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p className="footer-copyright">&copy; 2026 TodayInTech. All rights reserved.</p>
+          <p className="footer-copyright">&copy; 2026 Anonsoft. All rights reserved.</p>
           <div className="footer-legal">
             <Link href="/privacy">Privacy</Link>
             <Link href="/terms">Terms</Link>

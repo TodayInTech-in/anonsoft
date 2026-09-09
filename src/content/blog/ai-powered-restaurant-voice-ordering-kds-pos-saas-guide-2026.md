@@ -2,7 +2,7 @@
 title: "Building an AI-Powered Restaurant Voice Ordering, Offline-First Cloud POS & Kitchen Display System (KDS) SaaS: Real-Time WebSockets, Edge Sync, and Multi-Outlet Kitchen Automation (2026)"
 description: "The definitive 2026 engineering guide to building an enterprise AI-powered restaurant cloud POS, drive-thru voice ordering agent, and real-time Kitchen Display System (KDS) SaaS with offline-first CRDT sync, WebSockets, and multi-tenant restaurant ERP."
 date: "2026-09-08"
-author: "TodayInTech Engineering Team"
+author: "Anonsoft Engineering Team"
 category: "Restaurant POS & Hospitality Tech"
 image: "ai_restaurant_pos_kds_hero.jpg"
 keywords: ["white-label restaurant POS system", "restaurant billing and kitchen display ERP", "custom restaurant POS software builder", "white-label KDS and delivery platform", "multi-outlet restaurant POS software", "restaurant inventory management software custom", "white label table ordering system", "online food ordering system white label", "custom POS software for restaurants", "white label kitchen display system KDS", "AI voice drive-thru ordering SaaS", "offline-first restaurant POS architecture"]
@@ -513,13 +513,13 @@ Absolutely. The entire platform is built on a multi-tenant white-label architect
 
 ---
 
-## Build Your Custom Restaurant POS & AI Kitchen System with TodayInTech
+## Build Your Custom Restaurant POS & AI Kitchen System with Anonsoft
 
 Are you looking to replace legacy POS limitations with an ultra-responsive, offline-first cloud platform, build an AI voice drive-thru assistant, or deploy an enterprise Kitchen Display System?
 
-At **TodayInTech**, our engineering team builds custom, high-concurrency hospitality and restaurant software architectures tailored to your exact business specifications:
+At **Anonsoft**, our engineering team builds custom, high-concurrency hospitality and restaurant software architectures tailored to your exact business specifications:
 
-* **[Explore Our Restaurant Management & KDS Solutions](file:///root/project/todayintechweb/projects/restaurant-management-system.html)**
-* **[Explore Our AI Voice & Real-Time Agent Technologies](file:///root/project/todayintechweb/projects/vocal-flow.html)**
-* **[Explore Our Inventory & Billing SaaS Platforms](file:///root/project/todayintechweb/projects/inventory-billing.html)**
-* **[Schedule an Architecture Consultation](file:///root/project/todayintechweb/bookademo/)**
+* **[Explore Our Restaurant Management & KDS Solutions](file:///root/project/anonsoftweb/projects/restaurant-management-system.html)**
+* **[Explore Our AI Voice & Real-Time Agent Technologies](file:///root/project/anonsoftweb/projects/vocal-flow.html)**
+* **[Explore Our Inventory & Billing SaaS Platforms](file:///root/project/anonsoftweb/projects/inventory-billing.html)**
+* **[Schedule an Architecture Consultation](file:///root/project/anonsoftweb/bookademo/)**

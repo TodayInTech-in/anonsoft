@@ -9,7 +9,7 @@ export default function PencilBanner() {
 
   const handleBooking = (e) => {
     e.preventDefault();
-    triggerCalendly('https://calendly.com/todayintechdotin/30min');
+    triggerCalendly('https://calendly.com/anonsoftdotin/30min');
   };
 
   return (
@@ -19,7 +19,7 @@ export default function PencilBanner() {
           <i className="fas fa-lightbulb" style={{ marginRight: '6px', color: 'var(--accent)' }}></i>
           <strong>Free Strategy Session</strong>: Get a custom fixed-scope SaaS MVP roadmap in 24 hours.
         </span>
-        <a href="https://calendly.com/todayintechdotin/30min" onClick={handleBooking} className="pencil-banner-link">
+        <a href="https://calendly.com/anonsoftdotin/30min" onClick={handleBooking} className="pencil-banner-link">
           Book Now &rarr;
         </a>
       </div>

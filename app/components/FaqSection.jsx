@@ -13,7 +13,7 @@ export default function FaqSection() {
 
   const faqs = [
     {
-      q: 'How fast can TodayInTech launch my SaaS or Telehealth MVP?',
+      q: 'How fast can Anonsoft launch my SaaS or Telehealth MVP?',
       a: 'Most startup MVPs are delivered in 4–6 weeks. We use pre-built, HIPAA-compliant modules (telehealth video, payment gateways, EHR connectors) to accelerate delivery without sacrificing code quality.'
     },
     {

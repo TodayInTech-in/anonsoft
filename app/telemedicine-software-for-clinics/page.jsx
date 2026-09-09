@@ -2,7 +2,7 @@ import Link from 'next/link';
 import CalendlyButton from '../components/CalendlyButton';
 
 export const metadata = {
-  title: 'White-Label Telemedicine Software for Clinics | TodayInTech',
+  title: 'White-Label Telemedicine Software for Clinics | Anonsoft',
   description:
     'Launch a HIPAA-compliant, branded telemedicine platform for your clinic in 30 days. Includes Epic/Cerner integration and no per-provider licensing fees.',
   keywords: [
@@ -14,22 +14,22 @@ export const metadata = {
     'branded telemedicine',
   ],
   alternates: {
-    canonical: 'https://todayintech.in/telemedicine-software-for-clinics',
+    canonical: 'https://anonsoft.in/telemedicine-software-for-clinics',
   },
   openGraph: {
-    title: 'White-Label Telemedicine Software for Clinics | TodayInTech',
+    title: 'White-Label Telemedicine Software for Clinics | Anonsoft',
     description:
       'Launch a HIPAA-compliant, branded telemedicine platform for your clinic in 30 days. Epic/Cerner integration and zero per-provider fees.',
-    url: 'https://todayintech.in/telemedicine-software-for-clinics',
+    url: 'https://anonsoft.in/telemedicine-software-for-clinics',
     type: 'website',
-    images: [{ url: 'https://todayintech.in/assets/og-image.png' }],
+    images: [{ url: 'https://anonsoft.com/assets/anon-soft-og.png' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'White-Label Telemedicine Software for Clinics | TodayInTech',
+    title: 'White-Label Telemedicine Software for Clinics | Anonsoft',
     description:
       'Launch a HIPAA-compliant, branded telemedicine platform for your clinic in 30 days.',
-    images: ['https://todayintech.in/assets/og-image.png'],
+    images: ['https://anonsoft.com/assets/anon-soft-og.png'],
   },
 };
 
@@ -39,8 +39,8 @@ const jsonLd = {
   name: 'White-Label Telemedicine Software for Clinics',
   provider: {
     '@type': 'Organization',
-    name: 'TodayInTech',
-    url: 'https://todayintech.in',
+    name: 'Anonsoft',
+    url: 'https://anonsoft.in',
   },
   serviceType: 'Telemedicine Platform Development',
   description:
@@ -322,7 +322,7 @@ export default function TelemedicineClinicPage() {
               <h3>1. BAA & HIPAA Readiness</h3>
               <p>
                 Never rely on verbal compliance. Ensure the vendor signs a formal Business Associate Agreement (BAA).{' '}
-                <em>TodayInTech is BAA-ready and deploys on your dedicated AWS/Google Cloud instance.</em>
+                <em>Anonsoft is BAA-ready and deploys on your dedicated AWS/Google Cloud instance.</em>
               </p>
             </div>
             <div className="lp-feature-card">
