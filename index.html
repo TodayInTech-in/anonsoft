@@ -384,56 +384,55 @@
   <main>
 
     <!-- ===== HERO SECTION ===== -->
-    <section class="hero" id="hero" style="position: relative; overflow: hidden; padding-top: 50px; padding-bottom: 40px;">
+    <section class="hero" id="hero">
       <div class="container">
         <!-- Top Social Proof Pill -->
-        <div style="display: flex; justify-content: center; margin-bottom: 20px;">
-          <div style="display: inline-flex; align-items: center; gap: 8px; padding: 6px 16px; background: rgba(15, 62, 128, 0.05); border: 1px solid rgba(15, 62, 128, 0.12); border-radius: 9999px; font-size: 0.82rem; font-weight: 600; color: var(--text-primary);">
-            <span style="color: #f59e0b; font-size: 0.8rem; letter-spacing: 1px;">★★★★★</span>
-            <span style="color: var(--text-secondary);">•</span>
+        <div class="hero-social-proof">
+          <div class="hero-rating-badge">
+            <span class="stars">★★★★★</span>
+            <span class="divider">•</span>
             <span>Trusted by <strong>50+ Founders &amp; Clinics</strong> Worldwide</span>
-            <span style="width: 7px; height: 7px; background: var(--accent-green); border-radius: 50%; display: inline-block;"></span>
+            <span class="live-dot"></span>
           </div>
         </div>
 
-        <div class="hero-grid" style="align-items: center; gap: 40px;">
+        <div class="hero-grid">
           <!-- Left Text Column -->
           <div class="hero-content">
-            <span class="section-label" style="margin-bottom: 8px; display: inline-block;">Custom SaaS &amp; Cloud ERP</span>
-            <h1 class="hero-title" style="font-size: clamp(2.1rem, 3.8vw, 3.2rem); line-height: 1.15; margin-bottom: 14px; letter-spacing: -0.02em;">
+            <span class="section-label">Custom SaaS &amp; Cloud ERP</span>
+            <h1 class="hero-title">
               Architecting Scalable <span class="gradient-text-wrapper"><span class="gradient-text">SaaS, HealthTech &amp; AI</span></span> Platforms
             </h1>
-            <p class="hero-description" style="font-size: 1.02rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 22px;">
+            <p class="hero-description">
               We help startups launch enterprise SaaS, billing systems, multi-tenant portals, and cloud ERPs in 4–8 weeks with zero upfront cost.
             </p>
-            <div class="hero-buttons" style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin-bottom: 20px;">
+            <div class="hero-buttons">
               <a href=""
                 onclick="triggerCalendly('https://calendly.com/todayintechdotin/30min');return false;"
-                class="btn-primary" id="heroCta" style="padding: 13px 26px; font-size: 0.92rem;">
-                <i class="fas fa-calendar-check" style="margin-right: 6px;"></i> Book Free Strategy Call
+                class="btn-primary" id="heroCta">
+                <i class="fas fa-calendar-check"></i> Book Free Strategy Call
               </a>
-              <a href="https://wa.me/917679349780" target="_blank" class="btn-secondary"
-                style="border: 1px solid #25D366; color: #25D366; display: inline-flex; align-items: center; gap: 8px; padding: 13px 22px; font-size: 0.92rem;">
-                <i class="fab fa-whatsapp" style="font-size: 1.1rem;"></i>
+              <a href="https://wa.me/917679349780" target="_blank" class="btn-secondary whatsapp-btn">
+                <i class="fab fa-whatsapp"></i>
                 <span>Chat on WhatsApp</span>
               </a>
             </div>
             <!-- Credibility Checklist -->
-            <div style="display: flex; flex-wrap: wrap; gap: 14px 20px; font-size: 0.82rem; color: var(--text-secondary);">
-              <span style="display: inline-flex; align-items: center; gap: 6px;">
-                <i class="fas fa-check-circle" style="color: var(--accent-green);"></i>
+            <div class="hero-checklist">
+              <span class="hero-check-item">
+                <i class="fas fa-check-circle"></i>
                 <strong>Zero Upfront Payment</strong>
               </span>
-              <span style="display: inline-flex; align-items: center; gap: 6px;">
-                <i class="fas fa-check-circle" style="color: var(--accent-green);"></i>
+              <span class="hero-check-item">
+                <i class="fas fa-check-circle"></i>
                 <strong>100% IP &amp; Repo Ownership</strong>
               </span>
-              <span style="display: inline-flex; align-items: center; gap: 6px;">
-                <i class="fas fa-check-circle" style="color: var(--accent-green);"></i>
+              <span class="hero-check-item">
+                <i class="fas fa-check-circle"></i>
                 <strong>Mutual NDA on Request</strong>
               </span>
-              <span style="display: inline-flex; align-items: center; gap: 6px;">
-                <i class="fas fa-check-circle" style="color: var(--accent-green);"></i>
+              <span class="hero-check-item">
+                <i class="fas fa-check-circle"></i>
                 <strong>Fixed Quote in 24h</strong>
               </span>
             </div>
@@ -441,41 +440,45 @@
 
           <!-- Right Showcase Column -->
           <div class="hero-tabs-column">
-            <div style="background: var(--gradient-card); border: 1px solid var(--border-glass); border-radius: 16px; padding: 12px; boxShadow: 0 10px 30px rgba(0,0,0,0.04);">
-              <!-- Tab Switcher Pills -->
-              <div class="hero-tabs-menu" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; background: rgba(15, 62, 128, 0.04); padding: 4px; border-radius: 10px; margin-bottom: 12px;">
-                <button class="hero-tab-link active" style="padding: 8px 4px; font-size: 0.8rem; font-weight: 700; color: #ffffff; background: var(--gradient-primary); border-radius: 8px; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 5px;">
-                  <i class="fas fa-cloud" style="font-size: 0.75rem;"></i>
+            <div class="hero-tabs-container">
+              <!-- Tab Switcher Menu -->
+              <div class="hero-tabs-menu" role="tablist">
+                <button class="hero-tab-link active" role="tab" aria-selected="true">
+                  <i class="fas fa-cloud"></i>
                   <span>SaaS ERP</span>
+                  <div class="hero-tab-timer"></div>
                 </button>
-                <button class="hero-tab-link" style="padding: 8px 4px; font-size: 0.8rem; font-weight: 500; color: var(--text-secondary); background: transparent; border-radius: 8px; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 5px;">
-                  <i class="fas fa-mobile-alt" style="font-size: 0.75rem;"></i>
+                <button class="hero-tab-link" role="tab" aria-selected="false">
+                  <i class="fas fa-mobile-alt"></i>
                   <span>Mobile</span>
+                  <div class="hero-tab-timer"></div>
                 </button>
-                <button class="hero-tab-link" style="padding: 8px 4px; font-size: 0.8rem; font-weight: 500; color: var(--text-secondary); background: transparent; border-radius: 8px; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 5px;">
-                  <i class="fas fa-robot" style="font-size: 0.75rem;"></i>
-                  <span>AI &amp; Agents</span>
+                <button class="hero-tab-link" role="tab" aria-selected="false">
+                  <i class="fas fa-robot"></i>
+                  <span>AI Tools</span>
+                  <div class="hero-tab-timer"></div>
                 </button>
-                <button class="hero-tab-link" style="padding: 8px 4px; font-size: 0.8rem; font-weight: 500; color: var(--text-secondary); background: transparent; border-radius: 8px; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 5px;">
-                  <i class="fas fa-heartbeat" style="font-size: 0.75rem;"></i>
+                <button class="hero-tab-link" role="tab" aria-selected="false">
+                  <i class="fas fa-heartbeat"></i>
                   <span>HealthTech</span>
+                  <div class="hero-tab-timer"></div>
                 </button>
               </div>
 
-              <!-- Mockup Display -->
-              <div class="hero-tab-content" style="border-radius: 10px; overflow: hidden; border: 1px solid var(--border-glass);">
+              <!-- Mockup Display Panes -->
+              <div class="hero-tab-content">
                 <div class="hero-tab-pane active">
-                  <img src="/assets/project/biling-and-inventory.png" alt="SaaS Billing &amp; Inventory Mockup"
-                    width="1024" height="1024" fetchpriority="high" style="display: block; width: 100%; height: auto; object-fit: cover;">
+                  <img src="/assets/project/biling-and-inventory.png" alt="SaaS Billing &amp; Inventory Platform"
+                    width="1024" height="1024" fetchpriority="high">
                 </div>
                 <div class="hero-tab-pane">
-                  <img src="/assets/project-fitness.png" alt="Fitness Mobile App Mockup" loading="lazy" width="1024" height="1024" style="display: block; width: 100%; height: auto; object-fit: cover;">
+                  <img src="/assets/project-fitness.png" alt="Fitness Mobile App Mockup" loading="lazy" width="1024" height="1024">
                 </div>
                 <div class="hero-tab-pane">
-                  <img src="/assets/project/marketing-tools.png" alt="Marketing Automation AI Mockup" loading="lazy" width="1024" height="1024" style="display: block; width: 100%; height: auto; object-fit: cover;">
+                  <img src="/assets/project/marketing-tools.png" alt="Marketing Automation AI Tools Mockup" loading="lazy" width="1024" height="1024">
                 </div>
                 <div class="hero-tab-pane">
-                  <img src="/assets/project-telemedicine.png" alt="Telemedicine HealthTech Mockup" loading="lazy" width="1024" height="1024" style="display: block; width: 100%; height: auto; object-fit: cover;">
+                  <img src="/assets/project-telemedicine.png" alt="Telemedicine HealthTech Mockup" loading="lazy" width="1024" height="1024">
                 </div>
               </div>
             </div>
