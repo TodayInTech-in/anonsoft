@@ -593,36 +593,32 @@ function initPencilBanner() {
 function initHeroTabs() {
     const tabLinks = document.querySelectorAll('.hero-tab-link');
     const tabPanes = document.querySelectorAll('.hero-tab-pane');
-    if (tabLinks.length === 0) return;
+    if (tabLinks.length === 0 || tabPanes.length === 0) return;
 
-    let tabDuration = 5000;
+    let tabDuration = 4500;
     let tabTimeout;
     let activeIndex = 0;
 
     function cycle() {
-        // Reset all timer widths without reflow
-        document.querySelectorAll('.hero-tab-timer').forEach(timer => {
-            timer.style.width = '0%';
-            timer.style.transition = 'none';
+        tabLinks.forEach((link, idx) => {
+            if (idx === activeIndex) {
+                link.classList.add('active');
+                link.setAttribute('aria-selected', 'true');
+            } else {
+                link.classList.remove('active');
+                link.setAttribute('aria-selected', 'false');
+            }
         });
 
-        // Set active classes first
-        tabLinks.forEach(link => link.classList.remove('active'));
-        tabPanes.forEach(pane => pane.classList.remove('active'));
-        tabLinks[activeIndex].classList.add('active');
-        tabPanes[activeIndex].classList.add('active');
+        tabPanes.forEach((pane, idx) => {
+            if (idx === activeIndex) {
+                pane.classList.add('active');
+            } else {
+                pane.classList.remove('active');
+            }
+        });
 
-        // Restart timer animation using double-rAF (no forced reflow)
-        const timerEl = tabLinks[activeIndex].querySelector('.hero-tab-timer');
-        if (timerEl) {
-            requestAnimationFrame(() => {
-                requestAnimationFrame(() => {
-                    timerEl.style.transition = `width ${tabDuration}ms linear`;
-                    timerEl.style.width = '100%';
-                });
-            });
-        }
-
+        clearTimeout(tabTimeout);
         tabTimeout = setTimeout(() => {
             activeIndex = (activeIndex + 1) % tabLinks.length;
             cycle();
@@ -630,7 +626,8 @@ function initHeroTabs() {
     }
 
     tabLinks.forEach((link, idx) => {
-        link.addEventListener('click', () => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
             clearTimeout(tabTimeout);
             activeIndex = idx;
             cycle();
