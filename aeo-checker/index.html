@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- ===== PRIMARY SEO META TAGS ===== -->
+  <title>Free AEO Checker & LLMS.txt Validator — AI Engine Optimization | TodayInTech</title>
+  <meta name="description"
+    content="Free AI Engine Optimization (AEO) Checker. Scan your website to check if you have /llms.txt and /llms-full.txt configured for ChatGPT Search, Claude, Perplexity, and AI agents.">
+  <meta name="keywords"
+    content="AEO checker, AI Engine Optimization, llms.txt validator, llms-full.txt, AI search engine optimization, ChatGPT search index, Perplexity SEO, Claude crawlability, generative engine optimization, GEO">
+  <meta name="author" content="TodayInTech">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+  <link rel="canonical" href="https://www.todayintech.in/aeo-checker/">
+  <link rel="alternate" hreflang="en" href="https://www.todayintech.in/aeo-checker/">
+  <link rel="alternate" hreflang="x-default" href="https://www.todayintech.in/aeo-checker/">
+
+  <!-- ===== GEO & LANGUAGE TAGS ===== -->
+  <meta name="geo.region" content="IN-KA">
+  <meta name="geo.placename" content="Bengaluru">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="3 days">
+  <meta name="rating" content="general">
+  <meta name="distribution" content="global">
+
+  <!-- ===== OPEN GRAPH ===== -->
+  <meta property="og:title" content="Free AEO & LLMS.txt Checker — Is Your Website Indexed for AI?">
+  <meta property="og:description"
+    content="Scan your domain for /llms.txt, /llms-full.txt, and AI crawler readiness. Get an instant AEO audit score for ChatGPT, Claude, and Perplexity.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.todayintech.in/aeo-checker/">
+  <meta property="og:image" content="https://www.todayintech.in/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="TodayInTech AEO and LLMS.txt Checker">
+  <meta property="og:site_name" content="TodayInTech">
+  <meta property="og:locale" content="en_US">
+
+  <!-- ===== TWITTER CARD ===== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Free AEO Checker — Check Your Website's AI Engine Index Status">
+  <meta name="twitter:description"
+    content="Validate your /llms.txt & /llms-full.txt endpoints. Optimize your site for ChatGPT Search, Perplexity, and AI models.">
+  <meta name="twitter:image" content="https://www.todayintech.in/assets/og-image.png">
+  <meta name="twitter:site" content="@todayintech">
+
+  <!-- ===== FAVICON & ICONS ===== -->
+  <link rel="icon" type="image/png" href="/assets/logo.png">
+  <link rel="apple-touch-icon" href="/assets/logo.png">
+
+  <!-- ===== THEME COLOR ===== -->
+  <meta name="theme-color" content="#0f0d17">
+
+  <!-- ===== PRECONNECT & STYLESHEETS ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=optional"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+  <link rel="stylesheet" href="/style.min.css">
+  <link rel="stylesheet" href="/liquid-glass.css">
+
+  <!-- ===== JSON-LD STRUCTURED DATA ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "TodayInTech AEO & LLMS.txt Checker",
+    "url": "https://www.todayintech.in/aeo-checker/",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "description": "Free tool to inspect and validate website readiness for AI Engine Optimization (AEO), llms.txt, and llms-full.txt endpoints.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "TodayInTech",
+      "url": "https://www.todayintech.in/"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is AEO (AI Engine Optimization)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AEO (AI Engine Optimization), also known as Generative Engine Optimization (GEO), is the practice of structuring website content, APIs, and metadata so that Large Language Models (LLMs) and AI search engines like ChatGPT Search, Claude, Perplexity, and Gemini can accurately crawl, cite, and recommend your brand."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the llms.txt standard?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "llms.txt is a standardized markdown file placed at the root of a website (/llms.txt) that provides curated, high-signal context about a website, products, APIs, and docs in a format optimized for LLM context windows without HTML clutter."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between llms.txt and llms-full.txt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "/llms.txt provides a concise index and high-level summary with links to core resources, while /llms-full.txt provides the complete, un-truncated full-text documentation and knowledge base for deep AI ingestion and autonomous agent workflows."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does TodayInTech help with AI Engine Optimization?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "TodayInTech designs and implements autonomous AEO pipelines that automatically generate and sync /llms.txt, /llms-full.txt, JSON-LD Schema graphs, and Model Context Protocol (MCP) integrations so your software is first-in-line for AI discovery."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Tag Manager placeholder -->
+  <script src="/analytics.js" defer></script>
+</head>
+
+<body class="has-pencil-banner">
+
+  <!-- Pencil notice banner -->
+  <div class="pencil-banner" id="pencilBanner">
+    <div class="pencil-banner-content">
+      <span><i class="fas fa-robot" style="margin-right: 6px; color: var(--accent);"></i> <strong>AI Engine Optimization</strong>: Index your brand in ChatGPT, Claude &amp; Perplexity in 24h.</span>
+      <a href="" onclick="triggerCalendly('https://calendly.com/todayintechdotin/30min');return false;"
+        class="pencil-banner-link">Book Free Session &rarr;</a>
+    </div>
+    <button class="pencil-banner-close" id="closeBanner" aria-label="Dismiss banner">✕</button>
+  </div>
+
+  <!-- CHATBOT -->
+  <script>
+    (function() {
+      var loaded = false;
+      function loadChatbot() {
+        if (loaded) return;
+        loaded = true;
+        window.removeEventListener('scroll', loadChatbot);
+        window.removeEventListener('mousemove', loadChatbot);
+        window.removeEventListener('touchstart', loadChatbot);
+        window.removeEventListener('pointerdown', loadChatbot);
+        var script = document.createElement('script');
+        script.src = 'https://www.nexbotix.online/api/website-chatbot/script?apikey=bsk_03138c81f606da5e0ae2934ffe75ae90';
+        script.defer = true;
+        document.body.appendChild(script);
+      }
+      window.addEventListener('scroll', loadChatbot, { passive: true });
+      window.addEventListener('mousemove', loadChatbot, { passive: true });
+      window.addEventListener('touchstart', loadChatbot, { passive: true });
+      window.addEventListener('pointerdown', loadChatbot, { passive: true });
+      setTimeout(loadChatbot, 8000);
+    })();
+  </script>
+
+  <!-- ===== HEADER / NAVIGATION ===== -->
+  <header>
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <a href="/" class="nav-logo" aria-label="TodayInTech Homepage">
+          <img src="/assets/nav_logo.png" alt="TodayInTech Logo" style="height: 48px !important; width: auto !important;" width="103" height="48">
+        </a>
+        <div class="nav-links" id="navLinks">
+          <a href="/services/">Services</a>
+          <a href="/features/">Features</a>
+          <a href="/portfolio">Portfolio</a>
+          <a href="/aeo-checker/" class="active" style="color: var(--primary); font-weight: 700;">AEO Checker <span style="font-size: 0.65rem; background: var(--accent); color: #fff; padding: 2px 6px; border-radius: 9999px; margin-left: 2px;">FREE</span></a>
+          <a href="/about/">About</a>
+          <a href="/health/">HealthTech</a>
+          <a href="/ai/">AI Solutions</a>
+          <a href="/blog/">Blog</a>
+          <a href="/careers/">Careers</a>
+          <a href="/contact/">FAQ &amp; Contact</a>
+          <a href="" onclick="triggerCalendly('https://calendly.com/todayintechdotin/30min');return false;" class="nav-cta" id="navCta">Get a Free Session</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== AEO HERO SECTION WITH SCANNER TOOL ===== -->
+    <section class="hero aeo-hero-section" id="hero" style="padding-bottom: 60px;">
+      <div class="container">
+        <!-- Badge -->
+        <div class="hero-social-proof">
+          <div class="hero-rating-badge">
+            <span class="stars"><i class="fas fa-microchip"></i></span>
+            <span class="divider">•</span>
+            <span>Free AI Engine Optimization (AEO) Scanner</span>
+            <span class="live-dot"></span>
+          </div>
+        </div>
+
+        <div style="text-align: center; max-width: 820px; margin: 0 auto 36px auto;">
+          <span class="section-label">AI Index &amp; LLMS.txt Validator</span>
+          <h1 class="hero-title" style="font-size: clamp(2.2rem, 4.5vw, 3.5rem); margin-bottom: 16px;">
+            Is Your Website <span class="gradient-text-wrapper"><span class="gradient-text">Indexed for AI</span></span> Engines?
+          </h1>
+          <p class="hero-description" style="font-size: 1.08rem; max-width: 680px; margin: 0 auto;">
+            Traditional SEO ranks you on Google. <strong>AEO (AI Engine Optimization)</strong> ensures your business is cited and recommended when users ask questions in <strong>ChatGPT, Claude, Perplexity &amp; Gemini</strong>.
+          </p>
+        </div>
+
+        <!-- Interactive Scanner Card -->
+        <div class="aeo-scanner-box">
+          <div class="aeo-scanner-card">
+            <form id="aeoScanForm" onsubmit="handleAeoScan(event);" class="aeo-form">
+              <div class="aeo-input-wrapper">
+                <i class="fas fa-globe aeo-input-icon"></i>
+                <input type="text" id="aeoUrlInput" placeholder="Enter your website (e.g. yourcompany.com)" required autocomplete="off" spellcheck="false">
+                <button type="submit" id="aeoScanBtn" class="btn-primary aeo-scan-button">
+                  <i class="fas fa-bolt"></i>
+                  <span>Check AI Index</span>
+                </button>
+              </div>
+            </form>
+
+            <!-- Quick Example Chips -->
+            <div class="aeo-sample-chips">
+              <span class="aeo-sample-label">Try Examples:</span>
+              <button type="button" class="aeo-chip" onclick="quickFillDomain('todayintech.in')">todayintech.in <span class="badge-tag">100% Ready</span></button>
+              <button type="button" class="aeo-chip" onclick="quickFillDomain('stripe.com')">stripe.com</button>
+              <button type="button" class="aeo-chip" onclick="quickFillDomain('anthropic.com')">anthropic.com</button>
+            </div>
+
+            <!-- Scanning Progress Indicator (Hidden by default) -->
+            <div id="aeoProgressContainer" class="aeo-progress-container" style="display: none;">
+              <div class="aeo-progress-spinner">
+                <div class="spinner-ring"></div>
+                <div class="spinner-icon"><i class="fas fa-robot"></i></div>
+              </div>
+              <p id="aeoProgressText" class="aeo-progress-text">Analyzing domain endpoints &amp; AI directives...</p>
+              <div class="aeo-progress-bar-wrap">
+                <div id="aeoProgressBar" class="aeo-progress-bar"></div>
+              </div>
+            </div>
+
+            <!-- Result Audit Card (Rendered on Scan) -->
+            <div id="aeoResultContainer" class="aeo-result-container" style="display: none;">
+              <!-- Score Header -->
+              <div class="aeo-result-header">
+                <div class="aeo-score-badge-circle" id="aeoScoreCircle">
+                  <span class="aeo-score-number" id="aeoScoreNumber">--</span>
+                  <span class="aeo-score-label">AEO SCORE</span>
+                </div>
+                <div class="aeo-score-meta">
+                  <div class="aeo-target-domain" id="aeoTargetDomain">domain.com</div>
+                  <h3 class="aeo-verdict-title" id="aeoVerdictTitle">Analysis Complete</h3>
+                  <p class="aeo-verdict-desc" id="aeoVerdictDesc">Results breakdown for AI engine discoverability.</p>
+                </div>
+              </div>
+
+              <!-- Checklist Breakdown -->
+              <div class="aeo-checklist-grid">
+                <!-- Check 1: llms.txt -->
+                <div class="aeo-check-card" id="cardLlmsTxt">
+                  <div class="aeo-check-status-icon" id="statusIconLlmsTxt"><i class="fas fa-circle-notch fa-spin"></i></div>
+                  <div class="aeo-check-info">
+                    <div class="aeo-check-title">/llms.txt Endpoint</div>
+                    <div class="aeo-check-desc" id="descLlmsTxt">Standard markdown context index for LLM queries.</div>
+                  </div>
+                  <span class="aeo-check-pill" id="pillLlmsTxt">Checking</span>
+                </div>
+
+                <!-- Check 2: llms-full.txt -->
+                <div class="aeo-check-card" id="cardLlmsFull">
+                  <div class="aeo-check-status-icon" id="statusIconLlmsFull"><i class="fas fa-circle-notch fa-spin"></i></div>
+                  <div class="aeo-check-info">
+                    <div class="aeo-check-title">/llms-full.txt Knowledge Base</div>
+                    <div class="aeo-check-desc" id="descLlmsFull">Complete full-text documentation for autonomous agents.</div>
+                  </div>
+                  <span class="aeo-check-pill" id="pillLlmsFull">Checking</span>
+                </div>
+
+                <!-- Check 3: Markdown Formatting -->
+                <div class="aeo-check-card" id="cardMarkdownStructure">
+                  <div class="aeo-check-status-icon" id="statusIconMarkdown"><i class="fas fa-circle-notch fa-spin"></i></div>
+                  <div class="aeo-check-info">
+                    <div class="aeo-check-title">LLM Markdown Structure</div>
+                    <div class="aeo-check-desc" id="descMarkdown">Clean H1/H2 hierarchy, semantic lists, and API schemas.</div>
+                  </div>
+                  <span class="aeo-check-pill" id="pillMarkdown">Checking</span>
+                </div>
+
+                <!-- Check 4: AI Bot Directives -->
+                <div class="aeo-check-card" id="cardAiBots">
+                  <div class="aeo-check-status-icon" id="statusIconAiBots"><i class="fas fa-circle-notch fa-spin"></i></div>
+                  <div class="aeo-check-info">
+                    <div class="aeo-check-title">AI Bot Crawler Access</div>
+                    <div class="aeo-check-desc" id="descAiBots">Permissions for GPTBot, ClaudeBot, PerplexityBot, AppleBot.</div>
+                  </div>
+                  <span class="aeo-check-pill" id="pillAiBots">Checking</span>
+                </div>
+              </div>
+
+              <!-- Context Preview (If Found) -->
+              <div id="aeoPreviewBox" class="aeo-preview-box" style="display: none;">
+                <div class="aeo-preview-header">
+                  <span><i class="fas fa-file-code"></i> Live /llms.txt Preview</span>
+                  <span id="aeoPreviewSize" style="color: var(--text-muted); font-size: 0.75rem;"></span>
+                </div>
+                <pre id="aeoPreviewContent" class="aeo-preview-pre"></pre>
+              </div>
+
+              <!-- CONVERSION ACTION CARD (Raise a Query) -->
+              <div class="aeo-cta-box" id="aeoCtaBox">
+                <div class="aeo-cta-content">
+                  <div class="aeo-cta-icon"><i class="fas fa-sparkles"></i></div>
+                  <div>
+                    <h4 id="aeoCtaHeadline">Index Your Website in AI Engines Today</h4>
+                    <p id="aeoCtaSubtitle">Our engineering team will build your custom <code>/llms.txt</code>, <code>/llms-full.txt</code>, Schema.org knowledge graph, and MCP endpoints within 24 hours.</p>
+                  </div>
+                </div>
+                <div class="aeo-cta-actions">
+                  <a href="" onclick="triggerCalendly('https://calendly.com/todayintechdotin/30min');return false;" class="btn-primary" style="padding: 12px 24px;">
+                    <i class="fas fa-calendar-check"></i> Raise a Query (Free Consultation)
+                  </a>
+                  <a href="https://wa.me/917679349780?text=Hi%2C%20I%20tested%20my%20site%20on%20your%20AEO%20Checker%20and%20want%20to%20index%20it%20for%20AI%20engines." target="_blank" class="btn-secondary whatsapp-btn" style="padding: 12px 20px;">
+                    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHAT IS AEO SECTION ===== -->
+    <section class="aeo-info-section" style="padding: 70px 0; background: #ffffff; border-top: 1px solid rgba(15, 62, 128, 0.08);">
+      <div class="container">
+        <div style="text-align: center; max-width: 750px; margin: 0 auto 50px auto;">
+          <span class="section-label">The Next Era of Search</span>
+          <h2 class="section-title">What is AI Engine Optimization (AEO)?</h2>
+          <p class="section-subtitle">
+            Over 40% of search queries now occur on conversational AI platforms. If your site lacks structured AI files like <code>/llms.txt</code>, AI models hallucinate or completely omit your brand from recommendations.
+          </p>
+        </div>
+
+        <div class="aeo-three-grid">
+          <div class="aeo-feature-card">
+            <div class="aeo-card-icon blue"><i class="fas fa-brain"></i></div>
+            <h3>Generative Engine Discovery</h3>
+            <p>AI models do not parse bloated HTML, JavaScript bundles, or cookie popups. They seek token-efficient, factual Markdown files that directly feed their attention context.</p>
+          </div>
+          <div class="aeo-feature-card">
+            <div class="aeo-card-icon purple"><i class="fas fa-quote-right"></i></div>
+            <h3>Perplexity &amp; ChatGPT Citations</h3>
+            <p>Having a validated <code>llms.txt</code> dramatically increases the probability that ChatGPT Search and Perplexity will cite your SaaS, pricing, and features as verified source links.</p>
+          </div>
+          <div class="aeo-feature-card">
+            <div class="aeo-card-icon green"><i class="fas fa-network-wired"></i></div>
+            <h3>Autonomous Agent Ready</h3>
+            <p>With <code>llms-full.txt</code> and Model Context Protocol (MCP), AI developer agents (like Claude Desktop, Cursor, and OpenCode) can immediately execute workflows with your API.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMPARISON TABLE: SEO VS AEO ===== -->
+    <section class="aeo-table-section" style="padding: 70px 0; background: #f8fafc; border-top: 1px solid rgba(15, 62, 128, 0.06); border-bottom: 1px solid rgba(15, 62, 128, 0.06);">
+      <div class="container">
+        <div style="text-align: center; max-width: 750px; margin: 0 auto 40px auto;">
+          <span class="section-label">Side-by-Side Comparison</span>
+          <h2 class="section-title">Traditional SEO vs. AI Engine Optimization (AEO)</h2>
+        </div>
+
+        <div class="comparison-table-wrapper" style="max-width: 900px; margin: 0 auto; overflow-x: auto;">
+          <table class="aeo-comparison-table">
+            <thead>
+              <tr>
+                <th style="width: 25%;">Feature</th>
+                <th style="width: 37.5%;">Traditional SEO (Google)</th>
+                <th style="width: 37.5%; background: rgba(15, 62, 128, 0.08); color: var(--primary);">AEO &amp; LLMS (AI Engines)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Primary Target</strong></td>
+                <td>Googlebot, Bingbot crawlers</td>
+                <td class="highlight-col"><strong>ChatGPT, Claude, Perplexity, Gemini, AppleBot</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Core Index File</strong></td>
+                <td><code>sitemap.xml</code> &amp; <code>robots.txt</code></td>
+                <td class="highlight-col"><strong><code>/llms.txt</code> &amp; <code>/llms-full.txt</code></strong></td>
+              </tr>
+              <tr>
+                <td><strong>Data Format</strong></td>
+                <td>HTML, CSS, JS, Microdata</td>
+                <td class="highlight-col"><strong>Token-optimized Clean Markdown &amp; JSON-LD</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Ranking Mechanism</strong></td>
+                <td>Backlinks, Keywords, PageSpeed</td>
+                <td class="highlight-col"><strong>Information density, Source Authority, Semantic Relevance</strong></td>
+              </tr>
+              <tr>
+                <td><strong>User Interaction</strong></td>
+                <td>Clicking a blue link on a search page</td>
+                <td class="highlight-col"><strong>Direct conversational answers, citations, and agent tool invocation</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HOW TODAYINTECH OPTIMIZES YOUR AEO ===== -->
+    <section class="aeo-service-flow" style="padding: 70px 0; background: #ffffff;">
+      <div class="container">
+        <div style="text-align: center; max-width: 750px; margin: 0 auto 50px auto;">
+          <span class="section-label">Done-For-You Architecture</span>
+          <h2 class="section-title">How TodayInTech Indexes Your SaaS for AI</h2>
+          <p class="section-subtitle">We don't just build software — we ensure your entire platform is architected from day one for generative AI discovery.</p>
+        </div>
+
+        <div class="process-steps" style="max-width: 1050px; margin: 0 auto;">
+          <div class="process-step">
+            <div class="process-step-number">1</div>
+            <h3>Automated LLMS Pipelines</h3>
+            <p>We write autonomous scripts that rebuild your <code>/llms.txt</code> and <code>/llms-full.txt</code> with every product update, blog post, or feature release.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-step-number">2</div>
+            <h3>Knowledge Graph Schema</h3>
+            <p>Comprehensive Schema.org JSON-LD definitions for Organization, SoftwareApplication, FAQs, and pricing so AI bots parse your exact service boundaries.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-step-number">3</div>
+            <h3>MCP Server Integrations</h3>
+            <p>We connect your SaaS to Model Context Protocol (MCP) servers, enabling Claude and ChatGPT users to interact with your software directly from their workspace.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-step-number">4</div>
+            <h3>Continuous AI Monitoring</h3>
+            <p>Ongoing verification that leading AI bots (GPTBot, Claude-Web, Perplexity) crawl and positively reference your platform without blockage.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ACCORDION ===== -->
+    <section class="faq" style="padding: 70px 0; background: #f8fafc; border-top: 1px solid rgba(15, 62, 128, 0.08);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Common Questions</span>
+          <h2 class="section-title">AEO &amp; LLMS.txt FAQs</h2>
+        </div>
+
+        <div class="faq-grid">
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>What is the difference between an EHR and an EMR vs AI Indexing?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Just as EHR systems standardize healthcare data exchange via FHIR APIs, <code>/llms.txt</code> standardizes web data exchange for Large Language Models. Without it, AI agents struggle to accurately understand your company's offerings.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Where should llms.txt be placed on my website?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>The standard specification mandates placing the file at the exact root of your domain: <code>https://yourdomain.com/llms.txt</code> and the full documentation knowledge base at <code>https://yourdomain.com/llms-full.txt</code>.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Does having an llms.txt hurt traditional SEO?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Not at all. In fact, Google Search and Google Gemini bot both utilize <code>llms.txt</code> to better understand site architecture. It complements your <code>sitemap.xml</code> and <code>robots.txt</code> without creating duplicate content issues.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>How fast can TodayInTech index my website for AI?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>We typically implement automated AEO generation scripts, Schema.org graphs, and verified <code>/llms.txt</code> endpoints within <strong>24 to 48 hours</strong> with zero upfront payment.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BOTTOM CTA SECTION ===== -->
+    <section class="cta" style="padding: 80px 0;">
+      <div class="container">
+        <div class="cta-wrapper">
+          <h2 class="cta-title">Ready to Make Your Brand the #1 Choice in AI Search?</h2>
+          <p class="cta-subtitle">Book a free 30-minute AEO strategy call with our software engineering team. We'll build your AI index roadmap in 24 hours.</p>
+          <div class="cta-buttons">
+            <a href="" onclick="triggerCalendly('https://calendly.com/todayintechdotin/30min');return false;" class="btn-primary" style="padding: 16px 36px; font-size: 1rem;">
+              <i class="fas fa-calendar-check"></i> Book Free AEO Session
+            </a>
+            <a href="https://wa.me/917679349780?text=Hi%2C%20I%20want%20to%20optimize%20my%20website%20for%20AEO%20and%20AI%20engines." target="_blank" class="btn-secondary whatsapp-btn" style="padding: 16px 32px; font-size: 1rem;">
+              <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="nav-logo">
+            <img src="/assets/nav_logo.png" alt="TodayInTech Logo" style="height: 36px; width: auto;">
+          </a>
+          <p style="margin-top: 14px;">We help startups launch enterprise SaaS, AI tools, and healthcare software in 4–8 weeks with zero upfront payment and complete IP ownership.</p>
+        </div>
+        <div class="footer-column">
+          <h4>Services &amp; Tools</h4>
+          <ul>
+            <li><a href="/aeo-checker/">AEO &amp; LLMS Checker</a></li>
+            <li><a href="/services/">All Services</a></li>
+            <li><a href="/health/">HealthTech Platforms</a></li>
+            <li><a href="/ai/">AI &amp; Agent Solutions</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/portfolio/">Portfolio</a></li>
+            <li><a href="/careers/">Careers</a></li>
+            <li><a href="/blog/">Tech Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Direct Consultation</h4>
+          <ul>
+            <li><a href="mailto:contact@todayintech.in">contact@todayintech.in</a></li>
+            <li><a href="https://wa.me/917679349780">+91 7679349780</a></li>
+            <li><a href="" onclick="triggerCalendly('https://calendly.com/todayintechdotin/30min');return false;" style="color: var(--primary); font-weight: 700;">Book 30-Min Call &rarr;</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2026 TodayInTech. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="/privacy/">Privacy Policy</a>
+          <a href="/terms/">Terms of Service</a>
+          <a href="/refund-policy/">Refund Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Calendly popup widget -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  <script>
+    function triggerCalendly(url) {
+      if (window.Calendly) {
+        Calendly.initPopupWidget({ url: url });
+      } else {
+        window.open(url, '_blank');
+      }
+    }
+  </script>
+
+  <!-- Global Script -->
+  <script src="/script.min.js"></script>
+
+</body>
+</html>
