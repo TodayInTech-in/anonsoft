@@ -1,25 +1,34 @@
 // ===== TODAYINTECH WEBSITE JAVASCRIPT =====
 
 document.addEventListener('DOMContentLoaded', () => {
-    initNavbar();
-    initMobileMenu();
-    initScrollReveal();
-    initCounters();
-    initSmoothScroll();
-    initFloatingCta();
-    initRoiCalculator();
-    initPricingToggle();
-    initGoogleReviewsCarousel();
-    initPencilBanner();
-    initHeroTabs();
-    initStickyAnchorBar();
-    initGoogleAnalyticsTracking();
-    initLeadMagnet();
+    const safeInit = (fn) => {
+        try {
+            fn();
+        } catch (err) {
+            console.error('Error initializing:', fn.name, err);
+        }
+    };
+
+    safeInit(initNavbar);
+    safeInit(initMobileMenu);
+    safeInit(initScrollReveal);
+    safeInit(initCounters);
+    safeInit(initSmoothScroll);
+    safeInit(initFloatingCta);
+    safeInit(initRoiCalculator);
+    safeInit(initPricingToggle);
+    safeInit(initGoogleReviewsCarousel);
+    safeInit(initPencilBanner);
+    safeInit(initHeroTabs);
+    safeInit(initStickyAnchorBar);
+    safeInit(initGoogleAnalyticsTracking);
+    safeInit(initLeadMagnet);
 });
 
 // ===== NAVBAR SCROLL EFFECT =====
 function initNavbar() {
     const navbar = document.getElementById('navbar');
+    if (!navbar) return;
     let lastScroll = 0;
 
     window.addEventListener('scroll', () => {
@@ -39,6 +48,7 @@ function initNavbar() {
 function initMobileMenu() {
     const toggle = document.getElementById('navToggle');
     const navLinks = document.getElementById('navLinks');
+    if (!toggle || !navLinks) return;
 
     toggle.addEventListener('click', () => {
         toggle.classList.toggle('active');
@@ -59,23 +69,41 @@ function initMobileMenu() {
 // ===== SCROLL REVEAL ANIMATIONS =====
 function initScrollReveal() {
     const reveals = document.querySelectorAll('.reveal');
+    if (!reveals.length) return;
+
+    // Helper to reveal elements immediately
+    const makeVisible = (el) => {
+        if (!el.classList.contains('visible')) {
+            el.classList.add('visible');
+        }
+    };
+
+    // If IntersectionObserver is not supported, reveal all immediately
+    if (!('IntersectionObserver' in window)) {
+        reveals.forEach(makeVisible);
+        return;
+    }
 
     const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+        threshold: 0.05,
+        rootMargin: '0px 0px 60px 0px' // Positive margin so elements reveal smoothly slightly before entering view
     };
 
     const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry, index) => {
+        entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                // Stagger the animation
-                const delay = Array.from(entry.target.parentElement.children)
-                    .filter(child => child.classList.contains('reveal'))
-                    .indexOf(entry.target) * 100;
+                const parent = entry.target.parentElement;
+                const siblings = parent ? Array.from(parent.children).filter(child => child.classList && child.classList.contains('reveal')) : [];
+                const idx = siblings.indexOf(entry.target);
+                const delay = idx >= 0 ? Math.min(idx * 70, 350) : 0;
 
-                setTimeout(() => {
-                    entry.target.classList.add('visible');
-                }, delay);
+                if (delay > 0) {
+                    setTimeout(() => {
+                        makeVisible(entry.target);
+                    }, delay);
+                } else {
+                    makeVisible(entry.target);
+                }
 
                 observer.unobserve(entry.target);
             }
@@ -83,6 +111,20 @@ function initScrollReveal() {
     }, observerOptions);
 
     reveals.forEach(el => observer.observe(el));
+
+    // Immediate safety check for above-the-fold or already visible elements
+    const checkVisibleNow = () => {
+        const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+        reveals.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top <= viewportHeight + 100) {
+                makeVisible(el);
+            }
+        });
+    };
+
+    checkVisibleNow();
+    window.addEventListener('load', checkVisibleNow);
 }
 
 // ===== COUNTER ANIMATION =====
@@ -313,10 +355,11 @@ document.querySelectorAll('.service-card, .portfolio-card').forEach(card => {
 function updateActiveNavLink() {
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-links a:not(.nav-cta)');
+    const navbar = document.getElementById('navbar');
 
     window.addEventListener('scroll', () => {
         let current = '';
-        const navHeight = document.getElementById('navbar').offsetHeight;
+        const navHeight = navbar ? navbar.offsetHeight : 80;
 
         sections.forEach(section => {
             const sectionTop = section.offsetTop - navHeight - 100;
@@ -327,11 +370,12 @@ function updateActiveNavLink() {
 
         navLinks.forEach(link => {
             link.style.color = '';
-            if (link.getAttribute('href') === `#${current}`) {
+            const href = link.getAttribute('href') || '';
+            if (href === `#${current}` || href.endsWith(`/#${current}`) || href.endsWith(`#${current}`)) {
                 link.style.color = 'var(--primary)';
             }
         });
-    });
+    }, { passive: true });
 }
 
 updateActiveNavLink();
@@ -646,20 +690,26 @@ function initStickyAnchorBar() {
     if (!anchorBar) return;
 
     const links = anchorBar.querySelectorAll('.anchors_link');
-    const sections = Array.from(links).map(link => document.querySelector(link.getAttribute('href'))).filter(Boolean);
+    const sections = Array.from(links).map(link => {
+        const href = link.getAttribute('href') || '';
+        const targetId = href.includes('#') ? '#' + href.split('#')[1] : (href.startsWith('#') ? href : '');
+        try {
+            return targetId ? document.querySelector(targetId) : null;
+        } catch (e) {
+            return null;
+        }
+    }).filter(Boolean);
     const navbar = document.getElementById('navbar');
 
     // Cache heights — measure once, update on resize via ResizeObserver to avoid scroll-time reflows
     let cachedNavHeight = (navbar ? navbar.offsetHeight : 80) + anchorBar.offsetHeight;
+    let sectionTops = sections.map(s => s.offsetTop);
+
     const ro = new ResizeObserver(() => {
         cachedNavHeight = (navbar ? navbar.offsetHeight : 80) + anchorBar.offsetHeight;
-        // Pre-cache section offsetTop values
         sectionTops = sections.map(s => s.offsetTop);
     });
     ro.observe(document.body);
-
-    // Pre-cache section tops
-    let sectionTops = sections.map(s => s.offsetTop);
 
     window.addEventListener('scroll', () => {
         let current = '';
@@ -667,13 +717,15 @@ function initStickyAnchorBar() {
 
         sectionTops.forEach((top, i) => {
             if (scrollY >= top - cachedNavHeight - 30) {
-                current = sections[i].getAttribute('id');
+                current = sections[i] ? sections[i].getAttribute('id') : '';
             }
         });
 
         links.forEach(link => {
             link.classList.remove('active');
-            if (link.getAttribute('href') === `#${current}`) {
+            const href = link.getAttribute('href') || '';
+            const targetId = href.includes('#') ? href.split('#')[1] : '';
+            if (targetId && targetId === current) {
                 link.classList.add('active');
             }
         });
