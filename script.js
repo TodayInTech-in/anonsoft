@@ -569,12 +569,12 @@ function initPencilBanner() {
     document.body.classList.add('has-pencil-banner');
 
     function updateBannerHeight() {
-        if (banner.style.display !== 'none' && !banner.hidden) {
-            const height = banner.getBoundingClientRect().height || banner.offsetHeight;
-            document.documentElement.style.setProperty('--pencil-banner-height', Math.round(height) + 'px');
-        } else {
+        if (window.innerWidth <= 768 || banner.style.display === 'none' || banner.hidden || getComputedStyle(banner).display === 'none') {
             document.documentElement.style.setProperty('--pencil-banner-height', '0px');
+            return;
         }
+        const height = banner.getBoundingClientRect().height || banner.offsetHeight;
+        document.documentElement.style.setProperty('--pencil-banner-height', Math.round(height) + 'px');
     }
 
     // Update height on load and resize
