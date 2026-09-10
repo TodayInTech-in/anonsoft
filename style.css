@@ -2204,7 +2204,7 @@ html.light-mode .trust-certifications {
 @media (max-width: 768px) {
     :root {
         --section-padding: 72px 0;
-        --pencil-banner-height: 68px;
+        --pencil-banner-height: 38px;
     }
 
     .container {
@@ -5097,6 +5097,62 @@ body.has-pencil-banner .navbar.scrolled {
     color: #000;
 }
 
+@media (max-width: 768px) {
+    .pencil-banner {
+        padding: 5px 32px 5px 10px !important;
+        font-size: 0.76rem !important;
+        min-height: 34px !important;
+        line-height: 1.25 !important;
+    }
+
+    .pencil-banner-content {
+        gap: 6px !important;
+        font-size: 0.76rem !important;
+        justify-content: center !important;
+    }
+
+    .pencil-banner-link {
+        font-size: 0.76rem !important;
+        white-space: nowrap !important;
+    }
+
+    .pencil-banner-close {
+        right: 8px !important;
+        font-size: 0.95rem !important;
+        padding: 2px !important;
+    }
+
+    .navbar {
+        position: fixed !important;
+        left: 0 !important;
+        right: 0 !important;
+        top: 0 !important;
+        padding: 8px 0 !important;
+        background: rgba(255, 255, 255, 0.96) !important;
+        backdrop-filter: blur(16px) !important;
+        -webkit-backdrop-filter: blur(16px) !important;
+        border-bottom: 1px solid rgba(15, 62, 128, 0.08) !important;
+        border-radius: 0 !important;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04) !important;
+        z-index: 9998 !important;
+    }
+
+    body.has-pencil-banner .navbar {
+        top: var(--pencil-banner-height, 38px) !important;
+    }
+
+    body.has-pencil-banner .navbar.scrolled {
+        top: var(--pencil-banner-height, 38px) !important;
+        left: 0 !important;
+        right: 0 !important;
+        border-radius: 0 !important;
+    }
+
+    .nav-logo img {
+        height: 38px !important;
+    }
+}
+
 /* Navbar Scrolled Style Overrides for light mode */
 .navbar {
     background: rgba(255, 255, 255, 0.9) !important;
@@ -6088,6 +6144,76 @@ body.has-pencil-banner .navbar.scrolled {
         flex-direction: column;
         gap: 10px;
         align-items: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding-top: calc(var(--pencil-banner-height, 38px) + 54px + 12px) !important;
+        padding-bottom: 24px !important;
+    }
+
+    .hero-social-proof {
+        margin-bottom: 8px !important;
+    }
+
+    .hero-rating-badge {
+        font-size: 0.72rem !important;
+        padding: 4px 10px !important;
+        gap: 6px !important;
+        white-space: nowrap !important;
+    }
+
+    .section-label {
+        font-size: 0.72rem !important;
+        padding: 3px 10px !important;
+        margin-bottom: 8px !important;
+    }
+
+    .hero-title {
+        font-size: clamp(1.52rem, 5.2vw, 1.95rem) !important;
+        line-height: 1.2 !important;
+        margin-bottom: 10px !important;
+        letter-spacing: -0.02em !important;
+    }
+
+    .hero-description {
+        font-size: 0.88rem !important;
+        line-height: 1.48 !important;
+        margin-bottom: 14px !important;
+        max-width: 100% !important;
+    }
+
+    .hero-buttons {
+        gap: 8px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .hero-buttons .btn-primary,
+    .hero-buttons .btn-secondary {
+        padding: 11px 18px !important;
+        font-size: 0.88rem !important;
+    }
+
+    .hero-checklist {
+        gap: 8px 12px !important;
+        margin-bottom: 16px !important;
+    }
+
+    .hero-check-item {
+        font-size: 0.75rem !important;
+    }
+
+    .hero-tabs-container {
+        margin-top: 10px !important;
+    }
+
+    .whatsapp-float {
+        bottom: 84px !important;
+        left: 14px !important;
+        width: 44px !important;
+        height: 44px !important;
+        font-size: 1.35rem !important;
     }
 }
 

@@ -569,9 +569,9 @@ function initPencilBanner() {
     document.body.classList.add('has-pencil-banner');
 
     function updateBannerHeight() {
-        if (banner.style.display !== 'none') {
-            const height = banner.offsetHeight;
-            document.documentElement.style.setProperty('--pencil-banner-height', height + 'px');
+        if (banner.style.display !== 'none' && !banner.hidden) {
+            const height = banner.getBoundingClientRect().height || banner.offsetHeight;
+            document.documentElement.style.setProperty('--pencil-banner-height', Math.round(height) + 'px');
         } else {
             document.documentElement.style.setProperty('--pencil-banner-height', '0px');
         }
@@ -579,8 +579,11 @@ function initPencilBanner() {
 
     // Update height on load and resize
     updateBannerHeight();
-    window.addEventListener('resize', updateBannerHeight);
+    window.addEventListener('resize', updateBannerHeight, { passive: true });
     window.addEventListener('load', updateBannerHeight);
+    if ('ResizeObserver' in window) {
+        new ResizeObserver(updateBannerHeight).observe(banner);
+    }
 
     closeBtn.addEventListener('click', () => {
         banner.style.display = 'none';
