@@ -7,6 +7,13 @@
     <language>en-us</language>
     <atom:link href="https://todayintech.in/public/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Building an AI-Powered Hotel Property Management System (PMS) &amp; Channel Manager SaaS: Dynamic Revenue Yield Optimization, Contactless Mobile Key IoT, Multi-OTA Two-Way Sync, and Autonomous Guest Concierge (2026)</title>
+      <link>https://todayintech.in/blog/ai-powered-hotel-property-management-system-pms-saas-guide-2026</link>
+      <description>An exhaustive engineering blueprint for building an enterprise AI-powered Hotel PMS and Channel Manager SaaS featuring dynamic pricing reinforcement learning, 2-way OTA sync, mobile key IoT access, and AI guest concierges in 2026.</description>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://todayintech.in/blog/ai-powered-hotel-property-management-system-pms-saas-guide-2026</guid>
+    </item>
+    <item>
       <title>Building an AI-Powered B2B InsurTech &amp; Commercial Underwriting SaaS: ACORD Parsing, Autonomous Loss Run Extraction, Multi-Modal FNOL Claims Adjudication, and Carrier Policy Core Integration (2026)</title>
       <link>https://todayintech.in/blog/ai-powered-insurtech-commercial-underwriting-claims-saas-guide-2026</link>
       <description>An authoritative engineering blueprint for building an enterprise AI-powered InsurTech platform with autonomous ACORD form parsing, loss run analytics, multi-modal FNOL claims triage, catastrophe risk modeling, and Guidewire/Duck Creek core integration in 2026.</description>
@@ -103,13 +110,6 @@
       <description>An in-depth engineering blueprint for building a HIPAA-compliant AI Revenue Cycle Management (RCM) SaaS platform with autonomous clinical coding, ANSI 837/835 EDI clearinghouse engines, ML denial prediction, and autonomous appeal agents in 2026.</description>
       <pubDate>Sat, 29 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://todayintech.in/blog/ai-powered-healthcare-revenue-cycle-management-rcm-saas-guide-2026</guid>
-    </item>
-    <item>
-      <title>Building an AI-Powered Field Service Management (FSM) SaaS: Autonomous Dispatching, Computer Vision Diagnostics, Offline Mobile Architecture, and Dynamic Route Optimization (2026)</title>
-      <link>https://todayintech.in/blog/ai-powered-field-service-management-fsm-saas-guide-2026</link>
-      <description>An engineering blueprint for building a high-scale, multi-tenant AI Field Service Management (FSM) SaaS with constraint-based autonomous dispatching, edge computer vision diagnostics, offline-first mobile sync, and live IoT telematics in 2026.</description>
-      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://todayintech.in/blog/ai-powered-field-service-management-fsm-saas-guide-2026</guid>
     </item>
   </channel>
 </rss>
