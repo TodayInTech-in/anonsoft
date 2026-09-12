@@ -44,7 +44,7 @@ def generate_sitemaps():
     root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     
     # 1. Scan core subdirectories for index.html
-    core_dirs = ['services', 'features', 'about', 'health', 'ai', 'careers', 'contact', 'free-consultation']
+    core_dirs = ['services', 'features', 'about', 'health', 'ai', 'careers', 'contact', 'free-consultation', 'aeo-checker']
     core_urls = []
     
     # Homepage
@@ -55,7 +55,7 @@ def generate_sitemaps():
     for cdir in core_dirs:
         index_path = os.path.join(root_dir, cdir, 'index.html')
         if os.path.exists(index_path):
-            priority = "0.9" if cdir in ['services', 'features', 'health', 'free-consultation'] else "0.8"
+            priority = "0.9" if cdir in ['services', 'features', 'health', 'free-consultation', 'aeo-checker'] else "0.8"
             core_urls.append((f"{DOMAIN}/{cdir}/", "monthly", priority, "2026-07-22"))
             
     # 2. Scan projects directory

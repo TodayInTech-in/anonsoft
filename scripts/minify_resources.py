@@ -6,14 +6,14 @@ def minify_css(input_path, output_path):
         print(f"Skipping (not found): {input_path}")
         return
         
-    with open(input_path, "r") as f:
+    with open(input_path, "r", encoding="utf-8") as f:
         content = f.read()
         
     orig_size = len(content)
     
     # Remove comments
     content = re.sub(r"/\*.*?\*/", "", content, flags=re.DOTALL)
-    # Remove whitespace around selectors and properties
+    # Remove unnecessary whitespace
     content = re.sub(r"\s+", " ", content)
     content = re.sub(r"\s*\{\s*", "{", content)
     content = re.sub(r"\s*\}\s*", "}\n", content)
@@ -22,47 +22,129 @@ def minify_css(input_path, output_path):
     content = re.sub(r"\s*,\s*", ",", content)
     content = content.strip()
     
-    with open(output_path, "w") as f:
+    with open(output_path, "w", encoding="utf-8") as f:
         f.write(content)
         
     new_size = len(content)
     print(f"Minified CSS {input_path} -> {output_path}: {orig_size/1024:.1f} KB -> {new_size/1024:.1f} KB (saved {(orig_size-new_size)/1024:.1f} KB)")
+
+def remove_js_comments(js_text):
+    """
+    Robust JavaScript tokenizer that strips comments while safely preserving
+    single-quoted strings, double-quoted strings, template literals, and regex literals.
+    """
+    out = []
+    i = 0
+    n = len(js_text)
+    
+    while i < n:
+        char = js_text[i]
+        
+        # String literal with single or double quotes
+        if char == '"' or char == "'":
+            quote = char
+            out.append(quote)
+            i += 1
+            while i < n:
+                c = js_text[i]
+                out.append(c)
+                if c == '\\' and i + 1 < n:
+                    i += 1
+                    out.append(js_text[i])
+                elif c == quote:
+                    break
+                i += 1
+            i += 1
+            continue
+            
+        # Template literal (backticks)
+        if char == '`':
+            out.append('`')
+            i += 1
+            while i < n:
+                c = js_text[i]
+                out.append(c)
+                if c == '\\' and i + 1 < n:
+                    i += 1
+                    out.append(js_text[i])
+                elif c == '`':
+                    break
+                i += 1
+            i += 1
+            continue
+            
+        # Comments or Regex or Division
+        if char == '/':
+            if i + 1 < n and js_text[i + 1] == '/':
+                # Single-line comment: skip till end of line
+                i += 2
+                while i < n and js_text[i] != '\n':
+                    i += 1
+                continue
+            elif i + 1 < n and js_text[i + 1] == '*':
+                # Multi-line comment: skip till */
+                i += 2
+                while i + 1 < n and not (js_text[i] == '*' and js_text[i + 1] == '/'):
+                    i += 1
+                i += 2
+                continue
+            else:
+                # Could be regex literal or division operator
+                # Look backwards for previous non-whitespace token
+                j = len(out) - 1
+                while j >= 0 and out[j] in ' \t\r\n':
+                    j -= 1
+                prev_char = out[j] if j >= 0 else ''
+                
+                # If preceded by certain punctuation / keywords, it's a regex literal
+                is_regex = (j < 0 or prev_char in '=(:[{,;!&|?~+-*^%')
+                
+                out.append('/')
+                i += 1
+                
+                if is_regex:
+                    in_char_class = False
+                    while i < n:
+                        c = js_text[i]
+                        out.append(c)
+                        if c == '\\' and i + 1 < n:
+                            i += 1
+                            out.append(js_text[i])
+                        elif c == '[':
+                            in_char_class = True
+                        elif c == ']':
+                            in_char_class = False
+                        elif c == '/' and not in_char_class:
+                            break
+                        elif c == '\n':
+                            # Regex literals cannot span unescaped newlines
+                            break
+                        i += 1
+                    i += 1
+                continue
+                
+        out.append(char)
+        i += 1
+        
+    return "".join(out)
 
 def minify_js(input_path, output_path):
     if not os.path.exists(input_path):
         print(f"Skipping (not found): {input_path}")
         return
         
-    with open(input_path, "r") as f:
+    with open(input_path, "r", encoding="utf-8") as f:
         content = f.read()
         
     orig_size = len(content)
     
-    # Basic safe JS minification using regex (avoiding breaking string literals)
-    # Remove block comments
-    content = re.sub(r"/\*.*?\*/", "", content, flags=re.DOTALL)
+    cleaned = remove_js_comments(content)
     
-    # Remove single-line comments that do not start inside a string
-    # We split lines, strip them, remove comments, and rejoin
-    lines = []
-    for line in content.splitlines():
-        line_stripped = line.strip()
-        # Keep empty lines or reconstruct
-        if not line_stripped:
-            continue
-        # Strip single-line comments unless they are in http:// or https://
-        if "//" in line_stripped:
-            # Simple check to see if it is comment or URL
-            parts = line_stripped.split("//", 1)
-            # If the double slash is preceded by http: or https:, it is a URL, keep it
-            if not parts[0].endswith("http:") and not parts[0].endswith("https:"):
-                line_stripped = parts[0].strip()
-        if line_stripped:
-            lines.append(line_stripped)
-            
+    # Clean up empty lines while preserving code structure
+    lines = [line.strip() for line in cleaned.splitlines() if line.strip()]
     content = "\n".join(lines)
     
-    with open(output_path, "w") as f:
+    with open(output_path, "w", encoding="utf-8") as f:
         f.write(content)
         
     new_size = len(content)
@@ -71,3 +153,4 @@ def minify_js(input_path, output_path):
 if __name__ == "__main__":
     minify_css("style.css", "style.min.css")
     minify_js("script.js", "script.min.js")
+

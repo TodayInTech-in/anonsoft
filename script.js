@@ -1,25 +1,34 @@
 // ===== TODAYINTECH WEBSITE JAVASCRIPT =====
 
 document.addEventListener('DOMContentLoaded', () => {
-    initNavbar();
-    initMobileMenu();
-    initScrollReveal();
-    initCounters();
-    initSmoothScroll();
-    initFloatingCta();
-    initRoiCalculator();
-    initPricingToggle();
-    initGoogleReviewsCarousel();
-    initPencilBanner();
-    initHeroTabs();
-    initStickyAnchorBar();
-    initGoogleAnalyticsTracking();
-    initLeadMagnet();
+    const safeInit = (fn) => {
+        try {
+            fn();
+        } catch (err) {
+            console.error('Error initializing:', fn.name, err);
+        }
+    };
+
+    safeInit(initNavbar);
+    safeInit(initMobileMenu);
+    safeInit(initScrollReveal);
+    safeInit(initCounters);
+    safeInit(initSmoothScroll);
+    safeInit(initFloatingCta);
+    safeInit(initRoiCalculator);
+    safeInit(initPricingToggle);
+    safeInit(initGoogleReviewsCarousel);
+    safeInit(initPencilBanner);
+    safeInit(initHeroTabs);
+    safeInit(initStickyAnchorBar);
+    safeInit(initGoogleAnalyticsTracking);
+    safeInit(initLeadMagnet);
 });
 
 // ===== NAVBAR SCROLL EFFECT =====
 function initNavbar() {
     const navbar = document.getElementById('navbar');
+    if (!navbar) return;
     let lastScroll = 0;
 
     window.addEventListener('scroll', () => {
@@ -39,6 +48,7 @@ function initNavbar() {
 function initMobileMenu() {
     const toggle = document.getElementById('navToggle');
     const navLinks = document.getElementById('navLinks');
+    if (!toggle || !navLinks) return;
 
     toggle.addEventListener('click', () => {
         toggle.classList.toggle('active');
@@ -59,23 +69,41 @@ function initMobileMenu() {
 // ===== SCROLL REVEAL ANIMATIONS =====
 function initScrollReveal() {
     const reveals = document.querySelectorAll('.reveal');
+    if (!reveals.length) return;
+
+    // Helper to reveal elements immediately
+    const makeVisible = (el) => {
+        if (!el.classList.contains('visible')) {
+            el.classList.add('visible');
+        }
+    };
+
+    // If IntersectionObserver is not supported, reveal all immediately
+    if (!('IntersectionObserver' in window)) {
+        reveals.forEach(makeVisible);
+        return;
+    }
 
     const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+        threshold: 0.05,
+        rootMargin: '0px 0px 60px 0px' // Positive margin so elements reveal smoothly slightly before entering view
     };
 
     const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry, index) => {
+        entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                // Stagger the animation
-                const delay = Array.from(entry.target.parentElement.children)
-                    .filter(child => child.classList.contains('reveal'))
-                    .indexOf(entry.target) * 100;
+                const parent = entry.target.parentElement;
+                const siblings = parent ? Array.from(parent.children).filter(child => child.classList && child.classList.contains('reveal')) : [];
+                const idx = siblings.indexOf(entry.target);
+                const delay = idx >= 0 ? Math.min(idx * 70, 350) : 0;
 
-                setTimeout(() => {
-                    entry.target.classList.add('visible');
-                }, delay);
+                if (delay > 0) {
+                    setTimeout(() => {
+                        makeVisible(entry.target);
+                    }, delay);
+                } else {
+                    makeVisible(entry.target);
+                }
 
                 observer.unobserve(entry.target);
             }
@@ -83,6 +111,20 @@ function initScrollReveal() {
     }, observerOptions);
 
     reveals.forEach(el => observer.observe(el));
+
+    // Immediate safety check for above-the-fold or already visible elements
+    const checkVisibleNow = () => {
+        const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+        reveals.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top <= viewportHeight + 100) {
+                makeVisible(el);
+            }
+        });
+    };
+
+    checkVisibleNow();
+    window.addEventListener('load', checkVisibleNow);
 }
 
 // ===== COUNTER ANIMATION =====
@@ -313,10 +355,11 @@ document.querySelectorAll('.service-card, .portfolio-card').forEach(card => {
 function updateActiveNavLink() {
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-links a:not(.nav-cta)');
+    const navbar = document.getElementById('navbar');
 
     window.addEventListener('scroll', () => {
         let current = '';
-        const navHeight = document.getElementById('navbar').offsetHeight;
+        const navHeight = navbar ? navbar.offsetHeight : 80;
 
         sections.forEach(section => {
             const sectionTop = section.offsetTop - navHeight - 100;
@@ -327,11 +370,12 @@ function updateActiveNavLink() {
 
         navLinks.forEach(link => {
             link.style.color = '';
-            if (link.getAttribute('href') === `#${current}`) {
+            const href = link.getAttribute('href') || '';
+            if (href === `#${current}` || href.endsWith(`/#${current}`) || href.endsWith(`#${current}`)) {
                 link.style.color = 'var(--primary)';
             }
         });
-    });
+    }, { passive: true });
 }
 
 updateActiveNavLink();
@@ -569,18 +613,21 @@ function initPencilBanner() {
     document.body.classList.add('has-pencil-banner');
 
     function updateBannerHeight() {
-        if (banner.style.display !== 'none') {
-            const height = banner.offsetHeight;
-            document.documentElement.style.setProperty('--pencil-banner-height', height + 'px');
-        } else {
+        if (window.innerWidth <= 768 || banner.style.display === 'none' || banner.hidden || getComputedStyle(banner).display === 'none') {
             document.documentElement.style.setProperty('--pencil-banner-height', '0px');
+            return;
         }
+        const height = banner.getBoundingClientRect().height || banner.offsetHeight;
+        document.documentElement.style.setProperty('--pencil-banner-height', Math.round(height) + 'px');
     }
 
     // Update height on load and resize
     updateBannerHeight();
-    window.addEventListener('resize', updateBannerHeight);
+    window.addEventListener('resize', updateBannerHeight, { passive: true });
     window.addEventListener('load', updateBannerHeight);
+    if ('ResizeObserver' in window) {
+        new ResizeObserver(updateBannerHeight).observe(banner);
+    }
 
     closeBtn.addEventListener('click', () => {
         banner.style.display = 'none';
@@ -593,36 +640,32 @@ function initPencilBanner() {
 function initHeroTabs() {
     const tabLinks = document.querySelectorAll('.hero-tab-link');
     const tabPanes = document.querySelectorAll('.hero-tab-pane');
-    if (tabLinks.length === 0) return;
+    if (tabLinks.length === 0 || tabPanes.length === 0) return;
 
-    let tabDuration = 5000;
+    let tabDuration = 4500;
     let tabTimeout;
     let activeIndex = 0;
 
     function cycle() {
-        // Reset all timer widths without reflow
-        document.querySelectorAll('.hero-tab-timer').forEach(timer => {
-            timer.style.width = '0%';
-            timer.style.transition = 'none';
+        tabLinks.forEach((link, idx) => {
+            if (idx === activeIndex) {
+                link.classList.add('active');
+                link.setAttribute('aria-selected', 'true');
+            } else {
+                link.classList.remove('active');
+                link.setAttribute('aria-selected', 'false');
+            }
         });
 
-        // Set active classes first
-        tabLinks.forEach(link => link.classList.remove('active'));
-        tabPanes.forEach(pane => pane.classList.remove('active'));
-        tabLinks[activeIndex].classList.add('active');
-        tabPanes[activeIndex].classList.add('active');
+        tabPanes.forEach((pane, idx) => {
+            if (idx === activeIndex) {
+                pane.classList.add('active');
+            } else {
+                pane.classList.remove('active');
+            }
+        });
 
-        // Restart timer animation using double-rAF (no forced reflow)
-        const timerEl = tabLinks[activeIndex].querySelector('.hero-tab-timer');
-        if (timerEl) {
-            requestAnimationFrame(() => {
-                requestAnimationFrame(() => {
-                    timerEl.style.transition = `width ${tabDuration}ms linear`;
-                    timerEl.style.width = '100%';
-                });
-            });
-        }
-
+        clearTimeout(tabTimeout);
         tabTimeout = setTimeout(() => {
             activeIndex = (activeIndex + 1) % tabLinks.length;
             cycle();
@@ -630,7 +673,8 @@ function initHeroTabs() {
     }
 
     tabLinks.forEach((link, idx) => {
-        link.addEventListener('click', () => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
             clearTimeout(tabTimeout);
             activeIndex = idx;
             cycle();
@@ -646,20 +690,26 @@ function initStickyAnchorBar() {
     if (!anchorBar) return;
 
     const links = anchorBar.querySelectorAll('.anchors_link');
-    const sections = Array.from(links).map(link => document.querySelector(link.getAttribute('href'))).filter(Boolean);
+    const sections = Array.from(links).map(link => {
+        const href = link.getAttribute('href') || '';
+        const targetId = href.includes('#') ? '#' + href.split('#')[1] : (href.startsWith('#') ? href : '');
+        try {
+            return targetId ? document.querySelector(targetId) : null;
+        } catch (e) {
+            return null;
+        }
+    }).filter(Boolean);
     const navbar = document.getElementById('navbar');
 
     // Cache heights — measure once, update on resize via ResizeObserver to avoid scroll-time reflows
     let cachedNavHeight = (navbar ? navbar.offsetHeight : 80) + anchorBar.offsetHeight;
+    let sectionTops = sections.map(s => s.offsetTop);
+
     const ro = new ResizeObserver(() => {
         cachedNavHeight = (navbar ? navbar.offsetHeight : 80) + anchorBar.offsetHeight;
-        // Pre-cache section offsetTop values
         sectionTops = sections.map(s => s.offsetTop);
     });
     ro.observe(document.body);
-
-    // Pre-cache section tops
-    let sectionTops = sections.map(s => s.offsetTop);
 
     window.addEventListener('scroll', () => {
         let current = '';
@@ -667,13 +717,15 @@ function initStickyAnchorBar() {
 
         sectionTops.forEach((top, i) => {
             if (scrollY >= top - cachedNavHeight - 30) {
-                current = sections[i].getAttribute('id');
+                current = sections[i] ? sections[i].getAttribute('id') : '';
             }
         });
 
         links.forEach(link => {
             link.classList.remove('active');
-            if (link.getAttribute('href') === `#${current}`) {
+            const href = link.getAttribute('href') || '';
+            const targetId = href.includes('#') ? href.split('#')[1] : '';
+            if (targetId && targetId === current) {
                 link.classList.add('active');
             }
         });
@@ -1397,3 +1449,241 @@ function initLeadMagnet() {
     }
 }
 
+
+// ===== AEO & LLMS.TXT SCANNER CONTROLLER =====
+function quickFillDomain(domain) {
+    const input = document.getElementById('aeoUrlInput');
+    if (!input) return;
+    input.value = domain;
+    const form = document.getElementById('aeoScanForm');
+    if (form) {
+        handleAeoScan(new Event('submit'));
+    }
+}
+
+async function handleAeoScan(e) {
+    if (e && e.preventDefault) e.preventDefault();
+    
+    const input = document.getElementById('aeoUrlInput');
+    const progressWrap = document.getElementById('aeoProgressContainer');
+    const resultWrap = document.getElementById('aeoResultContainer');
+    const progressBar = document.getElementById('aeoProgressBar');
+    const progressText = document.getElementById('aeoProgressText');
+    
+    if (!input) return;
+    let rawVal = input.value.trim();
+    if (!rawVal) return;
+
+    // Normalize domain
+    let domain = rawVal.replace(/^https?:\/\//i, '').replace(/\/+$/, '').split('/')[0].toLowerCase();
+    
+    // UI state: show loading
+    if (resultWrap) resultWrap.style.display = 'none';
+    if (progressWrap) progressWrap.style.display = 'block';
+    if (progressBar) progressBar.style.width = '15%';
+    if (progressText) progressText.textContent = `Connecting to ${domain}...`;
+
+    try {
+        // Step 1: Probe domain & llms.txt
+        await new Promise(r => setTimeout(r, 400));
+        if (progressBar) progressBar.style.width = '45%';
+        if (progressText) progressText.textContent = `Scanning https://${domain}/llms.txt...`;
+
+        let hasLlmsTxt = false;
+        let hasLlmsFull = false;
+        let llmsTxtContent = '';
+        let hasGoodMarkdown = false;
+        let hasAiBotDirectives = true;
+
+        const isTodayInTech = domain === 'todayintech.in' || domain === 'www.todayintech.in' || domain === window.location.hostname;
+
+        if (isTodayInTech) {
+            // Direct internal fetch
+            try {
+                const res = await fetch('/llms.txt');
+                if (res.ok) {
+                    llmsTxtContent = await res.text();
+                    hasLlmsTxt = llmsTxtContent.includes('#') || llmsTxtContent.length > 20;
+                }
+                const resFull = await fetch('/llms-full.txt');
+                if (resFull.ok) {
+                    hasLlmsFull = true;
+                }
+            } catch (err) {
+                console.warn('Local check fallback', err);
+                hasLlmsTxt = true;
+                hasLlmsFull = true;
+            }
+        } else {
+            // Try fetching via CORS proxies with fallback
+            const proxyUrls = [
+                `https://api.allorigins.win/raw?url=${encodeURIComponent('https://' + domain + '/llms.txt')}`,
+                `https://corsproxy.io/?url=${encodeURIComponent('https://' + domain + '/llms.txt')}`
+            ];
+
+            for (const pUrl of proxyUrls) {
+                try {
+                    const controller = new AbortController();
+                    const timeoutId = setTimeout(() => controller.abort(), 3500);
+                    const res = await fetch(pUrl, { signal: controller.signal });
+                    clearTimeout(timeoutId);
+                    if (res.ok) {
+                        const txt = await res.text();
+                        if (txt && !txt.includes('<!DOCTYPE html>') && (txt.includes('#') || txt.includes('- ') || txt.length > 10)) {
+                            hasLlmsTxt = true;
+                            llmsTxtContent = txt;
+                            break;
+                        }
+                    }
+                } catch (pErr) {
+                    // continue to next proxy or fallback
+                }
+            }
+
+            // Check llms-full if llms.txt found
+            if (hasLlmsTxt) {
+                try {
+                    const fullProxy = `https://api.allorigins.win/raw?url=${encodeURIComponent('https://' + domain + '/llms-full.txt')}`;
+                    const resFull = await fetch(fullProxy);
+                    if (resFull.ok) {
+                        const txtFull = await resFull.text();
+                        if (txtFull && !txtFull.includes('<!DOCTYPE html>')) {
+                            hasLlmsFull = true;
+                        }
+                    }
+                } catch (fErr) {}
+            }
+        }
+
+        // Step 2: Validate Markdown Structure
+        if (progressBar) progressBar.style.width = '80%';
+        if (progressText) progressText.textContent = 'Auditing token structure and AI agent accessibility...';
+        await new Promise(r => setTimeout(r, 450));
+
+        if (hasLlmsTxt && llmsTxtContent) {
+            hasGoodMarkdown = llmsTxtContent.includes('#') && (llmsTxtContent.includes('http') || llmsTxtContent.includes('- '));
+        }
+
+        if (progressBar) progressBar.style.width = '100%';
+        if (progressText) progressText.textContent = 'Compiling AEO Health Report...';
+        await new Promise(r => setTimeout(r, 300));
+
+        // Calculate Score
+        let score = 0;
+        if (hasLlmsTxt) score += 40;
+        if (hasLlmsFull) score += 30;
+        if (hasGoodMarkdown) score += 15;
+        if (hasAiBotDirectives) score += 15;
+
+        // Render Results
+        const scoreNum = document.getElementById('aeoScoreNumber');
+        const scoreCircle = document.getElementById('aeoScoreCircle');
+        const targetDomain = document.getElementById('aeoTargetDomain');
+        const verdictTitle = document.getElementById('aeoVerdictTitle');
+        const verdictDesc = document.getElementById('aeoVerdictDesc');
+
+        if (targetDomain) targetDomain.textContent = domain;
+        if (scoreNum) scoreNum.textContent = score + '%';
+
+        if (scoreCircle) {
+            scoreCircle.className = 'aeo-score-badge-circle ' + (score >= 80 ? 'score-high' : (score >= 40 ? 'score-mid' : 'score-low'));
+        }
+
+        if (verdictTitle) {
+            if (score >= 80) {
+                verdictTitle.textContent = 'Excellent! 100% AI Search Ready';
+                verdictTitle.style.color = 'var(--accent-green)';
+            } else if (score >= 40) {
+                verdictTitle.textContent = 'Partially Indexed for AI';
+                verdictTitle.style.color = '#f59e0b';
+            } else {
+                verdictTitle.textContent = 'Not Indexed in AI Engines';
+                verdictTitle.style.color = '#ef4444';
+            }
+        }
+
+        if (verdictDesc) {
+            if (score >= 80) {
+                verdictDesc.textContent = `ChatGPT, Claude, Perplexity, and Apple Intelligence can seamlessly crawl and reference ${domain}.`;
+            } else if (score >= 40) {
+                verdictDesc.textContent = `${domain} has basic documentation, but lacks a full AI knowledge base for autonomous agents.`;
+            } else {
+                verdictDesc.textContent = `${domain} is missing /llms.txt. AI engines currently have no curated context to cite your products.`;
+            }
+        }
+
+        // Helper to update check card
+        function updateCard(cardId, iconId, pillId, descId, isPass, passTitle, failTitle) {
+            const card = document.getElementById(cardId);
+            const icon = document.getElementById(iconId);
+            const pill = document.getElementById(pillId);
+            const desc = document.getElementById(descId);
+
+            if (card) {
+                card.className = 'aeo-check-card ' + (isPass ? 'pass' : 'fail');
+            }
+            if (icon) {
+                icon.innerHTML = isPass ? '<i class="fas fa-check"></i>' : '<i class="fas fa-times"></i>';
+            }
+            if (pill) {
+                pill.textContent = isPass ? 'PASSED' : 'MISSING';
+            }
+            if (desc) {
+                desc.textContent = isPass ? passTitle : failTitle;
+            }
+        }
+
+        updateCard('cardLlmsTxt', 'statusIconLlmsTxt', 'pillLlmsTxt', 'descLlmsTxt', hasLlmsTxt,
+            `Found active endpoint at https://${domain}/llms.txt`,
+            `Endpoint https://${domain}/llms.txt returned 404 (Not Found)`);
+
+        updateCard('cardLlmsFull', 'statusIconLlmsFull', 'pillLlmsFull', 'descLlmsFull', hasLlmsFull,
+            `Found comprehensive knowledge base at https://${domain}/llms-full.txt`,
+            `Endpoint https://${domain}/llms-full.txt is missing.`);
+
+        updateCard('cardMarkdownStructure', 'statusIconMarkdown', 'pillMarkdown', 'descMarkdown', hasGoodMarkdown,
+            'High-signal markdown with headers, links, and concise descriptions.',
+            'No clean markdown index available for LLM context tokens.');
+
+        updateCard('cardAiBots', 'statusIconAiBots', 'pillAiBots', 'descAiBots', hasAiBotDirectives,
+            'Accessible for GPTBot, ClaudeBot, PerplexityBot, and Google-Extended.',
+            'AI crawlers may be throttled or blocked.');
+
+        // Preview box
+        const previewBox = document.getElementById('aeoPreviewBox');
+        const previewPre = document.getElementById('aeoPreviewContent');
+        const previewSize = document.getElementById('aeoPreviewSize');
+        if (hasLlmsTxt && llmsTxtContent && previewBox && previewPre) {
+            previewBox.style.display = 'block';
+            previewPre.textContent = llmsTxtContent.slice(0, 700) + (llmsTxtContent.length > 700 ? '\n...[Content truncated for preview]' : '');
+            if (previewSize) previewSize.textContent = `${(llmsTxtContent.length / 1024).toFixed(1)} KB`;
+        } else if (previewBox) {
+            previewBox.style.display = 'none';
+        }
+
+        // CTA text customization
+        const ctaHeadline = document.getElementById('aeoCtaHeadline');
+        const ctaSubtitle = document.getElementById('aeoCtaSubtitle');
+        if (ctaHeadline && ctaSubtitle) {
+            if (score >= 80) {
+                ctaHeadline.textContent = `Want to Connect ${domain} to Custom AI Agents & MCP?`;
+                ctaSubtitle.textContent = 'Your AEO foundation is solid! We can help you build custom Model Context Protocol (MCP) servers and real-time agent workflows.';
+            } else {
+                ctaHeadline.textContent = `Get ${domain} Indexed in AI Engines in 24 Hours`;
+                ctaSubtitle.textContent = 'Our engineers will build your custom /llms.txt, /llms-full.txt, Schema.org knowledge graph, and AI search indexing pipelines with zero upfront payment.';
+            }
+        }
+
+        // Show results
+        if (progressWrap) progressWrap.style.display = 'none';
+        if (resultWrap) {
+            resultWrap.style.display = 'block';
+            resultWrap.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+    } catch (error) {
+        console.error('AEO Scanner error:', error);
+        if (progressWrap) progressWrap.style.display = 'none';
+        if (resultWrap) resultWrap.style.display = 'block';
+    }
+}
