@@ -7,6 +7,27 @@
     <language>en-us</language>
     <atom:link href="https://anonsoft.in/public/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Building an AI-Powered Hotel Property Management System (PMS) &amp; Channel Manager SaaS: Dynamic Revenue Yield Optimization, Contactless Mobile Key IoT, Multi-OTA Two-Way Sync, and Autonomous Guest Concierge (2026)</title>
+      <link>https://anonsoft.in/blog/ai-powered-hotel-property-management-system-pms-saas-guide-2026</link>
+      <description>An exhaustive engineering blueprint for building an enterprise AI-powered Hotel PMS and Channel Manager SaaS featuring dynamic pricing reinforcement learning, 2-way OTA sync, mobile key IoT access, and AI guest concierges in 2026.</description>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://anonsoft.in/blog/ai-powered-hotel-property-management-system-pms-saas-guide-2026</guid>
+    </item>
+    <item>
+      <title>Building an AI-Powered B2B InsurTech &amp; Commercial Underwriting SaaS: ACORD Parsing, Autonomous Loss Run Extraction, Multi-Modal FNOL Claims Adjudication, and Carrier Policy Core Integration (2026)</title>
+      <link>https://anonsoft.in/blog/ai-powered-insurtech-commercial-underwriting-claims-saas-guide-2026</link>
+      <description>An authoritative engineering blueprint for building an enterprise AI-powered InsurTech platform with autonomous ACORD form parsing, loss run analytics, multi-modal FNOL claims triage, catastrophe risk modeling, and Guidewire/Duck Creek core integration in 2026.</description>
+      <pubDate>Fri, 11 Sep 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://anonsoft.in/blog/ai-powered-insurtech-commercial-underwriting-claims-saas-guide-2026</guid>
+    </item>
+    <item>
+      <title>Building an AI-Powered Global Supply Chain Visibility &amp; Intelligent Freight Logistics SaaS: IoT Telematics, Dynamic Route Optimization, Autonomous Bill of Lading OCR, and EDI 204/214 Integration (2026)</title>
+      <link>https://anonsoft.in/blog/ai-powered-supply-chain-freight-logistics-saas-guide-2026</link>
+      <description>An authoritative engineering blueprint for building an enterprise AI-powered supply chain visibility and freight logistics SaaS with real-time IoT telematics, dynamic multi-modal route optimization, autonomous bill of lading OCR, and EDI carrier integrations in 2026.</description>
+      <pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://anonsoft.in/blog/ai-powered-supply-chain-freight-logistics-saas-guide-2026</guid>
+    </item>
+    <item>
       <title>Building an AI-Powered Clinical Trial Matching &amp; Patient Recruitment SaaS: FHIR R4 Ingestion, LLM Protocol Parsing, Vector Search, and FDA 21 CFR Part 11 Compliance (2026)</title>
       <link>https://anonsoft.in/blog/ai-powered-clinical-trial-matching-patient-recruitment-saas-guide-2026</link>
       <description>An authoritative engineering blueprint for building an AI-powered clinical trial matching and patient recruitment SaaS with HL7 FHIR ingestion, unstructured protocol NLP, sub-second cohort vector search, and FDA 21 CFR Part 11 validation in 2026.</description>
@@ -89,27 +110,6 @@
       <description>An in-depth engineering blueprint for building a HIPAA-compliant AI Revenue Cycle Management (RCM) SaaS platform with autonomous clinical coding, ANSI 837/835 EDI clearinghouse engines, ML denial prediction, and autonomous appeal agents in 2026.</description>
       <pubDate>Sat, 29 Aug 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://anonsoft.in/blog/ai-powered-healthcare-revenue-cycle-management-rcm-saas-guide-2026</guid>
-    </item>
-    <item>
-      <title>Building an AI-Powered Field Service Management (FSM) SaaS: Autonomous Dispatching, Computer Vision Diagnostics, Offline Mobile Architecture, and Dynamic Route Optimization (2026)</title>
-      <link>https://anonsoft.in/blog/ai-powered-field-service-management-fsm-saas-guide-2026</link>
-      <description>An engineering blueprint for building a high-scale, multi-tenant AI Field Service Management (FSM) SaaS with constraint-based autonomous dispatching, edge computer vision diagnostics, offline-first mobile sync, and live IoT telematics in 2026.</description>
-      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://anonsoft.in/blog/ai-powered-field-service-management-fsm-saas-guide-2026</guid>
-    </item>
-    <item>
-      <title>Building an AI-Powered Accounts Payable (AP) Automation &amp; Autonomous Invoice Processing SaaS: Multi-Modal Vision LLMs, 3-Way PO Matching, Real-Time ERP Sync, and Fraud Detection (2026)</title>
-      <link>https://anonsoft.in/blog/ai-powered-accounts-payable-invoice-automation-saas-guide-2026</link>
-      <description>An engineering blueprint for building a multi-tenant AI Accounts Payable (AP) and invoice automation SaaS with multi-modal Vision LLM OCR, automated 3-way PO matching, ERP synchronization, and anomaly fraud detection in 2026.</description>
-      <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://anonsoft.in/blog/ai-powered-accounts-payable-invoice-automation-saas-guide-2026</guid>
-    </item>
-    <item>
-      <title>Building an AI-Powered Adaptive Learning &amp; Automated Grading EdTech SaaS: Knowledge Tracing Graphs, LTI 1.3 LMS Interoperability, Real-Time Feedback Pipelines, and Multi-Tenant Architecture (2026)</title>
-      <link>https://anonsoft.in/blog/ai-powered-adaptive-learning-automated-grading-edtech-saas-guide-2026</link>
-      <description>An engineering blueprint for building a multi-tenant AI adaptive learning and automated grading EdTech SaaS with Deep Knowledge Tracing (DKT), vector RAG rubric evaluation, LTI 1.3 LMS integration, and sub-second feedback in 2026.</description>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://anonsoft.in/blog/ai-powered-adaptive-learning-automated-grading-edtech-saas-guide-2026</guid>
     </item>
   </channel>
 </rss>
