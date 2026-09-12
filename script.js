@@ -1495,7 +1495,7 @@ async function handleAeoScan(e) {
         let hasGoodMarkdown = false;
         let hasAiBotDirectives = true;
 
-        const isTodayInTech = domain === 'todayintech.in' || domain === 'www.todayintech.in' || domain === window.location.hostname;
+        const isTodayInTech = domain === 'todayintech.in' || domain === 'www.todayintech.in' || domain === 'anonsoft.in' || domain === 'www.anonsoft.in' || domain === window.location.hostname;
 
         if (isTodayInTech) {
             // Direct internal fetch
