@@ -75,6 +75,32 @@ How Anonsoft built VocalFlow — an AI text-to-speech tool with 300+ voices and 
   - 0 seconds onboarding — no sign-up required
   - Open source — community contributions and transparency
 
+### [Alliance Jiu-Jitsu Boise — High-Performance BJJ Academy & Class Booking Engine](https://anonsoft.in/projects/alliance-jiujitsu-boise)
+How Anonsoft engineered the high-converting membership website and dynamic class schedule system for Alliance Jiu-Jitsu Boise.
+
+- **Technology Stack**: Next.js, Tailwind CSS, Mindbody / Stripe API, TypeScript, Vercel
+- **The Problem**: In martial arts website design and fitness club marketing, premier training academies struggle to convert website visitors into trial class attendees due to clunky schedule navigation, hidden pricing, and intimidated beginners. Alliance Jiu-Jitsu Boise needed an empowering, high-energy digital gateway.
+  - Beginner intimidation and lack of clear step-by-step onboarding guidance
+  - Static PDF class schedules that were impossible to read on mobile phones
+  - High drop-off rate on free trial class sign-up forms
+  - Need to showcase world-class instructor pedigree, lineage, and student achievements
+- **Our Solution**: We developed a high-energy Jiu-Jitsu academy web development platform featuring a dynamic real-time class schedule, 1-click free trial booking funnel, video curriculum previews, and compelling instructor bio showcases.
+  - Dynamic weekly schedule filterable by experience level (Adults, Kids, Fundamentals, Advanced)
+  - Frictionless free intro class conversion funnel with automated SMS reminders
+  - Comprehensive beginner guide demystifying what to expect in a student's first week
+  - Instructor lineage directory highlighting world championship credentials
+  - Mobile-optimized membership portal integration for seamless monthly billing
+- **Key Features**:
+  - *Live Dynamic Schedule*: Filter classes by day, skill level, and instructor with instant calendar add.
+  - *Instructor Lineage & Heritage*: Transparent display of black belt lineage, IBJJF championship titles, and coaching philosophy.
+  - *Instant Trial Pass Funnel*: Frictionless 2-step registration reserving a trial uniform and intro session.
+  - *Kids & Family Program Hub*: Dedicated safe-training guides for parents and youth martial arts programs.
+- **The Result**: Alliance Jiu-Jitsu Boise grew to maximum academy capacity within months of launch, establishing itself as Idaho's premier martial arts training center.
+  - +280% increase in monthly free trial introductory class bookings
+  - 78% conversion rate from trial class attendees to paid annual memberships
+  - Zero scheduling confusion with live mobile calendar sync
+  - #1 Local SEO ranking for BJJ and martial arts in Boise, Idaho
+
 ### [Church Management Software (ChMS)](https://anonsoft.in/projects/church-management-software)
 Discover Anonsoft ChMS — a modern Church Management Software platform to manage member directories, online tithing, rosters, and bookkeeping.
 
@@ -128,6 +154,110 @@ Partner with a top casino game development company to launch custom online casin
   - 100% responsive scaling across mobile, tablet, and desktop
   - Zero app store wrapping or compliance required
 
+### [EasyFamily Haus — Sustainable Modular Timber Home Configurator & Builder Portal](https://anonsoft.in/projects/easyfamily-haus)
+How Anonsoft built the sustainable modular home configurator and interactive floorplan platform for EasyFamily Haus Germany.
+
+- **Technology Stack**: Next.js, TypeScript, Tailwind CSS, Interactive Canvas, Vercel, Headless CMS
+- **The Problem**: When shopping for prefab home configurator websites and sustainable timber modular housing in Germany, prospective homebuilders faced overwhelming complexity comparing square footage, energy standards (KfW 40), roof designs, and turnkey package costs. The client needed an inspiring platform to guide families from concept to consultation.
+  - Overwhelming construction jargon confusing prospective first-time homebuilders
+  - Lack of interactive floorplan visualization and modular expansion previews
+  - Opaque pricing models preventing qualified inbound inquiries
+  - Strict German construction regulation transparency requirements
+- **Our Solution**: We engineered a modern sustainable construction portal development platform featuring interactive floorplan visualizers, model comparison tools, energy subsidy calculators, and a seamless consultation booking funnel.
+  - Interactive modular house configurator with real-time floorplan exploration
+  - German KfW energy efficiency and government subsidy estimation tool
+  - Transparent base-pricing and optional finish selection (solar panels, heat pumps, green roofs)
+  - Virtual 3D model galleries and video walk-through tours
+  - Direct scheduling with regional construction consultants and showroom managers
+- **Key Features**:
+  - *Interactive Model Series*: Browse modular home models with customizable layouts from 80m² to 200m².
+  - *Eco-Subsidy Calculator*: Calculate German government KfW subsidies and solar self-sufficiency ratings.
+  - *Floorplan Inspection Tool*: Zoom and explore room dimensions, furniture layouts, and architectural specs.
+  - *Showroom Visit Booking*: Instant appointment booking for factory tours and sample house visits.
+- **The Result**: EasyFamily Haus became one of Germany's most digitally progressive prefabricated home providers, generating unprecedented high-value homeowner inquiries.
+  - +210% surge in qualified showroom appointment bookings
+  - 5.4 minutes average session duration exploring interactive floorplans
+  - €12M+ in estimated home construction contracts generated via the platform
+  - Top 3 organic ranking in Germany for eco-friendly modular home keywords
+
+### [Engine Pro Shop Solutions — High-Performance Engine Builder Software & Parts Portal](https://anonsoft.in/projects/engine-pro-solutions)
+Discover how Anonsoft built Engine Pro Shop Solutions — a high-performance engine building platform and automotive parts management software.
+
+- **Technology Stack**: React, TypeScript, Node.js, PostgreSQL, Tailwind CSS, REST API, AWS
+- **The Problem**: In the realm of automotive SaaS development and high-performance engine engineering, precision machine shops and custom builders suffered from fragmented inventory databases, disorganized blueprint specifications, and cumbersome manual spec sheets. Engine shops needed an integrated, cloud-native portal to configure custom motor builds, track tolerances, and source verified parts seamlessly.
+  - Disjointed parts catalogs causing severe ordering delays and specification mismatches
+  - Lack of centralized tolerance calculators for custom crankshaft and piston machining
+  - Outdated desktop legacy software preventing mobile shop floor collaboration
+  - Inefficient quote generation for bespoke racing and high-performance engine builds
+- **Our Solution**: We developed a comprehensive automotive SaaS development platform and engine builder database equipped with dynamic spec sheet builders, automated tolerance calculators, and integrated supply-chain catalog syncing. The responsive web application allows builders to coordinate jobs directly from the garage floor.
+  - Interactive Engine Spec Sheet Builder with real-time clearance and compression calculators
+  - Comprehensive automotive component catalog with instant SKU search and distributor pricing
+  - Shop workflow management dashboard tracking active rebuilds and dyno test metrics
+  - Automated client estimate builder generating branded diagnostic and parts breakdown PDFs
+  - Robust cloud architecture with instantaneous offline-ready local cache for garage tablets
+- **Key Features**:
+  - *Dynamic Build Configurator*: Step-by-step motor spec calculation including deck height, stroke, and compression ratios.
+  - *Smart Parts Catalog*: Direct integration with top aftermarket parts distributors with real-time inventory checks.
+  - *Tolerance & QA Logging*: Instant recording of micrometer clearances, torque specs, and dyno pull results.
+  - *Automated Build Invoicing*: One-click conversion from machine shop job sheet to professional invoice.
+- **The Result**: Engine Pro Shop Solutions standardized the custom motor-building process for specialty automotive builders across North America, driving immense operational velocity.
+  - 65% reduction in spec lookup and build configuration turnaround time
+  - $1.2M+ in parts transactions processed through the catalog integration
+  - 99.9% uptime supporting 24/7 dyno testing and assembly lines
+  - Over 500+ active machine shops and race teams onboarded
+
+### [Gorsia Design — Ultra-Luxury Architectural Portfolio & Interior Studio Showcase](https://anonsoft.in/projects/gorsia-design)
+Explore how Anonsoft engineered the luxury digital portfolio and editorial architectural showcase for Gorsia Design worldwide.
+
+- **Technology Stack**: Next.js, GSAP, Tailwind CSS, Sanity Headless CMS, WebP Optimizer, Vercel
+- **The Problem**: When seeking luxury interior design web design, high-end architectural studios catering to billionaires, luxury penthouse developers, and international royalty require digital experiences that mirror the craftsmanship of their physical spaces. Standard website templates failed to reflect Gorsia Design's bespoke finishes and spatial mastery.
+  - Cluttered layouts diluting the visual impact of high-resolution architectural photography
+  - Slow load times caused by unoptimized full-screen 4K imagery and video tours
+  - Inability to convey material textures (Italian marble, bespoke brass, handcrafted woodwork)
+  - Lack of an exclusive private portfolio area for confidential VIP client presentations
+- **Our Solution**: We crafted a bespoke architectural portfolio website development experience featuring fluid smooth-scrolling interactions, fullscreen editorial lookbooks, curated project case studies, and lightning-fast WebP image optimization.
+  - Cinematic editorial layout highlighting residential, penthouse, and commercial masterpieces
+  - Silky smooth GSAP animations and micro-interactions delivering luxury tactile feel
+  - Next-gen image delivery pipeline ensuring instant rendering of 4K interior renderings
+  - Gated private client room for confidential architectural proposals and material boards
+  - Headless CMS allowing the studio to curate new international commissions seamlessly
+- **Key Features**:
+  - *Fullscreen Editorial Lookbooks*: Immersive edge-to-edge project imagery capturing spatial depth and textures.
+  - *Luxury Typography & Micro-Interactions*: Refined serif typography paired with elegant cursor and reveal animations.
+  - *Private VIP Project Vault*: Password-protected viewing suites for off-market estate commissions.
+  - *Material & Blueprint Stories*: Curated architectural insights detailing design philosophies and artisanal materials.
+- **The Result**: Gorsia Design established a breathtaking online presence that directly attracted elite residential developers and private clients across Miami, Dubai, and New York.
+  - +180% increase in high-ticket luxury project inquiries
+  - 75% of incoming inquiries citing the web portfolio as the deciding factor
+  - Sub-1.0s initial render with buttery smooth 60fps transitions
+  - Featured across multiple international design and architecture publications
+
+### [Guernsey Property & Construction Awards — Annual Industry Excellence & Voting Portal](https://anonsoft.in/projects/guernsey-construction-awards)
+How Anonsoft developed the official Guernsey Property & Construction Awards website — featuring category nominations, voting systems, and event galas.
+
+- **Technology Stack**: WordPress Custom Theme, PHP, JavaScript, MySQL, Bootstrap, REST API
+- **The Problem**: When organizing prestige industry galas, managing awards portal development with open public nominations, confidential judging panels, and premier sponsorship showcases created severe administrative complexity. The Guernsey Property & Construction Awards needed a prestigious digital home to celebrate architectural and engineering achievements across the Channel Islands.
+  - Disorganized nomination submissions with large architectural photo and document attachments
+  - Risk of duplicate votes and ballot tampering during public voting phases
+  - Lack of dedicated digital prominence for corporate headline sponsors
+  - Manual ticketing and guest registration processes for the annual black-tie gala dinner
+- **Our Solution**: We developed an all-in-one event voting web platform and industry showcase featuring structured multi-category nomination portals, secure ballot fraud prevention, rich multimedia nominee galleries, and premier sponsor spotlight sections.
+  - Seamless multi-step nomination portal with drag-and-drop architectural portfolio uploads
+  - Secure IP and email-verified judging and voting authentication engine
+  - Comprehensive Hall of Fame showcasing past award recipients and project milestones
+  - Dynamic sponsor integration with tiered logo placement and corporate profiles
+  - Mobile-first responsive design ensuring flawless display during live gala proceedings
+- **Key Features**:
+  - *Category Nomination Engine*: Structured forms allowing developers and architects to submit project case studies.
+  - *Secure Voting Verification*: Fraud-proof voting mechanics ensuring authentic industry participation.
+  - *Project Showcase Gallery*: High-resolution photo galleries highlighting award-winning structural designs.
+  - *Sponsor Tier Showcase*: Custom branded modules offering prominent exposure for corporate partners.
+- **The Result**: The platform elevated the prestige of the Guernsey Property & Construction Awards to new heights, establishing record engagement across Channel Island property developers.
+  - +300% increase in online category nomination submissions
+  - 10,000+ verified votes cast during the public engagement window
+  - Sold-out gala dinner with automated seat reservations and attendee management
+  - Zero downtime during peak voting and announcement traffic surges
+
 ### [HIPAA-Compliant Telemedicine Developer](https://anonsoft.in/projects/mednowna)
 Hire a top HIPAA-compliant telemedicine app developer. We build white-label telehealth platforms, patient portal apps, and FHIR virtual care software.
 
@@ -157,6 +287,58 @@ Hire a top HIPAA-compliant telemedicine app developer. We build white-label tele
   - 100% paperless prescription and record management
   - 4 weeks from kickoff to MVP launch
   - Zero data breaches — fully HIPAA compliant
+
+### [Heizleisten Hamburg — Sustainable Baseboard Heating Systems](https://anonsoft.in/projects/heizleisten-hamburg)
+How Anonsoft engineered the digital presence and energy-efficient quote calculation engine for Heizleisten Hamburg, Germany's premier heating brand.
+
+- **Technology Stack**: Next.js, TypeScript, Tailwind CSS, Interactive SVG, Node.js, Vercel
+- **The Problem**: When searching for sustainable heating systems web development and eco-friendly radiant heat solutions, German homeowners and architects struggled to calculate precise room dimensions and thermal output requirements. The client needed an interactive web platform to educate buyers, demonstrate energy savings, and convert complex engineering specifications into instant consultation requests.
+  - Complex technical thermal calculations overwhelmed prospective residential clients
+  - Lack of clear visual breakdowns between conventional radiators vs. radiant skirting boards
+  - High bounce rate on legacy technical catalog pages
+  - Need for GDPR-compliant German data capture and direct CRM syncing
+- **Our Solution**: We engineered a modern German heating manufacturer website with custom HVAC calculator capabilities and high-fidelity thermal schematics. The platform guides architects, builders, and property owners through intuitive square-meter estimation, energy consumption modeling, and instant customized quotation generation.
+  - Interactive room heat requirement and radiant panel sizing calculator
+  - Dynamic before-and-after thermal distribution visualizer
+  - Ultra-fast, mobile-optimized German UI built with responsive performance in mind
+  - Integrated lead qualification funnel routing technical quotes directly to field engineers
+  - Complete DSGVO / GDPR compliance with transparent cookie and data controls
+- **Key Features**:
+  - *Room Thermal Sizing Engine*: Automated Watt/m² calculation tailored to insulation levels and glass surface areas.
+  - *CO₂ & Cost Savings Estimator*: Real-time visual comparison showing annual energy reduction compared to radiators.
+  - *Instant Quote Dispatch*: Automated PDF specification summaries generated and emailed directly to clients.
+  - *Responsive German Engineering UI*: Crisp typography and lightning-fast loading designed for European enterprise standards.
+- **The Result**: The new web platform drastically shortened the customer acquisition cycle, transforming technical inquiries into qualified sales leads across Germany.
+  - +140% increase in qualified quotation requests within 90 days
+  - 4.2x longer average session duration on interactive calculation pages
+  - 98/100 Google PageSpeed score across desktop and mobile devices
+  - #1 Page organic ranking for key German radiant baseboard heating keywords
+
+### [Liquid Edge Financial — Enterprise Wealth Advisory & Asset Management Portal](https://anonsoft.in/projects/liquid-edge-financial)
+How Anonsoft engineered Liquid Edge Financial — an institutional-grade wealth advisory, capital management, and FinTech digital platform.
+
+- **Technology Stack**: React, Next.js, Chart.js, TypeScript, Tailwind CSS, Vercel
+- **The Problem**: When seeking FinTech web app development for high-net-worth individuals and family offices, Liquid Edge Financial needed a sophisticated digital portal that conveyed institutional credibility while demystifying complex capital deployment strategies. High bounce rates on traditional financial layouts were costing the firm multimillion-dollar advisory opportunities.
+  - Lack of modern, interactive asset allocation and portfolio performance visualization
+  - Rigid institutional branding that failed to engage tech-forward investors
+  - Strict regulatory compliance and data confidentiality standards across jurisdictions
+  - Inefficient intake funnels for qualified investor onboarding and risk profiling
+- **Our Solution**: We architected a high-security wealth management platform and financial advisory portal featuring interactive investment strategy breakdowns, automated investor risk profiling questionnaires, and institutional-grade UI/UX that conveys prestige and liquidity intelligence.
+  - Interactive asset allocation visualizer showcasing multi-strategy capital growth models
+  - Streamlined investor onboarding wizard with real-time suitability scoring
+  - Bank-grade encrypted communication channels and enterprise security infrastructure
+  - Ultra-responsive dark-mode executive UI optimized for mobile investors and desktop analysts
+  - Dynamic market insight and quarterly investor briefing publishing engine
+- **Key Features**:
+  - *Portfolio Modeling Visuals*: Interactive charts illustrating liquidity tiers, risk mitigation, and target yields.
+  - *Institutional Data Security*: End-to-end encryption with zero-knowledge credential verification.
+  - *Executive Consultation Funnel*: Direct calendar synchronization with senior portfolio managers.
+  - *Market Intelligence Hub*: Real-time macro analysis and downloadable whitepapers with gated lead capture.
+- **The Result**: Liquid Edge Financial transformed its online footprint into a top-tier client acquisition asset, substantially elevating investor engagement and inbound capital inquiries.
+  - +220% surge in qualified institutional investor consultation inquiries
+  - $45M+ in new prospective AUM funneled through the digital assessment tool
+  - Zero security vulnerabilities on SOC-2 compliance audits
+  - Under 0.8s global page load speed for high-net-worth mobile visitors
 
 ### [Master AI Mobile App & GPT Assistant](https://anonsoft.in/projects/master-ai)
 Discover how Anonsoft built Master AI — a mobile app powered by GPT-4 and Claude, featuring AI chat and viral script creation tools.
@@ -216,6 +398,32 @@ How Anonsoft built NexBotix — a multi-channel marketing automation platform wi
   - 85% less time spent managing marketing tools
   - 40% higher email open rates with optimized campaigns
   - Single dashboard replacing 4+ separate tools
+
+### [Pack & Bag (PrintMyBag) — Custom Eco Packaging & Direct Print E-Commerce Platform](https://anonsoft.in/projects/pack-n-bag)
+How Anonsoft built Pack & Bag / PrintMyBag — Germany's custom eco-friendly packaging and direct print B2B e-commerce platform.
+
+- **Technology Stack**: Vue.js, PHP, WooCommerce API, WebGL Canvas, Stripe, Tailwind CSS
+- **The Problem**: In the custom packaging e-commerce development landscape, B2B customers often encountered friction selecting bag dimensions, eco-friendly materials (kraft paper, canvas, non-woven), handle configurations, and uploading multi-color artwork for accurate print quotes. Legacy systems generated endless back-and-forth emails between buyers and prepress teams.
+  - Tedious quote generation for complex multi-tier volume discounts
+  - High print rejection rates due to improperly uploaded CMYK and vector artwork
+  - Lack of real-time 3D mockup previews for custom printed logos on packaging
+  - Need for automated German VAT handling and tiered business invoicing
+- **Our Solution**: We engineered a state-of-the-art B2B print-on-demand platform and custom bag configurator that lets commercial clients design, visualize, and price custom bags with instant volume-based discounts and automated print validation.
+  - Real-time interactive 3D and canvas preview for custom logo placement on packaging
+  - Automated vector and DPI preflight verification before order finalization
+  - Dynamic volume discount calculation engine supporting tiered wholesale pricing
+  - Multi-currency and European VAT-compliant checkout with automated PDF B2B invoicing
+  - Streamlined prepress print file generation exported directly to production machinery
+- **Key Features**:
+  - *Interactive Print Configurator*: Upload vector artwork and preview spot-color & full CMYK placements instantly.
+  - *Eco-Material Selector*: Switch between recycled kraft paper, organic cotton, and biodegradable fabrics.
+  - *Tiered Bulk Pricing Engine*: Transparent price breaks that update live as order quantities scale.
+  - *Automated EU Invoicing*: Instant generation of tax-compliant German B2B billing documentation.
+- **The Result**: Pack & Bag experienced explosive growth across European commercial markets, dramatically slashing administrative overhead and prepress correction cycles.
+  - 70% drop in prepress artwork revision inquiries
+  - +180% growth in direct online bulk orders within 6 months
+  - 3.8x increase in average B2B checkout cart value
+  - Over 250,000+ custom printed bags produced monthly
 
 ### [Radio Stiming — Live Streaming App](https://anonsoft.in/projects/radio-station)
 How Anonsoft built Radio Stiming — a live radio streaming platform with show scheduling, DJ profiles, and listener engagement tools.
@@ -278,6 +486,32 @@ Build or rebrand EVV-compliant home care agency software, caregiver scheduling t
   - Real-time visibility for families via secure portal
   - White-labeled and deployed in under 6 weeks
 
+### [SkinKin — Custom Smartphone & Gadget Skins Interactive 3D Customizer](https://anonsoft.in/projects/skinkin-mobile-skins)
+How Anonsoft developed the interactive 3D wrap customizer and high-converting DTC e-commerce store for SkinKin.
+
+- **Technology Stack**: Three.js, WebGL, React, Shopify Storefront API, Tailwind CSS, Stripe
+- **The Problem**: When designing custom phone skins e-commerce stores, customers struggle to visualize how materials (carbon fiber, textured leather, matte vinyl, metallic flakes) will look wrapped around their exact smartphone model and camera lenses. Without live 3D visual previews, return rates were high and conversions stagnated.
+  - Static 2D flat mockups failed to show cutouts for camera bumps, buttons, and curves
+  - High customer indecision leading to cart abandonment on mobile devices
+  - Complexity of supporting hundreds of distinct iPhone, Samsung, and Google Pixel models
+  - Lack of real-time vinyl material texture rendering and lighting simulation
+- **Our Solution**: We developed an interactive 3D product customizer development suite built on WebGL and Three.js, seamlessly integrated with a lightning-fast DTC storefront for instant device customization and ordering.
+  - Interactive 3D model customizer with 360-degree rotation and realistic material shaders
+  - Extensive device library covering every modern smartphone, tablet, and gaming handheld
+  - Live texture switching across 50+ vinyl finishes (Carbon, Woodgrain, Matte, Leather, Prism)
+  - Instant vector cutting file export generated directly upon order checkout
+  - Ultra-fast mobile-first UI with one-click Apple Pay and Google Pay checkout
+- **Key Features**:
+  - *360° Real-Time 3D Visualizer*: Rotate, zoom, and inspect wraps under realistic virtual studio lighting.
+  - *Multi-Zone Customization*: Customize back panel, camera module, and frame with contrasting colors.
+  - *Dynamic Model Selector*: Instant switching across Apple, Samsung, Google, and OnePlus devices.
+  - *One-Click Fast Checkout*: Accelerated mobile checkout with Apple Pay, Google Pay, and Klarna financing.
+- **The Result**: SkinKin achieved viral social media adoption and record DTC conversion rates through its game-changing interactive 3D product visualizer.
+  - +68% boost in mobile conversion rates after 3D customizer launch
+  - -45% reduction in customer support inquiries regarding fit and appearance
+  - 3.2 minutes average time spent engaging with the 3D skin builder
+  - Over 100,000+ bespoke device wraps customized and shipped worldwide
+
 ### [Three.js 3D Product Customizer WebGL](https://anonsoft.in/projects/impakto)
 How we built an interactive, high-performance 3D e-commerce configurator using Three.js and WebGL.
 
@@ -300,6 +534,32 @@ How we built an interactive, high-performance 3D e-commerce configurator using T
   - 24% reduction in post-sale product returns
   - Sub-2s initial 3D canvas loading on 4G connections
   - 60 FPS smooth rendering performance on mobile browsers
+
+### [Vitasave Canada — High-Volume Health & Wellness Omnichannel Storefront](https://anonsoft.in/projects/vitasave-canada)
+How Anonsoft engineered high-converting Shopify Plus features, subscriptions, and lightning-fast search for Vitasave Canada.
+
+- **Technology Stack**: Shopify Plus, Liquid, JavaScript, GraphQL, ReCharge, Algolia, Tailwind CSS
+- **The Problem**: As one of Canada's premier natural health retailers with thousands of SKUs (vitamins, supplements, superfoods), Vitasave required Shopify Plus development Canada to eliminate mobile friction, boost recurring subscription revenue, and deliver instant search filtering across hundreds of wellness brands.
+  - Slow mobile catalog filtering resulting in abandoned shopping carts
+  - High churn on legacy supplement subscription and replenishment programs
+  - Complex multi-warehouse inventory syncing across retail locations and fulfillment centers
+  - Need to display rich nutritional facts, allergen badges, and verified customer reviews
+- **Our Solution**: We deployed an ultra-optimized supplement e-commerce platform with bespoke Shopify Plus liquid architecture, instant Algolia search discovery, seamless ReCharge subscription integration, and conversion-engineered product display pages.
+  - Frictionless Subscribe and Save recurring delivery flow with self-service customer portal
+  - Sub-50ms instant search and faceted filtering by dietary need (Keto, Vegan, Gluten-Free)
+  - High-converting mobile slide-out cart with tiered free-shipping progress triggers
+  - Dynamic ingredient disclosure and third-party laboratory verification badge displays
+  - Omnichannel rewards loyalty program integrated across digital and physical storefronts
+- **Key Features**:
+  - *Subscribe & Save Engine*: Flexible 30, 60, or 90-day automated supplement replenishments with easy pause.
+  - *Instant Dietary Search*: Instant predictive search filtered by certified organic, non-GMO, and keto criteria.
+  - *Dynamic Slide Cart*: Cross-sell recommendations and shipping progress bar built directly into the cart drawer.
+  - *Verified Reviews & QA*: Rich customer feedback with verified buyer badges and symptom-specific ratings.
+- **The Result**: Vitasave achieved unprecedented online sales velocity, solidifying its rank as Canada's most trusted digital health and wellness destination.
+  - +32% increase in overall mobile e-commerce conversion rates
+  - +45% growth in recurring monthly Subscribe & Save customer revenue
+  - Sub-1.2s mobile page load speeds across catalog navigation
+  - Over 500,000+ customer orders fulfilled annually with seamless reliability
 
 ### [White-Label Inventory & Billing SaaS](https://anonsoft.in/projects/inventory-billing)
 Deploy a white-label retail billing SaaS and inventory management system. Built for software resellers and multi-warehouse operations.
@@ -394,6 +654,58 @@ Discover Anonsoft School ERP — a campus management platform to streamline admi
   - Deployable in under 4 weeks with full data migration
   - Supports multi-campus and multi-branch operations
 
+### [Whitney Fire Protection District — Municipal Emergency Services & Public Safety Portal](https://anonsoft.in/projects/whitney-fire-protection)
+How Anonsoft developed the official public safety and emergency services portal for the Whitney Fire Protection District.
+
+- **Technology Stack**: WordPress, PHP, JavaScript, Emergency Alert API, WCAG 2.1 AA, Tailwind CSS
+- **The Problem**: In municipal web development and civic emergency services, district residents and commercial property managers require immediate, reliable access to fire prevention codes, emergency burn permits, active incident warnings, and fire station resources. The legacy site lacked mobile responsiveness and critical alert infrastructure.
+  - No emergency alert banner system for red flag warnings or active hazard notifications
+  - Paper-based burn permit applications causing delays for rural property owners
+  - Non-compliance with federal ADA / Section 508 web accessibility regulations
+  - Difficult public access to district board meeting minutes and public financial disclosures
+- **Our Solution**: We engineered a highly accessible civic fire department portal featuring real-time emergency alert broadcasting, digitized online permit filing workflows, station locator directories, and strict WCAG 2.1 AA accessibility compliance.
+  - Real-time emergency broadcast banner with push notification capability
+  - Digital burn permit application and automated approval verification system
+  - Interactive fire station directory and response coverage zone maps
+  - WCAG 2.1 AA compliant design with high-contrast toggles and screen reader support
+  - Comprehensive public records archive with instant PDF document search
+- **Key Features**:
+  - *Emergency Alert Broadcast System*: High-priority banner notification system for weather alerts and fire danger ratings.
+  - *Online Burn Permit Engine*: Automated residential permit generation with weather condition verification.
+  - *Station & Apparatus Directory*: Detailed profiles of district emergency vehicles, equipment, and station crews.
+  - *Full ADA Web Accessibility*: Screen-reader optimized, semantic markup meeting government digital standards.
+- **The Result**: The Whitney Fire Protection District modern portal serves as a trusted, resilient lifeline for the community during critical emergencies and everyday civic safety.
+  - 100% digital transition for seasonal agricultural and residential burn permits
+  - Instant broadcast capability reaching thousands of residents during wildfire warnings
+  - 100% ADA Section 508 compliance rating achieved
+  - +85% reduction in non-emergency phone calls to district dispatchers
+
+### [eStarland — Largest Retro & Modern Gaming E-Commerce & Trade-In Marketplace](https://anonsoft.in/projects/estarland-gaming)
+How Anonsoft engineered scalable e-commerce infrastructure, trade-in valuation engines, and catalog management for eStarland.
+
+- **Technology Stack**: PHP, MySQL, Redis, ElasticSearch, JavaScript, Stripe, Tailwind CSS
+- **The Problem**: In gaming e-commerce platform development, managing over 50,000 vintage and modern gaming products (from NES and Sega to PS5 and Nintendo Switch) requires immense catalog complexity. Customers needed to buy, sell, and trade games with instant automated trade-in valuations and condition-based pricing.
+  - Massive database queries slowing down search across 50,000+ gaming SKUs
+  - Complex condition grading (Mint, Complete in Box, Loose Cartridge) affecting pricing dynamically
+  - Lack of an automated online trade-in value calculator for customer game collections
+  - Heavy bot traffic during rare retro console drops and limited-edition anime releases
+- **Our Solution**: We engineered a high-throughput retro video game marketplace powered by elastic search indexing, a dynamic condition-based pricing engine, instant trade-in value estimators, and bot-resistant checkout queues.
+  - Automated Trade-In Valuation Engine allowing gamers to scan and value their collection
+  - Sub-100ms ElasticSearch catalog search across 40+ console generations
+  - Dynamic inventory state management (New, Pre-Owned, Complete, Cartridge Only)
+  - Advanced rate-limiting and fraud prevention during high-demand collector drops
+  - Integrated Japanese import and anime merchandise preorder reservation system
+- **Key Features**:
+  - *Automated Trade-In Estimator*: Live valuation engine providing instant cash and store credit payouts for trade-ins.
+  - *Console Generation Filters*: Instant drill-down by platform from Atari and SNES to modern next-gen consoles.
+  - *Condition Grading Selector*: Clear visual badges indicating box condition, manual presence, and cartridge wear.
+  - *Restock & Rare Item Alerts*: Automated SMS and email notifications when rare vintage titles return to stock.
+- **The Result**: eStarland solidified its reputation as the premier global gaming marketplace, supporting tens of thousands of daily gaming transactions with rock-solid stability.
+  - +40% increase in online customer trade-in volume through the estimator
+  - Sub-150ms search response time across 50,000+ active game titles
+  - 99.98% uptime during peak holiday and retro gaming sales spikes
+  - Over $10M+ in video game and collectible orders processed smoothly
+
 
 ## All Blog Articles
 
@@ -441,6 +753,7 @@ Discover Anonsoft School ERP — a campus management platform to streamline admi
 - [Building an AI-Powered Anti-Money Laundering (AML) & Real-Time Fraud Detection FinTech SaaS: Graph Neural Networks, Apache Flink Stream Ingestion, Automated FinCEN SAR Generation, and Sanctions Screening (2026)](https://anonsoft.in/blog/ai-powered-anti-money-laundering-aml-fraud-detection-fintech-saas-guide-2026): A comprehensive engineering blueprint for building an enterprise AI-powered Anti-Money Laundering (AML) and real-time transaction monitoring SaaS with Graph Neural Networks, sub-50ms fraud scoring, automated SAR filing, and ISO 20022 compliance in 2026.
 - [Building an AI-Powered Autonomous Cybersecurity SOC & XDR SaaS: eBPF Kernel Telemetry, Agentic Incident Triage, Automated SOAR Playbooks, and MITRE ATT&CK Mapping (2026)](https://anonsoft.in/blog/ai-powered-autonomous-cybersecurity-soc-xdr-saas-guide-2026): An enterprise engineering blueprint for building an AI-native Security Operations Center (SOC) and Extended Detection and Response (XDR) SaaS with eBPF telemetry, sub-second threat scoring, autonomous agentic triage, and automated SOAR orchestration in 2026.
 - [Building an AI-Powered B2B Contract Lifecycle Management (CLM) SaaS: Multi-Agent Redlining, Legal RAG, and ERP Integration (2026)](https://anonsoft.in/blog/ai-powered-b2b-contract-lifecycle-management-clm-saas-guide-2026): An engineering blueprint for building a multi-tenant B2B contract lifecycle management (CLM) SaaS with agentic redlining, OpenXML AST diffing, legal RAG, and automated ERP/CRM synchronization in 2026.
+- [Building an AI-Powered B2B InsurTech & Commercial Underwriting SaaS: ACORD Parsing, Autonomous Loss Run Extraction, Multi-Modal FNOL Claims Adjudication, and Carrier Policy Core Integration (2026) | TodayInTech](https://anonsoft.in/blog/ai-powered-insurtech-commercial-underwriting-claims-saas-guide-2026): An authoritative engineering blueprint for building an enterprise AI-powered InsurTech platform with autonomous ACORD form parsing, loss run analytics, multi-modal FNOL claims triage, catastrophe risk modeling, and Guidewire/Duck Creek core integration in 2026.
 - [Building an AI-Powered Behavioral Health & Mental Health Telehealth SaaS: HIPAA-Compliant WebRTC, Automated SOAP/DAP Clinical Scribing, Measurement-Based Care, and Insurance Superbill Billing (2026)](https://anonsoft.in/blog/ai-powered-behavioral-health-telehealth-saas-guide-2026): An in-depth engineering blueprint for building an enterprise multi-tenant AI Behavioral Health & Mental Health Telehealth SaaS platform with HIPAA WebRTC video, automated SOAP/DAP clinical scribing, measurement-based care, and insurance superbills in 2026.
 - [Building an AI-Powered Clinical Trial Matching & Patient Recruitment SaaS: FHIR R4 Ingestion, LLM Protocol Parsing, Vector Search, and FDA 21 CFR Part 11 Compliance (2026)](https://anonsoft.in/blog/ai-powered-clinical-trial-matching-patient-recruitment-saas-guide-2026): An authoritative engineering blueprint for building an AI-powered clinical trial matching and patient recruitment SaaS with HL7 FHIR ingestion, unstructured protocol NLP, sub-second cohort vector search, and FDA 21 CFR Part 11 validation in 2026.
 - [Building an AI-Powered Cloud POS & Self-Ordering Kiosk SaaS: Architecture, Offline-First Sync, and Multi-Location Franchises (2026)](https://anonsoft.in/blog/ai-powered-cloud-pos-self-ordering-kiosk-saas-guide-2026): An engineering blueprint for building a multi-tenant cloud POS and self-ordering kiosk SaaS with offline-first CRDT sync, IoT payment gateway abstraction, and real-time AI inventory orchestration in 2026.
@@ -448,8 +761,10 @@ Discover Anonsoft School ERP — a campus management platform to streamline admi
 - [Building an AI-Powered Embedded B2B Payments & Multi-Bank Treasury SaaS: Architecture, FedNow / RTP Rails, and Real-Time Reconciliation (2026)](https://anonsoft.in/blog/ai-powered-b2b-treasury-embedded-payments-saas-guide-2026): An engineering blueprint for building a multi-tenant B2B embedded payments and multi-bank treasury management SaaS with instant FedNow/RTP rails, double-entry ledgers, and AI reconciliation in 2026.
 - [Building an AI-Powered Field Service Management (FSM) SaaS: Autonomous Dispatching, Computer Vision Diagnostics, Offline Mobile Architecture, and Dynamic Route Optimization (2026)](https://anonsoft.in/blog/ai-powered-field-service-management-fsm-saas-guide-2026): An engineering blueprint for building a high-scale, multi-tenant AI Field Service Management (FSM) SaaS with constraint-based autonomous dispatching, edge computer vision diagnostics, offline-first mobile sync, and live IoT telematics in 2026.
 - [Building an AI-Powered Fleet Management & Smart Telematics SaaS: Real-Time GPS Tracking, OBD-II/CAN-Bus Telemetry Ingestion, AI Video Dashcam Safety, ELD/HOS Compliance, and Dynamic Route Optimization (2026)](https://anonsoft.in/blog/ai-powered-fleet-management-telematics-saas-guide-2026): An in-depth technical engineering blueprint for building an enterprise multi-tenant AI Fleet Management & Telematics SaaS platform with real-time MQTT telemetry, OBD-II/J1939 CAN-bus parsing, AI video dashcam edge analytics, FMCSA ELD compliance, and vehicle routing optimization in 2026.
+- [Building an AI-Powered Global Supply Chain Visibility & Intelligent Freight Logistics SaaS: IoT Telematics, Dynamic Route Optimization, Autonomous Bill of Lading OCR, and EDI 204/214 Integration (2026) | TodayInTech](https://anonsoft.in/blog/ai-powered-supply-chain-freight-logistics-saas-guide-2026): An authoritative engineering blueprint for building an enterprise AI-powered supply chain visibility and freight logistics SaaS with real-time IoT telematics, dynamic multi-modal route optimization, autonomous bill of lading OCR, and EDI carrier integrations in 2026.
 - [Building an AI-Powered Healthcare Revenue Cycle Management (RCM) & Autonomous Claims Adjudication SaaS: Autonomous Medical Coding, Real-Time ANSI 837/835 EDI Pipelines, Predictive Denial Prevention, and Appeal Agents (2026)](https://anonsoft.in/blog/ai-powered-healthcare-revenue-cycle-management-rcm-saas-guide-2026): An in-depth engineering blueprint for building a HIPAA-compliant AI Revenue Cycle Management (RCM) SaaS platform with autonomous clinical coding, ANSI 837/835 EDI clearinghouse engines, ML denial prediction, and autonomous appeal agents in 2026.
 - [Building an AI-Powered Home Care Agency SaaS & EVV Platform: GPS Geofencing, Smart Caregiver Scheduling, and Medicaid Billing Architecture (2026)](https://anonsoft.in/blog/ai-powered-home-care-agency-software-gps-evv-scheduling-saas-guide-2026): An engineering blueprint for building a multi-tenant B2B Home Care Agency SaaS and 21st Century Cures Act compliant EVV platform with GPS geofencing, AI shift-matching, and automated Medicaid billing in 2026.
+- [Building an AI-Powered Hotel Property Management System (PMS) & Channel Manager SaaS: Dynamic Revenue Yield Optimization, Contactless Mobile Key IoT, Multi-OTA Two-Way Sync, and Autonomous Guest Concierge (2026) | TodayInTech](https://anonsoft.in/blog/ai-powered-hotel-property-management-system-pms-saas-guide-2026): An exhaustive engineering blueprint for building an enterprise AI-powered Hotel PMS and Channel Manager SaaS featuring dynamic pricing reinforcement learning, 2-way OTA sync, mobile key IoT access, and AI guest concierges in 2026.
 - [Building an AI-Powered Laboratory Information Management System (LIMS) & Clinical Diagnostics SaaS: Automated Sample Tracking (2D Barcode/RFID), Instrument Bi-Directional ASTM/HL7 Interfaces, FDA 21 CFR Part 11 Compliance, and AI Pathology Triage (2026)](https://anonsoft.in/blog/ai-powered-laboratory-information-management-system-lims-saas-guide-2026): An in-depth technical engineering blueprint for building an enterprise multi-tenant AI Laboratory Information Management System (LIMS) and Clinical Diagnostics SaaS with ASTM/HL7 instrument interfacing, 2D cryogenic sample tracking, FDA 21 CFR Part 11 audit trails, and automated digital pathology triage in 2026.
 - [Building an AI-Powered Multi-Warehouse Inventory & Supply Chain Demand Forecasting SaaS: Real-Time Stock Sync, ML Prediction, and ERP Integration (2026)](https://anonsoft.in/blog/ai-powered-multi-warehouse-inventory-demand-forecasting-saas-guide-2026): An engineering blueprint for building a multi-tenant, multi-warehouse inventory management SaaS with real-time WebSocket stock synchronization, ML demand forecasting, automated PO reordering, and multi-channel ERP integration in 2026.
 - [Building an AI-Powered Real-Time Voice Agent & Autonomous Customer Support SaaS: WebSockets, Sub-300ms Audio Pipelines, Knowledge Graph RAG, and CRM Orchestration (2026)](https://anonsoft.in/blog/ai-powered-real-time-voice-agent-customer-support-saas-guide-2026): An engineering blueprint for building an enterprise-grade AI voice agent SaaS with bidirectional WebSockets, sub-300ms STT/TTS streaming, turn detection, knowledge RAG, and CRM telephony orchestration in 2026.
