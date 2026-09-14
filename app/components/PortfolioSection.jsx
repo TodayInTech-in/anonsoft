@@ -53,14 +53,6 @@ export default function PortfolioSection() {
       tech: ['Three.js', 'WebGL', 'Draco Loader', 'Vercel']
     },
     {
-      slug: 'casino-blackjack-game',
-      category: 'HTML5 Canvas / Game Dev',
-      title: 'Casino Game Dev & White-Label Blackjack Software',
-      description: 'Partner with a custom casino game development company to launch a custom online casino game engine or white-label blackjack software under your brand.',
-      image: '/assets/project-casino.png',
-      tech: ['HTML5 Canvas', 'Web Audio API', 'JavaScript', 'Vercel']
-    },
-    {
       slug: 'mednowna',
       category: 'HIPAA Telehealth SaaS',
       title: 'HIPAA-Compliant Telemedicine App Developer & White-Label Telehealth Platform',
@@ -115,6 +107,102 @@ export default function PortfolioSection() {
       description: 'The ultimate pocket AI assistant powered by GPT-4 and Claude 3.5. Features a viral script writer, translation assistant, coding tool, and conversational AI chatbot.',
       image: '/assets/project-master-ai.png',
       tech: ['Flutter / Dart', 'GPT-4 API', 'Claude 3.5', 'Node.js']
+    },
+    {
+      slug: 'heizleisten-hamburg.html',
+      category: 'CleanTech & Smart Heating',
+      title: 'Sustainable Heating Systems Web Development & Custom HVAC Calculator',
+      description: 'Deploy energy-efficient radiant heating web platforms, room thermal dimension sizing calculators, and automated quotation dispatch engines for clean energy manufacturers.',
+      image: '/assets/project/heizleisten-hamburg.png',
+      tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Interactive SVG']
+    },
+    {
+      slug: 'engine-pro-solutions.html',
+      category: 'Automotive SaaS & Parts Portal',
+      title: 'High-Performance Engine Builder Software & Machine Shop Parts Portal',
+      description: 'Engineer custom automotive SaaS platforms with dynamic spec sheet builders, clearance tolerance calculators, and multi-distributor parts inventory integration.',
+      image: '/assets/project/engine-pro-solutions.png',
+      tech: ['React', 'TypeScript', 'Node.js', 'PostgreSQL']
+    },
+    {
+      slug: 'liquid-edge-financial.html',
+      category: 'FinTech & Asset Management',
+      title: 'Institutional Wealth Advisory Portal & FinTech Capital Management App',
+      description: 'Build bank-grade wealth management platforms featuring interactive asset allocation models, automated risk profiling questionnaires, and secure investor consultation funnels.',
+      image: '/assets/project/liquid-edge-financial.png',
+      tech: ['React', 'Next.js', 'Chart.js', 'Tailwind CSS']
+    },
+    {
+      slug: 'pack-n-bag.html',
+      category: 'B2B E-Commerce & Packaging',
+      title: 'Custom Packaging E-Commerce Configurator & B2B Print-on-Demand Shop',
+      description: 'Develop interactive custom bag and packaging configurators with live 3D logo preview, CMYK preflight validation, tiered bulk pricing, and automated European VAT invoicing.',
+      image: '/assets/project/pack-n-bag.png',
+      tech: ['Vue.js', 'PHP', 'WebGL Canvas', 'WooCommerce']
+    },
+    {
+      slug: 'guernsey-construction-awards.html',
+      category: 'Events & Industry Awards',
+      title: 'Property & Construction Awards Platform with Secure Nomination & Voting',
+      description: 'Create prestige industry awards platforms featuring multi-category portfolio submissions, fraud-proof public voting verification, and premier sponsor showcase hubs.',
+      image: '/assets/project/guernsey-construction-awards.png',
+      tech: ['WordPress', 'PHP', 'JavaScript', 'MySQL']
+    },
+    {
+      slug: 'vitasave-canada.html',
+      category: 'Shopify Plus & HealthTech',
+      title: 'Enterprise Shopify Plus Development & Supplement Subscription Store',
+      description: 'Scale multi-million dollar health and wellness e-commerce storefronts with frictionless Subscribe & Save recurring orders, sub-50ms faceted search, and conversion slide carts.',
+      image: '/assets/project/vitasave-canada.png',
+      tech: ['Shopify Plus', 'Liquid', 'ReCharge', 'Algolia']
+    },
+    {
+      slug: 'gorsia-design.html',
+      category: 'Luxury Architecture & Interior',
+      title: 'Ultra-Luxury Interior Design Portfolio & Editorial Architectural Showcase',
+      description: 'Craft cinematic high-end design studio portfolios with buttery 60fps GSAP smooth scrolling, 4K WebP image delivery, and private VIP client proposal presentation suites.',
+      image: '/assets/project/gorsia-design.png',
+      tech: ['Next.js', 'GSAP', 'Tailwind CSS', 'Sanity CMS']
+    },
+    {
+      slug: 'whitney-fire-protection.html',
+      category: 'Civic & Emergency Services',
+      title: 'Municipal Fire Department Website & Emergency Public Safety Alert Portal',
+      description: 'Deploy accessible municipal emergency web portals with real-time hazard broadcast banners, automated online burn permit workflows, and full WCAG 2.1 AA compliance.',
+      image: '/assets/project/whitney-fire-protection.png',
+      tech: ['WordPress', 'PHP', 'WCAG 2.1 AA', 'Tailwind CSS']
+    },
+    {
+      slug: 'estarland-gaming.html',
+      category: 'Gaming & E-Commerce',
+      title: 'Retro Video Game E-Commerce Marketplace & Automated Trade-In Engine',
+      description: 'Architect large-scale gaming commerce platforms with automated trade-in value estimators, 50,000+ SKU ElasticSearch indexing, and dynamic condition grading systems.',
+      image: '/assets/project/estarland-gaming.png',
+      tech: ['PHP / MySQL', 'ElasticSearch', 'Redis', 'JavaScript']
+    },
+    {
+      slug: 'skinkin-mobile-skins.html',
+      category: '3D WebGL / DTC E-Commerce',
+      title: 'Interactive 3D Smartphone Skin Customizer & DTC Vinyl Storefront',
+      description: 'Build 360-degree real-time 3D product visualizers with WebGL shader textures, multi-zone skin customization, and automated vector cut-file export for direct manufacturing.',
+      image: '/assets/project/skinkin-mobile-skins.png',
+      tech: ['Three.js', 'WebGL', 'React', 'Shopify API']
+    },
+    {
+      slug: 'easyfamily-haus.html',
+      category: 'Prefab Construction & Architecture',
+      title: 'Prefab Timber Home Configurator & Sustainable Modular House Platform',
+      description: 'Develop interactive German modular home visualizers with zoomable floorplan inspection, KfW government eco-subsidy calculators, and factory visit appointment funnels.',
+      image: '/assets/project/easyfamily-haus.png',
+      tech: ['Next.js', 'TypeScript', 'Interactive Canvas', 'Tailwind CSS']
+    },
+    {
+      slug: 'alliance-jiujitsu-boise.html',
+      category: 'Martial Arts & Fitness',
+      title: 'Brazilian Jiu-Jitsu Academy Website & Automated Class Schedule Funnel',
+      description: 'Launch high-converting fitness and martial arts academy platforms with dynamic weekly class schedules, 1-click free trial booking funnels, and automated member onboarding.',
+      image: '/assets/project/alliance-jiujitsu-boise.png',
+      tech: ['Next.js', 'Tailwind CSS', 'Mindbody API', 'TypeScript']
     }
   ];
 
@@ -142,7 +230,7 @@ export default function PortfolioSection() {
         <div className="section-header">
           <div className="section-label">Selected Case Studies</div>
           <h2 className="section-title">Battle-Tested Digital Products</h2>
-          <p className="section-subtitle">Explore all 13 battle-tested white-label SaaS, HealthTech, and AI platforms built by Anonsoft.</p>
+          <p className="section-subtitle">Explore all 24 battle-tested white-label SaaS, HealthTech, and AI platforms built by Anonsoft.</p>
         </div>
 
         <div className="portfolio-grid">
