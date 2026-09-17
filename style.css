@@ -1990,6 +1990,216 @@ html.light-mode .trust-certifications {
     padding-left: 4px;
 }
 
+/* ===== CLIENT TICKER ===== */
+.client-ticker-section {
+    padding: 70px 0 60px;
+    overflow: hidden;
+}
+
+.client-ticker-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.client-ticker-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-top: 8px;
+}
+
+/* Full-width ticker strip */
+.client-ticker-outer {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    border-top: 1px solid var(--border-glass);
+    border-bottom: 1px solid var(--border-glass);
+    padding: 36px 0;
+}
+
+/* Fade edges */
+.client-ticker-fade {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 160px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.client-ticker-fade-left {
+    left: 0;
+    background: linear-gradient(to right, var(--bg-dark, #0a0a0f) 0%, transparent 100%);
+}
+
+.client-ticker-fade-right {
+    right: 0;
+    background: linear-gradient(to left, var(--bg-dark, #0a0a0f) 0%, transparent 100%);
+}
+
+/* Scrolling track — pure CSS animation */
+.client-ticker-track {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    width: max-content;
+    animation: clientTicker 22s linear infinite;
+}
+
+.client-ticker-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes clientTicker {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Each client item */
+.client-ticker-item {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-shrink: 0;
+}
+
+.client-ticker-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.client-ticker-meta strong {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    white-space: nowrap;
+}
+
+.client-ticker-meta span {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+
+/* Separator star */
+.client-ticker-sep {
+    font-size: 0.6rem;
+    color: var(--primary);
+    opacity: 0.5;
+    flex-shrink: 0;
+}
+
+/* eplatforms logo */
+.client-logo-eplatforms {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.ep-diamond-stack {
+    position: relative;
+    width: 44px;
+    height: 48px;
+    flex-shrink: 0;
+}
+
+.ep-d {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    border-radius: 9px;
+    transform: rotate(45deg);
+    left: 5px;
+}
+
+.ep-d1 { background: #2D6FDB; top: 0; }
+.ep-d2 { background: #4CAF50; top: 9px; }
+.ep-d3 { background: #F5A623; top: 18px; }
+
+.ep-wordmark {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #2D6FDB;
+    letter-spacing: -0.04em;
+    font-family: var(--font-display);
+    white-space: nowrap;
+}
+
+/* Orange Digital logo */
+.client-logo-orange-digital {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    font-family: var(--font-display);
+    line-height: 1;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.od-orange { color: #FF6B00; }
+.od-black  { color: var(--text-primary); }
+
+.footer-trust {
+    padding: 32px 0;
+    border-top: 1px solid var(--border-glass);
+    margin-bottom: 0;
+}
+
+.footer-trust-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+.trust-badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 18px;
+    background: var(--bg-glass);
+    border: 1px solid var(--border-glass);
+    border-radius: var(--radius-sm);
+    transition: var(--transition-normal);
+    cursor: default;
+}
+
+.trust-badge:hover {
+    border-color: var(--primary);
+    background: rgba(var(--primary-rgb, 99, 102, 241), 0.08);
+    transform: translateY(-2px);
+}
+
+.trust-badge-icon {
+    font-size: 1.25rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.trust-badge-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.trust-badge-title {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+}
+
+.trust-badge-sub {
+    font-size: 0.68rem;
+    color: var(--text-muted);
+    line-height: 1.2;
+}
+
 .footer-bottom {
     padding-top: 30px;
     border-top: 1px solid var(--border-glass);
@@ -2379,6 +2589,16 @@ html.light-mode .trust-certifications {
     .footer-grid {
         grid-template-columns: 1fr;
         gap: 32px;
+    }
+
+    .footer-trust-badges {
+        gap: 8px;
+    }
+
+    .trust-badge {
+        padding: 8px 14px;
+        flex: 1 1 calc(50% - 8px);
+        min-width: 140px;
     }
 
     .footer-bottom {
