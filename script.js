@@ -231,7 +231,8 @@ function closeBookingModal() {
 }
 
 // Close modal on overlay click
-document.getElementById('bookingModal').addEventListener('click', (e) => {
+const _bookingModal = document.getElementById('bookingModal');
+if (_bookingModal) _bookingModal.addEventListener('click', (e) => {
     if (e.target === e.currentTarget) {
         closeBookingModal();
     }
@@ -1398,7 +1399,7 @@ function initLeadMagnet() {
         submitBtn.textContent = 'Sending...';
 
         try {
-            const response = await fetch('https://tt-api.anonsoft.in/api/leads', {
+            const response = await fetch('https://tt-api.anonsoft.com/api/leads', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -1495,36 +1496,28 @@ async function handleAeoScan(e) {
         let hasGoodMarkdown = false;
         let hasAiBotDirectives = true;
 
-        const isTodayInTech = domain === 'anonsoft.com' || domain === 'www.anonsoft.com' || domain === 'anonsoft.in' || domain === 'www.anonsoft.in' || domain === window.location.hostname;
-
-        if (isTodayInTech) {
-            // Direct internal fetch
-            try {
-                const res = await fetch('/llms.txt');
-                if (res.ok) {
-                    llmsTxtContent = await res.text();
-                    hasLlmsTxt = llmsTxtContent.includes('#') || llmsTxtContent.length > 20;
-                }
-                const resFull = await fetch('/llms-full.txt');
-                if (resFull.ok) {
-                    hasLlmsFull = true;
-                }
-            } catch (err) {
-                console.warn('Local check fallback', err);
-                hasLlmsTxt = true;
-                hasLlmsFull = true;
-            }
-        } else {
-            // Try fetching via CORS proxies with fallback
+        // Use server-side API to avoid CORS issues and get accurate results
+        try {
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 12000);
+            const apiRes = await fetch(`/api/aeo-check?domain=${encodeURIComponent(domain)}`, { signal: controller.signal });
+            clearTimeout(timeoutId);
+            if (!apiRes.ok) throw new Error('API ' + apiRes.status);
+            const data = await apiRes.json();
+            hasLlmsTxt = !!data.llmsTxt;
+            hasLlmsFull = !!data.llmsFull;
+            llmsTxtContent = data.llmsTxtContent || '';
+            hasAiBotDirectives = data.hasAiBotAccess !== false;
+        } catch (apiErr) {
+            // API unavailable — fallback to CORS proxies
             const proxyUrls = [
                 `https://api.allorigins.win/raw?url=${encodeURIComponent('https://' + domain + '/llms.txt')}`,
                 `https://corsproxy.io/?url=${encodeURIComponent('https://' + domain + '/llms.txt')}`
             ];
-
             for (const pUrl of proxyUrls) {
                 try {
                     const controller = new AbortController();
-                    const timeoutId = setTimeout(() => controller.abort(), 3500);
+                    const timeoutId = setTimeout(() => controller.abort(), 5000);
                     const res = await fetch(pUrl, { signal: controller.signal });
                     clearTimeout(timeoutId);
                     if (res.ok) {
@@ -1535,24 +1528,19 @@ async function handleAeoScan(e) {
                             break;
                         }
                     }
-                } catch (pErr) {
-                    // continue to next proxy or fallback
-                }
+                } catch (_) {}
             }
-
-            // Check llms-full if llms.txt found
             if (hasLlmsTxt) {
                 try {
                     const fullProxy = `https://api.allorigins.win/raw?url=${encodeURIComponent('https://' + domain + '/llms-full.txt')}`;
                     const resFull = await fetch(fullProxy);
                     if (resFull.ok) {
                         const txtFull = await resFull.text();
-                        if (txtFull && !txtFull.includes('<!DOCTYPE html>')) {
-                            hasLlmsFull = true;
-                        }
+                        if (txtFull && !txtFull.includes('<!DOCTYPE html>')) hasLlmsFull = true;
                     }
-                } catch (fErr) {}
+                } catch (_) {}
             }
+            hasAiBotDirectives = true; // can't check without server-side access
         }
 
         // Step 2: Validate Markdown Structure
