@@ -375,7 +375,7 @@ def clean_url_ext(url):
 # ─────────────────────────────────────────────────────────────────────────────
 
 def generate_llms_files(root_dir):
-    domain = "https://anonsoft.in"
+    domain = "https://anonsoft.com"
 
     core_pages = []
     projects = []

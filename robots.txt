@@ -5,7 +5,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://anonsoft.in/sitemap.xml
+Sitemap: https://anonsoft.com/sitemap.xml
 
 # Crawl-delay: 1
 

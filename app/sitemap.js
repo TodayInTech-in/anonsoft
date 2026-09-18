@@ -2,7 +2,7 @@ import { getAllBlogs } from './lib/blogs';
 import { getAllProjects } from './lib/projects';
 
 export default async function sitemap() {
-  const baseUrl = 'https://anonsoft.in';
+  const baseUrl = 'https://anonsoft.com';
 
   const coreRoutes = [
     '',

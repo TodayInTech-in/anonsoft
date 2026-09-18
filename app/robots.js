@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://anonsoft.in/sitemap.xml',
+    sitemap: 'https://anonsoft.com/sitemap.xml',
   };
 }

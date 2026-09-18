@@ -2,114 +2,114 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Anonsoft Blog</title>
-    <link>https://anonsoft.in</link>
+    <link>https://anonsoft.com</link>
     <description>Latest custom software engineering, virtual care compliance, and product builder insights from Anonsoft.</description>
     <language>en-us</language>
-    <atom:link href="https://anonsoft.in/public/feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://anonsoft.com/public/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Building an AI-Powered Hotel Property Management System (PMS) &amp; Channel Manager SaaS: Dynamic Revenue Yield Optimization, Contactless Mobile Key IoT, Multi-OTA Two-Way Sync, and Autonomous Guest Concierge (2026)</title>
-      <link>https://anonsoft.in/blog/ai-powered-hotel-property-management-system-pms-saas-guide-2026</link>
+      <link>https://anonsoft.com/blog/ai-powered-hotel-property-management-system-pms-saas-guide-2026</link>
       <description>An exhaustive engineering blueprint for building an enterprise AI-powered Hotel PMS and Channel Manager SaaS featuring dynamic pricing reinforcement learning, 2-way OTA sync, mobile key IoT access, and AI guest concierges in 2026.</description>
       <pubDate>Sat, 12 Sep 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://anonsoft.in/blog/ai-powered-hotel-property-management-system-pms-saas-guide-2026</guid>
+      <guid isPermaLink="true">https://anonsoft.com/blog/ai-powered-hotel-property-management-system-pms-saas-guide-2026</guid>
     </item>
     <item>
       <title>Building an AI-Powered B2B InsurTech &amp; Commercial Underwriting SaaS: ACORD Parsing, Autonomous Loss Run Extraction, Multi-Modal FNOL Claims Adjudication, and Carrier Policy Core Integration (2026)</title>
-      <link>https://anonsoft.in/blog/ai-powered-insurtech-commercial-underwriting-claims-saas-guide-2026</link>
+      <link>https://anonsoft.com/blog/ai-powered-insurtech-commercial-underwriting-claims-saas-guide-2026</link>
       <description>An authoritative engineering blueprint for building an enterprise AI-powered InsurTech platform with autonomous ACORD form parsing, loss run analytics, multi-modal FNOL claims triage, catastrophe risk modeling, and Guidewire/Duck Creek core integration in 2026.</description>
       <pubDate>Fri, 11 Sep 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://anonsoft.in/blog/ai-powered-insurtech-commercial-underwriting-claims-saas-guide-2026</guid>
+      <guid isPermaLink="true">https://anonsoft.com/blog/ai-powered-insurtech-commercial-underwriting-claims-saas-guide-2026</guid>
     </item>
     <item>
       <title>Building an AI-Powered Global Supply Chain Visibility &amp; Intelligent Freight Logistics SaaS: IoT Telematics, Dynamic Route Optimization, Autonomous Bill of Lading OCR, and EDI 204/214 Integration (2026)</title>
-      <link>https://anonsoft.in/blog/ai-powered-supply-chain-freight-logistics-saas-guide-2026</link>
+      <link>https://anonsoft.com/blog/ai-powered-supply-chain-freight-logistics-saas-guide-2026</link>
       <description>An authoritative engineering blueprint for building an enterprise AI-powered supply chain visibility and freight logistics SaaS with real-time IoT telematics, dynamic multi-modal route optimization, autonomous bill of lading OCR, and EDI carrier integrations in 2026.</description>
       <pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://anonsoft.in/blog/ai-powered-supply-chain-freight-logistics-saas-guide-2026</guid>
+      <guid isPermaLink="true">https://anonsoft.com/blog/ai-powered-supply-chain-freight-logistics-saas-guide-2026</guid>
     </item>
     <item>
       <title>Building an AI-Powered Clinical Trial Matching &amp; Patient Recruitment SaaS: FHIR R4 Ingestion, LLM Protocol Parsing, Vector Search, and FDA 21 CFR Part 11 Compliance (2026)</title>
-      <link>https://anonsoft.in/blog/ai-powered-clinical-trial-matching-patient-recruitment-saas-guide-2026</link>
+      <link>https://anonsoft.com/blog/ai-powered-clinical-trial-matching-patient-recruitment-saas-guide-2026</link>
       <description>An authoritative engineering blueprint for building an AI-powered clinical trial matching and patient recruitment SaaS with HL7 FHIR ingestion, unstructured protocol NLP, sub-second cohort vector search, and FDA 21 CFR Part 11 validation in 2026.</description>
       <pubDate>Wed, 09 Sep 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://anonsoft.in/blog/ai-powered-clinical-trial-matching-patient-recruitment-saas-guide-2026</guid>
+      <guid isPermaLink="true">https://anonsoft.com/blog/ai-powered-clinical-trial-matching-patient-recruitment-saas-guide-2026</guid>
     </item>
     <item>
       <title>Building an AI-Powered Restaurant Voice Ordering, Offline-First Cloud POS &amp; Kitchen Display System (KDS) SaaS: Real-Time WebSockets, Edge Sync, and Multi-Outlet Kitchen Automation (2026)</title>
-      <link>https://anonsoft.in/blog/ai-powered-restaurant-voice-ordering-kds-pos-saas-guide-2026</link>
+      <link>https://anonsoft.com/blog/ai-powered-restaurant-voice-ordering-kds-pos-saas-guide-2026</link>
       <description>The definitive 2026 engineering guide to building an enterprise AI-powered restaurant cloud POS, drive-thru voice ordering agent, and real-time Kitchen Display System (KDS) SaaS with offline-first CRDT sync, WebSockets, and multi-tenant restaurant ERP.</description>
       <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://anonsoft.in/blog/ai-powered-restaurant-voice-ordering-kds-pos-saas-guide-2026</guid>
+      <guid isPermaLink="true">https://anonsoft.com/blog/ai-powered-restaurant-voice-ordering-kds-pos-saas-guide-2026</guid>
     </item>
     <item>
       <title>Building an AI-Powered Autonomous Cybersecurity SOC &amp; XDR SaaS: eBPF Kernel Telemetry, Agentic Incident Triage, Automated SOAR Playbooks, and MITRE ATT&amp;CK Mapping (2026)</title>
-      <link>https://anonsoft.in/blog/ai-powered-autonomous-cybersecurity-soc-xdr-saas-guide-2026</link>
+      <link>https://anonsoft.com/blog/ai-powered-autonomous-cybersecurity-soc-xdr-saas-guide-2026</link>
       <description>An enterprise engineering blueprint for building an AI-native Security Operations Center (SOC) and Extended Detection and Response (XDR) SaaS with eBPF telemetry, sub-second threat scoring, autonomous agentic triage, and automated SOAR orchestration in 2026.</description>
       <pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://anonsoft.in/blog/ai-powered-autonomous-cybersecurity-soc-xdr-saas-guide-2026</guid>
+      <guid isPermaLink="true">https://anonsoft.com/blog/ai-powered-autonomous-cybersecurity-soc-xdr-saas-guide-2026</guid>
     </item>
     <item>
       <title>Building an AI-Powered Anti-Money Laundering (AML) &amp; Real-Time Fraud Detection FinTech SaaS: Graph Neural Networks, Apache Flink Stream Ingestion, Automated FinCEN SAR Generation, and Sanctions Screening (2026)</title>
-      <link>https://anonsoft.in/blog/ai-powered-anti-money-laundering-aml-fraud-detection-fintech-saas-guide-2026</link>
+      <link>https://anonsoft.com/blog/ai-powered-anti-money-laundering-aml-fraud-detection-fintech-saas-guide-2026</link>
       <description>A comprehensive engineering blueprint for building an enterprise AI-powered Anti-Money Laundering (AML) and real-time transaction monitoring SaaS with Graph Neural Networks, sub-50ms fraud scoring, automated SAR filing, and ISO 20022 compliance in 2026.</description>
       <pubDate>Sun, 06 Sep 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://anonsoft.in/blog/ai-powered-anti-money-laundering-aml-fraud-detection-fintech-saas-guide-2026</guid>
+      <guid isPermaLink="true">https://anonsoft.com/blog/ai-powered-anti-money-laundering-aml-fraud-detection-fintech-saas-guide-2026</guid>
     </item>
     <item>
       <title>Building an AI-Powered Dental Practice Management System (PMS) &amp; Teledentistry SaaS: Computer Vision Radiography, Automated CDT Insurance Billing, and Cloud Odontograms (2026)</title>
-      <link>https://anonsoft.in/blog/ai-powered-dental-practice-management-radiology-saas-guide-2026</link>
+      <link>https://anonsoft.com/blog/ai-powered-dental-practice-management-radiology-saas-guide-2026</link>
       <description>An in-depth engineering blueprint for building an enterprise multi-tenant AI Dental Practice Management SaaS with computer vision X-ray analysis, automated ADA CDT coding, 3D interactive odontograms, and HIPAA-compliant teledentistry in 2026.</description>
       <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://anonsoft.in/blog/ai-powered-dental-practice-management-radiology-saas-guide-2026</guid>
+      <guid isPermaLink="true">https://anonsoft.com/blog/ai-powered-dental-practice-management-radiology-saas-guide-2026</guid>
     </item>
     <item>
       <title>Building an AI-Powered Behavioral Health &amp; Mental Health Telehealth SaaS: HIPAA-Compliant WebRTC, Automated SOAP/DAP Clinical Scribing, Measurement-Based Care, and Insurance Superbill Billing (2026)</title>
-      <link>https://anonsoft.in/blog/ai-powered-behavioral-health-telehealth-saas-guide-2026</link>
+      <link>https://anonsoft.com/blog/ai-powered-behavioral-health-telehealth-saas-guide-2026</link>
       <description>An in-depth engineering blueprint for building an enterprise multi-tenant AI Behavioral Health &amp; Mental Health Telehealth SaaS platform with HIPAA WebRTC video, automated SOAP/DAP clinical scribing, measurement-based care, and insurance superbills in 2026.</description>
       <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://anonsoft.in/blog/ai-powered-behavioral-health-telehealth-saas-guide-2026</guid>
+      <guid isPermaLink="true">https://anonsoft.com/blog/ai-powered-behavioral-health-telehealth-saas-guide-2026</guid>
     </item>
     <item>
       <title>Building an AI-Powered Laboratory Information Management System (LIMS) &amp; Clinical Diagnostics SaaS: Automated Sample Tracking (2D Barcode/RFID), Instrument Bi-Directional ASTM/HL7 Interfaces, FDA 21 CFR Part 11 Compliance, and AI Pathology Triage (2026)</title>
-      <link>https://anonsoft.in/blog/ai-powered-laboratory-information-management-system-lims-saas-guide-2026</link>
+      <link>https://anonsoft.com/blog/ai-powered-laboratory-information-management-system-lims-saas-guide-2026</link>
       <description>An in-depth technical engineering blueprint for building an enterprise multi-tenant AI Laboratory Information Management System (LIMS) and Clinical Diagnostics SaaS with ASTM/HL7 instrument interfacing, 2D cryogenic sample tracking, FDA 21 CFR Part 11 audit trails, and automated digital pathology triage in 2026.</description>
       <pubDate>Thu, 03 Sep 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://anonsoft.in/blog/ai-powered-laboratory-information-management-system-lims-saas-guide-2026</guid>
+      <guid isPermaLink="true">https://anonsoft.com/blog/ai-powered-laboratory-information-management-system-lims-saas-guide-2026</guid>
     </item>
     <item>
       <title>Building an AI-Powered Fleet Management &amp; Smart Telematics SaaS: Real-Time GPS Tracking, OBD-II/CAN-Bus Telemetry Ingestion, AI Video Dashcam Safety, ELD/HOS Compliance, and Dynamic Route Optimization (2026)</title>
-      <link>https://anonsoft.in/blog/ai-powered-fleet-management-telematics-saas-guide-2026</link>
+      <link>https://anonsoft.com/blog/ai-powered-fleet-management-telematics-saas-guide-2026</link>
       <description>An in-depth technical engineering blueprint for building an enterprise multi-tenant AI Fleet Management &amp; Telematics SaaS platform with real-time MQTT telemetry, OBD-II/J1939 CAN-bus parsing, AI video dashcam edge analytics, FMCSA ELD compliance, and vehicle routing optimization in 2026.</description>
       <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://anonsoft.in/blog/ai-powered-fleet-management-telematics-saas-guide-2026</guid>
+      <guid isPermaLink="true">https://anonsoft.com/blog/ai-powered-fleet-management-telematics-saas-guide-2026</guid>
     </item>
     <item>
       <title>Building an AI-Powered All-in-One Church Management Software (ChMS) &amp; Non-Profit Donation SaaS Platform: Multi-Campus Member CRM, Automated Recurring Tithing, Smart Volunteer Scheduling, Child Safety Check-In Kiosks, and Fund Accounting Architecture (2026)</title>
-      <link>https://anonsoft.in/blog/ai-powered-church-management-software-chms-donation-saas-guide-2026</link>
+      <link>https://anonsoft.com/blog/ai-powered-church-management-software-chms-donation-saas-guide-2026</link>
       <description>An in-depth technical engineering blueprint for building a multi-tenant AI Church Management Software (ChMS) &amp; Non-Profit SaaS with automated tithing, volunteer scheduling, child security check-in, and double-entry fund accounting in 2026.</description>
       <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://anonsoft.in/blog/ai-powered-church-management-software-chms-donation-saas-guide-2026</guid>
+      <guid isPermaLink="true">https://anonsoft.com/blog/ai-powered-church-management-software-chms-donation-saas-guide-2026</guid>
     </item>
     <item>
       <title>Building an AI-Powered 3D Product Configurator &amp; Visual CPQ SaaS: Three.js WebGL Architecture, Draco Mesh Compression, Real-Time PBR Shaders, and WebXR AR Integration (2026)</title>
-      <link>https://anonsoft.in/blog/ai-powered-3d-product-configurator-visual-cpq-saas-guide-2026</link>
+      <link>https://anonsoft.com/blog/ai-powered-3d-product-configurator-visual-cpq-saas-guide-2026</link>
       <description>An in-depth engineering blueprint for building a multi-tenant AI 3D Product Configurator and Visual CPQ (Configure, Price, Quote) SaaS platform with Three.js WebGL rendering, Draco compression, dynamic parametric geometry, and WebXR AR in 2026.</description>
       <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://anonsoft.in/blog/ai-powered-3d-product-configurator-visual-cpq-saas-guide-2026</guid>
+      <guid isPermaLink="true">https://anonsoft.com/blog/ai-powered-3d-product-configurator-visual-cpq-saas-guide-2026</guid>
     </item>
     <item>
       <title>Building an AI-Powered Telepharmacy &amp; E-Prescribing SaaS: NCPDP SCRIPT 2023061 Integration, Automated Drug-Drug Interaction (DDI) Screening, EPCS Compliance, and 50-State Digital Prescription Fulfillment (2026)</title>
-      <link>https://anonsoft.in/blog/ai-powered-telepharmacy-e-prescribing-saas-guide-2026</link>
+      <link>https://anonsoft.com/blog/ai-powered-telepharmacy-e-prescribing-saas-guide-2026</link>
       <description>An in-depth engineering blueprint for building a multi-tenant AI Telepharmacy and E-Prescribing SaaS platform with real-time NCPDP SCRIPT networks, EPCS two-factor authentication, automated drug interaction screening, and compounding pharmacy workflows in 2026.</description>
       <pubDate>Sun, 30 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://anonsoft.in/blog/ai-powered-telepharmacy-e-prescribing-saas-guide-2026</guid>
+      <guid isPermaLink="true">https://anonsoft.com/blog/ai-powered-telepharmacy-e-prescribing-saas-guide-2026</guid>
     </item>
     <item>
       <title>Building an AI-Powered Healthcare Revenue Cycle Management (RCM) &amp; Autonomous Claims Adjudication SaaS: Autonomous Medical Coding, Real-Time ANSI 837/835 EDI Pipelines, Predictive Denial Prevention, and Appeal Agents (2026)</title>
-      <link>https://anonsoft.in/blog/ai-powered-healthcare-revenue-cycle-management-rcm-saas-guide-2026</link>
+      <link>https://anonsoft.com/blog/ai-powered-healthcare-revenue-cycle-management-rcm-saas-guide-2026</link>
       <description>An in-depth engineering blueprint for building a HIPAA-compliant AI Revenue Cycle Management (RCM) SaaS platform with autonomous clinical coding, ANSI 837/835 EDI clearinghouse engines, ML denial prediction, and autonomous appeal agents in 2026.</description>
       <pubDate>Sat, 29 Aug 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://anonsoft.in/blog/ai-powered-healthcare-revenue-cycle-management-rcm-saas-guide-2026</guid>
+      <guid isPermaLink="true">https://anonsoft.com/blog/ai-powered-healthcare-revenue-cycle-management-rcm-saas-guide-2026</guid>
     </item>
   </channel>
 </rss>

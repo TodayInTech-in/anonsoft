@@ -44,20 +44,20 @@ def create_blog_html(
   <meta name="keywords" content="{keywords}">
   <meta name="author" content="Anonsoft">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-  <link rel="canonical" href="https://anonsoft.in/blog/{slug}">
+  <link rel="canonical" href="https://anonsoft.com/blog/{slug}">
 
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{meta_desc}">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://anonsoft.in/blog/{slug}">
-  <meta property="og:image" content="https://anonsoft.in/assets/blog/{image_name}">
+  <meta property="og:url" content="https://anonsoft.com/blog/{slug}">
+  <meta property="og:image" content="https://anonsoft.com/assets/blog/{image_name}">
   <meta property="og:site_name" content="Anonsoft">
   <meta property="article:published_time" content="{publish_date}">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{title}">
   <meta name="twitter:description" content="{meta_desc}">
-  <meta name="twitter:image" content="https://anonsoft.in/assets/blog/{image_name}">
+  <meta name="twitter:image" content="https://anonsoft.com/assets/blog/{image_name}">
   <meta name="twitter:site" content="@anonsoft">
 
   <!-- Article Structured Data -->
@@ -67,16 +67,16 @@ def create_blog_html(
     "@type": "Article",
     "headline": "{title}",
     "description": "{meta_desc}",
-    "image": "https://anonsoft.in/assets/blog/{image_name}",
-    "author": {{ "@type": "Organization", "name": "Anonsoft", "url": "https://anonsoft.in" }},
+    "image": "https://anonsoft.com/assets/blog/{image_name}",
+    "author": {{ "@type": "Organization", "name": "Anonsoft", "url": "https://anonsoft.com" }},
     "publisher": {{
       "@type": "Organization",
       "name": "Anonsoft",
-      "logo": {{ "@type": "ImageObject", "url": "https://anonsoft.in/assets/logo.png" }}
+      "logo": {{ "@type": "ImageObject", "url": "https://anonsoft.com/assets/logo.png" }}
     }},
     "datePublished": "{publish_date}",
     "dateModified": "{publish_date}",
-    "url": "https://anonsoft.in/blog/{slug}",
+    "url": "https://anonsoft.com/blog/{slug}",
     "articleSection": "{article_section}",
     "keywords": "{keywords}"
   }}
@@ -234,7 +234,7 @@ def create_blog_html(
         <div class="footer-column">
           <h4>Contact</h4>
           <ul>
-            <li><a href="mailto:contact@anonsoft.in">contact@anonsoft.in</a></li>
+            <li><a href="mailto:contact@anonsoft.com">contact@anonsoft.com</a></li>
             <li><a href="tel:+919007900972">+91 7679349780</a></li>
             <li><a href="/">Kolkata, India</a></li>
             <li><a href="" onclick="triggerCalendly('https://calendly.com/anonsoftdotin/30min');return false;">Book a Call &rarr;</a></li>

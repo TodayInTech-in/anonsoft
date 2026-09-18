@@ -67,8 +67,8 @@ def generate_invoice():
     c.drawRightString(W - margin, H - 22*mm, "Anonsoft")
     c.setFillColor(LIGHT_GRAY)
     c.setFont("Helvetica", 9)
-    c.drawRightString(W - margin, H - 29*mm, "www.anonsoft.in")
-    c.drawRightString(W - margin, H - 35*mm, "contact@anonsoft.in")
+    c.drawRightString(W - margin, H - 29*mm, "www.anonsoft.com")
+    c.drawRightString(W - margin, H - 35*mm, "contact@anonsoft.com")
 
     # --- INVOICE title (white on black) ---
     c.setFillColor(WHITE)
@@ -109,8 +109,8 @@ def generate_invoice():
     c.setFillColor(MID_GRAY)
     c.setFont("Helvetica", 9)
     c.drawString(margin + 4*mm, sec_y - 18*mm, "Founder & CEO, Anonsoft")
-    c.drawString(margin + 4*mm, sec_y - 24*mm, "www.anonsoft.in")
-    c.drawString(margin + 4*mm, sec_y - 30*mm, "contact@anonsoft.in")
+    c.drawString(margin + 4*mm, sec_y - 24*mm, "www.anonsoft.com")
+    c.drawString(margin + 4*mm, sec_y - 30*mm, "contact@anonsoft.com")
 
     # BILLED TO
     to_x = W/2 + 5*mm
@@ -264,7 +264,7 @@ def generate_invoice():
     c.rect(0, 0, W, 16*mm, fill=1, stroke=0)
     c.setFillColor(WHITE)
     c.setFont("Helvetica", 8)
-    c.drawCentredString(W/2, 9*mm, "Thank you for your business!  ·  www.anonsoft.in  ·  contact@anonsoft.in")
+    c.drawCentredString(W/2, 9*mm, "Thank you for your business!  ·  www.anonsoft.com  ·  contact@anonsoft.com")
     c.setFillColor(LIGHT_GRAY)
     c.setFont("Helvetica", 7)
     c.drawCentredString(W/2, 4*mm, "This invoice is computer generated and valid without physical signature.")

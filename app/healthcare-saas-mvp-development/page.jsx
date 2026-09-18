@@ -1,51 +1,51 @@
-import Link from 'next/link';
-import CalendlyButton from '../components/CalendlyButton';
+import Link from "next/link";
+import CalendlyButton from "../components/CalendlyButton";
 
 export const metadata = {
-  title: 'Healthcare SaaS MVP Development Studio | Anonsoft',
+  title: "Healthcare SaaS MVP Development Studio | Anonsoft",
   description:
-    'Build a funded-ready healthcare SaaS MVP in 8 weeks. Learn about our scalable HIPAA-compliant architecture for health-tech founders and pre-seed startups.',
+    "Build a funded-ready healthcare SaaS MVP in 8 weeks. Learn about our scalable HIPAA-compliant architecture for health-tech founders and pre-seed startups.",
   keywords: [
-    'healthcare SaaS MVP development',
-    'health tech startup development',
-    'HIPAA MVP',
-    'telemedicine MVP',
-    'healthcare app development startup',
-    'health tech founder development partner',
+    "healthcare SaaS MVP development",
+    "health tech startup development",
+    "HIPAA MVP",
+    "telemedicine MVP",
+    "healthcare app development startup",
+    "health tech founder development partner",
   ],
   alternates: {
-    canonical: 'https://anonsoft.in/healthcare-saas-mvp-development',
+    canonical: "https://anonsoft.com/healthcare-saas-mvp-development",
   },
   openGraph: {
-    title: 'Healthcare SaaS MVP Development Studio | Anonsoft',
+    title: "Healthcare SaaS MVP Development Studio | Anonsoft",
     description:
-      'Build a funded-ready healthcare SaaS MVP in 8 weeks. HIPAA-compliant architecture for health-tech founders and pre-seed startups.',
-    url: 'https://anonsoft.in/healthcare-saas-mvp-development',
-    type: 'website',
-    images: [{ url: 'https://anonsoft.com/assets/anon-soft-og.png' }],
+      "Build a funded-ready healthcare SaaS MVP in 8 weeks. HIPAA-compliant architecture for health-tech founders and pre-seed startups.",
+    url: "https://anonsoft.com/healthcare-saas-mvp-development",
+    type: "website",
+    images: [{ url: "https://anonsoft.com/assets/anon-soft-og.png" }],
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Healthcare SaaS MVP Development Studio | Anonsoft',
+    card: "summary_large_image",
+    title: "Healthcare SaaS MVP Development Studio | Anonsoft",
     description:
-      'Build a funded-ready healthcare SaaS MVP in 8 weeks. HIPAA-compliant architecture for health-tech founders.',
-    images: ['https://anonsoft.com/assets/anon-soft-og.png'],
+      "Build a funded-ready healthcare SaaS MVP in 8 weeks. HIPAA-compliant architecture for health-tech founders.",
+    images: ["https://anonsoft.com/assets/anon-soft-og.png"],
   },
 };
 
 const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Service',
-  name: 'Healthcare SaaS MVP Development',
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Healthcare SaaS MVP Development",
   provider: {
-    '@type': 'Organization',
-    name: 'Anonsoft',
-    url: 'https://anonsoft.in',
+    "@type": "Organization",
+    name: "Anonsoft",
+    url: "https://anonsoft.com",
   },
-  serviceType: 'Healthcare Software Development',
+  serviceType: "Healthcare Software Development",
   description:
-    'Build a funded-ready, HIPAA-compliant healthcare SaaS MVP in 8 weeks with fixed scope and zero upfront payment guarantee.',
-  areaServed: 'Worldwide',
+    "Build a funded-ready, HIPAA-compliant healthcare SaaS MVP in 8 weeks with fixed scope and zero upfront payment guarantee.",
+  areaServed: "Worldwide",
 };
 
 export default function HealthcareMvpPage() {
@@ -70,11 +70,14 @@ export default function HealthcareMvpPage() {
             Healthcare MVP in 8 Weeks
           </h1>
           <p>
-            We build HIPAA-compliant, scalable healthcare MVPs for founders who need to move fast — without hiring a full
-            engineering team. Trusted by health-tech startups from seed to Series A.
+            We build HIPAA-compliant, scalable healthcare MVPs for founders who
+            need to move fast — without hiring a full engineering team. Trusted
+            by health-tech startups from seed to Series A.
           </p>
           <div className="lp-cta-row">
-            <CalendlyButton className="btn-primary">Tell Us About Your MVP</CalendlyButton>
+            <CalendlyButton className="btn-primary">
+              Tell Us About Your MVP
+            </CalendlyButton>
             <Link href="/#pricing" className="btn-secondary">
               See Pricing
             </Link>
@@ -123,11 +126,20 @@ export default function HealthcareMvpPage() {
       {/* PROCESS SECTION */}
       <section className="lp-process">
         <div className="container">
-          <div className="section-header" style={{ textAlign: 'center', marginBottom: '48px' }}>
+          <div
+            className="section-header"
+            style={{ textAlign: "center", marginBottom: "48px" }}
+          >
             <span className="section-label">Our MVP Process</span>
-            <h2 className="section-title">How We Get You From Idea to Live in 8 Weeks</h2>
-            <p className="section-subtitle" style={{ maxWidth: '640px', margin: '12px auto 0' }}>
-              A battle-tested process designed for founders who need speed, compliance, and investor-ready polish.
+            <h2 className="section-title">
+              How We Get You From Idea to Live in 8 Weeks
+            </h2>
+            <p
+              className="section-subtitle"
+              style={{ maxWidth: "640px", margin: "12px auto 0" }}
+            >
+              A battle-tested process designed for founders who need speed,
+              compliance, and investor-ready polish.
             </p>
           </div>
           <div className="lp-process-steps">
@@ -135,32 +147,36 @@ export default function HealthcareMvpPage() {
               <div className="lp-step-num">01</div>
               <h3>Discovery Workshop (Week 1)</h3>
               <p>
-                We map your product requirements, compliance needs, target users, and investor narrative. Output: a
-                detailed spec and fixed-price proposal.
+                We map your product requirements, compliance needs, target
+                users, and investor narrative. Output: a detailed spec and
+                fixed-price proposal.
               </p>
             </div>
             <div className="lp-process-step">
               <div className="lp-step-num">02</div>
               <h3>Design & Architecture (Weeks 2–3)</h3>
               <p>
-                Figma designs you can test with users before a line of code is written. HIPAA-compliant data model and
-                cloud architecture planned up front.
+                Figma designs you can test with users before a line of code is
+                written. HIPAA-compliant data model and cloud architecture
+                planned up front.
               </p>
             </div>
             <div className="lp-process-step">
               <div className="lp-step-num">03</div>
               <h3>Agile Build (Weeks 4–7)</h3>
               <p>
-                2-week sprint cycles with weekly demos. You see progress every week and can provide feedback in real time.
-                No black-box development.
+                2-week sprint cycles with weekly demos. You see progress every
+                week and can provide feedback in real time. No black-box
+                development.
               </p>
             </div>
             <div className="lp-process-step">
               <div className="lp-step-num">04</div>
               <h3>Launch & Investor Readiness (Week 8)</h3>
               <p>
-                Production deployment on AWS, QA sign-off, compliance documentation, and a live demo environment ready for
-                investor meetings.
+                Production deployment on AWS, QA sign-off, compliance
+                documentation, and a live demo environment ready for investor
+                meetings.
               </p>
             </div>
           </div>
@@ -171,8 +187,9 @@ export default function HealthcareMvpPage() {
       <section className="lp-founder-quote">
         <div className="container">
           <blockquote>
-            "Anonsoft delivered our telemedicine MVP in 7 weeks — fully HIPAA-compliant and polished enough to
-            close our seed round. Their healthcare domain expertise saved us months of compliance work."
+            "Anonsoft delivered our telemedicine MVP in 7 weeks — fully
+            HIPAA-compliant and polished enough to close our seed round. Their
+            healthcare domain expertise saved us months of compliance work."
           </blockquote>
           <cite>— James W., Co-Founder, FitPulse Health &bull; UK</cite>
         </div>
@@ -183,10 +200,14 @@ export default function HealthcareMvpPage() {
         <div className="container">
           <h2>Ready to Build Your Healthcare MVP?</h2>
           <p>
-            Book a free 30-minute strategy session. We'll scope your MVP, identify compliance requirements, and give you a
-            fixed-price estimate within 48 hours.
+            Book a free 30-minute strategy session. We'll scope your MVP,
+            identify compliance requirements, and give you a fixed-price
+            estimate within 48 hours.
           </p>
-          <CalendlyButton className="btn-primary" style={{ fontSize: '1rem', padding: '16px 36px' }}>
+          <CalendlyButton
+            className="btn-primary"
+            style={{ fontSize: "1rem", padding: "16px 36px" }}
+          >
             Tell Us About Your MVP
           </CalendlyButton>
           <ul className="lp-check-list">

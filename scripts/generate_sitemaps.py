@@ -3,7 +3,7 @@ import os
 import re
 from datetime import datetime
 
-DOMAIN = "https://anonsoft.in"
+DOMAIN = "https://anonsoft.com"
 
 def xml_escape(text):
     """Escape XML special characters in string."""

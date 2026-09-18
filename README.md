@@ -28,8 +28,6 @@
 
 ---
 
-
-
 ## 🏥 About Anonsoft
 
 **Anonsoft** is a professional technology company specializing in **health white-label software solutions**. We work with healthcare brands, clinics, pharmacies, and wellness companies to deliver production-ready software products under their own brand.
@@ -38,14 +36,14 @@ Beyond health tech, we also deliver custom software across multiple domains — 
 
 ### 🎯 What We Specialize In
 
-| Area | Description |
-|------|-------------|
+| Area                      | Description                                             |
+| ------------------------- | ------------------------------------------------------- |
 | 🏥 **Health White-Label** | Telemedicine, EHR/EMR, Patient Portals, E-Prescriptions |
-| 📱 **Mobile Development** | React Native & Flutter apps for iOS & Android |
-| 🌐 **Web Applications** | SaaS platforms, admin dashboards, customer portals |
-| ☁️ **Cloud & DevOps** | AWS, Docker, Kubernetes, CI/CD pipelines |
-| 🔗 **API & Integrations** | HL7/FHIR compliance, REST APIs, payment gateways |
-| 🎨 **UI/UX Design** | Human-centered design, prototyping, user research |
+| 📱 **Mobile Development** | React Native & Flutter apps for iOS & Android           |
+| 🌐 **Web Applications**   | SaaS platforms, admin dashboards, customer portals      |
+| ☁️ **Cloud & DevOps**     | AWS, Docker, Kubernetes, CI/CD pipelines                |
+| 🔗 **API & Integrations** | HL7/FHIR compliance, REST APIs, payment gateways        |
+| 🎨 **UI/UX Design**       | Human-centered design, prototyping, user research       |
 
 ---
 
@@ -66,19 +64,19 @@ This portfolio website showcases our company with a **premium, modern design**:
 
 ### 📄 Page Sections
 
-| # | Section | Description |
-|---|---------|-------------|
-| 1 | **Navigation** | Fixed glassmorphism navbar with smooth scroll & mobile menu |
-| 2 | **Hero** | Animated hero with typing effect, stats, floating badges |
-| 3 | **Trusted By** | Client logo strip for social proof |
-| 4 | **Services** | 6 interactive service cards with tags |
-| 5 | **About / Why Us** | Company story, features grid, animated stats |
-| 6 | **Portfolio** | 4 project showcases with images & tech stacks |
-| 7 | **Process** | 4-step visual workflow |
-| 8 | **Testimonials** | 6 client review cards with 5-star ratings |
-| 9 | **Tech Stack** | Technology badges grid |
-| 10 | **CTA** | Book a consultation with trust badges |
-| 11 | **Footer** | Multi-column footer with social links |
+| #   | Section            | Description                                                 |
+| --- | ------------------ | ----------------------------------------------------------- |
+| 1   | **Navigation**     | Fixed glassmorphism navbar with smooth scroll & mobile menu |
+| 2   | **Hero**           | Animated hero with typing effect, stats, floating badges    |
+| 3   | **Trusted By**     | Client logo strip for social proof                          |
+| 4   | **Services**       | 6 interactive service cards with tags                       |
+| 5   | **About / Why Us** | Company story, features grid, animated stats                |
+| 6   | **Portfolio**      | 4 project showcases with images & tech stacks               |
+| 7   | **Process**        | 4-step visual workflow                                      |
+| 8   | **Testimonials**   | 6 client review cards with 5-star ratings                   |
+| 9   | **Tech Stack**     | Technology badges grid                                      |
+| 10  | **CTA**            | Book a consultation with trust badges                       |
+| 11  | **Footer**         | Multi-column footer with social links                       |
 
 ---
 
@@ -86,12 +84,12 @@ This portfolio website showcases our company with a **premium, modern design**:
 
 This website is built with **zero dependencies** — pure web technologies:
 
-| Technology | Purpose |
-|-----------|---------|
-| ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) | Semantic structure & SEO |
-| ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) | Design system, animations, glassmorphism |
-| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) | Interactions, animations, modal logic |
-| ![Google Fonts](https://img.shields.io/badge/Google%20Fonts-4285F4?style=flat-square&logo=google&logoColor=white) | Inter & Space Grotesk typography |
+| Technology                                                                                                        | Purpose                                  |
+| ----------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)                  | Semantic structure & SEO                 |
+| ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)                     | Design system, animations, glassmorphism |
+| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)   | Interactions, animations, modal logic    |
+| ![Google Fonts](https://img.shields.io/badge/Google%20Fonts-4285F4?style=flat-square&logo=google&logoColor=white) | Inter & Space Grotesk typography         |
 
 ---
 
@@ -119,22 +117,24 @@ This entire website can be transformed into any company's brand in seconds using
 ### Prerequisites
 
 - Any modern web browser (Chrome, Firefox, Safari, Edge)
-- *(Optional)* Node.js for local development server
+- _(Optional)_ Node.js for local development server
 
 ### Quick Start
 
 1. **Clone the repository**
+
    ```bash
    git clone git@github.com:JASIM0021/anonsoftweb.git
    cd anonsoftweb
    ```
 
 2. **Open directly in browser**
+
    ```
    Just double-click index.html — it works out of the box!
    ```
 
-3. **Or use a local dev server** *(recommended)*
+3. **Or use a local dev server** _(recommended)_
    ```bash
    npx serve
    ```
@@ -180,45 +180,50 @@ anonsoftweb/
 ## 📸 Screenshots
 
 ### 🖥️ Hero Section
+
 > Dark theme hero with animated typing effect, floating badges, and statistics counter
 
 ### 📋 Services
+
 > 6 interactive service cards with glassmorphism effect and tech tags
 
 ### 💼 Portfolio
+
 > Project showcase with hover zoom effects and technology badges
 
 ### ⭐ Testimonials
+
 > Client reviews with 5-star ratings and avatar badges
 
 ### 📞 Booking Modal
+
 > Full consultation form with validation and success animation
 
 ---
 
 ## 🤝 Our Clients Love Us
 
-> *"Anonsoft transformed our clinic's operations. Their white-label platform saved us 6 months of development."*
+> _"Anonsoft transformed our clinic's operations. Their white-label platform saved us 6 months of development."_
 > — **Dr. Rahul Mehta**, CEO, MediCare Plus
 
-> *"Working with Anonsoft was seamless. They delivered our telemedicine app ahead of schedule."*
+> _"Working with Anonsoft was seamless. They delivered our telemedicine app ahead of schedule."_
 > — **Sarah Anderson**, CTO, DocConnect
 
-> *"The pharmacy management system handles 10,000+ daily transactions flawlessly."*
+> _"The pharmacy management system handles 10,000+ daily transactions flawlessly."_
 > — **Ahmed Khalil**, Founder, PharmaLink
 
 ---
 
 ## 📊 Key Numbers
 
-| Metric | Value |
-|--------|-------|
-| 🤝 Happy Clients | **50+** |
-| 🚀 Projects Delivered | **120+** |
-| 😊 Client Satisfaction | **99%** |
-| 👨‍💻 Team Members | **35+** |
-| 🌍 Countries Served | **12+** |
-| 📅 Years Experience | **5+** |
+| Metric                 | Value    |
+| ---------------------- | -------- |
+| 🤝 Happy Clients       | **50+**  |
+| 🚀 Projects Delivered  | **120+** |
+| 😊 Client Satisfaction | **99%**  |
+| 👨‍💻 Team Members        | **35+**  |
+| 🌍 Countries Served    | **12+**  |
+| 📅 Years Experience    | **5+**   |
 
 ---
 
@@ -226,12 +231,12 @@ anonsoftweb/
 
 Ready to build your next health tech product? Let's talk!
 
-| Channel | Details |
-|---------|---------|
-| 📧 **Email** | [contact@anonsoft.in](mailto:contact@anonsoft.in) |
-| 📞 **Phone** | +91 7679349780 |
-| 🌐 **Website** | [anonsoft.com](https://anonsoft.com) |
-| 📍 **Location** | Kolkata, India |
+| Channel         | Details                                             |
+| --------------- | --------------------------------------------------- |
+| 📧 **Email**    | [contact@anonsoft.com](mailto:contact@anonsoft.com) |
+| 📞 **Phone**    | +91 7679349780                                      |
+| 🌐 **Website**  | [anonsoft.com](https://anonsoft.com)                |
+| 📍 **Location** | Kolkata, India                                      |
 
 ---
 
@@ -247,6 +252,6 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 <p align="center">
   <a href="https://anonsoft.com">Website</a> •
-  <a href="mailto:contact@anonsoft.in">Email</a> •
+  <a href="mailto:contact@anonsoft.com">Email</a> •
   <a href="https://linkedin.com/company/anonsoft">LinkedIn</a>
 </p>

@@ -503,13 +503,13 @@ template = '''<!DOCTYPE html>
   <title>{title} | Anonsoft</title>
   <meta name="description" content="{meta_desc}">
   <meta name="keywords" content="{keywords}">
-  <link rel="canonical" href="https://anonsoft.in/projects/{slug}.html">
+  <link rel="canonical" href="https://anonsoft.com/projects/{slug}.html">
 
   <meta property="og:title" content="{title} | Anonsoft Case Study">
   <meta property="og:description" content="{meta_desc}">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://anonsoft.in/projects/{slug}.html">
-  <meta property="og:image" content="https://anonsoft.in/assets/project/{image}">
+  <meta property="og:url" content="https://anonsoft.com/projects/{slug}.html">
+  <meta property="og:image" content="https://anonsoft.com/assets/project/{image}">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{title} | Anonsoft">
@@ -531,9 +531,9 @@ template = '''<!DOCTYPE html>
     "@type": "Article",
     "headline": "{title}",
     "description": "{meta_desc}",
-    "image": "https://anonsoft.in/assets/project/{image}",
+    "image": "https://anonsoft.com/assets/project/{image}",
     "author": {{ "@type": "Organization", "name": "Anonsoft" }},
-    "publisher": {{ "@type": "Organization", "name": "Anonsoft", "logo": {{ "@type": "ImageObject", "url": "https://anonsoft.in/assets/logo.png" }} }},
+    "publisher": {{ "@type": "Organization", "name": "Anonsoft", "logo": {{ "@type": "ImageObject", "url": "https://anonsoft.com/assets/logo.png" }} }},
     "datePublished": "2026-02-10",
     "dateModified": "2026-05-12"
   }}

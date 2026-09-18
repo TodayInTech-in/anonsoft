@@ -37,14 +37,14 @@ DEFAULT_ORIGINAL_BRAND = {
         "name_spaced": "Anonsoft",
         "name_lower": "anonsoft",
         "tagline": "Custom Startup Software Development Agency",
-        "domain": "anonsoft.in",
-        "full_url": "https://anonsoft.in",
+        "domain": "anonsoft.com",
+        "full_url": "https://anonsoft.com",
         "logo_path": "/assets/anonsoft.svg",
         "favicon_path": "/assets/favicon.ico",
         "og_image": "https://anonsoft.com/assets/anon-soft-og.png"
     },
     "contacts": {
-        "email": "contact@anonsoft.in",
+        "email": "contact@anonsoft.com",
         "phone": "+91 9007900972",
         "whatsapp_number": "919007900972",
         "whatsapp_url": "https://wa.me/919007900972",

@@ -348,13 +348,13 @@ BLOG_TEMPLATE = """<!DOCTYPE html>
   <meta name="description" content="{excerpt}">
   <meta name="author" content="Anonsoft">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-  <link rel="canonical" href="https://anonsoft.in/blog/{slug}.html">
+  <link rel="canonical" href="https://anonsoft.com/blog/{slug}.html">
 
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{excerpt}">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://anonsoft.in/blog/{slug}.html">
-  <meta property="og:image" content="https://anonsoft.in/assets/blog/{image}">
+  <meta property="og:url" content="https://anonsoft.com/blog/{slug}.html">
+  <meta property="og:image" content="https://anonsoft.com/assets/blog/{image}">
   <meta property="og:site_name" content="Anonsoft">
   <meta property="article:published_time" content="{published_date}">
 

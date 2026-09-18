@@ -152,7 +152,7 @@ const pagesData = {
                           <li>5+ Years React/Node</li>
                           <li>Experience with AWS and CI/CD workflows</li>
                         </ul>
-                        <a href="mailto:careers@anonsoft.in" class="btn-secondary" style="display:inline-block; border-color:var(--primary); color:var(--primary); padding: 8px 16px; border-radius: 8px; font-weight: bold; text-decoration: none;">Apply Now</a>
+                        <a href="mailto:careers@anonsoft.com" class="btn-secondary" style="display:inline-block; border-color:var(--primary); color:var(--primary); padding: 8px 16px; border-radius: 8px; font-weight: bold; text-decoration: none;">Apply Now</a>
                     </div>
                     <div class="process-step" style="text-align: left;">
                         <h3>Lead UX/UI Designer</h3>
@@ -161,7 +161,7 @@ const pagesData = {
                           <li>Strong Figma & Prototyping portfolio</li>
                           <li>Experience with healthcare design a plus</li>
                         </ul>
-                        <a href="mailto:careers@anonsoft.in" class="btn-secondary" style="display:inline-block; border-color:var(--primary); color:var(--primary); padding: 8px 16px; border-radius: 8px; font-weight: bold; text-decoration: none;">Apply Now</a>
+                        <a href="mailto:careers@anonsoft.com" class="btn-secondary" style="display:inline-block; border-color:var(--primary); color:var(--primary); padding: 8px 16px; border-radius: 8px; font-weight: bold; text-decoration: none;">Apply Now</a>
                     </div>
                 </div>
             </div>

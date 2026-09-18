@@ -18,7 +18,7 @@ filesToUpdate.forEach(file => {
     
     // Replace all instances of the .com domain with the .in domain
     // This fixes Canonical tags, Open Graph tags, Schema.org links, and Sitemap locations.
-    let updatedContent = content.replace(/anonsoft\.com/g, 'anonsoft.in');
+    let updatedContent = content.replace(/anonsoft\.com/g, 'anonsoft.com');
     
     // Write the updated content back to the file
     if (content !== updatedContent) {

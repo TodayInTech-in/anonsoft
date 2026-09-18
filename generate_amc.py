@@ -75,8 +75,8 @@ def generate_amc():
     c.drawRightString(W - margin, H - 20*mm, "Anonsoft")
     c.setFillColor(LIGHT_GRAY)
     c.setFont("Helvetica", 9)
-    c.drawRightString(W - margin, H - 27*mm, "www.anonsoft.in")
-    c.drawRightString(W - margin, H - 33*mm, "contact@anonsoft.in")
+    c.drawRightString(W - margin, H - 27*mm, "www.anonsoft.com")
+    c.drawRightString(W - margin, H - 33*mm, "contact@anonsoft.com")
 
     # Doc label tag
     c.setFillColor(WHITE)
@@ -252,14 +252,14 @@ def generate_amc():
     c.drawCentredString(seal_x + 27.5*mm, sig_y - 9*mm, "TODAYINTECH")
     c.setFont("Helvetica", 7)
     c.drawCentredString(seal_x + 27.5*mm, sig_y - 14*mm, "Official Seal")
-    c.drawCentredString(seal_x + 27.5*mm, sig_y - 19*mm, "www.anonsoft.in")
+    c.drawCentredString(seal_x + 27.5*mm, sig_y - 19*mm, "www.anonsoft.com")
 
     # Footer
     c.setFillColor(BLACK)
     c.rect(0, 0, W, 16*mm, fill=1, stroke=0)
     c.setFillColor(WHITE)
     c.setFont("Helvetica", 8)
-    c.drawCentredString(W/2, 9*mm, "Thank you for your business!  ·  www.anonsoft.in  ·  contact@anonsoft.in")
+    c.drawCentredString(W/2, 9*mm, "Thank you for your business!  ·  www.anonsoft.com  ·  contact@anonsoft.com")
     c.setFillColor(LIGHT_GRAY)
     c.setFont("Helvetica", 7)
     c.drawCentredString(W/2, 4*mm, "This document is confidential and intended solely for the named client.")

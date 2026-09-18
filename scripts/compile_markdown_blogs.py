@@ -17,7 +17,7 @@ except ImportError:
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{title} | Anonsoft</title>
   <meta name="description" content="{excerpt}">
-  <link rel="canonical" href="https://anonsoft.in/blog/{slug}.html">
+  <link rel="canonical" href="https://anonsoft.com/blog/{slug}.html">
   <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
   <link rel="apple-touch-icon" href="/assets/favicon.ico">
   <link rel="stylesheet" href="../style.css">
@@ -381,7 +381,7 @@ def compile_markdown_files():
 <head>
 <meta charset="UTF-8">
 <title>Redirecting…</title>
-<link rel="canonical" href="https://anonsoft.in/blog/{new_slug}.html">
+<link rel="canonical" href="https://anonsoft.com/blog/{new_slug}.html">
 <meta http-equiv="refresh" content="0;url=/blog/{new_slug}.html">
 </head>
 <body>
